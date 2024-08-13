@@ -1,10 +1,8 @@
 extends Control
 class_name GameStage
 
-@onready var characters := {
-	CONST.CHARACTER_AMBER : $Characters/Amber,
-	CONST.CHARACTER_ETERNA : $Characters/Eterna,
-}
+@onready var characters := {}
+
 enum TextStyle {
 	ToBottom,
 	ToCharacter,
@@ -20,12 +18,15 @@ var cg_position := ""
 var is_name_container_visible := false
 
 @onready var cg_roots := [find_child("CGBottomContainer"), find_child("CGTopContainer")]
-var blockers : int = 1 + 2 # character count + 1 (self) get_tree().get_node_count_in_group("diisis_character")
+var blockers : int = 2 # character count + 1 (self) get_tree().get_node_count_in_group("diisis_character")
 var hovering_meta := false
 
 @onready var text_start_position = find_child("TextContainer").position
 
+var callable_upon_blocker_clear:Callable
+
 func _ready():
+	
 	#find_child("TextContainer").position = Vector2(size.x * 0.5, size.y - find_child("TextContainer").size.y * 0.5)
 	ParserEvents.actor_name_changed.connect(on_actor_name_changed)
 	ParserEvents.text_content_text_changed.connect(on_text_content_text_changed)
@@ -41,6 +42,7 @@ func _ready():
 	find_child("LineReader").auto_continue_delay = Options.auto_continue_delay
 	
 	set_text_style(text_style)
+	
 	
 	remove_blocker()
 	grab_focus()
@@ -166,7 +168,6 @@ func on_text_content_text_changed(
 	text_container.position.y += 10
 	dialog_box_tween.tween_property(text_container, "position", actor_position, lead_time).set_ease(Tween.EASE_OUT).set_trans(Tween.TRANS_BACK)
 
-var callable_upon_blocker_clear:Callable
 func set_callable_upon_blocker_clear(callable:Callable):
 	callable_upon_blocker_clear = callable
 

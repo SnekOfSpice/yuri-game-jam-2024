@@ -3,9 +3,9 @@
 [ext_resource type="Script" path="res://game/stages/game_stage.gd" id="1_a36me"]
 [ext_resource type="Script" path="res://addons/diisis/parser/src/line_reader.gd" id="1_h4afo"]
 [ext_resource type="FontFile" uid="uid://dy8rsqmwhxjp6" path="res://addons/diisis/editor/visuals/fonts/TT Chocolates Trial Bold.otf" id="2_6jeks"]
+[ext_resource type="PackedScene" uid="uid://c7bnsg1etl8i7" path="res://game/characters/one.tscn" id="2_15g65"]
 [ext_resource type="Script" path="res://game/stages/instruction_handler_intro.gd" id="4_u8vmc"]
 [ext_resource type="Texture2D" uid="uid://delwppkladi0u" path="res://addons/diisis/editor/visuals/more.svg" id="5_7sulw"]
-[ext_resource type="PackedScene" uid="uid://chfbyvpvah4eu" path="res://game/characters/character.tscn" id="5_abdaq"]
 [ext_resource type="Script" path="res://game/diisis_integration/inline_eval.gd" id="6_8ao3j"]
 [ext_resource type="Texture2D" uid="uid://bh7mo1v26xtqq" path="res://addons/diisis/editor/visuals/helpZeichenfläche 3.png" id="6_mh4vb"]
 [ext_resource type="PackedScene" uid="uid://qkegdwc8ux5o" path="res://game/stages/black_fade.tscn" id="8_50byo"]
@@ -23,15 +23,8 @@ script = ExtResource("1_a36me")
 
 [node name="Characters" type="Node2D" parent="."]
 
-[node name="Eterna" parent="Characters" instance=ExtResource("5_abdaq")]
-position = Vector2(1112, 549)
-scale = Vector2(0.5, 0.5)
-character_name = "eterna"
-
-[node name="Amber" parent="Characters" instance=ExtResource("5_abdaq")]
-position = Vector2(253, 557)
-scale = Vector2(0.5, 0.5)
-character_name = "amber"
+[node name="One" parent="Characters" instance=ExtResource("2_15g65")]
+position = Vector2(215, 337)
 
 [node name="CGBottomContainer" type="Control" parent="."]
 auto_translate_mode = 1
@@ -188,7 +181,7 @@ text = "Menu"
 [node name="InstructionHandler" type="Node" parent="."]
 script = ExtResource("4_u8vmc")
 
-[node name="LineReader" type="Control" parent="." node_paths=PackedStringArray("choice_container", "choice_option_container", "text_content", "text_container", "name_label", "name_container", "inline_evaluator", "prompt_unfinished", "prompt_finished")]
+[node name="LineReader" type="Control" parent="." node_paths=PackedStringArray("choice_container", "choice_option_container", "text_content", "text_container", "name_label", "name_container", "instruction_handler", "inline_evaluator", "prompt_unfinished", "prompt_finished")]
 layout_mode = 3
 anchors_preset = 0
 offset_right = 40.0
@@ -206,6 +199,7 @@ text_content = NodePath("../VNUI/TextContainer/MarginContainer/VBoxContainer/Pan
 text_container = NodePath("../VNUI/TextContainer")
 name_label = NodePath("../VNUI/TextContainer/MarginContainer/VBoxContainer/MarginContainer/PanelContainer/Label")
 name_container = NodePath("../VNUI/TextContainer/MarginContainer/VBoxContainer/MarginContainer")
+instruction_handler = NodePath("../InstructionHandler")
 inline_evaluator = NodePath("../InlineEval")
 show_input_prompt = true
 input_prompt_delay = 1.29
@@ -259,8 +253,7 @@ position = Vector2(509, 409)
 [node name="TextPositionEterna" type="Node2D" parent="."]
 position = Vector2(971, 409)
 
-[connection signal="ready" from="Characters/Eterna" to="." method="remove_blocker"]
-[connection signal="ready" from="Characters/Amber" to="." method="remove_blocker"]
+[connection signal="ready" from="Characters/One" to="." method="remove_blocker"]
 [connection signal="meta_clicked" from="VNUI/TextContainer/MarginContainer/VBoxContainer/Panel/RichTextLabel" to="." method="_on_rich_text_label_meta_clicked"]
 [connection signal="meta_hover_ended" from="VNUI/TextContainer/MarginContainer/VBoxContainer/Panel/RichTextLabel" to="." method="_on_rich_text_label_meta_hover_ended"]
 [connection signal="meta_hover_started" from="VNUI/TextContainer/MarginContainer/VBoxContainer/Panel/RichTextLabel" to="." method="_on_rich_text_label_meta_hover_started"]

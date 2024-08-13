@@ -13,20 +13,17 @@ character_name = "one"
 position = Vector2(74, 53)
 texture = ExtResource("2_524p1")
 
-[node name="EyesOpen" type="Node" parent="."]
+[node name="Eyes" type="Node2D" parent="."]
 
-[node name="Eye" type="Sprite2D" parent="EyesOpen"]
+[node name="Eye" type="Sprite2D" parent="Eyes"]
 texture = ExtResource("3_2xmv4")
 
-[node name="Eye2" type="Sprite2D" parent="EyesOpen"]
-position = Vector2(183, 0)
-texture = ExtResource("3_2xmv4")
-
-[node name="EyesClosed" type="Node" parent="."]
-
-[node name="Eye-closed" type="Sprite2D" parent="EyesClosed"]
+[node name="Eye-closed" type="Sprite2D" parent="Eyes/Eye"]
 texture = ExtResource("4_dg1sr")
 
-[node name="Eye-closed2" type="Sprite2D" parent="EyesClosed"]
+[node name="Eye2" type="Sprite2D" parent="Eyes"]
 position = Vector2(183, 0)
+texture = ExtResource("3_2xmv4")
+
+[node name="Eye-closed2" type="Sprite2D" parent="Eyes/Eye2"]
 texture = ExtResource("4_dg1sr")
