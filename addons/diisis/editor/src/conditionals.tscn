@@ -1,0 +1,57 @@
+[gd_scene load_steps=4 format=3 uid="uid://bpuqu3kymqlwb"]
+
+[ext_resource type="Script" path="res://addons/diisis/editor/src/conditionals.gd" id="1_jnmdf"]
+[ext_resource type="Texture2D" uid="uid://cnvacrrdfmqte" path="res://addons/diisis/editor/visuals/cond.png" id="2_i1sb1"]
+[ext_resource type="Texture2D" uid="uid://cosv2ahbynvkc" path="res://addons/diisis/editor/visuals/cond_add.png" id="3_y885n"]
+
+[node name="Conditionals" type="MarginContainer" node_paths=PackedStringArray("add_button", "facts_container")]
+script = ExtResource("1_jnmdf")
+add_button = NodePath("VBoxContainer/Controls/AddConditionButton")
+facts_container = NodePath("VBoxContainer/FactsContainer")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+layout_mode = 2
+
+[node name="VisibilityToggleButton" type="CheckButton" parent="VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 0
+icon = ExtResource("2_i1sb1")
+
+[node name="Controls" type="VBoxContainer" parent="VBoxContainer"]
+layout_mode = 2
+
+[node name="AddConditionButton" type="Button" parent="VBoxContainer/Controls"]
+layout_mode = 2
+size_flags_horizontal = 0
+tooltip_text = "add conditional"
+icon = ExtResource("3_y885n")
+
+[node name="OperandContainer" type="HBoxContainer" parent="VBoxContainer/Controls"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="OperandOptionButton" type="OptionButton" parent="VBoxContainer/Controls/OperandContainer"]
+layout_mode = 2
+
+[node name="OperandArg1" type="SpinBox" parent="VBoxContainer/Controls/OperandContainer"]
+layout_mode = 2
+
+[node name="OperandArg2" type="SpinBox" parent="VBoxContainer/Controls/OperandContainer"]
+layout_mode = 2
+
+[node name="BehaviorContainer" type="HBoxContainer" parent="VBoxContainer"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="VBoxContainer/BehaviorContainer"]
+layout_mode = 2
+text = "behavior on true conditions"
+
+[node name="BehaviorButton" type="OptionButton" parent="VBoxContainer/BehaviorContainer"]
+layout_mode = 2
+
+[node name="FactsContainer" type="VBoxContainer" parent="VBoxContainer"]
+layout_mode = 2
+
+[connection signal="pressed" from="VBoxContainer/Controls/AddConditionButton" to="." method="request_add_fact"]
+[connection signal="item_selected" from="VBoxContainer/Controls/OperandContainer/OperandOptionButton" to="." method="_on_operand_option_button_item_selected"]
+[connection signal="item_selected" from="VBoxContainer/BehaviorContainer/BehaviorButton" to="." method="_on_behavior_button_item_selected"]

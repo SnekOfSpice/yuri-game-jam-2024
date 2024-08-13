@@ -1,0 +1,32 @@
+[gd_scene load_steps=5 format=3 uid="uid://c7bnsg1etl8i7"]
+
+[ext_resource type="Script" path="res://game/characters/one.gd" id="1_a488w"]
+[ext_resource type="Texture2D" uid="uid://btyr0acorq2oy" path="res://game/characters/one.png" id="2_524p1"]
+[ext_resource type="Texture2D" uid="uid://dr6g1qpwimeb" path="res://game/characters/eye.png" id="3_2xmv4"]
+[ext_resource type="Texture2D" uid="uid://d08to1abj86vb" path="res://game/characters/eye-closed.png" id="4_dg1sr"]
+
+[node name="One" type="Node2D"]
+script = ExtResource("1_a488w")
+character_name = "one"
+
+[node name="One" type="Sprite2D" parent="."]
+position = Vector2(74, 53)
+texture = ExtResource("2_524p1")
+
+[node name="EyesOpen" type="Node" parent="."]
+
+[node name="Eye" type="Sprite2D" parent="EyesOpen"]
+texture = ExtResource("3_2xmv4")
+
+[node name="Eye2" type="Sprite2D" parent="EyesOpen"]
+position = Vector2(183, 0)
+texture = ExtResource("3_2xmv4")
+
+[node name="EyesClosed" type="Node" parent="."]
+
+[node name="Eye-closed" type="Sprite2D" parent="EyesClosed"]
+texture = ExtResource("4_dg1sr")
+
+[node name="Eye-closed2" type="Sprite2D" parent="EyesClosed"]
+position = Vector2(183, 0)
+texture = ExtResource("4_dg1sr")

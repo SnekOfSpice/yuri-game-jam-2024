@@ -1,0 +1,288 @@
+[gd_scene load_steps=11 format=3 uid="uid://dktj30rkefkhh"]
+
+[ext_resource type="Script" path="res://addons/diisis/editor/src/choice_edit.gd" id="1_2jptq"]
+[ext_resource type="Theme" uid="uid://jddhsc4auo55" path="res://addons/diisis/editor/visuals/amber_cherryblossom.tres" id="1_vdkak"]
+[ext_resource type="PackedScene" uid="uid://bpuqu3kymqlwb" path="res://addons/diisis/editor/src/conditionals.tscn" id="2_6aqyr"]
+[ext_resource type="PackedScene" uid="uid://c5eu4io5wokaq" path="res://addons/diisis/editor/src/address_select_action_container.tscn" id="2_616tk"]
+[ext_resource type="PackedScene" uid="uid://bgvfjindfxypf" path="res://addons/diisis/editor/src/facts.tscn" id="2_bcn4k"]
+[ext_resource type="Texture2D" uid="uid://cnvacrrdfmqte" path="res://addons/diisis/editor/visuals/cond.png" id="4_x4tpw"]
+[ext_resource type="Texture2D" uid="uid://co44uwwjikn2w" path="res://addons/diisis/editor/visuals/fact.png" id="5_jhtck"]
+[ext_resource type="Texture2D" uid="uid://nakfxqdgr4pg" path="res://addons/diisis/editor/visuals/true.png" id="7_qdd2f"]
+[ext_resource type="Texture2D" uid="uid://cyiecfr2eyp2o" path="res://addons/diisis/editor/visuals/false.png" id="8_ykt7a"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_g0ndw"]
+bg_color = Color(0, 0, 0, 0.064)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0.10891, 0.00364763, 0.0790583, 1)
+border_blend = true
+
+[node name="ChoiceEdit" type="PanelContainer" groups=["diisis_fragile", "diisis_page_view_sensitive"]]
+offset_right = 898.0
+offset_bottom = 167.0
+focus_mode = 2
+theme = ExtResource("1_vdkak")
+theme_override_styles/panel = SubResource("StyleBoxFlat_g0ndw")
+script = ExtResource("1_2jptq")
+
+[node name="ChoiceEdit" type="HBoxContainer" parent="."]
+layout_mode = 2
+
+[node name="AddressSelectActionContainer" parent="ChoiceEdit" node_paths=PackedStringArray("status_panels") instance=ExtResource("2_616tk")]
+layout_mode = 2
+address_depth = 2
+status_panels = [NodePath("../..")]
+
+[node name="MarginContainer" type="MarginContainer" parent="ChoiceEdit"]
+layout_mode = 2
+size_flags_horizontal = 0
+
+[node name="Delete" type="Button" parent="ChoiceEdit/MarginContainer"]
+custom_minimum_size = Vector2(37.05, 38.68)
+layout_mode = 2
+size_flags_vertical = 0
+text = "X"
+
+[node name="MoveChoiceItemContainer" type="MarginContainer" parent="ChoiceEdit"]
+custom_minimum_size = Vector2(32.665, 0)
+layout_mode = 2
+
+[node name="ItemMoveButtons" type="GridContainer" parent="ChoiceEdit/MoveChoiceItemContainer"]
+layout_mode = 2
+
+[node name="UpButton" type="Button" parent="ChoiceEdit/MoveChoiceItemContainer/ItemMoveButtons"]
+layout_mode = 2
+size_flags_horizontal = 3
+focus_mode = 0
+text = "^"
+
+[node name="IndexLabel" type="Label" parent="ChoiceEdit/MoveChoiceItemContainer/ItemMoveButtons"]
+layout_mode = 2
+text = "0"
+horizontal_alignment = 1
+
+[node name="DownButton" type="Button" parent="ChoiceEdit/MoveChoiceItemContainer/ItemMoveButtons"]
+layout_mode = 2
+size_flags_horizontal = 3
+focus_mode = 0
+text = "v"
+
+[node name="VBoxContainer2" type="VBoxContainer" parent="ChoiceEdit"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="VBoxContainer" type="HBoxContainer" parent="ChoiceEdit/VBoxContainer2"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="ConditionalVisibilityToggle" type="CheckButton" parent="ChoiceEdit/VBoxContainer2/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 0
+focus_mode = 0
+icon = ExtResource("4_x4tpw")
+
+[node name="BehaviorContainer" type="GridContainer" parent="ChoiceEdit/VBoxContainer2/VBoxContainer"]
+layout_mode = 2
+columns = 2
+
+[node name="Label" type="Label" parent="ChoiceEdit/VBoxContainer2/VBoxContainer/BehaviorContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 11
+text = "default"
+horizontal_alignment = 1
+
+[node name="DefaultApparenceSelectionButton" type="OptionButton" parent="ChoiceEdit/VBoxContainer2/VBoxContainer/BehaviorContainer"]
+auto_translate_mode = 1
+layout_mode = 2
+tooltip_text = "Default Appearance.
+If no conditional modifies this choice item, you can either have it appear in an enabled or disabled state.
+Text is custom for both states."
+selected = 0
+item_count = 2
+popup/item_0/text = "enabled"
+popup/item_1/text = "disabled"
+popup/item_1/id = 1
+
+[node name="BehaviorAfterFirstLabel" type="Label" parent="ChoiceEdit/VBoxContainer2/VBoxContainer/BehaviorContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 11
+text = "after 1st"
+horizontal_alignment = 1
+
+[node name="BehaviorAfterFirstSelectionButton" type="OptionButton" parent="ChoiceEdit/VBoxContainer2/VBoxContainer/BehaviorContainer"]
+layout_mode = 2
+tooltip_text = "Behavior Override.
+When this option gets presented again beyond the first time (either through loopback or other means), this overrides the conditional and default behaviors, unless Default is set."
+
+[node name="JumpPageToggle" type="CheckBox" parent="ChoiceEdit/VBoxContainer2/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 0
+tooltip_text = "auto_switch"
+focus_mode = 0
+text = "jump page"
+
+[node name="LoopbackToggle" type="CheckBox" parent="ChoiceEdit/VBoxContainer2/VBoxContainer"]
+auto_translate_mode = 1
+layout_mode = 2
+size_flags_vertical = 0
+tooltip_text = "auto_switch"
+focus_mode = 0
+text = "loopback"
+
+[node name="FactsVisibilityToggle" type="CheckButton" parent="ChoiceEdit/VBoxContainer2/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 10
+size_flags_vertical = 0
+focus_mode = 0
+icon = ExtResource("5_jhtck")
+
+[node name="HBoxContainer" type="HBoxContainer" parent="ChoiceEdit/VBoxContainer2"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="Conditionals" parent="ChoiceEdit/VBoxContainer2/HBoxContainer" node_paths=PackedStringArray("visibility_toggle_button") instance=ExtResource("2_6aqyr")]
+layout_mode = 2
+visibility_toggle_button = NodePath("../../VBoxContainer/ConditionalVisibilityToggle")
+address_depth = 2
+
+[node name="JumpPageContainer" type="MarginContainer" parent="ChoiceEdit/VBoxContainer2/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 0
+theme_override_constants/margin_right = 15
+
+[node name="VBoxContainer2" type="VBoxContainer" parent="ChoiceEdit/VBoxContainer2/HBoxContainer/JumpPageContainer"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="ChoiceEdit/VBoxContainer2/HBoxContainer/JumpPageContainer/VBoxContainer2"]
+layout_mode = 2
+text = "jump"
+
+[node name="VBoxContainer" type="GridContainer" parent="ChoiceEdit/VBoxContainer2/HBoxContainer/JumpPageContainer/VBoxContainer2"]
+layout_mode = 2
+columns = 2
+
+[node name="Label2" type="Label" parent="ChoiceEdit/VBoxContainer2/HBoxContainer/JumpPageContainer/VBoxContainer2/VBoxContainer"]
+layout_mode = 2
+text = "P"
+
+[node name="PageSelect" type="SpinBox" parent="ChoiceEdit/VBoxContainer2/HBoxContainer/JumpPageContainer/VBoxContainer2/VBoxContainer"]
+layout_mode = 2
+max_value = 1e+07
+
+[node name="Label" type="Label" parent="ChoiceEdit/VBoxContainer2/HBoxContainer/JumpPageContainer/VBoxContainer2/VBoxContainer"]
+layout_mode = 2
+text = "L"
+
+[node name="LineSelect" type="SpinBox" parent="ChoiceEdit/VBoxContainer2/HBoxContainer/JumpPageContainer/VBoxContainer2/VBoxContainer"]
+auto_translate_mode = 1
+layout_mode = 2
+max_value = 1e+07
+
+[node name="TargetStringLabel" type="Label" parent="ChoiceEdit/VBoxContainer2/HBoxContainer/JumpPageContainer/VBoxContainer2"]
+layout_mode = 2
+horizontal_alignment = 2
+text_overrun_behavior = 1
+
+[node name="LoopbackContainer" type="MarginContainer" parent="ChoiceEdit/VBoxContainer2/HBoxContainer"]
+layout_mode = 2
+
+[node name="VBoxContainer2" type="VBoxContainer" parent="ChoiceEdit/VBoxContainer2/HBoxContainer/LoopbackContainer"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="ChoiceEdit/VBoxContainer2/HBoxContainer/LoopbackContainer/VBoxContainer2"]
+auto_translate_mode = 1
+layout_mode = 2
+text = "loopback"
+
+[node name="VBoxContainer" type="GridContainer" parent="ChoiceEdit/VBoxContainer2/HBoxContainer/LoopbackContainer/VBoxContainer2"]
+auto_translate_mode = 1
+layout_mode = 2
+columns = 2
+
+[node name="Label2" type="Label" parent="ChoiceEdit/VBoxContainer2/HBoxContainer/LoopbackContainer/VBoxContainer2/VBoxContainer"]
+auto_translate_mode = 1
+layout_mode = 2
+text = "P"
+
+[node name="LoopbackPageSelect" type="SpinBox" parent="ChoiceEdit/VBoxContainer2/HBoxContainer/LoopbackContainer/VBoxContainer2/VBoxContainer"]
+auto_translate_mode = 1
+layout_mode = 2
+max_value = 1e+07
+
+[node name="Label" type="Label" parent="ChoiceEdit/VBoxContainer2/HBoxContainer/LoopbackContainer/VBoxContainer2/VBoxContainer"]
+auto_translate_mode = 1
+layout_mode = 2
+text = "L"
+
+[node name="LoopbackLineSelect" type="SpinBox" parent="ChoiceEdit/VBoxContainer2/HBoxContainer/LoopbackContainer/VBoxContainer2/VBoxContainer"]
+auto_translate_mode = 1
+layout_mode = 2
+max_value = 1e+07
+
+[node name="LoopbackTargetStringLabel" type="Label" parent="ChoiceEdit/VBoxContainer2/HBoxContainer/LoopbackContainer/VBoxContainer2"]
+auto_translate_mode = 1
+layout_mode = 2
+horizontal_alignment = 2
+text_overrun_behavior = 1
+
+[node name="VBoxContainer" type="VBoxContainer" parent="ChoiceEdit/VBoxContainer2/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="TextLines" type="GridContainer" parent="ChoiceEdit/VBoxContainer2/HBoxContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+columns = 2
+
+[node name="DefaultEnabledTexture" type="TextureRect" parent="ChoiceEdit/VBoxContainer2/HBoxContainer/VBoxContainer/TextLines"]
+layout_mode = 2
+texture = ExtResource("7_qdd2f")
+stretch_mode = 2
+
+[node name="LineEditEnabled" type="LineEdit" parent="ChoiceEdit/VBoxContainer2/HBoxContainer/VBoxContainer/TextLines"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 0
+placeholder_text = "[EMPTY] Text when enabled"
+caret_blink = true
+caret_blink_interval = 0.5
+
+[node name="DefaultDisabledTexture" type="TextureRect" parent="ChoiceEdit/VBoxContainer2/HBoxContainer/VBoxContainer/TextLines"]
+auto_translate_mode = 1
+layout_mode = 2
+texture = ExtResource("8_ykt7a")
+stretch_mode = 2
+
+[node name="LineEditDisabled" type="LineEdit" parent="ChoiceEdit/VBoxContainer2/HBoxContainer/VBoxContainer/TextLines"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 0
+placeholder_text = "[EMPTY] Text when disabled"
+caret_blink = true
+caret_blink_interval = 0.5
+
+[node name="DefaultTextEmptyWarningLabel" type="Label" parent="ChoiceEdit/VBoxContainer2/HBoxContainer/VBoxContainer"]
+layout_mode = 2
+text = "Default text is empty!"
+
+[node name="Facts" parent="ChoiceEdit/VBoxContainer2/HBoxContainer" node_paths=PackedStringArray("visibility_toggle_button") instance=ExtResource("2_bcn4k")]
+layout_mode = 2
+visibility_toggle_button = NodePath("../../VBoxContainer/FactsVisibilityToggle")
+address_depth = 2
+
+[connection signal="pressed" from="ChoiceEdit/MarginContainer/Delete" to="." method="_on_delete_pressed"]
+[connection signal="pressed" from="ChoiceEdit/MoveChoiceItemContainer/ItemMoveButtons/UpButton" to="." method="_on_up_button_pressed"]
+[connection signal="pressed" from="ChoiceEdit/MoveChoiceItemContainer/ItemMoveButtons/DownButton" to="." method="_on_down_button_pressed"]
+[connection signal="item_selected" from="ChoiceEdit/VBoxContainer2/VBoxContainer/BehaviorContainer/DefaultApparenceSelectionButton" to="." method="_on_default_apparence_selection_button_item_selected"]
+[connection signal="toggled" from="ChoiceEdit/VBoxContainer2/VBoxContainer/JumpPageToggle" to="." method="_on_jump_page_toggle_toggled"]
+[connection signal="toggled" from="ChoiceEdit/VBoxContainer2/VBoxContainer/LoopbackToggle" to="." method="_on_loopback_toggle_toggled"]
+[connection signal="value_changed" from="ChoiceEdit/VBoxContainer2/HBoxContainer/JumpPageContainer/VBoxContainer2/VBoxContainer/PageSelect" to="." method="_on_page_select_value_changed"]
+[connection signal="value_changed" from="ChoiceEdit/VBoxContainer2/HBoxContainer/JumpPageContainer/VBoxContainer2/VBoxContainer/LineSelect" to="." method="_on_line_select_value_changed"]
+[connection signal="value_changed" from="ChoiceEdit/VBoxContainer2/HBoxContainer/LoopbackContainer/VBoxContainer2/VBoxContainer/LoopbackPageSelect" to="." method="_on_loopback_page_select_value_changed"]
+[connection signal="value_changed" from="ChoiceEdit/VBoxContainer2/HBoxContainer/LoopbackContainer/VBoxContainer2/VBoxContainer/LoopbackLineSelect" to="." method="_on_loopback_line_select_value_changed"]
+[connection signal="text_changed" from="ChoiceEdit/VBoxContainer2/HBoxContainer/VBoxContainer/TextLines/LineEditEnabled" to="." method="_on_line_edit_enabled_text_changed"]
+[connection signal="text_changed" from="ChoiceEdit/VBoxContainer2/HBoxContainer/VBoxContainer/TextLines/LineEditDisabled" to="." method="_on_line_edit_disabled_text_changed"]

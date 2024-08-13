@@ -1,0 +1,1 @@
+res://.diisis/script.json
