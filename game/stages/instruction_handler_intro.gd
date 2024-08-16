@@ -15,6 +15,7 @@ signal start_show_cg(
 	on_top:bool)
 
 signal start_hide_cg()
+signal start_chapter_cover(pov_name:String)
 
 func play_sfx(_name:String):
 	Sound.play_sfx(CONST.get(str("SFX_", _name.to_upper())))
@@ -61,3 +62,8 @@ func set_background(_name:String, fade_time:float):
 				fade_time
 			)
 	return false
+
+
+func play_chapter_intro(pov_name: String, bottom_text:String) -> bool:
+	emit_signal("start_chapter_cover", pov_name, bottom_text)
+	return true

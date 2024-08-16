@@ -28,6 +28,12 @@ Pages="*res://addons/diisis/editor/autoload/pages.tscn"
 DiisisEditorUtil="*res://addons/diisis/editor/autoload/diisis_editor_util.tscn"
 DiisisEditorActions="*res://addons/diisis/editor/autoload/diisis_editor_actions.tscn"
 
+[display]
+
+window/size/viewport_width=1440
+window/size/viewport_height=900
+window/stretch/mode="canvas_items"
+
 [editor_plugins]
 
 enabled=PackedStringArray("res://addons/diisis/plugin.cfg")

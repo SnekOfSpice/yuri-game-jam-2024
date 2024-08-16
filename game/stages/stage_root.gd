@@ -35,7 +35,7 @@ func set_screen(screen_path:String):
 	screen = screen_path
 
 func set_background(background:String, fade_time:=0.0):
-	var new_background:Node
+	var new_background:Node2D
 	var old_backgrounds:=$Background.get_children()
 	if background.ends_with(".png"):
 		new_background = Sprite2D.new()
@@ -48,6 +48,17 @@ func set_background(background:String, fade_time:=0.0):
 		return
 	new_background.modulate.a = 0.0
 	$Background.add_child(new_background)
+	
+	var viewport_height = ProjectSettings.get_setting("display/window/size/viewport_height")
+	var viewport_width = ProjectSettings.get_setting("display/window/size/viewport_width")
+	var background_size := Vector2.ZERO
+	if new_background is Sprite2D:
+		background_size = new_background.texture.get_size()
+	elif new_background.has_method("get_size"):
+		background_size = new_background.get_size()
+	if background_size.x > viewport_width and background_size.y > viewport_height:
+		prints("oversized", background_size)
+		
 	
 	var fade_tween := get_tree().create_tween()
 	fade_tween.tween_property(new_background, "modulate:a", 1.0, fade_time)

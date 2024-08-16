@@ -1,15 +1,17 @@
-[gd_scene load_steps=11 format=3 uid="uid://r1ntcqdujfol"]
+[gd_scene load_steps=13 format=3 uid="uid://r1ntcqdujfol"]
 
 [ext_resource type="Script" path="res://game/stages/game_stage.gd" id="1_a36me"]
 [ext_resource type="Script" path="res://addons/diisis/parser/src/line_reader.gd" id="1_h4afo"]
 [ext_resource type="FontFile" uid="uid://dy8rsqmwhxjp6" path="res://addons/diisis/editor/visuals/fonts/TT Chocolates Trial Bold.otf" id="2_6jeks"]
 [ext_resource type="PackedScene" uid="uid://c7bnsg1etl8i7" path="res://game/characters/one.tscn" id="2_15g65"]
+[ext_resource type="PackedScene" uid="uid://chfbyvpvah4eu" path="res://game/characters/character.tscn" id="3_5aep6"]
 [ext_resource type="Script" path="res://game/stages/instruction_handler_intro.gd" id="4_u8vmc"]
 [ext_resource type="Texture2D" uid="uid://delwppkladi0u" path="res://addons/diisis/editor/visuals/more.svg" id="5_7sulw"]
 [ext_resource type="Script" path="res://game/diisis_integration/inline_eval.gd" id="6_8ao3j"]
 [ext_resource type="Texture2D" uid="uid://bh7mo1v26xtqq" path="res://addons/diisis/editor/visuals/helpZeichenfläche 3.png" id="6_mh4vb"]
 [ext_resource type="PackedScene" uid="uid://qkegdwc8ux5o" path="res://game/stages/black_fade.tscn" id="8_50byo"]
 [ext_resource type="Script" path="res://game/stages/game_camera.gd" id="9_lbjue"]
+[ext_resource type="PackedScene" uid="uid://cjy7vf1xrnq5y" path="res://game/screens/chapter_cover.tscn" id="12_vf2y4"]
 
 [node name="GameStage" type="Control"]
 layout_mode = 3
@@ -25,6 +27,10 @@ script = ExtResource("1_a36me")
 
 [node name="One" parent="Characters" instance=ExtResource("2_15g65")]
 position = Vector2(215, 337)
+
+[node name="Anhedonia" parent="Characters" instance=ExtResource("3_5aep6")]
+position = Vector2(738, 412)
+character_name = "anhedonia"
 
 [node name="CGBottomContainer" type="Control" parent="."]
 auto_translate_mode = 1
@@ -190,8 +196,14 @@ mouse_filter = 2
 script = ExtResource("1_h4afo")
 blank_names = Array[String](["narrator"])
 name_map = {
-"amber": "Amber",
-"eterna": "Eterna"
+"anhedonia": "Anhedonia",
+"one": "One",
+"spectra": "Spectra"
+}
+name_colors = {
+"anhedonia": Color(0.98185, 0.717259, 0.904946, 1),
+"one": Color(0.8, 0.144, 0.253334, 1),
+"spectra": Color(0.157347, 0.679059, 0.74132, 1)
 }
 choice_container = NodePath("../VNUI/ChoiceContainer")
 choice_option_container = NodePath("../VNUI/ChoiceContainer/VBoxContainer")
@@ -253,9 +265,19 @@ position = Vector2(509, 409)
 [node name="TextPositionEterna" type="Node2D" parent="."]
 position = Vector2(971, 409)
 
+[node name="ChapterCover" parent="." instance=ExtResource("12_vf2y4")]
+visible = false
+layout_mode = 1
+
 [connection signal="ready" from="Characters/One" to="." method="remove_blocker"]
+[connection signal="ready" from="Characters/Anhedonia" to="." method="remove_blocker"]
 [connection signal="meta_clicked" from="VNUI/TextContainer/MarginContainer/VBoxContainer/Panel/RichTextLabel" to="." method="_on_rich_text_label_meta_clicked"]
 [connection signal="meta_hover_ended" from="VNUI/TextContainer/MarginContainer/VBoxContainer/Panel/RichTextLabel" to="." method="_on_rich_text_label_meta_hover_ended"]
 [connection signal="meta_hover_started" from="VNUI/TextContainer/MarginContainer/VBoxContainer/Panel/RichTextLabel" to="." method="_on_rich_text_label_meta_hover_started"]
 [connection signal="pressed" from="VNUI/ControlsContainer/HistoryButton" to="." method="_on_history_button_pressed"]
 [connection signal="pressed" from="VNUI/ControlsContainer/MenuButton" to="." method="_on_menu_button_pressed"]
+[connection signal="start_black_fade" from="InstructionHandler" to="BlackFade" method="_on_handler_start_black_fade"]
+[connection signal="start_chapter_cover" from="InstructionHandler" to="ChapterCover" method="set_chapter_cover"]
+[connection signal="start_hide_cg" from="InstructionHandler" to="." method="hide_cg"]
+[connection signal="start_show_cg" from="InstructionHandler" to="." method="_on_handler_start_show_cg"]
+[connection signal="chapter_intro_finished" from="ChapterCover" to="." method="_on_chapter_cover_chapter_intro_finished"]

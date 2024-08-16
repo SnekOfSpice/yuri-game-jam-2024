@@ -14,10 +14,11 @@ const SCREEN_CREDITS := "credits.tscn"
 const SCREEN_CONTENT_WARNING := "cw.tscn"
 
 const BACKGROUND_ROOT := "res://game/backgrounds/"
-const BACKGROUND_WORKSHOP := "workshop.png"
+const BACKGROUND_HOME_REGULAR := "home_regular.png"
+const BACKGROUND_FIELD := "field/Field.tscn"
 
 const MUSIC_ROOT := "res://game/sounds/music/"
 const MUSIC_MAIN_MENU := "YOUR_MUSIC_HERE.wav"
 
 const SFX_ROOT := "res://game/sounds/sfx/"
-const SFX_HELLO := "YOUR_SFX_HERE.ogg"
+const SFX_GUNSHOT := "417345__inspectorj__gunshot-distant-a.ogg"

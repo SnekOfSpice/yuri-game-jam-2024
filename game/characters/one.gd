@@ -2,13 +2,20 @@ extends Character
 
 
 var blink_intervals := []
+var eyelids := []
 var eye_progress := 0
 
+var blink_range := Vector2(2, 4)
+
 func _ready() -> void:
-	for child in $Eyes.get_child_count():
-		blink_intervals.append(randf_range(20, 25))
-	for child : Sprite2D in $Eyes.get_children():
-		child.visible = false
+	blink_intervals.clear()
+	eyelids.clear()
+	for eye : Sprite2D in $Eyes.get_children():
+		for eyelid in eye.get_children():
+			blink_intervals.append(randf_range(blink_range.x, blink_range.y))
+			eyelids.append(eyelid)
+			eyelid.visible = false
+		eye.visible = false
 	set_eye_progress(2)
 
 func _process(delta: float) -> void:
@@ -16,10 +23,10 @@ func _process(delta: float) -> void:
 	while blink_index < blink_intervals.size():
 		blink_intervals[blink_index] -= delta
 		if blink_intervals[blink_index] <= 0:
-			blink_intervals[blink_index] = randf_range(20, 25)
-			var eyelid : Sprite2D = $Eyes.get_child(blink_index).get_child(0)
+			blink_intervals[blink_index] = randf_range(blink_range.x, blink_range.y)
+			var eyelid : Sprite2D = eyelids[blink_index]
 			eyelid.visible = true
-			var t = get_tree().create_timer(0.3)
+			var t = get_tree().create_timer(randf_range(0.25, 0.35))
 			t.timeout.connect(eyelid.set.bind("visible", false))
 		blink_index += 1
 

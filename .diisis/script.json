@@ -5,17 +5,33 @@
 		"text_size_id": 3
 	},
 	"pages": {
-		"dropdown_dialog_arguments": [],
+		"dropdown_dialog_arguments": [
+			"anhedonia-emotion",
+			"one-emotion"
+		],
 		"dropdown_title_for_dialog_syntax": "character",
 		"dropdown_titles": [
-			"character"
+			"character",
+			"anhedonia-emotion",
+			"one-emotion"
 		],
 		"dropdowns": {
+			"anhedonia-emotion": [
+				"neutral",
+				"flirty",
+				"dismissive",
+				"shock",
+				"sad"
+			],
 			"character": [
 				"anhedonia",
 				"one",
 				"spectra",
 				"narrator"
+			],
+			"one-emotion": [
+				"neutral",
+				"crying"
 			]
 		},
 		"empty_strings_for_l10n": false,
@@ -29,15 +45,95 @@
 		},
 		"head_defaults": [],
 		"instruction_templates": {
-			"rotate": {
+			"black_fade": {
+				"arg_types": [
+					"float",
+					"float",
+					"float",
+					"bool",
+					"string",
+					"string"
+				],
+				"args": [
+					"fade_in",
+					"hold_time",
+					"fade_out",
+					"hide_characters",
+					"new_background",
+					"new_bgm"
+				]
+			},
+			"hide_cg": {
+				"arg_types": [],
+				"args": []
+			},
+			"play_chapter_intro": {
+				"arg_types": [
+					"string",
+					"string"
+				],
+				"args": [
+					"pov_name",
+					"bottom_text"
+				]
+			},
+			"play_sfx": {
+				"arg_types": [
+					"string"
+				],
+				"args": [
+					"name"
+				]
+			},
+			"set_background": {
+				"arg_types": [
+					"string",
+					"float"
+				],
+				"args": [
+					"name",
+					"fade_time"
+				]
+			},
+			"set_bgm": {
+				"arg_types": [
+					"string",
+					"float"
+				],
+				"args": [
+					"name",
+					"fade_in"
+				]
+			},
+			"set_eye_progress": {
 				"arg_types": [
 					"float"
 				],
 				"args": [
-					"angle"
+					"value"
 				]
 			},
-			"show-character": {
+			"set_text_style": {
+				"arg_types": [
+					"string"
+				],
+				"args": [
+					"style"
+				]
+			},
+			"show_cg": {
+				"arg_types": [
+					"string",
+					"float",
+					"bool"
+				],
+				"args": [
+					"name",
+					"fade_in_time",
+					"continue_dialog_through_cg"
+				]
+			},
+			"show_character": {
 				"arg_types": [
 					"string",
 					"bool"
@@ -148,6 +244,50 @@
 							"operand_key": "AND"
 						},
 						"content": {
+							"delay_after": 0,
+							"delay_before": 0,
+							"line_reader.args": [
+								"anhedonia",
+								"EMPTY"
+							],
+							"meta.text": "play_chapter_intro(anhedonia, EMPTY)",
+							"meta.validation_status": "OK",
+							"name": "play_chapter_intro"
+						},
+						"facts": {
+							"fact_data_by_name": {
+
+							},
+							"meta.visible": false
+						},
+						"header": [],
+						"line_type": 2,
+						"meta.conditionals_visible": false,
+						"meta.facts_visible": false,
+						"meta.indent_level": 0,
+						"meta.is_head_editable": false,
+						"meta.line_index": 0,
+						"meta.selector": {
+							"selected": false
+						}
+					},
+					{
+						"address": "0.1",
+						"conditionals": {
+							"behavior": 0,
+							"behavior_key": "Show",
+							"facts": {
+								"fact_data_by_name": {
+
+								},
+								"meta.visible": false
+							},
+							"meta.visible": false,
+							"operand": 0,
+							"operand_args": [],
+							"operand_key": "AND"
+						},
+						"content": {
 							"active_actors": [
 								"anhedonia",
 								"one",
@@ -155,7 +295,610 @@
 								"narrator"
 							],
 							"active_actors_title": "character",
-							"content": "[]>anhedonia:yay"
+							"content": "[]>narrator:It has been months since you last saw her. Standing in the empty and wide-open driveway of the prison complex, you have sought shelter from the burning sun overhead under the solitary tree that is still groaning under the weight of its death here. The field surrounding the concrete walls is dry during summer. Ash- and pottery-colored weeds adorn the endless expanse of earth here.<lc>the call of cicadas rips through the air around you. These insects have been your only company for hours now. One was supposed to be released before noon. <mp>The sun is well past its zenith now.\n[]>narrator:DRAW OUT THE WAIT MORE\n[]>anhedonia{anhedonia-emotion|dismissive}:Good thing I packed so many  water bottles. This is getting ridiculous.\n[]>narrator:You take another gulp from the silicone vessel.<lc>As the afternoon stretches out, the silence is eventually broken."
+						},
+						"facts": {
+							"fact_data_by_name": {
+
+							},
+							"meta.visible": false
+						},
+						"header": [],
+						"line_type": 0,
+						"meta.conditionals_visible": false,
+						"meta.facts_visible": false,
+						"meta.indent_level": 0,
+						"meta.is_head_editable": false,
+						"meta.line_index": 1,
+						"meta.selector": {
+							"selected": false
+						}
+					},
+					{
+						"address": "0.2",
+						"conditionals": {
+							"behavior": 0,
+							"behavior_key": "Show",
+							"facts": {
+								"fact_data_by_name": {
+
+								},
+								"meta.visible": false
+							},
+							"meta.visible": false,
+							"operand": 0,
+							"operand_args": [],
+							"operand_key": "AND"
+						},
+						"content": {
+							"delay_after": 0,
+							"delay_before": 0,
+							"line_reader.args": [
+								"gunshot"
+							],
+							"meta.text": "play_sfx(gunshot)",
+							"meta.validation_status": "OK",
+							"name": "play_sfx"
+						},
+						"facts": {
+							"fact_data_by_name": {
+
+							},
+							"meta.visible": false
+						},
+						"header": [],
+						"line_type": 2,
+						"meta.conditionals_visible": false,
+						"meta.facts_visible": false,
+						"meta.indent_level": 0,
+						"meta.is_head_editable": false,
+						"meta.line_index": 2,
+						"meta.selector": {
+							"selected": false
+						}
+					},
+					{
+						"address": "0.3",
+						"conditionals": {
+							"behavior": 0,
+							"behavior_key": "Show",
+							"facts": {
+								"fact_data_by_name": {
+
+								},
+								"meta.visible": false
+							},
+							"meta.visible": false,
+							"operand": 0,
+							"operand_args": [],
+							"operand_key": "AND"
+						},
+						"content": {
+							"active_actors": [
+								"anhedonia",
+								"one",
+								"spectra",
+								"narrator"
+							],
+							"active_actors_title": "character",
+							"content": "[]>narrator{anhedonia-emotion|shock}:Immediately, a bolt runs up your spine, visions of One's brains splattered across the concrete walls on the other side. When the echo has fled into the distance, the cicada's song returns to dominate the soundscape. And then, a few minutes later, the main gate opens, and One stands there, duffel bag in hand, stature as broken as ever.<lc>You leave your backpack behind, run up to her, and just as she can react and drop her own bag, you're in each other's arms once again.\n[]>anhedonia{anhedonia-emotion|flirty}:I missed you. "
+						},
+						"facts": {
+							"fact_data_by_name": {
+
+							},
+							"meta.visible": false
+						},
+						"header": [],
+						"line_type": 0,
+						"meta.conditionals_visible": false,
+						"meta.facts_visible": false,
+						"meta.indent_level": 0,
+						"meta.is_head_editable": false,
+						"meta.line_index": 3,
+						"meta.selector": {
+							"selected": false
+						}
+					}
+				],
+				"meta.scroll_vertical": 0,
+				"meta.selected": false,
+				"next": 1,
+				"number": 0,
+				"page_key": "pick up from prison",
+				"terminate": false
+			},
+			"1": {
+				"facts": {
+					"fact_data_by_name": {
+
+					},
+					"meta.visible": false
+				},
+				"lines": [
+					{
+						"address": "1.0",
+						"conditionals": {
+							"behavior": 0,
+							"behavior_key": "Show",
+							"facts": {
+								"fact_data_by_name": {
+
+								},
+								"meta.visible": false
+							},
+							"meta.visible": false,
+							"operand": 0,
+							"operand_args": [],
+							"operand_key": "AND"
+						},
+						"content": {
+							"active_actors": [
+								"anhedonia",
+								"one",
+								"spectra",
+								"narrator"
+							],
+							"active_actors_title": "character",
+							"content": "[]>narrator:the bus ride home is barely one at all. your eyes are fixated on each other the entire time. legs pressing against each other, fingers interlocked and kisses exchanged. some perhaps too intense for public consumption. <lc> you don't care.\n[]>one: it's insane how quickly the tides of emotion can sway.\n[]>anhedonia: oh so eloquent.\n[]>one: yiu pick up many skills to stop you from going insane in there.\n[]>one:..\n[]>anhedonia:...\n[]>one:.. so yes...\n[]>anhedonia: where were we?\n[]>one:.. ummm..\n[]>anhedonia:...tides of emotion!\n[]>one: yes!\n[]>anhedonia: are our cycles still synced up?\n[]>one: I think I'm about to have my period? I still haven't started bothering to track it\n[]>anhedonia: then were definitely out of rhythm...<lc>...\n[]>one: why?\n[]>anhedonia: because I'm starting tk ovulate and being so close to you is... making it difficult to thing of much else....\n[]>one:...\n[]>narrator:you glance at the bus display overhead, crystalline gasses flickering into shape.\n[]>anhedonia: should be there in 17 minutes.\n[]>narrator:you press into One for another kiss, like planting a banner on this vessel of decrepit public transit: we are fucking gay."
+						},
+						"facts": {
+							"fact_data_by_name": {
+
+							},
+							"meta.visible": false
+						},
+						"header": [],
+						"line_type": 0,
+						"meta.conditionals_visible": false,
+						"meta.facts_visible": false,
+						"meta.indent_level": 0,
+						"meta.is_head_editable": false,
+						"meta.line_index": 0,
+						"meta.selector": {
+							"selected": false
+						}
+					},
+					{
+						"address": "1.1",
+						"conditionals": {
+							"behavior": 0,
+							"behavior_key": "Show",
+							"facts": {
+								"fact_data_by_name": {
+
+								},
+								"meta.visible": false
+							},
+							"meta.visible": false,
+							"operand": 0,
+							"operand_args": [],
+							"operand_key": "AND"
+						},
+						"content": {
+							"delay_after": 0,
+							"delay_before": 0,
+							"line_reader.args": [
+								"home_regular",
+								1
+							],
+							"meta.text": "set_background(home_regular, 1.0)",
+							"meta.validation_status": "OK",
+							"name": "set_background"
+						},
+						"facts": {
+							"fact_data_by_name": {
+
+							},
+							"meta.visible": false
+						},
+						"header": [],
+						"line_type": 2,
+						"meta.conditionals_visible": false,
+						"meta.facts_visible": false,
+						"meta.indent_level": 0,
+						"meta.is_head_editable": false,
+						"meta.line_index": 1,
+						"meta.selector": {
+							"selected": false
+						}
+					},
+					{
+						"address": "1.2",
+						"conditionals": {
+							"behavior": 0,
+							"behavior_key": "Show",
+							"facts": {
+								"fact_data_by_name": {
+
+								},
+								"meta.visible": false
+							},
+							"meta.visible": false,
+							"operand": 0,
+							"operand_args": [],
+							"operand_key": "AND"
+						},
+						"content": {
+							"active_actors": [
+								"anhedonia",
+								"one",
+								"spectra",
+								"narrator"
+							],
+							"active_actors_title": "character",
+							"content": "[]>anhedonia:I know we sent many letter over this... <mp>But I need to ask you in person too.\n[]>one:...\n[]>anhedonia:you're not upset at me?\n[]>one:you kept mu sculptures safe, didn't you?\n[]>anhedonia:...<lc>I did.\n[]>one:then everything is the way it should be \n[]>anhedonia:I cost you two and a half years of your life.\n[]>anhedonia:I...<ap> I didn't manage to protect you from the one thing I promised to protect you from.\n[]>one:...\n[]>anhedonia:...\n[]>one:I wasn't killed.\n[]>anhedonia:...\n[]>narrator:Choking through tears, One suddenly collapses into your chest.\n[]>one{one-emotion|crying}:... don't... don't let me be killed by them.\n[]>anhedonia: I... try...\n[]>one:can this be part of your promise?\n[]>anhedonia:... <lc> i don't want to fail again...\n[]>one:then don't.\n[]>anhedonia:... I promise. <mp>No death at the hands of the state."
+						},
+						"facts": {
+							"fact_data_by_name": {
+
+							},
+							"meta.visible": false
+						},
+						"header": [],
+						"line_type": 0,
+						"meta.conditionals_visible": false,
+						"meta.facts_visible": false,
+						"meta.indent_level": 0,
+						"meta.is_head_editable": false,
+						"meta.line_index": 2,
+						"meta.selector": {
+							"selected": false
+						}
+					}
+				],
+				"meta.scroll_vertical": 82,
+				"meta.selected": false,
+				"next": 2,
+				"number": 1,
+				"page_key": "Bus ride home from prison",
+				"terminate": false
+			},
+			"2": {
+				"facts": {
+					"fact_data_by_name": {
+
+					},
+					"meta.visible": false
+				},
+				"lines": [
+					{
+						"address": "1.0",
+						"conditionals": {
+							"behavior": 0,
+							"behavior_key": "Show",
+							"facts": {
+								"fact_data_by_name": {
+
+								},
+								"meta.visible": false
+							},
+							"meta.visible": false,
+							"operand": 0,
+							"operand_args": [],
+							"operand_key": "AND"
+						},
+						"content": {
+							"delay_after": 0,
+							"delay_before": 0,
+							"line_reader.args": [
+								"one",
+								"No More Inoculants"
+							],
+							"meta.text": "play_chapter_intro(one, No More Inoculants)",
+							"meta.validation_status": "OK",
+							"name": "play_chapter_intro"
+						},
+						"facts": {
+							"fact_data_by_name": {
+
+							},
+							"meta.visible": false
+						},
+						"header": [],
+						"line_type": 2,
+						"meta.conditionals_visible": false,
+						"meta.facts_visible": false,
+						"meta.indent_level": 0,
+						"meta.is_head_editable": false,
+						"meta.line_index": 0,
+						"meta.selector": {
+							"selected": false
+						}
+					},
+					{
+						"address": "1.1",
+						"conditionals": {
+							"behavior": 0,
+							"behavior_key": "Show",
+							"facts": {
+								"fact_data_by_name": {
+
+								},
+								"meta.visible": false
+							},
+							"meta.visible": false,
+							"operand": 0,
+							"operand_args": [],
+							"operand_key": "AND"
+						},
+						"content": {
+							"active_actors": [
+								"anhedonia",
+								"one",
+								"spectra",
+								"narrator"
+							],
+							"active_actors_title": "character",
+							"content": "[]>one: thank you for keeping me safe all this time. stable.\n[]>anhedonia: gladly.\n[]>one:... but you know my souls burns for something more\n[]>anhedonia{anhedonia-emotion|sad}:...Yes.\n[]>one: no more inoculants."
+						},
+						"facts": {
+							"fact_data_by_name": {
+
+							},
+							"meta.visible": false
+						},
+						"header": [],
+						"line_type": 0,
+						"meta.conditionals_visible": false,
+						"meta.facts_visible": false,
+						"meta.indent_level": 0,
+						"meta.is_head_editable": false,
+						"meta.line_index": 1,
+						"meta.selector": {
+							"selected": false
+						}
+					}
+				],
+				"meta.scroll_vertical": 0,
+				"meta.selected": false,
+				"next": 3,
+				"number": 2,
+				"page_key": "First day after pickup",
+				"terminate": false
+			},
+			"3": {
+				"facts": {
+					"fact_data_by_name": {
+
+					},
+					"meta.visible": false
+				},
+				"lines": [
+					{
+						"address": "2.0",
+						"conditionals": {
+							"behavior": 0,
+							"behavior_key": "Show",
+							"facts": {
+								"fact_data_by_name": {
+
+								},
+								"meta.visible": false
+							},
+							"meta.visible": false,
+							"operand": 0,
+							"operand_args": [],
+							"operand_key": "AND"
+						},
+						"content": {
+							"active_actors": [
+								"anhedonia",
+								"one",
+								"spectra",
+								"narrator"
+							],
+							"active_actors_title": "character",
+							"content": "[]>narrator:Insert Domestic Yuri"
+						},
+						"facts": {
+							"fact_data_by_name": {
+
+							},
+							"meta.visible": false
+						},
+						"header": [],
+						"line_type": 0,
+						"meta.conditionals_visible": false,
+						"meta.facts_visible": false,
+						"meta.indent_level": 0,
+						"meta.is_head_editable": false,
+						"meta.line_index": 0,
+						"meta.selector": {
+							"selected": false
+						}
+					}
+				],
+				"meta.scroll_vertical": 0,
+				"meta.selected": false,
+				"next": 4,
+				"number": 3,
+				"page_key": "",
+				"terminate": false
+			},
+			"4": {
+				"facts": {
+					"fact_data_by_name": {
+
+					},
+					"meta.visible": false
+				},
+				"lines": [
+					{
+						"address": "3.0",
+						"conditionals": {
+							"behavior": 0,
+							"behavior_key": "Show",
+							"facts": {
+								"fact_data_by_name": {
+
+								},
+								"meta.visible": false
+							},
+							"meta.visible": false,
+							"operand": 0,
+							"operand_args": [],
+							"operand_key": "AND"
+						},
+						"content": {
+							"active_actors": [
+								"anhedonia",
+								"one",
+								"spectra",
+								"narrator"
+							],
+							"active_actors_title": "character",
+							"content": "[]>narrator: !! EYES ARE STARTING TO EMERGE AGAIN!! you wake up. the strings of time taut through the air above spell out the time: 8th gold, 1st earth. The time before time. the twilight of non-dusk. after over two years, this is almost a new sensation again. clarity marks your mind. this is the 8912th solar cycle of your life. \nanhedonia's shell lies next to you, back turned, and her soul is screaming in square waves. she has always been loud inside.\n[]>narrator:with a searing pain trveling up your spine, arms, and torso, you lie awake. multitudinous eternities pass, and the camera switches to a side profile of you. your own eyes are fixated towards the ceiling, staring holes into the air."
+						},
+						"facts": {
+							"fact_data_by_name": {
+
+							},
+							"meta.visible": false
+						},
+						"header": [],
+						"line_type": 0,
+						"meta.conditionals_visible": false,
+						"meta.facts_visible": false,
+						"meta.indent_level": 0,
+						"meta.is_head_editable": false,
+						"meta.line_index": 0,
+						"meta.selector": {
+							"selected": false
+						}
+					},
+					{
+						"address": "3.1",
+						"conditionals": {
+							"behavior": 0,
+							"behavior_key": "Show",
+							"facts": {
+								"fact_data_by_name": {
+
+								},
+								"meta.visible": false
+							},
+							"meta.visible": false,
+							"operand": 0,
+							"operand_args": [],
+							"operand_key": "AND"
+						},
+						"content": {
+							"delay_after": 0,
+							"delay_before": 0,
+							"line_reader.args": [
+								3,
+								2,
+								3,
+								false,
+								"none",
+								"none"
+							],
+							"meta.text": "black_fade(3.0, 2.0, 3.0, false, none, none)",
+							"meta.validation_status": "OK",
+							"name": "black_fade"
+						},
+						"facts": {
+							"fact_data_by_name": {
+
+							},
+							"meta.visible": false
+						},
+						"header": [],
+						"line_type": 2,
+						"meta.conditionals_visible": false,
+						"meta.facts_visible": false,
+						"meta.indent_level": 0,
+						"meta.is_head_editable": false,
+						"meta.line_index": 1,
+						"meta.selector": {
+							"selected": false
+						}
+					},
+					{
+						"address": "3.2",
+						"conditionals": {
+							"behavior": 0,
+							"behavior_key": "Show",
+							"facts": {
+								"fact_data_by_name": {
+
+								},
+								"meta.visible": false
+							},
+							"meta.visible": false,
+							"operand": 0,
+							"operand_args": [],
+							"operand_key": "AND"
+						},
+						"content": {
+							"active_actors": [
+								"anhedonia",
+								"one",
+								"spectra",
+								"narrator"
+							],
+							"active_actors_title": "character",
+							"content": "[]>narrator:eventually, anhedonia awakes.\n[]>anhedonia: (sleepy emotion) mgnnmngm....\n[]>one: ...\n[]>narrator: she turns towards you, her perlecescent eyes meeting you. a dull shimmer in this rolling-shutter-dressed room.\n[]>anhedonia: moog monnin... good morning...\n[]>narrator: gently, softly, you climb on top of her, and with the fidelity of a silk veil, you taste her lips. your raging soul fire calms down, becomes a mane only for you to see, and when anhedonia embraces you, holds you, you melt into her.\n[]>narrator:internally, you cry a river of blood. your period will be in two weeks. so much blood wasted. anhedonia helps you not waste any of it. nourishment for her. this divine nectar, laced with the understanding of a realm only accessed by sacrifice. anhedonia eagerly partakes. the squelching of involuntary blinks from the godeyes are wet enough to make your soul hiss"
+						},
+						"facts": {
+							"fact_data_by_name": {
+
+							},
+							"meta.visible": false
+						},
+						"header": [],
+						"line_type": 0,
+						"meta.conditionals_visible": false,
+						"meta.facts_visible": false,
+						"meta.indent_level": 0,
+						"meta.is_head_editable": false,
+						"meta.line_index": 2,
+						"meta.selector": {
+							"selected": false
+						}
+					}
+				],
+				"meta.scroll_vertical": 0,
+				"meta.selected": false,
+				"next": 5,
+				"number": 4,
+				"page_key": "",
+				"terminate": false
+			},
+			"5": {
+				"facts": {
+					"fact_data_by_name": {
+
+					},
+					"meta.visible": false
+				},
+				"lines": [
+					{
+						"address": "4.0",
+						"conditionals": {
+							"behavior": 0,
+							"behavior_key": "Show",
+							"facts": {
+								"fact_data_by_name": {
+
+								},
+								"meta.visible": false
+							},
+							"meta.visible": false,
+							"operand": 0,
+							"operand_args": [],
+							"operand_key": "AND"
+						},
+						"content": {
+							"active_actors": [
+								"anhedonia",
+								"one",
+								"spectra",
+								"narrator"
+							],
+							"active_actors_title": "character",
+							"content": "[]>narrator:Mood: Nostalghia - Hypnagogic\n[]>narrator:that evening, you never enter your bedroom. with one gone, this Grove of love and togetherness has grown a glass coating. you are sure, that any fragment of your souk entering that place would shatter it in its entirety.\nyou find comfort on the living room couch instead,  where friends and strangers usually are the Ines to spend their time there. the next few days are difficult. tasks oeep pilingnup, tchorchkjes lining the, bitter reminders of your darlings passing."
 						},
 						"facts": {
 							"fact_data_by_name": {
@@ -178,8 +921,8 @@
 				"meta.scroll_vertical": 0,
 				"meta.selected": false,
 				"next": 0,
-				"number": 0,
-				"page_key": "",
+				"number": 5,
+				"page_key": "Return after One's death",
 				"terminate": false
 			}
 		},

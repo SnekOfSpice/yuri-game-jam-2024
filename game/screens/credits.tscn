@@ -39,14 +39,14 @@ custom_minimum_size = Vector2(600, 400)
 layout_mode = 2
 size_flags_horizontal = 4
 bbcode_enabled = true
-text = "DIISIS is a dialogue tool plugin for Godot. You can peer into its source code [url=https://github.com/SnekOfSpice/dialog-editor/]on GitHub[/url].
-
-This demo serves as a small base for simple visual novels. DIISIS itself is merely the structural core of dialog flow. The UI is part of the demo!
-
-You can find more of my works [url=https://snekofspice.itch.io/]online :3[/url]
+text = "[center][b]She Was Swallowed By The Sun[/b]
+- Made for [url=https://itch.io/jam/yuri-game-jam-2024](Yuri Game Jam 2024) -
 
 [b]MUSIC[/b]
 busabx - a minute of slow funky guitar and drums ([url=https://freesound.org/people/busabx/sounds/738239/]Freesound.org[/url])
+
+SFX
+InspectorJ - \"Gunshot, Distant, A.wav\" ([url=https://freesound.org/people/InspectorJ/sounds/417345/]Freesound[/url])
 
 [b]FONTS[/b]
 sugargliderz - Fragment Core ([url=https://www.dafont.com/fragment-core.font]dafont.com[/url])"

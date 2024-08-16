@@ -56,7 +56,6 @@ func on_clear_reached():
 	GameWorld.instruction_handler.instruction_completed.emit()
 
 
-
 func _on_handler_start_black_fade(fade_in_duration, hold_time, fade_out_duration, hide_characters, new_background, new_bgm):
 	hide_characters_on_full_black_reached = hide_characters
 	new_background_on_full_black_reached = new_background

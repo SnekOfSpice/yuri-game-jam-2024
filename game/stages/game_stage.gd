@@ -18,7 +18,7 @@ var cg_position := ""
 var is_name_container_visible := false
 
 @onready var cg_roots := [find_child("CGBottomContainer"), find_child("CGTopContainer")]
-var blockers : int = 2 # character count + 1 (self) get_tree().get_node_count_in_group("diisis_character")
+var blockers : int = 3 # character count + 1 (self) get_tree().get_node_count_in_group("diisis_character")
 var hovering_meta := false
 
 @onready var text_start_position = find_child("TextContainer").position
@@ -43,6 +43,8 @@ func _ready():
 	
 	set_text_style(text_style)
 	
+	for character in $Characters.get_children():
+		character.visible = false
 	
 	remove_blocker()
 	grab_focus()
@@ -265,3 +267,8 @@ func _on_rich_text_label_meta_hover_ended(meta: Variant) -> void:
 
 func _on_rich_text_label_meta_hover_started(meta: Variant) -> void:
 	hovering_meta = true
+
+
+func _on_chapter_cover_chapter_intro_finished() -> void:
+	GameWorld.instruction_handler.instruction_completed.emit()
+	$ChapterCover.visible = false
