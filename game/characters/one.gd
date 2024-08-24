@@ -8,6 +8,7 @@ var eye_progress := 0
 var blink_range := Vector2(2, 4)
 
 func _ready() -> void:
+	super._ready()
 	blink_intervals.clear()
 	eyelids.clear()
 	for eye : Sprite2D in $Eyes.get_children():

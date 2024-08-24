@@ -8,6 +8,8 @@ enum TextStyle {
 	ToCharacter,
 }
 
+@export var dev_mode := false
+
 @export var text_style := TextStyle.ToBottom
 
 var dialog_box_tween : Tween
@@ -16,6 +18,9 @@ var actor_name := ""
 var cg := ""
 var cg_position := ""
 var is_name_container_visible := false
+
+@onready var text_container_custom_minimum_size : Vector2 = find_child("TextContainer").custom_minimum_size
+@onready var rtl_custom_minimum_size : Vector2 = find_child("RichTextLabel").custom_minimum_size
 
 @onready var cg_roots := [find_child("CGBottomContainer"), find_child("CGTopContainer")]
 var blockers : int = 3 # character count + 1 (self) get_tree().get_node_count_in_group("diisis_character")
@@ -72,14 +77,48 @@ func _gui_input(event: InputEvent) -> void:
 	if hovering_meta:
 		return
 	if event is InputEventKey:
-		if event.pressed and InputMap.action_has_event("ui_cancel", event):# event.is_action_just_pressed("ui_cancel"):
+		if event.pressed:
+			if InputMap.action_has_event("ui_cancel", event):
+				GameWorld.stage_root.set_screen(CONST.SCREEN_OPTIONS)
+			if InputMap.action_has_event("screenshot", event):
+				var screenshot := get_viewport().get_texture().get_image()
+				var path := str("user://screenshot_", ProjectSettings.get_setting("application/config/name"), "_", Time.get_datetime_string_from_system().replace(":", "-"), ".png")
+				screenshot.save_png(path)
+				
+				var notification = preload("res://game/notification.tscn").instantiate()
+				var global_path := ProjectSettings.globalize_path(path)
+				var global_dir := global_path.substr(0, global_path.rfind("/"))
+				add_child(notification)
+				notification.init(str("Saved to [url=", global_dir, "]", global_path, "[/url]"))
+			if InputMap.action_has_event("toggle_auto_continue", event):
+				find_child("LineReader").auto_continue = not find_child("LineReader").auto_continue
+			if InputMap.action_has_event("toggle_ui", event):
+				if find_child("VNUI").visible:
+					hide_ui()
+				else:
+					show_ui()
+			if InputMap.action_has_event("cheats", event) and dev_mode:
+				find_child("Cheats").visible = not find_child("Cheats").visible
+				
+	if event is InputEventMouse:
+		if event.is_pressed() and InputMap.action_has_event("ui_cancel", event):
 			GameWorld.stage_root.set_screen(CONST.SCREEN_OPTIONS)
+		if event.is_pressed() and InputMap.action_has_event("rclick", event):
+			print("root ", GameWorld.stage_root.screen)
+			if GameWorld.stage_root.screen.is_empty():
+				GameWorld.stage_root.set_screen(CONST.SCREEN_OPTIONS)
+				print("hi")
+			else:
+				GameWorld.stage_root.set_screen("")
+				print("aa")
 
 	if event.is_action_pressed("advance"):
 		for root in cg_roots:
 			if root.visible and emit_insutrction_complete_on_cg_hide:
 				hide_cg()
 				return
+		if not find_child("VNUI").visible:
+			return
 		$LineReader.request_advance()
 	elif event.is_action_pressed("go_back"):
 		$LineReader.go_back()
@@ -112,9 +151,9 @@ func set_cg_bottom(cg_name:String, fade_in_duration:float):
 func set_text_style(style:TextStyle):
 	text_style = style
 	if text_style == TextStyle.ToBottom:
-		find_child("TextContainer").custom_minimum_size.x = 454
+		find_child("TextContainer").custom_minimum_size = text_container_custom_minimum_size
 		find_child("TextContainer").position = text_start_position
-		find_child("RichTextLabel").custom_minimum_size.x = 500
+		find_child("RichTextLabel").custom_minimum_size = rtl_custom_minimum_size
 	elif text_style == TextStyle.ToCharacter:
 		find_child("TextContainer").custom_minimum_size.x = 230
 		find_child("RichTextLabel").custom_minimum_size.x = 230

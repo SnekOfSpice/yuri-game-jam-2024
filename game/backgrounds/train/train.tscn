@@ -1,0 +1,57 @@
+[gd_scene load_steps=9 format=3 uid="uid://b4pku1ujmewen"]
+
+[ext_resource type="Script" path="res://game/backgrounds/train/train.gd" id="1_460uy"]
+[ext_resource type="Texture2D" uid="uid://co4gbdfl200ei" path="res://game/backgrounds/train/train-sky.png" id="2_mpajm"]
+[ext_resource type="Texture2D" uid="uid://dh6rrsipy870r" path="res://game/backgrounds/train/train-carriage1.png" id="3_jncof"]
+[ext_resource type="Texture2D" uid="uid://e4jwdbm63woi" path="res://game/backgrounds/train/train-carriage2.png" id="4_23cdd"]
+[ext_resource type="Texture2D" uid="uid://4o5akm0o0n6k" path="res://game/backgrounds/train/train-carriage3.png" id="5_glvlo"]
+[ext_resource type="Texture2D" uid="uid://dhpacbj362wo0" path="res://game/backgrounds/train/train-foreground.png" id="6_cyqd6"]
+[ext_resource type="Texture2D" uid="uid://4l2mijlcq65c" path="res://game/backgrounds/train/train-hills1.png" id="7_q6ugg"]
+[ext_resource type="Texture2D" uid="uid://li3roq3sd62b" path="res://game/backgrounds/train/train-hills2.png" id="8_srb2y"]
+
+[node name="Train" type="Node2D"]
+script = ExtResource("1_460uy")
+
+[node name="Parallax2D" type="Parallax2D" parent="."]
+repeat_size = Vector2(2000, 0)
+autoscroll = Vector2(18, 0)
+
+[node name="Train-sky" type="Sprite2D" parent="Parallax2D"]
+texture = ExtResource("2_mpajm")
+centered = false
+
+[node name="Parallax2D3" type="Parallax2D" parent="."]
+repeat_size = Vector2(2000, 0)
+autoscroll = Vector2(45, 0)
+
+[node name="Train-hills1" type="Sprite2D" parent="Parallax2D3"]
+texture = ExtResource("7_q6ugg")
+centered = false
+
+[node name="Parallax2D4" type="Parallax2D" parent="."]
+repeat_size = Vector2(2000, 0)
+autoscroll = Vector2(105, 0)
+
+[node name="Train-hills2" type="Sprite2D" parent="Parallax2D4"]
+texture = ExtResource("8_srb2y")
+centered = false
+
+[node name="Train" type="Node2D" parent="."]
+position = Vector2(929, 512)
+
+[node name="Train-carriage1" type="Sprite2D" parent="Train"]
+texture = ExtResource("3_jncof")
+
+[node name="Train-carriage2" type="Sprite2D" parent="Train"]
+texture = ExtResource("4_23cdd")
+
+[node name="Train-carriage3" type="Sprite2D" parent="Train"]
+texture = ExtResource("5_glvlo")
+
+[node name="Parallax2D2" type="Parallax2D" parent="."]
+repeat_size = Vector2(2000, 0)
+autoscroll = Vector2(270, 0)
+
+[node name="Train-foreground" type="Sprite2D" parent="Parallax2D2"]
+texture = ExtResource("6_cyqd6")
+centered = false

@@ -35,4 +35,4 @@ func on_dialog_line_args_passed(actor_name: String, dialog_line_args: Dictionary
 func set_emotion(emotion_name:String):
 	emotion = emotion_name
 	visible = true
-	$Sprite2D.texture = load(str("res://game/characters/sprites/", character_name, "-", emotion, ".png"))
+	find_child("Sprite").texture = load(str("res://game/characters/sprites/", character_name, "-", emotion, ".png"))

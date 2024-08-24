@@ -41,7 +41,7 @@ func on_full_black_reached():
 	#emit_signal("request_background_change", new_background_on_full_black_reached)
 	
 	if not new_bgm_on_full_black_reached.is_empty():
-		Sound.play_bgm(CONST.get(str("MUSIC_", new_bgm_on_full_black_reached.to_upper())), release_on_full_black_reached)
+		Sound.play_bgm(new_bgm_on_full_black_reached, release_on_full_black_reached)
 		
 	if sustain_on_full_black_reached > 0:
 		var t = get_tree().create_timer(sustain_on_full_black_reached)

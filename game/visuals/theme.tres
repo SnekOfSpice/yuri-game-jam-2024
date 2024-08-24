@@ -1,0 +1,12 @@
+[gd_resource type="Theme" load_steps=3 format=3 uid="uid://d35oanoquofv5"]
+
+[ext_resource type="FontFile" uid="uid://bnqgb1fpoaocj" path="res://addons/diisis/parser/style/atha.ttf" id="1_46y8i"]
+[ext_resource type="FontFile" uid="uid://rvnhwlkt81ow" path="res://addons/diisis/parser/style/TimesNewPixelexp.ttf" id="2_j0p7t"]
+
+[resource]
+Button/font_sizes/font_size = 24
+Button/fonts/font = ExtResource("1_46y8i")
+Label/font_sizes/font_size = 22
+Label/fonts/font = ExtResource("1_46y8i")
+RichTextLabel/font_sizes/normal_font_size = 22
+RichTextLabel/fonts/normal_font = ExtResource("2_j0p7t")

@@ -9,7 +9,7 @@
 script = ExtResource("1_a488w")
 character_name = "one"
 
-[node name="One" type="Sprite2D" parent="."]
+[node name="Sprite" type="Sprite2D" parent="."]
 position = Vector2(74, 53)
 texture = ExtResource("2_524p1")
 

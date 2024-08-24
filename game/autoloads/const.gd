@@ -18,7 +18,7 @@ const BACKGROUND_HOME_REGULAR := "home_regular.png"
 const BACKGROUND_FIELD := "field/Field.tscn"
 
 const MUSIC_ROOT := "res://game/sounds/music/"
-const MUSIC_MAIN_MENU := "YOUR_MUSIC_HERE.wav"
+const MUSIC_MAIN_MENU := "Paradise_Found.mp3"
 
 const SFX_ROOT := "res://game/sounds/sfx/"
 const SFX_GUNSHOT := "417345__inspectorj__gunshot-distant-a.ogg"

@@ -42,7 +42,7 @@ func set_chapter_cover(pov_name: String, bottom_text:String):
 		name_tex.text = ""
 		#name_tex.position = start_positions[name_tex]
 	else:
-		name_tex.text = str("[center]", bottom_text)
+		name_tex.text = str("[right]", bottom_text)
 	name_tex.position = start_positions[name_tex]
 	logo_tex.position = start_positions[logo_tex]
 	char_tex.position = start_positions[char_tex]
@@ -63,15 +63,15 @@ func set_chapter_cover(pov_name: String, bottom_text:String):
 		$Black.visible = false
 	
 	var logo_delay := 0.8 + black_delay
-	var char_delay := 2.8 + black_delay
-	var name_delay := 5.7 + black_delay
+	var char_delay := 4.0 + black_delay
+	var name_delay := 6.7 + black_delay
 	
 	logo_tween.tween_property(logo_tex, "position", logo_tex.position + Vector2(0, -30), 5.0).set_delay(logo_delay).set_ease(Tween.EASE_OUT)
 	char_tween.tween_property(char_tex, "position", char_tex.position + Vector2(0, -30), 2.0).set_delay(char_delay).set_ease(Tween.EASE_OUT)
 	name_tween.tween_property(name_tex, "position", name_tex.position + Vector2(0, -30), 4.0).set_delay(name_delay).set_ease(Tween.EASE_OUT)
-	logo_tween.tween_property(logo_tex, "modulate:a", 1, logo_delay + 0.2).set_trans(Tween.TRANS_CUBIC).set_ease(Tween.EASE_IN)
-	char_tween.tween_property(char_tex, "modulate:a", 1, char_delay + 0.2).set_trans(Tween.TRANS_CUBIC).set_ease(Tween.EASE_IN)
-	name_tween.tween_property(name_tex, "modulate:a", 1, name_delay + 0.2).set_trans(Tween.TRANS_CUBIC).set_ease(Tween.EASE_IN)
+	logo_tween.tween_property(logo_tex, "modulate:a", 1, 1.0).set_delay(logo_delay + 0.2).set_trans(Tween.TRANS_CUBIC).set_ease(Tween.EASE_IN)
+	char_tween.tween_property(char_tex, "modulate:a", 1, 3.0).set_delay(char_delay + 0.2).set_trans(Tween.TRANS_CUBIC).set_ease(Tween.EASE_IN)
+	name_tween.tween_property(name_tex, "modulate:a", 1, 3.0).set_delay(name_delay + 0.2).set_trans(Tween.TRANS_CUBIC).set_ease(Tween.EASE_IN)
 	
 	
 	
@@ -81,7 +81,7 @@ func set_chapter_cover(pov_name: String, bottom_text:String):
 	mod_tween.finished.connect(start_fade_timer)
 	mod_tween.tween_property(self, "modulate:a", 1, 0.3)
 	mod_tween.set_parallel()
-	mod_tween.tween_property(self, "modulate:a", 0, 2.4).set_delay(6 + black_delay)
+	mod_tween.tween_property(self, "modulate:a", 0, 2.4).set_delay(max(max(logo_delay, char_delay), name_delay) + 2)
 	
 	
 

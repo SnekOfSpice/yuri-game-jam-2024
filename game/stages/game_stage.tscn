@@ -1,7 +1,8 @@
-[gd_scene load_steps=13 format=3 uid="uid://r1ntcqdujfol"]
+[gd_scene load_steps=15 format=3 uid="uid://r1ntcqdujfol"]
 
 [ext_resource type="Script" path="res://game/stages/game_stage.gd" id="1_a36me"]
 [ext_resource type="Script" path="res://addons/diisis/parser/src/line_reader.gd" id="1_h4afo"]
+[ext_resource type="Theme" uid="uid://d35oanoquofv5" path="res://game/visuals/theme.tres" id="1_qsxmu"]
 [ext_resource type="FontFile" uid="uid://dy8rsqmwhxjp6" path="res://addons/diisis/editor/visuals/fonts/TT Chocolates Trial Bold.otf" id="2_6jeks"]
 [ext_resource type="PackedScene" uid="uid://c7bnsg1etl8i7" path="res://game/characters/one.tscn" id="2_15g65"]
 [ext_resource type="PackedScene" uid="uid://chfbyvpvah4eu" path="res://game/characters/character.tscn" id="3_5aep6"]
@@ -12,6 +13,7 @@
 [ext_resource type="PackedScene" uid="uid://qkegdwc8ux5o" path="res://game/stages/black_fade.tscn" id="8_50byo"]
 [ext_resource type="Script" path="res://game/stages/game_camera.gd" id="9_lbjue"]
 [ext_resource type="PackedScene" uid="uid://cjy7vf1xrnq5y" path="res://game/screens/chapter_cover.tscn" id="12_vf2y4"]
+[ext_resource type="PackedScene" uid="uid://biu88w163ploy" path="res://game/cheats.tscn" id="13_qackq"]
 
 [node name="GameStage" type="Control"]
 layout_mode = 3
@@ -21,15 +23,17 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 focus_mode = 2
+theme = ExtResource("1_qsxmu")
 script = ExtResource("1_a36me")
+dev_mode = true
 
 [node name="Characters" type="Node2D" parent="."]
 
 [node name="One" parent="Characters" instance=ExtResource("2_15g65")]
-position = Vector2(215, 337)
+position = Vector2(215, 503)
 
 [node name="Anhedonia" parent="Characters" instance=ExtResource("3_5aep6")]
-position = Vector2(738, 412)
+position = Vector2(1033, 518)
 character_name = "anhedonia"
 
 [node name="CGBottomContainer" type="Control" parent="."]
@@ -83,10 +87,10 @@ anchor_left = 0.5
 anchor_top = 1.0
 anchor_right = 0.5
 anchor_bottom = 1.0
-offset_left = -257.0
-offset_top = -258.0
-offset_right = 257.0
-offset_bottom = -13.0
+offset_left = -380.0
+offset_top = -297.0
+offset_right = 380.0
+offset_bottom = -48.0
 grow_horizontal = 2
 grow_vertical = 0
 
@@ -99,20 +103,21 @@ auto_translate_mode = 1
 layout_mode = 2
 size_flags_vertical = 8
 
-[node name="MarginContainer" type="MarginContainer" parent="VNUI/TextContainer/MarginContainer/VBoxContainer"]
+[node name="PanelContainer" type="PanelContainer" parent="VNUI/TextContainer/MarginContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 0
+mouse_filter = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="VNUI/TextContainer/MarginContainer/VBoxContainer/PanelContainer"]
 auto_translate_mode = 1
 layout_mode = 2
 size_flags_horizontal = 0
 theme_override_constants/margin_left = 4
 theme_override_constants/margin_top = 1
-theme_override_constants/margin_right = 9
+theme_override_constants/margin_right = 7
 theme_override_constants/margin_bottom = 1
 
-[node name="PanelContainer" type="PanelContainer" parent="VNUI/TextContainer/MarginContainer/VBoxContainer/MarginContainer"]
-layout_mode = 2
-mouse_filter = 2
-
-[node name="Label" type="Label" parent="VNUI/TextContainer/MarginContainer/VBoxContainer/MarginContainer/PanelContainer"]
+[node name="Label" type="Label" parent="VNUI/TextContainer/MarginContainer/VBoxContainer/PanelContainer/MarginContainer"]
 auto_translate_mode = 1
 layout_mode = 2
 text = "Name Label Here"
@@ -125,8 +130,9 @@ mouse_filter = 2
 
 [node name="RichTextLabel" type="RichTextLabel" parent="VNUI/TextContainer/MarginContainer/VBoxContainer/Panel"]
 auto_translate_mode = 1
-custom_minimum_size = Vector2(500, 200)
+custom_minimum_size = Vector2(760, 200)
 layout_mode = 2
+mouse_filter = 2
 theme_override_fonts/bold_font = ExtResource("2_6jeks")
 text = "Text Body Here
 dghfgh"
@@ -202,15 +208,15 @@ name_map = {
 }
 name_colors = {
 "anhedonia": Color(0.98185, 0.717259, 0.904946, 1),
-"one": Color(0.8, 0.144, 0.253334, 1),
+"one": Color(0.973451, 0.606434, 0.346273, 1),
 "spectra": Color(0.157347, 0.679059, 0.74132, 1)
 }
 choice_container = NodePath("../VNUI/ChoiceContainer")
 choice_option_container = NodePath("../VNUI/ChoiceContainer/VBoxContainer")
 text_content = NodePath("../VNUI/TextContainer/MarginContainer/VBoxContainer/Panel/RichTextLabel")
 text_container = NodePath("../VNUI/TextContainer")
-name_label = NodePath("../VNUI/TextContainer/MarginContainer/VBoxContainer/MarginContainer/PanelContainer/Label")
-name_container = NodePath("../VNUI/TextContainer/MarginContainer/VBoxContainer/MarginContainer")
+name_label = NodePath("../VNUI/TextContainer/MarginContainer/VBoxContainer/PanelContainer/MarginContainer/Label")
+name_container = NodePath("../VNUI/TextContainer/MarginContainer/VBoxContainer/PanelContainer")
 instruction_handler = NodePath("../InstructionHandler")
 inline_evaluator = NodePath("../InlineEval")
 show_input_prompt = true
@@ -267,6 +273,9 @@ position = Vector2(971, 409)
 
 [node name="ChapterCover" parent="." instance=ExtResource("12_vf2y4")]
 visible = false
+layout_mode = 1
+
+[node name="Cheats" parent="." instance=ExtResource("13_qackq")]
 layout_mode = 1
 
 [connection signal="ready" from="Characters/One" to="." method="remove_blocker"]
