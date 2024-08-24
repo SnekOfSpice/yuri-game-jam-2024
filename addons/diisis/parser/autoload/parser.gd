@@ -229,7 +229,7 @@ func drop_down_values_to_string_array(values:=[0,0]) -> Array:
 
 func read_page(number: int, starting_line_index := 0):
 	if not page_data.keys().has(number):
-		push_warning("number not in page data")
+		push_warning(str("number ", number, " not in page data"))
 		return
 	
 	#emit_signal("read_new_page", number)
