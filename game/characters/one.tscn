@@ -1,9 +1,16 @@
-[gd_scene load_steps=5 format=3 uid="uid://c7bnsg1etl8i7"]
+[gd_scene load_steps=12 format=3 uid="uid://c7bnsg1etl8i7"]
 
 [ext_resource type="Script" path="res://game/characters/one.gd" id="1_a488w"]
-[ext_resource type="Texture2D" uid="uid://btyr0acorq2oy" path="res://game/characters/one.png" id="2_524p1"]
-[ext_resource type="Texture2D" uid="uid://dr6g1qpwimeb" path="res://game/characters/eye.png" id="3_2xmv4"]
+[ext_resource type="Texture2D" uid="uid://clf4avrf860b8" path="res://game/characters/sprites/one-neutral.png" id="2_pohjl"]
+[ext_resource type="Texture2D" uid="uid://rh4gr0q2la61" path="res://game/characters/sprites/neutral-stage1.png" id="3_wyk1k"]
 [ext_resource type="Texture2D" uid="uid://d08to1abj86vb" path="res://game/characters/eye-closed.png" id="4_dg1sr"]
+[ext_resource type="Texture2D" uid="uid://bfoyfuhsnhjx7" path="res://game/characters/sprites/neutral-stage2.png" id="5_rbm2x"]
+[ext_resource type="Texture2D" uid="uid://b40qmvey34jfh" path="res://game/characters/sprites/neutral-stage3.png" id="6_u4vsr"]
+[ext_resource type="Texture2D" uid="uid://d4i4rckpp05sk" path="res://game/characters/sprites/neutral-stage4.png" id="7_wvtr1"]
+[ext_resource type="Texture2D" uid="uid://b0fjjbn31bxe" path="res://game/characters/sprites/crying-stage1.png" id="8_mohmp"]
+[ext_resource type="Texture2D" uid="uid://d3a60f43r6x53" path="res://game/characters/sprites/crying-stage2.png" id="9_y7tr8"]
+[ext_resource type="Texture2D" uid="uid://bqekinvvdh6ih" path="res://game/characters/sprites/crying-stage3.png" id="10_myk1h"]
+[ext_resource type="Texture2D" uid="uid://djwcf01tcuxkm" path="res://game/characters/sprites/crying-stage4.png" id="11_5216e"]
 
 [node name="One" type="Node2D"]
 script = ExtResource("1_a488w")
@@ -11,19 +18,181 @@ character_name = "one"
 
 [node name="Sprite" type="Sprite2D" parent="."]
 position = Vector2(74, 53)
-texture = ExtResource("2_524p1")
+texture = ExtResource("2_pohjl")
 
 [node name="Eyes" type="Node2D" parent="."]
+position = Vector2(54, 65)
 
-[node name="Eye" type="Sprite2D" parent="Eyes"]
-texture = ExtResource("3_2xmv4")
+[node name="Default" type="Node2D" parent="Eyes"]
+visible = false
 
-[node name="Eye-closed" type="Sprite2D" parent="Eyes/Eye"]
+[node name="1" type="Sprite2D" parent="Eyes/Default"]
+texture = ExtResource("3_wyk1k")
+
+[node name="Eyelid" type="Sprite2D" parent="Eyes/Default/1"]
+position = Vector2(4, -26)
 texture = ExtResource("4_dg1sr")
 
-[node name="Eye2" type="Sprite2D" parent="Eyes"]
-position = Vector2(183, 0)
-texture = ExtResource("3_2xmv4")
+[node name="2" type="Sprite2D" parent="Eyes/Default"]
+visible = false
+texture = ExtResource("5_rbm2x")
 
-[node name="Eye-closed2" type="Sprite2D" parent="Eyes/Eye2"]
+[node name="Eyelid" type="Sprite2D" parent="Eyes/Default/2"]
+position = Vector2(-20, -164)
+texture = ExtResource("4_dg1sr")
+
+[node name="Eyelid2" type="Sprite2D" parent="Eyes/Default/2"]
+position = Vector2(9, -96)
+texture = ExtResource("4_dg1sr")
+
+[node name="Eyelid3" type="Sprite2D" parent="Eyes/Default/2"]
+position = Vector2(-1, -39)
+texture = ExtResource("4_dg1sr")
+
+[node name="3" type="Sprite2D" parent="Eyes/Default"]
+visible = false
+texture = ExtResource("6_u4vsr")
+
+[node name="Eyelid" type="Sprite2D" parent="Eyes/Default/3"]
+position = Vector2(-57, -48)
+texture = ExtResource("4_dg1sr")
+
+[node name="Eyelid4" type="Sprite2D" parent="Eyes/Default/3"]
+position = Vector2(-32, -242)
+texture = ExtResource("4_dg1sr")
+
+[node name="Eyelid5" type="Sprite2D" parent="Eyes/Default/3"]
+position = Vector2(-1, -163)
+texture = ExtResource("4_dg1sr")
+
+[node name="Eyelid2" type="Sprite2D" parent="Eyes/Default/3"]
+position = Vector2(7, -84)
+texture = ExtResource("4_dg1sr")
+
+[node name="Eyelid3" type="Sprite2D" parent="Eyes/Default/3"]
+position = Vector2(7, -24)
+texture = ExtResource("4_dg1sr")
+
+[node name="4" type="Sprite2D" parent="Eyes/Default"]
+texture = ExtResource("7_wvtr1")
+
+[node name="Eyelid" type="Sprite2D" parent="Eyes/Default/4"]
+position = Vector2(-47, -34)
+texture = ExtResource("4_dg1sr")
+
+[node name="Eyelid4" type="Sprite2D" parent="Eyes/Default/4"]
+position = Vector2(-24, -244)
+texture = ExtResource("4_dg1sr")
+
+[node name="Eyelid6" type="Sprite2D" parent="Eyes/Default/4"]
+position = Vector2(-15, -156)
+texture = ExtResource("4_dg1sr")
+
+[node name="Eyelid7" type="Sprite2D" parent="Eyes/Default/4"]
+position = Vector2(-49, 129)
+texture = ExtResource("4_dg1sr")
+
+[node name="Eyelid8" type="Sprite2D" parent="Eyes/Default/4"]
+position = Vector2(-122, -10)
+texture = ExtResource("4_dg1sr")
+
+[node name="Eyelid9" type="Sprite2D" parent="Eyes/Default/4"]
+position = Vector2(25, -92)
+texture = ExtResource("4_dg1sr")
+
+[node name="Eyelid10" type="Sprite2D" parent="Eyes/Default/4"]
+position = Vector2(16, -16)
+texture = ExtResource("4_dg1sr")
+
+[node name="Crying" type="Node2D" parent="Eyes"]
+
+[node name="1" type="Sprite2D" parent="Eyes/Crying"]
+visible = false
+texture = ExtResource("8_mohmp")
+
+[node name="Eyelid3" type="Sprite2D" parent="Eyes/Crying/1"]
+position = Vector2(-94, -172)
+texture = ExtResource("4_dg1sr")
+
+[node name="2" type="Sprite2D" parent="Eyes/Crying"]
+visible = false
+texture = ExtResource("9_y7tr8")
+
+[node name="Eyelid3" type="Sprite2D" parent="Eyes/Crying/2"]
+position = Vector2(-96, -175)
+texture = ExtResource("4_dg1sr")
+
+[node name="Eyelid5" type="Sprite2D" parent="Eyes/Crying/2"]
+position = Vector2(-106, -115)
+texture = ExtResource("4_dg1sr")
+
+[node name="Eyelid6" type="Sprite2D" parent="Eyes/Crying/2"]
+position = Vector2(-26, -80)
+texture = ExtResource("4_dg1sr")
+
+[node name="3" type="Sprite2D" parent="Eyes/Crying"]
+visible = false
+texture = ExtResource("10_myk1h")
+
+[node name="Eyelid3" type="Sprite2D" parent="Eyes/Crying/3"]
+position = Vector2(27, -212)
+texture = ExtResource("4_dg1sr")
+
+[node name="Eyelid8" type="Sprite2D" parent="Eyes/Crying/3"]
+position = Vector2(-105, -181)
+texture = ExtResource("4_dg1sr")
+
+[node name="Eyelid9" type="Sprite2D" parent="Eyes/Crying/3"]
+position = Vector2(-108, -113)
+texture = ExtResource("4_dg1sr")
+
+[node name="Eyelid10" type="Sprite2D" parent="Eyes/Crying/3"]
+position = Vector2(-34, -65)
+texture = ExtResource("4_dg1sr")
+
+[node name="Eyelid11" type="Sprite2D" parent="Eyes/Crying/3"]
+position = Vector2(40, 80)
+texture = ExtResource("4_dg1sr")
+
+[node name="4" type="Sprite2D" parent="Eyes/Crying"]
+texture = ExtResource("11_5216e")
+
+[node name="Eyelid3" type="Sprite2D" parent="Eyes/Crying/4"]
+position = Vector2(10, -205)
+texture = ExtResource("4_dg1sr")
+
+[node name="Eyelid8" type="Sprite2D" parent="Eyes/Crying/4"]
+position = Vector2(-88, -151)
+texture = ExtResource("4_dg1sr")
+
+[node name="Eyelid9" type="Sprite2D" parent="Eyes/Crying/4"]
+position = Vector2(-65, -128)
+texture = ExtResource("4_dg1sr")
+
+[node name="Eyelid10" type="Sprite2D" parent="Eyes/Crying/4"]
+position = Vector2(-108, -98)
+texture = ExtResource("4_dg1sr")
+
+[node name="Eyelid11" type="Sprite2D" parent="Eyes/Crying/4"]
+position = Vector2(-60, -70)
+texture = ExtResource("4_dg1sr")
+
+[node name="Eyelid12" type="Sprite2D" parent="Eyes/Crying/4"]
+position = Vector2(53, -115)
+texture = ExtResource("4_dg1sr")
+
+[node name="Eyelid13" type="Sprite2D" parent="Eyes/Crying/4"]
+position = Vector2(33, 66)
+texture = ExtResource("4_dg1sr")
+
+[node name="Eyelid14" type="Sprite2D" parent="Eyes/Crying/4"]
+position = Vector2(51, 91)
+texture = ExtResource("4_dg1sr")
+
+[node name="Eyelid15" type="Sprite2D" parent="Eyes/Crying/4"]
+position = Vector2(64, 136)
+texture = ExtResource("4_dg1sr")
+
+[node name="Eyelid16" type="Sprite2D" parent="Eyes/Crying/4"]
+position = Vector2(-52, 169)
 texture = ExtResource("4_dg1sr")
