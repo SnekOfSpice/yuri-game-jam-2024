@@ -2,13 +2,13 @@
 
 importer="font_data_dynamic"
 type="FontFile"
-uid="uid://rvnhwlkt81ow"
-path="res://.godot/imported/TimesNewPixelexp.ttf-b368643ceafb8f8a9912e158be38691d.fontdata"
+uid="uid://jc0pccgisvh0"
+path="res://.godot/imported/FromSunflowerFie.ttf-8d442455a0ff29b4ab9d14f913f1a40b.fontdata"
 
 [deps]
 
-source_file="res://addons/diisis/parser/style/TimesNewPixelexp.ttf"
-dest_files=["res://.godot/imported/TimesNewPixelexp.ttf-b368643ceafb8f8a9912e158be38691d.fontdata"]
+source_file="res://game/visuals/fonts/FromSunflowerFie.ttf"
+dest_files=["res://.godot/imported/FromSunflowerFie.ttf-8d442455a0ff29b4ab9d14f913f1a40b.fontdata"]
 
 [params]
 
@@ -21,9 +21,9 @@ msdf_pixel_range=8
 msdf_size=48
 allow_system_fallback=true
 force_autohinter=false
-hinting=0
+hinting=1
 subpixel_positioning=1
-oversampling=3.4
+oversampling=4.4
 Fallbacks=null
 fallbacks=[]
 Compress=null

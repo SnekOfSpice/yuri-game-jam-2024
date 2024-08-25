@@ -128,7 +128,14 @@ layout_mode = 2
 size_flags_vertical = 8
 mouse_filter = 2
 
-[node name="RichTextLabel" type="RichTextLabel" parent="VNUI/TextContainer/MarginContainer/VBoxContainer/Panel"]
+[node name="MarginContainer" type="MarginContainer" parent="VNUI/TextContainer/MarginContainer/VBoxContainer/Panel"]
+layout_mode = 2
+theme_override_constants/margin_left = 3
+theme_override_constants/margin_top = 1
+theme_override_constants/margin_right = 3
+theme_override_constants/margin_bottom = 1
+
+[node name="RichTextLabel" type="RichTextLabel" parent="VNUI/TextContainer/MarginContainer/VBoxContainer/Panel/MarginContainer"]
 auto_translate_mode = 1
 custom_minimum_size = Vector2(760, 200)
 layout_mode = 2
@@ -213,7 +220,7 @@ name_colors = {
 }
 choice_container = NodePath("../VNUI/ChoiceContainer")
 choice_option_container = NodePath("../VNUI/ChoiceContainer/VBoxContainer")
-text_content = NodePath("../VNUI/TextContainer/MarginContainer/VBoxContainer/Panel/RichTextLabel")
+text_content = NodePath("../VNUI/TextContainer/MarginContainer/VBoxContainer/Panel/MarginContainer/RichTextLabel")
 text_container = NodePath("../VNUI/TextContainer")
 name_label = NodePath("../VNUI/TextContainer/MarginContainer/VBoxContainer/PanelContainer/MarginContainer/Label")
 name_container = NodePath("../VNUI/TextContainer/MarginContainer/VBoxContainer/PanelContainer")
@@ -276,13 +283,14 @@ visible = false
 layout_mode = 1
 
 [node name="Cheats" parent="." instance=ExtResource("13_qackq")]
+visible = false
 layout_mode = 1
 
 [connection signal="ready" from="Characters/One" to="." method="remove_blocker"]
 [connection signal="ready" from="Characters/Anhedonia" to="." method="remove_blocker"]
-[connection signal="meta_clicked" from="VNUI/TextContainer/MarginContainer/VBoxContainer/Panel/RichTextLabel" to="." method="_on_rich_text_label_meta_clicked"]
-[connection signal="meta_hover_ended" from="VNUI/TextContainer/MarginContainer/VBoxContainer/Panel/RichTextLabel" to="." method="_on_rich_text_label_meta_hover_ended"]
-[connection signal="meta_hover_started" from="VNUI/TextContainer/MarginContainer/VBoxContainer/Panel/RichTextLabel" to="." method="_on_rich_text_label_meta_hover_started"]
+[connection signal="meta_clicked" from="VNUI/TextContainer/MarginContainer/VBoxContainer/Panel/MarginContainer/RichTextLabel" to="." method="_on_rich_text_label_meta_clicked"]
+[connection signal="meta_hover_ended" from="VNUI/TextContainer/MarginContainer/VBoxContainer/Panel/MarginContainer/RichTextLabel" to="." method="_on_rich_text_label_meta_hover_ended"]
+[connection signal="meta_hover_started" from="VNUI/TextContainer/MarginContainer/VBoxContainer/Panel/MarginContainer/RichTextLabel" to="." method="_on_rich_text_label_meta_hover_started"]
 [connection signal="pressed" from="VNUI/ControlsContainer/HistoryButton" to="." method="_on_history_button_pressed"]
 [connection signal="pressed" from="VNUI/ControlsContainer/MenuButton" to="." method="_on_menu_button_pressed"]
 [connection signal="start_black_fade" from="InstructionHandler" to="BlackFade" method="_on_handler_start_black_fade"]
