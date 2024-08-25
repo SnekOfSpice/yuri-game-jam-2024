@@ -19,6 +19,7 @@ const BACKGROUND_FIELD := "field/Field.tscn"
 
 const MUSIC_ROOT := "res://game/sounds/music/"
 const MUSIC_MAIN_MENU := "Paradise_Found.mp3"
+const MUSIC_COL8822 := "CØL - What Makes Me Feel Alive - 02 8822.ogg"
 
 const SFX_ROOT := "res://game/sounds/sfx/"
 const SFX_GUNSHOT := "417345__inspectorj__gunshot-distant-a.ogg"

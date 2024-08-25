@@ -23,6 +23,7 @@ func play_sfx(_name:String):
 
 func set_bgm(_name:String, fade_in:float):
 	Sound.play_bgm(_name.to_upper(), fade_in)
+	return false
 
 func set_text_style(style: String) -> bool:
 	if style == "ToBottom":

@@ -43,8 +43,9 @@ func play_bgm(bgm:String, fade_in:=0.0, from:=0.0):
 	music_player.connect("tree_exiting", audio_players.erase.bind(music_player))
 	main_audio_player = music_player
 	
-	var music_path := str(CONST.MUSIC_ROOT, bgm_key)
+	var music_path := str(CONST.MUSIC_ROOT, CONST.get(str("MUSIC_", bgm_key)))
 	if not ResourceLoader.exists(music_path):
+		push_error(str(music_path, " doesn't exist"))
 		return
 	music_player.stream = load(music_path)
 	music_player.volume_db = -80
