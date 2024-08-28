@@ -1,4 +1,4 @@
-[gd_scene load_steps=15 format=3 uid="uid://r1ntcqdujfol"]
+[gd_scene load_steps=17 format=3 uid="uid://r1ntcqdujfol"]
 
 [ext_resource type="Script" path="res://game/stages/game_stage.gd" id="1_a36me"]
 [ext_resource type="Script" path="res://addons/diisis/parser/src/line_reader.gd" id="1_h4afo"]
@@ -7,6 +7,7 @@
 [ext_resource type="PackedScene" uid="uid://c7bnsg1etl8i7" path="res://game/characters/one.tscn" id="2_15g65"]
 [ext_resource type="PackedScene" uid="uid://chfbyvpvah4eu" path="res://game/characters/character.tscn" id="3_5aep6"]
 [ext_resource type="Script" path="res://game/stages/instruction_handler_intro.gd" id="4_u8vmc"]
+[ext_resource type="Texture2D" uid="uid://ci3a0nblay7ri" path="res://game/characters/sprites/SpriteComissionSnekGame2.png" id="5_1byck"]
 [ext_resource type="Texture2D" uid="uid://delwppkladi0u" path="res://addons/diisis/editor/visuals/more.svg" id="5_7sulw"]
 [ext_resource type="Script" path="res://game/diisis_integration/inline_eval.gd" id="6_8ao3j"]
 [ext_resource type="Texture2D" uid="uid://bh7mo1v26xtqq" path="res://addons/diisis/editor/visuals/helpZeichenfläche 3.png" id="6_mh4vb"]
@@ -14,6 +15,7 @@
 [ext_resource type="Script" path="res://game/stages/game_camera.gd" id="9_lbjue"]
 [ext_resource type="PackedScene" uid="uid://cjy7vf1xrnq5y" path="res://game/screens/chapter_cover.tscn" id="12_vf2y4"]
 [ext_resource type="PackedScene" uid="uid://biu88w163ploy" path="res://game/cheats.tscn" id="13_qackq"]
+[ext_resource type="Script" path="res://game/stages/start_cover.gd" id="13_qfsh6"]
 
 [node name="GameStage" type="Control"]
 layout_mode = 3
@@ -36,7 +38,28 @@ position = Vector2(215, 503)
 position = Vector2(1033, 518)
 character_name = "anhedonia"
 
-[node name="CGBottomContainer" type="Control" parent="."]
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(380, 349)
+scale = Vector2(1.4973, 1.4973)
+texture = ExtResource("5_1byck")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(480, 270)
+script = ExtResource("9_lbjue")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="Camera2D"]
+
+[node name="Control" type="Control" parent="Camera2D/CanvasLayer"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+theme = ExtResource("1_qsxmu")
+
+[node name="CGBottomContainer" type="Control" parent="Camera2D/CanvasLayer/Control"]
 auto_translate_mode = 1
 visible = false
 layout_mode = 1
@@ -47,7 +70,7 @@ grow_horizontal = 2
 grow_vertical = 2
 mouse_filter = 2
 
-[node name="ColorRect" type="ColorRect" parent="CGBottomContainer"]
+[node name="ColorRect" type="ColorRect" parent="Camera2D/CanvasLayer/Control/CGBottomContainer"]
 auto_translate_mode = 1
 layout_mode = 1
 anchors_preset = 15
@@ -58,7 +81,7 @@ grow_vertical = 2
 mouse_filter = 2
 color = Color(0, 0, 0, 1)
 
-[node name="CGTex" type="TextureRect" parent="CGBottomContainer"]
+[node name="CGTex" type="TextureRect" parent="Camera2D/CanvasLayer/Control/CGBottomContainer"]
 auto_translate_mode = 1
 layout_mode = 1
 anchors_preset = 15
@@ -68,7 +91,7 @@ grow_horizontal = 2
 grow_vertical = 2
 mouse_filter = 2
 
-[node name="VNUI" type="Control" parent="."]
+[node name="VNUI" type="Control" parent="Camera2D/CanvasLayer/Control"]
 auto_translate_mode = 1
 layout_mode = 1
 anchors_preset = 15
@@ -78,7 +101,7 @@ grow_horizontal = 2
 grow_vertical = 2
 mouse_filter = 2
 
-[node name="TextContainer" type="CenterContainer" parent="VNUI"]
+[node name="TextContainer" type="CenterContainer" parent="Camera2D/CanvasLayer/Control/VNUI"]
 auto_translate_mode = 1
 custom_minimum_size = Vector2(454, 0)
 layout_mode = 1
@@ -88,56 +111,61 @@ anchor_top = 1.0
 anchor_right = 0.5
 anchor_bottom = 1.0
 offset_left = -380.0
-offset_top = -297.0
+offset_top = -234.0
 offset_right = 380.0
-offset_bottom = -48.0
+offset_bottom = 15.0
 grow_horizontal = 2
 grow_vertical = 0
+mouse_filter = 2
 
-[node name="MarginContainer" type="MarginContainer" parent="VNUI/TextContainer"]
+[node name="MarginContainer" type="MarginContainer" parent="Camera2D/CanvasLayer/Control/VNUI/TextContainer"]
 auto_translate_mode = 1
 layout_mode = 2
+mouse_filter = 2
 
-[node name="VBoxContainer" type="VBoxContainer" parent="VNUI/TextContainer/MarginContainer"]
+[node name="VBoxContainer" type="VBoxContainer" parent="Camera2D/CanvasLayer/Control/VNUI/TextContainer/MarginContainer"]
 auto_translate_mode = 1
 layout_mode = 2
 size_flags_vertical = 8
+mouse_filter = 2
 
-[node name="PanelContainer" type="PanelContainer" parent="VNUI/TextContainer/MarginContainer/VBoxContainer"]
+[node name="PanelContainer" type="PanelContainer" parent="Camera2D/CanvasLayer/Control/VNUI/TextContainer/MarginContainer/VBoxContainer"]
 layout_mode = 2
 size_flags_horizontal = 0
 mouse_filter = 2
 
-[node name="MarginContainer" type="MarginContainer" parent="VNUI/TextContainer/MarginContainer/VBoxContainer/PanelContainer"]
+[node name="MarginContainer" type="MarginContainer" parent="Camera2D/CanvasLayer/Control/VNUI/TextContainer/MarginContainer/VBoxContainer/PanelContainer"]
 auto_translate_mode = 1
 layout_mode = 2
 size_flags_horizontal = 0
+mouse_filter = 2
 theme_override_constants/margin_left = 4
 theme_override_constants/margin_top = 1
 theme_override_constants/margin_right = 7
 theme_override_constants/margin_bottom = 1
 
-[node name="Label" type="Label" parent="VNUI/TextContainer/MarginContainer/VBoxContainer/PanelContainer/MarginContainer"]
+[node name="Label" type="Label" parent="Camera2D/CanvasLayer/Control/VNUI/TextContainer/MarginContainer/VBoxContainer/PanelContainer/MarginContainer"]
 auto_translate_mode = 1
 layout_mode = 2
 text = "Name Label Here"
 
-[node name="Panel" type="PanelContainer" parent="VNUI/TextContainer/MarginContainer/VBoxContainer"]
+[node name="Panel" type="PanelContainer" parent="Camera2D/CanvasLayer/Control/VNUI/TextContainer/MarginContainer/VBoxContainer"]
 auto_translate_mode = 1
 layout_mode = 2
 size_flags_vertical = 8
 mouse_filter = 2
 
-[node name="MarginContainer" type="MarginContainer" parent="VNUI/TextContainer/MarginContainer/VBoxContainer/Panel"]
+[node name="MarginContainer" type="MarginContainer" parent="Camera2D/CanvasLayer/Control/VNUI/TextContainer/MarginContainer/VBoxContainer/Panel"]
 layout_mode = 2
+mouse_filter = 2
 theme_override_constants/margin_left = 3
 theme_override_constants/margin_top = 1
 theme_override_constants/margin_right = 3
 theme_override_constants/margin_bottom = 1
 
-[node name="RichTextLabel" type="RichTextLabel" parent="VNUI/TextContainer/MarginContainer/VBoxContainer/Panel/MarginContainer"]
+[node name="RichTextLabel" type="RichTextLabel" parent="Camera2D/CanvasLayer/Control/VNUI/TextContainer/MarginContainer/VBoxContainer/Panel/MarginContainer"]
 auto_translate_mode = 1
-custom_minimum_size = Vector2(760, 200)
+custom_minimum_size = Vector2(670, 121.41)
 layout_mode = 2
 mouse_filter = 2
 theme_override_fonts/bold_font = ExtResource("2_6jeks")
@@ -146,22 +174,25 @@ dghfgh"
 fit_content = true
 scroll_active = false
 
-[node name="HBoxContainer" type="HBoxContainer" parent="VNUI/TextContainer/MarginContainer/VBoxContainer"]
+[node name="HBoxContainer" type="HBoxContainer" parent="Camera2D/CanvasLayer/Control/VNUI/TextContainer/MarginContainer/VBoxContainer"]
 layout_mode = 2
+mouse_filter = 2
 
-[node name="PageUnfinished" type="TextureRect" parent="VNUI/TextContainer/MarginContainer/VBoxContainer/HBoxContainer"]
+[node name="PageUnfinished" type="TextureRect" parent="Camera2D/CanvasLayer/Control/VNUI/TextContainer/MarginContainer/VBoxContainer/HBoxContainer"]
 layout_mode = 2
 size_flags_horizontal = 0
+mouse_filter = 2
 texture = ExtResource("5_7sulw")
 stretch_mode = 2
 
-[node name="PageFinished" type="TextureRect" parent="VNUI/TextContainer/MarginContainer/VBoxContainer/HBoxContainer"]
+[node name="PageFinished" type="TextureRect" parent="Camera2D/CanvasLayer/Control/VNUI/TextContainer/MarginContainer/VBoxContainer/HBoxContainer"]
 layout_mode = 2
 size_flags_horizontal = 0
+mouse_filter = 2
 texture = ExtResource("6_mh4vb")
 stretch_mode = 2
 
-[node name="ChoiceContainer" type="PanelContainer" parent="VNUI"]
+[node name="ChoiceContainer" type="PanelContainer" parent="Camera2D/CanvasLayer/Control/VNUI"]
 auto_translate_mode = 1
 visible = false
 layout_mode = 1
@@ -171,12 +202,12 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 
-[node name="VBoxContainer" type="VBoxContainer" parent="VNUI/ChoiceContainer"]
+[node name="VBoxContainer" type="VBoxContainer" parent="Camera2D/CanvasLayer/Control/VNUI/ChoiceContainer"]
 auto_translate_mode = 1
 layout_mode = 2
 size_flags_vertical = 4
 
-[node name="ControlsContainer" type="VBoxContainer" parent="VNUI"]
+[node name="ControlsContainer" type="VBoxContainer" parent="Camera2D/CanvasLayer/Control/VNUI"]
 layout_mode = 1
 anchors_preset = 3
 anchor_left = 1.0
@@ -188,14 +219,65 @@ offset_top = -40.0
 grow_horizontal = 0
 grow_vertical = 0
 
-[node name="HistoryButton" type="Button" parent="VNUI/ControlsContainer"]
+[node name="HistoryButton" type="Button" parent="Camera2D/CanvasLayer/Control/VNUI/ControlsContainer"]
 layout_mode = 2
 text = "History"
 
-[node name="MenuButton" type="Button" parent="VNUI/ControlsContainer"]
+[node name="MenuButton" type="Button" parent="Camera2D/CanvasLayer/Control/VNUI/ControlsContainer"]
 layout_mode = 2
 focus_mode = 0
 text = "Menu"
+
+[node name="CGTopContainer" type="Control" parent="Camera2D/CanvasLayer/Control"]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+
+[node name="ColorRect" type="ColorRect" parent="Camera2D/CanvasLayer/Control/CGTopContainer"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+color = Color(0, 0, 0, 1)
+
+[node name="CGTex" type="TextureRect" parent="Camera2D/CanvasLayer/Control/CGTopContainer"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+
+[node name="ChapterCover" parent="Camera2D/CanvasLayer/Control" instance=ExtResource("12_vf2y4")]
+layout_mode = 1
+
+[node name="BlackFade" parent="Camera2D/CanvasLayer/Control" instance=ExtResource("8_50byo")]
+visible = false
+layout_mode = 1
+
+[node name="Cheats" parent="Camera2D/CanvasLayer/Control" instance=ExtResource("13_qackq")]
+visible = false
+layout_mode = 1
+
+[node name="StartCover" type="ColorRect" parent="Camera2D/CanvasLayer"]
+visible = false
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+color = Color(0, 0, 0, 1)
+script = ExtResource("13_qfsh6")
 
 [node name="InstructionHandler" type="Node" parent="."]
 script = ExtResource("4_u8vmc")
@@ -218,83 +300,32 @@ name_colors = {
 "one": Color(0.973451, 0.606434, 0.346273, 1),
 "spectra": Color(0.157347, 0.679059, 0.74132, 1)
 }
-choice_container = NodePath("../VNUI/ChoiceContainer")
-choice_option_container = NodePath("../VNUI/ChoiceContainer/VBoxContainer")
-text_content = NodePath("../VNUI/TextContainer/MarginContainer/VBoxContainer/Panel/MarginContainer/RichTextLabel")
-text_container = NodePath("../VNUI/TextContainer")
-name_label = NodePath("../VNUI/TextContainer/MarginContainer/VBoxContainer/PanelContainer/MarginContainer/Label")
-name_container = NodePath("../VNUI/TextContainer/MarginContainer/VBoxContainer/PanelContainer")
+choice_container = NodePath("../Camera2D/CanvasLayer/Control/VNUI/ChoiceContainer")
+choice_option_container = NodePath("../Camera2D/CanvasLayer/Control/VNUI/ChoiceContainer/VBoxContainer")
+text_content = NodePath("../Camera2D/CanvasLayer/Control/VNUI/TextContainer/MarginContainer/VBoxContainer/Panel/MarginContainer/RichTextLabel")
+text_container = NodePath("../Camera2D/CanvasLayer/Control/VNUI/TextContainer")
+name_label = NodePath("../Camera2D/CanvasLayer/Control/VNUI/TextContainer/MarginContainer/VBoxContainer/PanelContainer/MarginContainer/Label")
+name_container = NodePath("../Camera2D/CanvasLayer/Control/VNUI/TextContainer/MarginContainer/VBoxContainer/PanelContainer")
 instruction_handler = NodePath("../InstructionHandler")
 inline_evaluator = NodePath("../InlineEval")
 show_input_prompt = true
 input_prompt_delay = 1.29
 input_prompt_lerp_weight = 0.233
-prompt_unfinished = NodePath("../VNUI/TextContainer/MarginContainer/VBoxContainer/HBoxContainer/PageUnfinished")
-prompt_finished = NodePath("../VNUI/TextContainer/MarginContainer/VBoxContainer/HBoxContainer/PageFinished")
+prompt_unfinished = NodePath("../Camera2D/CanvasLayer/Control/VNUI/TextContainer/MarginContainer/VBoxContainer/HBoxContainer/PageUnfinished")
+prompt_finished = NodePath("../Camera2D/CanvasLayer/Control/VNUI/TextContainer/MarginContainer/VBoxContainer/HBoxContainer/PageFinished")
 
 [node name="InlineEval" type="Node" parent="."]
 script = ExtResource("6_8ao3j")
 
-[node name="BlackFade" parent="." instance=ExtResource("8_50byo")]
-visible = false
-layout_mode = 1
-
-[node name="CGTopContainer" type="Control" parent="."]
-visible = false
-layout_mode = 1
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
-mouse_filter = 2
-
-[node name="ColorRect" type="ColorRect" parent="CGTopContainer"]
-layout_mode = 1
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
-mouse_filter = 2
-color = Color(0, 0, 0, 1)
-
-[node name="CGTex" type="TextureRect" parent="CGTopContainer"]
-layout_mode = 1
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
-mouse_filter = 2
-
-[node name="Camera2D" type="Camera2D" parent="."]
-position = Vector2(720, 450)
-script = ExtResource("9_lbjue")
-
-[node name="TextPositionAmber" type="Node2D" parent="."]
-position = Vector2(509, 409)
-
-[node name="TextPositionEterna" type="Node2D" parent="."]
-position = Vector2(971, 409)
-
-[node name="ChapterCover" parent="." instance=ExtResource("12_vf2y4")]
-visible = false
-layout_mode = 1
-
-[node name="Cheats" parent="." instance=ExtResource("13_qackq")]
-visible = false
-layout_mode = 1
-
 [connection signal="ready" from="Characters/One" to="." method="remove_blocker"]
 [connection signal="ready" from="Characters/Anhedonia" to="." method="remove_blocker"]
-[connection signal="meta_clicked" from="VNUI/TextContainer/MarginContainer/VBoxContainer/Panel/MarginContainer/RichTextLabel" to="." method="_on_rich_text_label_meta_clicked"]
-[connection signal="meta_hover_ended" from="VNUI/TextContainer/MarginContainer/VBoxContainer/Panel/MarginContainer/RichTextLabel" to="." method="_on_rich_text_label_meta_hover_ended"]
-[connection signal="meta_hover_started" from="VNUI/TextContainer/MarginContainer/VBoxContainer/Panel/MarginContainer/RichTextLabel" to="." method="_on_rich_text_label_meta_hover_started"]
-[connection signal="pressed" from="VNUI/ControlsContainer/HistoryButton" to="." method="_on_history_button_pressed"]
-[connection signal="pressed" from="VNUI/ControlsContainer/MenuButton" to="." method="_on_menu_button_pressed"]
-[connection signal="start_black_fade" from="InstructionHandler" to="BlackFade" method="_on_handler_start_black_fade"]
-[connection signal="start_chapter_cover" from="InstructionHandler" to="ChapterCover" method="set_chapter_cover"]
+[connection signal="meta_clicked" from="Camera2D/CanvasLayer/Control/VNUI/TextContainer/MarginContainer/VBoxContainer/Panel/MarginContainer/RichTextLabel" to="." method="_on_rich_text_label_meta_clicked"]
+[connection signal="meta_hover_ended" from="Camera2D/CanvasLayer/Control/VNUI/TextContainer/MarginContainer/VBoxContainer/Panel/MarginContainer/RichTextLabel" to="." method="_on_rich_text_label_meta_hover_ended"]
+[connection signal="meta_hover_started" from="Camera2D/CanvasLayer/Control/VNUI/TextContainer/MarginContainer/VBoxContainer/Panel/MarginContainer/RichTextLabel" to="." method="_on_rich_text_label_meta_hover_started"]
+[connection signal="pressed" from="Camera2D/CanvasLayer/Control/VNUI/ControlsContainer/HistoryButton" to="." method="_on_history_button_pressed"]
+[connection signal="pressed" from="Camera2D/CanvasLayer/Control/VNUI/ControlsContainer/MenuButton" to="." method="_on_menu_button_pressed"]
+[connection signal="chapter_intro_finished" from="Camera2D/CanvasLayer/Control/ChapterCover" to="." method="_on_chapter_cover_chapter_intro_finished"]
+[connection signal="start_black_fade" from="InstructionHandler" to="Camera2D/CanvasLayer/Control/BlackFade" method="_on_handler_start_black_fade"]
+[connection signal="start_chapter_cover" from="InstructionHandler" to="Camera2D/CanvasLayer/Control/ChapterCover" method="set_chapter_cover"]
 [connection signal="start_hide_cg" from="InstructionHandler" to="." method="hide_cg"]
 [connection signal="start_show_cg" from="InstructionHandler" to="." method="_on_handler_start_show_cg"]
-[connection signal="chapter_intro_finished" from="ChapterCover" to="." method="_on_chapter_cover_chapter_intro_finished"]

@@ -74,7 +74,7 @@ func set_chapter_cover(pov_name: String, bottom_text:String):
 	name_tween.tween_property(name_tex, "modulate:a", 1, 3.0).set_delay(name_delay + 0.2).set_trans(Tween.TRANS_CUBIC).set_ease(Tween.EASE_IN)
 	
 	
-	
+	modulate.a = 0.0
 	visible = true
 	
 	var mod_tween = create_tween()

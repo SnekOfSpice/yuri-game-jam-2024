@@ -81,6 +81,8 @@ func load_gamestate():
 
 var game_start_callable:Callable
 func change_stage(stage_path:String):
+	await get_tree().process_frame
+	
 	var new_stage = load(str(CONST.STAGE_ROOT, stage_path)).instantiate()
 	
 	if stage_path == CONST.STAGE_GAME:
@@ -101,3 +103,4 @@ func change_stage(stage_path:String):
 	
 	stage = stage_path
 	set_screen("")
+	

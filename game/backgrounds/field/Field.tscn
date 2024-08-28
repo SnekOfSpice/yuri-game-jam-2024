@@ -1,10 +1,9 @@
-[gd_scene load_steps=7 format=3 uid="uid://d3fxxd5ad47va"]
+[gd_scene load_steps=6 format=3 uid="uid://d3fxxd5ad47va"]
 
-[ext_resource type="Texture2D" uid="uid://v5j8hlxkevvq" path="res://game/backgrounds/field/field1.png" id="1_fp7do"]
-[ext_resource type="Texture2D" uid="uid://c2o8427k43p0n" path="res://game/backgrounds/field/grass.png" id="2_38cnv"]
+[ext_resource type="Texture2D" uid="uid://cs6qbvrpbtll0" path="res://game/backgrounds/field/field-sky.png" id="1_wlojy"]
 [ext_resource type="Shader" uid="uid://bdmdcnfk0qmww" path="res://game/backgrounds/field/grass_sway.tres" id="2_g445n"]
-[ext_resource type="Texture2D" uid="uid://b31mw35ofw3gl" path="res://game/backgrounds/field/field2.png" id="3_6kj8l"]
-[ext_resource type="Texture2D" uid="uid://cdk2xymgu6ryh" path="res://game/backgrounds/field/field3.png" id="4_nn0qj"]
+[ext_resource type="Texture2D" uid="uid://c7uukchjla287" path="res://game/backgrounds/field/field-grass.png" id="3_o5dyp"]
+[ext_resource type="Texture2D" uid="uid://cxiipcpuuqcvj" path="res://game/backgrounds/field/field-foreground.png" id="4_yua07"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_qbae0"]
 shader = ExtResource("2_g445n")
@@ -14,18 +13,11 @@ shader_parameter/WindStrength = 20.15
 position = Vector2(345, 249)
 
 [node name="Field1" type="Sprite2D" parent="."]
-position = Vector2(368, 188)
-texture = ExtResource("1_fp7do")
+texture = ExtResource("1_wlojy")
 
 [node name="Grass" type="Sprite2D" parent="."]
 material = SubResource("ShaderMaterial_qbae0")
-position = Vector2(368, 192)
-texture = ExtResource("2_38cnv")
+texture = ExtResource("3_o5dyp")
 
 [node name="Field2" type="Sprite2D" parent="."]
-position = Vector2(368, 188)
-texture = ExtResource("3_6kj8l")
-
-[node name="Field3" type="Sprite2D" parent="."]
-position = Vector2(368, 188)
-texture = ExtResource("4_nn0qj")
+texture = ExtResource("4_yua07")

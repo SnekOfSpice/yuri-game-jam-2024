@@ -8,6 +8,8 @@ var rng = RandomNumberGenerator.new()
 
 var shake_strength := 0.0
 
+var zoom_tween:Tween
+
 func _ready() -> void:
 	GameWorld.camera = self
 
@@ -22,3 +24,10 @@ func apply_shake():
 
 func get_random_offset() -> Vector2:
 	return Vector2(randf_range(-shake_strength, shake_strength), randf_range(-shake_strength, shake_strength))
+
+
+func zoom_to(value:float):
+	if zoom_tween:
+		zoom_tween.kill()
+	zoom_tween = create_tween()
+	zoom_tween.tween_property(self, "zoom", Vector2(value, value), 2.0).set_ease(Tween.EASE_OUT).set_trans(Tween.TRANS_BOUNCE)

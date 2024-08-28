@@ -39,7 +39,7 @@ func _ready():
 	ParserEvents.instruction_started.connect(on_instruction_started)
 	ParserEvents.instruction_completed.connect(on_instruction_completed)
 	
-	GameWorld.instruction_handler = $InstructionHandler
+	GameWorld.instruction_handler = find_child("InstructionHandler")
 	GameWorld.game_stage = self
 	
 	find_child("LineReader").auto_continue = Options.auto_continue
@@ -48,7 +48,7 @@ func _ready():
 	
 	set_text_style(text_style)
 	
-	for character in $Characters.get_children():
+	for character in find_child("Characters").get_children():
 		character.visible = false
 	
 	remove_blocker()
@@ -119,9 +119,9 @@ func _gui_input(event: InputEvent) -> void:
 				return
 		if not find_child("VNUI").visible:
 			return
-		$LineReader.request_advance()
+		find_child("LineReader").request_advance()
 	elif event.is_action_pressed("go_back"):
-		$LineReader.go_back()
+		find_child("LineReader").go_back()
 
 func show_ui():
 	find_child("VNUI").visible = true
@@ -216,7 +216,7 @@ func serialize() -> Dictionary:
 	var result := {}
 	
 	var character_data := {}
-	for character : Character in $Characters.get_children():
+	for character : Character in find_child("Characters").get_children():
 		character_data[character.character_name] = character.serialize()
 	
 	result["character_data"] = character_data
@@ -229,7 +229,7 @@ func serialize() -> Dictionary:
 
 func deserialize(data:Dictionary):
 	var character_data : Dictionary = data.get("character_data", {})
-	for character : Character in $Characters.get_children():
+	for character : Character in find_child("Characters").get_children():
 		character.deserialize(character_data.get(character.character_name, {}))
 	
 	var cg_name : String = data.get("cg", "")
@@ -310,4 +310,4 @@ func _on_rich_text_label_meta_hover_started(meta: Variant) -> void:
 
 func _on_chapter_cover_chapter_intro_finished() -> void:
 	GameWorld.instruction_handler.instruction_completed.emit()
-	$ChapterCover.visible = false
+	find_child("ChapterCover").visible = false

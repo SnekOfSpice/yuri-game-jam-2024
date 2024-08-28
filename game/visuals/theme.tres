@@ -8,7 +8,7 @@ content_margin_left = 7.0
 content_margin_top = 1.0
 content_margin_right = 7.0
 content_margin_bottom = 0.0
-bg_color = Color(0.27, 0.0297, 0.0657449, 0.862745)
+bg_color = Color(0.22, 0.1826, 0.203793, 0.905882)
 border_width_left = 3
 border_width_top = 2
 border_width_right = 3
@@ -43,12 +43,12 @@ border_color = Color(0.94, 0.769547, 0.6204, 1)
 border_blend = true
 
 [resource]
-Button/font_sizes/font_size = 34
+Button/font_sizes/font_size = 24
 Button/fonts/font = ExtResource("1_3rf7y")
 Button/styles/hover = SubResource("StyleBoxFlat_ebhtr")
 Button/styles/normal = SubResource("StyleBoxFlat_qyhhy")
 Button/styles/pressed = SubResource("StyleBoxFlat_n352n")
-Label/font_sizes/font_size = 34
+Label/font_sizes/font_size = 24
 Label/fonts/font = ExtResource("1_3rf7y")
-RichTextLabel/font_sizes/normal_font_size = 22
+RichTextLabel/font_sizes/normal_font_size = 20
 RichTextLabel/fonts/normal_font = ExtResource("2_j0p7t")

@@ -82,3 +82,7 @@ func set_background(_name:String, fade_time:float):
 func play_chapter_intro(pov_name: String, bottom_text:String) -> bool:
 	emit_signal("start_chapter_cover", pov_name, bottom_text)
 	return true
+
+func zoom_to(value: float) -> bool:
+	GameWorld.camera.zoom_to(value)
+	return false
