@@ -268,6 +268,8 @@ func get_used_dialog_args_in_line() -> Array:
 	return args
 
 func build_actor_hint():
+	if not text_box.get_selected_text().is_empty():
+		return
 	used_arguments.clear()
 	entered_arguments = 0
 	text_box.insert_text_at_caret("[]>")
