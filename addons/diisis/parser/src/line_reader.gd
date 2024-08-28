@@ -628,6 +628,8 @@ func read_new_line(new_line: Dictionary):
 			emit_signal("line_finished", line_index)
 	
 	remaining_prompt_delay = input_prompt_delay
+	
+	ParserEvents.new_line_read.emit(line_index)
 
 func fit_to_max_line_count(lines: Array):
 	if max_text_line_count <= 0:
