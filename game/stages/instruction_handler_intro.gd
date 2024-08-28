@@ -33,10 +33,7 @@ func set_text_style(style: String) -> bool:
 	return false
 
 func black_fade(fade_in:float, hold_time:float, fade_out:float, hide_characters:bool, new_background:String, new_bgm:String):
-	var bg = CONST.get(str("BACKGROUND_", new_background.to_upper()))
-	if not bg:
-		push_warning(str("COULDN'T FIND BACKGROUND ", new_background, "!"))
-		bg = "home_regular"
+	var bg = new_background
 	if new_background == "none":
 		bg = GameWorld.background
 	
@@ -73,16 +70,22 @@ func hide_cg():
 
 func set_background(_name:String, fade_time:float):
 	GameWorld.stage_root.set_background(
-				CONST.get(str("BACKGROUND_", _name.to_upper())),
+				_name,
 				fade_time
 			)
 	return false
 
 
-func play_chapter_intro(pov_name: String, bottom_text:String) -> bool:
-	emit_signal("start_chapter_cover", pov_name, bottom_text)
+func play_chapter_intro(pov_name: String, bottom_text: String, new_background: String) -> bool:
+	emit_signal("start_chapter_cover", pov_name, bottom_text, new_background)
 	return true
 
 func zoom_to(value: float) -> bool:
 	GameWorld.camera.zoom_to(value)
+	return false
+
+func splatter_blood(amount: float) -> bool:
+	print("BLOOD BLOOD BLOOD")
+	# Return true if you want the LineReader to wait until its InstructionHandler has emitted instruction_completed.
+	# (Needs to be called by your code from somewhere.)
 	return false

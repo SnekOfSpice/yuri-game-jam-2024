@@ -36,14 +36,19 @@ func set_screen(screen_path:String):
 	screen = screen_path
 
 func set_background(background:String, fade_time:=0.0):
+	print(str("BACKGROUND_", background.to_upper()))
+	var path = str(CONST.BACKGROUND_ROOT, CONST.get(str("BACKGROUND_", background.to_upper())))
+	if not path:
+		push_warning(str("COULDN'T FIND BACKGROUND ", background, "!"))
+		path = str(CONST.BACKGROUND_ROOT, CONST.BACKGROUND_HOME_REGULAR)
 	var new_background:Node2D
 	var old_backgrounds:=$Background.get_children()
-	if background.ends_with(".png"):
+	if path.ends_with(".png"):
 		new_background = Sprite2D.new()
-		new_background.texture = load(str(CONST.BACKGROUND_ROOT, background))
+		new_background.texture = load(path)
 		new_background.centered = false
-	elif background.ends_with(".tscn"):
-		new_background = load(str(CONST.BACKGROUND_ROOT, background)).instantiate()
+	elif path.ends_with(".tscn"):
+		new_background = load(path).instantiate()
 	else:
 		push_error(str("Background ", background, " does not end in .png or .tscn."))
 		return
@@ -57,8 +62,9 @@ func set_background(background:String, fade_time:=0.0):
 		background_size = new_background.texture.get_size()
 	elif new_background.has_method("get_size"):
 		background_size = new_background.get_size()
-	if background_size.x > viewport_width and background_size.y > viewport_height:
-		prints("oversized", background_size)
+	
+	if background_size.x > viewport_width and background_size.y > viewport_height and background_size != Vector2.ZERO:
+		new_background.position = background_size * 0.5
 		
 	
 	var fade_tween := get_tree().create_tween()

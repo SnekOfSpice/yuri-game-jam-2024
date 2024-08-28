@@ -20,8 +20,9 @@ func _ready() -> void:
 	start_positions[name_tex] = name_tex.position
 	
 
-func set_chapter_cover(pov_name: String, bottom_text:String):
+func set_chapter_cover(pov_name: String, bottom_text:String, new_background:String):
 	if skip:
+		GameWorld.stage_root.set_background(new_background)
 		emit_signal("chapter_intro_finished")
 		return
 	var logo_tween = create_tween()
@@ -58,7 +59,6 @@ func set_chapter_cover(pov_name: String, bottom_text:String):
 		black_tween.set_parallel()
 		black_delay = 4.0 + 3
 		black_tween.tween_property($Black, "modulate:a", 0.0, black_delay).set_delay(3.0)
-		GameWorld.stage_root.set_background(CONST.BACKGROUND_FIELD, 0.0)
 	else:
 		$Black.visible = false
 	
@@ -81,9 +81,12 @@ func set_chapter_cover(pov_name: String, bottom_text:String):
 	mod_tween.finished.connect(start_fade_timer)
 	mod_tween.tween_property(self, "modulate:a", 1, 0.3)
 	mod_tween.set_parallel()
-	mod_tween.tween_property(self, "modulate:a", 0, 2.4).set_delay(max(max(logo_delay, char_delay), name_delay) + 2)
 	
+	var full_fade_in_after : float = max(max(logo_delay, char_delay), name_delay)
 	
+	mod_tween.tween_property(self, "modulate:a", 0, 2.4).set_delay(full_fade_in_after + 2)
+	
+	get_tree().create_timer(full_fade_in_after).timeout.connect(GameWorld.stage_root.set_background.bind(new_background))
 
 func start_fade_timer():
 	get_tree().create_timer(2).timeout.connect(emit_signal.bind("chapter_intro_finished"))

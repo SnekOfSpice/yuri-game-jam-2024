@@ -37,11 +37,12 @@ grow_horizontal = 2
 color = Color(0, 0, 0, 1)
 
 [node name="Logo" type="Sprite2D" parent="."]
-position = Vector2(503, 362)
+position = Vector2(482, 241)
+scale = Vector2(0.876667, 0.876667)
 texture = ExtResource("2_vjc1c")
 
 [node name="Character" type="Sprite2D" parent="."]
-position = Vector2(737.5, 470.5)
+position = Vector2(478, 493)
 texture = ExtResource("2_p6fwy")
 
 [node name="Name" type="RichTextLabel" parent="."]

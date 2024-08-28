@@ -1,4 +1,4 @@
-[gd_scene load_steps=17 format=3 uid="uid://r1ntcqdujfol"]
+[gd_scene load_steps=16 format=3 uid="uid://r1ntcqdujfol"]
 
 [ext_resource type="Script" path="res://game/stages/game_stage.gd" id="1_a36me"]
 [ext_resource type="Script" path="res://addons/diisis/parser/src/line_reader.gd" id="1_h4afo"]
@@ -7,7 +7,6 @@
 [ext_resource type="PackedScene" uid="uid://c7bnsg1etl8i7" path="res://game/characters/one.tscn" id="2_15g65"]
 [ext_resource type="PackedScene" uid="uid://chfbyvpvah4eu" path="res://game/characters/character.tscn" id="3_5aep6"]
 [ext_resource type="Script" path="res://game/stages/instruction_handler_intro.gd" id="4_u8vmc"]
-[ext_resource type="Texture2D" uid="uid://ci3a0nblay7ri" path="res://game/characters/sprites/SpriteComissionSnekGame2.png" id="5_1byck"]
 [ext_resource type="Texture2D" uid="uid://delwppkladi0u" path="res://addons/diisis/editor/visuals/more.svg" id="5_7sulw"]
 [ext_resource type="Script" path="res://game/diisis_integration/inline_eval.gd" id="6_8ao3j"]
 [ext_resource type="Texture2D" uid="uid://bh7mo1v26xtqq" path="res://addons/diisis/editor/visuals/helpZeichenfläche 3.png" id="6_mh4vb"]
@@ -32,16 +31,11 @@ dev_mode = true
 [node name="Characters" type="Node2D" parent="."]
 
 [node name="One" parent="Characters" instance=ExtResource("2_15g65")]
-position = Vector2(215, 503)
+position = Vector2(569, 304)
 
 [node name="Anhedonia" parent="Characters" instance=ExtResource("3_5aep6")]
-position = Vector2(1033, 518)
+position = Vector2(307, 334)
 character_name = "anhedonia"
-
-[node name="Sprite2D" type="Sprite2D" parent="."]
-position = Vector2(380, 349)
-scale = Vector2(1.4973, 1.4973)
-texture = ExtResource("5_1byck")
 
 [node name="Camera2D" type="Camera2D" parent="."]
 position = Vector2(480, 270)

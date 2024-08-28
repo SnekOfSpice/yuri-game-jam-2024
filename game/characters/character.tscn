@@ -1,8 +1,10 @@
-[gd_scene load_steps=2 format=3 uid="uid://chfbyvpvah4eu"]
+[gd_scene load_steps=3 format=3 uid="uid://chfbyvpvah4eu"]
 
 [ext_resource type="Script" path="res://game/characters/character.gd" id="1_upf4t"]
+[ext_resource type="Texture2D" uid="uid://h1h321rpoqeg" path="res://game/characters/sprites/anhedonia-neutral.png" id="2_lhaq4"]
 
 [node name="Character" type="Node2D"]
 script = ExtResource("1_upf4t")
 
 [node name="Sprite" type="Sprite2D" parent="."]
+texture = ExtResource("2_lhaq4")
