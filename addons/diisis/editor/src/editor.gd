@@ -21,6 +21,7 @@ var active_file_name := ""
 var time_since_last_save := 0.0
 var last_system_save := {}
 var has_saved := false
+var altered_history := false
 
 enum PageView {
 	Full,
@@ -99,6 +100,8 @@ func init(active_file_path:="") -> void:
 	find_child("ShowErrorsButton").button_pressed = false
 	
 	open_from_path(active_file_path)
+	
+	undo_redo.version_changed.connect(set.bind("altered_history", true))
 	
 	print("init editor successful")
 
@@ -377,6 +380,7 @@ func save_to_file(path:String, is_autosave:=false):
 		time_since_last_save = 0.0
 		last_system_save = Time.get_time_dict_from_system()
 		has_saved = true
+		altered_history = false
 	
 		notify(str("Saved to ", active_file_name, "!"))
 	
@@ -454,10 +458,13 @@ func _on_header_popup_update() -> void:
 	current_page.update()
 
 func _on_instruction_definition_timer_timeout() -> void:
+	update_error_text_box()
+
+func update_error_text_box():
 	find_child("ErrorTextBox").text = Pages.get_all_invalid_instructions()
 
 func _on_instruction_popup_validate_saved_instructions() -> void:
-	find_child("ErrorTextBox").text = Pages.get_all_invalid_instructions()
+	update_error_text_box()
 
 func update_undo_redo_buttons():
 	find_child("UndoButton").disabled = not undo_redo.has_undo()

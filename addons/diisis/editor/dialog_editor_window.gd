@@ -40,7 +40,7 @@ func _process(delta):
 	update_content_scale(editor_content_scale)
 
 func _on_close_requested() -> void:
-	if editor.undo_redo.get_history_count() == 0:
+	if editor.undo_redo.get_history_count() == 0 or not editor.altered_history:
 		close_editor()
 	last_quit_header = "Do you want to close DIISIS?\n"
 	build_quit_dialog(last_quit_header)
@@ -184,7 +184,7 @@ func _on_editor_scale_editor_up():
 
 
 func _on_editor_open_new_file() -> void:
-	if editor.undo_redo.get_history_count() == 0:
+	if editor.undo_redo.get_history_count() == 0 or not editor.altered_history:
 		close_editor_and_open_new_file()
 	last_quit_header = "Open a new, blank file?\n"
 	build_quit_dialog(last_quit_header, close_editor_and_open_new_file)
