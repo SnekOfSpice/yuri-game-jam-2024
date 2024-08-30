@@ -92,6 +92,7 @@ func _gui_input(event: InputEvent) -> void:
 				notification.init(str("Saved to [url=", global_dir, "]", global_path, "[/url]"))
 			if InputMap.action_has_event("toggle_auto_continue", event):
 				find_child("LineReader").auto_continue = not find_child("LineReader").auto_continue
+				Options.auto_continue = find_child("LineReader").auto_continue
 			if InputMap.action_has_event("toggle_ui", event):
 				if find_child("VNUI").visible:
 					hide_ui()

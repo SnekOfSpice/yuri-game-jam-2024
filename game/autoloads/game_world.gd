@@ -5,7 +5,7 @@ var stage_root: StageRoot
 var game_stage: GameStage
 var instruction_handler: InstructionHandler
 
-var camera : Camera2D
+var camera : GameCamera
 
 var background := ""
 

@@ -3,9 +3,9 @@ extends Control
 @export var skip := false
 
 
-@onready var logo_tex : Sprite2D = $Logo
-@onready var char_tex : Sprite2D = $Character
-@onready var name_tex : RichTextLabel = $Name
+@onready var logo_tex : Sprite2D = $Parts/Logo
+@onready var char_tex : Sprite2D = $Parts/Character
+@onready var name_tex : RichTextLabel = $Parts/Name
 
 var start_positions = {}
 
@@ -20,11 +20,19 @@ func _ready() -> void:
 	start_positions[name_tex] = name_tex.position
 	
 
-func set_chapter_cover(pov_name: String, bottom_text:String, new_background:String):
+func set_chapter_cover(pov_name: String, bottom_text: String, new_background: String, zoom: float, bgm: String):
 	if skip:
+		if GameWorld.camera:
+			GameWorld.camera.zoom_to(zoom, 0)
+		Sound.play_bgm(bgm)
 		GameWorld.stage_root.set_background(new_background)
 		emit_signal("chapter_intro_finished")
 		return
+	
+	for part in $Parts.get_children():
+		part.visible = true
+	$AssembledTexture.texture = null
+	
 	var logo_tween = create_tween()
 	var char_tween = create_tween()
 	var name_tween = create_tween()
@@ -87,6 +95,12 @@ func set_chapter_cover(pov_name: String, bottom_text:String, new_background:Stri
 	mod_tween.tween_property(self, "modulate:a", 0, 2.4).set_delay(full_fade_in_after + 2)
 	
 	get_tree().create_timer(full_fade_in_after).timeout.connect(GameWorld.stage_root.set_background.bind(new_background))
-
+	get_tree().create_timer(full_fade_in_after).timeout.connect(GameWorld.camera.zoom_to.bind(zoom, 0.0))
+	get_tree().create_timer(full_fade_in_after).timeout.connect(Sound.play_bgm.bind(bgm))
+	get_tree().create_timer(full_fade_in_after).timeout.connect(replace_with_assembled_texture)
+	
+func replace_with_assembled_texture():
+	$AssembledTexture.texture = get_viewport().get_texture().get_image()
+	
 func start_fade_timer():
 	get_tree().create_timer(2).timeout.connect(emit_signal.bind("chapter_intro_finished"))

@@ -1,7 +1,6 @@
 extends Camera2D
+class_name GameCamera
 
-
-@export var strength := 20.0
 @export var fade = 5.0
 
 var rng = RandomNumberGenerator.new()
@@ -19,15 +18,15 @@ func _process(delta: float) -> void:
 		
 		offset = get_random_offset()
 
-func apply_shake():
+func apply_shake(strength:float):
 	shake_strength = strength
 
 func get_random_offset() -> Vector2:
 	return Vector2(randf_range(-shake_strength, shake_strength), randf_range(-shake_strength, shake_strength))
 
 
-func zoom_to(value:float):
+func zoom_to(value:float, duration:float):
 	if zoom_tween:
 		zoom_tween.kill()
 	zoom_tween = create_tween()
-	zoom_tween.tween_property(self, "zoom", Vector2(value, value), 2.0).set_ease(Tween.EASE_OUT).set_trans(Tween.TRANS_BOUNCE)
+	zoom_tween.tween_property(self, "zoom", Vector2(value, value), duration).set_ease(Tween.EASE_OUT).set_trans(Tween.TRANS_QUAD)

@@ -28,7 +28,7 @@ func set_audio_player_volume(volume:float):
 
 func play_sfx(sfx:String):
 	var player := AudioStreamPlayer.new()
-	player.stream = load(str(CONST.SFX_ROOT, sfx))
+	player.stream = load(str(CONST.SFX_ROOT, CONST.get(str("SFX_", sfx.to_upper()))))
 	player.set_bus("SFX")
 	add_child(player)
 	player.play()
@@ -43,9 +43,9 @@ func play_bgm(bgm:String, fade_in:=0.0, from:=0.0):
 	music_player.connect("tree_exiting", audio_players.erase.bind(music_player))
 	main_audio_player = music_player
 	
-	var music_path := str(CONST.MUSIC_ROOT, CONST.get(str("MUSIC_", bgm_key)))
+	var music_path := str(CONST.MUSIC_ROOT, CONST.get(str("MUSIC_", bgm_key.to_upper())))
 	if not ResourceLoader.exists(music_path):
-		push_error(str(music_path, " doesn't exist"))
+		push_error(str(music_path, " doesn't exist with key ", bgm_key))
 		return
 	music_player.stream = load(music_path)
 	music_player.volume_db = -80

@@ -11,6 +11,11 @@ func _ready() -> void:
 	mouse_filter = Control.MOUSE_FILTER_STOP
 	gui_input.connect(handle_input)
 	
+	if GameWorld.camera:
+		scale.x = 1.0 / GameWorld.camera.zoom.x
+		scale.y = 1.0 / GameWorld.camera.zoom.y
+		position = Vector2.ZERO
+	
 	await get_tree().process_frame
 	ignore_event = false
 

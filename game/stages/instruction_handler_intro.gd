@@ -18,11 +18,11 @@ signal start_hide_cg()
 signal start_chapter_cover(pov_name:String)
 
 func play_sfx(_name:String):
-	Sound.play_sfx(CONST.get(str("SFX_", _name.to_upper())))
+	Sound.play_sfx(_name)
 	return false
 
 func set_bgm(_name:String, fade_in:float):
-	Sound.play_bgm(_name.to_upper(), fade_in)
+	Sound.play_bgm(_name, fade_in)
 	return false
 
 func set_text_style(style: String) -> bool:
@@ -37,7 +37,7 @@ func black_fade(fade_in:float, hold_time:float, fade_out:float, hide_characters:
 	if new_background == "none":
 		bg = GameWorld.background
 	
-	var bgm = CONST.get(str("MUSIC_", new_bgm.to_upper()))
+	var bgm = new_bgm
 	if not bg:
 		push_warning(str("COULDN'T FIND MUSIC ", new_bgm, "!"))
 		bgm = "main_menu"
@@ -76,16 +76,38 @@ func set_background(_name:String, fade_time:float):
 	return false
 
 
-func play_chapter_intro(pov_name: String, bottom_text: String, new_background: String) -> bool:
-	emit_signal("start_chapter_cover", pov_name, bottom_text, new_background)
+func play_chapter_intro(pov_name: String, bottom_text: String, new_background: String, zoom: float, bgm: String) -> bool:
+	if bgm == "null":
+		bgm = Sound.bgm_key
+	emit_signal("start_chapter_cover", pov_name, bottom_text, new_background, zoom, bgm)
 	return true
 
-func zoom_to(value: float) -> bool:
-	GameWorld.camera.zoom_to(value)
+func zoom_to(value: float, duration:float) -> bool:
+	GameWorld.camera.zoom_to(value, duration)
 	return false
 
 func splatter_blood(amount: float) -> bool:
 	print("BLOOD BLOOD BLOOD")
 	# Return true if you want the LineReader to wait until its InstructionHandler has emitted instruction_completed.
 	# (Needs to be called by your code from somewhere.)
+	return false
+
+func set_emotion(actor_name: String, emotion_name: String) -> bool:
+	for char : Character in get_tree().get_nodes_in_group("character"):
+		if char.character_name == actor_name:
+			char.set_emotion(emotion_name)
+	return false
+
+func show_character(character_name: String, clear_others: bool) -> bool:
+	for char : Character in get_tree().get_nodes_in_group("character"):
+		if char.character_name == character_name:
+			char.visible = true
+		elif clear_others:
+			char.visible = false
+	return false
+
+
+func shake_camera(strength: float) -> bool:
+	if GameWorld.camera:
+		GameWorld.camera.apply_shake(strength)
 	return false
