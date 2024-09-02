@@ -24,6 +24,8 @@ func apply_shake(strength:float):
 func get_random_offset() -> Vector2:
 	return Vector2(randf_range(-shake_strength, shake_strength), randf_range(-shake_strength, shake_strength))
 
+func get_screen_container() -> Control:
+	return find_child("ScreenContainer")
 
 func zoom_to(value:float, duration:float):
 	if zoom_tween:

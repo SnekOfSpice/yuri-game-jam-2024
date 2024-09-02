@@ -30,8 +30,10 @@ func _ready() -> void:
 	set_menu(0)
 	set_menu_available(0, GameWorld.stage_root.stage != CONST.STAGE_MAIN)
 
+
 func close():
 	Options.save_prefs()
+	prints("parser was ", pause_state_before_open)
 	Parser.set_paused(pause_state_before_open)
 	super.close()
 

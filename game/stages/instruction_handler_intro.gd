@@ -55,6 +55,11 @@ func black_fade(fade_in:float, hold_time:float, fade_out:float, hide_characters:
 	return true
 
 
+func hide_all_characters() -> bool:
+	for character: Character in get_tree().get_nodes_in_group("character"):
+		character.visible = false
+	return false
+
 
 func show_cg(_name:String, fade_in_time:float, continue_dialog_through_cg:bool):
 	emit_signal("start_show_cg",

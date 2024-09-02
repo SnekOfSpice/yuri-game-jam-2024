@@ -12,7 +12,10 @@ func _ready() -> void:
 
 func _gui_input(event: InputEvent) -> void:
 	if event.is_action_pressed("ui_cancel"):
-		GameWorld.stage_root.set_screen(CONST.SCREEN_OPTIONS)
+		if GameWorld.stage_root.get_node("ScreenContainer").get_child_count() == 0:
+			GameWorld.stage_root.set_screen("")
+		else:
+			GameWorld.stage_root.set_screen(CONST.SCREEN_OPTIONS)
 
 func _on_quit_button_pressed() -> void:
 	Options.save_prefs()

@@ -9,30 +9,38 @@ func _ready():
 	set_screen("")
 	GameWorld.stage_root = self
 
-func _input(event: InputEvent) -> void:
-	if Input.is_action_just_pressed("ui_cancel") and $ScreenContainer.get_child_count() == 0:
-		set_screen(CONST.SCREEN_OPTIONS)
-		get_viewport().set_input_as_handled()
+#func _input(event: InputEvent) -> void:
+	#if Input.is_action_just_pressed("ui_cancel") and $ScreenContainer.get_child_count() == 0:
+		#set_screen(CONST.SCREEN_OPTIONS)
+		#get_viewport().set_input_as_handled()
 
-func _gui_input(event: InputEvent) -> void:
-	if Input.is_action_just_pressed("ui_cancel") and $ScreenContainer.get_child_count() == 0:
-		set_screen(CONST.SCREEN_OPTIONS)
+#func _gui_input(event: InputEvent) -> void:
+	#printt(3, event)
+	#if Input.is_action_just_pressed("ui_cancel") and $ScreenContainer.get_child_count() == 0:
+		#set_screen(CONST.SCREEN_OPTIONS)
 
 func set_screen(screen_path:String):
 	if Parser.line_reader:
 		if Parser.line_reader.is_input_locked:
 			return
+	
+	var screen_container:Control
+	if GameWorld.camera is GameCamera:
+		screen_container = GameWorld.camera.get_screen_container()
+	else:
+		screen_container = $ScreenContainer
+	
 	if screen_path.is_empty():
-		for c in $ScreenContainer.get_children():
+		for c in screen_container.get_children():
 			c.queue_free()
-		$ScreenContainer.visible = false
-		if stage == CONST.STAGE_GAME:
-			GameWorld.game_stage.grab_focus()
+		screen_container.visible = false
+		if $StageContainer.get_child_count() > 0:
+			$StageContainer.get_child(0).grab_focus()
 		screen = screen_path
 		return
 	var new_stage = load(str(CONST.SCREEN_ROOT, screen_path)).instantiate()
-	$ScreenContainer.add_child(new_stage)
-	$ScreenContainer.visible = true
+	screen_container.add_child(new_stage)
+	screen_container.visible = true
 	screen = screen_path
 
 func set_background(background:String, fade_time:=0.0):

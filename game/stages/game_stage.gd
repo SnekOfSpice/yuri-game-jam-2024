@@ -73,8 +73,11 @@ func on_instruction_completed(
 func go_to_main_menu(_unused):
 	GameWorld.stage_root.change_stage(CONST.STAGE_MAIN)
 
-func _gui_input(event: InputEvent) -> void:
+
+
+func _input(event: InputEvent) -> void:
 	if hovering_meta:
+		print("hovering meta")
 		return
 	if event is InputEventKey:
 		if event.pressed:
