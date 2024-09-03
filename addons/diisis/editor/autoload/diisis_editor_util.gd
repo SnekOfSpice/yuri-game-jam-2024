@@ -105,12 +105,17 @@ func humanize_address(address:String) -> String:
 		address_string += str(" / ", Pages.get_choice_text_shortened(parts[0], parts[1], parts[2]))
 	return address_string
 
-func get_project_source_file_path() -> String:
+func get_project_source_file_path(suppress_warning:=false) -> String:
 	var file_path := DIISISPlugin.get_project_file_path()
 	if FileAccess.file_exists(file_path):
 		var file = FileAccess.open(file_path, FileAccess.READ)
+		if not file:
+			if not suppress_warning:
+				push_warning(str("idk", file_path, "."))
+			return ""
 		return file.get_as_text()
-	push_warning("No source file set.")
+	if not suppress_warning:
+		push_warning(str("No source file at path", file_path, "."))
 	return ""
 
 func set_project_file_path(active_dir:String, active_file_name:String):

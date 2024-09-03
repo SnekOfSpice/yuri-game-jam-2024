@@ -57,14 +57,15 @@ var address_trail := []
 
 var last_modified_time = 0
 
-func _get_live_source_path() -> String:
+func _get_live_source_path(suppress_error:=false) -> String:
 	var source_path:String
 	if not source_file_override.is_empty():
 		source_path = source_file_override
 	else:
-		source_path = DiisisEditorUtil.get_project_source_file_path()
+		source_path = DiisisEditorUtil.get_project_source_file_path(suppress_error)
 		if source_path.is_empty():
-			push_error("Parser could not find project source file. Either set Parser.source_file_override manually, or make sure that the DIISIS file has been saved at least once.")
+			if not suppress_error:
+				push_error("Parser could not find project source file. Either set Parser.source_file_override manually, or make sure that the DIISIS file has been saved at least once.")
 			return ""
 	return source_path
 
@@ -107,11 +108,13 @@ func init(data:Dictionary):
 	dropdowns = data.get("dropdowns", {})
 
 func _process(delta: float) -> void:
-	var modified_time = FileAccess.get_modified_time(_get_live_source_path())
+	var modified_time = FileAccess.get_modified_time(_get_live_source_path(true))
 	if modified_time != last_modified_time:
+		while not FileAccess.file_exists(_get_live_source_path(true)):
+			await get_tree().process_frame
 		init(_get_data())
 		read_page(page_index, line_index)
-	last_modified_time = FileAccess.get_modified_time(_get_live_source_path())
+	last_modified_time = FileAccess.get_modified_time(_get_live_source_path(true))
 
 ## Call this one for a blank, new game.
 func reset_and_start(start_page_index:=0):
