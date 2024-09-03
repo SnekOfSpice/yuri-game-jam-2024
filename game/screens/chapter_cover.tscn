@@ -56,7 +56,7 @@ scale = Vector2(0.876667, 0.876667)
 texture = ExtResource("2_vjc1c")
 
 [node name="Character" type="Sprite2D" parent="Parts"]
-position = Vector2(478, 493)
+position = Vector2(460, 453)
 texture = ExtResource("2_p6fwy")
 
 [node name="Name" type="RichTextLabel" parent="Parts"]

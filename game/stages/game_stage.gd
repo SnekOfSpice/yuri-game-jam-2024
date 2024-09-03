@@ -23,7 +23,7 @@ var is_name_container_visible := false
 @onready var rtl_custom_minimum_size : Vector2 = find_child("RichTextLabel").custom_minimum_size
 
 @onready var cg_roots := [find_child("CGBottomContainer"), find_child("CGTopContainer")]
-var blockers : int = 3 # character count + 1 (self) get_tree().get_node_count_in_group("diisis_character")
+var blockers : int = 4 # character count + 1 (self) get_tree().get_node_count_in_group("diisis_character")
 var hovering_meta := false
 
 @onready var text_start_position = find_child("TextContainer").position

@@ -22,15 +22,17 @@ const BACKGROUND_CLERICANT_INTERROGATION_CHAMBER := "clericant_interrogation_cha
 const BACKGROUND_CLERICANT_TORTURE_CHAMBER := "clericant_torture_chamber.png"
 const BACKGROUND_BUS_RIDE := "bus_ride.png"
 const BACKGROUND_BENCH := "bus_ride.png" # PH
+const BACKGROUND_BENCH_NIGHT := "bus_ride.png" # PH
 const BACKGROUND_BENCH_PATHWAY := "bus_ride.png" # PH
 const BACKGROUND_SPECTRA_APARTMENT := "spectra_apartment.png"
 
 const MUSIC_ROOT := "res://game/sounds/music/"
-const MUSIC_MAIN_MENU := "Paradise_Found.mp3"
+const MUSIC_MAIN_MENU := "Paradise_Found.mp3" # PH
 const MUSIC_COL8822 := "CØL - What Makes Me Feel Alive - 02 8822.ogg"
 const MUSIC_TORTURE := "CØL - What Makes Me Feel Alive - 02 8822.ogg" # PH
 const MUSIC_SPECTRA := "Paradise_Found.mp3" # PH
-const MUSIC_HOPE := "Hope.ogg" # PHD
+const MUSIC_HOPE := "Hope.ogg"
+const MUSIC_PRISON := "Hope.ogg" # PH
 
 const SFX_ROOT := "res://game/sounds/sfx/"
 const SFX_GUNSHOT := "417345__inspectorj__gunshot-distant-a.ogg" # PH

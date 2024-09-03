@@ -55,9 +55,7 @@ func set_eye_progress(progress:int):
 
 
 func set_emotion(emotion_name:String):
-	emotion = emotion_name
-	visible = true
-	find_child("Sprite").texture = load(str("res://game/characters/sprites/", character_name, "-", emotion, ".png"))
+	super.set_emotion(emotion_name)
 	
 	var overlay:Node2D
 	for child in $Eyes.get_children():

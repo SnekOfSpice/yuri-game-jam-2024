@@ -96,11 +96,12 @@ func set_chapter_cover(pov_name: String, bottom_text: String, new_background: St
 	
 	get_tree().create_timer(full_fade_in_after).timeout.connect(GameWorld.stage_root.set_background.bind(new_background))
 	get_tree().create_timer(full_fade_in_after).timeout.connect(GameWorld.camera.zoom_to.bind(zoom, 0.0))
+	get_tree().create_timer(full_fade_in_after).timeout.connect(GameWorld.hide_all_characters)
 	get_tree().create_timer(full_fade_in_after).timeout.connect(Sound.play_bgm.bind(bgm))
 	get_tree().create_timer(full_fade_in_after).timeout.connect(replace_with_assembled_texture)
 	
 func replace_with_assembled_texture():
 	$AssembledTexture.texture = get_viewport().get_texture().get_image()
-	
+
 func start_fade_timer():
 	get_tree().create_timer(2).timeout.connect(emit_signal.bind("chapter_intro_finished"))

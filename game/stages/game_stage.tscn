@@ -37,6 +37,10 @@ position = Vector2(569, 304)
 position = Vector2(307, 334)
 character_name = "anhedonia"
 
+[node name="One+Anhedonia" parent="Characters" instance=ExtResource("3_5aep6")]
+position = Vector2(512, 334)
+character_name = "one+anhedonia"
+
 [node name="Camera2D" type="Camera2D" parent="."]
 position = Vector2(480, 270)
 script = ExtResource("9_lbjue")
@@ -323,6 +327,7 @@ script = ExtResource("6_8ao3j")
 
 [connection signal="ready" from="Characters/One" to="." method="remove_blocker"]
 [connection signal="ready" from="Characters/Anhedonia" to="." method="remove_blocker"]
+[connection signal="ready" from="Characters/One+Anhedonia" to="." method="remove_blocker"]
 [connection signal="meta_clicked" from="Camera2D/CanvasLayer/Control/VNUI/TextContainer/MarginContainer/VBoxContainer/Panel/MarginContainer/RichTextLabel" to="." method="_on_rich_text_label_meta_clicked"]
 [connection signal="meta_hover_ended" from="Camera2D/CanvasLayer/Control/VNUI/TextContainer/MarginContainer/VBoxContainer/Panel/MarginContainer/RichTextLabel" to="." method="_on_rich_text_label_meta_hover_ended"]
 [connection signal="meta_hover_started" from="Camera2D/CanvasLayer/Control/VNUI/TextContainer/MarginContainer/VBoxContainer/Panel/MarginContainer/RichTextLabel" to="." method="_on_rich_text_label_meta_hover_started"]

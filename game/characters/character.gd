@@ -34,5 +34,8 @@ func on_dialog_line_args_passed(actor_name: String, dialog_line_args: Dictionary
 
 func set_emotion(emotion_name:String):
 	emotion = emotion_name
+	if emotion_name == "invisible":
+		visible = false
+		return
 	visible = true
 	find_child("Sprite").texture = load(str("res://game/characters/sprites/", character_name, "-", emotion, ".png"))
