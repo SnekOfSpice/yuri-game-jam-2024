@@ -966,7 +966,7 @@
 						}
 					}
 				],
-				"meta.scroll_vertical": 1078,
+				"meta.scroll_vertical": 1367,
 				"meta.selected": false,
 				"next": 1,
 				"number": 0,
@@ -2483,7 +2483,7 @@
 								"one+anhedonia"
 							],
 							"active_actors_title": "character",
-							"content": "[]>narrator:And then they fuck ! period sex yay!!"
+							"content": "[]>narrator:And then they fuck ! period sex yay!!\n[]>narrator:On the windowsill. yur short legs barely reach\n[]>narrator:parched for blood - perhaps factually so - anhedonia looks up at you from between your legs.\n[]>narrator:seemingly satiated for the time being, anhedonia moves up ever so slightly, beging to gentle suckle on your clit. over time , oyur legs become weajer. anhedonia grabs them and puts them on her soulder, keeping you in place with her face pressed into your crotch."
 						},
 						"facts": {
 							"fact_data_by_name": {
@@ -2519,7 +2519,7 @@
 				},
 				"lines": [
 					{
-						"address": "7.0",
+						"address": "8.0",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -2565,7 +2565,7 @@
 						}
 					},
 					{
-						"address": "7.1",
+						"address": "8.1",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -2613,7 +2613,7 @@
 						}
 					},
 					{
-						"address": "7.2",
+						"address": "8.2",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -2659,7 +2659,7 @@
 						}
 					},
 					{
-						"address": "7.3",
+						"address": "8.3",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -2705,7 +2705,7 @@
 						}
 					},
 					{
-						"address": "7.4",
+						"address": "8.4",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -2767,7 +2767,7 @@
 				},
 				"lines": [
 					{
-						"address": "8.0",
+						"address": "9.0",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -2815,7 +2815,7 @@
 						}
 					},
 					{
-						"address": "8.1",
+						"address": "9.1",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -2861,7 +2861,7 @@
 						}
 					},
 					{
-						"address": "8.2",
+						"address": "9.2",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -2925,7 +2925,7 @@
 				},
 				"lines": [
 					{
-						"address": "9.0",
+						"address": "10.0",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -2971,7 +2971,7 @@
 						}
 					},
 					{
-						"address": "9.1",
+						"address": "10.1",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -3017,7 +3017,7 @@
 						}
 					},
 					{
-						"address": "9.2",
+						"address": "10.2",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -3061,7 +3061,7 @@
 						}
 					},
 					{
-						"address": "9.3",
+						"address": "10.3",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -3107,7 +3107,7 @@
 						}
 					},
 					{
-						"address": "9.4",
+						"address": "10.4",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -3153,11 +3153,11 @@
 						}
 					}
 				],
-				"meta.scroll_vertical": 658,
+				"meta.scroll_vertical": 669,
 				"meta.selected": false,
 				"next": 11,
 				"number": 10,
-				"page_key": "",
+				"page_key": "O: First bench talk",
 				"terminate": false
 			},
 			"11": {
@@ -3169,7 +3169,7 @@
 				},
 				"lines": [
 					{
-						"address": "10.0",
+						"address": "11.0",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -3216,7 +3216,7 @@
 						}
 					},
 					{
-						"address": "10.1",
+						"address": "11.1",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -3259,7 +3259,7 @@
 						}
 					},
 					{
-						"address": "10.2",
+						"address": "11.2",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -3305,7 +3305,7 @@
 						}
 					},
 					{
-						"address": "10.3",
+						"address": "11.3",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -3351,7 +3351,7 @@
 						}
 					},
 					{
-						"address": "10.4",
+						"address": "11.4",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -3397,7 +3397,7 @@
 						}
 					},
 					{
-						"address": "10.5",
+						"address": "11.5",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -3443,7 +3443,7 @@
 						}
 					},
 					{
-						"address": "10.6",
+						"address": "11.6",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -3489,7 +3489,7 @@
 						}
 					},
 					{
-						"address": "10.7",
+						"address": "11.7",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -3535,7 +3535,7 @@
 						}
 					},
 					{
-						"address": "10.8",
+						"address": "11.8",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -3581,7 +3581,7 @@
 						}
 					}
 				],
-				"meta.scroll_vertical": 1608,
+				"meta.scroll_vertical": 1779,
 				"meta.selected": false,
 				"next": 12,
 				"number": 11,
@@ -3597,7 +3597,7 @@
 				},
 				"lines": [
 					{
-						"address": "11.0",
+						"address": "12.0",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -3659,7 +3659,7 @@
 				},
 				"lines": [
 					{
-						"address": "12.0",
+						"address": "13.0",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -3685,7 +3685,7 @@
 								"one+anhedonia"
 							],
 							"active_actors_title": "character",
-							"content": "[]>one:hii"
+							"content": "[]>anhedonia: stay safe, ily\n[]>one: will do, love u 2\nBlack fade: train yard bg\n[]>narrator:: a mere minutes later you find yourself on a train out tk the industrial smokestack and catalyst arrays that dot the landscape in the djstance.\nthis is one of the heavier shrines, requiring all of your strength to carry. but endangering anhedonia on these ventures is something you actively try to avoid, most effectively of all by just not taking her with you to begin with.\n[]>narrator:: massive electrical pylons roll across the horizon, the driving motor for much of the chagrin the clericants cause.\n[]>narrator:: the train continues to roll through the landscape, isolated clusters of workers getting on and off at key nodes inside this maze of industry.\neventually, you reach your stop. A desolate station, denoting the place where once stood worker encampment that have since been abandoned. \nyou hulk the circuit-breaker-sized rock formation down the train station steps, and then roll it the rest kf the way.\nusing a bit of triangulation, you determined the ideal position for this anchoring shrine would be in one of the abandoned warehouses here.\n[]>one: mmrmhm...\n[]>narrator:: the summer heat and exertion of rolling this heavy stone weight through the rubble relentlessly hammer against your head.\n\na short walk through this dead town takes you there eventually.\n\nwading through needles and bandages on the ground, you finally set down the shrine next to one of the rebar pillars. whatever adornments the capital buildings might boast, has been completely stripped away here: by time and the ravenous drive for efficiency of industriarchs. functional concrete, exposed piping, untreated chemical refuse.\n\n[]>one: ... time to get to work.\n[]>narrator:: you jam a blade into the shrine, then engage the canister trigger to infuse it with compounds to liquids the oxygen bonds ahan. you make it leak it's own substance a few droplets at a time, fusing it with the ground. lc you then extract the knife and slice it across your arm without hesitation. A fairly deep laceration, and yet just enough to draw out a sufficient amount of blood to inscribe your blessing upon the oxylith. dripping blood over the shrine and cracked concrete floor, you make sure to leave no partition untouched.\n[]>narrator:: and so you whisper a blessing upon the bloodied site, a 6 word requiem. you briefly reside at the self-devoted holy site, and subsequently return to anhedonia posthaste.\n\nend chapter."
 						},
 						"facts": {
 							"fact_data_by_name": {
@@ -3721,7 +3721,7 @@
 				},
 				"lines": [
 					{
-						"address": "13.0",
+						"address": "14.0",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -3768,7 +3768,7 @@
 						}
 					},
 					{
-						"address": "13.1",
+						"address": "14.1",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -3790,7 +3790,8 @@
 								"spectra",
 								"narrator",
 								"interrogator",
-								"torturer"
+								"torturer",
+								"one+anhedonia"
 							],
 							"active_actors_title": "character",
 							"content": "[]>narrator:date time !get food"
@@ -3813,7 +3814,7 @@
 						}
 					},
 					{
-						"address": "13.2",
+						"address": "14.2",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -3835,7 +3836,8 @@
 								"spectra",
 								"narrator",
 								"interrogator",
-								"torturer"
+								"torturer",
+								"one+anhedonia"
 							],
 							"active_actors_title": "character",
 							"content": "[]>anhedonia:Seeing you in these accursed city lights, it does something for me.\n[]>one:Feeling poetic?\n[]>anhedonia{anhedonia-emotion|smug}:I always am."
@@ -3858,7 +3860,7 @@
 						}
 					},
 					{
-						"address": "13.3",
+						"address": "14.3",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -3880,7 +3882,8 @@
 								"spectra",
 								"narrator",
 								"interrogator",
-								"torturer"
+								"torturer",
+								"one+anhedonia"
 							],
 							"active_actors_title": "character",
 							"content": "[]>one:Wanna head outside for a bit?"
@@ -3919,7 +3922,7 @@
 				},
 				"lines": [
 					{
-						"address": "14.0",
+						"address": "15.0",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -3941,7 +3944,8 @@
 								"spectra",
 								"narrator",
 								"interrogator",
-								"torturer"
+								"torturer",
+								"one+anhedonia"
 							],
 							"active_actors_title": "character",
 							"content": "[]>anhedonia:sex #3: outside mutual masturbation + perineum massage"
@@ -3980,7 +3984,7 @@
 				},
 				"lines": [
 					{
-						"address": "15.0",
+						"address": "16.0",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -4002,10 +4006,11 @@
 								"spectra",
 								"narrator",
 								"interrogator",
-								"torturer"
+								"torturer",
+								"one+anhedonia"
 							],
 							"active_actors_title": "character",
-							"content": "[]>narrator:more domestic stuff + work"
+							"content": "[]>narrator:more domestic stuff + work\n[]>anhedonia:Didnt u say I'd need to know this eventually"
 						},
 						"facts": {
 							"fact_data_by_name": {
@@ -4029,71 +4034,10 @@
 				"meta.selected": false,
 				"next": 17,
 				"number": 16,
-				"page_key": "",
+				"page_key": "A anhedonia learns about  shrine installation + more work",
 				"terminate": false
 			},
 			"17": {
-				"facts": {
-					"fact_data_by_name": {
-
-					},
-					"meta.visible": false
-				},
-				"lines": [
-					{
-						"address": "16.0",
-						"conditionals": {
-							"behavior": 0,
-							"behavior_key": "Show",
-							"facts": {
-								"fact_data_by_name": {
-
-								},
-								"meta.visible": false
-							},
-							"meta.visible": false,
-							"operand": 0,
-							"operand_args": [],
-							"operand_key": "AND"
-						},
-						"content": {
-							"active_actors": [
-								"anhedonia",
-								"one",
-								"spectra",
-								"narrator",
-								"interrogator",
-								"torturer"
-							],
-							"active_actors_title": "character",
-							"content": "[]>narrator:One resting on top of you, you massage her back from below. The folds and indentations of scarring where eyes grew, withered, got estimated.\n[]>narrator:from pleasure or pain, perhaps both, she bites down into your shoulder, razor teeth burying into the skin dressing your frail bones. <lc> you breathe heavy in return, the sharp pain piercing the dullness of your mind on your daily doses of benzos.\n[]>anhedonia: mhmngnm.\n[]>narrator: and more bites follow, as you continue stroking the rank growths on her back and arms.\n[]>one: I love you.\n[]>narrator: you squeeze her back.\n[]>anhedonia: I love you too.\n[]>narrator:One has now taken to nursing the bite marks she inflicted. lapping at them with the vigor of a fresh body but the persistence of a live one, the soft and subtle coating of saliva envelops your shoulders and upper chest like a lover-bound sundress. <lc> and them the world grows heavy with sedation once more.\n\n[black fade]\n\n- wake.up\n- one is still.sleeping\n- scratch and pierce\n\n[]>narrator:through quivering spasms and shivering breath, she vocalizes\n[]>one:so good... so divine...\n[]>anhedonia:mmhm.\n[]>one:...<lc> just rip it all out...\n[]>narrator:you trail your hands over the ridges of her spine.\n[]>one: right... there.\n[]>anhedonia:...<lc>you'd die.\n[]>one:might be. might happen.\n[]>anhedonia:...\n[]>one:.. will happen. \n[]>anhedonia:...\n[]>one: (a sad) eventually.\n[]>anhedonia:...\n[]>narrator: you press her closer to you, squeezing the air from her lungs.\n[]>one: I know... no eschatology.\n[]>narrator: you resume the scritching motion. occasionally, you make sure to squeeze her tight."
-						},
-						"facts": {
-							"fact_data_by_name": {
-
-							},
-							"meta.visible": false
-						},
-						"header": [],
-						"line_type": 0,
-						"meta.conditionals_visible": false,
-						"meta.facts_visible": false,
-						"meta.indent_level": 0,
-						"meta.is_head_editable": false,
-						"meta.line_index": 0,
-						"meta.selector": {
-							"selected": false
-						}
-					}
-				],
-				"meta.scroll_vertical": 0,
-				"meta.selected": false,
-				"next": 18,
-				"number": 17,
-				"page_key": "",
-				"terminate": false
-			},
-			"18": {
 				"facts": {
 					"fact_data_by_name": {
 
@@ -4124,7 +4068,70 @@
 								"spectra",
 								"narrator",
 								"interrogator",
-								"torturer"
+								"torturer",
+								"one+anhedonia"
+							],
+							"active_actors_title": "character",
+							"content": "[]>narrator:One resting on top of you, you massage her back from below. The folds and indentations of scarring where eyes grew, withered, got estimated.\n[]>narrator:from pleasure or pain, perhaps both, she bites down into your shoulder, razor teeth burying into the skin dressing your frail bones. <lc> you breathe heavy in return, the sharp pain piercing the dullness of your mind on your daily doses of benzos.\n[]>anhedonia: mhmngnm.\n[]>narrator: and more bites follow, as you continue stroking the rank growths on her back and arms.\n[]>one: I love you.\n[]>narrator: you squeeze her back.\n[]>anhedonia: I love you too.\n[]>narrator:One has now taken to nursing the bite marks she inflicted. lapping at them with the vigor of a fresh body but the persistence of a live one, the soft and subtle coating of saliva envelops your shoulders and upper chest like a lover-bound sundress. <lc> and them the world grows heavy with sedation once more.\n\n[black fade]\n\n- wake.up\n- one is still.sleeping\n- scratch and pierce\n\n[]>narrator:through quivering spasms and shivering breath, she vocalizes\n[]>one:so good... so divine...\n[]>anhedonia:mmhm.\n[]>one:...<lc> just rip it all out...\n[]>narrator:you trail your hands over the ridges of her spine.\n[]>one: right... there.\n[]>anhedonia:...<lc>you'd die.\n[]>one:might be. might happen.\n[]>anhedonia:...\n[]>one:.. will happen. \n[]>anhedonia:...\n[]>one: (a sad) eventually.\n[]>anhedonia:...\n[]>narrator: you press her closer to you, squeezing the air from her lungs.\n[]>one: I know... no eschatology.\n[]>narrator: you resume the scritching motion. occasionally, you make sure to squeeze her tight."
+						},
+						"facts": {
+							"fact_data_by_name": {
+
+							},
+							"meta.visible": false
+						},
+						"header": [],
+						"line_type": 0,
+						"meta.conditionals_visible": false,
+						"meta.facts_visible": false,
+						"meta.indent_level": 0,
+						"meta.is_head_editable": false,
+						"meta.line_index": 0,
+						"meta.selector": {
+							"selected": false
+						}
+					}
+				],
+				"meta.scroll_vertical": 0,
+				"meta.selected": false,
+				"next": 18,
+				"number": 17,
+				"page_key": "A cuddles and death talk",
+				"terminate": false
+			},
+			"18": {
+				"facts": {
+					"fact_data_by_name": {
+
+					},
+					"meta.visible": false
+				},
+				"lines": [
+					{
+						"address": "18.0",
+						"conditionals": {
+							"behavior": 0,
+							"behavior_key": "Show",
+							"facts": {
+								"fact_data_by_name": {
+
+								},
+								"meta.visible": false
+							},
+							"meta.visible": false,
+							"operand": 0,
+							"operand_args": [],
+							"operand_key": "AND"
+						},
+						"content": {
+							"active_actors": [
+								"anhedonia",
+								"one",
+								"spectra",
+								"narrator",
+								"interrogator",
+								"torturer",
+								"one+anhedonia"
 							],
 							"active_actors_title": "character",
 							"content": "[]>one:it'll be concealed and unmovable like the rest of them but still... I'll need you to watch out for me"
@@ -4147,7 +4154,7 @@
 						}
 					},
 					{
-						"address": "17.1",
+						"address": "18.1",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -4169,7 +4176,8 @@
 								"spectra",
 								"narrator",
 								"interrogator",
-								"torturer"
+								"torturer",
+								"one+anhedonia"
 							],
 							"active_actors_title": "character",
 							"content": "[]>one: before tomotrow...\n[]>anhedonia: hm?\n[]>one: I have a few sppts left...\n[]>one: unmarred yk.\n[]>anhedonia: unmarred...\n[]>one: do you...\n[]>narrator: one steals a glance over toher toolbox om the shelf.\n[]>one: ...lc would you...\n[]>anhedonia: would I?\n[]>narrator: her eyes open into pleading puppy eyes. a grin starts forming on your mouth.\n[]>anhedonia: would I what?\n[]>one:..\n[]>anhedonia: speak, plaything.\n[]>narrator: her gaze fixates even harder on you at the pet name. she vocalizes with the neediness of a [idk] in need of breaking.\n[]>one: would you... well would you like to change that?\n[]>narrator: at the implied request, you let your eyes wander at the emaciated and eye-ridden form beneath you.\n[]>anhedonia: you're sk pretty, you know that?\n[]>narrator: your hand trails the thin path of yet-eyeless skin on One's arm.\n[]>anhedonia: I'd be honored to decorate your skin some more.\n[]>narrator: a quick peck, and you slowly rise. make your way over to the toolbox. retrieve the box cutter. slot in a new blade.adjust its length. turn around to One, laying there, in anticipation.\n[]>anhedonia:..\n[]>narrator: you shift your eyes tk the imolement.\n[]>anhedonia: this...? on you? \n[]>one:...\n[]>narrator:  you look at her silent silhouette again.\n[]>anhedonia: you want this?\n[]>narrator: One responds with a vigorous nod. And so, one foot before the next, you [return syn] to the bed.\n[]>narrator: kneeling on the mattress, you put the knife down, and caress her some more. the air is filled with nought but contrast breathing.  her tense and exicted anticipation. your calm introversion. <lc> You trail your hands up and down her body<lc>you trail your fingers up and down her skin [mroe gentle shit]"
@@ -4192,7 +4200,7 @@
 						}
 					},
 					{
-						"address": "17.2",
+						"address": "18.2",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -4214,7 +4222,8 @@
 								"spectra",
 								"narrator",
 								"interrogator",
-								"torturer"
+								"torturer",
+								"one+anhedonia"
 							],
 							"active_actors_title": "character",
 							"content": "[]>narrator:And then finally, your blade breaks the first layer of her skin. Small droplets of blood form inside this small chasm where you pierced a few layers deeper.<lc>Cat scratches.\n[]>one:Heh...\n[]>narrator:You tilt your head at her.\n[]>one:a ghost of a sensation . an empty threat.\n[]>narrator:Your eyes narrow at her remark.\n[]>anhedonia:...\n[]>one:Make it real.\n[]>narrator:Her voice burns into your soul.\n[]>anhedonia:You mean... deeper?\n[]>one:Yes. <mp>Please."
@@ -4237,7 +4246,7 @@
 						}
 					},
 					{
-						"address": "17.3",
+						"address": "18.3",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -4259,10 +4268,11 @@
 								"spectra",
 								"narrator",
 								"interrogator",
-								"torturer"
+								"torturer",
+								"one+anhedonia"
 							],
 							"active_actors_title": "character",
-							"content": "[]>narrator:You eat her out\n[]>narrator:End scene"
+							"content": "[]>narrator: and so you deftfully twist the knife across Ines skin, into her flesh. draqing out a most hedonistic groan, you paint out a deep and palm-sized laceration across her tummy. Blood instantly oozes from the wound, pooling around One's navel, and flowing down along her hips and groin.\n[]>narrator: With a pained expression, One directs her eyes from their blissful glazed state to fixate on you. Then the wound. then you. Eyes darting back and forth, until a manic grn emerges on her satisfied face\n[]>one: oh my god... that's so much...\n[]>narrator: you lazily let your eyes wander up her form, then back down to the wound.\n[]>anhedonia: too much?\n[]>one: not at all.\n[]>narrator: Blissfully, One lets her head roll back\n[]>one: annie.... I love you..\n[]>narrator: you gently begin massagingher abdomen, trailing your hand freely across exposed skin.\n[]>anhedonia: I love you too, Sunshine.\n[]>one: hehe... heh... hmnmhm...\n[]>narrator: slowly but steadily, One starts squirming against your caressing hand.\n[]>anhedonia:...\n[]>narrator: her motions intensify with your proximity to the wound, as do her breathy moans.\n[]>anhedonia:... <lc> oh my...\n[]>one: wha... hhm?\n[]>anhedonia: getting off on squeezing your own blood out?\n[]>one: please don't stop\n[]>narrator: she instantly drops to the most desperate tone.\n[]>narrator: ths continues for a bit, just stroking her wounds\n[]>narrator: needily, one looks up.\n[]>one: please... there's gloves in my... workbench\n[]>anhedonia: ?\n[]>one: nitrile ones, can you massage it...\n[]>narrator: you slowly recede from One's form, and quickly rise to retrieve the gloves. searching through the drawers, the tent you've been pitching since you started occasionally bumps against the dissheveled piles of paper lying around. the added pressure makes you notice how wet you are too from this. <lc> but no time for horny brainfog, you have a wound to massage.\n[]>narrator: a few seconds later, you take out a pair of black nitrile gloves, and turn to return to One once more. Deftly you put on the gloves without missing a beat."
 						},
 						"facts": {
 							"fact_data_by_name": {
@@ -4280,25 +4290,9 @@
 						"meta.selector": {
 							"selected": false
 						}
-					}
-				],
-				"meta.scroll_vertical": 279,
-				"meta.selected": false,
-				"next": 6,
-				"number": 18,
-				"page_key": "sex #4: knifeplay",
-				"terminate": false
-			},
-			"19": {
-				"facts": {
-					"fact_data_by_name": {
-
 					},
-					"meta.visible": false
-				},
-				"lines": [
 					{
-						"address": "16.0",
+						"address": "18.4",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -4318,7 +4312,118 @@
 								"anhedonia",
 								"one",
 								"spectra",
-								"narrator"
+								"narrator",
+								"interrogator",
+								"torturer",
+								"one+anhedonia"
+							],
+							"active_actors_title": "character",
+							"content": "[]>anhedonia: Hey. I'm back.\n[]>narrator: You carefully place your palm on her abdomen, to which she lightly jolts in response.\n[]>anhedonia: I got the gloves.\n[]>one: hmhnhgn.. then what are you waiting for. caress it. please.\n[]>narrator: slowly you make your way up her bauchdecke, up to the laceration. One's heart rate and reathing speed are quite low, considering the circumstances. but the beating itself is strong- spilling? forth a new droplet of blood on every beat. yet you crawl up higher and high, until finally, your index finger hovers over the incision. mp and you press down.\n[]>narrator: instantly, One responds by pressing her body against your hand, yearning for more of your touch.\n[]>narrator: m,re massaging\n[]>narrator: your other hand finds itself idle, and so you shuffle slightly upwards so you can hold your lovers's hand. she instantly responds by holding yours\n[]>narrator: more minutes pass\n[]>one: it's getting a bit painful"
+						},
+						"facts": {
+							"fact_data_by_name": {
+
+							},
+							"meta.visible": false
+						},
+						"header": [],
+						"line_type": 0,
+						"meta.conditionals_visible": false,
+						"meta.facts_visible": false,
+						"meta.indent_level": 0,
+						"meta.is_head_editable": false,
+						"meta.line_index": 4,
+						"meta.selector": {
+							"selected": false
+						}
+					},
+					{
+						"address": "18.5",
+						"conditionals": {
+							"behavior": 0,
+							"behavior_key": "Show",
+							"facts": {
+								"fact_data_by_name": {
+
+								},
+								"meta.visible": false
+							},
+							"meta.visible": false,
+							"operand": 0,
+							"operand_args": [],
+							"operand_key": "AND"
+						},
+						"content": {
+							"active_actors": [
+								"anhedonia",
+								"one",
+								"spectra",
+								"narrator",
+								"interrogator",
+								"torturer",
+								"one+anhedonia"
+							],
+							"active_actors_title": "character",
+							"content": "[]>narrator:You eat her out. kisses all over her blood-stained body.\n[]>narrator:End scene"
+						},
+						"facts": {
+							"fact_data_by_name": {
+
+							},
+							"meta.visible": false
+						},
+						"header": [],
+						"line_type": 0,
+						"meta.conditionals_visible": false,
+						"meta.facts_visible": false,
+						"meta.indent_level": 0,
+						"meta.is_head_editable": false,
+						"meta.line_index": 5,
+						"meta.selector": {
+							"selected": false
+						}
+					}
+				],
+				"meta.scroll_vertical": 0,
+				"meta.selected": false,
+				"next": 6,
+				"number": 18,
+				"page_key": "sex #4: knifeplay",
+				"terminate": false
+			},
+			"19": {
+				"facts": {
+					"fact_data_by_name": {
+
+					},
+					"meta.visible": false
+				},
+				"lines": [
+					{
+						"address": "19.0",
+						"conditionals": {
+							"behavior": 0,
+							"behavior_key": "Show",
+							"facts": {
+								"fact_data_by_name": {
+
+								},
+								"meta.visible": false
+							},
+							"meta.visible": false,
+							"operand": 0,
+							"operand_args": [],
+							"operand_key": "AND"
+						},
+						"content": {
+							"active_actors": [
+								"anhedonia",
+								"one",
+								"spectra",
+								"narrator",
+								"interrogator",
+								"torturer",
+								"one+anhedonia"
 							],
 							"active_actors_title": "character",
 							"content": "[]>narrator:you get caught."
@@ -4502,7 +4607,7 @@
 				},
 				"lines": [
 					{
-						"address": "18.0",
+						"address": "21.0",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -4522,10 +4627,13 @@
 								"anhedonia",
 								"one",
 								"spectra",
-								"narrator"
+								"narrator",
+								"interrogator",
+								"torturer",
+								"one+anhedonia"
 							],
 							"active_actors_title": "character",
-							"content": "[]>anhedonia:fuck"
+							"content": "[]>anhedonia:fuck\n[]>narrator:penetrative has foreplay with crawling under covers and feeling each other up"
 						},
 						"facts": {
 							"fact_data_by_name": {
