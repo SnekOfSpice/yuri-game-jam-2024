@@ -308,17 +308,20 @@ func get_previous_address_line_type() -> DIISIS.LineType:
 	return int(page_data.get(prev_page).get("lines")[prev_line].get("line_type"))
 
 func go_back():
+	var trail_shift = -1
 	if get_previous_address_line_type() in [DIISIS.LineType.Choice, DIISIS.LineType.Folder, DIISIS.LineType.Instruction]:
 		ParserEvents.go_back_declined.emit()
 		push_warning("You cannot go further back.")
-		return
+		#return
+		trail_shift = 0
 	
-	if address_trail_index <= 0 or address_trail.is_empty():
+	if address_trail_index < 0 or address_trail.is_empty():
 		ParserEvents.go_back_declined.emit()
 		push_warning("You're at the beginning.")
-		return
+		#return
+		trail_shift = 0
 	
-	address_trail_index -= 1
+	address_trail_index += trail_shift
 	var previous_address = address_trail[address_trail_index]
 	var parts = DiisisEditorUtil.get_split_address(previous_address)
 	var prev_page = parts[0]
