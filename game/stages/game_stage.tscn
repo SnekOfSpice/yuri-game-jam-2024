@@ -31,7 +31,7 @@ dev_mode = true
 [node name="Characters" type="Node2D" parent="."]
 
 [node name="One" parent="Characters" instance=ExtResource("2_15g65")]
-position = Vector2(569, 304)
+position = Vector2(653, 304)
 
 [node name="Anhedonia" parent="Characters" instance=ExtResource("3_5aep6")]
 position = Vector2(307, 334)

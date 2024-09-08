@@ -24,7 +24,13 @@ const BACKGROUND_BUS_RIDE := "bus_ride.png"
 const BACKGROUND_BENCH := "bus_ride.png" # PH
 const BACKGROUND_BENCH_NIGHT := "bus_ride.png" # PH
 const BACKGROUND_BENCH_PATHWAY := "bus_ride.png" # PH
+const BACKGROUND_BENCH_PATHWAY_NIGHT := "bus_ride.png" # PH
+const BACKGROUND_TRAIN_YARD := "bus_ride.png" # PH
+const BACKGROUND_CITY := "bus_ride.png" # PH
+const BACKGROUND_HOME_REGULAR_NIGHT := "bus_ride.png" # PH
 const BACKGROUND_SPECTRA_APARTMENT := "spectra_apartment.png"
+const BACKGROUND_RIVERBANK := "spectra_apartment.png"
+const BACKGROUND_SUBURB := "spectra_apartment.png"
 
 const MUSIC_ROOT := "res://game/sounds/music/"
 const MUSIC_MAIN_MENU := "Paradise_Found.mp3" # PH
@@ -33,6 +39,8 @@ const MUSIC_TORTURE := "CØL - What Makes Me Feel Alive - 02 8822.ogg" # PH
 const MUSIC_SPECTRA := "Paradise_Found.mp3" # PH
 const MUSIC_HOPE := "Hope.ogg"
 const MUSIC_PRISON := "Hope.ogg" # PH
+const MUSIC_REUNITED := "Hope.ogg" # PH
+const MUSIC_WORKING := "Hope.ogg" # PH
 
 const SFX_ROOT := "res://game/sounds/sfx/"
 const SFX_GUNSHOT := "417345__inspectorj__gunshot-distant-a.ogg" # PH

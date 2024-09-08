@@ -41,7 +41,7 @@ func black_fade(fade_in:float, hold_time:float, fade_out:float, hide_characters:
 	if not bg:
 		push_warning(str("COULDN'T FIND MUSIC ", new_bgm, "!"))
 		bgm = "main_menu"
-	if new_bgm == "none":
+	if new_bgm == "none" or new_bgm == "null":
 		bgm = Sound.bgm_key
 	
 	emit_signal("start_black_fade",

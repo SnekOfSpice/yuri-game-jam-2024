@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bg7oaoxsibd2l"
-path="res://.godot/imported/one+anhedonia-hug.png-2afc87672de6474b0065ca040ce50964.ctex"
+uid="uid://dmf7h8u7pd4n8"
+path="res://.godot/imported/anhedonia-smug.png-9aaec942305436c2ca5f77bc8e5c466e.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://game/characters/sprites/one+anhedonia-hug.png"
-dest_files=["res://.godot/imported/one+anhedonia-hug.png-2afc87672de6474b0065ca040ce50964.ctex"]
+source_file="res://game/characters/sprites/anhedonia-smug.png"
+dest_files=["res://.godot/imported/anhedonia-smug.png-9aaec942305436c2ca5f77bc8e5c466e.ctex"]
 
 [params]
 
