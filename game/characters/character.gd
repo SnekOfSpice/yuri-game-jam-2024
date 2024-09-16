@@ -23,7 +23,7 @@ func _ready():
 		set_x_position(4)
 	
 
-func set_x_position(idx:int, time := 0):
+func set_x_position(idx:int, time := 0, advance_instruction_after_reposition:=false):
 	var positions := [
 		240,
 		307,
@@ -34,10 +34,12 @@ func set_x_position(idx:int, time := 0):
 		960 - 240,
 	]
 	
-	var t = create_tween()
 	target_x = positions[idx]
+	var t = create_tween()
 	t.tween_property(self, "position:x", target_x, time)
-	t.finished.connect(emit_signal.bind("repositioned"))
+	
+	if advance_instruction_after_reposition and Parser.line_reader:
+		t.finished.connect(Parser.line_reader.instruction_handler.instruction_completed.emit.bind())
 
 func serialize() -> Dictionary:
 	var result := {}

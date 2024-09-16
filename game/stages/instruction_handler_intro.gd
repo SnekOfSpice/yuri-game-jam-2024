@@ -116,3 +116,12 @@ func shake_camera(strength: float) -> bool:
 	if GameWorld.camera:
 		GameWorld.camera.apply_shake(strength)
 	return false
+
+
+func set_x_position(character_name: String, index: float, time: float, wait_for_reposition: bool) -> bool:
+	if GameWorld.game_stage:
+		var character : Character = GameWorld.game_stage.get_character(character_name)
+		character.set_x_position(int(index), time)
+	# Return true if you want the LineReader to wait until its InstructionHandler has emitted instruction_completed.
+	# (Needs to be called by your code from somewhere.)
+	return wait_for_reposition

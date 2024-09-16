@@ -10,6 +10,24 @@ func _ready() -> void:
 	
 	find_child("LoadButton").text = str("Load (", int(Parser.get_game_progress_from_file(Options.SAVEGAME_PATH) * 100), "%)")
 
+	$Logo.visible = false
+	$Planet.visible = false
+	$PlanetBlast.visible = false
+	$Blast.visible = false
+	
+	var logo_timer = get_tree().create_timer(1.5)
+	logo_timer.timeout.connect($Logo.set.bind("visible", true))
+	
+	var planet_timer = get_tree().create_timer(2.5)
+	planet_timer.timeout.connect($Planet.set.bind("visible", true))
+	
+	if GameWorld.just_finished_game:
+		GameWorld.just_finished_game = false
+		var blast_timer = get_tree().create_timer(4)
+		blast_timer.timeout.connect($PlanetBlast.set.bind("visible", true))
+		blast_timer.timeout.connect($Blast.set.bind("visible", true))
+		
+
 func _gui_input(event: InputEvent) -> void:
 	if event.is_action_pressed("ui_cancel"):
 		if GameWorld.stage_root.get_node("ScreenContainer").get_child_count() == 0:

@@ -54,7 +54,7 @@ func set_background(background:String, fade_time:=0.0):
 	if path.ends_with(".png"):
 		new_background = Sprite2D.new()
 		new_background.texture = load(path)
-		new_background.centered = true
+		new_background.centered = false
 	elif path.ends_with(".tscn"):
 		new_background = load(path).instantiate()
 	else:
@@ -71,9 +71,11 @@ func set_background(background:String, fade_time:=0.0):
 	elif new_background.has_method("get_size"):
 		background_size = new_background.get_size()
 	
-	if background_size.x > viewport_width and background_size.y > viewport_height and background_size != Vector2.ZERO:
-		new_background.position = - background_size * 0.5
-		
+	var overshoot = background_size - Vector2(960, 540)
+	if overshoot.x > 0:
+		new_background.position.x = - overshoot.x * 0.5
+	if overshoot.y > 0:
+		new_background.position.y = - overshoot.y * 0.5
 	
 	var fade_tween := get_tree().create_tween()
 	fade_tween.tween_property(new_background, "modulate:a", 1.0, fade_time)

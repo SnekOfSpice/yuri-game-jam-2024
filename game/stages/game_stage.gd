@@ -276,7 +276,11 @@ func remove_blocker():
 
 var emit_insutrction_complete_on_cg_hide :bool
 
-
+func get_character(character_name:String) -> Character:
+	for child : Character in $Characters.get_children():
+		if child.character_name == character_name:
+			return child
+	return null
 
 func _on_history_button_pressed() -> void:
 	GameWorld.stage_root.set_screen(CONST.SCREEN_HISTORY)

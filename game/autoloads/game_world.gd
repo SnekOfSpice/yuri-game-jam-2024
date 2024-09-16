@@ -8,7 +8,7 @@ var instruction_handler: InstructionHandler
 var camera : GameCamera
 
 var background := ""
-
+var just_finished_game := false
 
 func serialize():
 	var result := {}

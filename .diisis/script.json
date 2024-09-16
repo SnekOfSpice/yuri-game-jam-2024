@@ -1,6 +1,6 @@
 {
 	"editor": {
-		"current_page_number": 30,
+		"current_page_number": 7,
 		"page_view": 0,
 		"text_size_id": 3
 	},
@@ -981,7 +981,7 @@
 						}
 					}
 				],
-				"meta.scroll_vertical": 1111,
+				"meta.scroll_vertical": 1904,
 				"meta.selected": false,
 				"next": 1,
 				"number": 0,
@@ -1835,7 +1835,7 @@
 						}
 					}
 				],
-				"meta.scroll_vertical": 2499,
+				"meta.scroll_vertical": 2770,
 				"meta.selected": false,
 				"next": 3,
 				"number": 2,
@@ -2536,17 +2536,15 @@
 							"operand_key": "AND"
 						},
 						"content": {
-							"active_actors": [
-								"anhedonia",
-								"one",
-								"spectra",
-								"narrator",
-								"interrogator",
-								"torturer",
-								"one+anhedonia"
+							"delay_after": 0,
+							"delay_before": 0,
+							"line_reader.args": [
+								"home_kitchen",
+								1
 							],
-							"active_actors_title": "character",
-							"content": "[]>narrator:When you wake up again not even an hour later, the drive in your veins cannot keep you down.\n[]>narrator:Finding yourself in the kitchen mere minutes later, the /red Beet juice equivalent/ provides you with more base nutrients to stopgap your anemic state. It has a sweet yet biting taste, like what you imagine would be pickled and candied moss. <lc>Your own eyes directed out the kitchen window, you watch the endless streaks of clouds polluting the sky. The insects killfucking each other on the windowsill barely make a blip for your attentiveness radar.<lc>You hear footsteps approach and naturally you tense up. This is your apartment. Only Anhedonia is here. The footsteps are closer now. The floorboards creak and your nails dig into the plywood taabletop. Your heart is racing and then, it stops. With half-closed eyes, Anhedonia shows herself as muvh as her sleep deprivation. You cease tensing more. Her frame lingers in the doorway. You relax.\n[]>anhedonia{anhedonia-emotion|flirty}:Hi.\n[]>one:...\n[]>narrator:She puts her hands up to the horizontal fake-wood frame. Her toned arms flow beautifully into her shaven armpits. Letting your eyes wander down across her chest and core muscles, you delight in how her crop top and low rise pajamas lay bare her happy trail.\n[]>anhedonia:Heh...\n[]>one:Morning...\n[]>narrator:You blink up.\n[]>one:Didn't expect you to be up this early.\t"
+							"meta.text": "set_background(home_kitchen, 1.0)",
+							"meta.validation_status": "OK",
+							"name": "set_background"
 						},
 						"facts": {
 							"fact_data_by_name": {
@@ -2555,7 +2553,7 @@
 							"meta.visible": false
 						},
 						"header": [],
-						"line_type": 0,
+						"line_type": 2,
 						"meta.conditionals_visible": false,
 						"meta.facts_visible": false,
 						"meta.indent_level": 0,
@@ -2592,7 +2590,7 @@
 								"one+anhedonia"
 							],
 							"active_actors_title": "character",
-							"content": "[]>narrator:And then they fuck ! period sex yay!!\n[]>narrator:On the windowsill. yur short legs barely reach\n[]>narrator:parched for blood - perhaps factually so - anhedonia looks up at you from between your legs.\n[]>narrator:seemingly satiated for the time being, anhedonia moves up ever so slightly, beging to gentle suckle on your clit. over time , oyur legs become weajer. anhedonia grabs them and puts them on her soulder, keeping you in place with her face pressed into your crotch."
+							"content": "[]>narrator{one-emotion|listening}:When you wake up again not even an hour later, the drive in your veins cannot keep you down.\n[]>narrator:Finding yourself in the kitchen mere minutes later, the /red Beet juice equivalent/ provides you with more base nutrients to stopgap your anemic state. It has a sweet yet biting taste, like what you imagine would be pickled and candied moss. <lc>Your own eyes directed out the kitchen window, you watch the endless streaks of clouds polluting the sky. The insects killfucking each other on the windowsill barely make a blip for your attentiveness radar.<lc>You hear footsteps approach and naturally you tense up. This is your apartment. Only Anhedonia is here. The footsteps are closer now. The floorboards creak and your nails dig into the plywood taabletop. Your heart is racing and then, it stops. With half-closed eyes, Anhedonia shows herself as muvh as her sleep deprivation. You cease tensing more. Her frame lingers in the doorway. You relax.\n[]>anhedonia{anhedonia-emotion|flirty}:Hi.\n[]>one:...\n[]>narrator:She puts her hands up to the horizontal fake-wood frame. Her toned arms flow beautifully into her shaven armpits. Letting your eyes wander down across her chest and core muscles, you delight in how her crop top and low rise pajamas lay bare her happy trail.\n[]>anhedonia:Heh...\n[]>one:Morning...\n[]>narrator:You blink up.\n[]>one:Didn't expect you to be up this early.\t"
 						},
 						"facts": {
 							"fact_data_by_name": {
@@ -2607,6 +2605,190 @@
 						"meta.indent_level": 0,
 						"meta.is_head_editable": false,
 						"meta.line_index": 1,
+						"meta.selector": {
+							"selected": false
+						}
+					},
+					{
+						"address": "7.2",
+						"conditionals": {
+							"behavior": 0,
+							"behavior_key": "Show",
+							"facts": {
+								"fact_data_by_name": {
+
+								},
+								"meta.visible": false
+							},
+							"meta.visible": false,
+							"operand": 0,
+							"operand_args": [],
+							"operand_key": "AND"
+						},
+						"content": {
+							"active_actors": [
+								"anhedonia",
+								"one",
+								"spectra",
+								"narrator",
+								"interrogator",
+								"torturer",
+								"one+anhedonia"
+							],
+							"active_actors_title": "character",
+							"content": "[]>one: My body just seems to not really want to stay down\n[]>narrator: anhedonia takes a few seconds to rub her temlpes and takes a glance through the window behind you, the sun slowly creeping up the horizon line.\n[]>anhedonia: you barely rested. it's first gold.\n[]>narrator: with a shrug and an idle smile, you respond.\n[]>one: it's one of the more productive eigths.\n[]>narrator: a-flirty groggily, anhedonia shuffles towards you, hands going straight for your waistband."
+						},
+						"facts": {
+							"fact_data_by_name": {
+
+							},
+							"meta.visible": false
+						},
+						"header": [],
+						"line_type": 0,
+						"meta.conditionals_visible": false,
+						"meta.facts_visible": false,
+						"meta.indent_level": 0,
+						"meta.is_head_editable": false,
+						"meta.line_index": 2,
+						"meta.selector": {
+							"selected": false
+						}
+					},
+					{
+						"address": "7.3",
+						"conditionals": {
+							"behavior": 0,
+							"behavior_key": "Show",
+							"facts": {
+								"fact_data_by_name": {
+
+								},
+								"meta.visible": false
+							},
+							"meta.visible": false,
+							"operand": 0,
+							"operand_args": [],
+							"operand_key": "AND"
+						},
+						"content": {
+							"delay_after": 0,
+							"delay_before": 0,
+							"line_reader.args": [
+								"anhedonia",
+								2,
+								3,
+								false
+							],
+							"meta.text": "set_x_position(anhedonia, 2.0, 3.0, false)",
+							"meta.validation_status": "OK",
+							"name": "set_x_position"
+						},
+						"facts": {
+							"fact_data_by_name": {
+
+							},
+							"meta.visible": false
+						},
+						"header": [],
+						"line_type": 2,
+						"meta.conditionals_visible": false,
+						"meta.facts_visible": false,
+						"meta.indent_level": 0,
+						"meta.is_head_editable": false,
+						"meta.line_index": 3,
+						"meta.selector": {
+							"selected": false
+						}
+					},
+					{
+						"address": "7.4",
+						"conditionals": {
+							"behavior": 0,
+							"behavior_key": "Show",
+							"facts": {
+								"fact_data_by_name": {
+
+								},
+								"meta.visible": false
+							},
+							"meta.visible": false,
+							"operand": 0,
+							"operand_args": [],
+							"operand_key": "AND"
+						},
+						"content": {
+							"active_actors": [
+								"anhedonia",
+								"one",
+								"spectra",
+								"narrator",
+								"interrogator",
+								"torturer",
+								"one+anhedonia"
+							],
+							"active_actors_title": "character",
+							"content": "[]>one: hey\n[]>anhedonia: what...\n[]>one: ...\n[]>anhedonia: neutral... hm?<lc> don't want me to?\n[]>narrator: pouting, you look up at her. you can feel her breath on your lips. <mp>So close.\n[]>anhedonia:...<lc>cute.<lc> fine, you get your good morning kiss.\n[]>narrator: quiet and breathily, you exude a gentle whimper.\n[]>one: please...\n[]>anhedonia: flirty ...\n[]>narrator: and with an implictness you only afford your lover, she pulls you close by your hips, and plants her lips on yours. <mp> closing your eyes, you lose yourself in this bliss, a familiar warmth welling within you, and a different warmth pressed against your body whole.\n[]>one: ... <lc>hmrf\n[]>narrator: you find anhedonia's leg quickly settling in its place pressed into your crotch. the comfort of your own home and your hormonal neediness make you melt into her in an instant. <lc>She too, makes an effort to tear down any separations between you now, her digits running up your spine beneath your top and pressing her form so so tightly to you, making sure to establish skinship between your midriffs. <lc> You reciprocate by pressing further against her in return, every bit of exposed skin feeling like it ought to belong to you both. <ap>Anhedonia dives deeper and deeper against you, her tongue seeking permission , which you grant. The taste of her saliva is divine. <mp> Both moaning into the other, you almost relax enough to fall asleep again, if it were not for the electrifying exhilaration your girlfriend provides to you. <ap>You are simply delighted to be back. <lc>Anhedonia's arms now trail up and down your back, nails digging into your skin, a sensation you have long missed. <mp> You fall deeper and deeper into relaxation, and your hand slips on the windowsill, losing balance.<mp> Anhedonia holds you with impeccable reflex.\n[]>anhedonia: be careful hun.\n[]>one: I will...\n[]>anhedonia: ...\n[]>one: please. come back.\n[]>narrator: you plead, arching your head up to continue making out with her but she does not quite get back into it.\n[]>anhedonia: ... well, I was thinking of make your knees even weaker, <ap>if I may.\n[]>narrator: before you can answer, anhedonia gives you a quick kiss.\n[]>one: what do you mea--<advance>\n[]>narrator: your question becomes answered instantly as anhedonia presses her leg harder into your crotch, elicitng a faint grunt from you.\n[]>one: welll...\n[]>anhedonia: may I?\n[]>one: if you want.. but... but im on my period you know.\n[]>narrator: she narrows her eyes, letting her gaze drift across your face and body."
+						},
+						"facts": {
+							"fact_data_by_name": {
+
+							},
+							"meta.visible": false
+						},
+						"header": [],
+						"line_type": 0,
+						"meta.conditionals_visible": false,
+						"meta.facts_visible": false,
+						"meta.indent_level": 0,
+						"meta.is_head_editable": false,
+						"meta.line_index": 4,
+						"meta.selector": {
+							"selected": false
+						}
+					},
+					{
+						"address": "7.5",
+						"conditionals": {
+							"behavior": 0,
+							"behavior_key": "Show",
+							"facts": {
+								"fact_data_by_name": {
+
+								},
+								"meta.visible": false
+							},
+							"meta.visible": false,
+							"operand": 0,
+							"operand_args": [],
+							"operand_key": "AND"
+						},
+						"content": {
+							"active_actors": [
+								"anhedonia",
+								"one",
+								"spectra",
+								"narrator",
+								"interrogator",
+								"torturer",
+								"one+anhedonia"
+							],
+							"active_actors_title": "character",
+							"content": "[]>narrator:And then they fuck ! period sex yay!!\n[]>anhedonia:Well you know I'm a bit of a messy eater.\n[]>narrator:On the windowsill. yur short legs barely reach\n[]>narrator:parched for blood - perhaps factually so - anhedonia looks up at you from between your legs.\n[]>narrator:seemingly satiated for the time being, anhedonia moves up ever so slightly, beging to gentle suckle on your clit. over time , oyur legs become weajer. anhedonia grabs them and puts them on her soulder, keeping you in place with her face pressed into your crotch."
+						},
+						"facts": {
+							"fact_data_by_name": {
+
+							},
+							"meta.visible": false
+						},
+						"header": [],
+						"line_type": 0,
+						"meta.conditionals_visible": false,
+						"meta.facts_visible": false,
+						"meta.indent_level": 0,
+						"meta.is_head_editable": false,
+						"meta.line_index": 5,
 						"meta.selector": {
 							"selected": false
 						}
