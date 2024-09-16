@@ -125,3 +125,9 @@ func set_x_position(character_name: String, index: float, time: float, wait_for_
 	# Return true if you want the LineReader to wait until its InstructionHandler has emitted instruction_completed.
 	# (Needs to be called by your code from somewhere.)
 	return wait_for_reposition
+
+func show_letter() -> bool:
+	if GameWorld.game_stage:
+		GameWorld.game_stage.show_letter()
+		return true
+	return false

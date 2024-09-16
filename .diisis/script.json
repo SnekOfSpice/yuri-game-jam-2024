@@ -1,6 +1,6 @@
 {
 	"editor": {
-		"current_page_number": 7,
+		"current_page_number": 23,
 		"page_view": 0,
 		"text_size_id": 3
 	},
@@ -981,7 +981,7 @@
 						}
 					}
 				],
-				"meta.scroll_vertical": 1904,
+				"meta.scroll_vertical": 0,
 				"meta.selected": false,
 				"next": 1,
 				"number": 0,
@@ -1070,7 +1070,7 @@
 								"one+anhedonia"
 							],
 							"active_actors_title": "character",
-							"content": "[]>narrator:It has been an arduous trek out here. The dry summer heat has been taking its toll on your mental faculties, as has the absolute pain of using public transit out to a correctional facility beyond the city walls. <lc>Yet, it will all be worth it... <ap>today. <ap>Some time. <mp> One was supposed to be released before noon. <ap>The sun is well past its zenith now.\n[]>narrator:It has been many months since you last saw her. Standing in the empty and wide-open driveway of the prison complex, you could only seek shelter from the burning sun overhead by the graces of one companion: <ap> A solitary tree that is still groaning under the weight of its death here.<lc> The field surrounding the concrete walls is parched and mostly dead during summer. <mp>Weeds donning the colors of ash and pottery adorn the endless expanse of earth here.<lc>Only the call of cicadas disturbs the air around you. <ap>Consistently so. <mp>These insects have been your only company for hours now.\n[]>anhedonia{anhedonia-emotion|dismissive}:Ugh this shit SUCKS!\n[]>narrator:You kick a rock into the arid landscape. <ap>The soil answers by dust cloud.\n[]>anhedonia:...<lc>Fuck me.\n[]>narrator:For the nth time now, you walk up to the gate- <ap>or the fireline rather.\n[]>narrator:The guard shoots you another annoyed look, and you glare back in kind.\n[]>narrator:And so you pan around to face your dead arboreal companion, and stride towards it again.\n[]>anhedonia{anhedonia-emotion|neutral}:...\n[]>narrator:Bending down to your backpack, you feel your face sag from the dust that has started to cake up your skin in combination with your sweat.\n[]>anhedonia:Come on...\n[]>narrator:You are on your last bottle. But the release ought be soon, so you take another gulp from the silicone vessel.<lc>You sit down against the tree, dried bark scraping against your skin. <lc>As the afternoon stretches out, the silence is eventually broken."
+							"content": "[]>narrator:It has been an arduous trek out here. The dry summer heat has been taking its toll on your mental faculties, as has the absolute pain of using public transit out to a correctional facility beyond the city walls. <lc>Yet, it will all be worth it... <ap>today. <ap>Some time. <mp> One was supposed to be released before noon. <ap>The sun is well past its zenith now.\n[]>narrator:It has been many months since you last saw her. Standing in the empty and wide-open driveway of the prison complex, you could only seek shelter from the burning sun overhead by the graces of one companion: <ap> A solitary tree that is still groaning under the weight of its death here.<lc> The field surrounding the concrete walls is parched and mostly dead during summer. <mp>Weeds donning the colors of ash and pottery adorn the endless expanse of earth here.<lc>Only the call of cicadas disturbs the air around you. <ap>Consistently so. <mp>These insects have been your only fellowship for hours now.\n[]>anhedonia{anhedonia-emotion|dismissive}:Ugh this shit SUCKS!\n[]>narrator:You kick a rock into the arid landscape. <ap>The soil answers by dust cloud.\n[]>anhedonia:...<lc>Fuck me.\n[]>narrator:For the nth time now, you walk up to the gate- <ap>or the fireline rather.\n[]>narrator:The guard shoots you another annoyed look, and you glare back in kind.\n[]>narrator:And so you pan around to face your dead arboreal companion, and stride towards it again.\n[]>anhedonia{anhedonia-emotion|neutral}:...\n[]>narrator:Bending down to your backpack, you feel your face sag from the dust that has started to cake up your skin in combination with your sweat.\n[]>anhedonia:Come on...\n[]>narrator:You are on your last bottle. But the release ought be soon, so you take another gulp from the silicone vessel.<lc>You sit down against the tree, dried bark scraping against your skin. <lc>As the afternoon stretches out, the silence is eventually broken."
 						},
 						"facts": {
 							"fact_data_by_name": {
@@ -1203,7 +1203,7 @@
 								"one+anhedonia"
 							],
 							"active_actors_title": "character",
-							"content": "[]>narrator{anhedonia-emotion|shock}:Immediately, a bolt runs up your spine, visions of One's brains splattered across the concrete walls on the other side. <ap>When the echo has fled into the distance, the cicadas' song returns to dominate the soundscape. <lc>More bullets follow in the form of your nervous sweat, as minutes stretch into anxiety-filled hours- <ap>Or at least feel as such.\n[]>narrator:Looking forward towards the guard, he unimpressedly inspects your still form, then returns to scanning the landscape in its entirety again.<lc>The pain of uncertainty is enough to drive you mad, the crusted sand on your face now becoming an improvised fidget toy.\n[]>anhedonia:I'm so gonna fucking lose it...\n[]>anhedonia{anhedonia-emotion|crying}:One... please...\n[]>narrator:Silently sobbing, small droplets washing your cheeks, you spend your time like this. <lc> And then, finally, after what might as well have been a trip to hell and back, the main gate opens,<ap> and One stands there, duffel bag in hand, stature as broken as ever.<lc>You leave your backpack behind, run up to her, and just as she can react and drop her own bag, you're in each other's arms once again.\n[]>anhedonia{anhedonia-emotion|invisible,one-emotion|invisible,one+anhedonia-emotion|hug-eye0}:I missed you.\n[]>one:I missed you too.\n[]>narrator:You squeeze her tight. <mp>She squeezes back. <lc>You stay like this for a few seconds, until the guard barks a stern dismissal at you.\n[]>anhedonia:Guard's a bitch...\n[]>one:Let's just go.\n[]>anhedonia:Yea...\n[]>narrator{anhedonia-emotion|neutral,one-emotion|neutral,one+anhedonia-emotion|invisible}:And so, you make you way to what has transformed into your makeshift encampment for the day.\n[]>anhedonia:May I carry your bag?\n[]>one:It's fine.\n[]>anhedonia:C'mon, you literally just got out of prison. Lemme treat you a bit.\n[]>one:...<ap>fine.\n[]>narrator{anhedonia-emotion|happy}:You take her bag from her hands, careful to brush her hand, giving her a gleeful smile.\n[]>one:You are such a cheesy motherfucker.\n[]>anhedonia:Hehe... Can't help it after being reunited with my wife.\n[]>narrator:you give her a kiss.\n[]>one{one-emotion|joy}:Hehe...\n[]>narrator:You quickly nuzzle against her, and then shoulder your own gear.\n[]>anhedonia{anhedonia-emotion|neutral,one-emotion|neutral}:So like- <ap> I don't wanna rush but the busses out here run like ass, so let's try and get back to the bus stop for now?\n[]>one:Yeah, no worries.\n[]>narrator:And so you sling One's backpack over your shoulder, and take her hand in your other one. <ap>You never take your eyes off of her. <mp>One more kiss, pulling her in. Tired but glad, One looks up at you. <mp>And then you depart."
+							"content": "[]>narrator{anhedonia-emotion|shock}:Immediately, a bolt runs up your spine, visions of One's brains splattered across the concrete walls on the other side. <ap>When the echo has fled into the distance, the cicadas' song returns to dominate the soundscape. <lc>More bullets follow in the form of your nervous sweat, as minutes stretch into anxiety-filled hours- <ap>Or at least feel as such.\n[]>narrator:Looking forward towards the guard, he unimpressedly inspects your still form, then returns to scanning the landscape in its entirety again.<lc>The pain of uncertainty is enough to drive you mad, the crusted sand on your face now becoming an improvised fidget toy.\n[]>anhedonia:I'm so gonna fucking lose it...\n[]>anhedonia{anhedonia-emotion|crying}:One... please...\n[]>narrator:Silently sobbing, small droplets washing your cheeks, you spend your time like this. <lc> And then, finally, after what might as well have been a trip to hell and back, the main gate opens,<ap> and One stands there, duffel bag in hand, stature as broken as ever.<lc>You leave your backpack behind, run up to her, and just as she can react and drop her own bag, you're in each other's arms once again.\n[]>anhedonia{anhedonia-emotion|invisible,one-emotion|invisible,one+anhedonia-emotion|hug-eye0}:I missed you.\n[]>narrator:Immediately your heart accelerates and a sorely-missed warmth wells up inside your core, up, up into your chest. You inhale her scent. <ap>You hold One even tighter, as if she would vanish if you let go again. <mp>She squeezes back. <lc>You nuzzle against her nose and she drives forward to entrap you in a sea-deep kiss. <lc>You pull away, and you find yourself lost in each other's eyes. This is happiness once more.\n[]>one:I missed you too.\n[]>narrator:You squeeze her tight. <mp>She squeezes back. <lc>You stay like this for a few seconds, until the guard barks a stern dismissal at you.\n[]>anhedonia:Guard's a bitch...\n[]>one:Let's just go.\n[]>anhedonia:Yea...\n[]>narrator{anhedonia-emotion|neutral,one-emotion|neutral,one+anhedonia-emotion|invisible}:And so, you make you way to what has transformed into your makeshift encampment for the day.\n[]>anhedonia:May I carry your bag?\n[]>one:It's fine.\n[]>anhedonia:C'mon, you literally just got out of prison. Lemme treat you a bit.\n[]>one:...<ap>fine.\n[]>narrator{anhedonia-emotion|happy}:You take her bag from her hands, careful to brush her hand, giving her a gleeful smile.\n[]>one:You are such a cheesy motherfucker.\n[]>anhedonia:Hehe... Can't help it after being reunited with my wife.\n[]>narrator:you give her a kiss.\n[]>one{one-emotion|joy}:Hehe...\n[]>narrator:You quickly nuzzle against her, and then shoulder your own gear.\n[]>anhedonia{anhedonia-emotion|neutral,one-emotion|neutral}:So like- <ap> I don't wanna rush but the busses out here run like ass, so let's try and get back to the bus stop for now?\n[]>one:Yeah, no worries.\n[]>narrator:And so you sling One's backpack over your shoulder, and take her hand in your other one. <ap>You never take your eyes off of her. <mp>One more kiss, pulling her in. Tired but glad, One looks up at you. <mp>And then you depart."
 						},
 						"facts": {
 							"fact_data_by_name": {
@@ -1835,7 +1835,7 @@
 						}
 					}
 				],
-				"meta.scroll_vertical": 2770,
+				"meta.scroll_vertical": 0,
 				"meta.selected": false,
 				"next": 3,
 				"number": 2,
@@ -5217,7 +5217,189 @@
 					},
 					"meta.visible": false
 				},
-				"lines": [],
+				"lines": [
+					{
+						"address": "23.0",
+						"conditionals": {
+							"behavior": 0,
+							"behavior_key": "Show",
+							"facts": {
+								"fact_data_by_name": {
+
+								},
+								"meta.visible": false
+							},
+							"meta.visible": false,
+							"operand": 0,
+							"operand_args": [],
+							"operand_key": "AND"
+						},
+						"content": {
+							"active_actors": [
+								"anhedonia",
+								"one",
+								"spectra",
+								"narrator",
+								"interrogator",
+								"torturer",
+								"one+anhedonia"
+							],
+							"active_actors_title": "character",
+							"content": "[]>torturer:little freak like you probably won't have anything against this...\n[]>narrator:you snap your head up at him in fright\n[]>narrator: in the clericanrs hand: a leather sheath.\n[]>torturer:...\n[]>narrator: he gives a painfully drawn-out gaze\n[]>narrator: your heart starts pounding against your ribs\n[]>torturer:...\n[]>narrator: restraints tying you down are even heavier now. and then the forearm-long blade is revealed to you, pointed, at you."
+						},
+						"facts": {
+							"fact_data_by_name": {
+
+							},
+							"meta.visible": false
+						},
+						"header": [],
+						"line_type": 0,
+						"meta.conditionals_visible": false,
+						"meta.facts_visible": false,
+						"meta.indent_level": 0,
+						"meta.is_head_editable": false,
+						"meta.line_index": 0,
+						"meta.selector": {
+							"selected": false
+						}
+					},
+					{
+						"address": "23.1",
+						"conditionals": {
+							"behavior": 0,
+							"behavior_key": "Show",
+							"facts": {
+								"fact_data_by_name": {
+
+								},
+								"meta.visible": false
+							},
+							"meta.visible": false,
+							"operand": 0,
+							"operand_args": [],
+							"operand_key": "AND"
+						},
+						"content": {
+							"active_actors": [
+								"anhedonia",
+								"one",
+								"spectra",
+								"narrator",
+								"interrogator",
+								"torturer",
+								"one+anhedonia"
+							],
+							"active_actors_title": "character",
+							"content": "[]>narrator:cutting \n[]>narrator:kick in the stomach"
+						},
+						"facts": {
+							"fact_data_by_name": {
+
+							},
+							"meta.visible": false
+						},
+						"header": [],
+						"line_type": 0,
+						"meta.conditionals_visible": false,
+						"meta.facts_visible": false,
+						"meta.indent_level": 0,
+						"meta.is_head_editable": false,
+						"meta.line_index": 1,
+						"meta.selector": {
+							"selected": false
+						}
+					},
+					{
+						"address": "23.2",
+						"conditionals": {
+							"behavior": 0,
+							"behavior_key": "Show",
+							"facts": {
+								"fact_data_by_name": {
+
+								},
+								"meta.visible": false
+							},
+							"meta.visible": false,
+							"operand": 0,
+							"operand_args": [],
+							"operand_key": "AND"
+						},
+						"content": {
+							"delay_after": 0,
+							"delay_before": 0,
+							"line_reader.args": [
+								50
+							],
+							"meta.text": "shake_camera(50.0)",
+							"meta.validation_status": "OK",
+							"name": "shake_camera"
+						},
+						"facts": {
+							"fact_data_by_name": {
+
+							},
+							"meta.visible": false
+						},
+						"header": [],
+						"line_type": 2,
+						"meta.conditionals_visible": false,
+						"meta.facts_visible": false,
+						"meta.indent_level": 0,
+						"meta.is_head_editable": false,
+						"meta.line_index": 2,
+						"meta.selector": {
+							"selected": false
+						}
+					},
+					{
+						"address": "23.3",
+						"conditionals": {
+							"behavior": 0,
+							"behavior_key": "Show",
+							"facts": {
+								"fact_data_by_name": {
+
+								},
+								"meta.visible": false
+							},
+							"meta.visible": false,
+							"operand": 0,
+							"operand_args": [],
+							"operand_key": "AND"
+						},
+						"content": {
+							"active_actors": [
+								"anhedonia",
+								"one",
+								"spectra",
+								"narrator",
+								"interrogator",
+								"torturer",
+								"one+anhedonia"
+							],
+							"active_actors_title": "character",
+							"content": "[]>narrator:the impact is strong enough to knock the air out of your lungs and blood from your lacerations."
+						},
+						"facts": {
+							"fact_data_by_name": {
+
+							},
+							"meta.visible": false
+						},
+						"header": [],
+						"line_type": 0,
+						"meta.conditionals_visible": false,
+						"meta.facts_visible": false,
+						"meta.indent_level": 0,
+						"meta.is_head_editable": false,
+						"meta.line_index": 3,
+						"meta.selector": {
+							"selected": false
+						}
+					}
+				],
 				"meta.scroll_vertical": 0,
 				"meta.selected": false,
 				"next": 24,

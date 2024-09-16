@@ -285,6 +285,11 @@ func get_character(character_name:String) -> Character:
 func _on_history_button_pressed() -> void:
 	GameWorld.stage_root.set_screen(CONST.SCREEN_HISTORY)
 
+func show_letter():
+	hide_ui()
+	var letter = preload("res://game/objects/letter.tscn").instantiate()
+	add_child(letter)
+	letter.position = Vector2(350, 62)
 
 func _on_handler_start_show_cg(cg_name: String, fade_in: float, on_top: bool) -> void:
 	if on_top:
