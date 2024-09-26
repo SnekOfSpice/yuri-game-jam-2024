@@ -309,7 +309,7 @@ func get_previous_address_line_type() -> DIISIS.LineType:
 
 func go_back():
 	var trail_shift = -1
-	if get_previous_address_line_type() in [DIISIS.LineType.Choice, DIISIS.LineType.Folder, DIISIS.LineType.Instruction]:
+	if get_previous_address_line_type() in [DIISIS.LineType.Choice, DIISIS.LineType.Folder]:
 		ParserEvents.go_back_declined.emit()
 		push_warning("You cannot go further back.")
 		#return
@@ -320,6 +320,10 @@ func go_back():
 		push_warning("You're at the beginning.")
 		#return
 		trail_shift = 0
+	
+	
+	if line_reader._attempt_read_previous_chunk() and line_reader.line_type == DIISIS.LineType.Text:
+		return
 	
 	address_trail_index += trail_shift
 	var previous_address = address_trail[address_trail_index]

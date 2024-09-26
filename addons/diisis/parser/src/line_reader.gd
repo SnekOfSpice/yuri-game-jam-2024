@@ -266,6 +266,8 @@ var visibilities_before_interrupt := {}
 
 var trimmable_strings := [" ", "\n", "<lc>", "<ap>", "<mp>",]
 
+var reverse_next_instruction := false
+
 signal line_reader_ready
 
 func _validate_property(property: Dictionary):
@@ -390,6 +392,8 @@ func _ready() -> void:
 	Parser.connect("read_new_line", read_new_line)
 	Parser.connect("page_terminated", close)
 	
+	ParserEvents.go_back_accepted.connect(lmao)
+	
 	Parser.open_connection(self)
 	
 	remaining_auto_pause_duration = auto_pause_duration * (1.0 + (1-(text_speed / (MAX_TEXT_SPEED - 1))))
@@ -411,6 +415,9 @@ func _ready() -> void:
 		prompt_finished.modulate.a = 0
 	
 	emit_signal("line_reader_ready")
+
+func lmao(a, b):
+	reverse_next_instruction = true
 
 ## Gets the prefrences that are usually set by the user. Save this to disk and apply it again with [code]apply_preferences()[/code].
 func get_preferences() -> Dictionary:
@@ -462,7 +469,6 @@ func advance():
 				else:
 					remaining_prompt_delay = input_prompt_delay
 					set_dialog_line_index(dialog_line_index + 1)
-					start_showing_text()
 			else:
 				read_next_chunk()
 		else:
@@ -601,7 +607,6 @@ func read_new_line(new_line: Dictionary):
 			
 			
 			set_dialog_line_index(0)
-			start_showing_text()
 		DIISIS.LineType.Choice:
 			var auto_switch : bool = raw_content.get("auto_switch")
 			build_choices(choices, auto_switch)
@@ -613,14 +618,33 @@ func read_new_line(new_line: Dictionary):
 				push_error("InsutrctionHandler doesn't have execute method.")
 				return
 			
-			var instruction_name : String = line_data.get("content").get("name")
-			var args : Array = line_data.get("content").get("line_reader.args")
+			var instruction_name: String
+			var args: Array
+			var delay_before: float
+			var delay_after: float
+			if not reverse_next_instruction:
+				instruction_name = line_data.get("content").get("name")
+			else:
+				instruction_name = line_data.get("content").get("reverse_name", "")
 			
-			# transform content to more friendly args
+			if (not reverse_next_instruction) or instruction_name.is_empty():
+				args = line_data.get("content").get("line_reader.args")
+				
+				instruction_name = line_data.get("content").get("name")
+				delay_before = new_line.get("content").get("delay_before")
+				delay_after = new_line.get("content").get("delay_after")
+			else:
+				
+				args = line_data.get("content").get("line_reader.reverse_args")
+				delay_before = 0.0
+				delay_after = 0.0
 			
-			var delay_before = new_line.get("content").get("delay_before")
-			var delay_after = new_line.get("content").get("delay_after")
-			
+			if reverse_next_instruction:
+				instruction_handler.execute(instruction_name, args)
+				reverse_next_instruction = false
+				remaining_prompt_delay = input_prompt_delay
+				
+				return
 			instruction_handler._wrapper_execute(instruction_name, args, delay_before, delay_after)
 		DIISIS.LineType.Folder:
 			if not line_data.get("content", {}).get("meta.contents_visible", true):
@@ -630,6 +654,7 @@ func read_new_line(new_line: Dictionary):
 	remaining_prompt_delay = input_prompt_delay
 	
 	ParserEvents.new_line_read.emit(line_index)
+	reverse_next_instruction = false
 
 func fit_to_max_line_count(lines: Array):
 	if max_text_line_count <= 0:
@@ -994,6 +1019,30 @@ func replace_tags(lines):
 		i += 1
 	return result
 
+# returns if it can go back
+func _attempt_read_previous_chunk() -> bool:
+	var chunk_failure := false
+	var dialog_line_failure := false
+	if chunk_index <= 0:
+		chunk_failure = true
+	
+	if chunk_failure:
+		if dialog_line_index <= 0:
+			dialog_line_failure = true
+		else:
+			set_dialog_line_index(dialog_line_index - 1)
+			return true
+	else:
+		chunk_index -= 2
+		read_next_chunk()
+		return true
+	
+	if chunk_failure and dialog_line_failure:
+		return false
+	
+
+	
+	return true
 
 func read_next_chunk():
 	remaining_prompt_delay = input_prompt_delay
@@ -1401,6 +1450,8 @@ func set_dialog_line_index(value: int):
 		update_name_label(actor_name)
 		
 		ParserEvents.dialog_line_args_passed.emit(actor_name, dialog_line_arg_dict)
+	
+	start_showing_text()
 
 func update_name_label(actor_name: String):
 	is_last_actor_name_different = actor_name != current_raw_name
