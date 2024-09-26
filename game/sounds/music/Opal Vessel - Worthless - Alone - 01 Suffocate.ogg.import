@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://dol5vgjqudoy"
+path="res://.godot/imported/Opal Vessel - Worthless - Alone - 01 Suffocate.ogg-3e3733978b03987c37619135fb1e5809.oggvorbisstr"
+
+[deps]
+
+source_file="res://game/sounds/music/Opal Vessel - Worthless - Alone - 01 Suffocate.ogg"
+dest_files=["res://.godot/imported/Opal Vessel - Worthless - Alone - 01 Suffocate.ogg-3e3733978b03987c37619135fb1e5809.oggvorbisstr"]
+
+[params]
+
+loop=true
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

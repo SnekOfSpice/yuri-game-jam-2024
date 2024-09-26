@@ -38,14 +38,18 @@ func _process(delta: float) -> void:
 			(cos(Time.get_ticks_msec() / 660.0) - 0.5) * sway_intensity),
 		1 if screen_shake_hard else 0.02)
 
-var screen_shake_hard_timer:SceneTreeTimer
+var screen_shake_hard_timer:Timer
 
 func apply_shake(strength:float):
 	shake_strength = strength
 	
 	if screen_shake_hard_timer:
 		screen_shake_hard_timer.queue_free()
-	screen_shake_hard_timer = get_tree().create_timer(fade)
+	var t = Timer.new()
+	t.wait_time = fade
+	t.autostart = true
+	t.timeout.connect(t.queue_free)
+	screen_shake_hard_timer = t
 	screen_shake_hard = true
 	screen_shake_hard_timer.timeout.connect(set.bind("screen_shake_hard", false))
 

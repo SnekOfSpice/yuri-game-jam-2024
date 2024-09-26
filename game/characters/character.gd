@@ -16,7 +16,7 @@ func _ready():
 	if character_name == "anhedonia":
 		set_x_position(1)
 	elif character_name == "one":
-		set_x_position(5)
+		set_x_position(3)
 	elif character_name == "spectra":
 		set_x_position(6)
 	elif character_name == "one+anhedonia":
@@ -51,8 +51,8 @@ func serialize() -> Dictionary:
 	return result
 
 func deserialize(data: Dictionary):
-	visible = data.get("visible")
-	set_emotion(data.get("emotion"))
+	visible = data.get("visible", false)
+	set_emotion(data.get("emotion", "neutral"))
 	position.x = data.get("target_x", position.x)
 
 func on_dialog_line_args_passed(actor_name: String, dialog_line_args: Dictionary):

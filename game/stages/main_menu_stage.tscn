@@ -6,7 +6,7 @@
 [ext_resource type="Texture2D" uid="uid://ddvdhtv37gihj" path="res://game/backgrounds/main_menu/planet.png" id="4_judul"]
 [ext_resource type="Texture2D" uid="uid://c11cf06sfy3kf" path="res://game/backgrounds/main_menu/planet_blast.png" id="5_4cgnl"]
 [ext_resource type="Texture2D" uid="uid://c0qo0apcugw2b" path="res://game/backgrounds/main_menu/blast_aura.png" id="6_ly0w3"]
-[ext_resource type="Texture2D" uid="uid://c10jo1pnub5k8" path="res://game/visuals/logo.png" id="7_y3olb"]
+[ext_resource type="Texture2D" uid="uid://b16a6fc32loqt" path="res://game/visuals/logo3.png" id="7_iaidm"]
 
 [node name="MainMenuStage" type="Control"]
 layout_mode = 3
@@ -44,7 +44,7 @@ centered = false
 
 [node name="Logo" type="Sprite2D" parent="."]
 position = Vector2(221, -58)
-texture = ExtResource("7_y3olb")
+texture = ExtResource("7_iaidm")
 centered = false
 
 [node name="VBoxContainer" type="VBoxContainer" parent="."]

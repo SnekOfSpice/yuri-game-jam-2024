@@ -1,0 +1,99 @@
+[gd_scene load_steps=15 format=3 uid="uid://dcw1n4qaa8ox1"]
+
+[ext_resource type="Script" path="res://game/backgrounds/clericant_chambers/clericant_chamber.gd" id="1_2fajn"]
+[ext_resource type="Texture2D" uid="uid://c8rbcco3o6v80" path="res://game/backgrounds/clericant_chambers/clericant_torture_chamber_base.png" id="2_2jum8"]
+[ext_resource type="Texture2D" uid="uid://ct8loryilukbb" path="res://game/backgrounds/clericant_chambers/f_sheet.png" id="2_d1vhs"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_bplfk"]
+atlas = ExtResource("2_d1vhs")
+region = Rect2(0, 0, 323, 332)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_h81qn"]
+atlas = ExtResource("2_d1vhs")
+region = Rect2(323, 0, 323, 332)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ruxld"]
+atlas = ExtResource("2_d1vhs")
+region = Rect2(646, 0, 323, 332)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_it6wh"]
+atlas = ExtResource("2_d1vhs")
+region = Rect2(969, 0, 323, 332)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_uexab"]
+atlas = ExtResource("2_d1vhs")
+region = Rect2(1292, 0, 323, 332)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_1p3hp"]
+atlas = ExtResource("2_d1vhs")
+region = Rect2(0, 332, 323, 332)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_u7f8a"]
+atlas = ExtResource("2_d1vhs")
+region = Rect2(323, 332, 323, 332)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_iolk0"]
+atlas = ExtResource("2_d1vhs")
+region = Rect2(646, 332, 323, 332)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_s4onn"]
+atlas = ExtResource("2_d1vhs")
+region = Rect2(969, 332, 323, 332)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_bkwmu"]
+atlas = ExtResource("2_d1vhs")
+region = Rect2(1292, 332, 323, 332)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_88rcn"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_bplfk")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_h81qn")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ruxld")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_it6wh")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_uexab")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_1p3hp")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_u7f8a")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_iolk0")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_s4onn")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_bkwmu")
+}],
+"loop": false,
+"name": &"default",
+"speed": 4.0
+}]
+
+[node name="ClericantInterrogationChamber" type="Node2D"]
+script = ExtResource("1_2fajn")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(2, 2)
+texture = ExtResource("2_2jum8")
+centered = false
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(1962, 328)
+sprite_frames = SubResource("SpriteFrames_88rcn")
+frame = 9
+frame_progress = 1.0
+
+[connection signal="animation_finished" from="AnimatedSprite2D" to="." method="_on_animated_sprite_2d_animation_finished"]

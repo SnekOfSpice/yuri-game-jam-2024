@@ -123,3 +123,10 @@ func _on_auto_delay_slider_value_changed(value: float) -> void:
 
 func _on_fullscreen_check_box_pressed() -> void:
 	Options.set_fullscreen(find_child("FullscreenCheckBox").button_pressed)
+
+
+func _on_quit_button_pressed() -> void:
+	if GameWorld.stage_root.stage == CONST.STAGE_GAME:
+		Options.save_gamestate()
+	Options.save_prefs()
+	get_tree().quit()

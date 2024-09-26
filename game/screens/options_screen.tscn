@@ -228,6 +228,7 @@ text = "Close"
 [connection signal="pressed" from="PanelContainer/MarginContainer/VBoxContainer/OptionMenusButtonContainer/SoundButton" to="." method="set_menu" binds= [3]]
 [connection signal="pressed" from="PanelContainer/MarginContainer/VBoxContainer/OptionMenusContainer/GameMenu/VBoxContainer/HBoxContainer/SaveButton" to="." method="_on_save_button_pressed"]
 [connection signal="pressed" from="PanelContainer/MarginContainer/VBoxContainer/OptionMenusContainer/GameMenu/VBoxContainer/HBoxContainer/MainMenuButton" to="." method="_on_main_menu_button_pressed"]
+[connection signal="pressed" from="PanelContainer/MarginContainer/VBoxContainer/OptionMenusContainer/GameMenu/VBoxContainer/HBoxContainer/QuitButton" to="." method="_on_quit_button_pressed"]
 [connection signal="value_changed" from="PanelContainer/MarginContainer/VBoxContainer/OptionMenusContainer/TextMenu/VBoxContainer/TextSpeedSlider" to="." method="_on_text_speed_slider_value_changed"]
 [connection signal="pressed" from="PanelContainer/MarginContainer/VBoxContainer/OptionMenusContainer/TextMenu/VBoxContainer/AutoContinueCheckBox" to="." method="_on_auto_continue_check_box_pressed"]
 [connection signal="value_changed" from="PanelContainer/MarginContainer/VBoxContainer/OptionMenusContainer/TextMenu/VBoxContainer/AutoDelaySlider" to="." method="_on_auto_delay_slider_value_changed"]
