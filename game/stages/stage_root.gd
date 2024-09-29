@@ -20,12 +20,12 @@ func _ready():
 		#set_screen(CONST.SCREEN_OPTIONS)
 
 func set_screen(screen_path:String):
-	if Parser.line_reader:
+	if is_instance_valid(Parser.line_reader):
 		if Parser.line_reader.is_input_locked:
 			return
 	
 	var screen_container:Control
-	if GameWorld.camera is GameCamera:
+	if (null if not is_instance_valid(GameWorld.camera) else GameWorld.camera) is GameCamera:
 		screen_container = GameWorld.camera.get_screen_container()
 	else:
 		screen_container = $ScreenContainer
@@ -44,7 +44,8 @@ func set_screen(screen_path:String):
 	screen = screen_path
 
 func set_background(background:String, fade_time:=0.0):
-	print(str("BACKGROUND_", background.to_upper()))
+	if background == "none" or background == "null":
+		background = GameWorld.background
 	var path = str(CONST.BACKGROUND_ROOT, CONST.get(str("BACKGROUND_", background.to_upper())))
 	if not path:
 		push_warning(str("COULDN'T FIND BACKGROUND ", background, "!"))

@@ -74,9 +74,13 @@ func set_chapter_cover(pov_name: String, bottom_text: String, new_background: St
 	var char_delay := 4.0 + black_delay
 	var name_delay := 6.7 + black_delay
 	
-	logo_tween.tween_property(logo_tex, "position", logo_tex.position + Vector2(0, -30), 5.0).set_delay(logo_delay).set_ease(Tween.EASE_OUT)
-	char_tween.tween_property(char_tex, "position", char_tex.position + Vector2(0, -30), 2.0).set_delay(char_delay).set_ease(Tween.EASE_OUT)
-	name_tween.tween_property(name_tex, "position", name_tex.position + Vector2(0, -30), 4.0).set_delay(name_delay).set_ease(Tween.EASE_OUT)
+	var logo_duration = 5.0
+	var char_duration = 2.0
+	var name_duration = 4.0
+	
+	logo_tween.tween_property(logo_tex, "position", logo_tex.position + Vector2(0, -30), logo_duration).set_delay(logo_delay).set_ease(Tween.EASE_OUT)
+	char_tween.tween_property(char_tex, "position", char_tex.position + Vector2(0, -30), char_duration).set_delay(char_delay).set_ease(Tween.EASE_OUT)
+	name_tween.tween_property(name_tex, "position", name_tex.position + Vector2(0, -30), name_duration).set_delay(name_delay).set_ease(Tween.EASE_OUT)
 	logo_tween.tween_property(logo_tex, "modulate:a", 1, 1.0).set_delay(logo_delay + 0.2).set_trans(Tween.TRANS_CUBIC).set_ease(Tween.EASE_IN)
 	char_tween.tween_property(char_tex, "modulate:a", 1, 3.0).set_delay(char_delay + 0.2).set_trans(Tween.TRANS_CUBIC).set_ease(Tween.EASE_IN)
 	name_tween.tween_property(name_tex, "modulate:a", 1, 3.0).set_delay(name_delay + 0.2).set_trans(Tween.TRANS_CUBIC).set_ease(Tween.EASE_IN)
@@ -90,7 +94,7 @@ func set_chapter_cover(pov_name: String, bottom_text: String, new_background: St
 	mod_tween.tween_property(self, "modulate:a", 1, 0.3)
 	mod_tween.set_parallel()
 	
-	var full_fade_in_after : float = max(max(logo_delay, char_delay), name_delay)
+	var full_fade_in_after : float = max(max((logo_delay + logo_duration), (char_delay + char_duration)), (name_delay + name_duration))
 	
 	mod_tween.tween_property(self, "modulate:a", 0, 2.4).set_delay(full_fade_in_after + 2)
 	

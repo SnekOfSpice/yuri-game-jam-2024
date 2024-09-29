@@ -3,7 +3,7 @@ class_name Screen
 
 
 func _ready() -> void:
-	if GameWorld.game_stage:
+	if is_instance_valid(GameWorld.game_stage):
 		GameWorld.game_stage.hide_ui()
 	tree_exiting.connect(restore_ui)
 	

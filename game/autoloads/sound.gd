@@ -37,6 +37,9 @@ func play_bgm(bgm:String, fade_in:=0.0, from:=0.0):
 	if bgm_key == bgm:
 		return
 	
+	if bgm == "none" or bgm == "null":
+		return
+	
 	bgm_key = bgm 
 	
 	var music_player = AudioStreamPlayer.new()
@@ -45,7 +48,7 @@ func play_bgm(bgm:String, fade_in:=0.0, from:=0.0):
 	
 	var music_path := str(CONST.MUSIC_ROOT, CONST.get(str("MUSIC_", bgm_key.to_upper())))
 	if not ResourceLoader.exists(music_path):
-		push_error(str(music_path, " doesn't exist with key ", bgm_key))
+		push_error(str(music_path, " doesn't exist with key \"", bgm_key, "\""))
 		return
 	music_player.stream = load(music_path)
 	music_player.volume_db = -80

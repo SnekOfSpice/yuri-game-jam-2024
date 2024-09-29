@@ -16,8 +16,12 @@ func _ready():
 	if character_name == "anhedonia":
 		set_x_position(1)
 	elif character_name == "one":
-		set_x_position(3)
+		set_x_position(1)
 	elif character_name == "spectra":
+		set_x_position(7)
+	elif character_name == "torturer":
+		set_x_position(7)
+	elif character_name == "interrogator":
 		set_x_position(6)
 	elif character_name == "one+anhedonia":
 		set_x_position(4)
@@ -25,6 +29,8 @@ func _ready():
 
 func set_x_position(idx:int, time := 0, advance_instruction_after_reposition:=false):
 	var positions := [
+		-120,
+		0,
 		240,
 		307,
 		475,
@@ -32,9 +38,11 @@ func set_x_position(idx:int, time := 0, advance_instruction_after_reposition:=fa
 		960 - 475,
 		960 - 307,
 		960 - 240,
+		960,
+		960 + 120
 	]
 	
-	target_x = positions[idx]
+	target_x = positions[idx + 2]
 	var t = create_tween()
 	t.tween_property(self, "position:x", target_x, time)
 	

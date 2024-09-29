@@ -108,7 +108,7 @@ func _on_text_speed_slider_value_changed(value: float) -> void:
 		label.text = "Instant"
 	else:
 		label.text = str(value)
-	Options.text_speed = value
+	Options.text_speed = int(value)
 	if Parser.line_reader:
 		Parser.line_reader.text_speed = value
 

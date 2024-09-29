@@ -92,23 +92,23 @@ func zoom_to(value: float, duration:float) -> bool:
 	return false
 
 func splatter_blood(amount: float) -> bool:
-	print("BLOOD BLOOD BLOOD")
+	print_rich("[color=#ff0000][b]BLOOD BLOOD BLOOD[/b][/color]")
 	# Return true if you want the LineReader to wait until its InstructionHandler has emitted instruction_completed.
 	# (Needs to be called by your code from somewhere.)
 	return false
 
 func set_emotion(actor_name: String, emotion_name: String) -> bool:
-	for char : Character in get_tree().get_nodes_in_group("character"):
-		if char.character_name == actor_name:
-			char.set_emotion(emotion_name)
+	for character : Character in get_tree().get_nodes_in_group("character"):
+		if character.character_name == actor_name:
+			character.set_emotion(emotion_name)
 	return false
 
 func show_character(character_name: String, clear_others: bool) -> bool:
-	for char : Character in get_tree().get_nodes_in_group("character"):
-		if char.character_name == character_name:
-			char.visible = true
+	for character : Character in get_tree().get_nodes_in_group("character"):
+		if character.character_name == character_name:
+			character.visible = true
 		elif clear_others:
-			char.visible = false
+			character.visible = false
 	return false
 
 
