@@ -57,6 +57,16 @@ size_flags_vertical = 0
 tooltip_text = "Copy GDScript function signature to clipboard."
 icon = ExtResource("2_lquiu")
 
+[node name="ComplianceContainer" type="HBoxContainer" parent="HBoxContainer/InstructionTextContainer/HBoxContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="HBoxContainer/InstructionTextContainer/HBoxContainer/VBoxContainer/ComplianceContainer"]
+layout_mode = 2
+text = "!!!"
+
+[node name="ComplianceLabel" type="Label" parent="HBoxContainer/InstructionTextContainer/HBoxContainer/VBoxContainer/ComplianceContainer"]
+layout_mode = 2
+
 [node name="HBoxContainer2" type="HBoxContainer" parent="HBoxContainer/InstructionTextContainer/HBoxContainer/VBoxContainer"]
 layout_mode = 2
 
@@ -70,16 +80,6 @@ layout_mode = 2
 size_flags_vertical = 0
 tooltip_text = "Copy GDScript function signature to clipboard."
 icon = ExtResource("2_lquiu")
-
-[node name="ComplianceContainer" type="HBoxContainer" parent="HBoxContainer/InstructionTextContainer/HBoxContainer/VBoxContainer"]
-layout_mode = 2
-
-[node name="Label" type="Label" parent="HBoxContainer/InstructionTextContainer/HBoxContainer/VBoxContainer/ComplianceContainer"]
-layout_mode = 2
-text = "!!!"
-
-[node name="ComplianceLabel" type="Label" parent="HBoxContainer/InstructionTextContainer/HBoxContainer/VBoxContainer/ComplianceContainer"]
-layout_mode = 2
 
 [node name="ReverseComplianceContainer" type="HBoxContainer" parent="HBoxContainer/InstructionTextContainer/HBoxContainer/VBoxContainer"]
 layout_mode = 2

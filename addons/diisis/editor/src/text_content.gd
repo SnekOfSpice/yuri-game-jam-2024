@@ -401,6 +401,8 @@ func _on_text_box_code_completion_requested() -> void:
 		if is_text_before_caret(str(arg_name, "|}")):
 			Pages.auto_complete_context = arg_name
 			caret_movement_to_do = -1
+		elif is_text_before_caret(str(arg_name, "|")):
+			Pages.auto_complete_context = arg_name
 		elif is_text_after_caret("|"):
 			caret_movement_to_do = 1
 

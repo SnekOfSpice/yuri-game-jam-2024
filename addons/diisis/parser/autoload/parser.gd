@@ -344,6 +344,11 @@ func read_line(index: int):
 	if lines.size() == 0:
 		push_warning(str("No lines defined for page ", page_index))
 		return
+	
+	if index >= lines.size():
+		push_warning(str("Index ", index, " is higher than the available lines - index will be set to 0"))
+		index = 0
+	
 	line_index = index
 	#prints("reading line", index, "trail is ", address_trail, " idx is", address_trail_index)
 	address_trail_index += 1
