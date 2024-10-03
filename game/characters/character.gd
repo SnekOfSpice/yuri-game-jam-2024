@@ -16,18 +16,18 @@ func _ready():
 	add_to_group("character")
 	target_x = position.x
 	
-	if character_name == "anhedonia":
-		set_x_position(1)
-	elif character_name == "one":
-		set_x_position(1)
-	elif character_name == "spectra":
-		set_x_position(7)
-	elif character_name == "torturer":
-		set_x_position(7)
-	elif character_name == "interrogator":
-		set_x_position(6)
-	elif character_name == "one+anhedonia":
-		set_x_position(4)
+	#if character_name == "anhedonia":
+		#set_x_position(1)
+	#elif character_name == "one":
+		#set_x_position(1)
+	#elif character_name == "spectra":
+		#set_x_position(7)
+	#elif character_name == "torturer":
+		#set_x_position(7)
+	#elif character_name == "interrogator":
+		#set_x_position(6)
+	#elif character_name == "one+anhedonia":
+		#set_x_position(4)
 	
 
 func set_x_position(idx:int, time := 0, advance_instruction_after_reposition:=false):
@@ -58,13 +58,15 @@ func serialize() -> Dictionary:
 	result["visible"] = visible
 	result["emotion"] = emotion
 	result["target_x"] = target_x
+	result["emotions_by_page"] = emotions_by_page
 	
 	return result
 
 func deserialize(data: Dictionary):
-	visible = data.get("visible", false)
 	set_emotion(data.get("emotion", "neutral"))
 	position.x = data.get("target_x", position.x)
+	visible = data.get("visible", false)
+	emotions_by_page = data.get("emotions_by_page", {})
 
 func on_dialog_line_args_passed(actor_name: String, dialog_line_args: Dictionary):
 	var new_modulate:float
@@ -85,6 +87,8 @@ func on_go_back_accepted(page:int, line:int):
 	for key in emotions_by_page[page].keys():
 		if key > prev_index and key < line:
 			prev_index = key
+	if not emotions_by_page[page].has(prev_index):
+		return
 	set_emotion(emotions_by_page[page][prev_index], false)
 
 func set_emotion(emotion_name:String, lmao := true):

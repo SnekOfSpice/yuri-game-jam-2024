@@ -46,7 +46,7 @@ const MUSIC_SEX := "Paradise_Found.mp3" # PH
 const MUSIC_SPECTRA := "Paradise_Found.mp3" # PH
 const MUSIC_SUSPENSION_SEX := "Paradise_Found.mp3" # PH
 const MUSIC_TORTURE := "CØL - What Makes Me Feel Alive - 02 8822.ogg" # PH
-const MUSIC_WORKING := "Hope.ogg" # PH
+const MUSIC_WORKING := "CØL - Reset - Respond - 02 They'd Love Me More If I Were Dead.ogg"
 
 const SFX_ROOT := "res://game/sounds/sfx/"
 const SFX_CLINK := "592005__ueffects__climbing-express-gear.ogg"

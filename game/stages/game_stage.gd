@@ -234,6 +234,8 @@ func serialize() -> Dictionary:
 	result["text_container_position"] = find_child("TextContainer").position
 	result["text_style"] = text_style
 	
+	result["start_cover_visible"] = find_child("StartCover").visible
+	
 	return result
 
 func deserialize(data:Dictionary):
@@ -253,6 +255,8 @@ func deserialize(data:Dictionary):
 		else:
 			push_warning("cg_position isn't top or bottom")
 			hide_cg()
+	
+	find_child("StartCover").visible = data.get("start_cover_visible", false)
 	
 	set_text_style(data.get("text_style", TextStyle.ToBottom))
 	if text_style == TextStyle.ToCharacter:
