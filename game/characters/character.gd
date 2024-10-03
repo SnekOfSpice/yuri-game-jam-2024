@@ -8,8 +8,11 @@ var target_x := 0
 
 signal repositioned()
 
+var emotions_by_page := {}
+
 func _ready():
 	ParserEvents.dialog_line_args_passed.connect(on_dialog_line_args_passed)
+	ParserEvents.go_back_accepted.connect(on_go_back_accepted)
 	add_to_group("character")
 	target_x = position.x
 	
@@ -75,11 +78,25 @@ func on_dialog_line_args_passed(actor_name: String, dialog_line_args: Dictionary
 		emotion = emotion.trim_suffix("-emotion")
 		set_emotion(emotion)
 
-func set_emotion(emotion_name:String):
+func on_go_back_accepted(page:int, line:int):
+	if not emotions_by_page.has(page):
+		return
+	var prev_index = 0
+	for key in emotions_by_page[page].keys():
+		if key > prev_index and key < line:
+			prev_index = key
+	set_emotion(emotions_by_page[page][prev_index], false)
+
+func set_emotion(emotion_name:String, lmao := true):
 	emotion = emotion_name
-	print(character_name, " gets emotion \"", emotion_name, "\".")
 	if emotion_name == "invisible":
 		visible = false
 		return
 	visible = true
 	find_child("Sprite").texture = load(str("res://game/characters/sprites/", character_name, "-", emotion, ".png"))
+	
+	if lmao:
+		if emotions_by_page.has(Parser.page_index):
+			emotions_by_page[Parser.page_index][Parser.line_index] = emotion
+		else:
+			emotions_by_page[Parser.page_index] = {Parser.line_index : emotion}

@@ -54,8 +54,8 @@ func set_eye_progress(progress:int):
 	
 
 
-func set_emotion(emotion_name:String):
-	super.set_emotion(emotion_name)
+func set_emotion(emotion_name:String, lmao:=true):
+	super.set_emotion(emotion_name, lmao)
 	
 	var overlay:Node2D
 	for child in $Eyes.get_children():
