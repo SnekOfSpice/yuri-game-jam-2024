@@ -27,31 +27,38 @@ func _ready() -> void:
 	#tween.tween_property(self, "position", target_position, sway_speed).set_ease(Tween.EASE_IN_OUT)
 	#tween.finished.connect(sway)
 
+func set_sway_intensity(value:float):
+	sway_intensity = value
+
 func _process(delta: float) -> void:
+	screen_shake_hard_time_left -= delta
 	if shake_strength > 0:
 		shake_strength = lerpf(shake_strength, 0, fade * delta)
-		
+	
+	var x:float
+	if randf() < 0.5:
+		x = asin(Time.get_ticks_msec() / 660.0) - 0.5
+	else:
+		x = acos(Time.get_ticks_msec() / 660.0) - 0.5
+	var y:float
+	if randf() < 0.5:
+		y = sin(Time.get_ticks_msec() / 660.0) - 0.5
+	else:
+		y = cos(Time.get_ticks_msec() / 660.0) - 0.5
+	
 	offset = lerp(
 		offset,
 		get_random_offset() + Vector2(
-			(sin(Time.get_ticks_msec() / 660.0) - 0.5) * sway_intensity,
-			(cos(Time.get_ticks_msec() / 660.0) - 0.5) * sway_intensity),
-		1 if screen_shake_hard else 0.02)
+			x * sway_intensity,
+			y * sway_intensity),
+		1 if screen_shake_hard_time_left > 0.0 else 0.02)
 
-var screen_shake_hard_timer:Timer
+var screen_shake_hard_time_left = 0.0
 
 func apply_shake(strength:float):
 	shake_strength = strength
 	
-	if screen_shake_hard_timer:
-		screen_shake_hard_timer.queue_free()
-	var t = Timer.new()
-	t.wait_time = fade
-	t.autostart = true
-	t.timeout.connect(t.queue_free)
-	screen_shake_hard_timer = t
-	screen_shake_hard = true
-	screen_shake_hard_timer.timeout.connect(set.bind("screen_shake_hard", false))
+	screen_shake_hard_time_left = max(0.03 * strength, 0.5)
 
 func get_random_offset() -> Vector2:
 	return Vector2(randf_range(-shake_strength, shake_strength), randf_range(-shake_strength, shake_strength))

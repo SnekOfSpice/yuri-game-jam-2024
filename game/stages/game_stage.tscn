@@ -1,4 +1,4 @@
-[gd_scene load_steps=16 format=3 uid="uid://r1ntcqdujfol"]
+[gd_scene load_steps=38 format=3 uid="uid://r1ntcqdujfol"]
 
 [ext_resource type="Script" path="res://game/stages/game_stage.gd" id="1_a36me"]
 [ext_resource type="Script" path="res://addons/diisis/parser/src/line_reader.gd" id="1_h4afo"]
@@ -15,6 +15,50 @@
 [ext_resource type="PackedScene" uid="uid://cjy7vf1xrnq5y" path="res://game/screens/chapter_cover.tscn" id="12_vf2y4"]
 [ext_resource type="PackedScene" uid="uid://biu88w163ploy" path="res://game/cheats.tscn" id="13_qackq"]
 [ext_resource type="Script" path="res://game/stages/start_cover.gd" id="13_qfsh6"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_scr08"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_hkxqd"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_ngewe"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_s5n3v"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_qrqx2"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_6in5e"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_5poes"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_gq6j1"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_p2i0s"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_p17qu"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_6jtk0"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_orud1"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_akdev"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_wvc3f"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_uymoo"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_xu5yj"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_n5rkc"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_yusuu"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_0c6oi"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_wwriq"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_wfwvw"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_pgtnv"]
 
 [node name="GameStage" type="Control"]
 layout_mode = 3
@@ -232,11 +276,37 @@ grow_vertical = 0
 
 [node name="HistoryButton" type="Button" parent="Camera2D/CanvasLayer/Control/VNUI/ControlsContainer"]
 layout_mode = 2
+theme_override_colors/font_outline_color = Color(0.537255, 0.254902, 0.14902, 0.517647)
+theme_override_constants/outline_size = 2
+theme_override_styles/focus = SubResource("StyleBoxEmpty_scr08")
+theme_override_styles/disabled_mirrored = SubResource("StyleBoxEmpty_hkxqd")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_ngewe")
+theme_override_styles/hover_pressed_mirrored = SubResource("StyleBoxEmpty_s5n3v")
+theme_override_styles/hover_pressed = SubResource("StyleBoxEmpty_qrqx2")
+theme_override_styles/hover_mirrored = SubResource("StyleBoxEmpty_6in5e")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_5poes")
+theme_override_styles/pressed_mirrored = SubResource("StyleBoxEmpty_gq6j1")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_p2i0s")
+theme_override_styles/normal_mirrored = SubResource("StyleBoxEmpty_p17qu")
+theme_override_styles/normal = SubResource("StyleBoxEmpty_6jtk0")
 text = "History"
 
 [node name="MenuButton" type="Button" parent="Camera2D/CanvasLayer/Control/VNUI/ControlsContainer"]
 layout_mode = 2
 focus_mode = 0
+theme_override_colors/font_outline_color = Color(0.535305, 0.256687, 0.150592, 0.517647)
+theme_override_constants/outline_size = 2
+theme_override_styles/focus = SubResource("StyleBoxEmpty_orud1")
+theme_override_styles/disabled_mirrored = SubResource("StyleBoxEmpty_akdev")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_wvc3f")
+theme_override_styles/hover_pressed_mirrored = SubResource("StyleBoxEmpty_uymoo")
+theme_override_styles/hover_pressed = SubResource("StyleBoxEmpty_xu5yj")
+theme_override_styles/hover_mirrored = SubResource("StyleBoxEmpty_n5rkc")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_yusuu")
+theme_override_styles/pressed_mirrored = SubResource("StyleBoxEmpty_0c6oi")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_wwriq")
+theme_override_styles/normal_mirrored = SubResource("StyleBoxEmpty_wfwvw")
+theme_override_styles/normal = SubResource("StyleBoxEmpty_pgtnv")
 text = "Menu"
 
 [node name="CGTopContainer" type="Control" parent="Camera2D/CanvasLayer/Control"]
@@ -269,6 +339,7 @@ grow_vertical = 2
 mouse_filter = 2
 
 [node name="ChapterCover" parent="Camera2D/CanvasLayer/Control" instance=ExtResource("12_vf2y4")]
+visible = false
 layout_mode = 1
 
 [node name="BlackFade" parent="Camera2D/CanvasLayer/Control" instance=ExtResource("8_50byo")]
@@ -312,8 +383,10 @@ script = ExtResource("1_h4afo")
 blank_names = Array[String](["narrator"])
 name_map = {
 "anhedonia": "Anhedonia",
+"interrogator": "Interrogator",
 "one": "One",
-"spectra": "Spectra"
+"spectra": "Spectra",
+"torturer": "Torturer"
 }
 name_colors = {
 "anhedonia": Color(0.98185, 0.717259, 0.904946, 1),

@@ -131,3 +131,9 @@ func show_letter() -> bool:
 		GameWorld.game_stage.show_letter()
 		return true
 	return false
+
+
+func sway_camera(intensity: float) -> bool:
+	if GameWorld.camera:
+		GameWorld.camera.set_sway_intensity(intensity)
+	return false
