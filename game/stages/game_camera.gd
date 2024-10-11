@@ -11,6 +11,7 @@ var zoom_tween:Tween
 
 var sway_intensity := 0.0
 var sway_speed := 1.0
+var sway_intensity_lerp_strength := 0.02
 
 var screen_shake_hard := false
 
@@ -19,19 +20,11 @@ var start_position := Vector2.ZERO
 func _ready() -> void:
 	GameWorld.camera = self
 	start_position = position
-	#sway()
-#
-#func sway():
-	#var tween = create_tween()
-	#var target_position = start_position + Vector2.ONE.rotated(randi_range(0, TAU)) * sway_intensity
-	#tween.tween_property(self, "position", target_position, sway_speed).set_ease(Tween.EASE_IN_OUT)
-	#tween.finished.connect(sway)
 
 func set_sway_intensity(value:float):
 	sway_intensity = value
 
 func _process(delta: float) -> void:
-	screen_shake_hard_time_left -= delta
 	if shake_strength > 0:
 		shake_strength = lerpf(shake_strength, 0, fade * delta)
 	
@@ -51,14 +44,12 @@ func _process(delta: float) -> void:
 		get_random_offset() + Vector2(
 			x * sway_intensity,
 			y * sway_intensity),
-		1 if screen_shake_hard_time_left > 0.0 else 0.02)
-
-var screen_shake_hard_time_left = 0.0
+		sway_intensity_lerp_strength)
+	sway_intensity_lerp_strength = lerp(sway_intensity_lerp_strength, 0.02, 0.03)
 
 func apply_shake(strength:float):
 	shake_strength = strength
-	
-	screen_shake_hard_time_left = max(0.03 * strength, 0.5)
+	sway_intensity_lerp_strength = 1.0
 
 func get_random_offset() -> Vector2:
 	return Vector2(randf_range(-shake_strength, shake_strength), randf_range(-shake_strength, shake_strength))

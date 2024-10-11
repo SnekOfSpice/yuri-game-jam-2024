@@ -1,6 +1,6 @@
 {
 	"editor": {
-		"current_page_number": 39,
+		"current_page_number": 29,
 		"page_view": 0,
 		"text_size_id": 3
 	},
@@ -1487,7 +1487,7 @@
 						}
 					}
 				],
-				"meta.scroll_vertical": 3256,
+				"meta.scroll_vertical": 3217,
 				"meta.selected": false,
 				"next": 1,
 				"number": 0,
@@ -3726,7 +3726,7 @@
 						}
 					}
 				],
-				"meta.scroll_vertical": 425,
+				"meta.scroll_vertical": 414,
 				"meta.selected": false,
 				"next": 7,
 				"number": 6,
@@ -4081,7 +4081,7 @@
 						}
 					}
 				],
-				"meta.scroll_vertical": 0,
+				"meta.scroll_vertical": 425,
 				"meta.selected": false,
 				"next": 8,
 				"number": 7,
@@ -5238,7 +5238,7 @@
 						}
 					}
 				],
-				"meta.scroll_vertical": 1633,
+				"meta.scroll_vertical": 0,
 				"meta.selected": false,
 				"next": 12,
 				"number": 11,
@@ -6357,7 +6357,7 @@
 								"gods"
 							],
 							"active_actors_title": "character",
-							"content": "[]>narrator:date time !get food"
+							"content": "[]>narrator:date time !get food\n[]>narrator:bench with thi after pizza"
 						},
 						"facts": {
 							"fact_data_by_name": {
@@ -6404,7 +6404,7 @@
 								"gods"
 							],
 							"active_actors_title": "character",
-							"content": "[]>anhedonia:Seeing you in these accursed city lights, it does something for me.\n[]>one:Feeling poetic?\n[]>anhedonia{anhedonia-emotion|smug}:I always am."
+							"content": "[]>narrator:it becomes night time"
 						},
 						"facts": {
 							"fact_data_by_name": {
@@ -6451,7 +6451,7 @@
 								"gods"
 							],
 							"active_actors_title": "character",
-							"content": "[]>one:it's cold\n[]>narrator:You share body warmth"
+							"content": "[]>anhedonia:Seeing you in these accursed city lights, it does something for me.\n[]>one:Feeling poetic?\n[]>anhedonia{anhedonia-emotion|smug}:I always am."
 						},
 						"facts": {
 							"fact_data_by_name": {
@@ -6466,6 +6466,53 @@
 						"meta.indent_level": 0,
 						"meta.is_head_editable": false,
 						"meta.line_index": 3,
+						"meta.selector": {
+							"selected": false
+						}
+					},
+					{
+						"address": "15.4",
+						"conditionals": {
+							"behavior": 0,
+							"behavior_key": "Show",
+							"facts": {
+								"fact_data_by_name": {
+
+								},
+								"meta.visible": false
+							},
+							"meta.visible": false,
+							"operand": 0,
+							"operand_args": [],
+							"operand_key": "AND"
+						},
+						"content": {
+							"active_actors": [
+								"anhedonia",
+								"one",
+								"spectra",
+								"narrator",
+								"interrogator",
+								"torturer",
+								"one+anhedonia",
+								"gods"
+							],
+							"active_actors_title": "character",
+							"content": "[]>one:it's cold\n[]>narrator:You share body warmth"
+						},
+						"facts": {
+							"fact_data_by_name": {
+
+							},
+							"meta.visible": false
+						},
+						"header": [],
+						"line_type": 0,
+						"meta.conditionals_visible": false,
+						"meta.facts_visible": false,
+						"meta.indent_level": 0,
+						"meta.is_head_editable": false,
+						"meta.line_index": 4,
 						"meta.selector": {
 							"selected": false
 						}
@@ -7459,7 +7506,7 @@
 						}
 					}
 				],
-				"meta.scroll_vertical": 643,
+				"meta.scroll_vertical": 1386,
 				"meta.selected": false,
 				"next": 20,
 				"number": 19,
@@ -9354,7 +9401,7 @@
 						}
 					}
 				],
-				"meta.scroll_vertical": 53,
+				"meta.scroll_vertical": 869,
 				"meta.selected": false,
 				"next": 28,
 				"number": 27,
@@ -9473,189 +9520,110 @@
 						"meta.selector": {
 							"selected": false
 						}
+					},
+					{
+						"address": "28.2",
+						"conditionals": {
+							"behavior": 0,
+							"behavior_key": "Show",
+							"facts": {
+								"fact_data_by_name": {
+
+								},
+								"meta.visible": false
+							},
+							"meta.visible": false,
+							"operand": 0,
+							"operand_args": [],
+							"operand_key": "AND"
+						},
+						"content": {
+							"active_actors": [
+								"anhedonia",
+								"one",
+								"spectra",
+								"narrator",
+								"interrogator",
+								"torturer",
+								"one+anhedonia",
+								"gods"
+							],
+							"active_actors_title": "character",
+							"content": "[]>narrator:you awake to your body on fire once more. long before sunrise.\n[]>narrator:emergency stash in the woods\n[]>narrator:one needs painkillers and these are the last strong ones"
+						},
+						"facts": {
+							"fact_data_by_name": {
+
+							},
+							"meta.visible": false
+						},
+						"header": [],
+						"line_type": 0,
+						"meta.conditionals_visible": false,
+						"meta.facts_visible": false,
+						"meta.indent_level": 0,
+						"meta.is_head_editable": false,
+						"meta.line_index": 2,
+						"meta.selector": {
+							"selected": false
+						}
+					},
+					{
+						"address": "28.3",
+						"conditionals": {
+							"behavior": 0,
+							"behavior_key": "Show",
+							"facts": {
+								"fact_data_by_name": {
+
+								},
+								"meta.visible": false
+							},
+							"meta.visible": false,
+							"operand": 0,
+							"operand_args": [],
+							"operand_key": "AND"
+						},
+						"content": {
+							"active_actors": [
+								"anhedonia",
+								"one",
+								"spectra",
+								"narrator",
+								"interrogator",
+								"torturer",
+								"one+anhedonia",
+								"gods"
+							],
+							"active_actors_title": "character",
+							"content": "[]>one: I can't work through the day like this.\n[]>narrator:with struggling and heaving and raspy breaths, you whimper against anhedonias face.\n[]>one:I dont think i could evenwork for an hour without keeling over.\n[]>anhedonia:shit...\n[]>one:don't we have any strong ones left?\n[]>anhedonia: we've been running on dwindling supplies since our plug got hit . we don't have any raws left either.\n[]>one:... it's fine.\n[]>anhedonia:it's not...\n[]>narrator:you nuzzle against her chest. she holds you there, arms supporting your frame against hers.\n[]>anhedonia:...lc...lc...\n[]>narrator:anhedonia let out an exasperated sigh.\n[]>one: anything on your mind?\n[]>anhedonia: besides your suffering?... yea, I think.\n[]>one: im nosy. what is it.\n[]>anhedonia: I might have a stash still, way out \n[]>one: where?\n[]>anhedonia: the middle of nowhere. about 5 hours in one direction by train.\n[]>one:what do you need them out there for?\n[]>anhedonia: safety. and it's near where clericants sometimes have their executory hunts. so you know....\n[]>one:...\n[]>anhedonia: fuck if I know if having that shash would ever be helpful.\n[]>one:...\n[]>one:if it's the last one we have\n[]>anhedonia:of painkillers this stong? yea<lc>I saved them for whenever.\n[]>anhedonia:... but you need it now, so I'll get going in a few hours and return tomorrow morning.\n[]>one: ...\n[]>one: you couldn't go now, be back by end of day?\n[]>anhedonia: I can't now. I wanna at least have the cover of night. And trains don't run throughout the night.\n[]>one: ..\n[]>anhedonia: and I'll use the chance to nurse my wife for a few hours\n[]>one: ...\n[]>one: thank you..."
+						},
+						"facts": {
+							"fact_data_by_name": {
+
+							},
+							"meta.visible": false
+						},
+						"header": [],
+						"line_type": 0,
+						"meta.conditionals_visible": false,
+						"meta.facts_visible": false,
+						"meta.indent_level": 0,
+						"meta.is_head_editable": false,
+						"meta.line_index": 3,
+						"meta.selector": {
+							"selected": false
+						}
 					}
 				],
-				"meta.scroll_vertical": 183,
+				"meta.scroll_vertical": 701,
 				"meta.selected": false,
-				"next": 29,
+				"next": 32,
 				"number": 28,
 				"page_key": "O bloodletting prep",
 				"terminate": false
 			},
 			"29": {
-				"facts": {
-					"fact_data_by_name": {
-
-					},
-					"meta.visible": false
-				},
-				"lines": [
-					{
-						"address": "29.0",
-						"conditionals": {
-							"behavior": 0,
-							"behavior_key": "Show",
-							"facts": {
-								"fact_data_by_name": {
-
-								},
-								"meta.visible": false
-							},
-							"meta.visible": false,
-							"operand": 0,
-							"operand_args": [],
-							"operand_key": "AND"
-						},
-						"content": {
-							"active_actors": [
-								"anhedonia",
-								"one",
-								"spectra",
-								"narrator",
-								"interrogator",
-								"torturer",
-								"one+anhedonia",
-								"gods"
-							],
-							"active_actors_title": "character",
-							"content": "[]>one:you flick through the pages, and between your marred fingers, they become like water. the softcovers bend to the violence of your grip, and deft thumbs keep tension on the cusp of the volume's fore edge. your gaze washes over the contents, and in a miment, you stop aat the one you need. your repeat this mental swimming exercise a handful of times more. when you emerge from your now-ransacked library, it is victorious. instructions in hand. references to other works. a guide to navigating this sea of knowledge. <lc> today, and over a bottle of wine, anhedonia will receive this guide."
-						},
-						"facts": {
-							"fact_data_by_name": {
-
-							},
-							"meta.visible": false
-						},
-						"header": [],
-						"line_type": 0,
-						"meta.conditionals_visible": false,
-						"meta.facts_visible": false,
-						"meta.indent_level": 0,
-						"meta.is_head_editable": false,
-						"meta.line_index": 0,
-						"meta.selector": {
-							"selected": false
-						}
-					},
-					{
-						"address": "29.1",
-						"conditionals": {
-							"behavior": 0,
-							"behavior_key": "Show",
-							"facts": {
-								"fact_data_by_name": {
-
-								},
-								"meta.visible": false
-							},
-							"meta.visible": false,
-							"operand": 0,
-							"operand_args": [],
-							"operand_key": "AND"
-						},
-						"content": {
-							"active_actors": [
-								"anhedonia",
-								"one",
-								"spectra",
-								"narrator",
-								"interrogator",
-								"torturer",
-								"one+anhedonia",
-								"gods"
-							],
-							"active_actors_title": "character",
-							"content": "[]>one:And tomorrow we let blood flow. You'll make a great constructor."
-						},
-						"facts": {
-							"fact_data_by_name": {
-
-							},
-							"meta.visible": false
-						},
-						"header": [],
-						"line_type": 0,
-						"meta.conditionals_visible": false,
-						"meta.facts_visible": false,
-						"meta.indent_level": 0,
-						"meta.is_head_editable": false,
-						"meta.line_index": 1,
-						"meta.selector": {
-							"selected": false
-						}
-					}
-				],
-				"meta.scroll_vertical": 0,
-				"meta.selected": false,
-				"next": 30,
-				"number": 29,
-				"page_key": "O prep final instructions",
-				"terminate": false
-			},
-			"30": {
-				"facts": {
-					"fact_data_by_name": {
-
-					},
-					"meta.visible": false
-				},
-				"lines": [
-					{
-						"address": "29.0",
-						"conditionals": {
-							"behavior": 0,
-							"behavior_key": "Show",
-							"facts": {
-								"fact_data_by_name": {
-
-								},
-								"meta.visible": false
-							},
-							"meta.visible": false,
-							"operand": 0,
-							"operand_args": [],
-							"operand_key": "AND"
-						},
-						"content": {
-							"active_actors": [
-								"anhedonia",
-								"one",
-								"spectra",
-								"narrator",
-								"interrogator",
-								"torturer",
-								"one+anhedonia",
-								"gods"
-							],
-							"active_actors_title": "character",
-							"content": "[]>anhedonia:bloodletting<lc>blood<lc>blood<lc>blood"
-						},
-						"facts": {
-							"fact_data_by_name": {
-
-							},
-							"meta.visible": false
-						},
-						"header": [],
-						"line_type": 0,
-						"meta.conditionals_visible": false,
-						"meta.facts_visible": false,
-						"meta.indent_level": 0,
-						"meta.is_head_editable": false,
-						"meta.line_index": 0,
-						"meta.selector": {
-							"selected": false
-						}
-					}
-				],
-				"meta.scroll_vertical": 0,
-				"meta.selected": false,
-				"next": 31,
-				"number": 30,
-				"page_key": "bloodletting",
-				"terminate": false
-			},
-			"31": {
 				"facts": {
 					"fact_data_by_name": {
 
@@ -9932,7 +9900,7 @@
 								"gods"
 							],
 							"active_actors_title": "character",
-							"content": "[]>narrator:fit is the half way point of your journey back, when one texts you again. witha fond and thankful smile, you immedoately open your chat.\n[]>anhedonia:time really stretches when I'm not texting you"
+							"content": "[]>narrator:the arid soil and leafless evergreen trees make up most of the landscape. dotted with dry shrubs and mounds of dirt, this place is as unnavigable (impossible to navigate?) as it is inhospitable.\n[]>narrator:these dead woods welcome you back with their decrepit creaking and cracked arms."
 						},
 						"facts": {
 							"fact_data_by_name": {
@@ -9979,7 +9947,7 @@
 								"gods"
 							],
 							"active_actors_title": "character",
-							"content": "[]>anhedonia:How did you get out, anyways?\n[]>one:Well..."
+							"content": "[]>narrator:the moonless sky now covers you with pitch darkness"
 						},
 						"facts": {
 							"fact_data_by_name": {
@@ -9997,16 +9965,168 @@
 						"meta.selector": {
 							"selected": false
 						}
+					},
+					{
+						"address": "29.7",
+						"conditionals": {
+							"behavior": 0,
+							"behavior_key": "Show",
+							"facts": {
+								"fact_data_by_name": {
+
+								},
+								"meta.visible": false
+							},
+							"meta.visible": false,
+							"operand": 0,
+							"operand_args": [],
+							"operand_key": "AND"
+						},
+						"content": {
+							"active_actors": [
+								"anhedonia",
+								"one",
+								"spectra",
+								"narrator",
+								"interrogator",
+								"torturer",
+								"one+anhedonia",
+								"gods"
+							],
+							"active_actors_title": "character",
+							"content": "[]>narrator:fit is the half way point of your journey back, when one texts you again. witha fond and thankful smile, you immedoately open your chat.\n[]>one{one-emotion|invisible}:hiiii\n[]>anhedonia:hii\n[]>anhedonia:how did you sleep?\n[]>one:shitty\n[]>one:pain\n[]>anhedonia:time really stretches when I'm not texting you"
+						},
+						"facts": {
+							"fact_data_by_name": {
+
+							},
+							"meta.visible": false
+						},
+						"header": [],
+						"line_type": 0,
+						"meta.conditionals_visible": false,
+						"meta.facts_visible": false,
+						"meta.indent_level": 0,
+						"meta.is_head_editable": false,
+						"meta.line_index": 7,
+						"meta.selector": {
+							"selected": false
+						}
+					},
+					{
+						"address": "29.8",
+						"conditionals": {
+							"behavior": 0,
+							"behavior_key": "Show",
+							"facts": {
+								"fact_data_by_name": {
+
+								},
+								"meta.visible": false
+							},
+							"meta.visible": false,
+							"operand": 0,
+							"operand_args": [],
+							"operand_key": "AND"
+						},
+						"content": {
+							"delay_after": 0,
+							"delay_before": 0,
+							"line_reader.args": [
+								4,
+								4,
+								4,
+								false,
+								"apartment_regular",
+								"none"
+							],
+							"line_reader.reverse_args": [
+								"INVALID ARGUMENT FOR fade_in",
+								"INVALID ARGUMENT FOR hold_time",
+								"INVALID ARGUMENT FOR fade_out",
+								"INVALID ARGUMENT FOR hide_characters",
+								"INVALID ARGUMENT FOR new_background",
+								"INVALID ARGUMENT FOR new_bgm"
+							],
+							"meta.reverse_text": "",
+							"meta.text": "black_fade(4.0, 4.0, 4.0, false, apartment_regular, none)",
+							"meta.validation_status": "OK",
+							"name": "black_fade",
+							"reverse_name": ""
+						},
+						"facts": {
+							"fact_data_by_name": {
+
+							},
+							"meta.visible": false
+						},
+						"header": [],
+						"line_type": 2,
+						"meta.conditionals_visible": false,
+						"meta.facts_visible": false,
+						"meta.indent_level": 0,
+						"meta.is_head_editable": false,
+						"meta.line_index": 8,
+						"meta.selector": {
+							"selected": false
+						}
+					},
+					{
+						"address": "29.9",
+						"conditionals": {
+							"behavior": 0,
+							"behavior_key": "Show",
+							"facts": {
+								"fact_data_by_name": {
+
+								},
+								"meta.visible": false
+							},
+							"meta.visible": false,
+							"operand": 0,
+							"operand_args": [],
+							"operand_key": "AND"
+						},
+						"content": {
+							"active_actors": [
+								"anhedonia",
+								"one",
+								"spectra",
+								"narrator",
+								"interrogator",
+								"torturer",
+								"one+anhedonia",
+								"gods"
+							],
+							"active_actors_title": "character",
+							"content": "[]>anhedonia:How did you get out, anyways?\n[]>one:Well..."
+						},
+						"facts": {
+							"fact_data_by_name": {
+
+							},
+							"meta.visible": false
+						},
+						"header": [],
+						"line_type": 0,
+						"meta.conditionals_visible": false,
+						"meta.facts_visible": false,
+						"meta.indent_level": 0,
+						"meta.is_head_editable": false,
+						"meta.line_index": 9,
+						"meta.selector": {
+							"selected": false
+						}
 					}
 				],
-				"meta.scroll_vertical": 489,
+				"meta.scroll_vertical": 1101,
 				"meta.selected": false,
-				"next": 32,
-				"number": 31,
+				"next": 30,
+				"number": 29,
 				"page_key": "A train journey",
 				"terminate": false
 			},
-			"32": {
+			"30": {
 				"facts": {
 					"fact_data_by_name": {
 
@@ -10177,8 +10297,181 @@
 				"meta.scroll_vertical": 0,
 				"meta.selected": false,
 				"next": 33,
-				"number": 32,
+				"number": 30,
 				"page_key": "torture #3 \"you can't know who I am\"",
+				"terminate": false
+			},
+			"31": {
+				"facts": {
+					"fact_data_by_name": {
+
+					},
+					"meta.visible": false
+				},
+				"lines": [
+					{
+						"address": "31.0",
+						"conditionals": {
+							"behavior": 0,
+							"behavior_key": "Show",
+							"facts": {
+								"fact_data_by_name": {
+
+								},
+								"meta.visible": false
+							},
+							"meta.visible": false,
+							"operand": 0,
+							"operand_args": [],
+							"operand_key": "AND"
+						},
+						"content": {
+							"active_actors": [
+								"anhedonia",
+								"one",
+								"spectra",
+								"narrator",
+								"interrogator",
+								"torturer",
+								"one+anhedonia",
+								"gods"
+							],
+							"active_actors_title": "character",
+							"content": "[]>anhedonia:bloodletting<lc>blood<lc>blood<lc>blood"
+						},
+						"facts": {
+							"fact_data_by_name": {
+
+							},
+							"meta.visible": false
+						},
+						"header": [],
+						"line_type": 0,
+						"meta.conditionals_visible": false,
+						"meta.facts_visible": false,
+						"meta.indent_level": 0,
+						"meta.is_head_editable": false,
+						"meta.line_index": 0,
+						"meta.selector": {
+							"selected": false
+						}
+					}
+				],
+				"meta.scroll_vertical": 0,
+				"meta.selected": false,
+				"next": 29,
+				"number": 31,
+				"page_key": "bloodletting",
+				"terminate": false
+			},
+			"32": {
+				"facts": {
+					"fact_data_by_name": {
+
+					},
+					"meta.visible": false
+				},
+				"lines": [
+					{
+						"address": "32.0",
+						"conditionals": {
+							"behavior": 0,
+							"behavior_key": "Show",
+							"facts": {
+								"fact_data_by_name": {
+
+								},
+								"meta.visible": false
+							},
+							"meta.visible": false,
+							"operand": 0,
+							"operand_args": [],
+							"operand_key": "AND"
+						},
+						"content": {
+							"active_actors": [
+								"anhedonia",
+								"one",
+								"spectra",
+								"narrator",
+								"interrogator",
+								"torturer",
+								"one+anhedonia",
+								"gods"
+							],
+							"active_actors_title": "character",
+							"content": "[]>one:you flick through the pages, and between your marred fingers, they become like water. the softcovers bend to the violence of your grip, and deft thumbs keep tension on the cusp of the volume's fore edge. your gaze washes over the contents, and in a miment, you stop aat the one you need. your repeat this mental swimming exercise a handful of times more. when you emerge from your now-ransacked library, it is victorious. instructions in hand. references to other works. a guide to navigating this sea of knowledge. <lc> today, and over a bottle of wine, anhedonia will receive this guide."
+						},
+						"facts": {
+							"fact_data_by_name": {
+
+							},
+							"meta.visible": false
+						},
+						"header": [],
+						"line_type": 0,
+						"meta.conditionals_visible": false,
+						"meta.facts_visible": false,
+						"meta.indent_level": 0,
+						"meta.is_head_editable": false,
+						"meta.line_index": 0,
+						"meta.selector": {
+							"selected": false
+						}
+					},
+					{
+						"address": "32.1",
+						"conditionals": {
+							"behavior": 0,
+							"behavior_key": "Show",
+							"facts": {
+								"fact_data_by_name": {
+
+								},
+								"meta.visible": false
+							},
+							"meta.visible": false,
+							"operand": 0,
+							"operand_args": [],
+							"operand_key": "AND"
+						},
+						"content": {
+							"active_actors": [
+								"anhedonia",
+								"one",
+								"spectra",
+								"narrator",
+								"interrogator",
+								"torturer",
+								"one+anhedonia",
+								"gods"
+							],
+							"active_actors_title": "character",
+							"content": "[]>one:And tomorrow we let blood flow. You'll make a great constructor."
+						},
+						"facts": {
+							"fact_data_by_name": {
+
+							},
+							"meta.visible": false
+						},
+						"header": [],
+						"line_type": 0,
+						"meta.conditionals_visible": false,
+						"meta.facts_visible": false,
+						"meta.indent_level": 0,
+						"meta.is_head_editable": false,
+						"meta.line_index": 1,
+						"meta.selector": {
+							"selected": false
+						}
+					}
+				],
+				"meta.scroll_vertical": 0,
+				"meta.selected": false,
+				"next": 31,
+				"number": 32,
+				"page_key": "O prep final instructions",
 				"terminate": false
 			},
 			"33": {
@@ -10190,7 +10483,7 @@
 				},
 				"lines": [
 					{
-						"address": "31.0",
+						"address": "33.0",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -10246,7 +10539,7 @@
 						}
 					},
 					{
-						"address": "31.1",
+						"address": "33.1",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -10293,7 +10586,7 @@
 						}
 					},
 					{
-						"address": "31.2",
+						"address": "33.2",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -10349,7 +10642,7 @@
 						}
 					},
 					{
-						"address": "31.3",
+						"address": "33.3",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -10412,7 +10705,7 @@
 				},
 				"lines": [
 					{
-						"address": "32.0",
+						"address": "34.0",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -10470,7 +10763,7 @@
 						}
 					},
 					{
-						"address": "32.1",
+						"address": "34.1",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -10533,7 +10826,7 @@
 				},
 				"lines": [
 					{
-						"address": "33.0",
+						"address": "35.0",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -10591,7 +10884,7 @@
 						}
 					},
 					{
-						"address": "33.1",
+						"address": "35.1",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -10638,7 +10931,7 @@
 						}
 					},
 					{
-						"address": "33.2",
+						"address": "35.2",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -10696,7 +10989,7 @@
 						}
 					},
 					{
-						"address": "33.3",
+						"address": "35.3",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -10743,7 +11036,7 @@
 						}
 					},
 					{
-						"address": "33.4",
+						"address": "35.4",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -10801,7 +11094,7 @@
 						}
 					},
 					{
-						"address": "33.5",
+						"address": "35.5",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -10848,7 +11141,7 @@
 						}
 					},
 					{
-						"address": "33.6",
+						"address": "35.6",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -10906,7 +11199,7 @@
 						}
 					},
 					{
-						"address": "33.7",
+						"address": "35.7",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -10953,7 +11246,7 @@
 						}
 					},
 					{
-						"address": "33.8",
+						"address": "35.8",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -11011,7 +11304,7 @@
 						}
 					},
 					{
-						"address": "33.9",
+						"address": "35.9",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -11058,7 +11351,7 @@
 						}
 					},
 					{
-						"address": "33.10",
+						"address": "35.10",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -11116,7 +11409,7 @@
 						}
 					},
 					{
-						"address": "33.11",
+						"address": "35.11",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -11163,7 +11456,7 @@
 						}
 					},
 					{
-						"address": "33.12",
+						"address": "35.12",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -11221,7 +11514,7 @@
 						}
 					},
 					{
-						"address": "33.13",
+						"address": "35.13",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -11268,7 +11561,7 @@
 						}
 					},
 					{
-						"address": "33.14",
+						"address": "35.14",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -11326,7 +11619,7 @@
 						}
 					},
 					{
-						"address": "33.15",
+						"address": "35.15",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -11373,7 +11666,7 @@
 						}
 					},
 					{
-						"address": "33.16",
+						"address": "35.16",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -11431,7 +11724,7 @@
 						}
 					},
 					{
-						"address": "33.17",
+						"address": "35.17",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -11478,7 +11771,7 @@
 						}
 					},
 					{
-						"address": "33.18",
+						"address": "35.18",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -11538,7 +11831,7 @@
 				},
 				"lines": [
 					{
-						"address": "34.0",
+						"address": "36.0",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -11596,7 +11889,7 @@
 						}
 					},
 					{
-						"address": "34.1",
+						"address": "36.1",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -11643,7 +11936,7 @@
 						}
 					},
 					{
-						"address": "34.2",
+						"address": "36.2",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
