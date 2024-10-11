@@ -1,6 +1,7 @@
 @tool
 extends Window
 
+signal go_to(page_number:int)
 var direct_swap_start := -1
 
 func swap_pages(page_a: int, page_b: int):
@@ -23,6 +24,7 @@ func fill():
 		item.set_number(i)
 		item.connect("move_page", swap_pages)
 		item.connect("on_direct_swap", direct_swap)
+		item.connect("go_to", on_item_go_to)
 
 func direct_swap(page_clicked: int):
 	if direct_swap_start == -1:
@@ -31,6 +33,10 @@ func direct_swap(page_clicked: int):
 	
 	swap_pages(direct_swap_start, page_clicked)
 	direct_swap_start = -1
+
+func on_item_go_to(number:int):
+	emit_signal("go_to", number)
+	hide()
 
 func _on_about_to_popup() -> void:
 	fill()

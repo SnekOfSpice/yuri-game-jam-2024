@@ -396,7 +396,7 @@ func _ready() -> void:
 	
 	Parser.open_connection(self)
 	
-	remaining_auto_pause_duration = auto_pause_duration * (1.0 + (1-(text_speed / (MAX_TEXT_SPEED - 1))))
+	remaining_auto_pause_duration = auto_pause_duration# * (1.0 + (1-(text_speed / (MAX_TEXT_SPEED - 1))))
 	
 	if not instruction_handler:
 		push_error("No InsutrctionHandler as child of LineReader.")
@@ -478,7 +478,7 @@ func advance():
 					if next_pause_position_index < pause_positions.size() - 1:
 						next_pause_position_index += 1
 					find_next_pause()
-					remaining_auto_pause_duration = remaining_auto_pause_duration * (1.0 + (1-(text_speed / (MAX_TEXT_SPEED - 1))))
+					#remaining_auto_pause_duration = remaining_auto_pause_duration * (1.0 + (1-(text_speed / (MAX_TEXT_SPEED - 1))))
 				remaining_prompt_delay = input_prompt_delay
 	else:
 		emit_signal("line_finished", line_index)
@@ -778,7 +778,7 @@ func _process(delta: float) -> void:
 		if last_dur > 0 and remaining_auto_pause_duration <= 0:
 			next_pause_position_index += 1
 			find_next_pause()
-			remaining_auto_pause_duration = auto_pause_duration * (1.0 + (1-(text_speed / (MAX_TEXT_SPEED - 1))))
+			remaining_auto_pause_duration = auto_pause_duration# * (1.0 + (1-(text_speed / (MAX_TEXT_SPEED - 1))))
 	
 	
 	

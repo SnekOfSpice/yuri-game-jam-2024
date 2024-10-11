@@ -120,8 +120,7 @@ func update_page_view(view:PageView):
 func load_page(number: int, discard_without_saving:=false):
 	await get_tree().process_frame
 	number = clamp(number, 0, Pages.get_page_count() - 1)
-	
-	for page in page_container.get_children():		
+	for page in page_container.get_children():
 		if not discard_without_saving:
 			page.save()
 	
@@ -136,9 +135,9 @@ func load_page(number: int, discard_without_saving:=false):
 		
 	page_instance.init(number)
 	current_page = page_instance
-	
 	update_controls()
 	await get_tree().process_frame
+
 
 func get_selected_line_type() -> int:
 	var line_type:=DIISIS.LineType.Text
@@ -205,6 +204,8 @@ func _shortcut_input(event):
 					attempt_save_to_dir()
 				KEY_F:
 					open_popup($Popups.get_node("TextSearchPopup"))
+				KEY_Q:
+					open_popup($Popups.get_node("MovePagePopup"))
 				KEY_Z:
 					if event.is_shift_pressed():
 						undo_redo.redo()
@@ -433,7 +434,7 @@ func request_go_to_address(address:String, action_message:=""):
 	undo_redo.add_undo_method(DiisisEditorActions.go_to.bind(str(get_current_page_number())))
 	undo_redo.commit_action()
 
-func request_load_page(number:int, action_message:String):
+func request_load_page(number:int, action_message:=""):
 	request_go_to_address(str(number), action_message)
 
 func notify(message:String, duration:=5.0):
