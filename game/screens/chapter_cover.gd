@@ -52,6 +52,7 @@ func set_chapter_cover(pov_name: String, bottom_text: String, new_background: St
 		#name_tex.position = start_positions[name_tex]
 	else:
 		name_tex.text = str("[right]", bottom_text)
+		print(bottom_text)
 	name_tex.position = start_positions[name_tex]
 	logo_tex.position = start_positions[logo_tex]
 	char_tex.position = start_positions[char_tex]
@@ -72,7 +73,7 @@ func set_chapter_cover(pov_name: String, bottom_text: String, new_background: St
 	
 	var logo_delay := 0.8 + black_delay
 	var char_delay := 4.0 + black_delay
-	var name_delay := 6.7 + black_delay
+	var name_delay := 5.7 + black_delay
 	
 	var logo_duration = 5.0
 	var char_duration = 2.0

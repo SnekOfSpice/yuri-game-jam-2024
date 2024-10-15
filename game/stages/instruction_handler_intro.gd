@@ -137,3 +137,9 @@ func sway_camera(intensity: float) -> bool:
 	if GameWorld.camera:
 		GameWorld.camera.set_sway_intensity(intensity)
 	return false
+
+func set_eye_progress(value: float) -> bool:
+	if GameWorld.game_stage:
+		var one = GameWorld.game_stage.get_character("one")
+		one.set_eye_progress(int(value))
+	return false

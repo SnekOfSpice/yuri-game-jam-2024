@@ -380,9 +380,11 @@ offset_right = 40.0
 offset_bottom = 40.0
 mouse_filter = 2
 script = ExtResource("1_h4afo")
+auto_pause_duration = 0.4
 blank_names = Array[String](["narrator"])
 name_map = {
 "anhedonia": "Anhedonia",
+"gods": "ÀÁáà",
 "interrogator": "Interrogator",
 "one": "One",
 "spectra": "Spectra",
@@ -400,7 +402,7 @@ text_container = NodePath("../Camera2D/CanvasLayer/Control/VNUI/TextContainer")
 name_label = NodePath("../Camera2D/CanvasLayer/Control/VNUI/TextContainer/MarginContainer/VBoxContainer/PanelContainer/MarginContainer/Label")
 name_container = NodePath("../Camera2D/CanvasLayer/Control/VNUI/TextContainer/MarginContainer/VBoxContainer/PanelContainer")
 instruction_handler = NodePath("../InstructionHandler")
-inline_evaluator = NodePath("../InlineEval")
+inline_evaluator = NodePath("../InstructionHandler")
 show_input_prompt = true
 input_prompt_delay = 1.29
 input_prompt_lerp_weight = 0.233
