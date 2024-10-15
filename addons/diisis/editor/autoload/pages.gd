@@ -1341,7 +1341,57 @@ func get_entered_instruction_compliance(instruction:String, check_as_template:=f
 		if template_compliance != "OK":
 			return template_compliance
 	
-	
-			
-	
 	return "OK"
+
+
+func capitalize_sentence_beginnings_str(input:String) -> String:
+	return capitalize_sentence_beginnings([input])[0]
+
+func capitalize_sentence_beginnings(input:Array) -> Array:
+	var letters := ["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z",]
+
+	var c12n_prefixes := [
+		".", ":", ";", "-",
+	]
+
+	var result := []
+	for text : String in input:
+		var tags_in_text := []
+		var scan_index := 0
+		while scan_index < text.length():
+			if text[scan_index] == "<":
+				var tag_end = text.find(">", scan_index)
+				if tag_end == -1:
+					scan_index += 1
+					continue
+				var tag = text.substr(scan_index, tag_end - scan_index + 1)
+				tags_in_text.append(tag)
+			elif text[scan_index] == "{":
+				var tag_end = text.find("}", scan_index)
+				if tag_end == -1:
+					scan_index += 1
+					continue
+				var tag = text.substr(scan_index, tag_end - scan_index + 1)
+				tags_in_text.append(tag)
+			elif text[scan_index] == "[":
+				if text[scan_index-1] == "\\[":
+					scan_index += 1
+					continue
+				var tag_end = text.find("]", scan_index)
+				if tag_end == -1:
+					scan_index += 1
+					continue
+				var tag = text.substr(scan_index, tag_end - scan_index + 1)
+				tags_in_text.append(tag)
+			scan_index += 1
+		for prefix in c12n_prefixes:
+			for letter : String in letters:
+				if prefix != "-":
+					text = text.replace(str(prefix, letter), str(prefix, letter.capitalize()))
+				text = text.replace(str(prefix, " ", letter), str(prefix, " ", letter.capitalize()))
+		
+		for tag in tags_in_text:
+			text = text.replacen(tag, tag)
+		
+		result.append(text)
+	return result

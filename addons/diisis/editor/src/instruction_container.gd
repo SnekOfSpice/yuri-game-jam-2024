@@ -31,6 +31,7 @@ func serialize():
 	result["meta.validation_status"] = Pages.get_entered_instruction_compliance(text_box.text)
 	result["meta.text"] = text_box.text
 	result["meta.reverse_text"] = reverse_text_box.text
+	result["meta.has_reverse"] = find_child("HasReverseCheckBox").button_pressed
 	
 	return result
 
@@ -43,6 +44,9 @@ func deserialize(data: Dictionary):
 	find_child("DelayAfterSpinBox").value = float(data.get("delay_after", data.get("delay.after", 0.0)))
 	_on_hinted_line_edit_text_entered(text_box.text)
 	_on_reverse_instruction_text_box_text_entered(reverse_text_box.text)
+	_on_line_edit_text_entered(reverse_text_box, reverse_text_box.text)
+	find_child("HasReverseCheckBox").button_pressed = data.get("meta.has_reverse", true)
+	_on_has_reverse_check_box_toggled(data.get("meta.has_reverse", true))
 
 func set_page_view(view:DiisisEditor.PageView):
 	find_child("InputLockContainer").visible = view != DiisisEditor.PageView.Minimal
@@ -63,6 +67,8 @@ func _on_line_edit_caret_changed(line_edit:HintedLineEdit) -> void:
 	if caret_col > start and caret_col < end:
 		var caret_pos = Vector2i(line_edit.get_caret_draw_pos())
 		caret_pos += Vector2i(line_edit.global_position)
+		caret_pos.x += 30
+		caret_pos.y += 50
 		find_child("ArgHint").position = caret_pos
 		
 		var arg_names = Pages.get_instruction_arg_names(get_instruction_name())
@@ -149,3 +155,8 @@ func _on_copy_signature_to_clipboard_button_2_pressed() -> void:
 	var signature : String = Pages.get_instruction_signature(get_instruction_name(reverse_text_box))
 	if not signature.is_empty():
 		DisplayServer.clipboard_set(signature)
+
+
+func _on_has_reverse_check_box_toggled(toggled_on: bool) -> void:
+	find_child("ReverseContainer").visible = toggled_on
+	find_child("ReverseComplianceContainer").visible = toggled_on

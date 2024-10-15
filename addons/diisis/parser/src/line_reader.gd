@@ -622,20 +622,27 @@ func read_new_line(new_line: Dictionary):
 			var args: Array
 			var delay_before: float
 			var delay_after: float
+			
+			var instruction_content : Dictionary = line_data.get("content")
+			if reverse_next_instruction and not instruction_content.get("meta.has_reverse"):
+				reverse_next_instruction = false
+				remaining_prompt_delay = input_prompt_delay
+				return
+			
 			if not reverse_next_instruction:
-				instruction_name = line_data.get("content").get("name")
+				instruction_name = instruction_content.get("name")
 			else:
-				instruction_name = line_data.get("content").get("reverse_name", "")
+				instruction_name = instruction_content.get("reverse_name", "")
 			
 			if (not reverse_next_instruction) or instruction_name.is_empty():
-				args = line_data.get("content").get("line_reader.args")
+				args = instruction_content.get("line_reader.args")
 				
-				instruction_name = line_data.get("content").get("name")
+				instruction_name = instruction_content.get("name")
 				delay_before = new_line.get("content").get("delay_before")
 				delay_after = new_line.get("content").get("delay_after")
 			else:
 				
-				args = line_data.get("content").get("line_reader.reverse_args")
+				args = instruction_content.get("line_reader.reverse_args")
 				delay_before = 0.0
 				delay_after = 0.0
 			
