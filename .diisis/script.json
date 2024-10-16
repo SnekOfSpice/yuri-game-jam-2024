@@ -1,6 +1,6 @@
 {
 	"editor": {
-		"current_page_number": 39,
+		"current_page_number": 33,
 		"page_view": 0,
 		"text_size_id": 3
 	},
@@ -1522,7 +1522,7 @@
 						}
 					}
 				],
-				"meta.scroll_vertical": 3844,
+				"meta.scroll_vertical": 1890,
 				"meta.selected": false,
 				"next": 1,
 				"number": 0,
@@ -5084,7 +5084,7 @@
 						}
 					}
 				],
-				"meta.scroll_vertical": 269,
+				"meta.scroll_vertical": 609,
 				"meta.selected": false,
 				"next": 10,
 				"number": 9,
@@ -5771,7 +5771,7 @@
 						}
 					}
 				],
-				"meta.scroll_vertical": 1816,
+				"meta.scroll_vertical": 1767,
 				"meta.selected": false,
 				"next": 12,
 				"number": 11,
@@ -6332,7 +6332,7 @@
 						}
 					}
 				],
-				"meta.scroll_vertical": 2319,
+				"meta.scroll_vertical": 2259,
 				"meta.selected": false,
 				"next": 13,
 				"number": 12,
@@ -6654,7 +6654,7 @@
 						}
 					}
 				],
-				"meta.scroll_vertical": 427,
+				"meta.scroll_vertical": 378,
 				"meta.selected": false,
 				"next": 14,
 				"number": 13,
@@ -7011,11 +7011,11 @@
 						}
 					}
 				],
-				"meta.scroll_vertical": 1080,
+				"meta.scroll_vertical": 1020,
 				"meta.selected": false,
 				"next": 15,
 				"number": 14,
-				"page_key": "O more work",
+				"page_key": "O work: place shrines in industrial area",
 				"terminate": false
 			},
 			"15": {
@@ -7272,7 +7272,7 @@
 						}
 					}
 				],
-				"meta.scroll_vertical": 0,
+				"meta.scroll_vertical": 164,
 				"meta.selected": false,
 				"next": 16,
 				"number": 15,
@@ -7586,7 +7586,7 @@
 						}
 					}
 				],
-				"meta.scroll_vertical": 486,
+				"meta.scroll_vertical": 448,
 				"meta.selected": false,
 				"next": 18,
 				"number": 17,
@@ -7849,7 +7849,7 @@
 						}
 					}
 				],
-				"meta.scroll_vertical": 570,
+				"meta.scroll_vertical": 521,
 				"meta.selected": false,
 				"next": 19,
 				"number": 18,
@@ -8263,7 +8263,7 @@
 						}
 					}
 				],
-				"meta.scroll_vertical": 1542,
+				"meta.scroll_vertical": 1493,
 				"meta.selected": false,
 				"next": 20,
 				"number": 19,
@@ -8618,7 +8618,7 @@
 						}
 					}
 				],
-				"meta.scroll_vertical": 1864,
+				"meta.scroll_vertical": 860,
 				"meta.selected": false,
 				"next": 21,
 				"number": 20,
@@ -8991,7 +8991,7 @@
 						}
 					}
 				],
-				"meta.scroll_vertical": 171,
+				"meta.scroll_vertical": 133,
 				"meta.selected": false,
 				"next": 23,
 				"number": 22,
@@ -9264,7 +9264,7 @@
 						}
 					}
 				],
-				"meta.scroll_vertical": 230,
+				"meta.scroll_vertical": 170,
 				"meta.selected": false,
 				"next": 24,
 				"number": 23,
@@ -9531,7 +9531,7 @@
 						}
 					}
 				],
-				"meta.scroll_vertical": 607,
+				"meta.scroll_vertical": 558,
 				"meta.selected": false,
 				"next": 25,
 				"number": 24,
@@ -10425,7 +10425,7 @@
 						}
 					}
 				],
-				"meta.scroll_vertical": 6064,
+				"meta.scroll_vertical": 5994,
 				"meta.selected": false,
 				"next": 26,
 				"number": 25,
@@ -11061,7 +11061,7 @@
 						}
 					}
 				],
-				"meta.scroll_vertical": 1079,
+				"meta.scroll_vertical": 478,
 				"meta.selected": false,
 				"next": 28,
 				"number": 27,
@@ -11477,7 +11477,7 @@
 								"gods"
 							],
 							"active_actors_title": "character",
-							"content": "[]>narrator:for the first leg of the journey, you keep texting affections to each other. small affirmations of love and health, talking One through her painful aches and anguished cries.\n[]>narrator:fAs the evening draws out, One flickers in and out of being online, and eventually she apologizes for leaving you alone on that journey for the least time. You hope she rests peacefully until morning."
+							"content": "[]>narrator:for the first leg of the journey, you keep texting affections to each other. small affirmations of love and health, talking One through her painful aches and anguished cries.\n[]>narrator:As the evening draws out, One flickers in and out of being online, and eventually she apologizes for leaving you alone on that journey for the least time. You hope she rests peacefully until morning.\n[]>narrator:since you picked her up all those weeks ago, this is now the first night you spend apart again. you hope One will be fine. the gnawing uncertainty of how she'll fall asleep makes your heart ache. the absence of her warm body pressed against yours- <ap>A yearning far too great to be understood by any other thing in the world. <lc>You hope that - in time - you will fall into the mindset required of you now. <ap>Adrenaline never was more needed."
 						},
 						"facts": {
 							"fact_data_by_name": {
@@ -11520,15 +11520,15 @@
 								2
 							],
 							"line_reader.reverse_args": [
-								"INVALID ARGUMENT FOR name",
-								"INVALID ARGUMENT FOR fade_time"
+								"train",
+								0
 							],
 							"meta.has_reverse": true,
-							"meta.reverse_text": "",
+							"meta.reverse_text": "set_background(train, 0.0)",
 							"meta.text": "set_background(train_yard, 2.0)",
 							"meta.validation_status": "OK",
 							"name": "set_background",
-							"reverse_name": ""
+							"reverse_name": "set_background"
 						},
 						"facts": {
 							"fact_data_by_name": {
@@ -11575,7 +11575,7 @@
 								"gods"
 							],
 							"active_actors_title": "character",
-							"content": "[]>narrator:fa few hours later, you arrive. shortly before the terminus, smack-dab in the goldilocks zone of dilapidated and barely-used train stops. you stel outside and the wind immediately unmakes your hair.whipped about by turbulence, those black strands wrap your face and were it for not the freshly-born nightfall, the horribleness of your hairdo would be immediately apparent to any would-be onlookers. But alas, the Veil of Night provides you with cover and you are glad this tiny spec of misery and dirt is still as uninteresting to anyone as it has ever been.\n[]>narrator: you arrive with the sordid taste of yiur chewed up gums and lips lining your mouth. the sunlight gone since hours ago, the boredom of travel has thoroughly left jts mark on you.\n[]>anhedonia: maybe if I delude  myself enough to believe I'm just collecting energy...\n[]>narrator: you put some more flesh from your lips between your canines as you think.\n[]>anhedonia: ah fuck jt..."
+							"content": "[]>narrator:A few hours later, you arrive. Shortly before the terminus, smack-dab in the goldilocks zone of dilapidated and barely-used train stops. You step outside and the wind immediately unmakes your hair. Whipped about by turbulence, those black strands wrap your face and and adorn your cornea with faint slices. Were it for not the freshly-born nightfall, the horribleness of your hairdo would be immediately apparent to any would-be onlookers. But alas, the ceil of night provides you with cover and you are glad this tiny spec of misery and dirt is still as uninteresting to anyone as it has ever been.\n[]>narrator: You arrive with the sordid taste of your chewed up gums and lips lining your mouth. The sunlight gone since hours ago, the anxiety of traveling out here has thoroughly left its mark on you- <ap>Even in your disquieted sleep.\n[]>anhedonia: Maybe if I delude  myself enough to believe I'm just collecting energy...\n[]>narrator: You put some more flesh from your lips between your canines as you think.\n[]>anhedonia: Ah fuck it..."
 						},
 						"facts": {
 							"fact_data_by_name": {
@@ -11817,7 +11817,7 @@
 								"INVALID ARGUMENT FOR new_background",
 								"INVALID ARGUMENT FOR new_bgm"
 							],
-							"meta.has_reverse": true,
+							"meta.has_reverse": false,
 							"meta.reverse_text": "",
 							"meta.text": "black_fade(4.0, 4.0, 4.0, false, apartment_regular, none)",
 							"meta.validation_status": "OK",
@@ -11889,7 +11889,7 @@
 						}
 					}
 				],
-				"meta.scroll_vertical": 1455,
+				"meta.scroll_vertical": 0,
 				"meta.selected": false,
 				"next": 30,
 				"number": 29,
@@ -12068,7 +12068,7 @@
 				],
 				"meta.scroll_vertical": 0,
 				"meta.selected": false,
-				"next": 33,
+				"next": 31,
 				"number": 30,
 				"page_key": "torture #3 \"you can't know who I am\"",
 				"terminate": false
@@ -12131,7 +12131,7 @@
 				],
 				"meta.scroll_vertical": 0,
 				"meta.selected": false,
-				"next": 29,
+				"next": 32,
 				"number": 31,
 				"page_key": "bloodletting",
 				"terminate": false
@@ -12241,7 +12241,7 @@
 				],
 				"meta.scroll_vertical": 0,
 				"meta.selected": false,
-				"next": 31,
+				"next": 33,
 				"number": 32,
 				"page_key": "O prep final instructions",
 				"terminate": false
@@ -12287,7 +12287,7 @@
 								"INVALID ARGUMENT FOR zoom",
 								"INVALID ARGUMENT FOR bgm"
 							],
-							"meta.has_reverse": true,
+							"meta.has_reverse": false,
 							"meta.reverse_text": "",
 							"meta.text": "play_chapter_intro(anhedonia, Blood, home_regular_night, 1.0, null)",
 							"meta.validation_status": "OK",
@@ -12388,7 +12388,7 @@
 								"gods"
 							],
 							"active_actors_title": "character",
-							"content": "[]>narrator:one starts coughing up blood\n[]>narrator: you are nudged awake. one stands over you, blood drizzling down her chin.\n[]>narrator: you're eyes shoot awake.\n[]>one{one-emotion|anxious}: fuck... hey Annie. I know it's late in the evening but do you think we could take a walk?\n[]>anhedonia{anhedonia-emotion|neutral}: ...\n[]>one: ...\n[]>anhedonia{anhedonia-emotion|sad}: ...\n[]>anhedonia{anhedonia-emotion|crying}:... <ap>sure\n[]>narrator: prep going outside \n[]>anhedonia: one...\n[]>one: yea?\n[]>anhedonia: you asked me something and I said I'd think about it...\n[]>one: huh?\n[]>anhedonia: the... assisted dying.\n[]>one: what about it?\n[]>anhedonia: you still have the tools right?\n[]>one: fuck... yes I do.\n[]>anhedonia: still up for it?\n[]>one: I dont get.. yes.\n[]>anhedonia: good. we can talk kn the way"
+							"content": "[]>narrator{one-emotion|anxious,anhedonia-emotion|sleepy}: you are nudged awake. one stands over you, blood drizzling down her chin.\n[]>anhedonia{anhedonia-emotion|shock}: !!!\n[]>one: fuck... hey Annie. <mp>I know it's late in the evening but do you think we could take a walk?\n[]>anhedonia{anhedonia-emotion|neutral}: ...\n[]>one: ...\n[]>anhedonia{anhedonia-emotion|sad}: ...\n[]>anhedonia{anhedonia-emotion|crying}:... <ap>sure.\n[]>narrator: prep going outside \n[]>anhedonia: one...\n[]>one: yea?\n[]>anhedonia: you asked me something and I said I'd think about it...\n[]>one: huh?\n[]>anhedonia: the... assisted dying.\n[]>one: what about it?\n[]>anhedonia: you still have the tools right?\n[]>one: fuck... yes I do.\n[]>anhedonia: still up for it?\n[]>one: I... <ap>yes.\n[]>anhedonia: good. we can talk on the way"
 						},
 						"facts": {
 							"fact_data_by_name": {
@@ -12440,7 +12440,7 @@
 								"INVALID ARGUMENT FOR zoom",
 								"INVALID ARGUMENT FOR bgm"
 							],
-							"meta.has_reverse": true,
+							"meta.has_reverse": false,
 							"meta.reverse_text": "",
 							"meta.text": "play_chapter_intro(one, EMPTY, bench_pathway_night, 1.0, null)",
 							"meta.validation_status": "OK",
@@ -12492,7 +12492,7 @@
 								"gods"
 							],
 							"active_actors_title": "character",
-							"content": "[]>anhedonia: I didn't spend these last 3 years in lockstep with you just tk watch you fade out now.\n[transition to anhedonia again after death]\n[]>narrator:one hands her a letter\n[]>narrator:\" we've probably talked about these things in advance.\n[]>narrator:\" I've left you instructions in this envelope too.\n[]>narrator:on death bank:\n[]>anhedonia: who I am is... who I became with you... is an extension of you\n[]>one: im.sorry for having you bury me\n[]>one: im so glad I got I experience my life with you.\n[]>narrator:you nuzzle against her shoulder, your frail grasp clasping her palm losing strength by the second.\n[]>narrator:as you feel yourself drift in and out of cinciousness"
+							"content": "[]>anhedonia: I didn't spend these last 3 years in lockstep with you just tk watch you fade out now.\n[]>narrator:one hands her a letter\n[]>narrator:\" we've probably talked about these things in advance.\n[]>narrator:\" I've left you instructions in this envelope too.\n[]>narrator:on death bank:"
 						},
 						"facts": {
 							"fact_data_by_name": {
@@ -12510,9 +12510,107 @@
 						"meta.selector": {
 							"selected": false
 						}
+					},
+					{
+						"address": "33.5",
+						"conditionals": {
+							"behavior": 0,
+							"behavior_key": "Show",
+							"facts": {
+								"fact_data_by_name": {
+
+								},
+								"meta.visible": false
+							},
+							"meta.visible": false,
+							"operand": 0,
+							"operand_args": [],
+							"operand_key": "AND"
+						},
+						"content": {
+							"delay_after": 0,
+							"delay_before": 0,
+							"line_reader.args": [
+								"bench_night",
+								4
+							],
+							"line_reader.reverse_args": [
+								"bench_pathway_night",
+								0
+							],
+							"meta.has_reverse": true,
+							"meta.reverse_text": "set_background(bench_pathway_night, 0.0)",
+							"meta.text": "set_background(bench_night, 4.0)",
+							"meta.validation_status": "OK",
+							"name": "set_background",
+							"reverse_name": "set_background"
+						},
+						"facts": {
+							"fact_data_by_name": {
+
+							},
+							"meta.visible": false
+						},
+						"header": [],
+						"line_type": 2,
+						"meta.conditionals_visible": false,
+						"meta.facts_visible": false,
+						"meta.indent_level": 0,
+						"meta.is_head_editable": false,
+						"meta.line_index": 5,
+						"meta.selector": {
+							"selected": false
+						}
+					},
+					{
+						"address": "33.6",
+						"conditionals": {
+							"behavior": 0,
+							"behavior_key": "Show",
+							"facts": {
+								"fact_data_by_name": {
+
+								},
+								"meta.visible": false
+							},
+							"meta.visible": false,
+							"operand": 0,
+							"operand_args": [],
+							"operand_key": "AND"
+						},
+						"content": {
+							"active_actors": [
+								"anhedonia",
+								"one",
+								"spectra",
+								"narrator",
+								"interrogator",
+								"torturer",
+								"one+anhedonia",
+								"gods"
+							],
+							"active_actors_title": "character",
+							"content": "[]>anhedonia: who I am is... who I became with you... is an extension of you\n[]>one: im.sorry for having you bury me\n[]>one: im so glad I got I experience my life with you.\n[]>narrator:you nuzzle against her shoulder, your frail grasp clasping her palm losing strength by the second.\n[]>narrator:as you feel yourself drift in and out of cinciousness"
+						},
+						"facts": {
+							"fact_data_by_name": {
+
+							},
+							"meta.visible": false
+						},
+						"header": [],
+						"line_type": 0,
+						"meta.conditionals_visible": false,
+						"meta.facts_visible": false,
+						"meta.indent_level": 0,
+						"meta.is_head_editable": false,
+						"meta.line_index": 6,
+						"meta.selector": {
+							"selected": false
+						}
 					}
 				],
-				"meta.scroll_vertical": 140,
+				"meta.scroll_vertical": 176,
 				"meta.selected": false,
 				"next": 34,
 				"number": 33,
@@ -15047,7 +15145,7 @@
 						}
 					}
 				],
-				"meta.scroll_vertical": 850,
+				"meta.scroll_vertical": 1304,
 				"meta.selected": false,
 				"next": 1,
 				"number": 39,

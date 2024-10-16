@@ -105,6 +105,15 @@ auto_translate_mode = 1
 layout_mode = 2
 text = "Quit"
 
+[node name="RichTextLabel2" type="RichTextLabel" parent="PanelContainer/MarginContainer/VBoxContainer/OptionMenusContainer/GameMenu/VBoxContainer"]
+layout_mode = 2
+bbcode_enabled = true
+text = "Screenshot - [S]
+Toggle UI - [H]
+Toggle auto - [A]
+Go back - [Scroll Down] / [Left]"
+fit_content = true
+
 [node name="TextMenu" type="PanelContainer" parent="PanelContainer/MarginContainer/VBoxContainer/OptionMenusContainer"]
 auto_translate_mode = 1
 layout_mode = 2

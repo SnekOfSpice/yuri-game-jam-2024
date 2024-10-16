@@ -1388,7 +1388,13 @@ func capitalize_sentence_beginnings(input:Array) -> Array:
 			for letter : String in letters:
 				if prefix != "-":
 					text = text.replace(str(prefix, letter), str(prefix, letter.capitalize()))
+					text = text.replace(str(prefix, "<ap>", letter), str(prefix, "<ap>", letter.capitalize()))
+					text = text.replace(str(prefix, "<mp>", letter), str(prefix, "<mp>", letter.capitalize()))
+					text = text.replace(str(prefix, "<lc>", letter), str(prefix, "<lc>", letter.capitalize()))
 				text = text.replace(str(prefix, " ", letter), str(prefix, " ", letter.capitalize()))
+				text = text.replace(str(prefix, " <ap>", letter), str(prefix, " <ap>", letter.capitalize()))
+				text = text.replace(str(prefix, " <mp>", letter), str(prefix, " <mp>", letter.capitalize()))
+				text = text.replace(str(prefix, " <lc>", letter), str(prefix, " <lc>", letter.capitalize()))
 		
 		for tag in tags_in_text:
 			text = text.replacen(tag, tag)

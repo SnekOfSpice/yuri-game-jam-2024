@@ -27,7 +27,7 @@ size_flags_horizontal = 4
 size_flags_vertical = 4
 
 [node name="CenterContainer" type="ScrollContainer" parent="PanelContainer/PanelContainer"]
-custom_minimum_size = Vector2(700, 700)
+custom_minimum_size = Vector2(700, 400)
 layout_mode = 2
 script = ExtResource("2_esrbb")
 

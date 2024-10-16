@@ -394,6 +394,9 @@ func _ready() -> void:
 	
 	ParserEvents.go_back_accepted.connect(lmao)
 	
+	ParserEvents.text_content_text_changed.connect(on_text_content_text_changed)
+	ParserEvents.display_name_changed.connect(on_name_label_updated)
+	
 	Parser.open_connection(self)
 	
 	remaining_auto_pause_duration = auto_pause_duration# * (1.0 + (1-(text_speed / (MAX_TEXT_SPEED - 1))))
@@ -1497,3 +1500,27 @@ func can_text_container_be_visible() -> bool:
 
 func _go_to_end_of_dialog_line():
 	set_dialog_line_index(dialog_lines.size() - 1)
+
+
+var currently_speaking_name := ""
+var currently_speaking_visible := true
+
+func on_name_label_updated(
+	actor_name: String,
+	is_name_container_visible: bool
+):
+	currently_speaking_name = actor_name
+	currently_speaking_visible = is_name_container_visible
+
+var chunk_addresses_in_history := []
+
+func get_chunk_address() -> String:
+	return str(Parser.page_index, ".", line_index, ".", dialog_line_index, ".", chunk_index)
+
+func on_text_content_text_changed(old_text: String,
+	new_text: String,
+	lead_time: float):
+	if chunk_addresses_in_history.has(get_chunk_address()):
+		return
+	chunk_addresses_in_history.append(get_chunk_address())
+	Parser.call_deferred("append_to_history", (str(str("[b]",currently_speaking_name, "[/b]: ") if currently_speaking_visible else "", new_text)))

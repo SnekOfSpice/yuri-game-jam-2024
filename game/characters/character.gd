@@ -93,7 +93,7 @@ func on_go_back_accepted(page:int, line:int):
 
 func set_emotion(emotion_name:String, lmao := true):
 	emotion = emotion_name
-	if emotion_name == "invisible":
+	if emotion_name == "invisible" or emotion_name.is_empty():
 		visible = false
 		return
 	visible = true

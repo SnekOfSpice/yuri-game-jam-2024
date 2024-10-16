@@ -48,10 +48,7 @@ signal page_terminated(page_index: int)
 signal page_finished(page_index: int)
 signal read_new_page(page_index: int)
 
-var currently_speaking_name := ""
-var currently_speaking_visible := true
 var history := []
-var addresses_in_history := []
 
 var address_trail_index := -1
 var address_trail := []
@@ -86,8 +83,6 @@ func _ready() -> void:
 	
 	init(data)
 	
-	ParserEvents.display_name_changed.connect(on_name_label_updated)
-	ParserEvents.text_content_text_changed.connect(on_text_content_text_changed)
 	ParserEvents.choice_pressed.connect(on_choice_pressed)
 
 func init(data:Dictionary):
@@ -171,9 +166,6 @@ func get_page_key(page_index:int):
 	return page_data.get(page_index, {}).get("page_key", "")
 
 func append_to_history(text:String):
-	if addresses_in_history.has(get_address()):
-		return
-	addresses_in_history.append(get_address())
 	history.append(text)
 	if max_history_length > -1:
 		if history.size() > max_history_length:
@@ -181,10 +173,6 @@ func append_to_history(text:String):
 			history.pop_back()
 			history.reverse()
 
-func on_text_content_text_changed(old_text: String,
-	new_text: String,
-	lead_time: float):
-	call_deferred("append_to_history", (str(str("[b]",currently_speaking_name, "[/b]: ") if currently_speaking_visible else "", new_text)))
 
 var loopback_target_page:=0
 var loopback_target_line:=0
@@ -210,12 +198,7 @@ func on_choice_pressed(
 			prefix = str(choice_appendation_string, " ")
 		call_deferred("append_to_history", str(prefix, choice_text))
 
-func on_name_label_updated(
-	actor_name: String,
-	is_name_container_visible: bool
-):
-	currently_speaking_name = actor_name
-	currently_speaking_visible = is_name_container_visible
+
 
 func build_history_string(separator_string:="\n") -> String:
 	var result  := ""
@@ -495,7 +478,6 @@ func serialize() -> Dictionary:
 	result["Parser.page_index"] = page_index
 	result["Parser.line_index"] = line_index
 	result["Parser.history"] = history
-	result["Parser.addresses_in_history"] = addresses_in_history
 	result["Parser.line_reader"] = line_reader.serialize()
 	result["Parser.game_progress"] = _get_game_progress()
 	result["Parser.selected_choices"] = selected_choices
@@ -516,7 +498,6 @@ func deserialize(data: Dictionary):
 	line_index = int(data.get("Parser.line_index", 0))
 	apply_facts(data.get("Parser.facts", {}))
 	history = data.get("Parser.history", [])
-	addresses_in_history = data.get("Parser.addresses_in_history", [])
 	var line_reader_data : Dictionary = data.get("Parser.line_reader", {})
 	if line_reader_data.is_empty():
 		read_page(page_index, line_index)

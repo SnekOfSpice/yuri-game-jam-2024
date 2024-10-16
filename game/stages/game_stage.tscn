@@ -369,6 +369,7 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 mouse_filter = 2
+theme = ExtResource("1_qsxmu")
 
 [node name="InstructionHandler" type="Node" parent="."]
 script = ExtResource("4_u8vmc")
