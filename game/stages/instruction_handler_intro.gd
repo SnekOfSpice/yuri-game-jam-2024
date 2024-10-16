@@ -111,7 +111,8 @@ func show_character(character_name: String, clear_others: bool) -> bool:
 			character.visible = false
 	return false
 
-
+func shake_camera_str(strength:String):
+	shake_camera(float(strength))
 func shake_camera(strength: float) -> bool:
 	if GameWorld.camera:
 		GameWorld.camera.apply_shake(strength)

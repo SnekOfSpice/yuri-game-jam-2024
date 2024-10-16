@@ -298,7 +298,7 @@ func show_letter():
 	hide_ui()
 	var letter = preload("res://game/objects/letter.tscn").instantiate()
 	add_child(letter)
-	letter.position = Vector2(350, 62)
+	letter.position = Vector2(258, 8)
 
 func _on_handler_start_show_cg(cg_name: String, fade_in: float, on_top: bool) -> void:
 	if on_top:

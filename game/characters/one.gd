@@ -52,7 +52,7 @@ func set_eye_progress(progress:int):
 	for stage in eye_overlay.get_children():
 		stage.visible = stage.get_index() + 1 == progress
 	
-
+var no_eyes := ["tortured", "suspended"]
 
 func set_emotion(emotion_name:String, lmao:=true):
 	super.set_emotion(emotion_name, lmao)
@@ -71,3 +71,12 @@ func set_emotion(emotion_name:String, lmao:=true):
 	
 	for stage in overlay.get_children():
 		stage.visible = stage.get_index() + 1 == eye_progress
+	
+	var blacklisted := false
+	for substr : String in no_eyes:
+		if emotion_name.contains(substr):
+			blacklisted = true
+			break
+	if blacklisted:
+		for stage in overlay.get_children():
+			stage.visible = false

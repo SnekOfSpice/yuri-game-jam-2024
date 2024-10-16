@@ -76,8 +76,8 @@ func on_dialog_line_args_passed(actor_name: String, dialog_line_args: Dictionary
 		new_modulate = 0.8
 	modulate.v = new_modulate
 	if dialog_line_args.has(str(character_name, "-emotion")):
-		var emotion : String = dialog_line_args.get(str(character_name, "-emotion"))
-		emotion = emotion.trim_suffix("-emotion")
+		var new_emotion : String = dialog_line_args.get(str(character_name, "-emotion"))
+		emotion = new_emotion.trim_suffix("-emotion")
 		set_emotion(emotion)
 
 func on_go_back_accepted(page:int, line:int):
