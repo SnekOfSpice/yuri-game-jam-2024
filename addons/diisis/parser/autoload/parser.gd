@@ -51,6 +51,7 @@ signal read_new_page(page_index: int)
 var currently_speaking_name := ""
 var currently_speaking_visible := true
 var history := []
+var addresses_in_history := []
 
 var address_trail_index := -1
 var address_trail := []
@@ -163,10 +164,16 @@ func get_facts_of_value(b: bool) -> Array:
 func get_line_position_string() -> String:
 	return str(page_index, ".", line_index)
 
+func get_address() -> String:
+	return get_line_position_string()
+
 func get_page_key(page_index:int):
 	return page_data.get(page_index, {}).get("page_key", "")
 
 func append_to_history(text:String):
+	if addresses_in_history.has(get_address()):
+		return
+	addresses_in_history.append(get_address())
 	history.append(text)
 	if max_history_length > -1:
 		if history.size() > max_history_length:
@@ -296,6 +303,20 @@ func _get_game_progress(full_if_on_last_page:= true) -> float:
 	
 	return page_progress + (line_progress / float(max_page_index))
 
+func get_line_type(address:String) -> DIISIS.LineType:
+	var parts = DiisisEditorUtil.get_split_address(address)
+	var prev_page = parts[0]
+	var prev_line = parts[1]
+	
+	return int(page_data.get(prev_page).get("lines")[prev_line].get("line_type"))
+
+func get_line_content(address:String) -> Dictionary:
+	var parts = DiisisEditorUtil.get_split_address(address)
+	var prev_page = parts[0]
+	var prev_line = parts[1]
+	
+	return page_data.get(prev_page).get("lines")[prev_line].get("content")
+
 func get_previous_address_line_type() -> DIISIS.LineType:
 	if address_trail_index <= 0 or address_trail.is_empty():
 		push_warning("At the beginning.")
@@ -309,7 +330,8 @@ func get_previous_address_line_type() -> DIISIS.LineType:
 
 func go_back():
 	var trail_shift = -1
-	if get_previous_address_line_type() in [DIISIS.LineType.Choice, DIISIS.LineType.Folder]:
+	var previous_line_type = get_previous_address_line_type()
+	if previous_line_type in [DIISIS.LineType.Choice, DIISIS.LineType.Folder]:
 		ParserEvents.go_back_declined.emit()
 		push_warning("You cannot go further back.")
 		#return
@@ -325,6 +347,33 @@ func go_back():
 	if line_reader._attempt_read_previous_chunk() and line_reader.line_type == DIISIS.LineType.Text:
 		return
 	
+	var instruction_stack := []
+	var a := false
+	while previous_line_type == DIISIS.LineType.Instruction:
+		a = true
+		# build instruction stack
+		var address_content = get_line_content(address_trail[address_trail_index + trail_shift])
+		instruction_stack.append(address_content)
+		previous_line_type = get_line_type(address_trail[address_trail_index + trail_shift])
+		trail_shift -= 1
+		if address_trail_index + trail_shift <= 0:
+			trail_shift = 0
+			break
+	if a:
+		trail_shift += 1
+	instruction_stack.pop_back()
+	
+	for instruction in instruction_stack:
+		if not instruction.get("meta.has_reverse", false):
+			continue
+		var instr_name = instruction.get("reverse_name")
+		var instr_args = instruction.get("line_reader.reverse_args")
+		if instr_name == null or instr_name == "":
+			instr_name = instruction.get("name")
+			instr_args = instruction.get("line_reader.args")
+		line_reader.instruction_handler.execute(instr_name, instr_args)
+	
+	await get_tree().process_frame
 	address_trail_index += trail_shift
 	var previous_address = address_trail[address_trail_index]
 	var parts = DiisisEditorUtil.get_split_address(previous_address)
@@ -337,8 +386,8 @@ func go_back():
 		read_line(prev_line)
 	else:
 		read_page(prev_page, prev_line)
+	line_reader._go_to_end_of_dialog_line()
 	address_trail_index = address_trail.size() - 1
-	
 
 func read_line(index: int):
 	if lines.size() == 0:
@@ -446,6 +495,7 @@ func serialize() -> Dictionary:
 	result["Parser.page_index"] = page_index
 	result["Parser.line_index"] = line_index
 	result["Parser.history"] = history
+	result["Parser.addresses_in_history"] = addresses_in_history
 	result["Parser.line_reader"] = line_reader.serialize()
 	result["Parser.game_progress"] = _get_game_progress()
 	result["Parser.selected_choices"] = selected_choices
@@ -466,6 +516,7 @@ func deserialize(data: Dictionary):
 	line_index = int(data.get("Parser.line_index", 0))
 	apply_facts(data.get("Parser.facts", {}))
 	history = data.get("Parser.history", [])
+	addresses_in_history = data.get("Parser.addresses_in_history", [])
 	var line_reader_data : Dictionary = data.get("Parser.line_reader", {})
 	if line_reader_data.is_empty():
 		read_page(page_index, line_index)

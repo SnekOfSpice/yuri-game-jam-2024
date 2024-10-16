@@ -647,8 +647,8 @@ func read_new_line(new_line: Dictionary):
 				delay_after = 0.0
 			
 			if reverse_next_instruction:
-				instruction_handler.execute(instruction_name, args)
-				reverse_next_instruction = false
+				#instruction_handler.execute(instruction_name, args)
+				#reverse_next_instruction = false
 				remaining_prompt_delay = input_prompt_delay
 				
 				return
@@ -1493,3 +1493,7 @@ func can_text_container_be_visible() -> bool:
 	if line_type == DIISIS.LineType.Instruction:
 		return show_text_during_instructions
 	return false
+
+
+func _go_to_end_of_dialog_line():
+	set_dialog_line_index(dialog_lines.size() - 1)
