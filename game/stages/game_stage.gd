@@ -31,6 +31,7 @@ var hovering_meta := false
 var callable_upon_blocker_clear:Callable
 
 @onready var camera = $Camera2D
+@onready var overlay_static = find_child("Static").get_node("ColorRect")
 
 func _ready():
 	
@@ -237,6 +238,7 @@ func serialize() -> Dictionary:
 	result["text_style"] = text_style
 	
 	result["start_cover_visible"] = find_child("StartCover").visible
+	result["static"] = overlay_static.get_material().get_shader_parameter("intensity")
 	
 	return result
 
@@ -276,6 +278,7 @@ func deserialize(data:Dictionary):
 			push_warning("Deserialized game_stage with something wild.")
 			return
 		find_child("TextContainer").position = fixed_position
+	set_static(data.get("static", 0.0))
 
 func remove_blocker():
 	blockers -= 1
@@ -341,3 +344,10 @@ func _on_instruction_handler_splatter(amount: int) -> void:
 	for i in amount:
 		var sprite := preload("res://game/visuals/vfx/splatter/blood_splatter.tscn").instantiate()
 		$VFXLayer.add_child(sprite)
+
+
+
+func set_static(level:float):
+	overlay_static.get_material().set_shader_parameter("intensity", level)
+	overlay_static.get_material().set_shader_parameter("border_size", 1 - level)
+	

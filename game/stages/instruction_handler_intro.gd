@@ -145,3 +145,9 @@ func set_eye_progress(value: float) -> bool:
 		var one = GameWorld.game_stage.get_character("one")
 		one.set_eye_progress(int(value))
 	return false
+
+func set_static(level) -> bool:
+	level = float(level)
+	if GameWorld.game_stage:
+		GameWorld.game_stage.set_static(level)
+	return false

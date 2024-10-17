@@ -1,4 +1,4 @@
-[gd_scene load_steps=38 format=3 uid="uid://r1ntcqdujfol"]
+[gd_scene load_steps=40 format=3 uid="uid://r1ntcqdujfol"]
 
 [ext_resource type="Script" path="res://game/stages/game_stage.gd" id="1_a36me"]
 [ext_resource type="Script" path="res://addons/diisis/parser/src/line_reader.gd" id="1_h4afo"]
@@ -15,6 +15,7 @@
 [ext_resource type="PackedScene" uid="uid://cjy7vf1xrnq5y" path="res://game/screens/chapter_cover.tscn" id="12_vf2y4"]
 [ext_resource type="PackedScene" uid="uid://biu88w163ploy" path="res://game/cheats.tscn" id="13_qackq"]
 [ext_resource type="Script" path="res://game/stages/start_cover.gd" id="13_qfsh6"]
+[ext_resource type="Shader" path="res://game/stages/static.gdshader" id="17_dc0ef"]
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_scr08"]
 
@@ -59,6 +60,11 @@
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_wfwvw"]
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_pgtnv"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_d8rgb"]
+shader = ExtResource("17_dc0ef")
+shader_parameter/intensity = 0.0
+shader_parameter/border_size = 1.0
 
 [node name="GameStage" type="Control"]
 layout_mode = 3
@@ -331,6 +337,17 @@ color = Color(0, 0, 0, 1)
 
 [node name="CGTex" type="TextureRect" parent="Camera2D/CanvasLayer/Control/CGTopContainer"]
 layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+
+[node name="Static" type="CanvasLayer" parent="Camera2D/CanvasLayer/Control"]
+
+[node name="ColorRect" type="ColorRect" parent="Camera2D/CanvasLayer/Control/Static"]
+material = SubResource("ShaderMaterial_d8rgb")
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
