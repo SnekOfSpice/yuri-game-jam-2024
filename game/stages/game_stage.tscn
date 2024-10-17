@@ -371,6 +371,8 @@ grow_vertical = 2
 mouse_filter = 2
 theme = ExtResource("1_qsxmu")
 
+[node name="VFXLayer" type="Node2D" parent="."]
+
 [node name="InstructionHandler" type="Node" parent="."]
 script = ExtResource("4_u8vmc")
 
@@ -425,6 +427,7 @@ script = ExtResource("6_8ao3j")
 [connection signal="pressed" from="Camera2D/CanvasLayer/Control/VNUI/ControlsContainer/HistoryButton" to="." method="_on_history_button_pressed"]
 [connection signal="pressed" from="Camera2D/CanvasLayer/Control/VNUI/ControlsContainer/MenuButton" to="." method="_on_menu_button_pressed"]
 [connection signal="chapter_intro_finished" from="Camera2D/CanvasLayer/Control/ChapterCover" to="." method="_on_chapter_cover_chapter_intro_finished"]
+[connection signal="splatter" from="InstructionHandler" to="." method="_on_instruction_handler_splatter"]
 [connection signal="start_black_fade" from="InstructionHandler" to="Camera2D/CanvasLayer/Control/BlackFade" method="_on_handler_start_black_fade"]
 [connection signal="start_chapter_cover" from="InstructionHandler" to="Camera2D/CanvasLayer/Control/ChapterCover" method="set_chapter_cover"]
 [connection signal="start_hide_cg" from="InstructionHandler" to="." method="hide_cg"]

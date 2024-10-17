@@ -15,6 +15,7 @@ signal start_show_cg(
 	on_top:bool)
 
 signal start_hide_cg()
+signal splatter(amount:int)
 signal start_chapter_cover(pov_name:String)
 
 func play_sfx(_name:String):
@@ -92,7 +93,7 @@ func zoom_to(value: float, duration:float) -> bool:
 	return false
 
 func splatter_blood(amount: float) -> bool:
-	print_rich("[color=#ff0000][b]BLOOD BLOOD BLOOD[/b][/color]")
+	emit_signal("splatter", int(amount))
 	# Return true if you want the LineReader to wait until its InstructionHandler has emitted instruction_completed.
 	# (Needs to be called by your code from somewhere.)
 	return false

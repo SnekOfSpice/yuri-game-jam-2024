@@ -30,6 +30,8 @@ var hovering_meta := false
 
 var callable_upon_blocker_clear:Callable
 
+@onready var camera = $Camera2D
+
 func _ready():
 	
 	#find_child("TextContainer").position = Vector2(size.x * 0.5, size.y - find_child("TextContainer").size.y * 0.5)
@@ -333,3 +335,9 @@ func _on_rich_text_label_meta_hover_started(meta: Variant) -> void:
 func _on_chapter_cover_chapter_intro_finished() -> void:
 	GameWorld.instruction_handler.instruction_completed.emit()
 	find_child("ChapterCover").visible = false
+
+
+func _on_instruction_handler_splatter(amount: int) -> void:
+	for i in amount:
+		var sprite := preload("res://game/visuals/vfx/splatter/blood_splatter.tscn").instantiate()
+		$VFXLayer.add_child(sprite)

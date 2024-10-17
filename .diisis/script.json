@@ -1,6 +1,6 @@
 {
 	"editor": {
-		"current_page_number": 33,
+		"current_page_number": 0,
 		"page_view": 0,
 		"text_size_id": 3
 	},
@@ -1150,6 +1150,55 @@
 							"operand_key": "AND"
 						},
 						"content": {
+							"delay_after": 0,
+							"delay_before": 0,
+							"line_reader.args": [
+								5
+							],
+							"line_reader.reverse_args": [
+								"INVALID ARGUMENT FOR amount"
+							],
+							"meta.has_reverse": true,
+							"meta.reverse_text": "",
+							"meta.text": "splatter_blood(5)",
+							"meta.validation_status": "OK",
+							"name": "splatter_blood",
+							"reverse_name": ""
+						},
+						"facts": {
+							"fact_data_by_name": {
+
+							},
+							"meta.visible": false
+						},
+						"header": [],
+						"line_type": 2,
+						"meta.conditionals_visible": false,
+						"meta.facts_visible": false,
+						"meta.indent_level": 0,
+						"meta.is_head_editable": false,
+						"meta.line_index": 15,
+						"meta.selector": {
+							"selected": false
+						}
+					},
+					{
+						"address": "0.16",
+						"conditionals": {
+							"behavior": 0,
+							"behavior_key": "Show",
+							"facts": {
+								"fact_data_by_name": {
+
+								},
+								"meta.visible": false
+							},
+							"meta.visible": false,
+							"operand": 0,
+							"operand_args": [],
+							"operand_key": "AND"
+						},
+						"content": {
 							"active_actors": [
 								"anhedonia",
 								"one",
@@ -1175,13 +1224,13 @@
 						"meta.facts_visible": false,
 						"meta.indent_level": 0,
 						"meta.is_head_editable": false,
-						"meta.line_index": 15,
+						"meta.line_index": 16,
 						"meta.selector": {
 							"selected": false
 						}
 					},
 					{
-						"address": "0.16",
+						"address": "0.17",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -1224,13 +1273,13 @@
 						"meta.facts_visible": false,
 						"meta.indent_level": 0,
 						"meta.is_head_editable": false,
-						"meta.line_index": 16,
+						"meta.line_index": 17,
 						"meta.selector": {
 							"selected": false
 						}
 					},
 					{
-						"address": "0.17",
+						"address": "0.18",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -1271,13 +1320,13 @@
 						"meta.facts_visible": false,
 						"meta.indent_level": 0,
 						"meta.is_head_editable": false,
-						"meta.line_index": 17,
+						"meta.line_index": 18,
 						"meta.selector": {
 							"selected": false
 						}
 					},
 					{
-						"address": "0.18",
+						"address": "0.19",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -1322,13 +1371,13 @@
 						"meta.facts_visible": false,
 						"meta.indent_level": 0,
 						"meta.is_head_editable": false,
-						"meta.line_index": 18,
+						"meta.line_index": 19,
 						"meta.selector": {
 							"selected": false
 						}
 					},
 					{
-						"address": "0.19",
+						"address": "0.20",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -1369,13 +1418,13 @@
 						"meta.facts_visible": false,
 						"meta.indent_level": 0,
 						"meta.is_head_editable": false,
-						"meta.line_index": 19,
+						"meta.line_index": 20,
 						"meta.selector": {
 							"selected": false
 						}
 					},
 					{
-						"address": "0.20",
+						"address": "0.21",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -1420,13 +1469,13 @@
 						"meta.facts_visible": false,
 						"meta.indent_level": 0,
 						"meta.is_head_editable": false,
-						"meta.line_index": 20,
+						"meta.line_index": 21,
 						"meta.selector": {
 							"selected": false
 						}
 					},
 					{
-						"address": "0.21",
+						"address": "0.22",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -1467,13 +1516,13 @@
 						"meta.facts_visible": false,
 						"meta.indent_level": 0,
 						"meta.is_head_editable": false,
-						"meta.line_index": 21,
+						"meta.line_index": 22,
 						"meta.selector": {
 							"selected": false
 						}
 					},
 					{
-						"address": "0.22",
+						"address": "0.23",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -1516,13 +1565,13 @@
 						"meta.facts_visible": false,
 						"meta.indent_level": 0,
 						"meta.is_head_editable": false,
-						"meta.line_index": 22,
+						"meta.line_index": 23,
 						"meta.selector": {
 							"selected": false
 						}
 					}
 				],
-				"meta.scroll_vertical": 1890,
+				"meta.scroll_vertical": 2569,
 				"meta.selected": false,
 				"next": 1,
 				"number": 0,
