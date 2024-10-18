@@ -34,7 +34,7 @@ func display_results(search:String):
 	item_list.clear()
 	var i = 0
 	# this is duplicated for relevancy
-	var keys := ["text", "choices", "facts"]
+	var keys := ["text", "choices", "facts", "instructions"]
 	find_child("GoToButton").disabled = true
 	
 	for k : String in keys:

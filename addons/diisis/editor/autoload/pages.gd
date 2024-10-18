@@ -1052,6 +1052,7 @@ func search_string(substr:String, case_insensitive:=false):
 	
 	var found_choices := {}
 	var found_text := {}
+	var found_instructions := {}
 	var page_index := 0
 	for page in page_data.values():
 		var line_index := 0
@@ -1068,6 +1069,13 @@ func search_string(substr:String, case_insensitive:=false):
 				var text : String = line.get("content", {}).get("content", "")
 				if (case_insensitive and text.findn(substr) != -1) or (not case_insensitive and text.find(substr) != -1):
 					found_text[str(page_index, ".", line_index)] = text
+			elif line.get("line_type") == DIISIS.LineType.Instruction:
+				var text : String = line.get("content", {}).get("meta.text", "")
+				var reverse_text : String = line.get("content", {}).get("meta.reverse_text", "")
+				if (case_insensitive and text.findn(substr) != -1) or (not case_insensitive and text.find(substr) != -1):
+					found_instructions[str(page_index, ".", line_index, " - default")] = text
+				if (case_insensitive and reverse_text.findn(substr) != -1) or (not case_insensitive and reverse_text.find(substr) != -1):
+					found_instructions[str(page_index, ".", line_index, " - reverse")] = reverse_text
 			line_index += 1
 		page_index += 1
 	
@@ -1075,6 +1083,7 @@ func search_string(substr:String, case_insensitive:=false):
 		"facts":found_facts,
 		"text":found_text,
 		"choices":found_choices,
+		"instructions":found_instructions,
 	}
 	return result
 
