@@ -85,7 +85,8 @@ func go_to_main_menu(_unused):
 
 func _input(event: InputEvent) -> void:
 	if hovering_meta:
-		print("hovering meta")
+		return
+	if not GameWorld.stage_root.screen.is_empty():
 		return
 	if event is InputEventKey:
 		if event.pressed:
@@ -240,12 +241,16 @@ func serialize() -> Dictionary:
 	result["start_cover_visible"] = find_child("StartCover").visible
 	result["static"] = overlay_static.get_material().get_shader_parameter("intensity")
 	
+	result["camera"] = $Camera2D.serialize()
+	
 	return result
 
 func deserialize(data:Dictionary):
 	var character_data : Dictionary = data.get("character_data", {})
 	for character : Character in find_child("Characters").get_children():
 		character.deserialize(character_data.get(character.character_name, {}))
+	
+	$Camera2D.deserialize(data.get("camera", {}))
 	
 	var cg_name : String = data.get("cg", "")
 	if cg_name.is_empty():

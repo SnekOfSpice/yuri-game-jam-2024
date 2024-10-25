@@ -13,7 +13,8 @@ config_version=5
 config/name="She Was Swallowed By The Sun"
 run/main_scene="res://game/stages/stage_root.tscn"
 config/features=PackedStringArray("4.3", "GL Compatibility")
-config/icon="res://icon.svg"
+config/icon="res://game/visuals/sigil_actuall.png"
+config/windows_native_icon="res://game/visuals/sigil_actuall.ico"
 
 [autoload]
 
@@ -24,6 +25,7 @@ CONST="*res://game/autoloads/const.tscn"
 GameWorld="*res://game/autoloads/game_world.tscn"
 Options="*res://game/autoloads/options.tscn"
 Sound="*res://game/autoloads/sound.tscn"
+GoBackHandler="*res://game/autoloads/go_back_handler.tscn"
 Pages="*res://addons/diisis/editor/autoload/pages.tscn"
 DiisisEditorUtil="*res://addons/diisis/editor/autoload/diisis_editor_util.tscn"
 DiisisEditorActions="*res://addons/diisis/editor/autoload/diisis_editor_actions.tscn"

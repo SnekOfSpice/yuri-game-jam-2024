@@ -21,6 +21,22 @@ func _ready() -> void:
 	GameWorld.camera = self
 	start_position = position
 
+func serialize() -> Dictionary:
+	var result := {}
+	
+	result["sway_intensity"] = sway_intensity
+	result["sway_intensity_lerp_strength"] = sway_intensity_lerp_strength
+	result["position"] = position
+	result["zoom"] = zoom
+	
+	return result
+
+func deserialize(data:Dictionary):
+	zoom = data.get("zoom", Vector2(zoom))
+	position = data.get("position", position)
+	sway_intensity_lerp_strength = data.get("sway_intensity_lerp_strength", sway_intensity_lerp_strength)
+	sway_intensity = data.get("sway_intensity", sway_intensity)
+
 func set_sway_intensity(value:float):
 	sway_intensity = value
 

@@ -358,6 +358,8 @@ func go_back():
 	
 	await get_tree().process_frame
 	address_trail_index += trail_shift
+	if address_trail_index >= address_trail.size():
+		address_trail_index = address_trail.size() - 1
 	var previous_address = address_trail[address_trail_index]
 	var parts = DiisisEditorUtil.get_split_address(previous_address)
 	var prev_page = parts[0]

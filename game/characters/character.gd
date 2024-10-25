@@ -4,7 +4,7 @@ class_name Character
 @export var character_name := ""
 var emotion := ""
 
-var target_x := 0
+var target_x := 0.0
 
 signal repositioned()
 
@@ -12,7 +12,6 @@ var emotions_by_page := {}
 
 func _ready():
 	ParserEvents.dialog_line_args_passed.connect(on_dialog_line_args_passed)
-	ParserEvents.go_back_accepted.connect(on_go_back_accepted)
 	add_to_group("character")
 	target_x = position.x
 	
@@ -80,27 +79,13 @@ func on_dialog_line_args_passed(actor_name: String, dialog_line_args: Dictionary
 		emotion = new_emotion.trim_suffix("-emotion")
 		set_emotion(emotion)
 
-func on_go_back_accepted(page:int, line:int):
-	if not emotions_by_page.has(page):
-		return
-	var prev_index = 0
-	for key in emotions_by_page[page].keys():
-		if key > prev_index and key < line:
-			prev_index = key
-	if not emotions_by_page[page].has(prev_index):
-		return
-	set_emotion(emotions_by_page[page][prev_index], false)
 
-func set_emotion(emotion_name:String, lmao := true):
+func set_emotion(emotion_name:String):
+	if character_name == "torturer":
+		print(emotion_name)
 	emotion = emotion_name
 	if emotion_name == "invisible" or emotion_name.is_empty():
 		visible = false
 		return
 	visible = true
 	find_child("Sprite").texture = load(str("res://game/characters/sprites/", character_name, "-", emotion, ".png"))
-	
-	if lmao:
-		if emotions_by_page.has(Parser.page_index):
-			emotions_by_page[Parser.page_index][Parser.line_index] = emotion
-		else:
-			emotions_by_page[Parser.page_index] = {Parser.line_index : emotion}

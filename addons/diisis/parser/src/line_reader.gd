@@ -487,6 +487,15 @@ func advance():
 		emit_signal("line_finished", line_index)
 
 func go_back():
+	if Parser.paused:
+		push_warning("Cannot go back because Parser.paused is true.")
+		return
+	if is_input_locked:
+		push_warning("Cannot go back because is_input_locked is true.")
+		return
+	if terminated:
+		push_warning("Cannot go back because terminated is true.")
+		return
 	Parser.go_back()
 
 ## Pauses the Parser and hides all controls uif [param hide_controls] is [code]true[/code] (default). Useful for reacting to game events outside the line reader. [br]

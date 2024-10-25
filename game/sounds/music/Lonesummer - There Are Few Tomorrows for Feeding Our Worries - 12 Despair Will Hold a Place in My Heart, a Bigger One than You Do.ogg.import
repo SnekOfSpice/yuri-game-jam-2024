@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://ualy6wo65kyk"
+path="res://.godot/imported/Lonesummer - There Are Few Tomorrows for Feeding Our Worries - 12 Despair Will Hold a Place in My Heart, a Bigger One than You Do.ogg-38e9785acea426596747f51b6127c841.oggvorbisstr"
+
+[deps]
+
+source_file="res://game/sounds/music/Lonesummer - There Are Few Tomorrows for Feeding Our Worries - 12 Despair Will Hold a Place in My Heart, a Bigger One than You Do.ogg"
+dest_files=["res://.godot/imported/Lonesummer - There Are Few Tomorrows for Feeding Our Worries - 12 Despair Will Hold a Place in My Heart, a Bigger One than You Do.ogg-38e9785acea426596747f51b6127c841.oggvorbisstr"]
+
+[params]
+
+loop=true
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

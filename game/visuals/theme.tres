@@ -1,7 +1,10 @@
-[gd_resource type="Theme" load_steps=7 format=3 uid="uid://d35oanoquofv5"]
+[gd_resource type="Theme" load_steps=18 format=3 uid="uid://d35oanoquofv5"]
 
 [ext_resource type="FontFile" uid="uid://jc0pccgisvh0" path="res://game/visuals/fonts/FromSunflowerFie.ttf" id="1_3rf7y"]
+[ext_resource type="Texture2D" uid="uid://cvb4xqj45sxgk" path="res://game/visuals/grabber1.png" id="2_f6fht"]
 [ext_resource type="FontFile" uid="uid://rvnhwlkt81ow" path="res://addons/diisis/parser/style/TimesNewPixelexp.ttf" id="2_j0p7t"]
+[ext_resource type="Texture2D" uid="uid://bsg3ogc2fm2ei" path="res://game/visuals/grabber2.png" id="3_55r0n"]
+[ext_resource type="Texture2D" uid="uid://dtt6lexsfo70d" path="res://game/visuals/grabber3.png" id="4_7earq"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ebhtr"]
 content_margin_left = 7.0
@@ -42,6 +45,30 @@ border_width_bottom = 2
 border_color = Color(0.94, 0.769547, 0.6204, 1)
 border_blend = true
 
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_yln36"]
+content_margin_left = 8.0
+content_margin_top = 1.0
+content_margin_bottom = 1.0
+bg_color = Color(0.81, 0.49653, 0.3726, 0.784314)
+expand_margin_left = 1.0
+expand_margin_top = 2.0
+expand_margin_right = 1.0
+expand_margin_bottom = 2.0
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_tw4rd"]
+bg_color = Color(0.78, 0.63674, 0.3276, 0.909804)
+expand_margin_left = 2.0
+expand_margin_top = 3.0
+expand_margin_right = 2.0
+expand_margin_bottom = 3.0
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_fntcf"]
+content_margin_left = 4.0
+content_margin_top = 2.0
+content_margin_right = 4.0
+content_margin_bottom = 2.0
+bg_color = Color(0.43, 0.374817, 0.3354, 0.623529)
+
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ex4ik"]
 bg_color = Color(0.08, 0.0544, 0.07872, 0.929412)
 border_width_left = 2
@@ -54,15 +81,70 @@ expand_margin_top = 1.0
 expand_margin_right = 1.0
 expand_margin_bottom = 1.0
 
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_1p7bw"]
+bg_color = Color(0.32, 0.0832, 0.0832, 0.87451)
+border_width_left = 1
+border_width_top = 2
+border_width_right = 1
+border_width_bottom = 2
+border_color = Color(0.29, 0.2494, 0.252783, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_5bma6"]
+bg_color = Color(0.802183, 0.295779, 0.458331, 0.870588)
+border_width_left = 2
+border_width_top = 3
+border_width_right = 2
+border_width_bottom = 3
+border_color = Color(0.47, 0.2162, 0.2162, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_0plg6"]
+bg_color = Color(0.743577, 0.140055, 0.376242, 1)
+border_width_left = 2
+border_width_top = 3
+border_width_right = 2
+border_width_bottom = 3
+border_color = Color(0.97, 0.4656, 0.3395, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_m1gup"]
+content_margin_left = 8.0
+content_margin_top = 1.0
+content_margin_bottom = 1.0
+bg_color = Color(0.11, 0.11, 0.11, 0.796078)
+expand_margin_left = 1.0
+expand_margin_top = 2.0
+expand_margin_right = 1.0
+expand_margin_bottom = 2.0
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_huvn2"]
+content_margin_left = 8.0
+content_margin_top = 1.0
+content_margin_bottom = 1.0
+bg_color = Color(0.11, 0.11, 0.11, 0.796078)
+expand_margin_left = 1.0
+expand_margin_top = 2.0
+expand_margin_right = 1.0
+expand_margin_bottom = 2.0
+
 [resource]
 Button/font_sizes/font_size = 24
 Button/fonts/font = ExtResource("1_3rf7y")
 Button/styles/hover = SubResource("StyleBoxFlat_ebhtr")
 Button/styles/normal = SubResource("StyleBoxFlat_qyhhy")
 Button/styles/pressed = SubResource("StyleBoxFlat_n352n")
+HSlider/icons/grabber = ExtResource("2_f6fht")
+HSlider/icons/grabber_disabled = ExtResource("3_55r0n")
+HSlider/icons/grabber_highlight = ExtResource("4_7earq")
+HSlider/styles/grabber_area = SubResource("StyleBoxFlat_yln36")
+HSlider/styles/grabber_area_highlight = SubResource("StyleBoxFlat_tw4rd")
+HSlider/styles/slider = SubResource("StyleBoxFlat_fntcf")
 Label/font_sizes/font_size = 24
 Label/fonts/font = ExtResource("1_3rf7y")
 PanelContainer/styles/panel = SubResource("StyleBoxFlat_ex4ik")
 RichTextLabel/font_sizes/normal_font_size = 20
 RichTextLabel/fonts/bold_font = ExtResource("1_3rf7y")
 RichTextLabel/fonts/normal_font = ExtResource("2_j0p7t")
+VScrollBar/styles/grabber = SubResource("StyleBoxFlat_1p7bw")
+VScrollBar/styles/grabber_highlight = SubResource("StyleBoxFlat_5bma6")
+VScrollBar/styles/grabber_pressed = SubResource("StyleBoxFlat_0plg6")
+VScrollBar/styles/scroll = SubResource("StyleBoxFlat_m1gup")
+VScrollBar/styles/scroll_focus = SubResource("StyleBoxFlat_huvn2")

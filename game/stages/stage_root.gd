@@ -9,16 +9,6 @@ func _ready():
 	set_screen("")
 	GameWorld.stage_root = self
 
-#func _input(event: InputEvent) -> void:
-	#if Input.is_action_just_pressed("ui_cancel") and $ScreenContainer.get_child_count() == 0:
-		#set_screen(CONST.SCREEN_OPTIONS)
-		#get_viewport().set_input_as_handled()
-
-#func _gui_input(event: InputEvent) -> void:
-	#printt(3, event)
-	#if Input.is_action_just_pressed("ui_cancel") and $ScreenContainer.get_child_count() == 0:
-		#set_screen(CONST.SCREEN_OPTIONS)
-
 func set_screen(screen_path:String):
 	if is_instance_valid(Parser.line_reader):
 		if Parser.line_reader.is_input_locked:
@@ -43,7 +33,7 @@ func set_screen(screen_path:String):
 	screen_container.visible = true
 	screen = screen_path
 
-func set_background(background:String, fade_time:=0.0):
+func set_background(background:String, fade_time:=0.0, lmao := true):
 	if background == "none" or background == "null":
 		background = GameWorld.background
 	var path = str(CONST.BACKGROUND_ROOT, CONST.get(str("BACKGROUND_", background.to_upper())))
@@ -56,6 +46,7 @@ func set_background(background:String, fade_time:=0.0):
 		new_background = Sprite2D.new()
 		new_background.texture = load(path)
 		new_background.centered = false
+	
 	elif path.ends_with(".tscn"):
 		new_background = load(path).instantiate()
 	else:

@@ -1,6 +1,6 @@
 {
 	"editor": {
-		"current_page_number": 21,
+		"current_page_number": 2,
 		"page_view": 0,
 		"text_size_id": 3
 	},
@@ -389,7 +389,7 @@
 							"line_reader.reverse_args": [
 								"INVALID ARGUMENT FOR intensity"
 							],
-							"meta.has_reverse": true,
+							"meta.has_reverse": false,
 							"meta.reverse_text": "",
 							"meta.text": "sway_camera(30.0)",
 							"meta.validation_status": "OK",
@@ -770,7 +770,7 @@
 								"INVALID ARGUMENT FOR name",
 								"INVALID ARGUMENT FOR fade_time"
 							],
-							"meta.has_reverse": true,
+							"meta.has_reverse": false,
 							"meta.reverse_text": "",
 							"meta.text": "set_background(clericant_torture_chamber, 0.0)",
 							"meta.validation_status": "OK",
@@ -821,7 +821,7 @@
 								"INVALID ARGUMENT FOR name",
 								"INVALID ARGUMENT FOR fade_in"
 							],
-							"meta.has_reverse": true,
+							"meta.has_reverse": false,
 							"meta.reverse_text": "",
 							"meta.text": "set_bgm(torture, 0.0)",
 							"meta.validation_status": "OK",
@@ -872,7 +872,7 @@
 								"INVALID ARGUMENT FOR value",
 								"INVALID ARGUMENT FOR duration"
 							],
-							"meta.has_reverse": true,
+							"meta.has_reverse": false,
 							"meta.reverse_text": "",
 							"meta.text": "zoom_to(0.5, 0.0)",
 							"meta.validation_status": "OK",
@@ -923,7 +923,7 @@
 								"INVALID ARGUMENT FOR actor_name",
 								"INVALID ARGUMENT FOR emotion_name"
 							],
-							"meta.has_reverse": true,
+							"meta.has_reverse": false,
 							"meta.reverse_text": "",
 							"meta.text": "set_emotion(one, tortured1)",
 							"meta.validation_status": "OK",
@@ -974,7 +974,7 @@
 								"INVALID ARGUMENT FOR character_name",
 								"INVALID ARGUMENT FOR clear_others"
 							],
-							"meta.has_reverse": true,
+							"meta.has_reverse": false,
 							"meta.reverse_text": "",
 							"meta.text": "show_character(one, true)",
 							"meta.validation_status": "OK",
@@ -1368,7 +1368,7 @@
 								0.5,
 								0
 							],
-							"meta.has_reverse": true,
+							"meta.has_reverse": false,
 							"meta.reverse_text": "zoom_to(0.5, 0.0)",
 							"meta.text": "zoom_to(0.65, 0.0)",
 							"meta.validation_status": "OK",
@@ -1468,7 +1468,7 @@
 								0.65,
 								0
 							],
-							"meta.has_reverse": true,
+							"meta.has_reverse": false,
 							"meta.reverse_text": "zoom_to(0.65, 0.0)",
 							"meta.text": "zoom_to(0.8, 0.0)",
 							"meta.validation_status": "OK",
@@ -1566,7 +1566,7 @@
 							"line_reader.reverse_args": [
 								30
 							],
-							"meta.has_reverse": true,
+							"meta.has_reverse": false,
 							"meta.reverse_text": "sway_camera(30.0)",
 							"meta.text": "sway_camera(0.0)",
 							"meta.validation_status": "OK",
@@ -1639,7 +1639,7 @@
 								"INVALID ARGUMENT FOR zoom",
 								"INVALID ARGUMENT FOR bgm"
 							],
-							"meta.has_reverse": true,
+							"meta.has_reverse": false,
 							"meta.reverse_text": "",
 							"meta.text": "play_chapter_intro(anhedonia, EMPTY, field, 0.4, prison)",
 							"meta.validation_status": "OK",
@@ -1694,7 +1694,7 @@
 								0,
 								false
 							],
-							"meta.has_reverse": true,
+							"meta.has_reverse": false,
 							"meta.reverse_text": "set_x_position(one, 1, 0.0, false)",
 							"meta.text": "set_x_position(one, 5, 0.0, false)",
 							"meta.validation_status": "OK",
@@ -1792,7 +1792,7 @@
 							"line_reader.reverse_args": [
 								"INVALID ARGUMENT FOR name"
 							],
-							"meta.has_reverse": true,
+							"meta.has_reverse": false,
 							"meta.reverse_text": "",
 							"meta.text": "play_sfx(gunshot)",
 							"meta.validation_status": "OK",
@@ -1840,15 +1840,15 @@
 								5
 							],
 							"line_reader.reverse_args": [
-								"INVALID ARGUMENT FOR value",
-								"INVALID ARGUMENT FOR duration"
+								0.4,
+								0
 							],
-							"meta.has_reverse": true,
-							"meta.reverse_text": "",
+							"meta.has_reverse": false,
+							"meta.reverse_text": "zoom_to(0.4, 0.0)",
 							"meta.text": "zoom_to(1, 5.0)",
 							"meta.validation_status": "OK",
 							"name": "zoom_to",
-							"reverse_name": ""
+							"reverse_name": "zoom_to"
 						},
 						"facts": {
 							"fact_data_by_name": {
@@ -1947,7 +1947,7 @@
 								0,
 								false
 							],
-							"meta.has_reverse": true,
+							"meta.has_reverse": false,
 							"meta.reverse_text": "set_x_position(anhedonia, 1, 0.0, false)",
 							"meta.text": "set_x_position(anhedonia, 4, 4.0, false)",
 							"meta.validation_status": "OK",
@@ -2001,7 +2001,7 @@
 								"jailer"
 							],
 							"active_actors_title": "character",
-							"content": "[]>anhedonia:C'mon, you literally just got out of prison. Lemme treat you a bit.\n[]>one:...<ap>Fine.\n[]>narrator{anhedonia-emotion|happy}:You take her bag from her hands, careful to brush her hand, giving her a gleeful smile.\n[]>one:You are such a cheesy motherfucker.\n[]>anhedonia:Hehe... Can't help it after being reunited with my wife.\n[]>narrator:You give her a kiss.\n[]>one{one-emotion|joy}:Hehe...\n[]>narrator:You quickly nuzzle against her, and then shoulder your own gear.\n[]>anhedonia{anhedonia-emotion|neutral,one-emotion|neutral}:So like- <ap> I don't wanna rush but the busses out here run like ass, so let's try and get back to the bus stop for now?\n[]>one:Yeah, no worries.\n[]>narrator:And so you sling One's backpack over your shoulder, and take her hand in your other one. <ap>You never take your eyes off of her. <mp>One more kiss, pulling her in. Tired but glad, One looks up at you. <mp>And then you depart."
+							"content": "[]>anhedonia:C'mon, you literally just got out of prison. Lemme treat you a bit.\n[]>one:...<ap>Fine.\n[]>narrator{anhedonia-emotion|happy}:You take her bag from her hands, careful to brush her hand, giving her a gleeful smile.\n[]>one:You are such a cheesy motherfucker.\n[]>anhedonia:Hehe... Can't help it after being reunited with my wife.\n[]>narrator:You give a kiss to your girlfriend that you like to call your wife.\n[]>one{one-emotion|joy}:Hehe...\n[]>narrator:You quickly nuzzle against her, and then shoulder your own gear.\n[]>anhedonia{anhedonia-emotion|neutral,one-emotion|neutral}:So like- <ap> I don't wanna rush but the busses out here run like ass, so let's try and get back to the bus stop for now?\n[]>one:Yeah, no worries.\n[]>narrator:And so you sling One's backpack over your shoulder, and take her hand in your other one. <ap>You never take your eyes off of her. <mp>One more kiss, pulling her in. Tired but glad, One looks up at you. <mp>And then you depart."
 						},
 						"facts": {
 							"fact_data_by_name": {
@@ -2063,7 +2063,7 @@
 								"INVALID ARGUMENT FOR name",
 								"INVALID ARGUMENT FOR fade_in"
 							],
-							"meta.has_reverse": true,
+							"meta.has_reverse": false,
 							"meta.reverse_text": "",
 							"meta.text": "set_bgm(reunited, 2.0)",
 							"meta.validation_status": "OK",
@@ -2212,7 +2212,7 @@
 								"INVALID ARGUMENT FOR name",
 								"INVALID ARGUMENT FOR fade_time"
 							],
-							"meta.has_reverse": true,
+							"meta.has_reverse": false,
 							"meta.reverse_text": "",
 							"meta.text": "set_background(bus_ride, 2.0)",
 							"meta.validation_status": "OK",
@@ -2959,7 +2959,7 @@
 						}
 					}
 				],
-				"meta.scroll_vertical": 4192,
+				"meta.scroll_vertical": 402,
 				"meta.selected": false,
 				"next": 3,
 				"number": 2,
@@ -4966,7 +4966,9 @@
 								"interrogator",
 								"torturer",
 								"one+anhedonia",
-								"gods"
+								"gods",
+								"clericant",
+								"jailer"
 							],
 							"active_actors_title": "character",
 							"content": "[]>narrator: you call spectra, and ask if she has time to grab some afternoon coffee. she always has time fkr a discussion over afternoon coffee."
@@ -5072,7 +5074,9 @@
 								"interrogator",
 								"torturer",
 								"one+anhedonia",
-								"gods"
+								"gods",
+								"clericant",
+								"jailer"
 							],
 							"active_actors_title": "character",
 							"content": "[]>spectra{spectra-emotion|neutral,anhedonia-emotion|concerned}: how soon do you need it?\n[]>anhedonia: yesterday, at the very least.\n[]>spectra:... damn\n[]>anhedonia: is there no one left?\n[]>spectra: not that I know of... well\n[]>anhedonia: well?\n[]>spectra: do you remember name and the lot?\n[]>anhedonia: oxyheads from a few years ago\n[]>spectra: precisely. they're out now.\n[]>anhedonia: ...out?\n[]>spectra: last i heard of them, they ditched this place for the east, somewhere in the salted fields. I could give you the coordinates.\n[]>narrator: you clasp your hands over your face in frustration and let out a groan.\n[]>anhedonia: nnrnrngnh! lc ah fuck! lc I really didn't wanna have to see them again.\n[]>spectra: me neither, to be frank.\n[]>anhedonia: but you still have their coordinates?\n[]>spectra: you know how it is for seers. I used to make lots of home visits before I got enough people that'd come to me."
@@ -5111,18 +5115,22 @@
 							"operand_key": "AND"
 						},
 						"content": {
-							"active_actors": [
-								"anhedonia",
-								"one",
-								"spectra",
-								"narrator",
-								"interrogator",
-								"torturer",
-								"one+anhedonia",
-								"gods"
+							"delay_after": 0,
+							"delay_before": 0,
+							"line_reader.args": [
+								"city_walls",
+								4
 							],
-							"active_actors_title": "character",
-							"content": "[]>narrator: you return back to cityname. as you approach the city rampart, it climbs into the sky, its sheer scale blotting out the sun as you approach.\ncast in shadow, you dread this step of the return. [minutes lass, checkpoints take their time in searches] and then, the bus comes to a stop."
+							"line_reader.reverse_args": [
+								"spectra_apartment",
+								0
+							],
+							"meta.has_reverse": true,
+							"meta.reverse_text": "set_background(spectra_apartment, 0.0)",
+							"meta.text": "set_background(city_walls, 4.0)",
+							"meta.validation_status": "OK",
+							"name": "set_background",
+							"reverse_name": "set_background"
 						},
 						"facts": {
 							"fact_data_by_name": {
@@ -5131,7 +5139,7 @@
 							"meta.visible": false
 						},
 						"header": [],
-						"line_type": 0,
+						"line_type": 2,
 						"meta.conditionals_visible": false,
 						"meta.facts_visible": false,
 						"meta.indent_level": 0,
@@ -5166,10 +5174,12 @@
 								"interrogator",
 								"torturer",
 								"one+anhedonia",
-								"gods"
+								"gods",
+								"clericant",
+								"jailer"
 							],
 							"active_actors_title": "character",
-							"content": "[]>narrator:You open the door to your apartment, and then: Find One curled up on the couch."
+							"content": "[]>narrator:plug is named Soot\n[]>narrator:the trek out to old acquantances goes smoother than expected. time and substance abuse sanded away old grudges, and with with a hefty bundle of wicker to pay for the gel, you acquire it. you make small talk that you do when you pick up Stuff. you learn of people you have never and will never hear of. you learn about half of what you would want to know about the Stuff. It's enough. \n[]>narrator:on your way back you are afraid of being searched. you dont end up being searched.\n[]>narrator: you return back to cityname. as you approach the city rampart, it climbs into the sky, its sheer scale blotting out the sun as you approach.\ncast in shadow, you dread this step of the return. [minutes lass, checkpoints take their time in searches] and then, the bus comes to a stop."
 						},
 						"facts": {
 							"fact_data_by_name": {
@@ -5189,7 +5199,7 @@
 						}
 					}
 				],
-				"meta.scroll_vertical": 609,
+				"meta.scroll_vertical": 635,
 				"meta.selected": false,
 				"next": 10,
 				"number": 9,
@@ -5288,7 +5298,9 @@
 								"interrogator",
 								"torturer",
 								"one+anhedonia",
-								"gods"
+								"gods",
+								"clericant",
+								"jailer"
 							],
 							"active_actors_title": "character",
 							"content": "[]>narrator:Questioning by the interrogator + threats to scar the irises with formaldehyde"
@@ -5410,7 +5422,9 @@
 								"interrogator",
 								"torturer",
 								"one+anhedonia",
-								"gods"
+								"gods",
+								"clericant",
+								"jailer"
 							],
 							"active_actors_title": "character",
 							"content": "[]>one:lets go outside"
@@ -5508,7 +5522,9 @@
 								"interrogator",
 								"torturer",
 								"one+anhedonia",
-								"gods"
+								"gods",
+								"clericant",
+								"jailer"
 							],
 							"active_actors_title": "character",
 							"content": "[]>narrator:the small patches of shrubbery surrounding the bench are animated by the brass grip [sth like that? fast grip and rut?] of the mountaintop breeze.\n[]>narrator:butterflies find themselves carried to and from by the currents of air, and they in turn provide ample animation to the [low growing] [plants] around you.\n[]>one:the dancing of butterflies animates the leaves around you,"
@@ -5555,7 +5571,9 @@
 								"interrogator",
 								"torturer",
 								"one+anhedonia",
-								"gods"
+								"gods",
+								"clericant",
+								"jailer"
 							],
 							"active_actors_title": "character",
 							"content": "[]>anhedonia:You're starting to get eyes again?"
@@ -5653,7 +5671,9 @@
 								"interrogator",
 								"torturer",
 								"one+anhedonia",
-								"gods"
+								"gods",
+								"clericant",
+								"jailer"
 							],
 							"active_actors_title": "character",
 							"content": "[]>one{one-emotion|neutral}: When I disappear, how will you feel?\n[]>narrator: Anhedonia's eyelids slump slightly, eyes drooping downwards.\n[]>anhedonia: sigh...\n[]>one: ...\n[]>anhedonia:... sad, definitely.\n[]>one: ... I know.\n[]>one: ...\n[]>one: Not angry?\n[]>narrator: Anhedonia looks back up at you.\n[]>anhedonia{anhedonia-emotion|concerned}: No, why should I be?\n[]>one: oh you know, because I'll be leaving you to pick up the pieces, <ap>again. <lc>...<lc> this time for good.\n[]>anhedonia: One... this isn't you breaking something for me to clean up. You're not doing anything wrong.\n[]>one: It feels too much like ground truth to me- <mp> the fact that I don't really feel bad.\n[]>anhedonia: I know. <lc>This is what you want.\n[]>narrator: You gesture ourwards.\n[]>one: But when I look at this.. us... it almost feels pointless?\n[]>anhedonia: I know, darling. I love you too.\n[]>one: You just live in my heart too, just as the Godseed.\n[]>anhedonia: Thank you for letting me be- exist in your heart. But you are so much grander than me. You can have the world, and I want you to.\n[]>narrator: Your grip on Anhedonia's hands weakens. Hers fastens in response."
@@ -5700,7 +5720,9 @@
 								"interrogator",
 								"torturer",
 								"one+anhedonia",
-								"gods"
+								"gods",
+								"clericant",
+								"jailer"
 							],
 							"active_actors_title": "character",
 							"content": "[]>anhedonia: The godseed is your opus, your calling, your creation. Please don't stop for anyone, not even me.\n[]>narrator: You feel the tears swelling as you share a long and drawn-out fixation into one another's eyes.\n[]>one: You're really not.. upset.<advance>\n[]>anhedonia: I never want to be angry at you. Least of all because of you following your heart.\n[]>narrator{one+anhedonia-emotion|hug-eye1-crying, anhedonia-emotion|invisible,one-emotion|invisible}: You collapse into her chest and arms, a trickle of tears now running down your face and into Anhedonia's kragen.<lc>You stay like this for a little while, sobbing and crying and screaming with a resplendent thankfulness and also- grief.\n[]>one: hmhnhwwh... thank... hwghw.. youuu\n[]>narrator: In response, she nuzzles your head and scritches your nape. <lc>You stay like this for a while longer.\n[]>narrator: Eventually, at least you look up again, to find Anhedonia smiling at you, even if your tears still won't stop.\n[]>one: ...<mp>Thank you.\n[]>narrator: She squeezes you tight.\n[]>one: Thank you.\n[]>anhedonia: Always."
@@ -5806,7 +5828,9 @@
 								"interrogator",
 								"torturer",
 								"one+anhedonia",
-								"gods"
+								"gods",
+								"clericant",
+								"jailer"
 							],
 							"active_actors_title": "character",
 							"content": "[]>narrator:You get home\n[]>narrator:You continue working\n[]>narrator:and with the unrelenting rays of the sun piercing your many dead pupils, the smell kf fresh hardened oxylith reminds you .of past addiction.\n[]>narrator:the monolithic gaze pf the lowest point of your life staring back at u"
@@ -5853,7 +5877,9 @@
 								"interrogator",
 								"torturer",
 								"one+anhedonia",
-								"gods"
+								"gods",
+								"clericant",
+								"jailer"
 							],
 							"active_actors_title": "character",
 							"content": "[]>one: Say, with the eyes now returning. The goseed has taken root again.\n[]>one: I need you to tie me up and destroy me\n[]>anhedonia: Give me everything you got.\n[]>one: I need to give you everything.\n[]>anhedonia:...\n[]>one:...\n[]>one:...\n[]>one: because the godseed has finally taken root\n[]>anhedonia:...<lc>Then how about some destruction tomorrow?\n[]>one:Please."
@@ -5876,7 +5902,7 @@
 						}
 					}
 				],
-				"meta.scroll_vertical": 1767,
+				"meta.scroll_vertical": 962,
 				"meta.selected": false,
 				"next": 12,
 				"number": 11,
@@ -14475,7 +14501,7 @@
 							"line_reader.args": [
 								"anhedonia",
 								"Blood",
-								"home_regular_night",
+								"home_bedroom_night",
 								1,
 								"null"
 							],
@@ -14488,7 +14514,7 @@
 							],
 							"meta.has_reverse": false,
 							"meta.reverse_text": "",
-							"meta.text": "play_chapter_intro(anhedonia, Blood, home_regular_night, 1.0, null)",
+							"meta.text": "play_chapter_intro(anhedonia, Blood, home_bedroom_night, 1.0, null)",
 							"meta.validation_status": "OK",
 							"name": "play_chapter_intro",
 							"reverse_name": ""
@@ -14576,20 +14602,26 @@
 							"operand_key": "AND"
 						},
 						"content": {
-							"active_actors": [
+							"delay_after": 0,
+							"delay_before": 0,
+							"line_reader.args": [
 								"anhedonia",
-								"one",
-								"spectra",
-								"narrator",
-								"interrogator",
-								"torturer",
-								"one+anhedonia",
-								"gods",
-								"clericant",
-								"jailer"
+								3,
+								0,
+								false
 							],
-							"active_actors_title": "character",
-							"content": "[]>narrator{one-emotion|anxious,anhedonia-emotion|sleepy}: you are nudged awake. one stands over you, blood drizzling down her chin.\n[]>anhedonia{anhedonia-emotion|shock}: !!!\n[]>one: fuck... hey Annie. <mp>I know it's late in the evening but do you think we could take a walk?\n[]>anhedonia{anhedonia-emotion|neutral}: ...\n[]>one: ...\n[]>anhedonia{anhedonia-emotion|sad}: ...\n[]>anhedonia{anhedonia-emotion|crying}:... <ap>sure.\n[]>narrator: prep going outside \n[]>anhedonia: one...\n[]>one: yea?\n[]>anhedonia: you asked me something and I said I'd think about it...\n[]>one: huh?\n[]>anhedonia: the... assisted dying.\n[]>one: what about it?\n[]>anhedonia: you still have the tools right?\n[]>one: fuck... yes I do.\n[]>anhedonia: still up for it?\n[]>one: I... <ap>yes.\n[]>anhedonia: good. we can talk on the way"
+							"line_reader.reverse_args": [
+								"INVALID ARGUMENT FOR character_name",
+								"INVALID ARGUMENT FOR index",
+								"INVALID ARGUMENT FOR time",
+								"INVALID ARGUMENT FOR wait_for_reposition"
+							],
+							"meta.has_reverse": false,
+							"meta.reverse_text": "",
+							"meta.text": "set_x_position(anhedonia, 3.0, 0.0, false)",
+							"meta.validation_status": "OK",
+							"name": "set_x_position",
+							"reverse_name": ""
 						},
 						"facts": {
 							"fact_data_by_name": {
@@ -14598,7 +14630,7 @@
 							"meta.visible": false
 						},
 						"header": [],
-						"line_type": 0,
+						"line_type": 2,
 						"meta.conditionals_visible": false,
 						"meta.facts_visible": false,
 						"meta.indent_level": 0,
@@ -14629,23 +14661,21 @@
 							"delay_before": 0,
 							"line_reader.args": [
 								"one",
-								"EMPTY",
-								"bench_pathway_night",
-								1,
-								"null"
+								5,
+								0,
+								false
 							],
 							"line_reader.reverse_args": [
-								"INVALID ARGUMENT FOR pov_name",
-								"INVALID ARGUMENT FOR bottom_text",
-								"INVALID ARGUMENT FOR new_background",
-								"INVALID ARGUMENT FOR zoom",
-								"INVALID ARGUMENT FOR bgm"
+								"INVALID ARGUMENT FOR character_name",
+								"INVALID ARGUMENT FOR index",
+								"INVALID ARGUMENT FOR time",
+								"INVALID ARGUMENT FOR wait_for_reposition"
 							],
 							"meta.has_reverse": false,
 							"meta.reverse_text": "",
-							"meta.text": "play_chapter_intro(one, EMPTY, bench_pathway_night, 1.0, null)",
+							"meta.text": "set_x_position(one, 5.0, 0.0, false)",
 							"meta.validation_status": "OK",
-							"name": "play_chapter_intro",
+							"name": "set_x_position",
 							"reverse_name": ""
 						},
 						"facts": {
@@ -14695,7 +14725,7 @@
 								"jailer"
 							],
 							"active_actors_title": "character",
-							"content": "[]>anhedonia: I didn't spend these last 3 years in lockstep with you just tk watch you fade out now.\n[]>narrator:one hands her a letter\n[]>narrator:\" we've probably talked about these things in advance.\n[]>narrator:\" I've left you instructions in this envelope too.\n[]>narrator:on death bank:"
+							"content": "[]>narrator{one-emotion|anxious,anhedonia-emotion|sleepy}: you are nudged awake. one stands over you, blood drizzling down her chin.\n[]>anhedonia{anhedonia-emotion|shock}: !!!\n[]>one: fuck... hey Annie. <mp>I know it's late in the evening but do you think we could take a walk?\n[]>anhedonia{anhedonia-emotion|neutral}: ...\n[]>one: ...\n[]>anhedonia{anhedonia-emotion|sad}: ...\n[]>anhedonia{anhedonia-emotion|crying}:... <ap>sure."
 						},
 						"facts": {
 							"fact_data_by_name": {
@@ -14716,6 +14746,259 @@
 					},
 					{
 						"address": "34.5",
+						"conditionals": {
+							"behavior": 0,
+							"behavior_key": "Show",
+							"facts": {
+								"fact_data_by_name": {
+
+								},
+								"meta.visible": false
+							},
+							"meta.visible": false,
+							"operand": 0,
+							"operand_args": [],
+							"operand_key": "AND"
+						},
+						"content": {
+							"active_actors": [
+								"anhedonia",
+								"one",
+								"spectra",
+								"narrator",
+								"interrogator",
+								"torturer",
+								"one+anhedonia",
+								"gods",
+								"clericant",
+								"jailer"
+							],
+							"active_actors_title": "character",
+							"content": "[]>narrator: You ask One if you can assist her, and she declines- For now. You merely act as chaperon and companion for now, a ferry for this final step of her work.\n[]>narrator:With worrying shivers and a noticeable weakness, One gathers her things- a small pouch she slings across her hip. <lc>Then she tells you that there's one thing she needs to ask you."
+						},
+						"facts": {
+							"fact_data_by_name": {
+
+							},
+							"meta.visible": false
+						},
+						"header": [],
+						"line_type": 0,
+						"meta.conditionals_visible": false,
+						"meta.facts_visible": false,
+						"meta.indent_level": 0,
+						"meta.is_head_editable": false,
+						"meta.line_index": 5,
+						"meta.selector": {
+							"selected": false
+						}
+					},
+					{
+						"address": "34.6",
+						"conditionals": {
+							"behavior": 0,
+							"behavior_key": "Show",
+							"facts": {
+								"fact_data_by_name": {
+
+								},
+								"meta.visible": false
+							},
+							"meta.visible": false,
+							"operand": 0,
+							"operand_args": [],
+							"operand_key": "AND"
+						},
+						"content": {
+							"active_actors": [
+								"anhedonia",
+								"one",
+								"spectra",
+								"narrator",
+								"interrogator",
+								"torturer",
+								"one+anhedonia",
+								"gods",
+								"clericant",
+								"jailer"
+							],
+							"active_actors_title": "character",
+							"content": "[]>anhedonia: One...\n[]>one: Yea?\n[]>anhedonia: You asked me something and I said I'd think about it...\n[]>one: Huh?\n[]>anhedonia: The... Assisted dying.\n[]>one: What about it?\n[]>anhedonia: You still have the tools right?\n[]>one: Fuck... <lc>I do.\n[]>anhedonia: Still up for it?\n[]>one: I... <ap>Yes.\n[]>anhedonia: Good, could you get them? We can talk on the way\n[]>one:Already packed them.\n[]>anhedonia:Sneaky.\n[]>one:I know my girlfriend well."
+						},
+						"facts": {
+							"fact_data_by_name": {
+
+							},
+							"meta.visible": false
+						},
+						"header": [],
+						"line_type": 0,
+						"meta.conditionals_visible": false,
+						"meta.facts_visible": false,
+						"meta.indent_level": 0,
+						"meta.is_head_editable": false,
+						"meta.line_index": 6,
+						"meta.selector": {
+							"selected": false
+						}
+					},
+					{
+						"address": "34.7",
+						"conditionals": {
+							"behavior": 0,
+							"behavior_key": "Show",
+							"facts": {
+								"fact_data_by_name": {
+
+								},
+								"meta.visible": false
+							},
+							"meta.visible": false,
+							"operand": 0,
+							"operand_args": [],
+							"operand_key": "AND"
+						},
+						"content": {
+							"delay_after": 0,
+							"delay_before": 0,
+							"line_reader.args": [
+								"one",
+								"Step Towards The Sun",
+								"bench_pathway_night",
+								1,
+								"null"
+							],
+							"line_reader.reverse_args": [
+								"INVALID ARGUMENT FOR pov_name",
+								"INVALID ARGUMENT FOR bottom_text",
+								"INVALID ARGUMENT FOR new_background",
+								"INVALID ARGUMENT FOR zoom",
+								"INVALID ARGUMENT FOR bgm"
+							],
+							"meta.has_reverse": false,
+							"meta.reverse_text": "",
+							"meta.text": "play_chapter_intro(one, Step Towards The Sun, bench_pathway_night, 1.0, null)",
+							"meta.validation_status": "OK",
+							"name": "play_chapter_intro",
+							"reverse_name": ""
+						},
+						"facts": {
+							"fact_data_by_name": {
+
+							},
+							"meta.visible": false
+						},
+						"header": [],
+						"line_type": 2,
+						"meta.conditionals_visible": false,
+						"meta.facts_visible": false,
+						"meta.indent_level": 0,
+						"meta.is_head_editable": false,
+						"meta.line_index": 7,
+						"meta.selector": {
+							"selected": false
+						}
+					},
+					{
+						"address": "34.8",
+						"conditionals": {
+							"behavior": 0,
+							"behavior_key": "Show",
+							"facts": {
+								"fact_data_by_name": {
+
+								},
+								"meta.visible": false
+							},
+							"meta.visible": false,
+							"operand": 0,
+							"operand_args": [],
+							"operand_key": "AND"
+						},
+						"content": {
+							"active_actors": [
+								"anhedonia",
+								"one",
+								"spectra",
+								"narrator",
+								"interrogator",
+								"torturer",
+								"one+anhedonia",
+								"gods",
+								"clericant",
+								"jailer"
+							],
+							"active_actors_title": "character",
+							"content": "[]>narrator: walking up the hill, you desperately cling to anhedonia. your hand never leaves her, your arms touch all the way, all in an effort to indulge in as much skinship as possible. the pain burning up beneath yihr skin makes it almost impossibly difficult to walk upright. your arms yearn to twist and bend in any way that makes the agony go away, and intermittently, you spit out pools of blood.\n[]>narrator:it is a slow walk up to the bench. anhedonia never lets go if your hand either.\n[]>anhedonia: I love uoh so much\n[]>one: I love you too, Annie.\n[]>anhedonia: my little sunshine.\n[]>narrator: as you speak, you're both pushing through your tears, radiant smiles enough to drive away the pitch black of the moonless night overhead.\n[]>anhedonia: you always made the nights together so much more bearable.\n[]>one: mhm.\n[]>anhedonia: I...\n[]>narrator: she gives your hand more gentle caresses, quickly steps in front of you to tower over you for a quick kiss.\n[]>narrator: yiu lean in as much as your writhing and eye-covered body allows.\n[]>anhedonia: my heart beats so fast\n[]>one: mine too.\n[]>anhedonia: ...\n[]>narrator: another small chu.\n[]>one: let's go...\n[]>anhedonia: yea...\n[]>anhedonia:...\n[]>one:...<lc>So... you'll do it?\n[]>anhedonia:The injection?\n[]>one:Yea.\n[]>anhedonia:I will.\n[]>one{one-emotion|crying}:...<lc>You're sweet."
+						},
+						"facts": {
+							"fact_data_by_name": {
+
+							},
+							"meta.visible": false
+						},
+						"header": [],
+						"line_type": 0,
+						"meta.conditionals_visible": false,
+						"meta.facts_visible": false,
+						"meta.indent_level": 0,
+						"meta.is_head_editable": false,
+						"meta.line_index": 8,
+						"meta.selector": {
+							"selected": false
+						}
+					},
+					{
+						"address": "34.9",
+						"conditionals": {
+							"behavior": 0,
+							"behavior_key": "Show",
+							"facts": {
+								"fact_data_by_name": {
+
+								},
+								"meta.visible": false
+							},
+							"meta.visible": false,
+							"operand": 0,
+							"operand_args": [],
+							"operand_key": "AND"
+						},
+						"content": {
+							"active_actors": [
+								"anhedonia",
+								"one",
+								"spectra",
+								"narrator",
+								"interrogator",
+								"torturer",
+								"one+anhedonia",
+								"gods",
+								"clericant",
+								"jailer"
+							],
+							"active_actors_title": "character",
+							"content": "[]>anhedonia: I didn't spend these last 3 years in lockstep with you just tk watch you fade out now."
+						},
+						"facts": {
+							"fact_data_by_name": {
+
+							},
+							"meta.visible": false
+						},
+						"header": [],
+						"line_type": 0,
+						"meta.conditionals_visible": false,
+						"meta.facts_visible": false,
+						"meta.indent_level": 0,
+						"meta.is_head_editable": false,
+						"meta.line_index": 9,
+						"meta.selector": {
+							"selected": false
+						}
+					},
+					{
+						"address": "34.10",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -14760,13 +15043,13 @@
 						"meta.facts_visible": false,
 						"meta.indent_level": 0,
 						"meta.is_head_editable": false,
-						"meta.line_index": 5,
+						"meta.line_index": 10,
 						"meta.selector": {
 							"selected": false
 						}
 					},
 					{
-						"address": "34.6",
+						"address": "34.11",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -14795,7 +15078,7 @@
 								"jailer"
 							],
 							"active_actors_title": "character",
-							"content": "[]>anhedonia: who I am is... who I became with you... is an extension of you\n[]>one: im.sorry for having you bury me\n[]>one: im so glad I got I experience my life with you.\n[]>narrator:you nuzzle against her shoulder, your frail grasp clasping her palm losing strength by the second.\n[]>narrator:as you feel yourself drift in and out of cinciousness"
+							"content": "[]>narrator: you finally reach the bench, a lonely and forgotten place. A place of so many memories. desires. wishes.\n[]>narrator: with familiar steps, you descend the few steps down the muddied path and seat yourselves like you have done so many times. \n[]>narrator: from the small bag you took with you, you take a palm-sized crystal disc, which has a gentle glow about it. you hand it to anhedinia so she can put it down next to her, bathing her in the echoes of the pink lightning youd sometimes see overhead.\n[]>one: You're so pretty.\n[]>anhedonia: as are you.\n[]>narrator: her eyes do not relent. against the contrast of night, they appear as radiant and violently pink as they ever could be. \n[]>one:...\n[]>narrator: briskly, the moment is interrupted by the need to evacuate blood from your mouth.\n[]>one: fuck...\n[]>anhedonia: we gotta hurry, don't we?\n[]>one: I think I can... feel my innards dissolving.\n[]>anhedonia: one??\n[]>narrator: from your bag, you retrieve an envelope.\n[]>one: here, for you.\n[]>narrator: it is incredibly difficult to read the lettering on the front, the distant city light's glow but a faint aid.\n[]>narrator:\"To Anhedonia\""
 						},
 						"facts": {
 							"fact_data_by_name": {
@@ -14809,13 +15092,311 @@
 						"meta.facts_visible": false,
 						"meta.indent_level": 0,
 						"meta.is_head_editable": false,
-						"meta.line_index": 6,
+						"meta.line_index": 11,
+						"meta.selector": {
+							"selected": false
+						}
+					},
+					{
+						"address": "34.12",
+						"conditionals": {
+							"behavior": 0,
+							"behavior_key": "Show",
+							"facts": {
+								"fact_data_by_name": {
+
+								},
+								"meta.visible": false
+							},
+							"meta.visible": false,
+							"operand": 0,
+							"operand_args": [],
+							"operand_key": "AND"
+						},
+						"content": {
+							"delay_after": 0,
+							"delay_before": 0,
+							"line_reader.args": [
+								1.3,
+								2
+							],
+							"line_reader.reverse_args": [
+								1,
+								0
+							],
+							"meta.has_reverse": true,
+							"meta.reverse_text": "zoom_to(1.0, 0.0)",
+							"meta.text": "zoom_to(1.3, 2.0)",
+							"meta.validation_status": "OK",
+							"name": "zoom_to",
+							"reverse_name": "zoom_to"
+						},
+						"facts": {
+							"fact_data_by_name": {
+
+							},
+							"meta.visible": false
+						},
+						"header": [],
+						"line_type": 2,
+						"meta.conditionals_visible": false,
+						"meta.facts_visible": false,
+						"meta.indent_level": 0,
+						"meta.is_head_editable": false,
+						"meta.line_index": 12,
+						"meta.selector": {
+							"selected": false
+						}
+					},
+					{
+						"address": "34.13",
+						"conditionals": {
+							"behavior": 0,
+							"behavior_key": "Show",
+							"facts": {
+								"fact_data_by_name": {
+
+								},
+								"meta.visible": false
+							},
+							"meta.visible": false,
+							"operand": 0,
+							"operand_args": [],
+							"operand_key": "AND"
+						},
+						"content": {
+							"active_actors": [
+								"anhedonia",
+								"one",
+								"spectra",
+								"narrator",
+								"interrogator",
+								"torturer",
+								"one+anhedonia",
+								"gods",
+								"clericant",
+								"jailer"
+							],
+							"active_actors_title": "character",
+							"content": "[]>one: I dont know ifnwe have enough time to read it together now...\n[]>anhedonia: there's never enough.\n[]>one: there never... hhjghh... is \n[]>one: ...\n[]>one: I think it's time.\n[]>narrator: another quick yet unsteady motion into the bag and you hold out a handful of injection supplies: syringe, disinfectant, and... whatever it is that spectra procured for you here.\n[]>anhedonia: anhedonia has a solemn gaze abiut her. yet you feel the sheer monolithic determination to see this through as she gently grasps the items.\n[]>narrator: you point to an empty spot on your thigh.\n[]>one: anything above 40 should be Lethal. 60 to be sure. above 80 and it gets unpleasant.\n[]>anhedonia: ill do 60.\n[]>one: please do.\n[]>narrator: anhedonia sets down the material and proceeds by disinfecting the injection site. combined with the godeye tissue surrounding it, it burns like hell. no skipping of disinfectant though, you both know you'd want to do this proper.\n[]>anhedonia: there we go.\n[]>anhedonia: good girl.\n[]>narrator: you answer her with an assuring blink. her display of gentleness draws a warm smile across your face. it feels warm and fuzzy inside.\n[]>narrator: you are treated to a small headpat.\n[]>anhedonia: gonna draw some now.\n[]>narrator: with precise and graceful movements, anhedonia sets down the alcohol pad and picks up the vial and syringe. the vial is a lot. the syringe more than enough.\n[]>one: getting a bit dizzy... blood loss...\n[]>anhedonia: on it sunshine.\n[]>narrator: Anhedonia stabs the vial, extracts a little more than what she needs- then presses out any excess DRUG NAME and air with it- down to exactly the 60 you agreed to.\n[]>narrator: canister/reservoir? filled with a faily yellow yet almost translucent liquid, aanhedknja rests the needle tip against your leg.\n[]>anhedonia: ready?\n[]>one: ...\n[]>one: thank you... for burying me.\n[]>one: do it.\n[]>narrator: not hesitating a moment longer, anhedonia presses the needle into your skin, into your muscle. then presses down."
+						},
+						"facts": {
+							"fact_data_by_name": {
+
+							},
+							"meta.visible": false
+						},
+						"header": [],
+						"line_type": 0,
+						"meta.conditionals_visible": false,
+						"meta.facts_visible": false,
+						"meta.indent_level": 0,
+						"meta.is_head_editable": false,
+						"meta.line_index": 13,
+						"meta.selector": {
+							"selected": false
+						}
+					},
+					{
+						"address": "34.14",
+						"conditionals": {
+							"behavior": 0,
+							"behavior_key": "Show",
+							"facts": {
+								"fact_data_by_name": {
+
+								},
+								"meta.visible": false
+							},
+							"meta.visible": false,
+							"operand": 0,
+							"operand_args": [],
+							"operand_key": "AND"
+						},
+						"content": {
+							"active_actors": [
+								"anhedonia",
+								"one",
+								"spectra",
+								"narrator",
+								"interrogator",
+								"torturer",
+								"one+anhedonia",
+								"gods",
+								"clericant",
+								"jailer"
+							],
+							"active_actors_title": "character",
+							"content": "[]>anhedonia: who I am is... who I became with you... is an extension of you\n[]>one: im so glad I got I experience my life with you."
+						},
+						"facts": {
+							"fact_data_by_name": {
+
+							},
+							"meta.visible": false
+						},
+						"header": [],
+						"line_type": 0,
+						"meta.conditionals_visible": false,
+						"meta.facts_visible": false,
+						"meta.indent_level": 0,
+						"meta.is_head_editable": false,
+						"meta.line_index": 14,
+						"meta.selector": {
+							"selected": false
+						}
+					},
+					{
+						"address": "34.15",
+						"conditionals": {
+							"behavior": 0,
+							"behavior_key": "Show",
+							"facts": {
+								"fact_data_by_name": {
+
+								},
+								"meta.visible": false
+							},
+							"meta.visible": false,
+							"operand": 0,
+							"operand_args": [],
+							"operand_key": "AND"
+						},
+						"content": {
+							"active_actors": [
+								"anhedonia",
+								"one",
+								"spectra",
+								"narrator",
+								"interrogator",
+								"torturer",
+								"one+anhedonia",
+								"gods",
+								"clericant",
+								"jailer"
+							],
+							"active_actors_title": "character",
+							"content": "[]>narrator: the liquid is thick, taking a few seconds to be injected all the way, yet the warmth it exudes from the point of entry is almost immediately apparent. when anhedonja has emptied the syringe, you share an abyssaly deep gaze. she extracts the needle, sets it down, and leans in for a parting kiss. you eagerly crane forward, body already heavier than a few seconds ago.\n[]>narrator: as you threaten tk slump, anhedonia catches you, holds you close in her arms, a boulder to rely on.\n[]>one: hold my hand... please..."
+						},
+						"facts": {
+							"fact_data_by_name": {
+
+							},
+							"meta.visible": false
+						},
+						"header": [],
+						"line_type": 0,
+						"meta.conditionals_visible": false,
+						"meta.facts_visible": false,
+						"meta.indent_level": 0,
+						"meta.is_head_editable": false,
+						"meta.line_index": 15,
+						"meta.selector": {
+							"selected": false
+						}
+					},
+					{
+						"address": "34.16",
+						"conditionals": {
+							"behavior": 0,
+							"behavior_key": "Show",
+							"facts": {
+								"fact_data_by_name": {
+
+								},
+								"meta.visible": false
+							},
+							"meta.visible": false,
+							"operand": 0,
+							"operand_args": [],
+							"operand_key": "AND"
+						},
+						"content": {
+							"delay_after": 0,
+							"delay_before": 0,
+							"line_reader.args": [
+								1,
+								3
+							],
+							"line_reader.reverse_args": [
+								1.3,
+								0
+							],
+							"meta.has_reverse": true,
+							"meta.reverse_text": "zoom_to(1.3, 0.0)",
+							"meta.text": "zoom_to(1.0, 3.0)",
+							"meta.validation_status": "OK",
+							"name": "zoom_to",
+							"reverse_name": "zoom_to"
+						},
+						"facts": {
+							"fact_data_by_name": {
+
+							},
+							"meta.visible": false
+						},
+						"header": [],
+						"line_type": 2,
+						"meta.conditionals_visible": false,
+						"meta.facts_visible": false,
+						"meta.indent_level": 0,
+						"meta.is_head_editable": false,
+						"meta.line_index": 16,
+						"meta.selector": {
+							"selected": false
+						}
+					},
+					{
+						"address": "34.17",
+						"conditionals": {
+							"behavior": 0,
+							"behavior_key": "Show",
+							"facts": {
+								"fact_data_by_name": {
+
+								},
+								"meta.visible": false
+							},
+							"meta.visible": false,
+							"operand": 0,
+							"operand_args": [],
+							"operand_key": "AND"
+						},
+						"content": {
+							"active_actors": [
+								"anhedonia",
+								"one",
+								"spectra",
+								"narrator",
+								"interrogator",
+								"torturer",
+								"one+anhedonia",
+								"gods",
+								"clericant",
+								"jailer"
+							],
+							"active_actors_title": "character",
+							"content": "[]>narrator: without a shred kf hesitation, yet with divine gentleness, anhedinia moves a bit. gives you more space to breathe, and fingers to weave together.\n[]>one: I... love...\n[]>narrator: speech is becoming so heavy.\n[]>anhedonia: me too. I love you so fucking much.\n[]>one: thankchu...\n[]>narrator: blackness is starting tk cloud your field kf vision, a descent into the void.\n[]>narrator: you try to hold her in return as much as you can. but all the world has to offer is to relieve its weight. with a cosmic blanket, your conciousness slowly fades away. Anhedonias touch, your blood dripping down your chin and her body, her smell, her love.\n[]>narrator: you trust her, in eternity."
+						},
+						"facts": {
+							"fact_data_by_name": {
+
+							},
+							"meta.visible": false
+						},
+						"header": [],
+						"line_type": 0,
+						"meta.conditionals_visible": false,
+						"meta.facts_visible": false,
+						"meta.indent_level": 0,
+						"meta.is_head_editable": false,
+						"meta.line_index": 17,
 						"meta.selector": {
 							"selected": false
 						}
 					}
 				],
-				"meta.scroll_vertical": 881,
+				"meta.scroll_vertical": 1306,
 				"meta.selected": false,
 				"next": 35,
 				"number": 34,
@@ -14831,7 +15412,7 @@
 				},
 				"lines": [
 					{
-						"address": "34.0",
+						"address": "35.0",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -14890,7 +15471,7 @@
 						}
 					},
 					{
-						"address": "34.1",
+						"address": "35.1",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -14919,7 +15500,7 @@
 								"jailer"
 							],
 							"active_actors_title": "character",
-							"content": "[]>narrator:Mood: Nostalghia - Hypnagogic\n[]>narrator:that evening, you never enter your bedroom. with one gone, this Grove of love and togetherness has grown a glass coating. you are sure, that any fragment of your souk entering that place would shatter it in its entirety.\nyou find comfort on the living room couch instead,  where friends and strangers usually are the Ines to spend their time there. the next few days are difficult. tasks oeep pilingnup, tchorchkjes lining the, bitter reminders of your darlings passing."
+							"content": "[]>narrator:Mood: Nostalghia - Hypnagogic\n[]>narrator:You return to your home, your decrepit and pitiful apartment complex. <lc>Covered in dirt from the impromptu burial you conducted after One passed away, you are utterly depleted- <ap>Physically and mentally.\n[]>narrator:The evening air is heavy now. <lc>Something to choke on.\n[]>narrator:Tonight, you never enter your bedroom. with one gone, this Grove of love and togetherness has grown a glass coating. you are sure, that any fragment of your souk entering that place would shatter it in its entirety.\nyou find comfort on the living room couch instead,  where friends and strangers usually are the Ines to spend their time there. the next few days are difficult. tasks oeep pilingnup, tchorchkjes lining the, bitter reminders of your darlings passing."
 						},
 						"facts": {
 							"fact_data_by_name": {
@@ -14955,7 +15536,7 @@
 				},
 				"lines": [
 					{
-						"address": "35.0",
+						"address": "36.0",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -15014,7 +15595,7 @@
 						}
 					},
 					{
-						"address": "35.1",
+						"address": "36.1",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -15063,7 +15644,7 @@
 						}
 					},
 					{
-						"address": "35.2",
+						"address": "36.2",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -15122,7 +15703,7 @@
 						}
 					},
 					{
-						"address": "35.3",
+						"address": "36.3",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -15171,7 +15752,7 @@
 						}
 					},
 					{
-						"address": "35.4",
+						"address": "36.4",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -15230,7 +15811,7 @@
 						}
 					},
 					{
-						"address": "35.5",
+						"address": "36.5",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -15279,7 +15860,7 @@
 						}
 					},
 					{
-						"address": "35.6",
+						"address": "36.6",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -15338,7 +15919,7 @@
 						}
 					},
 					{
-						"address": "35.7",
+						"address": "36.7",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -15387,7 +15968,7 @@
 						}
 					},
 					{
-						"address": "35.8",
+						"address": "36.8",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -15446,7 +16027,7 @@
 						}
 					},
 					{
-						"address": "35.9",
+						"address": "36.9",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -15495,7 +16076,7 @@
 						}
 					},
 					{
-						"address": "35.10",
+						"address": "36.10",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -15554,7 +16135,7 @@
 						}
 					},
 					{
-						"address": "35.11",
+						"address": "36.11",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -15603,7 +16184,7 @@
 						}
 					},
 					{
-						"address": "35.12",
+						"address": "36.12",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -15662,7 +16243,7 @@
 						}
 					},
 					{
-						"address": "35.13",
+						"address": "36.13",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -15711,7 +16292,7 @@
 						}
 					},
 					{
-						"address": "35.14",
+						"address": "36.14",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -15770,7 +16351,7 @@
 						}
 					},
 					{
-						"address": "35.15",
+						"address": "36.15",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -15819,7 +16400,7 @@
 						}
 					},
 					{
-						"address": "35.16",
+						"address": "36.16",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -15878,7 +16459,7 @@
 						}
 					},
 					{
-						"address": "35.17",
+						"address": "36.17",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -15927,7 +16508,7 @@
 						}
 					},
 					{
-						"address": "35.18",
+						"address": "36.18",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -15972,7 +16553,7 @@
 						}
 					}
 				],
-				"meta.scroll_vertical": 2994,
+				"meta.scroll_vertical": 0,
 				"meta.selected": false,
 				"next": 37,
 				"number": 36,
@@ -15988,7 +16569,7 @@
 				},
 				"lines": [
 					{
-						"address": "36.0",
+						"address": "37.0",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -16047,7 +16628,7 @@
 						}
 					},
 					{
-						"address": "36.1",
+						"address": "37.1",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -16096,7 +16677,7 @@
 						}
 					},
 					{
-						"address": "36.2",
+						"address": "37.2",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -16145,7 +16726,7 @@
 						}
 					},
 					{
-						"address": "36.3",
+						"address": "37.3",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -16194,7 +16775,7 @@
 						}
 					}
 				],
-				"meta.scroll_vertical": 71,
+				"meta.scroll_vertical": 0,
 				"meta.selected": false,
 				"next": 38,
 				"number": 37,
@@ -16210,7 +16791,7 @@
 				},
 				"lines": [
 					{
-						"address": "37.0",
+						"address": "38.0",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -16269,7 +16850,7 @@
 						}
 					},
 					{
-						"address": "37.1",
+						"address": "38.1",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -16293,7 +16874,9 @@
 								"interrogator",
 								"torturer",
 								"one+anhedonia",
-								"gods"
+								"gods",
+								"clericant",
+								"jailer"
 							],
 							"active_actors_title": "character",
 							"content": "[]>narrator:It hurts."
@@ -16316,7 +16899,7 @@
 						}
 					},
 					{
-						"address": "37.2",
+						"address": "38.2",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -16375,7 +16958,7 @@
 						}
 					},
 					{
-						"address": "37.3",
+						"address": "38.3",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -16399,7 +16982,9 @@
 								"interrogator",
 								"torturer",
 								"one+anhedonia",
-								"gods"
+								"gods",
+								"clericant",
+								"jailer"
 							],
 							"active_actors_title": "character",
 							"content": "[]>anhedonia{anhedonia-emotion|crying2}:ONE PLEASE I FUCKING HATE THIS SO MUCH"
@@ -16422,7 +17007,7 @@
 						}
 					},
 					{
-						"address": "37.4",
+						"address": "38.4",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -16481,7 +17066,7 @@
 						}
 					},
 					{
-						"address": "37.5",
+						"address": "38.5",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -16505,7 +17090,9 @@
 								"interrogator",
 								"torturer",
 								"one+anhedonia",
-								"gods"
+								"gods",
+								"clericant",
+								"jailer"
 							],
 							"active_actors_title": "character",
 							"content": "[]>anhedonia{anhedonia-emotion|crying}:I'm sorry."
@@ -16528,7 +17115,7 @@
 						}
 					},
 					{
-						"address": "37.6",
+						"address": "38.6",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -16587,7 +17174,7 @@
 						}
 					},
 					{
-						"address": "37.7",
+						"address": "38.7",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -16611,7 +17198,9 @@
 								"interrogator",
 								"torturer",
 								"one+anhedonia",
-								"gods"
+								"gods",
+								"clericant",
+								"jailer"
 							],
 							"active_actors_title": "character",
 							"content": "[]>narrator:The sun is coming up again.<lc>You attempt to sleep this wave of grief away again."
@@ -16634,7 +17223,7 @@
 						}
 					},
 					{
-						"address": "37.8",
+						"address": "38.8",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -16693,7 +17282,7 @@
 						}
 					},
 					{
-						"address": "37.9",
+						"address": "38.9",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -16717,10 +17306,12 @@
 								"interrogator",
 								"torturer",
 								"one+anhedonia",
-								"gods"
+								"gods",
+								"clericant",
+								"jailer"
 							],
 							"active_actors_title": "character",
-							"content": "[]>narrator:And with the sun somewhere in the sky, you find yourself awake again.\n[]>narrator:the days stretch out before you and retract in their myopic scope again. Already it has become nigh impossible for you to tell how many hours you have lost to grief, how many trips you have taken up the hill to pluck away any bugs, or how many times you have had to wake up without One next to you. <mp>Your rugged inner turmoil has not even allowed you to sleep entire nights. Sometimes you sleep, sometimes you wake. What does it matter anyways?\n[]>narrator:the world probably has moved on- outside your window. but who are you to care for it?"
+							"content": "[]>narrator:And with the sun somewhere in the sky, you find yourself awake again.\n[]>narrator:the days stretch out before you and retract in their myopic scope again. Already it has become nigh impossible for you to tell how many hours you have lost to grief, how many trips you have taken up the hill to pluck away any bugs, or how many times you have had to wake up without One next to you. <mp>Your rugged inner turmoil has not even allowed you to sleep entire nights. Sometimes you sleep, sometimes you wake. What does it matter anyways?\n[]>narrator:the world probably has moved on- outside your window. but who are you to care for it?\n[]>narrator: when you try focus you can almost achieve practice. with the type written poem in front of you, you study it every moment you find the waves washing over your heart bearable enough to do so."
 						},
 						"facts": {
 							"fact_data_by_name": {
@@ -16740,7 +17331,7 @@
 						}
 					},
 					{
-						"address": "37.10",
+						"address": "38.10",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -16799,7 +17390,7 @@
 						}
 					},
 					{
-						"address": "37.11",
+						"address": "38.11",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -16823,7 +17414,9 @@
 								"interrogator",
 								"torturer",
 								"one+anhedonia",
-								"gods"
+								"gods",
+								"clericant",
+								"jailer"
 							],
 							"active_actors_title": "character",
 							"content": "[]>narrator:On the second day, you ask spectra to come along because the thought of being alone again is too much. You take a train out to some suburbs to plant the shrine in a fountain. you bawl your eyes out on the way there. people stare. you dont care. "
@@ -16846,7 +17439,7 @@
 						}
 					}
 				],
-				"meta.scroll_vertical": 1598,
+				"meta.scroll_vertical": 1549,
 				"meta.selected": false,
 				"next": 39,
 				"number": 38,
