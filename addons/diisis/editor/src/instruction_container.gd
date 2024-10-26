@@ -45,8 +45,8 @@ func deserialize(data: Dictionary):
 	_on_hinted_line_edit_text_entered(text_box.text)
 	_on_reverse_instruction_text_box_text_entered(reverse_text_box.text)
 	_on_line_edit_text_entered(reverse_text_box, reverse_text_box.text)
-	find_child("HasReverseCheckBox").button_pressed = data.get("meta.has_reverse", true)
-	_on_has_reverse_check_box_toggled(data.get("meta.has_reverse", true))
+	find_child("HasReverseCheckBox").button_pressed = data.get("meta.has_reverse", false)
+	_on_has_reverse_check_box_toggled(data.get("meta.has_reverse", false))
 
 func set_page_view(view:DiisisEditor.PageView):
 	find_child("InputLockContainer").visible = view != DiisisEditor.PageView.Minimal

@@ -21,7 +21,7 @@ const BACKGROUND_CITY_WALLS := "placeholder.png"
 const BACKGROUND_CLERICANT_INTERROGATION_CHAMBER := "clericant_chambers/clericant_interrogation_chamber.tscn"
 const BACKGROUND_CLERICANT_TORTURE_CHAMBER := "clericant_chambers/clericant_torture_chamber.tscn" # ph
 const BACKGROUND_FIELD := "field/Field.tscn"
-const BACKGROUND_GODS := "placeholder.png" # PH
+const BACKGROUND_GODS := "gods.png" # PH
 const BACKGROUND_HOME_REGULAR := "home_regular.png"
 const BACKGROUND_HOME_REGULAR_NIGHT := "home_regular_night.png"
 const BACKGROUND_HOME_BEDROOM := "home_bedroom.png"
@@ -34,16 +34,21 @@ const BACKGROUND_TRAIN := "train/Train.tscn"
 const BACKGROUND_TRAIN_YARD := "train_yard.png" # PH
 
 # attribution license:
-# https://lonesummer.bandcamp.com/album/there-are-few-tomorrows-for-feeding-our-worries
+# https://rozkol.bandcamp.com/track/iii
+# https://rozkol.bandcamp.com/album/machine-masochist
 const MUSIC_ROOT := "res://game/sounds/music/"
 const MUSIC_MAIN_MENU := "Opal Vessel - Worthless - Alone - 01 Suffocate.ogg"
 const MUSIC_COL8822 := "CØL - What Makes Me Feel Alive - 02 8822.ogg"
-const MUSIC_CONSUME_THE_BODY := "CØL - What Makes Me Feel Alive - 02 8822.ogg"
+const MUSIC_CONSUME_THE_BODY := "Is It Just Me inst.ogg"
+const MUSIC_GENTLE := "Paradise_Found.mp3" # PH
 const MUSIC_GODS := "Paradise_Found.mp3" # PH
 const MUSIC_GRIEF := "Lonesummer - There Are Few Tomorrows for Feeding Our Worries - 12 Despair Will Hold a Place in My Heart, a Bigger One than You Do.ogg" # PH
 const MUSIC_HOPE := "Hope.ogg"
-const MUSIC_INTERROGATION := "Hope.ogg"
+const MUSIC_INTERROGATION := "Hope.ogg" #ph
+const MUSIC_INTRO := "759304__kevp888__240819_2825_fr_church_organ_rehearsal.ogg"
+const MUSIC_LEARNINIG := "759304__kevp888__240819_2825_fr_church_organ_rehearsal.ogg" #ph
 const MUSIC_PANIC := "Curls-inst.ogg" # PH
+const MUSIC_PLACE_CLERICANT_SHRINE := "ROZKOL - Machine Masochist - 01 Machine Masochist.ogg"
 const MUSIC_PRISON := "Curls-inst.ogg"
 const MUSIC_REUNITED := "Hope.ogg" # PH
 const MUSIC_SEX := "Paradise_Found.mp3" # PH

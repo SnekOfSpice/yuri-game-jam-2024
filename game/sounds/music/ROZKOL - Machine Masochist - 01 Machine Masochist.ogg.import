@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://bsblfm7qj6ywr"
+path="res://.godot/imported/ROZKOL - Machine Masochist - 01 Machine Masochist.ogg-efeface56fd409a879611759fd1866df.oggvorbisstr"
+
+[deps]
+
+source_file="res://game/sounds/music/ROZKOL - Machine Masochist - 01 Machine Masochist.ogg"
+dest_files=["res://.godot/imported/ROZKOL - Machine Masochist - 01 Machine Masochist.ogg-efeface56fd409a879611759fd1866df.oggvorbisstr"]
+
+[params]
+
+loop=true
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

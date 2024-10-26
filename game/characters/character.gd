@@ -73,6 +73,8 @@ func on_dialog_line_args_passed(actor_name: String, dialog_line_args: Dictionary
 		new_modulate = 1.0
 	else:
 		new_modulate = 0.8
+	if emotion != "invisible" and actor_name == character_name:
+		visible = true
 	modulate.v = new_modulate
 	if dialog_line_args.has(str(character_name, "-emotion")):
 		var new_emotion : String = dialog_line_args.get(str(character_name, "-emotion"))
@@ -81,8 +83,6 @@ func on_dialog_line_args_passed(actor_name: String, dialog_line_args: Dictionary
 
 
 func set_emotion(emotion_name:String):
-	if character_name == "torturer":
-		print(emotion_name)
 	emotion = emotion_name
 	if emotion_name == "invisible" or emotion_name.is_empty():
 		visible = false

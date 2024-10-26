@@ -404,7 +404,7 @@ auto_pause_duration = 0.4
 blank_names = Array[String](["narrator"])
 name_map = {
 "anhedonia": "Anhedonia",
-"gods": "ÀÁáà",
+"gods": "àÁÀáà",
 "interrogator": "Interrogator",
 "one": "One",
 "spectra": "Spectra",

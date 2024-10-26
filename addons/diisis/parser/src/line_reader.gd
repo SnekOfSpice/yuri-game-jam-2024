@@ -832,9 +832,9 @@ func _process(delta: float) -> void:
 	
 	for call_position : int in call_strings:
 		if (
-			((not called_positions.has(call_position)) and call_position <= last_visible_characters) or
-			((not called_positions.has(call_position)) and text_content.visible_characters == -1) or
-			((call_position >= last_visible_characters and call_position <= text_content.visible_characters) or	text_content.visible_characters == -1)
+			((not called_positions.has(call_position)) and last_visible_characters >= call_position) or
+			(call_position >= last_visible_characters and call_position <= text_content.visible_characters) or
+			text_content.visible_characters == -1
 		):
 			call_from_position(call_position)
 	

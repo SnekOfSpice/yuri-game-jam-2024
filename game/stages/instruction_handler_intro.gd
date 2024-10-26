@@ -88,6 +88,9 @@ func play_chapter_intro(pov_name: String, bottom_text: String, new_background: S
 	emit_signal("start_chapter_cover", pov_name, bottom_text, new_background, zoom, bgm)
 	return true
 
+func zoom_to_str(value, duration):
+	zoom_to(float(value), float(duration))
+	
 func zoom_to(value: float, duration:float) -> bool:
 	GameWorld.camera.zoom_to(value, duration)
 	return false
