@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://cr6aj3bjp2cfx"
+path="res://.godot/imported/Princess Commodore 64 - The Death Of A Lifestyle - 06 special containment.ogg-74b99a3428618a3a689807c766e7eae2.oggvorbisstr"
+
+[deps]
+
+source_file="res://game/sounds/music/Princess Commodore 64 - The Death Of A Lifestyle - 06 special containment.ogg"
+dest_files=["res://.godot/imported/Princess Commodore 64 - The Death Of A Lifestyle - 06 special containment.ogg-74b99a3428618a3a689807c766e7eae2.oggvorbisstr"]
+
+[params]
+
+loop=true
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4
