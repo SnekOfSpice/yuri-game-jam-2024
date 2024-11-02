@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://cl4184si5vnqk"
+path="res://.godot/imported/CØL - Reach Out If You Need Anything - 03 Trauma.ogg-86bade945534ab4513199316f123b028.oggvorbisstr"
+
+[deps]
+
+source_file="res://game/sounds/music/CØL - Reach Out If You Need Anything - 03 Trauma.ogg"
+dest_files=["res://.godot/imported/CØL - Reach Out If You Need Anything - 03 Trauma.ogg-86bade945534ab4513199316f123b028.oggvorbisstr"]
+
+[params]
+
+loop=true
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

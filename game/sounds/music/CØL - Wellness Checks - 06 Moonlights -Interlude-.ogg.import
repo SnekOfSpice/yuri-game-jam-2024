@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://bpp5jr3rlhw6g"
+path="res://.godot/imported/CØL - Wellness Checks - 06 Moonlights -Interlude-.ogg-b0b7f33f2ed74d61b3384b48b87c131c.oggvorbisstr"
+
+[deps]
+
+source_file="res://game/sounds/music/CØL - Wellness Checks - 06 Moonlights -Interlude-.ogg"
+dest_files=["res://.godot/imported/CØL - Wellness Checks - 06 Moonlights -Interlude-.ogg-b0b7f33f2ed74d61b3384b48b87c131c.oggvorbisstr"]
+
+[params]
+
+loop=true
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://dow1tsth47tld"
+path="res://.godot/imported/CØL - Wellness Checks - 02 Reckless.ogg-81e76dded255b27a38a2863b0a12fa8d.oggvorbisstr"
+
+[deps]
+
+source_file="res://game/sounds/music/CØL - Wellness Checks - 02 Reckless.ogg"
+dest_files=["res://.godot/imported/CØL - Wellness Checks - 02 Reckless.ogg-81e76dded255b27a38a2863b0a12fa8d.oggvorbisstr"]
+
+[params]
+
+loop=true
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

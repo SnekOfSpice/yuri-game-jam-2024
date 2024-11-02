@@ -126,7 +126,7 @@ func shake_camera(strength: float) -> bool:
 func set_x_position(character_name: String, index: float, time: float, wait_for_reposition: bool) -> bool:
 	if GameWorld.game_stage:
 		var character : Character = GameWorld.game_stage.get_character(character_name)
-		character.set_x_position(int(index), time)
+		character.set_x_position(int(index), time, wait_for_reposition)
 	# Return true if you want the LineReader to wait until its InstructionHandler has emitted instruction_completed.
 	# (Needs to be called by your code from somewhere.)
 	return wait_for_reposition
@@ -153,4 +153,11 @@ func set_static(level) -> bool:
 	level = float(level)
 	if GameWorld.game_stage:
 		GameWorld.game_stage.set_static(level)
+	return false
+
+
+func wound_fx(shake_intensity: float, splatter_count: float) -> bool:
+	shake_camera(shake_intensity)
+	splatter_blood(splatter_count)
+	play_sfx("kick")
 	return false

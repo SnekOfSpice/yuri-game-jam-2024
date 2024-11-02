@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://d8581to1vddn"
+path="res://.godot/imported/Princess Commodore 64 - The Death Of A Lifestyle - 04 VHS nation.ogg-e97a5b669f1a59a5ebd6b31d880d070c.oggvorbisstr"
+
+[deps]
+
+source_file="res://game/sounds/music/Princess Commodore 64 - The Death Of A Lifestyle - 04 VHS nation.ogg"
+dest_files=["res://.godot/imported/Princess Commodore 64 - The Death Of A Lifestyle - 04 VHS nation.ogg-e97a5b669f1a59a5ebd6b31d880d070c.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4
