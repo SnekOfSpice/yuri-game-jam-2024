@@ -1289,8 +1289,8 @@ func get_compliance_with_template(instruction:String) -> String:
 				return str("Bool argument ", i + 1, " is neither \"true\" nor \"false\"")
 		if template_types[i] == "float":
 			for char in arg_value:
-				if not char in ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "0", "."]:
-					return str("Float argument ", i + 1, " contains non-float character. (0 - 9 and .)")
+				if not char in ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "0", ".", "-"]:
+					return str("Float argument ", i + 1, " contains non-float character. (0 - 9 and . and -)")
 		i += 1
 	
 	return "OK"
@@ -1393,8 +1393,10 @@ func capitalize_sentence_beginnings(input:Array) -> Array:
 				var tag = text.substr(scan_index, tag_end - scan_index + 1)
 				tags_in_text.append(tag)
 			scan_index += 1
-		for prefix in c12n_prefixes:
-			for letter : String in letters:
+		for letter : String in letters:
+			text = text.replace(str("<lc>", letter), str("<lc>", letter.capitalize()))
+			text = text.replace(str("<lc> ", letter), str("<lc> ", letter.capitalize()))
+			for prefix in c12n_prefixes:
 				if prefix != "-":
 					text = text.replace(str(prefix, letter), str(prefix, letter.capitalize()))
 					text = text.replace(str(prefix, "<ap>", letter), str(prefix, "<ap>", letter.capitalize()))

@@ -8,6 +8,7 @@ var rng = RandomNumberGenerator.new()
 var shake_strength := 0.0
 
 var zoom_tween:Tween
+var move_tween:Tween
 
 var sway_intensity := 0.0
 var sway_speed := 1.0
@@ -16,6 +17,7 @@ var sway_intensity_lerp_strength := 0.02
 var screen_shake_hard := false
 
 var start_position := Vector2.ZERO
+var flat_offset := Vector2.ZERO
 
 func _ready() -> void:
 	GameWorld.camera = self
@@ -28,6 +30,7 @@ func serialize() -> Dictionary:
 	result["sway_intensity_lerp_strength"] = sway_intensity_lerp_strength
 	result["position"] = position
 	result["zoom"] = zoom
+	result["flat_offset"] = flat_offset
 	
 	return result
 
@@ -52,6 +55,12 @@ func deserialize(data:Dictionary):
 		position = str_to_vec2(p)
 	else:
 		position = data.get("position", position)
+	
+	var f = data.get("flat_offset")
+	if f is String:
+		flat_offset = str_to_vec2(f)
+	else:
+		flat_offset = data.get("flat_offset", flat_offset)
 	
 	sway_intensity_lerp_strength = data.get("sway_intensity_lerp_strength", sway_intensity_lerp_strength)
 	sway_intensity = data.get("sway_intensity", sway_intensity)
@@ -79,7 +88,7 @@ func _process(delta: float) -> void:
 		get_random_offset() + Vector2(
 			x * sway_intensity,
 			y * sway_intensity),
-		sway_intensity_lerp_strength)
+		sway_intensity_lerp_strength) + flat_offset
 	sway_intensity_lerp_strength = lerp(sway_intensity_lerp_strength, 0.02, 0.03)
 
 func apply_shake(strength:float):
@@ -97,3 +106,9 @@ func zoom_to(value:float, duration:float):
 		zoom_tween.kill()
 	zoom_tween = create_tween()
 	zoom_tween.tween_property(self, "zoom", Vector2(value, value), duration).set_ease(Tween.EASE_OUT).set_trans(Tween.TRANS_QUAD)
+
+func move_to(x:float, y:float, duration:float):
+	if move_tween:
+		move_tween.kill()
+	move_tween = create_tween()
+	move_tween.tween_property(self, "flat_offset", Vector2(x, y), duration).set_ease(Tween.EASE_OUT).set_trans(Tween.TRANS_QUAD)
