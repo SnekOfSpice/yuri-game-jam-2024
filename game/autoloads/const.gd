@@ -65,3 +65,4 @@ const SFX_CLINK := "592005__ueffects__climbing-express-gear.ogg"
 const SFX_GUNSHOT := "417345__inspectorj__gunshot-distant-a.ogg" # PH
 const SFX_KICK := "500912__bertsz__squish-impact.ogg" # PH
 const SFX_SQUELCH := "500912__bertsz__squish-impact.ogg" # PH
+const SFX_VOMIT := "vomit.ogg"

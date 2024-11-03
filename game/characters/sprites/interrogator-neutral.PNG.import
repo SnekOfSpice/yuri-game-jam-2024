@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://5r0qm1351wv8"
-path="res://.godot/imported/interrogator-neutral.PNG-58e5ed94ab75e89f69672e86a59eb521.ctex"
+uid="uid://b3qjauid8bnc1"
+path="res://.godot/imported/interrogator-neutral.png-d577049a33bbc1058a814427da70e434.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://game/characters/sprites/interrogator-neutral.PNG"
-dest_files=["res://.godot/imported/interrogator-neutral.PNG-58e5ed94ab75e89f69672e86a59eb521.ctex"]
+source_file="res://game/characters/sprites/interrogator-neutral.png"
+dest_files=["res://.godot/imported/interrogator-neutral.png-d577049a33bbc1058a814427da70e434.ctex"]
 
 [params]
 
