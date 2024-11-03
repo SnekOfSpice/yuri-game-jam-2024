@@ -1133,7 +1133,7 @@ func read_next_chunk():
 				var tag_length := bbcode_removed_text.find(">", scan_index) - scan_index + 1
 				var tag_string := bbcode_removed_text.substr(scan_index, tag_length)
 				bbcode_removed_text = bbcode_removed_text.erase(scan_index, tag_length)
-				call_strings[scan_index - tag_buffer] = tag_string
+				call_strings[scan_index] = tag_string
 				scan_index = max(scan_index - tag_string.length(), 0)
 				target_length -= tag_string.length()
 				tag_buffer += tag_string.length()

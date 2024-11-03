@@ -32,6 +32,7 @@ var callable_upon_blocker_clear:Callable
 
 @onready var camera = $Camera2D
 @onready var overlay_static = find_child("Static").get_node("ColorRect")
+@onready var overlay_sun = find_child("Sun").get_node("ColorRect")
 
 func _ready():
 	
@@ -58,6 +59,8 @@ func _ready():
 	grab_focus()
 	
 	tree_exiting.connect(on_tree_exit)
+	
+	overlay_sun.get_material().set_shader_parameter("fill_amount", -1.0)
 
 func on_tree_exit():
 	GameWorld.game_stage = null
@@ -81,6 +84,10 @@ func on_instruction_completed(
 func go_to_main_menu(_unused):
 	GameWorld.stage_root.change_stage(CONST.STAGE_MAIN)
 
+
+func _process(delta: float) -> void:
+	if overlay_sun.material.get_shader_parameter("fill_amount") > -1:
+		overlay_sun.material.set_shader_parameter("background", get_viewport().get_texture())
 
 
 func _input(event: InputEvent) -> void:
@@ -240,6 +247,8 @@ func serialize() -> Dictionary:
 	
 	result["start_cover_visible"] = find_child("StartCover").visible
 	result["static"] = overlay_static.get_material().get_shader_parameter("intensity")
+	result["sun_steps"] = overlay_static.get_material().get_shader_parameter("steps")
+	result["sun_fill_amount"] = overlay_static.get_material().get_shader_parameter("fill_amount")
 	
 	result["camera"] = $Camera2D.serialize()
 	
@@ -284,6 +293,8 @@ func deserialize(data:Dictionary):
 			return
 		find_child("TextContainer").position = fixed_position
 	set_static(data.get("static", 0.0))
+	overlay_sun.get_material().set_shader_parameter("fill_amount", data.get("sun_fill_amount", -1.0))
+	overlay_sun.get_material().set_shader_parameter("steps", data.get("sun_steps", 10.0))
 
 func remove_blocker():
 	blockers -= 1
@@ -356,3 +367,7 @@ func set_static(level:float):
 	overlay_static.get_material().set_shader_parameter("intensity", level)
 	overlay_static.get_material().set_shader_parameter("border_size", 1 - level)
 	
+
+
+func _on_instruction_handler_sun(property: String, value: float) -> void:
+	overlay_sun.get_material().set_shader_parameter(property, value)

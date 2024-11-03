@@ -18,6 +18,8 @@ signal start_hide_cg()
 signal splatter(amount:int)
 signal start_chapter_cover(pov_name:String)
 
+signal sun(property:String, value:float)
+
 func play_sfx(_name:String):
 	Sound.play_sfx(_name)
 	return false
@@ -170,4 +172,13 @@ func wound_fx(shake_intensity: float, splatter_count: float) -> bool:
 func control_camera(zoom: float, x: float, y: float, duration: float) -> bool:
 	zoom_to(zoom, duration)
 	move_camera_to(x, y, duration)
+	return false
+
+
+func set_sun(property: String, value: float) -> bool:
+	emit_signal("sun", property, value)
+	return false
+
+func set_sun_str(property: String, value: String) -> bool:
+	set_sun(property, float(value))
 	return false
