@@ -1,6 +1,6 @@
 {
 	"editor": {
-		"current_page_number": 8,
+		"current_page_number": 9,
 		"page_view": 0,
 		"text_size_id": 3
 	},
@@ -94,7 +94,8 @@
 				"suspended3"
 			],
 			"spectra-emotion": [
-				"neutral"
+				"neutral",
+				"invisible"
 			],
 			"torturer-emotion": [
 				"neutral"
@@ -6371,10 +6372,10 @@
 							"line_reader.args": [
 								2,
 								1,
-								2,
+								3,
 								false,
 								"spectra_apartment",
-								"3.0"
+								"spectra"
 							],
 							"line_reader.reverse_args": [
 								"INVALID ARGUMENT FOR fade_in",
@@ -6386,7 +6387,7 @@
 							],
 							"meta.has_reverse": false,
 							"meta.reverse_text": "",
-							"meta.text": "black_fade(2.0, 1.0, 2.0, false, spectra_apartment, 3.0)",
+							"meta.text": "black_fade(2.0, 1.0, 3.0, false, spectra_apartment, spectra)",
 							"meta.validation_status": "OK",
 							"name": "black_fade",
 							"reverse_name": ""
@@ -6713,7 +6714,7 @@
 						}
 					}
 				],
-				"meta.scroll_vertical": 2108,
+				"meta.scroll_vertical": 503,
 				"meta.selected": false,
 				"next": 10,
 				"number": 9,
@@ -7039,7 +7040,7 @@
 								"jailer"
 							],
 							"active_actors_title": "character",
-							"content": "[]>narrator:the small patches of shrubbery surrounding the bench are animated by the brass grip [sth like that? fast grip and rut?] of the mountaintop breeze.\n[]>narrator:butterflies find themselves carried to and from by the currents of air, and they in turn provide ample animation to the [low growing] [plants] around you.\n[]>one:the dancing of butterflies animates the leaves around you,"
+							"content": "[]>narrator:The small patches of shrubbery surrounding the bench are animated by the brutal drag of the mountaintop breeze.\n[]>narrator:Butterflies find themselves carried to and from by the currents of air, and they in turn provide ample animation to the low-growing plants around you.\n[]>narrator:The dancing of butterflies and fireflies in turn animates the leaves and air around you, everything seeming to want to escape skywards. <mp>In time, you will pull the sky towards you yet."
 						},
 						"facts": {
 							"fact_data_by_name": {
@@ -7088,7 +7089,7 @@
 								"jailer"
 							],
 							"active_actors_title": "character",
-							"content": "[]>anhedonia:There's a lot of hurt on that horizon."
+							"content": "[]>anhedonia:There's a lot of hurt on that horizon.\n[]>one:And in this body, too...\n[]>narrator:These changes are- hurting. hurtful, even, perhaps? every day, your skin is broken in new places, small buds of stellar flesh emerging.\n[]>narrator:And they are a signifier of your body being used up in the endeavor."
 						},
 						"facts": {
 							"fact_data_by_name": {
@@ -7188,7 +7189,7 @@
 								"jailer"
 							],
 							"active_actors_title": "character",
-							"content": "[]>one{one-emotion|neutral}: When I disappear, how will you feel?\n[]>narrator: Anhedonia's eyelids slump slightly, eyes drooping downwards.\n[]>anhedonia: Sigh...\n[]>one: ...\n[]>anhedonia:... Sad, definitely.\n[]>one: ... I know.\n[]>one: ...\n[]>one: Not angry?\n[]>narrator: Anhedonia looks back up at you.\n[]>anhedonia{anhedonia-emotion|concerned}: No, why should I be?\n[]>one: Oh you know, because I'll be leaving you to pick up the pieces, <ap>again. <lc>...<lc>This time for good.\n[]>anhedonia: One... This isn't you breaking something for me to clean up. You're not doing anything wrong.\n[]>one:I know... but...\n[]>one: It feels too much like ground truth to me- <mp>The fact that I don't really feel bad.\n[]>one:And that hurts too, like I don't value your feelings...\n[]>one{one-emotion|crying}:But I do. <lc>I truly do.\n[]>anhedonia{anhedonia-emotion|happy}: I know. I treasure you too.<lc>But I also know that this is what you want.\n[]>narrator: You gesture ourwards.\n[]>one: All of this just inspires so much hate. You're the only remaining love here and I'll kill you with this.\n[]>anhedonia:I know, darling. And I am fine with that. <lc>I love you.\n[]>one:You're so sweet...\n[]>one: You just live in my heart too, just as the Godseed.\n[]>anhedonia: Thank you for letting me be- Exist in your heart. <mp>But you are so much grander than me. You can have the world, and I want you to.\n[]>narrator: Your grip on Anhedonia's hands weakens. Hers fastens in response.\n[]>anhedonia{one-emotion|listening}:And I am part of that world I want you to have. <mp>So do with me, and with it, as you please."
+							"content": "[]>one{one-emotion|neutral}: When I disappear, how will you feel?\n[]>narrator{anhedonia-emotion|sad}: Anhedonia's eyelids slump slightly, eyes drooping downwards.\n[]>anhedonia: Sigh...\n[]>one: ...\n[]>anhedonia:... Sad, definitely.\n[]>one: ... I know.\n[]>one: ...\n[]>one: Not angry?\n[]>narrator: Anhedonia looks back up at you.\n[]>anhedonia{anhedonia-emotion|concerned}: No, why should I be?\n[]>one: Oh you know, because I'll be leaving you to pick up the pieces, <ap>again. <lc>...<lc>This time for good.\n[]>anhedonia: One... This isn't you breaking something for me to clean up. You're not doing anything wrong.\n[]>one:I know... but...\n[]>one: It feels too much like ground truth to me- <mp>The fact that I don't really feel bad.\n[]>one:And that hurts too, like I don't value your feelings...\n[]>one{one-emotion|crying}:But I do. <lc>I truly do.\n[]>anhedonia{anhedonia-emotion|happy}: I know. I treasure you too.<lc>But I also know that this is what you want.\n[]>narrator: You gesture ourwards.\n[]>one: All of this just inspires so much hate. You're the only remaining love here and I'll kill you with this.\n[]>anhedonia:I know, darling. And I am fine with that. <lc>I love you.\n[]>one:You're so sweet...\n[]>one: You just live in my heart too, just as the Godseed.\n[]>anhedonia: Thank you for letting me be- Exist in your heart. <mp>But you are so much grander than me. You can have the world, and I want you to.\n[]>narrator: Your grip on Anhedonia's hands weakens. Hers fastens in response.\n[]>anhedonia{one-emotion|listening}:And I am part of that world I want you to have. <mp>So do with me, and with it, as you please."
 						},
 						"facts": {
 							"fact_data_by_name": {
@@ -7365,7 +7366,7 @@
 						}
 					}
 				],
-				"meta.scroll_vertical": 1639,
+				"meta.scroll_vertical": 897,
 				"meta.selected": false,
 				"next": 12,
 				"number": 11,
@@ -9563,7 +9564,7 @@
 								"jailer"
 							],
 							"active_actors_title": "character",
-							"content": "[]>narrator:Day in day out, One would toil away at the shrines, and you woud go about supporting her endeavors. Prepare meals. Make sure she actually eats them. Keep the apartment from falling apart and stay up to date on political developments. Occasionally exchange a few electronic telegrams with Spectra, since all your other contacts have went away over time- In various definitions of that term.\n[]>narrator:The sky is overcast with a thick blanket of sickly-green and grey clouds. It had been a while since you two went out for a date like this, owing to much of One's occupation with the oxylith shrines. \n[]>narrator:This foggy blanket chokes all life from the world. A perfect setting to soothe the soul and warm the body with pizza.\n[]>narrator{anhedonia-emotion|happy,one-emotion|joy}:As you walk down one of the main artiries of the city, the clouds slowly lessen their chokehold, making space for the almost caustic sun rays to pierce the sky, and illuminate your walk. It feels warm on your skin, and on One's, when you brush your arms together.\n[]>one: Hehe. Date time!\n[]>anhedonia: Yay.\n[]>anhedonia: How did it go today?\n[]>one: Pretty good. Built up two more blanks today, ready for skulpting and stuff.\n[]>anhedonia: I'm glad. Proud of you.\n[]>one: Ehehe.\n[]>one: Will work more tomorrow obviously.\n[]>anhedonia: Of course you will.\n[]>one: Also found a really neat music release!\n[]>narrator: You continue chatting on your way to the pizzaria, talking about One's current creative processes, and you keeping the world together all around.\n[]>narrator: The sky never really clears of its stone-thick clouds, still overcast when you finally take your seats.\n[]>narrator: You get yourselves two massive pizzas, each freely taken from by either of you, occasionally even fed to the other. <mp>One and you might as well consider yourselves one shared metabolism. <lc>When you hold a piece to her mouth, you make sure to get lost in her face every time, and occasionally brush against her lips and cheeks. <mp>She does the same, eliciting small squeaks from you, while she tends to hum in comfy bliss. <lc>You generously keep repeating this spiel, showering each other in delicate affections whenever you can, legs pressed together, hands caressing one another between bites.\n[]>narrator: You take forever to actually finish your food.\n[]>narrator: That's ok."
+							"content": "[]>narrator:Day in day out, One would toil away at the shrines, and you woud go about supporting her endeavors. Prepare meals. Make sure she actually eats them. Keep the apartment from falling apart and stay up to date on political developments. Occasionally exchange a few electronic telegrams with Spectra, since all your other contacts have went away over time- In various definitions of that term.\n[]>narrator:You often go out and buy lots of nourishing fruit, when available. <mp>Difficult and expensive to come by, but everything for your wife and her work. <ap>Pomegrenates, mandarins, various nuts and root veggies.\n[]>narrator:The sky is overcast with a thick blanket of sickly-green and grey clouds. It had been a while since you two went out for a date like this, owing to much of One's occupation with the oxylith shrines. \n[]>narrator:This foggy blanket chokes all life from the world. A perfect setting to soothe the soul and warm the body with pizza.\n[]>narrator{anhedonia-emotion|happy,one-emotion|joy}:As you walk down one of the main artiries of the city, the clouds slowly lessen their chokehold, making space for the almost caustic sun rays to pierce the sky, and illuminate your walk. It feels warm on your skin, and on One's, when you brush your arms together.\n[]>one: Hehe. Date time!\n[]>anhedonia: Yay.\n[]>anhedonia: How did it go today?\n[]>one: Pretty good. Built up two more blanks today, ready for skulpting and stuff.\n[]>anhedonia: I'm glad. Proud of you.\n[]>one: Ehehe.\n[]>one: Will work more tomorrow obviously.\n[]>anhedonia: Of course you will.\n[]>one: Also found a really neat music release!\n[]>narrator: You continue chatting on your way to the pizzaria, talking about One's current creative processes, and you keeping the world together all around.\n[]>narrator: The sky never really clears of its stone-thick clouds, still overcast when you finally take your seats.\n[]>narrator: You get yourselves two massive pizzas, each freely taken from by either of you, occasionally even fed to the other. <mp>One and you might as well consider yourselves one shared metabolism. <lc>When you hold a piece to her mouth, you make sure to get lost in her face every time, and occasionally brush against her lips and cheeks. <mp>She does the same, eliciting small squeaks from you, while she tends to hum in comfy bliss. <lc>You generously keep repeating this spiel, showering each other in delicate affections whenever you can, legs pressed together, hands caressing one another between bites.\n[]>narrator: You take forever to actually finish your food.\n[]>narrator: That's ok."
 						},
 						"facts": {
 							"fact_data_by_name": {
@@ -9779,7 +9780,7 @@
 								"jailer"
 							],
 							"active_actors_title": "character",
-							"content": "[]>narrator:Eventually, the sun has taken its course across the sky and you across the city. Back home and coming down from your outing spanning the afternoon and evening hours, you find yourselves simply basking in each other's presence.\n[]>narrator:Without an illuminated celestial body overhead near the planet, you are dependent on the faint glow of light pollution to make out One's silhouette against the window\n[]>anhedonia:Seeing you in these accursed city lights, it does something for me.\n[]>one:Feeling poetic?\n[]>anhedonia{anhedonia-emotion|smug}:I always am."
+							"content": "[]>narrator:Eventually, the sun has taken its course across the sky and you across the city. Back home and coming down from your outing spanning the afternoon and evening hours, you find yourselves simply basking in each other's presence.\n[]>narrator:Without an illuminated celestial body overhead near the planet, you are dependent on the faint glow of light pollution to make out One's silhouette against the window.\n[]>anhedonia:Seeing you in these accursed city lights, it does something for me.\n[]>one:Art of poetry also struck you, huh.\n[]>anhedonia{anhedonia-emotion|smug}:Sometimes. <mp>Having a wife helps elicit delicate prose.\n[]>anhedonia{one-emotion|joy}:Your hair is the closest I'll ever get to seeing the moon. Your eyes are like the sun.\n[]>anhedonia:I love you.\n[]>one:I love you too."
 						},
 						"facts": {
 							"fact_data_by_name": {
@@ -9848,7 +9849,7 @@
 						}
 					}
 				],
-				"meta.scroll_vertical": 809,
+				"meta.scroll_vertical": 1029,
 				"meta.selected": false,
 				"next": 16,
 				"number": 15,
@@ -11093,7 +11094,7 @@
 								"jailer"
 							],
 							"active_actors_title": "character",
-							"content": "[]>narrator:Thump. <ap>Thump. <ap>Thump. <ap>One's heartbeat pounds against your abdomen and crotch as she lays there, arms wrapped around your waist, face buried in your chest. <mp>Your hands are scratching across her back, occasionally cupping her adorable squat butt at the end of your reach. <lc>You each share intermittent sobs and comforting hugs and squeezes with the other, struggling to console one another. <mp>The air is heavy with grief- <ap>Only lightly interrupted by the knowledge that you have each other in this- <ap>For now. <lc>You sometimes feel less alone in this, before the weight of the world crashes back onto you.\n[]>narrator: You nuzzle her head as she cries herself to sleep for good tonight."
+							"content": "[]>narrator:Thump. <ap>Thump. <ap>Thump. <mp>One's heartbeat pounds against your abdomen and crotch as she lays there, arms wrapped around your waist, face buried in your chest. <mp>Your hands are scratching across her back, occasionally cupping her adorable squat butt at the end of your reach. <lc>You each share intermittent sobs and comforting hugs and squeezes with the other, struggling to console one another. <mp>The air is heavy with grief- <ap>Only lightly interrupted by the knowledge that you have each other in this- <ap>For now. <lc>You sometimes feel less alone in this, before the weight of the world crashes back onto you.\n[]>narrator: You nuzzle her head as she cries herself to sleep for good tonight."
 						},
 						"facts": {
 							"fact_data_by_name": {
@@ -11113,7 +11114,7 @@
 						}
 					}
 				],
-				"meta.scroll_vertical": 670,
+				"meta.scroll_vertical": 250,
 				"meta.selected": false,
 				"next": 20,
 				"number": 19,
@@ -17963,7 +17964,7 @@
 				},
 				"lines": [
 					{
-						"address": "28.0",
+						"address": "29.0",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -17986,7 +17987,7 @@
 								4,
 								3,
 								true,
-								"home_regular",
+								"bench_night",
 								"working"
 							],
 							"line_reader.reverse_args": [
@@ -17999,7 +18000,7 @@
 							],
 							"meta.has_reverse": false,
 							"meta.reverse_text": "",
-							"meta.text": "black_fade(6.0, 4.0, 3.0, true, home_regular, working)",
+							"meta.text": "black_fade(6.0, 4.0, 3.0, true, bench_night, working)",
 							"meta.validation_status": "OK",
 							"name": "black_fade",
 							"reverse_name": ""
@@ -18022,7 +18023,7 @@
 						}
 					},
 					{
-						"address": "28.1",
+						"address": "29.1",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -18077,7 +18078,7 @@
 						}
 					},
 					{
-						"address": "28.2",
+						"address": "29.2",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -18106,7 +18107,7 @@
 								"jailer"
 							],
 							"active_actors_title": "character",
-							"content": "[]>one: Im so sorry I struggled so hard with showing you affection.\n[]>anhedonia: It's fine if you're not as eloquent. Aalso if you sshow it through building these shrines.\n[]>anhedonia: I still feel you.\n[]>one: still feel me huh?\n[]>narrator:you share a giggle. \n[]>anhedonia:  and your souls intent in this."
+							"content": "[]>one: I feel like... I'm sorry I struggled so hard with showing you affection.\n[]>one:...\n[]>anhedonia:You... didn't?\n[]>one:But I'm leaving you to die.\n[]>anhedonia:One. I'm here of my own volition.\n[]>anhedonia: It's fine if you're not as eloquent, but you are doing fine there too. Aalso if you sshow it through building these shrines. <lc>I've said it in the past and will say it again. Self-actualizing is so fucking hot.\n[]>anhedonia: I still feel you.\n[]>one: still feel me huh?\n[]>narrator:you share a giggle. \n[]>anhedonia: ..and your soul's intent in this."
 						},
 						"facts": {
 							"fact_data_by_name": {
@@ -18126,7 +18127,7 @@
 						}
 					},
 					{
-						"address": "28.3",
+						"address": "29.3",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -18173,9 +18174,58 @@
 						"meta.selector": {
 							"selected": false
 						}
+					},
+					{
+						"address": "29.4",
+						"conditionals": {
+							"behavior": 0,
+							"behavior_key": "Show",
+							"facts": {
+								"fact_data_by_name": {
+
+								},
+								"meta.visible": false
+							},
+							"meta.visible": false,
+							"operand": 0,
+							"operand_args": [],
+							"operand_key": "AND"
+						},
+						"content": {
+							"active_actors": [
+								"anhedonia",
+								"one",
+								"spectra",
+								"narrator",
+								"interrogator",
+								"torturer",
+								"one+anhedonia",
+								"gods",
+								"clericant",
+								"jailer"
+							],
+							"active_actors_title": "character",
+							"content": "[]>narrator: she cranes your head up into the lightless sky. a howling black blanket enveloping your home.\n[]>one: no one but us\n[]>anhedonia: yea... we really only ever had each other.\n[]>narrator: she gives your hand a squeeze.\n[]>one: the moon silently left. lets at least leave... less quiet.\n[]>anhedonia: let's do that."
+						},
+						"facts": {
+							"fact_data_by_name": {
+
+							},
+							"meta.visible": false
+						},
+						"header": [],
+						"line_type": 0,
+						"meta.conditionals_visible": false,
+						"meta.facts_visible": false,
+						"meta.indent_level": 0,
+						"meta.is_head_editable": false,
+						"meta.line_index": 4,
+						"meta.selector": {
+							"selected": false
+						}
 					}
 				],
-				"meta.scroll_vertical": 0,
+				"meta.scroll_vertical": 298,
 				"meta.selected": false,
 				"next": 30,
 				"number": 29,
@@ -25250,7 +25300,7 @@
 				},
 				"lines": [
 					{
-						"address": "39.0",
+						"address": "40.0",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -25309,7 +25359,7 @@
 						}
 					},
 					{
-						"address": "39.1",
+						"address": "40.1",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -25358,7 +25408,7 @@
 						}
 					},
 					{
-						"address": "39.2",
+						"address": "40.2",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -25417,7 +25467,7 @@
 						}
 					},
 					{
-						"address": "39.3",
+						"address": "40.3",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -25466,7 +25516,7 @@
 						}
 					},
 					{
-						"address": "39.4",
+						"address": "40.4",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -25525,7 +25575,7 @@
 						}
 					},
 					{
-						"address": "39.5",
+						"address": "40.5",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -25574,7 +25624,7 @@
 						}
 					},
 					{
-						"address": "39.6",
+						"address": "40.6",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -25633,7 +25683,7 @@
 						}
 					},
 					{
-						"address": "39.7",
+						"address": "40.7",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -25682,7 +25732,7 @@
 						}
 					},
 					{
-						"address": "39.8",
+						"address": "40.8",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -25741,7 +25791,7 @@
 						}
 					},
 					{
-						"address": "39.9",
+						"address": "40.9",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -25770,7 +25820,7 @@
 								"jailer"
 							],
 							"active_actors_title": "character",
-							"content": "[]>narrator:And with the sun somewhere in the sky, you find yourself awake again.\n[]>narrator:The days stretch out before you and retract in their myopic scope again. <mp>Already it has become nigh impossible for you to tell how many hours you have lost to grief, how many trips you have taken up the hill to pluck away any bugs, or how many times you have had to wake up without One next to you. <mp>Your rugged inner turmoil has not even allowed you to sleep entire nights. <mp>Sometimes you sleep, sometimes you wake. <mp>What does it matter anyways?\n[]>narrator:The world probably has moved on- Outside your window. But who are you to care for it?\n[]>narrator: When you try focus you can almost achieve practice. With the typewritten poem in front of you, you study it every moment you find the waves washing over your heart bearable enough to do so."
+							"content": "[]>narrator:And with the sun somewhere in the sky, you find yourself awake again.\n[]>narrator:The days stretch out before you and retract in their myopic scope again. <mp>Already it has become nigh impossible for you to tell how many hours you have lost to grief, how many trips you have taken up the hill to pluck away any bugs, or how many times you have had to wake up without One next to you. <mp>Your rugged inner turmoil has not even allowed you to sleep entire nights. <mp>Sometimes you sleep, sometimes you wake. <mp>What does it matter anyways?\n[]>narrator:The world probably has moved on- Outside your window. But who are you to care for it?\n[]>narrator: When you try focus you can almost achieve practice. With the typewritten poem in front of you, you study it every moment you find the waves washing over your heart bearable enough to do so.\n[]>narrator: By now, a message rests in the telegram receptacle. It has been there for some hours before you eventually mount the courage to glance a peek. The absender makes you less tense, if just a bit. <lc>Spectra.\n[]>spectra{spectra-emotion|invisible}:Isolation will kill you before the sun does. Call me. I will be there."
 						},
 						"facts": {
 							"fact_data_by_name": {
@@ -25790,7 +25840,7 @@
 						}
 					},
 					{
-						"address": "39.10",
+						"address": "40.10",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -25849,7 +25899,7 @@
 						}
 					},
 					{
-						"address": "39.11",
+						"address": "40.11",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -25904,7 +25954,7 @@
 						}
 					},
 					{
-						"address": "39.12",
+						"address": "40.12",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -25959,7 +26009,7 @@
 						}
 					},
 					{
-						"address": "39.13",
+						"address": "40.13",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -25988,7 +26038,7 @@
 								"jailer"
 							],
 							"active_actors_title": "character",
-							"content": "[]>narrator{anhedonia-emotion|neutral,spectra-emotion|neutral}:On the second day of work- it is impossible to know which actual day it is- you ask Spectra to come along because the thought of being alone again is too much. You take a train out to some suburbs to plant the shrine in a fountain. you bawl your eyes out on the way there. people stare. you dont care. \n[]>spectra: bereavement is a universal aspect of love\n[]>spectra: but one wouldn't want you to grieve forever. and especially not to go into that freitod bereaved.\n[]>spectra: grief cuts you off from the dead. you ought to find joy in the memory, let go of the idolization in your mind, and see the concrete facts.\n[]>spectra: you gave her the end she desired, and you are on your way to complete your lives' goal.\n[]>spectra: you, and she, and I, could not be more proud of you- if you choose to go into that oblivion with a smile."
+							"content": "[]>narrator{anhedonia-emotion|crying2,spectra-emotion|neutral}:On the second day of work- it is impossible to know which actual day it is- you ask Spectra to come along because the thought of being alone again is too much. <mp>You take a train out to some suburbs to plant the shrine in a fountain. <mp>You bawl your eyes out on the way there. <mp>People stare. <mp>You don't care. \n[]>spectra:Oh Anhedonia... Bereavement is a universal aspect of love.\n[]>anhedonia:Fuck that. <mp>Why... Why does it have to hurt so much then?\n[]>spectra: You loved each other, didn't you?\n[]>anhedonia: Still do.\n[]>spectra: Precisely.\n[]>spectra: Your heart is right to weep. <ap>And hurt and do all those horrible things to your psyche.\n[]>anhedonia: I guess...\n[]>anhedonia: I get so many nightmares, Spectra.\n[]>anhedonia: I don't know what fucking day it is or how many have passed since she died. I... I just try to... work.\n[]>anhedonia: Work as quickly as possible because if I fuck this up I will actually be so lost.\n[]>narrator: And you currently already struggle enough with navigating the area to the shrine location.\n[]>anhedonia: Sec...\n[]>spectra: Take the time you need.\n[]>narrator: You check your notes, then match them with your surroundings. Still on track.\n[]>anhedonia: Good...\n[]>spectra: Well...\n[]>spectra: Sun me through this operation, what are we doing here, exactly?\n[]>anhedonia: you don't know?\n[]>spectra: One never told me details. neither did you.\n[]>spectra: I but know about the end of all things approaching with you two.\n[]>spectra: well... all things... here.\n[]>anhedonia: ugh... so...\n[]>anhedonia: we're... gonna...\n[]>narrator: you struggle to articulate anything pertaining to One. with the help of gestures, you expain to Spectra\n[]>anhedonia: sun... down\n[]>anhedonia: fuck the clericants...\n[]>anhedonia: ...\n[]>anhedonia: yea...\n[]>anhedonia: Struggling to talk about... this...\n[]>spectra: That's fine. I know enough anyways.\n[]>narrator: You continue the rest of the journey in silence, another gold passing until you reach the site, at which point you march forward without regard for Spectra. Focus solely on sculpting the resting site for the oxylith."
 						},
 						"facts": {
 							"fact_data_by_name": {
@@ -26006,9 +26056,156 @@
 						"meta.selector": {
 							"selected": false
 						}
+					},
+					{
+						"address": "40.14",
+						"conditionals": {
+							"behavior": 0,
+							"behavior_key": "Show",
+							"facts": {
+								"fact_data_by_name": {
+
+								},
+								"meta.visible": false
+							},
+							"meta.visible": false,
+							"operand": 0,
+							"operand_args": [],
+							"operand_key": "AND"
+						},
+						"content": {
+							"active_actors": [
+								"anhedonia",
+								"one",
+								"spectra",
+								"narrator",
+								"interrogator",
+								"torturer",
+								"one+anhedonia",
+								"gods",
+								"clericant",
+								"jailer"
+							],
+							"active_actors_title": "character",
+							"content": "----\nset up\n\n\n[]>spectra: you knew how to live for one. now what do you live for?\n[]>spectra: her afterimage?\n[]>spectra: an idol of her shape?\n[]>anhedonia: idk... I just...\n[]>anhedonia: We said we'd do this. So we're doing this.\n[]>narrator: You set down the shrine.\n[]>anhedonia: One sec.\n[]>narrator: With a moderate amount of practice under your belt, you once again bolt and fuse the shrine to theground. It stands in the shade of an old willow out here, not hidden from sight, but also not able to be removed safely.\n[]>narrator: terrorism is kinda cool sometimes.\n[]>narrator: Getting out the blood phial again, you inscribe the suncalling sigil and another line of the poem upon the shrine, a burning glow fusing into the concrete-like material.\n[]>narrator: You whisper the line to yourself, then turn back to Spectra.\n[]>anhedonia: Done. Let's leave.\n\nquick black fade"
+						},
+						"facts": {
+							"fact_data_by_name": {
+
+							},
+							"meta.visible": false
+						},
+						"header": [],
+						"line_type": 0,
+						"meta.conditionals_visible": false,
+						"meta.facts_visible": false,
+						"meta.indent_level": 0,
+						"meta.is_head_editable": false,
+						"meta.line_index": 14,
+						"meta.selector": {
+							"selected": false
+						}
+					},
+					{
+						"address": "40.15",
+						"conditionals": {
+							"behavior": 0,
+							"behavior_key": "Show",
+							"facts": {
+								"fact_data_by_name": {
+
+								},
+								"meta.visible": false
+							},
+							"meta.visible": false,
+							"operand": 0,
+							"operand_args": [],
+							"operand_key": "AND"
+						},
+						"content": {
+							"active_actors": [
+								"anhedonia",
+								"one",
+								"spectra",
+								"narrator",
+								"interrogator",
+								"torturer",
+								"one+anhedonia",
+								"gods",
+								"clericant",
+								"jailer"
+							],
+							"active_actors_title": "character",
+							"content": "[]>spectra: so how was the day for you?\n[]>anhedonia: well. OK. Hanging out with you... I think... grief never ends. It always just morphs- turns a new page every single sunrise.\n[]>anhedonia: you make it more bearable.\n[]>spectra: I'm glad.\n[]>spectra: ...\n[]>spectra: I do have to prepare my leave soon.\n[]>anhedonia: I know...\n[]>spectra: anhedonia, I do not aspire to become ash like you.\n[]>anhedonia: yea that's... OK. hanging out with you is... good.\n[]>spectra: it is.\n[]>spectra: will u be alright?\n[]>anhedonia: I think so. Just a few more days\n[]>spectra: good.\n[]>spectra: ...\n[]>spectra: how does it feel?\n[]>anhedonia: ...?\n[]>spectra: one...?\n[]>anhedonia: distant...\n[]>anhedonia: so... <mp>so... distant.\n[]>spectra: I thought she was in your heart?\n[]>anhedonia: ugh... what are yo ugetting at?\n[]>anhedonia: sorry.\n\n[]>spectra: you nust do well to remember her fondly. that's how she becomes actually close to you again.\n[]>anhedonia: bullshit.\n[]>spectra: her for mis gone, anhedonia, of course.\n[]>spectra: but the past is not gne. not yet.\n[]>spectra: you may build upon it until the bitter end.\n[]>anhedonia: and... and... what for?\n[]>anhedonia: what for?\n[]>spectra: inthought yiu had joy and happiness together\n[]>anhedonia: we did m.... but... how.... how can I just continue living\n[]>spectra: it's just a few more days isn't it\n[]>anhedonia: even that feels impossible\n[]>spectra: but it isn't\n[]>anhedonia: ...\n[]>spectra: it's not impossible. you can finish this. lc what did one leave you?\n[]>anhedonia: ...\n[]>anhedonia: I don't want to say pain. I don't want to fucking slander her\n[]>spectra: then don't\n[]>anhedonia: she.... lc joy and happy memories and closeness \n[]>spectra: ...\n[]>anhedonia: Ambition drive and\n[]>spectra: ...\n[]>anhedonia: something to live for \n[]>spectra: ... lc and now you have a task don't you\n[]>anhedonia: I'm not made for tasks like her. I'm.made for people\n[]>spectra:then you ought to remember that it was a person- your girlfriend- that gave you this task. what grander task could there be?\n[]>anhedonia:idk... maybe something I did myself\n[]>spectra:oh shut up. pardon me. you...\n[]>anhedonia:I...?\n[]>spectra:I cannot bring you to do anything. but one wanted you to do this.you wanna live for others? or her at least? then stop mulling over being original and having your own drive and live for her final ask.\n[]>anhedonia: she...\n[]>anhedonia: we understood one another so much.\n[]>spectra: and that is why you will will follow through.\n[]>anhedonia: ...\n[]>anhedonia:vessel...\n[]>spectra:?\n[]>anhedonia:she was a vessel for... our love and the godseed\n[]>spectra:she was\n[]>anhedonia:then...\n[]>spectra:....\n[]>anhedonia:god I love her so much. crying\n[]>spectra:...\n[]>anhedonia:I wanna treasure her so much.\n[]>spectra:...\n[]>narrator: you fall into Spectra's arms.\n[]>anhedonia: and I will."
+						},
+						"facts": {
+							"fact_data_by_name": {
+
+							},
+							"meta.visible": false
+						},
+						"header": [],
+						"line_type": 0,
+						"meta.conditionals_visible": false,
+						"meta.facts_visible": false,
+						"meta.indent_level": 0,
+						"meta.is_head_editable": false,
+						"meta.line_index": 15,
+						"meta.selector": {
+							"selected": false
+						}
+					},
+					{
+						"address": "40.16",
+						"conditionals": {
+							"behavior": 0,
+							"behavior_key": "Show",
+							"facts": {
+								"fact_data_by_name": {
+
+								},
+								"meta.visible": false
+							},
+							"meta.visible": false,
+							"operand": 0,
+							"operand_args": [],
+							"operand_key": "AND"
+						},
+						"content": {
+							"active_actors": [
+								"anhedonia",
+								"one",
+								"spectra",
+								"narrator",
+								"interrogator",
+								"torturer",
+								"one+anhedonia",
+								"gods",
+								"clericant",
+								"jailer"
+							],
+							"active_actors_title": "character",
+							"content": "[]>spectra: but one wouldn't want you to grieve forever. and especially not to step out of this world in mourning.\n[]>spectra: grief cuts you off from the dead. you ought to find joy in the memory, let go of the idolization in your mind, and see the concrete facts.\n[]>spectra: you gave her the end she desired, and you are on your way to complete your lives' goal.\n[]>spectra: you, and she, and I, could not be more proud of you- if you choose to go into that oblivion with a smile."
+						},
+						"facts": {
+							"fact_data_by_name": {
+
+							},
+							"meta.visible": false
+						},
+						"header": [],
+						"line_type": 0,
+						"meta.conditionals_visible": false,
+						"meta.facts_visible": false,
+						"meta.indent_level": 0,
+						"meta.is_head_editable": false,
+						"meta.line_index": 16,
+						"meta.selector": {
+							"selected": false
+						}
 					}
 				],
-				"meta.scroll_vertical": 1997,
+				"meta.scroll_vertical": 4484,
 				"meta.selected": false,
 				"next": 41,
 				"number": 40,
@@ -26024,7 +26221,7 @@
 				},
 				"lines": [
 					{
-						"address": "40.0",
+						"address": "41.0",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -26083,7 +26280,7 @@
 						}
 					},
 					{
-						"address": "40.1",
+						"address": "41.1",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -26138,7 +26335,7 @@
 						}
 					},
 					{
-						"address": "40.2",
+						"address": "41.2",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -26203,7 +26400,7 @@
 				},
 				"lines": [
 					{
-						"address": "41.0",
+						"address": "42.0",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -26262,7 +26459,7 @@
 						}
 					},
 					{
-						"address": "41.1",
+						"address": "42.1",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -26311,7 +26508,7 @@
 						}
 					},
 					{
-						"address": "41.2",
+						"address": "42.2",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -26370,7 +26567,7 @@
 						}
 					},
 					{
-						"address": "41.3",
+						"address": "42.3",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -26419,7 +26616,7 @@
 						}
 					},
 					{
-						"address": "41.4",
+						"address": "42.4",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -26470,7 +26667,7 @@
 						}
 					},
 					{
-						"address": "41.5",
+						"address": "42.5",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -26519,7 +26716,7 @@
 						}
 					},
 					{
-						"address": "41.6",
+						"address": "42.6",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -26578,7 +26775,7 @@
 						}
 					},
 					{
-						"address": "41.7",
+						"address": "42.7",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -26627,7 +26824,7 @@
 						}
 					},
 					{
-						"address": "41.8",
+						"address": "42.8",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -26678,7 +26875,7 @@
 						}
 					},
 					{
-						"address": "41.9",
+						"address": "42.9",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -26727,7 +26924,7 @@
 						}
 					},
 					{
-						"address": "41.10",
+						"address": "42.10",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -26776,7 +26973,7 @@
 						}
 					},
 					{
-						"address": "41.11",
+						"address": "42.11",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -26825,7 +27022,7 @@
 						}
 					},
 					{
-						"address": "41.12",
+						"address": "42.12",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
