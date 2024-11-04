@@ -1,6 +1,7 @@
-[gd_scene load_steps=2 format=3 uid="uid://c5ckmmllx4d1w"]
+[gd_scene load_steps=3 format=3 uid="uid://c5ckmmllx4d1w"]
 
 [ext_resource type="Script" path="res://game/screens/credits.gd" id="1_we1wc"]
+[ext_resource type="Theme" uid="uid://d35oanoquofv5" path="res://game/visuals/theme.tres" id="2_7p2cq"]
 
 [node name="Credits" type="Control"]
 layout_mode = 3
@@ -38,6 +39,7 @@ size_flags_horizontal = 4
 custom_minimum_size = Vector2(600, 400)
 layout_mode = 2
 size_flags_horizontal = 4
+theme = ExtResource("2_7p2cq")
 bbcode_enabled = true
 text = "[center][b]She Was Swallowed By The Sun[/b]
 - Made for [url=https://itch.io/jam/yuri-game-jam-2024](Yuri Game Jam 2024) -
@@ -50,7 +52,10 @@ SFX
 InspectorJ - \"Gunshot, Distant, A.wav\" ([url=https://freesound.org/people/InspectorJ/sounds/417345/]Freesound[/url])
 
 [b]FONTS[/b]
-sugargliderz - Fragment Core ([url=https://www.dafont.com/fragment-core.font]dafont.com[/url])"
+sugargliderz - Fragment Core ([url=https://www.dafont.com/fragment-core.font]dafont.com[/url])
+
+
+ending scene shader programming - Ænthroppe"
 
 [node name="Button" type="Button" parent="."]
 layout_mode = 1

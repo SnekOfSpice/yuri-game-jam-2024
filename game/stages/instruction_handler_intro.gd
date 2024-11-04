@@ -15,6 +15,7 @@ signal start_show_cg(
 	on_top:bool)
 
 signal start_hide_cg()
+signal start_rolling_credits()
 signal splatter(amount:int)
 signal start_chapter_cover(pov_name:String)
 
@@ -179,6 +180,9 @@ func set_sun(property: String, value: float) -> bool:
 	emit_signal("sun", property, value)
 	return false
 
-func set_sun_str(property: String, value: String) -> bool:
+func set_sun_str(property: String, value: String):
 	set_sun(property, float(value))
-	return false
+
+func roll_credits() -> bool:
+	emit_signal("start_rolling_credits")
+	return true

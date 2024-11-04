@@ -1,4 +1,4 @@
-[gd_scene load_steps=45 format=3 uid="uid://r1ntcqdujfol"]
+[gd_scene load_steps=46 format=3 uid="uid://r1ntcqdujfol"]
 
 [ext_resource type="Script" path="res://game/stages/game_stage.gd" id="1_a36me"]
 [ext_resource type="Script" path="res://addons/diisis/parser/src/line_reader.gd" id="1_h4afo"]
@@ -20,6 +20,7 @@
 [ext_resource type="PackedScene" uid="uid://biu88w163ploy" path="res://game/cheats.tscn" id="13_qackq"]
 [ext_resource type="Script" path="res://game/stages/start_cover.gd" id="13_qfsh6"]
 [ext_resource type="Shader" path="res://game/stages/static.gdshader" id="17_dc0ef"]
+[ext_resource type="PackedScene" uid="uid://ipa310726xyt" path="res://game/stages/rolling_credits.tscn" id="17_gnute"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_hnvqq"]
 shader = ExtResource("6_o425v")
@@ -403,6 +404,9 @@ layout_mode = 1
 visible = false
 layout_mode = 1
 
+[node name="RollingCredits" parent="Camera2D/CanvasLayer/Control" instance=ExtResource("17_gnute")]
+layout_mode = 1
+
 [node name="StartCover" type="ColorRect" parent="Camera2D/CanvasLayer"]
 visible = false
 anchors_preset = 15
@@ -487,5 +491,6 @@ script = ExtResource("6_8ao3j")
 [connection signal="start_black_fade" from="InstructionHandler" to="Camera2D/CanvasLayer/Control/BlackFade" method="_on_handler_start_black_fade"]
 [connection signal="start_chapter_cover" from="InstructionHandler" to="Camera2D/CanvasLayer/Control/ChapterCover" method="set_chapter_cover"]
 [connection signal="start_hide_cg" from="InstructionHandler" to="." method="hide_cg"]
+[connection signal="start_rolling_credits" from="InstructionHandler" to="Camera2D/CanvasLayer/Control/RollingCredits" method="start"]
 [connection signal="start_show_cg" from="InstructionHandler" to="." method="_on_handler_start_show_cg"]
 [connection signal="sun" from="InstructionHandler" to="." method="_on_instruction_handler_sun"]

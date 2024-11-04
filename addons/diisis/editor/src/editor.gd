@@ -375,7 +375,7 @@ func save_to_file(path:String, is_autosave:=false):
 	file.store_string(JSON.stringify(data_to_save, "\t"))
 	file.close()
 	if is_autosave:
-		notify(str("Autosaved to ", ProjectSettings.globalize_path(path), "!"))
+		notify(str("Autosaved to [url=",ProjectSettings.globalize_path(path),"]", ProjectSettings.globalize_path(path), "!"))
 	else:
 		set_save_path(path)
 		time_since_last_save = 0.0

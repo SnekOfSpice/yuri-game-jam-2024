@@ -544,6 +544,7 @@ func get_instruction_signature(instruction_name:String) -> String:
 	result += ") -> bool:"
 	result += "\n\t# Return true if you want the LineReader to wait until its InstructionHandler has emitted instruction_completed."
 	result += "\n\t# (Needs to be called by your code from somewhere.)"
+	result += "\n\t# (The most direct approach is Parser.line_reader.instruction_handler.instruction_completed.emit().)"
 	result += "\n\treturn false"
 	
 	return result
@@ -1394,6 +1395,7 @@ func capitalize_sentence_beginnings(input:Array) -> Array:
 				tags_in_text.append(tag)
 			scan_index += 1
 		for letter : String in letters:
+			text = text.replace(str("\"", letter), str("\"", letter.capitalize()))
 			text = text.replace(str("<lc>", letter), str("<lc>", letter.capitalize()))
 			text = text.replace(str("<lc> ", letter), str("<lc> ", letter.capitalize()))
 			for prefix in c12n_prefixes:

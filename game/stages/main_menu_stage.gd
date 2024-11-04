@@ -21,11 +21,12 @@ func _ready() -> void:
 	var planet_timer = get_tree().create_timer(2.5)
 	planet_timer.timeout.connect($Planet.set.bind("visible", true))
 	
-	if GameWorld.just_finished_game:
+	if Parser.get_fact("just_finished"):
 		GameWorld.just_finished_game = false
 		var blast_timer = get_tree().create_timer(4)
 		blast_timer.timeout.connect($PlanetBlast.set.bind("visible", true))
 		blast_timer.timeout.connect($Blast.set.bind("visible", true))
+		Parser.reset_facts()
 		
 
 func _gui_input(event: InputEvent) -> void:
