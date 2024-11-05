@@ -1240,6 +1240,9 @@ func find_next_pause():
 func get_actor_name(actor_key:String):
 	return name_map.get(actor_key, "")
 
+func set_actor_name(actor_key:String, actor_name:String):
+	name_map[actor_key] = actor_name
+
 func build_choices(choices, auto_switch:bool):
 	for c in choice_option_container.get_children():
 		c.queue_free()

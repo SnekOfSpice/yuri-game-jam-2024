@@ -35,6 +35,7 @@ func fill():
 		item.connect("go_to", on_item_go_to)
 	
 	find_child("SearchLineEdit").text = ""
+	find_child("SearchLineEdit").grab_focus()
 	filter_items("")
 
 func direct_swap(page_clicked: int):

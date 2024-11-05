@@ -42,6 +42,7 @@ func _ready():
 	ParserEvents.page_terminated.connect(go_to_main_menu)
 	ParserEvents.instruction_started.connect(on_instruction_started)
 	ParserEvents.instruction_completed.connect(on_instruction_completed)
+	ParserEvents.new_line_read.connect(on_new_line_read)
 	
 	GameWorld.instruction_handler = find_child("InstructionHandler")
 	GameWorld.game_stage = self
@@ -61,6 +62,9 @@ func _ready():
 	tree_exiting.connect(on_tree_exit)
 	
 	overlay_sun.get_material().set_shader_parameter("fill_amount", -1.0)
+
+func on_new_line_read(_line_index:int):
+	Options.save_gamestate()
 
 func on_tree_exit():
 	GameWorld.game_stage = null
