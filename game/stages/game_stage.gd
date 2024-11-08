@@ -90,8 +90,8 @@ func go_to_main_menu(_unused):
 
 
 func _process(delta: float) -> void:
-	if overlay_sun.material.get_shader_parameter("fill_amount") > -1:
-		overlay_sun.material.set_shader_parameter("background", get_viewport().get_texture())
+	if overlay_sun.get_material().get_shader_parameter("fill_amount") > -1:
+		overlay_sun.get_material().set_shader_parameter("background", get_viewport().get_texture())
 
 
 func _input(event: InputEvent) -> void:
@@ -248,11 +248,12 @@ func serialize() -> Dictionary:
 	result["cg_position"] = cg_position
 	result["text_container_position"] = find_child("TextContainer").position
 	result["text_style"] = text_style
+	result["objects"] = $Objects.serialize()
 	
 	result["start_cover_visible"] = find_child("StartCover").visible
 	result["static"] = overlay_static.get_material().get_shader_parameter("intensity")
-	result["sun_steps"] = overlay_static.get_material().get_shader_parameter("steps")
-	result["sun_fill_amount"] = overlay_static.get_material().get_shader_parameter("fill_amount")
+	result["sun_steps"] = overlay_sun.get_material().get_shader_parameter("steps")
+	result["sun_fill_amount"] = overlay_sun.get_material().get_shader_parameter("fill_amount")
 	
 	result["camera"] = $Camera2D.serialize()
 	
@@ -263,6 +264,7 @@ func deserialize(data:Dictionary):
 	for character : Character in find_child("Characters").get_children():
 		character.deserialize(character_data.get(character.character_name, {}))
 	
+	$Objects.deserialize(data.get("objects", {}))
 	$Camera2D.deserialize(data.get("camera", {}))
 	
 	var cg_name : String = data.get("cg", "")

@@ -1,6 +1,6 @@
 {
 	"editor": {
-		"current_page_number": 17,
+		"current_page_number": 12,
 		"page_view": 0,
 		"text_size_id": 3
 	},
@@ -245,6 +245,16 @@
 				],
 				"args": [
 					"value"
+				]
+			},
+			"set_object_visible": {
+				"arg_types": [
+					"string",
+					"bool"
+				],
+				"args": [
+					"object_name",
+					"visibility"
 				]
 			},
 			"set_static": {
@@ -1684,7 +1694,7 @@
 						}
 					}
 				],
-				"meta.scroll_vertical": 3991,
+				"meta.scroll_vertical": 0,
 				"meta.selected": false,
 				"next": 1,
 				"number": 0,
@@ -1841,7 +1851,7 @@
 								"jailer"
 							],
 							"active_actors_title": "character",
-							"content": "[]>narrator:It has been an arduous trek out here. The dry summer heat has been taking its toll on your mental faculties, as has the absolute pain of using public transit out to a correctional facility beyond the city walls. <lc>Yet, it will all be worth it... <ap>today. <ap>Some time. <mp>Your girlfriend was supposed to be released before noon. <ap>The sun is well past its zenith now.\n[]>narrator{anhedonia-emotion|neutral}:It has been many months since you last saw her. Standing in the empty and wide-open driveway of the prison complex, you could only seek shelter from the burning sun overhead by the graces of one companion: <ap> A solitary tree that is still groaning under the weight of its death here.<lc> The field surrounding the concrete walls is parched and mostly dead during summer. <mp>Weeds donning the colors of ash and pottery adorn the endless expanse of earth here.<lc>Only the call of cicadas disturbs the air around you. <ap>Consistently so. <mp>These insects have been your only fellowship for hours now.\n[]>anhedonia{anhedonia-emotion|dismissive}:Ugh this shit SUCKS!\n[]>narrator:You kick a rock into the arid landscape. <ap>The soil answers by dust cloud.\n[]>anhedonia:...<lc>Fuck me.\n[]>narrator:For the nth time now, you walk up to the gate- <ap>or the fireline rather.\n[]>narrator:The guard shoots you another annoyed look, and you glare back in kind.\n[]>narrator:And so you pan around to face your dead arboreal companion, and stride towards it again.\n[]>anhedonia{anhedonia-emotion|neutral}:...\n[]>narrator:Bending down to your backpack, you feel your face sag from the dust that has started to cake up your skin in combination with your sweat.\n[]>anhedonia:Come on...\n[]>narrator:You are on your last bottle. But the release ought be soon, so you take another gulp from the silicone vessel.<lc>You sit down against the tree, dried bark scraping against your skin. <lc>As the afternoon stretches out, the silence is unexpectadly broken."
+							"content": "[]>narrator:It has been an arduous trek out here. The dry summer heat has been taking its toll on your mental faculties, as has the absolute pain of using public transit out to a correctional facility beyond the city walls. <lc>Yet, it will all be worth it... <ap>today. <ap>Some time. <mp>Your girlfriend was supposed to be released before noon. <ap>The sun is well past its zenith now.\n[]>narrator{anhedonia-emotion|neutral}:It has been many months since you last saw her. Standing in the empty and wide-open driveway of the prison complex, you could only seek shelter from the burning sun overhead by the graces of one companion: <ap> A solitary tree that is still groaning under the weight of its death here.<lc> The field surrounding the concrete walls is parched and mostly dead during summer. <mp>Weeds donning the colors of ash and pottery adorn the endless expanse of earth here.<lc>Only the call of cicadas disturbs the air around you. <ap>Consistently so. <mp>These insects have been your sole fellowship for hours now.\n[]>anhedonia{anhedonia-emotion|dismissive}:Ugh this shit SUCKS!\n[]>narrator:You kick a rock into the arid landscape. <ap>The soil answers by dust cloud.\n[]>anhedonia:...<lc>Fuck me."
 						},
 						"facts": {
 							"fact_data_by_name": {
@@ -1862,6 +1872,210 @@
 					},
 					{
 						"address": "1.3",
+						"conditionals": {
+							"behavior": 0,
+							"behavior_key": "Show",
+							"facts": {
+								"fact_data_by_name": {
+
+								},
+								"meta.visible": false
+							},
+							"meta.visible": false,
+							"operand": 0,
+							"operand_args": [],
+							"operand_key": "AND"
+						},
+						"content": {
+							"delay_after": 0,
+							"delay_before": 0,
+							"line_reader.args": [
+								3.5,
+								0,
+								4
+							],
+							"line_reader.reverse_args": [
+								"INVALID ARGUMENT FOR x",
+								"INVALID ARGUMENT FOR y",
+								"INVALID ARGUMENT FOR duration"
+							],
+							"meta.has_reverse": false,
+							"meta.reverse_text": "",
+							"meta.text": "move_camera_to(3.5, 0, 4.0)",
+							"meta.validation_status": "OK",
+							"name": "move_camera_to",
+							"reverse_name": ""
+						},
+						"facts": {
+							"fact_data_by_name": {
+
+							},
+							"meta.visible": false
+						},
+						"header": [],
+						"line_type": 2,
+						"meta.conditionals_visible": false,
+						"meta.facts_visible": false,
+						"meta.indent_level": 0,
+						"meta.is_head_editable": false,
+						"meta.line_index": 3,
+						"meta.selector": {
+							"selected": false
+						}
+					},
+					{
+						"address": "1.4",
+						"conditionals": {
+							"behavior": 0,
+							"behavior_key": "Show",
+							"facts": {
+								"fact_data_by_name": {
+
+								},
+								"meta.visible": false
+							},
+							"meta.visible": false,
+							"operand": 0,
+							"operand_args": [],
+							"operand_key": "AND"
+						},
+						"content": {
+							"active_actors": [
+								"anhedonia",
+								"one",
+								"spectra",
+								"narrator",
+								"interrogator",
+								"torturer",
+								"one+anhedonia",
+								"gods",
+								"clericant",
+								"jailer"
+							],
+							"active_actors_title": "character",
+							"content": "[]>narrator:For the nth time now, you walk up to the gate- <ap>or the fireline rather.\n[]>narrator:The guard shoots you another annoyed look, and you glare back in kind.\n[]>narrator:And so you pan around to face your dead arboreal companion, and stride towards it again."
+						},
+						"facts": {
+							"fact_data_by_name": {
+
+							},
+							"meta.visible": false
+						},
+						"header": [],
+						"line_type": 0,
+						"meta.conditionals_visible": false,
+						"meta.facts_visible": false,
+						"meta.indent_level": 0,
+						"meta.is_head_editable": false,
+						"meta.line_index": 4,
+						"meta.selector": {
+							"selected": false
+						}
+					},
+					{
+						"address": "1.5",
+						"conditionals": {
+							"behavior": 0,
+							"behavior_key": "Show",
+							"facts": {
+								"fact_data_by_name": {
+
+								},
+								"meta.visible": false
+							},
+							"meta.visible": false,
+							"operand": 0,
+							"operand_args": [],
+							"operand_key": "AND"
+						},
+						"content": {
+							"delay_after": 0,
+							"delay_before": 0,
+							"line_reader.args": [
+								0,
+								0,
+								4
+							],
+							"line_reader.reverse_args": [
+								"INVALID ARGUMENT FOR x",
+								"INVALID ARGUMENT FOR y",
+								"INVALID ARGUMENT FOR duration"
+							],
+							"meta.has_reverse": false,
+							"meta.reverse_text": "",
+							"meta.text": "move_camera_to(0, 0, 4.0)",
+							"meta.validation_status": "OK",
+							"name": "move_camera_to",
+							"reverse_name": ""
+						},
+						"facts": {
+							"fact_data_by_name": {
+
+							},
+							"meta.visible": false
+						},
+						"header": [],
+						"line_type": 2,
+						"meta.conditionals_visible": false,
+						"meta.facts_visible": false,
+						"meta.indent_level": 0,
+						"meta.is_head_editable": false,
+						"meta.line_index": 5,
+						"meta.selector": {
+							"selected": false
+						}
+					},
+					{
+						"address": "1.6",
+						"conditionals": {
+							"behavior": 0,
+							"behavior_key": "Show",
+							"facts": {
+								"fact_data_by_name": {
+
+								},
+								"meta.visible": false
+							},
+							"meta.visible": false,
+							"operand": 0,
+							"operand_args": [],
+							"operand_key": "AND"
+						},
+						"content": {
+							"active_actors": [
+								"anhedonia",
+								"one",
+								"spectra",
+								"narrator",
+								"interrogator",
+								"torturer",
+								"one+anhedonia",
+								"gods",
+								"clericant",
+								"jailer"
+							],
+							"active_actors_title": "character",
+							"content": "[]>anhedonia{anhedonia-emotion|neutral}:...\n[]>narrator:Bending down to your backpack, you feel your face sag from the dust that has started to cake up your skin in combination with your sweat.\n[]>anhedonia:Come on...\n[]>narrator:You are on your last bottle. But the release ought be soon, so you take another gulp from the silicone vessel.<lc>You sit down against the tree, dried bark scraping against your skin. <lc>As the afternoon stretches out, the silence is unexpectadly broken."
+						},
+						"facts": {
+							"fact_data_by_name": {
+
+							},
+							"meta.visible": false
+						},
+						"header": [],
+						"line_type": 0,
+						"meta.conditionals_visible": false,
+						"meta.facts_visible": false,
+						"meta.indent_level": 0,
+						"meta.is_head_editable": false,
+						"meta.line_index": 6,
+						"meta.selector": {
+							"selected": false
+						}
+					},
+					{
+						"address": "1.7",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -1904,13 +2118,13 @@
 						"meta.facts_visible": false,
 						"meta.indent_level": 0,
 						"meta.is_head_editable": false,
-						"meta.line_index": 3,
+						"meta.line_index": 7,
 						"meta.selector": {
 							"selected": false
 						}
 					},
 					{
-						"address": "1.4",
+						"address": "1.8",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -1955,13 +2169,13 @@
 						"meta.facts_visible": false,
 						"meta.indent_level": 0,
 						"meta.is_head_editable": false,
-						"meta.line_index": 4,
+						"meta.line_index": 8,
 						"meta.selector": {
 							"selected": false
 						}
 					},
 					{
-						"address": "1.5",
+						"address": "1.9",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -2004,13 +2218,13 @@
 						"meta.facts_visible": false,
 						"meta.indent_level": 0,
 						"meta.is_head_editable": false,
-						"meta.line_index": 5,
+						"meta.line_index": 9,
 						"meta.selector": {
 							"selected": false
 						}
 					},
 					{
-						"address": "1.6",
+						"address": "1.10",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -2059,13 +2273,13 @@
 						"meta.facts_visible": false,
 						"meta.indent_level": 0,
 						"meta.is_head_editable": false,
-						"meta.line_index": 6,
+						"meta.line_index": 10,
 						"meta.selector": {
 							"selected": false
 						}
 					},
 					{
-						"address": "1.7",
+						"address": "1.11",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -2094,7 +2308,7 @@
 								"jailer"
 							],
 							"active_actors_title": "character",
-							"content": "[]>anhedonia:C'mon, you literally just got out of prison. Lemme treat you a bit.\n[]>one:...<ap>Fine.\n[]>narrator{anhedonia-emotion|happy}:You take her bag from her hands, careful to brush her hand, giving her a gleeful smile.\n[]>one:You are such a cheesy motherfucker.\n[]>anhedonia:Hehe... Can't help it after being reunited with my wife.\n[]>narrator:You give a kiss to your girlfriend that you like to call your wife.\n[]>one{one-emotion|joy}:Hehe...\n[]>narrator:You quickly nuzzle against her, and then shoulder your own gear.\n[]>anhedonia{anhedonia-emotion|neutral,one-emotion|neutral}:So like- <ap> I don't wanna rush but the busses out here run like ass, so let's try and get back to the bus stop for now?\n[]>one:Yeah, no worries.\n[]>narrator:And so you sling One's backpack over your shoulder, and take her hand in your other one. <ap>You never take your eyes off of her. <mp>One more kiss, pulling her in. Tired but glad, One looks up at you. <mp>And then you depart."
+							"content": "[]>anhedonia:C'mon, you literally just got out of prison. Lemme treat you a bit.\n[]>one:...<ap>Fine.\n[]>narrator{anhedonia-emotion|happy}:You take her bag from her hands, careful to brush her hand, giving her a gleeful smile.\n[]>one:You are such a cheesy motherfucker.\n[]>anhedonia:Hehe... Can't help it after being reunited with my wife.\n[]>narrator:You impart another kiss to your girlfriend who you like to call your wife.\n[]>one{one-emotion|joy}:Hehe...\n[]>narrator:You quickly nuzzle against her, and then shoulder your own gear.\n[]>anhedonia{anhedonia-emotion|neutral,one-emotion|neutral}:So like- <ap> I don't wanna rush but the busses out here run like ass, so let's try and get back to the bus stop for now?\n[]>one:Yeah, no worries.\n[]>narrator:And so you sling One's backpack over your shoulder, and take her hand in your other one. <ap>You never take your eyes off of her. <mp>One more kiss, pulling her in. Tired but glad, One looks up at you. <mp>And then you depart."
 						},
 						"facts": {
 							"fact_data_by_name": {
@@ -2108,13 +2322,13 @@
 						"meta.facts_visible": false,
 						"meta.indent_level": 0,
 						"meta.is_head_editable": false,
-						"meta.line_index": 7,
+						"meta.line_index": 11,
 						"meta.selector": {
 							"selected": false
 						}
 					}
 				],
-				"meta.scroll_vertical": 0,
+				"meta.scroll_vertical": 2031,
 				"meta.selected": false,
 				"next": 2,
 				"number": 1,
@@ -2197,20 +2411,26 @@
 							"operand_key": "AND"
 						},
 						"content": {
-							"active_actors": [
+							"delay_after": 0,
+							"delay_before": 0,
+							"line_reader.args": [
 								"anhedonia",
-								"one",
-								"spectra",
-								"narrator",
-								"interrogator",
-								"torturer",
-								"one+anhedonia",
-								"gods",
-								"clericant",
-								"jailer"
+								0,
+								5,
+								false
 							],
-							"active_actors_title": "character",
-							"content": "[]>narrator:Hands never parting for even a second, you make your way back to the bus station you arrived at this morning. Under the sweltering late-summer and even-later-afternoon sun, the sweat pooling between yours and One's hand would make most girls uncomfortable, were it not for the fact that you two are - <ap>factually<ap> - gay as hell.\n[]>anhedonia{anhedonia-emotion|concerned}:So... <ap>What was that gunshot before you were released?\n[]>one:You think I had something to do with that?\n[]>anhedonia{anhedonia-emotion|neutral}:Well, now that you say it...\n[]>one:I did.\n[]>anhedonia:...\n[]>one:But don't wanna talk about it. <lc>Safe now. With you.\n[]>narrator:You give her hand a reassuring scqueeze in return.\n[]>anhedonia:With you.\n[]>narrator:Finally, after a few minutes of walking, you reach the bus stop. <mp>Standing there in silence, you do nothing but exchange glances and small squeezes of each other's palms. <mp>A kiss- <ap>occasionally.\n[]>one{one-emotion|listening}:Still gotta get used to... <ap> a ceiling that's not made of concrete again.\n[]>anhedonia{anhedonia-emotion|neutral}:Yeah...<lc>I was gonna... like...<lc>I'm not gonna ask you how your stay was?\n[]>one:Mhm.\n[]>anhedonia: ...\n[]>one:But yea. <ap>Bad. <ap>You know.\n[]>anhedonia{anhedonia-emotion|sad}:...\n[]>one{one-emotion|joy}:But now I'm back with you!\n[]>anhedonia{anhedonia-emotion|happy}:I'm really glad too.\n[]>narrator:Another kiss."
+							"line_reader.reverse_args": [
+								"INVALID ARGUMENT FOR character_name",
+								"INVALID ARGUMENT FOR index",
+								"INVALID ARGUMENT FOR time",
+								"INVALID ARGUMENT FOR wait_for_reposition"
+							],
+							"meta.has_reverse": false,
+							"meta.reverse_text": "",
+							"meta.text": "set_x_position(anhedonia, 0, 5.0, false)",
+							"meta.validation_status": "OK",
+							"name": "set_x_position",
+							"reverse_name": ""
 						},
 						"facts": {
 							"fact_data_by_name": {
@@ -2219,7 +2439,7 @@
 							"meta.visible": false
 						},
 						"header": [],
-						"line_type": 0,
+						"line_type": 2,
 						"meta.conditionals_visible": false,
 						"meta.facts_visible": false,
 						"meta.indent_level": 0,
@@ -2246,20 +2466,26 @@
 							"operand_key": "AND"
 						},
 						"content": {
-							"active_actors": [
-								"anhedonia",
+							"delay_after": 0,
+							"delay_before": 0,
+							"line_reader.args": [
 								"one",
-								"spectra",
-								"narrator",
-								"interrogator",
-								"torturer",
-								"one+anhedonia",
-								"gods",
-								"clericant",
-								"jailer"
+								1,
+								5,
+								false
 							],
-							"active_actors_title": "character",
-							"content": "[]>narrator{anhedonia-emotion|neutral,one-emotion|neutral}:Waiting for the bus the two of you make sure to hydrate with what little you have left carrying with you.\n[]>narrator:After a few more minutes, your publicly-funded ride out of here finally appears."
+							"line_reader.reverse_args": [
+								"INVALID ARGUMENT FOR character_name",
+								"INVALID ARGUMENT FOR index",
+								"INVALID ARGUMENT FOR time",
+								"INVALID ARGUMENT FOR wait_for_reposition"
+							],
+							"meta.has_reverse": false,
+							"meta.reverse_text": "",
+							"meta.text": "set_x_position(one, 1, 5.0, false)",
+							"meta.validation_status": "OK",
+							"name": "set_x_position",
+							"reverse_name": ""
 						},
 						"facts": {
 							"fact_data_by_name": {
@@ -2268,7 +2494,7 @@
 							"meta.visible": false
 						},
 						"header": [],
-						"line_type": 0,
+						"line_type": 2,
 						"meta.conditionals_visible": false,
 						"meta.facts_visible": false,
 						"meta.indent_level": 0,
@@ -2295,21 +2521,23 @@
 							"operand_key": "AND"
 						},
 						"content": {
-							"delay_after": 2,
-							"delay_before": 0.5,
+							"delay_after": 0,
+							"delay_before": 0,
 							"line_reader.args": [
-								"bus_ride",
-								2
+								-1,
+								0,
+								3
 							],
 							"line_reader.reverse_args": [
-								"INVALID ARGUMENT FOR name",
-								"INVALID ARGUMENT FOR fade_time"
+								"INVALID ARGUMENT FOR x",
+								"INVALID ARGUMENT FOR y",
+								"INVALID ARGUMENT FOR duration"
 							],
 							"meta.has_reverse": false,
 							"meta.reverse_text": "",
-							"meta.text": "set_background(bus_ride, 2.0)",
+							"meta.text": "move_camera_to(-1.0, 0, 3.0)",
 							"meta.validation_status": "OK",
-							"name": "set_background",
+							"name": "move_camera_to",
 							"reverse_name": ""
 						},
 						"facts": {
@@ -2359,7 +2587,7 @@
 								"jailer"
 							],
 							"active_actors_title": "character",
-							"content": "[]>narrator:The bus ride home is barely one at all. Your eyes are fixated on each other the entire time. Legs pressing against each other, fingers interlocked and kisses exchanged. Some perhaps too intense for public consumption. <lc>You don't care.\n[]>one: I missed you soooo much!\n[]>anhedonia: I missed you too.\n[]>narrator: Like bathed in amber, One's eyes glow in a deep orange against the warm late summer sky. No words could ever capture the yearning both of you have endured all this time- But you don't need them to. With another more gentle kisses, you gradually lean into each other more and more, tasting the other for all her delightful aromas.\n[]>narrator: She is astral in her love."
+							"content": "[]>narrator:Hands never parting for even a second, you make your way back to the bus station you arrived at this morning. Under the sweltering late-summer and even-later-afternoon sun, the sweat pooling between yours and One's hand would make most girls uncomfortable, were it not for the fact that you two are - <ap>factually<ap> - gay as hell.\n[]>anhedonia{anhedonia-emotion|concerned}:So... <ap>What was that gunshot before you were released?\n[]>one:You think I had something to do with that?\n[]>anhedonia{anhedonia-emotion|neutral}:Well, now that you say it...\n[]>one:I did.\n[]>anhedonia:...\n[]>one:But don't wanna talk about it. <lc>Safe now. With you.\n[]>narrator:You give her hand a reassuring scqueeze in return.\n[]>anhedonia:With you.\n[]>narrator:Finally, after a few minutes of walking, you reach the bus stop. <mp>Standing there in silence, you do nothing but exchange glances and small squeezes of each other's palms. <mp>A kiss- <ap>occasionally.\n[]>one{one-emotion|listening}:Still gotta get used to... <ap> a ceiling that's not made of concrete again.\n[]>anhedonia{anhedonia-emotion|neutral}:Yeah...<lc>I was gonna... like...<lc>I'm not gonna ask you how your stay was?\n[]>one:Mhm.\n[]>anhedonia: ...\n[]>one:But yea. <ap>Bad. <ap>You know.\n[]>anhedonia{anhedonia-emotion|sad}:...\n[]>one{one-emotion|joy}:But now I'm back with you!\n[]>anhedonia{anhedonia-emotion|happy}:I'm really glad too.\n[]>narrator:Another kiss."
 						},
 						"facts": {
 							"fact_data_by_name": {
@@ -2380,6 +2608,155 @@
 					},
 					{
 						"address": "2.5",
+						"conditionals": {
+							"behavior": 0,
+							"behavior_key": "Show",
+							"facts": {
+								"fact_data_by_name": {
+
+								},
+								"meta.visible": false
+							},
+							"meta.visible": false,
+							"operand": 0,
+							"operand_args": [],
+							"operand_key": "AND"
+						},
+						"content": {
+							"active_actors": [
+								"anhedonia",
+								"one",
+								"spectra",
+								"narrator",
+								"interrogator",
+								"torturer",
+								"one+anhedonia",
+								"gods",
+								"clericant",
+								"jailer"
+							],
+							"active_actors_title": "character",
+							"content": "[]>narrator{anhedonia-emotion|neutral,one-emotion|neutral}:Waiting for the bus the two of you make sure to hydrate with what little you have left carrying with you.\n[]>narrator:After a few more minutes, your publicly-funded ride out of here finally appears."
+						},
+						"facts": {
+							"fact_data_by_name": {
+
+							},
+							"meta.visible": false
+						},
+						"header": [],
+						"line_type": 0,
+						"meta.conditionals_visible": false,
+						"meta.facts_visible": false,
+						"meta.indent_level": 0,
+						"meta.is_head_editable": false,
+						"meta.line_index": 5,
+						"meta.selector": {
+							"selected": false
+						}
+					},
+					{
+						"address": "2.6",
+						"conditionals": {
+							"behavior": 0,
+							"behavior_key": "Show",
+							"facts": {
+								"fact_data_by_name": {
+
+								},
+								"meta.visible": false
+							},
+							"meta.visible": false,
+							"operand": 0,
+							"operand_args": [],
+							"operand_key": "AND"
+						},
+						"content": {
+							"delay_after": 2,
+							"delay_before": 0.5,
+							"line_reader.args": [
+								"bus_ride",
+								2
+							],
+							"line_reader.reverse_args": [
+								"INVALID ARGUMENT FOR name",
+								"INVALID ARGUMENT FOR fade_time"
+							],
+							"meta.has_reverse": false,
+							"meta.reverse_text": "",
+							"meta.text": "set_background(bus_ride, 2.0)",
+							"meta.validation_status": "OK",
+							"name": "set_background",
+							"reverse_name": ""
+						},
+						"facts": {
+							"fact_data_by_name": {
+
+							},
+							"meta.visible": false
+						},
+						"header": [],
+						"line_type": 2,
+						"meta.conditionals_visible": false,
+						"meta.facts_visible": false,
+						"meta.indent_level": 0,
+						"meta.is_head_editable": false,
+						"meta.line_index": 6,
+						"meta.selector": {
+							"selected": false
+						}
+					},
+					{
+						"address": "2.7",
+						"conditionals": {
+							"behavior": 0,
+							"behavior_key": "Show",
+							"facts": {
+								"fact_data_by_name": {
+
+								},
+								"meta.visible": false
+							},
+							"meta.visible": false,
+							"operand": 0,
+							"operand_args": [],
+							"operand_key": "AND"
+						},
+						"content": {
+							"active_actors": [
+								"anhedonia",
+								"one",
+								"spectra",
+								"narrator",
+								"interrogator",
+								"torturer",
+								"one+anhedonia",
+								"gods",
+								"clericant",
+								"jailer"
+							],
+							"active_actors_title": "character",
+							"content": "[]>narrator:The bus ride home is barely one at all. Your eyes are fixated on each other the entire time. Legs pressing against each other, fingers interlocked and lips together more often than they are apart. Some perhaps too intense for public consumption. <lc>You don't care.\n[]>one: I missed you soooo much!\n[]>anhedonia: I missed you too.\n[]>narrator: Like bathed in amber, One's eyes glow in a deep orange against the warm late summer sky. No words could ever capture the yearning both of you have endured all this time- But you don't need them to. With more gentle kisses, you gradually lean into each other more and more, tasting the other for all her delightful aromas.\n[]>narrator: She is astral in her love."
+						},
+						"facts": {
+							"fact_data_by_name": {
+
+							},
+							"meta.visible": false
+						},
+						"header": [],
+						"line_type": 0,
+						"meta.conditionals_visible": false,
+						"meta.facts_visible": false,
+						"meta.indent_level": 0,
+						"meta.is_head_editable": false,
+						"meta.line_index": 7,
+						"meta.selector": {
+							"selected": false
+						}
+					},
+					{
+						"address": "2.8",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -2422,13 +2799,13 @@
 						"meta.facts_visible": false,
 						"meta.indent_level": 0,
 						"meta.is_head_editable": false,
-						"meta.line_index": 5,
+						"meta.line_index": 8,
 						"meta.selector": {
 							"selected": false
 						}
 					},
 					{
-						"address": "2.6",
+						"address": "2.9",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -2457,7 +2834,7 @@
 								"jailer"
 							],
 							"active_actors_title": "character",
-							"content": "[]>narrator: A bump in the road breaks up your affections, the city walls slowly starting to climb up in the distance.\n[]>one: Say...\n[]>one: I didn't expect you to be... This toned after all this time.\n[]>anhedonia: I ... Got into a bit of workout.\n[]>one: Heh.. Bit... Try for byte.\n[]>anhedonia: ...Bite?\n[]>one: Byte. As in- <ap>Computers.\n[]>anhedonia{anhedonia-emotion|dismissive}: Oh my god.\n[]>one{one-emotion|joy}: Hehe.\n[]>one{anhedonia-emotion|neutral}: ... <lc>So... What else have you been up to?\n[]>one: Anything you didn't mention in your letters at least?\n[]>anhedonia: Heh... Hacksaw practice.\n[]>one: Been keeping up, huh?\n[]>anhedonia: And improving. Cnan't use it outside of art and sex really, it's too artistic for that.\n[]>anhedonia: But it's a good stress relief.\n[]>one: Can't wait to see it.\n[]>anhedonia: I'm sure you can't.\n[]>one: ...\n[]>one: Hehe...\n[]>one: Yes! <lc>...<lc> Heh... I survived, fuckers.\n[]>narrator:Self-sufficiently, One mutters to herself.\n[]>anhedonia:I'm happy you did.\n[]>one:Mhm.\n[]>narrator:She lets her gaze wander outside, across the landscape. <mp>Across this dying, decrepit, hopeless landscape.\n[]>one:...\n[]>narrator:You glance at the bus display overhead, crystalline gasses flickering into shape.\n[]>anhedonia: Should be there in 17 minutes.\n[]>narrator:You press into One for another kiss, like planting a banner on this vessel of decrepit public transit: We are fucking gay."
+							"content": "[]>narrator: A bump in the road breaks up your affections, the city walls slowly starting to climb up in the distance.\n[]>one: Say...\n[]>one: I didn't expect you to be... This toned after all this time.\n[]>anhedonia: I... Got into a bit of workout.\n[]>one: Heh.. Bit... Try for byte.\n[]>anhedonia: ...Bite?\n[]>one: Byte. As in- <ap>Computers.\n[]>anhedonia{anhedonia-emotion|dismissive}: Oh my god.\n[]>one{one-emotion|joy}: Hehe.\n[]>one{anhedonia-emotion|neutral}: ... <lc>So... What else have you been up to?\n[]>one: Anything you didn't mention in your letters at least?\n[]>anhedonia: Heh... Hacksaw practice.\n[]>one: Been keeping up, huh?\n[]>anhedonia: And improving. Can't use it outside of art and sex really, it's too artistic for that.\n[]>anhedonia: But it's a good stress relief.\n[]>one: Can't wait to see it.\n[]>anhedonia: I'm sure you can't.\n[]>one: ...\n[]>one: Hehe...\n[]>one: Yes! <lc>...<lc> Heh... I survived, fuckers.\n[]>narrator:Self-sufficiently, One mutters to herself.\n[]>anhedonia:I'm happy you did.\n[]>one:Mhm.\n[]>narrator:She lets her gaze wander outside, across the landscape. <mp>Across this dying, decrepit, hopeless landscape.\n[]>one:...\n[]>narrator:You glance at the bus display overhead, crystalline gasses flickering into shape.\n[]>anhedonia: Should be there in 17 minutes.\n[]>narrator:You press into One for another kiss, like planting a banner on this vessel of decrepit public transit: We are fucking gay."
 						},
 						"facts": {
 							"fact_data_by_name": {
@@ -2471,13 +2848,13 @@
 						"meta.facts_visible": false,
 						"meta.indent_level": 0,
 						"meta.is_head_editable": false,
-						"meta.line_index": 6,
+						"meta.line_index": 9,
 						"meta.selector": {
 							"selected": false
 						}
 					},
 					{
-						"address": "2.7",
+						"address": "2.10",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -2530,13 +2907,13 @@
 						"meta.facts_visible": false,
 						"meta.indent_level": 0,
 						"meta.is_head_editable": false,
-						"meta.line_index": 7,
+						"meta.line_index": 10,
 						"meta.selector": {
 							"selected": false
 						}
 					},
 					{
-						"address": "2.8",
+						"address": "2.11",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -2585,13 +2962,13 @@
 						"meta.facts_visible": false,
 						"meta.indent_level": 0,
 						"meta.is_head_editable": false,
-						"meta.line_index": 8,
+						"meta.line_index": 11,
 						"meta.selector": {
 							"selected": false
 						}
 					},
 					{
-						"address": "2.9",
+						"address": "2.12",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -2634,13 +3011,13 @@
 						"meta.facts_visible": false,
 						"meta.indent_level": 0,
 						"meta.is_head_editable": false,
-						"meta.line_index": 9,
+						"meta.line_index": 12,
 						"meta.selector": {
 							"selected": false
 						}
 					},
 					{
-						"address": "2.10",
+						"address": "2.13",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -2685,13 +3062,13 @@
 						"meta.facts_visible": false,
 						"meta.indent_level": 0,
 						"meta.is_head_editable": false,
-						"meta.line_index": 10,
+						"meta.line_index": 13,
 						"meta.selector": {
 							"selected": false
 						}
 					},
 					{
-						"address": "2.11",
+						"address": "2.14",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -2734,13 +3111,13 @@
 						"meta.facts_visible": false,
 						"meta.indent_level": 0,
 						"meta.is_head_editable": false,
-						"meta.line_index": 11,
+						"meta.line_index": 14,
 						"meta.selector": {
 							"selected": false
 						}
 					},
 					{
-						"address": "2.12",
+						"address": "2.15",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -2793,13 +3170,13 @@
 						"meta.facts_visible": false,
 						"meta.indent_level": 0,
 						"meta.is_head_editable": false,
-						"meta.line_index": 12,
+						"meta.line_index": 15,
 						"meta.selector": {
 							"selected": false
 						}
 					},
 					{
-						"address": "2.13",
+						"address": "2.16",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -2819,7 +3196,7 @@
 							"delay_before": 0,
 							"line_reader.args": [
 								"anhedonia",
-								2,
+								1,
 								0,
 								false
 							],
@@ -2831,7 +3208,7 @@
 							],
 							"meta.has_reverse": false,
 							"meta.reverse_text": "set_x_position(anhedonia, 4.0, 0.0, false)",
-							"meta.text": "set_x_position(anhedonia, 2.0, 0.0, false)",
+							"meta.text": "set_x_position(anhedonia, 1.0, 0.0, false)",
 							"meta.validation_status": "OK",
 							"name": "set_x_position",
 							"reverse_name": "set_x_position"
@@ -2848,13 +3225,13 @@
 						"meta.facts_visible": false,
 						"meta.indent_level": 0,
 						"meta.is_head_editable": false,
-						"meta.line_index": 13,
+						"meta.line_index": 16,
 						"meta.selector": {
 							"selected": false
 						}
 					},
 					{
-						"address": "2.14",
+						"address": "2.17",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -2903,155 +3280,6 @@
 						"meta.facts_visible": false,
 						"meta.indent_level": 0,
 						"meta.is_head_editable": false,
-						"meta.line_index": 14,
-						"meta.selector": {
-							"selected": false
-						}
-					},
-					{
-						"address": "2.15",
-						"conditionals": {
-							"behavior": 0,
-							"behavior_key": "Show",
-							"facts": {
-								"fact_data_by_name": {
-
-								},
-								"meta.visible": false
-							},
-							"meta.visible": false,
-							"operand": 0,
-							"operand_args": [],
-							"operand_key": "AND"
-						},
-						"content": {
-							"active_actors": [
-								"anhedonia",
-								"one",
-								"spectra",
-								"narrator",
-								"interrogator",
-								"torturer",
-								"one+anhedonia",
-								"gods",
-								"clericant",
-								"jailer"
-							],
-							"active_actors_title": "character",
-							"content": "[]>narrator:After the both of you have gotten cleaned up, and secured drinks of choice - <ap>two times water on account of the pavement melting outside -<ap> you muster the courage to ask something that started plaguing your mind right after One's sentence began."
-						},
-						"facts": {
-							"fact_data_by_name": {
-
-							},
-							"meta.visible": false
-						},
-						"header": [],
-						"line_type": 0,
-						"meta.conditionals_visible": false,
-						"meta.facts_visible": false,
-						"meta.indent_level": 0,
-						"meta.is_head_editable": false,
-						"meta.line_index": 15,
-						"meta.selector": {
-							"selected": false
-						}
-					},
-					{
-						"address": "2.16",
-						"conditionals": {
-							"behavior": 0,
-							"behavior_key": "Show",
-							"facts": {
-								"fact_data_by_name": {
-
-								},
-								"meta.visible": false
-							},
-							"meta.visible": false,
-							"operand": 0,
-							"operand_args": [],
-							"operand_key": "AND"
-						},
-						"content": {
-							"active_actors": [
-								"anhedonia",
-								"one",
-								"spectra",
-								"narrator",
-								"interrogator",
-								"torturer",
-								"one+anhedonia",
-								"gods",
-								"clericant",
-								"jailer"
-							],
-							"active_actors_title": "character",
-							"content": "[]>anhedonia{anhedonia-emotion|sad}:I know we sent many letters over this... <mp>But I need to ask you in person too.\n[]>one{one-emotion|anxious}:...\n[]>anhedonia:You're not upset at me?\n[]>one:You kept the shrines safe, didn't you?\n[]>anhedonia:...<lc>I did.\n[]>one{one-emotion|neutral}:Then everything is the way it should be.\n[]>anhedonia:Doesn't mean you can't be angry at me.\n[]>one:Am not.\n[]>anhedonia:...<mp>I cost you two and a half years of your life.\n[]>anhedonia:I...<ap> I didn't manage to protect you from the one thing I promised to protect you from.\n[]>one:...\n[]>anhedonia:...\n[]>one:I wasn't killed.\n[]>anhedonia:...\n[]>one:...\n[]>one{one-emotion|crying}:..."
-						},
-						"facts": {
-							"fact_data_by_name": {
-
-							},
-							"meta.visible": false
-						},
-						"header": [],
-						"line_type": 0,
-						"meta.conditionals_visible": false,
-						"meta.facts_visible": false,
-						"meta.indent_level": 0,
-						"meta.is_head_editable": false,
-						"meta.line_index": 16,
-						"meta.selector": {
-							"selected": false
-						}
-					},
-					{
-						"address": "2.17",
-						"conditionals": {
-							"behavior": 0,
-							"behavior_key": "Show",
-							"facts": {
-								"fact_data_by_name": {
-
-								},
-								"meta.visible": false
-							},
-							"meta.visible": false,
-							"operand": 0,
-							"operand_args": [],
-							"operand_key": "AND"
-						},
-						"content": {
-							"delay_after": 0,
-							"delay_before": 0,
-							"line_reader.args": [
-								1.2,
-								0.5
-							],
-							"line_reader.reverse_args": [
-								1,
-								0
-							],
-							"meta.has_reverse": false,
-							"meta.reverse_text": "zoom_to(1.0, 0.0)",
-							"meta.text": "zoom_to(1.2, 0.5)",
-							"meta.validation_status": "OK",
-							"name": "zoom_to",
-							"reverse_name": "zoom_to"
-						},
-						"facts": {
-							"fact_data_by_name": {
-
-							},
-							"meta.visible": false
-						},
-						"header": [],
-						"line_type": 2,
-						"meta.conditionals_visible": false,
-						"meta.facts_visible": false,
-						"meta.indent_level": 0,
-						"meta.is_head_editable": false,
 						"meta.line_index": 17,
 						"meta.selector": {
 							"selected": false
@@ -3087,7 +3315,7 @@
 								"jailer"
 							],
 							"active_actors_title": "character",
-							"content": "[]>narrator{one+anhedonia-emotion|hug-eye0-crying,anhedonia-emotion|invisible,one-emotion|invisible}:Choking through tears, One suddenly collapses into your chest.\n[]>one:...Don't...<ap>Don't let me be killed by them.\n[]>anhedonia: I... <ap>Try...\n[]>one:Can you promise?\n[]>anhedonia:...\n[]>one:Please.\n[]>anhedonia:... <lc>I don't want to fail again...\n[]>one:Then don't.\n[]>anhedonia:... I promise. <mp>No death at the hands of the state.\n[]>narrator:You hold her even tighter."
+							"content": "[]>narrator:After the both of you have gotten cleaned up, and secured drinks of choice - <ap>two times water on account of the pavement melting outside -<ap> you muster the courage to ask something that started plaguing your mind right after One's sentence began."
 						},
 						"facts": {
 							"fact_data_by_name": {
@@ -3136,7 +3364,7 @@
 								"jailer"
 							],
 							"active_actors_title": "character",
-							"content": "[]>one:Thank you...\n[]>anhedonia:Always...\n[]>one:Fuck... <mp>Didn't expect a breakdown on the first day...\n[]>narrator:She lets out a chuckle.\n[]>one:Fucking dramatic faggots.\n[]>anhedonia:Heh..."
+							"content": "[]>anhedonia{anhedonia-emotion|sad}:I know we sent many letters over this... <mp>But I need to ask you in person too.\n[]>one{one-emotion|anxious}:...\n[]>anhedonia:You're not upset at me?\n[]>one:You kept the shrines safe, didn't you?\n[]>anhedonia:...<lc>I did.\n[]>one{one-emotion|neutral}:Then everything is the way it should be.\n[]>anhedonia:Doesn't mean you can't be angry at me.\n[]>one:Am not.\n[]>anhedonia:...<mp>I cost you two and a half years of your life.\n[]>anhedonia:I...<ap> I didn't manage to protect you from the one thing I promised to protect you from.\n[]>one:...\n[]>anhedonia:...\n[]>one:I wasn't killed.\n[]>anhedonia:...\n[]>one:...\n[]>one{one-emotion|crying}:..."
 						},
 						"facts": {
 							"fact_data_by_name": {
@@ -3172,6 +3400,57 @@
 							"operand_key": "AND"
 						},
 						"content": {
+							"delay_after": 0,
+							"delay_before": 0,
+							"line_reader.args": [
+								1.2,
+								0.5
+							],
+							"line_reader.reverse_args": [
+								1,
+								0
+							],
+							"meta.has_reverse": false,
+							"meta.reverse_text": "zoom_to(1.0, 0.0)",
+							"meta.text": "zoom_to(1.2, 0.5)",
+							"meta.validation_status": "OK",
+							"name": "zoom_to",
+							"reverse_name": "zoom_to"
+						},
+						"facts": {
+							"fact_data_by_name": {
+
+							},
+							"meta.visible": false
+						},
+						"header": [],
+						"line_type": 2,
+						"meta.conditionals_visible": false,
+						"meta.facts_visible": false,
+						"meta.indent_level": 0,
+						"meta.is_head_editable": false,
+						"meta.line_index": 20,
+						"meta.selector": {
+							"selected": false
+						}
+					},
+					{
+						"address": "2.21",
+						"conditionals": {
+							"behavior": 0,
+							"behavior_key": "Show",
+							"facts": {
+								"fact_data_by_name": {
+
+								},
+								"meta.visible": false
+							},
+							"meta.visible": false,
+							"operand": 0,
+							"operand_args": [],
+							"operand_key": "AND"
+						},
+						"content": {
 							"active_actors": [
 								"anhedonia",
 								"one",
@@ -3185,7 +3464,7 @@
 								"jailer"
 							],
 							"active_actors_title": "character",
-							"content": "[]>narrator:You spend the next few minutes caressing her form, assuring her that you are there- will be there- for her. <lc>One keeps breathing into your chest, hands clinging tightly to your top- <lc>And you wouldn't want her anywhere else in the world. <mp>You need to be an anchor more than anything right now. <ap>For her. <mp>The pride of having her trust gives your heart an additional layer of warmth.\n[]>anhedonia:I got you... <mp>I'm not going anywhere.\n[]>narrator{one+anhedonia-emotion|hug-eye0}:One doesn't respond but you take that as a positive sign.\n[]>narrator:And so, you keep standing there, One in your arms, waiting for the world to disrupt this beautiful trance.\n[]>one:...<mp>Can we cuddle?"
+							"content": "[]>narrator{one+anhedonia-emotion|hug-eye0-crying,anhedonia-emotion|invisible,one-emotion|invisible}:Choking through tears, One suddenly collapses into your chest.\n[]>one:...Don't...<ap>Don't let me be killed by them.\n[]>anhedonia: I... <ap>Try...\n[]>one:Can you promise?\n[]>anhedonia:...\n[]>one:Please.\n[]>anhedonia:... <lc>I don't want to fail again...\n[]>one:Then don't.\n[]>anhedonia:... I promise. <mp>No death at the hands of the state.\n[]>narrator:You hold her even tighter."
 						},
 						"facts": {
 							"fact_data_by_name": {
@@ -3199,13 +3478,162 @@
 						"meta.facts_visible": false,
 						"meta.indent_level": 0,
 						"meta.is_head_editable": false,
-						"meta.line_index": 20,
+						"meta.line_index": 21,
 						"meta.selector": {
 							"selected": false
 						}
 					},
 					{
-						"address": "2.21",
+						"address": "2.22",
+						"conditionals": {
+							"behavior": 0,
+							"behavior_key": "Show",
+							"facts": {
+								"fact_data_by_name": {
+
+								},
+								"meta.visible": false
+							},
+							"meta.visible": false,
+							"operand": 0,
+							"operand_args": [],
+							"operand_key": "AND"
+						},
+						"content": {
+							"delay_after": 0,
+							"delay_before": 0,
+							"line_reader.args": [
+								1.4,
+								0.5
+							],
+							"line_reader.reverse_args": [
+								"INVALID ARGUMENT FOR value",
+								"INVALID ARGUMENT FOR duration"
+							],
+							"meta.has_reverse": false,
+							"meta.reverse_text": "",
+							"meta.text": "zoom_to(1.4, 0.5)",
+							"meta.validation_status": "OK",
+							"name": "zoom_to",
+							"reverse_name": ""
+						},
+						"facts": {
+							"fact_data_by_name": {
+
+							},
+							"meta.visible": false
+						},
+						"header": [],
+						"line_type": 2,
+						"meta.conditionals_visible": false,
+						"meta.facts_visible": false,
+						"meta.indent_level": 0,
+						"meta.is_head_editable": false,
+						"meta.line_index": 22,
+						"meta.selector": {
+							"selected": false
+						}
+					},
+					{
+						"address": "2.23",
+						"conditionals": {
+							"behavior": 0,
+							"behavior_key": "Show",
+							"facts": {
+								"fact_data_by_name": {
+
+								},
+								"meta.visible": false
+							},
+							"meta.visible": false,
+							"operand": 0,
+							"operand_args": [],
+							"operand_key": "AND"
+						},
+						"content": {
+							"active_actors": [
+								"anhedonia",
+								"one",
+								"spectra",
+								"narrator",
+								"interrogator",
+								"torturer",
+								"one+anhedonia",
+								"gods",
+								"clericant",
+								"jailer"
+							],
+							"active_actors_title": "character",
+							"content": "[]>one:Thank you...\n[]>anhedonia:Always...\n[]>one:Fuck... <mp>Didn't expect a breakdown on the first day...\n[]>narrator:She lets out a chuckle.\n[]>one:Fucking dramatic faggots.\n[]>anhedonia:Heh..."
+						},
+						"facts": {
+							"fact_data_by_name": {
+
+							},
+							"meta.visible": false
+						},
+						"header": [],
+						"line_type": 0,
+						"meta.conditionals_visible": false,
+						"meta.facts_visible": false,
+						"meta.indent_level": 0,
+						"meta.is_head_editable": false,
+						"meta.line_index": 23,
+						"meta.selector": {
+							"selected": false
+						}
+					},
+					{
+						"address": "2.24",
+						"conditionals": {
+							"behavior": 0,
+							"behavior_key": "Show",
+							"facts": {
+								"fact_data_by_name": {
+
+								},
+								"meta.visible": false
+							},
+							"meta.visible": false,
+							"operand": 0,
+							"operand_args": [],
+							"operand_key": "AND"
+						},
+						"content": {
+							"active_actors": [
+								"anhedonia",
+								"one",
+								"spectra",
+								"narrator",
+								"interrogator",
+								"torturer",
+								"one+anhedonia",
+								"gods",
+								"clericant",
+								"jailer"
+							],
+							"active_actors_title": "character",
+							"content": "[]>narrator:You spend the next few minutes caressing her form, assuring her that you are there- will be there- for her. <lc>One keeps breathing into your chest, hands clinging tightly to your top- <lc>And you wouldn't want her anywhere else in the world. <mp>You need to be an anchor more than anything right now. <ap>For her. <mp>The pride of having her trust gives your heart an additional layer of warmth.\n[]>anhedonia:I got you... <mp>I'm not going anywhere.\n[]>narrator{one+anhedonia-emotion|hug-eye0}:One doesn't respond but you take that as a positive sign."
+						},
+						"facts": {
+							"fact_data_by_name": {
+
+							},
+							"meta.visible": false
+						},
+						"header": [],
+						"line_type": 0,
+						"meta.conditionals_visible": false,
+						"meta.facts_visible": false,
+						"meta.indent_level": 0,
+						"meta.is_head_editable": false,
+						"meta.line_index": 24,
+						"meta.selector": {
+							"selected": false
+						}
+					},
+					{
+						"address": "2.25",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -3258,13 +3686,68 @@
 						"meta.facts_visible": false,
 						"meta.indent_level": 0,
 						"meta.is_head_editable": false,
-						"meta.line_index": 21,
+						"meta.line_index": 25,
 						"meta.selector": {
 							"selected": false
 						}
 					},
 					{
-						"address": "2.22",
+						"address": "2.26",
+						"conditionals": {
+							"behavior": 0,
+							"behavior_key": "Show",
+							"facts": {
+								"fact_data_by_name": {
+
+								},
+								"meta.visible": false
+							},
+							"meta.visible": false,
+							"operand": 0,
+							"operand_args": [],
+							"operand_key": "AND"
+						},
+						"content": {
+							"delay_after": 0,
+							"delay_before": 0,
+							"line_reader.args": [
+								1.1,
+								0,
+								-0.3,
+								10
+							],
+							"line_reader.reverse_args": [
+								"INVALID ARGUMENT FOR zoom",
+								"INVALID ARGUMENT FOR x",
+								"INVALID ARGUMENT FOR y",
+								"INVALID ARGUMENT FOR duration"
+							],
+							"meta.has_reverse": false,
+							"meta.reverse_text": "",
+							"meta.text": "control_camera(1.1, 0.0, -0.3, 10.0)",
+							"meta.validation_status": "OK",
+							"name": "control_camera",
+							"reverse_name": ""
+						},
+						"facts": {
+							"fact_data_by_name": {
+
+							},
+							"meta.visible": false
+						},
+						"header": [],
+						"line_type": 2,
+						"meta.conditionals_visible": false,
+						"meta.facts_visible": false,
+						"meta.indent_level": 0,
+						"meta.is_head_editable": false,
+						"meta.line_index": 26,
+						"meta.selector": {
+							"selected": false
+						}
+					},
+					{
+						"address": "2.27",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -3307,13 +3790,13 @@
 						"meta.facts_visible": false,
 						"meta.indent_level": 0,
 						"meta.is_head_editable": false,
-						"meta.line_index": 22,
+						"meta.line_index": 27,
 						"meta.selector": {
 							"selected": false
 						}
 					}
 				],
-				"meta.scroll_vertical": 1035,
+				"meta.scroll_vertical": 6266,
 				"meta.selected": false,
 				"next": 3,
 				"number": 2,
@@ -3363,7 +3846,7 @@
 								"INVALID ARGUMENT FOR new_background",
 								"INVALID ARGUMENT FOR new_bgm"
 							],
-							"meta.has_reverse": true,
+							"meta.has_reverse": false,
 							"meta.reverse_text": "set_background(home_regular, 0.0)",
 							"meta.text": "black_fade(4.0, 4.0, 4.0, true, bench_pathway_night, col8822)",
 							"meta.validation_status": "OK",
@@ -3521,7 +4004,7 @@
 								"jailer"
 							],
 							"active_actors_title": "character",
-							"content": "[]>one:I'm glad the hill still stands.\n[]>anhedonia{anhedonia-emotion|happy}:bweheh... You're saying that as if the hill itself doesn't exist anymore.\n[]>one{one-emotion|joy}:Well, I don't know- <ap>Maybe someone dropped a nuke on it.\n[]>anhedonia:Hehe...\n[]>anhedonia:...<ap> Wait a second...\n[]>narrator:You shoot her a knowing glance.\n[]>narrator:She bleps her tongue back at you with a wink. <mp>Sighing wistfully, you smile back at One. <mp>You time a small sidestep so you can nudge against her as you walk.\n[]>anhedonia:...\n[]>one{one-emotion|listening}:...<lc>Haven't been up here in so long...\n[]>anhedonia{anhedonia-emotion|neutral}:Yeah...\n[]>one:...<lc>The sky is so pretty.\n[]>anhedonia:...\n[]>one{one-emotion|neutral}:...\n[]>narrator:Gazing at the sky in silence, you continue the trek up the footpath winding itself up this pine and gravel hill.  \n[]>one:Does the bench up upon the hill still exist?\n[]>anhedonia:Maybe. <ap>I'd hope so. \n[]>anhedonia{anhedonia-emotion|smug}:I'd definitely have noticed if some dropped a nuke on it.\n[]>one:Oh shuddup.\n[]>anhedonia{anhedonia-emotion|happy}:Hehe."
+							"content": "[]>one:I'm glad the hill still stands.\n[]>anhedonia{anhedonia-emotion|happy}:Bweheh... You're saying that as if the hill itself doesn't exist anymore.\n[]>one{one-emotion|joy}:Well, I don't know- <ap>Maybe someone dropped a nuke on it.\n[]>anhedonia:Hehe...\n[]>anhedonia:...<ap> Wait a second...\n[]>narrator:You shoot her a knowing glance.\n[]>narrator:She bleps her tongue back at you with a wink. <mp>Sighing wistfully, you smile back at One. <mp>You time a small sidestep so you can nudge against her as you walk.\n[]>anhedonia:...\n[]>one{one-emotion|listening}:...<lc>Haven't been up here in so long...\n[]>anhedonia{anhedonia-emotion|neutral}:Yeah...\n[]>one:...<lc>The sky is so pretty.\n[]>anhedonia:...\n[]>one{one-emotion|neutral}:...\n[]>narrator:Gazing at the sky in silence, you continue the trek up the footpath winding itself up this pine and gravel hill.  \n[]>one:Does the bench up upon the hill still exist?\n[]>anhedonia:Maybe. <ap>I'd hope so. \n[]>anhedonia{anhedonia-emotion|smug}:I'd definitely have noticed if some dropped a nuke on it.\n[]>one:Oh shuddup.\n[]>anhedonia{anhedonia-emotion|happy}:Hehe."
 						},
 						"facts": {
 							"fact_data_by_name": {
@@ -3620,7 +4103,7 @@
 							"delay_before": 0,
 							"line_reader.args": [
 								1,
-								1
+								6
 							],
 							"line_reader.reverse_args": [
 								"INVALID ARGUMENT FOR value",
@@ -3628,7 +4111,7 @@
 							],
 							"meta.has_reverse": false,
 							"meta.reverse_text": "",
-							"meta.text": "zoom_to(1.0, 1.0)",
+							"meta.text": "zoom_to(1.0, 6.0)",
 							"meta.validation_status": "OK",
 							"name": "zoom_to",
 							"reverse_name": ""
@@ -3680,7 +4163,7 @@
 								"jailer"
 							],
 							"active_actors_title": "character",
-							"content": "[]>narrator{anhedonia-emotion|neutral}:And truth be told, the wooden seating implement has did not become the target of WMDs, or other ordnance for that matter, since you last sat here - <ap>alone - <ap>a few weeks ago. <ap>Maybe months? <mp>This became a place of mourning without One around.\n[]>narrator:You sit down on the bench, thighs squished against one another, hands holding each other tightly."
+							"content": "[]>narrator{anhedonia-emotion|neutral}:And truth be told, the wooden seating implement has did not become the target of WMDs, or other ordnance for that matter, since you last sat here - <ap>Alone - <ap>A few weeks ago. <ap>Maybe months? <mp>This became a place of mourning without One around.\n[]>narrator:You sit down on the bench, thighs squished against one another, hands holding each other tightly.\n[]>narrator:The horizon's spine is broken and bent and jagged, a single illuminated line separating the lightless wastes between the city and its walls- And the moonless sky overhead. <lc>These man-made lights are arrays of industry protruding skyward, surrounded by dead fields and arid soil. <mp>This desolation and the city at its heart reach far beyond the walls. The city is but a single spec, a short trip away from the coast, and the only mark of an established rule for most of its inhabitants.\n[]>narrator:The clericants at the top of the food chain here show no mercy, positing themselves as prophets and speakers of a dawn that never comes. <mp>Sometimes, you dared dream of a world where you won't find yourself intubated by the whims of industriarchs. <mp>That hope- <ap>Has long faded."
 						},
 						"facts": {
 							"fact_data_by_name": {
@@ -3729,7 +4212,7 @@
 								"jailer"
 							],
 							"active_actors_title": "character",
-							"content": "[]>anhedonia:This fucking city... <ap>Are you happy to be back?\n[]>narrator:One considers for a moment. Patiently like the stars shimmering brightly in the night sky, you await her answer.\n[]>one{one-emotion|listening}:...\n[]>one:Only for you.<lc>...<lc>And, <ap>well, <ap>the godseed."
+							"content": "[]>anhedonia:This fucking city... <ap>Are you happy to be back?\n[]>narrator:One considers for a moment. Patiently like the stars shimmering brightly in the night sky, you await her answer.\n[]>one{one-emotion|listening}:...\n[]>one{one-emotion|sad}:Only for you.\n[]>one{one-emotion|listening}:...<lc>And, <ap>well, <ap>the godseed."
 						},
 						"facts": {
 							"fact_data_by_name": {
@@ -3798,7 +4281,7 @@
 						}
 					}
 				],
-				"meta.scroll_vertical": 1499,
+				"meta.scroll_vertical": 1346,
 				"meta.selected": false,
 				"next": 4,
 				"number": 3,
@@ -3900,7 +4383,7 @@
 								"jailer"
 							],
 							"active_actors_title": "character",
-							"content": "[]>narrator:You are home again. Reunited with your girlfriend, fresh out of the horrible clericant facility. <mp>Two and a half years ago you were incarcerated, and got yourself out by... means.<lc>Buried in your spine is your magnum opus, and a declaration of merciless revenge, the Godseed. <mp>Cultivated in the sunflower fields razed years ago, you hid it within yourself. <lc>Eventually, it will kill you. <lc>Inoculants make it not kill you by inhibiting its growth."
+							"content": "[]>narrator:You are home again. Reunited with your girlfriend, fresh out of the horrible clericant facility. <mp>Two and a half years ago you were incarcerated, and got yourself out by... means.<lc>Buried in your spine is your magnum opus, and a declaration of merciless revenge, the Godseed. <mp>Cultivated in the sunflower fields razed years ago, you hid it within yourself. <lc>Left unchecked, it could kill you within a single solar cycle. <mp>Inoculants make it not kill you by inhibiting its growth- Inoculants, which Anhedonia smuggled to you while you were away."
 						},
 						"facts": {
 							"fact_data_by_name": {
@@ -3949,7 +4432,7 @@
 								"jailer"
 							],
 							"active_actors_title": "character",
-							"content": "[]>one{one-emotion|joy}: Thank you for keeping me safe all this time. Stable.\n[]>anhedonia{anhedonia-emotion|happy}: Gladly.\n[]>narrator{one-emotion|listening}: You let out an introspective sigh.\n[]>narrator:That Godseed within you- it needs to grow for you to get your revenge.\n[]>one: It feels so fast to go off inoculants already... <mp>Kinda?\n[]>anhedonia{anhedonia-emotion|neutral}: Well, it's your call... <ap>Mostly.\n[]>one:Mostly?\n[]>anhedonia:My plug got hit and honestly I wouldn't know where else to get more.\n[]>one{one-emotion|sad}:Oh...\n[]>anhedonia:There's one contact but with their track record, that'll get us locked up and executed more than anything else.\n[]>one: ...\n[]>anhedonia:I'd do it for you but-\n[]>one:It's fine.\n[]>anhedonia: ...\n[]>one{one-emotion|neutral}:..<lc>That sounds like such a hassle.\n[]>one: And I also just can't really wait any longer, and they do make my head a bit floaty... Make the mind feel sticky. <mp>And so much other awfulness. <ap>Fuck.\n[]>anhedonia: Well...\n[]>anhedonia{anhedonia-emotion|concerned}: Does it feel rushed?\n[]>one: No.\n[]>anhedonia: Then...\n[]>one:Yea...\n[]>one:... You know my souls burns for something more. <lc>This body is made to be consumed.\n[]>anhedonia{anhedonia-emotion|sad}:...Yes.\n[]>one: No more inoculants."
+							"content": "[]>one{one-emotion|joy}: Thank you for keeping me safe all this time. Stable.\n[]>anhedonia{anhedonia-emotion|happy}: Gladly.\n[]>narrator{one-emotion|listening}: You let out an introspective sigh.\n[]>narrator:That Godseed within you- it needs to grow for you to get your revenge.\n[]>one: It feels so fast to go off inoculants already... <mp>Kinda?\n[]>anhedonia{anhedonia-emotion|neutral}: Well, it's your call... <ap>Mostly.\n[]>one:Mostly?\n[]>anhedonia:My plug got hit and honestly I wouldn't know where else to get more.\n[]>one{one-emotion|sad}:Oh...\n[]>anhedonia:I can try and hit up randos but with regulations becoming more and more shit... That'll get us locked up and executed more than anything else.\n[]>one: ...\n[]>anhedonia:I'd do it for you but-\n[]>one:It's fine.\n[]>anhedonia: ...\n[]>one{one-emotion|neutral}:...<lc>That sounds like such a hassle.\n[]>one: And I also just can't really wait any longer, and they do make my head a bit floaty... Make the mind feel sticky. <mp>And so much other awfulness. <ap>Fuck.\n[]>anhedonia: Well...\n[]>anhedonia{anhedonia-emotion|concerned}: Does it feel rushed?\n[]>one: No.\n[]>anhedonia: Then...\n[]>one:Yea...\n[]>one:... You know my souls burns for something more. <lc>This body is made to be consumed.\n[]>anhedonia{anhedonia-emotion|sad}:...Yes.\n[]>one: No more inoculants."
 						},
 						"facts": {
 							"fact_data_by_name": {
@@ -4169,7 +4652,7 @@
 						}
 					}
 				],
-				"meta.scroll_vertical": 779,
+				"meta.scroll_vertical": 0,
 				"meta.selected": false,
 				"next": 5,
 				"number": 4,
@@ -4381,7 +4864,7 @@
 								"jailer"
 							],
 							"active_actors_title": "character",
-							"content": "[]>narrator:Aggressive, grating, synthetic beats fill the air around your work. Your mouth tastes of sweet acid, traces from the treat you had mere minutes ago. Small and empty capsules of isotonic liquid dot the floor around your workspace. You'll get to cleaning those... Eventually.\n[]>narrator: Anhedonia walks up behind you, water jug in hand.\n[]>anhedonia{anhedonia-emotion|concerned}: Stay hydrated sunshine.\n[]>narrator: She refills your water glass. In teturn, you briefly shoot her a gentle smile before you turn your gaze back towards the work at hand.\n[]>one{anhedonia-emotion|happy,one-emotion|neutral}: Thank you.\n[]>anhedonia: Awrf.\n[]>anhedonia: ...\n[]>anhedonia{anhedonia-emotion|neutral}:Barely back from prison and already back to work?\n[]>one:Can't stay idle forever.\n[]>anhedonia: Sigh... <ap>So... What are you doing right now?\n[]>one: ...<lc>Sketching out a sigil.\n[]>narrator: Trying to find the ideal sign to beckon and guide the suncalling has been a grueling and extensive task- all morninig. It is a shape that ought to serve as beacon for the sun to visit, for just a moment. <mp>Inscribed- <ap>In blood."
+							"content": "[]>narrator:Aggressive, grating, synthetic beats fill the air around your work. Your mouth tastes of sweet acid, traces from the treat you had mere minutes ago. Small and empty capsules of isotonic liquid dot the floor around your workspace. You'll get to cleaning those... Eventually.\n[]>narrator: Anhedonia walks up behind you, water jug in hand.\n[]>anhedonia{anhedonia-emotion|concerned}: Stay hydrated sunshine.\n[]>narrator: She refills your water glass. In teturn, you briefly shoot her a gentle smile before you turn your gaze back towards the work at hand.\n[]>one{anhedonia-emotion|happy,one-emotion|neutral}: Thank you.\n[]>anhedonia: Woof woof.\n[]>anhedonia: ...\n[]>anhedonia{anhedonia-emotion|neutral}:Barely back from prison and already back to work?\n[]>one:Can't stay idle forever.\n[]>anhedonia: Sigh... <ap>So... What are you doing right now?\n[]>one: ...<lc>Sketching out a sigil.\n[]>narrator: Trying to find the ideal sign to beckon and guide the suncalling has been a grueling and extensive task- all morning. It is a shape that ought to serve as beacon for the sun to visit, for just a moment. <mp>Inscribed- <ap>In blood."
 						},
 						"facts": {
 							"fact_data_by_name": {
@@ -4430,7 +4913,7 @@
 								"jailer"
 							],
 							"active_actors_title": "character",
-							"content": "[]>one:We'll inscribe the shrines with them. <mp>We will... <ap>It'll be good. <mp>Gotta find a shape first.\n[]>one{one-emotion|anxious}:You can't work on this shit in prison.\n[]>one:There's a few things that have been floating around in my head but most of them aren't concrete enough to be usable.\n[]>anhedonia: So... I'll leave you to it? Let me know if I can give any creative input.\n[]>one: Will do.\n[]>narrator: Briefly, Anhedonia lingers.\n[]>anhedonia{anhedonia-emotion|concerned}: Don't overwork yourself already hun, please.\n[]>narrator: You have no real choice in the matter.\n[]>one{one-emotion|anxious}:You know I'm willing to tear myself apart over this.\n[]>anhedonia{anhedonia-emotion|sad}:I know. I saw in the fields.\n[]>one:We both did.\n[]>anhedonia:We did.\n[]>one:Thank you for it.<lc>We all need to shape our souls. <mp>This is such a grand work.\n[]>narrator{anhedonia-emotion|happy}:Anhedonia pats you on the head.\n[]>anhedonia:You'll do well."
+							"content": "[]>one:We'll inscribe the shrines with them. <mp>We will... <ap>It'll be good. <mp>Gotta find a shape first.\n[]>one{one-emotion|anxious}:You can't work on this shit in prison.\n[]>one:There's a few things that have been floating around in my head but most of them aren't concrete enough to be usable.\n[]>anhedonia: So... I'll leave you to it? Let me know if I can give any creative input.\n[]>one: Will do.\n[]>narrator: Anhedonia lingers.\n[]>anhedonia{anhedonia-emotion|concerned}: Don't overwork yourself already, hun, please.\n[]>narrator: You have no real choice in the matter.\n[]>one{one-emotion|anxious}:You know I'm willing to tear myself apart over this.\n[]>anhedonia{anhedonia-emotion|sad}:I know. I saw in the fields.\n[]>one:We both did.\n[]>anhedonia:We did.\n[]>one:Thank you for it.<lc>We all need to shape our souls. <mp>This is such a grand work.\n[]>narrator{anhedonia-emotion|happy}:Anhedonia pats you on the head.\n[]>anhedonia:You'll do well."
 						},
 						"facts": {
 							"fact_data_by_name": {
@@ -4760,7 +5243,7 @@
 								"jailer"
 							],
 							"active_actors_title": "character",
-							"content": "[]>anhedonia{anhedonia-emotion|concerned}: ...One... The eyes are already showing up again.\n[]>one: I think the last batch of... <ap>Inoculations wore off 2 weeks before my release. This is what I'd... <ap>We'd expect.\n[]>anhedonia:Didn't they ever find any traces of the seed or the antiseed?\n[]>one: They don't have medical checkups down there. <lc>They don't even know what to look for.\n[]>anhedonia: Can't believe we managed to hide the godseed...\n[]>one: Well... They're not always the sharp masterminds they propagandize themselves to be. Maybe they noticed and didn't do anything because it didn't grow?\n[]>anhedonia: I wouldn't trust their benevolence like that.\n[]>one: I wouldn't trust their competence.\n[]>one:...<lc>Fuck...\n[]>narrator:Your eyes-<ap> the ones you entered this world with-<ap> almost fall shut again."
+							"content": "[]>anhedonia{anhedonia-emotion|concerned}: ...One... The eyes are already showing up again.\n[]>one: I think the last batch of... <ap>Inoculations wore off 2 weeks before my release. This is what I'd... <ap>We'd expect.\n[]>anhedonia:Didn't they ever find any traces of the seed or the innos?\n[]>one: They don't have medical checkups down there. <lc>They don't even know what to look for.\n[]>anhedonia: Can't believe we managed to hide the godseed...\n[]>one: Well... They're not always the sharp masterminds they propagandize themselves to be. <mp>Or maybe they noticed and didn't do anything because it didn't grow?\n[]>anhedonia: I wouldn't trust their benevolence like that.\n[]>one: I wouldn't trust their competence.\n[]>one:...<lc>Fuck...\n[]>narrator:Your eyes-<ap> the ones you entered this world with-<ap> almost fall shut again."
 						},
 						"facts": {
 							"fact_data_by_name": {
@@ -4829,7 +5312,7 @@
 						}
 					}
 				],
-				"meta.scroll_vertical": 545,
+				"meta.scroll_vertical": 784,
 				"meta.selected": false,
 				"next": 7,
 				"number": 6,
@@ -4869,7 +5352,7 @@
 								2,
 								true,
 								"home_kitchen",
-								"sex"
+								"gentle"
 							],
 							"line_reader.reverse_args": [
 								"INVALID ARGUMENT FOR fade_in",
@@ -4881,7 +5364,7 @@
 							],
 							"meta.has_reverse": false,
 							"meta.reverse_text": "",
-							"meta.text": "black_fade(2.0, 2.0, 2.0, true, home_kitchen, sex)",
+							"meta.text": "black_fade(2.0, 2.0, 2.0, true, home_kitchen, gentle)",
 							"meta.validation_status": "OK",
 							"name": "black_fade",
 							"reverse_name": ""
@@ -5073,6 +5556,57 @@
 							"operand_key": "AND"
 						},
 						"content": {
+							"delay_after": 0,
+							"delay_before": 0,
+							"line_reader.args": [
+								"sex",
+								2
+							],
+							"line_reader.reverse_args": [
+								"INVALID ARGUMENT FOR name",
+								"INVALID ARGUMENT FOR fade_in"
+							],
+							"meta.has_reverse": false,
+							"meta.reverse_text": "",
+							"meta.text": "set_bgm(sex, 2.0)",
+							"meta.validation_status": "OK",
+							"name": "set_bgm",
+							"reverse_name": ""
+						},
+						"facts": {
+							"fact_data_by_name": {
+
+							},
+							"meta.visible": false
+						},
+						"header": [],
+						"line_type": 2,
+						"meta.conditionals_visible": false,
+						"meta.facts_visible": false,
+						"meta.indent_level": 0,
+						"meta.is_head_editable": false,
+						"meta.line_index": 4,
+						"meta.selector": {
+							"selected": false
+						}
+					},
+					{
+						"address": "7.5",
+						"conditionals": {
+							"behavior": 0,
+							"behavior_key": "Show",
+							"facts": {
+								"fact_data_by_name": {
+
+								},
+								"meta.visible": false
+							},
+							"meta.visible": false,
+							"operand": 0,
+							"operand_args": [],
+							"operand_key": "AND"
+						},
+						"content": {
 							"active_actors": [
 								"anhedonia",
 								"one",
@@ -5086,7 +5620,7 @@
 								"jailer"
 							],
 							"active_actors_title": "character",
-							"content": "[]>one: Hey.\n[]>anhedonia: What...\n[]>one: ...\n[]>anhedonia{anhedonia-emotion|neutral}: ... Hm? <lc>Don't want me to?\n[]>narrator: Pouting, you look up at her. You can feel her breath on your lips. <mp>So close.\n[]>anhedonia:...<lc>Cute.<lc>Fine, you get your good morning kiss.\n[]>narrator: Quiet and breathily, you exude a gentle whimper.\n[]>one: Please...\n[]>anhedonia{anhedonia-emotion|flirty}: ..."
+							"content": "[]>one: Hey.\n[]>anhedonia: What...\n[]>one: ...\n[]>anhedonia{anhedonia-emotion|neutral}: ... Hm? <lc>Don't want me to?\n[]>narrator{one-emotion|horny}: Pouting, you look up at her. You can feel her breath on your lips. <mp>So close.\n[]>anhedonia:...<lc>Cute.<lc>Fine, you get your good morning kiss.\n[]>narrator: Quiet and breathily, you exude a gentle whimper.\n[]>one: Please...\n[]>anhedonia{anhedonia-emotion|flirty}: ..."
 						},
 						"facts": {
 							"fact_data_by_name": {
@@ -5100,13 +5634,13 @@
 						"meta.facts_visible": false,
 						"meta.indent_level": 0,
 						"meta.is_head_editable": false,
-						"meta.line_index": 4,
+						"meta.line_index": 5,
 						"meta.selector": {
 							"selected": false
 						}
 					},
 					{
-						"address": "7.5",
+						"address": "7.6",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -5155,13 +5689,13 @@
 						"meta.facts_visible": false,
 						"meta.indent_level": 0,
 						"meta.is_head_editable": false,
-						"meta.line_index": 5,
+						"meta.line_index": 6,
 						"meta.selector": {
 							"selected": false
 						}
 					},
 					{
-						"address": "7.6",
+						"address": "7.7",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -5204,13 +5738,13 @@
 						"meta.facts_visible": false,
 						"meta.indent_level": 0,
 						"meta.is_head_editable": false,
-						"meta.line_index": 6,
+						"meta.line_index": 7,
 						"meta.selector": {
 							"selected": false
 						}
 					},
 					{
-						"address": "7.7",
+						"address": "7.8",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -5253,13 +5787,13 @@
 						"meta.facts_visible": false,
 						"meta.indent_level": 0,
 						"meta.is_head_editable": false,
-						"meta.line_index": 7,
+						"meta.line_index": 8,
 						"meta.selector": {
 							"selected": false
 						}
 					},
 					{
-						"address": "7.8",
+						"address": "7.9",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -5288,7 +5822,7 @@
 								"jailer"
 							],
 							"active_actors_title": "character",
-							"content": "[]>narrator:You reciprocate by pressing further against her in return, every bit of exposed skin feeling like it ought to belong to you both. <ap>Anhedonia dives deeper and deeper against you, her tongue seeking permission, which you grant. The taste of her saliva is divine. <mp>Both moaning into the other, you almost relax enough to fall asleep again, if it were not for the electrifying exhilaration your girlfriend provides to you. <ap>You are simply delighted to be back. <lc>Anhedonia's arms now trail up and down your back, nails digging into your skin, a sensation you have long missed. <mp>You fall deeper and deeper into relaxation, and your hand <call:shake_camera_str,20.0>slips on the windowsill, losing balance.<mp> Anhedonia holds you with impeccable reflex.\n[]>anhedonia: Be careful hun.\n[]>one: I will...\n[]>anhedonia: ...\n[]>one: Please. Come back.\n[]>narrator: You plead, arching your head up to continue making out with her but she does not quite get back into it.\n[]>anhedonia: ... Well, I was thinking of make your knees even weaker, <ap>if I may.\n[]>narrator: Before you can answer, Anhedonia gives you a quick kiss.\n[]>one: What do you <ap>mea<ap>-<ap>-<advance>\n[]>narrator: Your question becomes answered instantly as Anhedonia presses her leg harder into your crotch, elicitng a faint grunt from you.\n[]>anhedonia: Welll...\n[]>anhedonia: May I?\n[]>one: If you want.. <mp>But I'm on my period, you know.\n[]>narrator: She narrows her eyes, letting her gaze drift across your face and body."
+							"content": "[]>narrator:You reciprocate by pressing further against her in return, every bit of exposed skin feeling like it ought to belong to you both. <ap>Anhedonia dives deeper and deeper against you, her tongue seeking permission, which you grant. The taste of her saliva is divine. <mp>Both moaning into the other, you almost relax enough to fall asleep again, if it were not for the electrifying exhilaration your girlfriend provides to you. <ap>You are simply delighted to be back. <lc>Anhedonia's arms now trail up and down your back, nails digging into your skin, a sensation you have long missed. <mp>You fall deeper and deeper into relaxation, and your hand <call:shake_camera_str,20.0>slips on the windowsill, losing balance.<mp> Anhedonia holds you with impeccable reflex.\n[]>anhedonia: Be careful hun.\n[]>one: I will...\n[]>anhedonia: ...\n[]>one: Please. Come back.\n[]>narrator: You plead, arching your head up to continue making out with her but she does not quite get back into it.\n[]>anhedonia: ... Well, I was thinking of make your knees even weaker, <ap>if I may.\n[]>narrator: Before you can answer, Anhedonia gives you a quick kiss.\n[]>one: What do you <ap>mea<ap>-<ap>-<advance>\n[]>narrator: Your question becomes answered instantly as Anhedonia presses her leg harder into your crotch, elicitng a faint grunt from you.\n[]>anhedonia: Wellllll...\n[]>anhedonia: May I?\n[]>one: If you want.. <mp>But I'm on my period, you know.\n[]>narrator: She narrows her eyes, letting her gaze drift across your face and body."
 						},
 						"facts": {
 							"fact_data_by_name": {
@@ -5302,13 +5836,13 @@
 						"meta.facts_visible": false,
 						"meta.indent_level": 0,
 						"meta.is_head_editable": false,
-						"meta.line_index": 8,
+						"meta.line_index": 9,
 						"meta.selector": {
 							"selected": false
 						}
 					},
 					{
-						"address": "7.9",
+						"address": "7.10",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -5329,7 +5863,7 @@
 							"line_reader.args": [
 								1.3,
 								1.2,
-								-0.1,
+								0.4,
 								2.5
 							],
 							"line_reader.reverse_args": [
@@ -5340,7 +5874,7 @@
 							],
 							"meta.has_reverse": false,
 							"meta.reverse_text": "",
-							"meta.text": "control_camera(1.3, 1.2, -0.1, 2.5)",
+							"meta.text": "control_camera(1.3, 1.2, 0.4, 2.5)",
 							"meta.validation_status": "OK",
 							"name": "control_camera",
 							"reverse_name": ""
@@ -5357,13 +5891,13 @@
 						"meta.facts_visible": false,
 						"meta.indent_level": 0,
 						"meta.is_head_editable": false,
-						"meta.line_index": 9,
+						"meta.line_index": 10,
 						"meta.selector": {
 							"selected": false
 						}
 					},
 					{
-						"address": "7.10",
+						"address": "7.11",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -5406,13 +5940,13 @@
 						"meta.facts_visible": false,
 						"meta.indent_level": 0,
 						"meta.is_head_editable": false,
-						"meta.line_index": 10,
+						"meta.line_index": 11,
 						"meta.selector": {
 							"selected": false
 						}
 					},
 					{
-						"address": "7.11",
+						"address": "7.12",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -5433,7 +5967,7 @@
 							"line_reader.args": [
 								1.1,
 								1.1,
-								-0.6,
+								-0.2,
 								1.5
 							],
 							"line_reader.reverse_args": [
@@ -5444,7 +5978,7 @@
 							],
 							"meta.has_reverse": false,
 							"meta.reverse_text": "",
-							"meta.text": "control_camera(1.1, 1.1, -0.6, 1.5)",
+							"meta.text": "control_camera(1.1, 1.1, -0.2, 1.5)",
 							"meta.validation_status": "OK",
 							"name": "control_camera",
 							"reverse_name": ""
@@ -5461,13 +5995,13 @@
 						"meta.facts_visible": false,
 						"meta.indent_level": 0,
 						"meta.is_head_editable": false,
-						"meta.line_index": 11,
+						"meta.line_index": 12,
 						"meta.selector": {
 							"selected": false
 						}
 					},
 					{
-						"address": "7.12",
+						"address": "7.13",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -5510,13 +6044,13 @@
 						"meta.facts_visible": false,
 						"meta.indent_level": 0,
 						"meta.is_head_editable": false,
-						"meta.line_index": 12,
+						"meta.line_index": 13,
 						"meta.selector": {
 							"selected": false
 						}
 					},
 					{
-						"address": "7.13",
+						"address": "7.14",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -5561,13 +6095,13 @@
 						"meta.facts_visible": false,
 						"meta.indent_level": 0,
 						"meta.is_head_editable": false,
-						"meta.line_index": 13,
+						"meta.line_index": 14,
 						"meta.selector": {
 							"selected": false
 						}
 					},
 					{
-						"address": "7.14",
+						"address": "7.15",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -5610,13 +6144,13 @@
 						"meta.facts_visible": false,
 						"meta.indent_level": 0,
 						"meta.is_head_editable": false,
-						"meta.line_index": 14,
+						"meta.line_index": 15,
 						"meta.selector": {
 							"selected": false
 						}
 					},
 					{
-						"address": "7.15",
+						"address": "7.16",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -5659,13 +6193,13 @@
 						"meta.facts_visible": false,
 						"meta.indent_level": 0,
 						"meta.is_head_editable": false,
-						"meta.line_index": 15,
+						"meta.line_index": 16,
 						"meta.selector": {
 							"selected": false
 						}
 					},
 					{
-						"address": "7.16",
+						"address": "7.17",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -5708,13 +6242,13 @@
 						"meta.facts_visible": false,
 						"meta.indent_level": 0,
 						"meta.is_head_editable": false,
-						"meta.line_index": 16,
+						"meta.line_index": 17,
 						"meta.selector": {
 							"selected": false
 						}
 					},
 					{
-						"address": "7.17",
+						"address": "7.18",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -5759,13 +6293,13 @@
 						"meta.facts_visible": false,
 						"meta.indent_level": 0,
 						"meta.is_head_editable": false,
-						"meta.line_index": 17,
+						"meta.line_index": 18,
 						"meta.selector": {
 							"selected": false
 						}
 					},
 					{
-						"address": "7.18",
+						"address": "7.19",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -5808,13 +6342,68 @@
 						"meta.facts_visible": false,
 						"meta.indent_level": 0,
 						"meta.is_head_editable": false,
-						"meta.line_index": 18,
+						"meta.line_index": 19,
 						"meta.selector": {
 							"selected": false
 						}
 					},
 					{
-						"address": "7.19",
+						"address": "7.20",
+						"conditionals": {
+							"behavior": 0,
+							"behavior_key": "Show",
+							"facts": {
+								"fact_data_by_name": {
+
+								},
+								"meta.visible": false
+							},
+							"meta.visible": false,
+							"operand": 0,
+							"operand_args": [],
+							"operand_key": "AND"
+						},
+						"content": {
+							"delay_after": 0,
+							"delay_before": 0,
+							"line_reader.args": [
+								1,
+								0.7,
+								0.2,
+								4
+							],
+							"line_reader.reverse_args": [
+								"INVALID ARGUMENT FOR zoom",
+								"INVALID ARGUMENT FOR x",
+								"INVALID ARGUMENT FOR y",
+								"INVALID ARGUMENT FOR duration"
+							],
+							"meta.has_reverse": false,
+							"meta.reverse_text": "",
+							"meta.text": "control_camera(1.0, 0.7, 0.2, 4.0)",
+							"meta.validation_status": "OK",
+							"name": "control_camera",
+							"reverse_name": ""
+						},
+						"facts": {
+							"fact_data_by_name": {
+
+							},
+							"meta.visible": false
+						},
+						"header": [],
+						"line_type": 2,
+						"meta.conditionals_visible": false,
+						"meta.facts_visible": false,
+						"meta.indent_level": 0,
+						"meta.is_head_editable": false,
+						"meta.line_index": 20,
+						"meta.selector": {
+							"selected": false
+						}
+					},
+					{
+						"address": "7.21",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -5857,13 +6446,13 @@
 						"meta.facts_visible": false,
 						"meta.indent_level": 0,
 						"meta.is_head_editable": false,
-						"meta.line_index": 19,
+						"meta.line_index": 21,
 						"meta.selector": {
 							"selected": false
 						}
 					},
 					{
-						"address": "7.20",
+						"address": "7.22",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -5906,13 +6495,13 @@
 						"meta.facts_visible": false,
 						"meta.indent_level": 0,
 						"meta.is_head_editable": false,
-						"meta.line_index": 20,
+						"meta.line_index": 22,
 						"meta.selector": {
 							"selected": false
 						}
 					},
 					{
-						"address": "7.21",
+						"address": "7.23",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -5955,13 +6544,13 @@
 						"meta.facts_visible": false,
 						"meta.indent_level": 0,
 						"meta.is_head_editable": false,
-						"meta.line_index": 21,
+						"meta.line_index": 23,
 						"meta.selector": {
 							"selected": false
 						}
 					},
 					{
-						"address": "7.22",
+						"address": "7.24",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -6004,13 +6593,13 @@
 						"meta.facts_visible": false,
 						"meta.indent_level": 0,
 						"meta.is_head_editable": false,
-						"meta.line_index": 22,
+						"meta.line_index": 24,
 						"meta.selector": {
 							"selected": false
 						}
 					},
 					{
-						"address": "7.23",
+						"address": "7.25",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -6053,13 +6642,13 @@
 						"meta.facts_visible": false,
 						"meta.indent_level": 0,
 						"meta.is_head_editable": false,
-						"meta.line_index": 23,
+						"meta.line_index": 25,
 						"meta.selector": {
 							"selected": false
 						}
 					}
 				],
-				"meta.scroll_vertical": 0,
+				"meta.scroll_vertical": 5860,
 				"meta.selected": false,
 				"next": 8,
 				"number": 7,
@@ -6267,7 +6856,7 @@
 								"jailer"
 							],
 							"active_actors_title": "character",
-							"content": "[]>narrator:The ways of building oxylith shrines are difficult to know of, even more difficult to learn, and exceedingly difficult to test. <mp> You managed to dive head-first into all three parts of this shitty and annoying situation, and emerge with knowledge- a few weeks before your incarceration.\n[]>narrator:Standing at between knee- and waist-height, the raw stones have to be sculpted, imbued with meaning- <ap>And blood.\n[]>one: Glad these are still around.\n[]>anhedonia: Eh... It's tenuous at best. <lc> A bunch of suppliers have stopped and legislation is making it more and more difficult to come by.\n[]>one: Oh...\n[]>anhedonia: Yea, shit changed since you left. We have two from an old batch, the rest were all grown with more complex derivatives.\n[]>one: Fucking hell... Did people start talking?\n[]>anhedonia: Not really. Clericants just started investigating more and more.\n[]>narrator: You let out a frustrated sigh."
+							"content": "[]>narrator:The ways of building oxylith shrines are difficult to know of, even more difficult to learn, and exceedingly difficult to test. <mp> You managed to dive head-first into all three parts of this frustratingly opaque situation, and emerge with knowledge- a few weeks before your incarceration."
 						},
 						"facts": {
 							"fact_data_by_name": {
@@ -6303,6 +6892,57 @@
 							"operand_key": "AND"
 						},
 						"content": {
+							"delay_after": 0,
+							"delay_before": 0,
+							"line_reader.args": [
+								"OldShrines",
+								true
+							],
+							"line_reader.reverse_args": [
+								"INVALID ARGUMENT FOR object_name",
+								"INVALID ARGUMENT FOR visibility"
+							],
+							"meta.has_reverse": false,
+							"meta.reverse_text": "",
+							"meta.text": "set_object_visible(OldShrines, true)",
+							"meta.validation_status": "OK",
+							"name": "set_object_visible",
+							"reverse_name": ""
+						},
+						"facts": {
+							"fact_data_by_name": {
+
+							},
+							"meta.visible": false
+						},
+						"header": [],
+						"line_type": 2,
+						"meta.conditionals_visible": false,
+						"meta.facts_visible": false,
+						"meta.indent_level": 0,
+						"meta.is_head_editable": false,
+						"meta.line_index": 4,
+						"meta.selector": {
+							"selected": false
+						}
+					},
+					{
+						"address": "8.5",
+						"conditionals": {
+							"behavior": 0,
+							"behavior_key": "Show",
+							"facts": {
+								"fact_data_by_name": {
+
+								},
+								"meta.visible": false
+							},
+							"meta.visible": false,
+							"operand": 0,
+							"operand_args": [],
+							"operand_key": "AND"
+						},
+						"content": {
 							"active_actors": [
 								"anhedonia",
 								"one",
@@ -6316,7 +6956,7 @@
 								"jailer"
 							],
 							"active_actors_title": "character",
-							"content": "[]>one:Do you think you could hit up Spectra about some oxy?\n[]>anhedonia:She's probably the only one to ask, huh... <ap>Yeah, that she would be...\n[]>one:Bad blood?\n[]>anhedonia:No. Just haven't seen each other in a while.\n[]>anhedonia:But we've been in contact. It'll be fine."
+							"content": "[]>narrator:Standing at between knee- and waist-height, the raw stones have to be sculpted, imbued with meaning- <ap>And blood.\n[]>one: Glad these are still around.\n[]>anhedonia: Eh... It's tenuous at best. <lc> A bunch of suppliers have stopped and legislation is making it more and more difficult to come by.\n[]>one: Oh...\n[]>anhedonia: Yea, shit changed since you left. We have two from an old batch, the rest were all grown with more complex derivatives.\n[]>one: Fucking hell... Did people start talking?\n[]>anhedonia: Not really. Clericants just started investigating more and more.\n[]>narrator: You let out a frustrated sigh.\n[]>one:Do you think you could hit up Spectra about some oxy?\n[]>anhedonia:She's probably the only one to ask, huh... <ap>Yeah, that she would be...\n[]>one:Bad blood?\n[]>anhedonia:No. Just haven't seen each other in a while.\n[]>anhedonia:But we've been in contact. It'll be fine."
 						},
 						"facts": {
 							"fact_data_by_name": {
@@ -6330,13 +6970,13 @@
 						"meta.facts_visible": false,
 						"meta.indent_level": 0,
 						"meta.is_head_editable": false,
-						"meta.line_index": 4,
+						"meta.line_index": 5,
 						"meta.selector": {
 							"selected": false
 						}
 					}
 				],
-				"meta.scroll_vertical": 358,
+				"meta.scroll_vertical": 636,
 				"meta.selected": false,
 				"next": 9,
 				"number": 8,
@@ -6656,7 +7296,7 @@
 								"jailer"
 							],
 							"active_actors_title": "character",
-							"content": "[]>spectra{spectra-emotion|neutral,anhedonia-emotion|concerned}: How soon do you need it?\n[]>anhedonia: Yesterday, at the very least.\n[]>spectra:... <mp>That's pretty demanding of you.\n[]>anhedonia:Yeah, sorry.\n[]>spectra:It's fine... we will... find someone.\n[]>narrator:If Spectra doesn't know any oxy plugs, it might be over for you. You don't know anyone she doesn't.\n[]>spectra:Thing is, the world turned. <mp>It turned a lot in those two and a half years. <mp>Sourcing oxy has become more difficult, more dangerous... There is no one left actively working with it regularly.\n[]>anhedonia:It always... <ap>It always seemed like you had a steady stream.\n[]>spectra:Crop rotation.\n[]>spectra:You have no idea how many hands that shit passed through.\n[]>spectra:And you need industrial quantities this time around.\n[]>anhedonia{anhedonia-emotion|sad}: Is there no one left?\n[]>spectra: Not that I know of... <mp>Well...\n[]>anhedonia: Well?\n[]>spectra: Do you remember Soot and the lot?\n[]>anhedonia: Oxyheads from a few years ago.\n[]>spectra: Precisely. They're out now.\n[]>anhedonia{anhedonia-emotion|concerned}: ...Out?\n[]>spectra: Last I heard of them, they ditched this place for the east, somewhere in the salted fields. I could give you the coordinates.\n[]>narrator{anhedonia-emotion|dismissive}: You clasp your hands over your face in frustration and let out a groan.\n[]>anhedonia: Nnrnrngnh! <lc>Ah fuck! <lc>I really didn't wanna have to see them again.\n[]>spectra: Me neither, to be frank. <lc>Don't mention me.\n[]>anhedonia{anhedonia-emotion|shock}:They might fucking kill me on sight.\n[]>narrator:Spectra simply shrugs. <lc>You don't have any alternatives. One needs working material and you have no other sources left. <mp>The best thing you can do is be as amicable as possible, and hope they forgot.\n[]>anhedonia: But you still have their coordinates?\n[]>spectra: You know how it is for seers. I used to make lots of home visits before I got enough people that'd come to me. <lc>Kept dibs on them in case they wanted to repay you for that amputation stunt you pulled.\n[]>anhedonia{anhedonia-emotion|concerned}:You're an angel. <ap>Thank you.\n[]>anhedonia{anhedonia-emotion|sad}:I'll try my best. <mp>Sorry."
+							"content": "[]>spectra{spectra-emotion|neutral,anhedonia-emotion|concerned}: How soon do you need it?\n[]>anhedonia: Yesterday, at the very least.\n[]>spectra:... <mp>That's pretty demanding of you.\n[]>anhedonia:Yeah, sorry.\n[]>spectra:It's fine... we will... find someone.\n[]>narrator:If Spectra doesn't know any oxy plugs, it might be over for you. You don't know anyone she doesn't.\n[]>spectra:Thing is, the world turned. <mp>It turned a lot in those two and a half years. <mp>Sourcing oxy has become more difficult, more dangerous... There is no one left actively working with it regularly.\n[]>anhedonia:It always... <ap>It always seemed like you had a steady stream.\n[]>spectra:Crop rotation.\n[]>spectra:You have no idea how many hands that shit passed through.\n[]>spectra:And you need industrial quantities this time around.\n[]>anhedonia{anhedonia-emotion|sad}: Is there no one left?\n[]>spectra: Not that I know of... <mp>Well...\n[]>anhedonia: Well?\n[]>spectra: Do you remember Soot and the lot?\n[]>anhedonia: Oxyheads from a few years ago.\n[]>spectra: Precisely. They're out now.\n[]>anhedonia{anhedonia-emotion|concerned}: ...Out?\n[]>spectra: Last I heard of them, they ditched this place for... somewhere in the salted fields. Mornward. I could give you the coordinates.\n[]>narrator{anhedonia-emotion|dismissive}: You clasp your hands over your face in frustration and let out a groan.\n[]>anhedonia: Nnrnrngnh! <lc>Ah fuck! <lc>I really didn't wanna have to see them again.\n[]>spectra: Me neither, to be frank. <lc>Don't mention me.\n[]>anhedonia{anhedonia-emotion|shock}:They might fucking... kill me on sight.\n[]>narrator:Spectra simply shrugs. <lc>You don't have any alternatives. One needs working material and you have no other sources left. <mp>The best thing you can do is be as amicable as possible, and hope they forgot.\n[]>anhedonia: But you still have their coordinates?\n[]>spectra: You know how it is for seers. I used to make lots of home visits before I got enough people that'd come to me. <lc>Kept dibs on them in case they wanted to repay you for that amputation stunt you pulled.\n[]>anhedonia{anhedonia-emotion|concerned}:You're an angel. <ap>Thank you.\n[]>anhedonia{anhedonia-emotion|sad}:I'll try my best. <mp>Sorry."
 						},
 						"facts": {
 							"fact_data_by_name": {
@@ -6847,7 +7487,7 @@
 								2,
 								true,
 								"city_walls",
-								"none"
+								"wasteland"
 							],
 							"line_reader.reverse_args": [
 								"INVALID ARGUMENT FOR fade_in",
@@ -6859,7 +7499,7 @@
 							],
 							"meta.has_reverse": false,
 							"meta.reverse_text": "set_background(spectra_apartment, 0.0)",
-							"meta.text": "black_fade(2.0, 2.0, 2.0, true, city_walls, none)",
+							"meta.text": "black_fade(2.0, 2.0, 2.0, true, city_walls, wasteland)",
 							"meta.validation_status": "OK",
 							"name": "black_fade",
 							"reverse_name": "set_background"
@@ -6931,7 +7571,7 @@
 						}
 					}
 				],
-				"meta.scroll_vertical": 503,
+				"meta.scroll_vertical": 2108,
 				"meta.selected": false,
 				"next": 10,
 				"number": 9,
@@ -7071,6 +7711,167 @@
 							"operand_key": "AND"
 						},
 						"content": {
+							"delay_after": 0,
+							"delay_before": 0,
+							"line_reader.args": [
+								"one",
+								"1138"
+							],
+							"line_reader.reverse_args": [
+								"INVALID ARGUMENT FOR character",
+								"INVALID ARGUMENT FOR name"
+							],
+							"meta.has_reverse": false,
+							"meta.reverse_text": "",
+							"meta.text": "set_character_name(one, 1138)",
+							"meta.validation_status": "OK",
+							"name": "set_character_name",
+							"reverse_name": ""
+						},
+						"facts": {
+							"fact_data_by_name": {
+
+							},
+							"meta.visible": false
+						},
+						"header": [],
+						"line_type": 2,
+						"meta.conditionals_visible": false,
+						"meta.facts_visible": false,
+						"meta.indent_level": 0,
+						"meta.is_head_editable": false,
+						"meta.line_index": 2,
+						"meta.selector": {
+							"selected": false
+						}
+					},
+					{
+						"address": "10.3",
+						"conditionals": {
+							"behavior": 0,
+							"behavior_key": "Show",
+							"facts": {
+								"fact_data_by_name": {
+
+								},
+								"meta.visible": false
+							},
+							"meta.visible": false,
+							"operand": 0,
+							"operand_args": [],
+							"operand_key": "AND"
+						},
+						"content": {
+							"delay_after": 0,
+							"delay_before": 0,
+							"line_reader.args": [
+								"one",
+								3,
+								0,
+								false
+							],
+							"line_reader.reverse_args": [
+								"INVALID ARGUMENT FOR character_name",
+								"INVALID ARGUMENT FOR index",
+								"INVALID ARGUMENT FOR time",
+								"INVALID ARGUMENT FOR wait_for_reposition"
+							],
+							"meta.has_reverse": false,
+							"meta.reverse_text": "",
+							"meta.text": "set_x_position(one, 3.0, 0.0, false)",
+							"meta.validation_status": "OK",
+							"name": "set_x_position",
+							"reverse_name": ""
+						},
+						"facts": {
+							"fact_data_by_name": {
+
+							},
+							"meta.visible": false
+						},
+						"header": [],
+						"line_type": 2,
+						"meta.conditionals_visible": false,
+						"meta.facts_visible": false,
+						"meta.indent_level": 0,
+						"meta.is_head_editable": false,
+						"meta.line_index": 3,
+						"meta.selector": {
+							"selected": false
+						}
+					},
+					{
+						"address": "10.4",
+						"conditionals": {
+							"behavior": 0,
+							"behavior_key": "Show",
+							"facts": {
+								"fact_data_by_name": {
+
+								},
+								"meta.visible": false
+							},
+							"meta.visible": false,
+							"operand": 0,
+							"operand_args": [],
+							"operand_key": "AND"
+						},
+						"content": {
+							"delay_after": 0,
+							"delay_before": 0,
+							"line_reader.args": [
+								"interrogator",
+								6,
+								0,
+								false
+							],
+							"line_reader.reverse_args": [
+								"INVALID ARGUMENT FOR character_name",
+								"INVALID ARGUMENT FOR index",
+								"INVALID ARGUMENT FOR time",
+								"INVALID ARGUMENT FOR wait_for_reposition"
+							],
+							"meta.has_reverse": false,
+							"meta.reverse_text": "",
+							"meta.text": "set_x_position(interrogator, 6.0, 0.0, false)",
+							"meta.validation_status": "OK",
+							"name": "set_x_position",
+							"reverse_name": ""
+						},
+						"facts": {
+							"fact_data_by_name": {
+
+							},
+							"meta.visible": false
+						},
+						"header": [],
+						"line_type": 2,
+						"meta.conditionals_visible": false,
+						"meta.facts_visible": false,
+						"meta.indent_level": 0,
+						"meta.is_head_editable": false,
+						"meta.line_index": 4,
+						"meta.selector": {
+							"selected": false
+						}
+					},
+					{
+						"address": "10.5",
+						"conditionals": {
+							"behavior": 0,
+							"behavior_key": "Show",
+							"facts": {
+								"fact_data_by_name": {
+
+								},
+								"meta.visible": false
+							},
+							"meta.visible": false,
+							"operand": 0,
+							"operand_args": [],
+							"operand_key": "AND"
+						},
+						"content": {
 							"active_actors": [
 								"anhedonia",
 								"one",
@@ -7084,7 +7885,7 @@
 								"jailer"
 							],
 							"active_actors_title": "character",
-							"content": "[]>interrogator: we will blind your irises with formaldehyde and graft new eyes in their place. and blind them again. and carve them out again. and make them whole again. over and over and over.\n[]>interrogator: you have no fucking idea what we have in the lower levels.\n\nformaldehyde interrotagtion\n[]>interrogator: you think we won't hurt your... cohabitant?\n[]>interrogator: ...they... send you so many letters. so sappy.\n[]>interrogator: you freaks have disgusting prose. if it even qualifies as that... disgusting freaks...\n[]>narrator: with every breath, he draws out the words more and more, a clear demonstration of the clericant's distain for you and your girlfriend.c\n[]>one: we had a deal\n[]>interrogator: and your compliance makes us honor it. but our patience is limited.\n[]>interrogator: we will get our answers. and if we have to take you apart for that, so be it.\n[]>narrator: fuck. if they find the godseed in you, you're fucked.\n[]>one: that... won't be needed.\n[]>one: I'll help you synthesize work you may require.\n[]>interrogator: ...\n[]>interrogator: good."
+							"content": "[]>interrogator{interrogator-emotion|neutral,one-emotion|pain}: we will blind your irises with formaldehyde and graft new eyes in their place. and blind them again. and carve them out again. and make them whole again. over and over and over.\n[]>interrogator: you have no fucking idea what we have in the lower levels.\n\nformaldehyde interrotagtion\n[]>interrogator: you think we won't hurt your... cohabitant?\n[]>interrogator: ...they... send you so many letters. so sappy.\n[]>interrogator: you freaks have disgusting prose. if it even qualifies as that... disgusting freaks...\n[]>narrator: with every breath, he draws out the words more and more, a clear demonstration of the clericant's distain for you and your girlfriend.c\n[]>one: we had a deal\n[]>interrogator: and your compliance makes us honor it. but our patience is limited.\n[]>interrogator: we will get our answers. and if we have to take you apart for that, so be it.\n[]>narrator: fuck. if they find the godseed in you, you're fucked.\n[]>one: that... won't be needed.\n[]>one: I'll help you synthesize work you may require.\n[]>interrogator: ...\n[]>interrogator: good."
 						},
 						"facts": {
 							"fact_data_by_name": {
@@ -7098,13 +7899,13 @@
 						"meta.facts_visible": false,
 						"meta.indent_level": 0,
 						"meta.is_head_editable": false,
-						"meta.line_index": 2,
+						"meta.line_index": 5,
 						"meta.selector": {
 							"selected": false
 						}
 					},
 					{
-						"address": "10.3",
+						"address": "10.6",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -7147,13 +7948,13 @@
 						"meta.facts_visible": false,
 						"meta.indent_level": 0,
 						"meta.is_head_editable": false,
-						"meta.line_index": 3,
+						"meta.line_index": 6,
 						"meta.selector": {
 							"selected": false
 						}
 					},
 					{
-						"address": "10.4",
+						"address": "10.7",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -7172,26 +7973,18 @@
 							"delay_after": 0,
 							"delay_before": 0,
 							"line_reader.args": [
-								0,
-								2,
-								4,
-								true,
-								"bench",
-								"col8822"
+								"one",
+								"One"
 							],
 							"line_reader.reverse_args": [
-								"INVALID ARGUMENT FOR fade_in",
-								"INVALID ARGUMENT FOR hold_time",
-								"INVALID ARGUMENT FOR fade_out",
-								"INVALID ARGUMENT FOR hide_characters",
-								"INVALID ARGUMENT FOR new_background",
-								"INVALID ARGUMENT FOR new_bgm"
+								"INVALID ARGUMENT FOR character",
+								"INVALID ARGUMENT FOR name"
 							],
 							"meta.has_reverse": false,
 							"meta.reverse_text": "",
-							"meta.text": "black_fade(0.0, 2.0, 4.0, true, bench, col8822)",
+							"meta.text": "set_character_name(one, One)",
 							"meta.validation_status": "OK",
-							"name": "black_fade",
+							"name": "set_character_name",
 							"reverse_name": ""
 						},
 						"facts": {
@@ -7206,13 +7999,13 @@
 						"meta.facts_visible": false,
 						"meta.indent_level": 0,
 						"meta.is_head_editable": false,
-						"meta.line_index": 4,
+						"meta.line_index": 7,
 						"meta.selector": {
 							"selected": false
 						}
 					}
 				],
-				"meta.scroll_vertical": 0,
+				"meta.scroll_vertical": 998,
 				"meta.selected": false,
 				"next": 11,
 				"number": 10,
@@ -7229,6 +8022,63 @@
 				"lines": [
 					{
 						"address": "11.0",
+						"conditionals": {
+							"behavior": 0,
+							"behavior_key": "Show",
+							"facts": {
+								"fact_data_by_name": {
+
+								},
+								"meta.visible": false
+							},
+							"meta.visible": false,
+							"operand": 0,
+							"operand_args": [],
+							"operand_key": "AND"
+						},
+						"content": {
+							"delay_after": 0,
+							"delay_before": 0,
+							"line_reader.args": [
+								"one",
+								"Writhe Love",
+								"bench",
+								1,
+								"col8822"
+							],
+							"line_reader.reverse_args": [
+								"INVALID ARGUMENT FOR pov_name",
+								"INVALID ARGUMENT FOR bottom_text",
+								"INVALID ARGUMENT FOR new_background",
+								"INVALID ARGUMENT FOR zoom",
+								"INVALID ARGUMENT FOR bgm"
+							],
+							"meta.has_reverse": false,
+							"meta.reverse_text": "",
+							"meta.text": "play_chapter_intro(one, Writhe Love, bench, 1.0, col8822)",
+							"meta.validation_status": "OK",
+							"name": "play_chapter_intro",
+							"reverse_name": ""
+						},
+						"facts": {
+							"fact_data_by_name": {
+
+							},
+							"meta.visible": false
+						},
+						"header": [],
+						"line_type": 2,
+						"meta.conditionals_visible": false,
+						"meta.facts_visible": false,
+						"meta.indent_level": 0,
+						"meta.is_head_editable": false,
+						"meta.line_index": 0,
+						"meta.selector": {
+							"selected": false
+						}
+					},
+					{
+						"address": "11.1",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -7271,13 +8121,13 @@
 						"meta.facts_visible": false,
 						"meta.indent_level": 0,
 						"meta.is_head_editable": false,
-						"meta.line_index": 0,
+						"meta.line_index": 1,
 						"meta.selector": {
 							"selected": false
 						}
 					},
 					{
-						"address": "11.1",
+						"address": "11.2",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -7306,7 +8156,7 @@
 								"jailer"
 							],
 							"active_actors_title": "character",
-							"content": "[]>anhedonia:There's a lot of hurt on that horizon.\n[]>one:And in this body, too...\n[]>narrator:These changes are- hurting. hurtful, even, perhaps? every day, your skin is broken in new places, small buds of stellar flesh emerging.\n[]>narrator:And they are a signifier of your body being used up in the endeavor."
+							"content": "[]>anhedonia:There's a lot of hurt on that horizon.\n[]>one:And in this body, too...\n[]>narrator:These changes are- Hurting. Hurtful, even, perhaps? Every day, your skin is broken in new places, small buds of stellar flesh emerging.\n[]>narrator:And they are a signifier of your body being used up in the endeavor."
 						},
 						"facts": {
 							"fact_data_by_name": {
@@ -7320,13 +8170,13 @@
 						"meta.facts_visible": false,
 						"meta.indent_level": 0,
 						"meta.is_head_editable": false,
-						"meta.line_index": 1,
+						"meta.line_index": 2,
 						"meta.selector": {
 							"selected": false
 						}
 					},
 					{
-						"address": "11.2",
+						"address": "11.3",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -7371,13 +8221,13 @@
 						"meta.facts_visible": false,
 						"meta.indent_level": 0,
 						"meta.is_head_editable": false,
-						"meta.line_index": 2,
+						"meta.line_index": 3,
 						"meta.selector": {
 							"selected": false
 						}
 					},
 					{
-						"address": "11.3",
+						"address": "11.4",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -7420,13 +8270,13 @@
 						"meta.facts_visible": false,
 						"meta.indent_level": 0,
 						"meta.is_head_editable": false,
-						"meta.line_index": 3,
+						"meta.line_index": 4,
 						"meta.selector": {
 							"selected": false
 						}
 					},
 					{
-						"address": "11.4",
+						"address": "11.5",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -7469,13 +8319,13 @@
 						"meta.facts_visible": false,
 						"meta.indent_level": 0,
 						"meta.is_head_editable": false,
-						"meta.line_index": 4,
+						"meta.line_index": 5,
 						"meta.selector": {
 							"selected": false
 						}
 					},
 					{
-						"address": "11.5",
+						"address": "11.6",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -7528,13 +8378,13 @@
 						"meta.facts_visible": false,
 						"meta.indent_level": 0,
 						"meta.is_head_editable": false,
-						"meta.line_index": 5,
+						"meta.line_index": 6,
 						"meta.selector": {
 							"selected": false
 						}
 					},
 					{
-						"address": "11.6",
+						"address": "11.7",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -7563,7 +8413,7 @@
 								"jailer"
 							],
 							"active_actors_title": "character",
-							"content": "[]>one{one-emotion|listening}: Say, with the eyes now returning. The goseed has taken root again.\n[]>anhedonia{anhedonia-emotion|neutral}:I wanted to ask about that- like in general.\n[]>anhedonia: Can I do anything for you, by the way? Help with the godseed?\n[]>one: I'm not sure actually...\n[]>one: It just consumes my body... Slowly.\n[]>anhedonia: ...\n[]>anhedonia: So keeping your body alive is the only thing I can do?\n[]>one: For the seed, yes.\n[]>one: I need you more anyways though.\n[]>anhedonia: ...What?\n[]>one: Don't neglect your girlfriend now.\n[]>anhedonia: Oh shit, yea. Of course.\n[]>one: Good.\n[]>one: Then take good care of this vessel!\n[]>one:...\n[]>one:Well, and-\n[]>anhedonia:What?\n[]>one:You know...\n[]>anhedonia:Does taking care of the seed conflict with your masochism?\n[]>one:Not at all... I need you to tie me up and destroy me\n[]>anhedonia: Then give me everything you got.\n[]>one: I need to give you everything.\n[]>anhedonia:...\n[]>one:...\n[]>one:Everything for you and the godseed...\n[]>anhedonia:...<lc>Then how about some destruction tomorrow?\n[]>one:Please."
+							"content": "[]>one{one-emotion|listening}: Say, with the eyes now returning. This means the goseed has taken root again.\n[]>anhedonia{anhedonia-emotion|neutral}:I wanted to ask about that- like in general.\n[]>anhedonia: Can I do anything for you, by the way? Help with the godseed?\n[]>one: I'm not sure actually...\n[]>one: It just consumes my body... Slowly.\n[]>anhedonia: ...\n[]>anhedonia: So keeping your body alive is the only thing I can do?\n[]>one: For the seed, yes.\n[]>one: I need you more anyways though.\n[]>anhedonia: ...What?\n[]>one: Don't neglect your girlfriend now.\n[]>anhedonia: Oh shit, yea. Of course.\n[]>one: Good.\n[]>one: Then take good care of this vessel!\n[]>one:...\n[]>one:Well, and-\n[]>anhedonia:What?\n[]>one:But...\n[]>one:You know...\n[]>one:You can still do things to it...\n[]>anhedonia:Do depraved and sadistic things to it?\n[]>narrator:You blush at her forwardness, even if you have adopted a similarly open approach over the course of your relationship.\n[]>one:Perhaps... <ap>Perhaps I just have this need for you to tie me up and destroy me...\n[]>anhedonia: Then you'll be a good girl for me and give me everything you got.\n[]>one:Mhm.\n[]>one: You know how to cradle my soul.\n[]>one:I need to give you everything.\n[]>anhedonia:...\n[]>one:...\n[]>one:Everything for you... <ap>and the godseed...\n[]>anhedonia:...<lc>Then how about some destruction tomorrow?\n[]>one:Please."
 						},
 						"facts": {
 							"fact_data_by_name": {
@@ -7577,13 +8427,13 @@
 						"meta.facts_visible": false,
 						"meta.indent_level": 0,
 						"meta.is_head_editable": false,
-						"meta.line_index": 6,
+						"meta.line_index": 7,
 						"meta.selector": {
 							"selected": false
 						}
 					}
 				],
-				"meta.scroll_vertical": 897,
+				"meta.scroll_vertical": 1898,
 				"meta.selected": false,
 				"next": 12,
 				"number": 11,
@@ -8291,7 +9141,7 @@
 								"jailer"
 							],
 							"active_actors_title": "character",
-							"content": "[]>one:... Gods...\n[]>anhedonia:...\n[]>one:...This is great\n[]>anhedonia:It is...., can you give more?\n[]>one: I'd be dead if I couldn't.\n[]>anhedonia: Good. \n[]>narrator: You demean your mime as far down as your facial muscles will carry, only to state the obvious and implicit question.\n[]>one: I really am?\n[]>anhedonia: <call:zoom_to_str,1.3,0.5>Such a good vessel.\n[]>narrator:Blood is running down your arm now, exposed nerve endings and sinew twitching in fright at the exposure to the unfamiliar environment of this toxic air you have to call your daily scourge.\n[]>anhedonia:Such <call:zoom_to_str,1.0,2.5>a good vessel of divine machine flesh.\n[]>narrator:You feel your organicic processes churn and react; Convulse."
+							"content": "[]>one:... Gods...\n[]>anhedonia:...\n[]>one:...This is... <lc>I love you...<lc>This is... great.\n[]>anhedonia:It is...., can you give more?\n[]>one: I'd be dead if I couldn't.\n[]>anhedonia: Good. \n[]>narrator: You demean your mime as far down as your facial muscles will carry, only to state the obvious and implicit question.\n[]>one: Am I really not broken enough for this?\n[]>anhedonia:No. <mp>You are...\n[]>anhedonia: <call:zoom_to_str,1.3,0.5>Such a good vessel.\n[]>anhedonia:Befit for your purpose. <mp>Befit for... <ap>me.\n[]>narrator:Blood is running down your arm now, exposed nerve endings and sinew twitching in fright at the exposure to the unfamiliar environment of this toxic air you have to call your daily scourge.\n[]>anhedonia:Such <call:zoom_to_str,1.0,2.5>a good vessel of divine machine flesh.\n[]>narrator:You feel your organic processes churn and react; Convulse."
 						},
 						"facts": {
 							"fact_data_by_name": {
@@ -8389,7 +9239,7 @@
 								"jailer"
 							],
 							"active_actors_title": "character",
-							"content": "[]>narrator{one-emotion|suspended3}:You puke up blood now, too. With a disgusting squelch it hits the ground as your retch and recoil at the foul mixture of stomach acid and heama making its way up your throat.\n[]>anhedonia: Good girl.\n[]>narrator:The sweet affirmations send shivers down your spine, hacking directly into the primordial brainstem that has come to make you associate pain with pleasure more than anything else... <mp>You shiver again from the rush of endorphins, coupled with latent muscle spasms contorting your esophagus. \n[]>narrator:You feel like you ought to die, and you know you can't. Your are safe here, with Anhedonia.\n[]>anhedonia: And you are mine.\n[]>one:...Please...I am...\n[]>anhedonia: So so good. Such a soft and cute girl you are.\n[]>narrator:The taste of iron is barreling across all other sensory inputs you get.\n[]>one: Gods...\n[]>anhedonia:...\n[]>anhedonia:Is it a lot?\n[]>one:A bit...\n[]>one:Please...\n[]>one: Let me... Down...\n[]>anhedonia:Only if you beg for it. <mp>Your horny brainfog got you into this mess, you can also let it carry you out of it.\n[]>anhedonia{anhedonia-emotion|dismissive}:....\n[]>one:...\n[]>narrator:The acute physical trauma rendering it so so difficult to respond adequately to Anhedonias inquiries.\n[]>one:...\n[]>one:FUCK!\n[]>narrator{anhedonia-emotion|flirty}:Fuck, you need her.\n[]>anhedonia:...\n[]>one:..Down... Release... Please...\n[]>narrator:You retch and shiver with each syllable.\n[]>anhedonia:My my, you are so pathetic.\n[]>one:Mnmfnm...\n[]>narrator:You exhale.\n[]>one{anhedonia-emotion|happy}:....Violently.\n[]>anhedonia{anhedonia-emotion|flirty}: Hehe. I knew. \n[]>one:...\n[]>narrator:Heavy and meant breaths exude from your lungs, carrying the stench of fresh blood with them.\n[]>anhedonia{anhedonia-emotion|holding-hacksaw}:....With pleasure.\n[]>narrator:And so Anhedonia grips the whip once again, and snaps it around your torso."
+							"content": "[]>narrator{one-emotion|suspended3}:You puke up blood now, too. With a disgusting squelch it hits the ground as your retch and recoil at the foul mixture of stomach acid and heama making its way up your throat.\n[]>anhedonia: Good girl.\n[]>narrator:The sweet affirmations send shivers down your spine, hacking directly into the primordial brainstem that has come to make you associate pain with pleasure more than anything else... <mp>You shiver again from the rush of endorphins, coupled with latent muscle spasms contorting your esophagus. \n[]>narrator:You feel like you ought to die, and you know you can't. Your are safe here, with Anhedonia.\n[]>anhedonia: And you are mine.\n[]>one:...Please...I am...\n[]>anhedonia: So so good. Such a soft and cute girl you are.\n[]>narrator:The taste of iron is barreling across all other sensory inputs you get.\n[]>one: Gods...\n[]>anhedonia:...\n[]>anhedonia:Is it a lot?\n[]>one:A bit...\n[]>one:Please...\n[]>one: Let me... Down...\n[]>anhedonia:Only if you beg for it. <mp>Your horny brainfog got you into this mess, you can also let it carry you out of it.\n[]>anhedonia{anhedonia-emotion|dismissive}:....\n[]>one:...\n[]>narrator:The acute physical trauma rendering it so so difficult to respond adequately to Anhedonias inquiries.\n[]>one:...\n[]>one:FUCK!\n[]>narrator{anhedonia-emotion|flirty}:Fuck, you need her.\n[]>anhedonia:...\n[]>one:..Down... Release... Please...\n[]>narrator:You retch and shiver with each syllable.\n[]>anhedonia:My my, you are so pathetic.\n[]>one:Mnmfnm...\n[]>narrator:You exhale.\n[]>one{anhedonia-emotion|happy}:....Violently.\n[]>anhedonia{anhedonia-emotion|flirty}: Hehe. I knew. \n[]>one:...\n[]>anhedonia:Filthy fucking masochist.\n[]>narrator:Heavy and meant breaths exude from your lungs, carrying the stench of fresh blood with them.\n[]>anhedonia{anhedonia-emotion|holding-hacksaw}:....With pleasure.\n[]>narrator:And so Anhedonia grips the whip once again, and snaps it around your torso."
 						},
 						"facts": {
 							"fact_data_by_name": {
@@ -8429,7 +9279,7 @@
 							"delay_before": 0,
 							"line_reader.args": [
 								40,
-								0
+								4
 							],
 							"line_reader.reverse_args": [
 								"INVALID ARGUMENT FOR shake_intensity",
@@ -8437,7 +9287,7 @@
 							],
 							"meta.has_reverse": false,
 							"meta.reverse_text": "",
-							"meta.text": "wound_fx(40.0, 0.0)",
+							"meta.text": "wound_fx(40.0, 4.0)",
 							"meta.validation_status": "OK",
 							"name": "wound_fx",
 							"reverse_name": ""
@@ -8733,6 +9583,116 @@
 							"operand_key": "AND"
 						},
 						"content": {
+							"delay_after": 0,
+							"delay_before": 0,
+							"line_reader.args": [
+								"anhedonia",
+								1,
+								0,
+								false
+							],
+							"line_reader.reverse_args": [
+								"INVALID ARGUMENT FOR character_name",
+								"INVALID ARGUMENT FOR index",
+								"INVALID ARGUMENT FOR time",
+								"INVALID ARGUMENT FOR wait_for_reposition"
+							],
+							"meta.has_reverse": false,
+							"meta.reverse_text": "",
+							"meta.text": "set_x_position(anhedonia, 1.0, 0.0, false)",
+							"meta.validation_status": "OK",
+							"name": "set_x_position",
+							"reverse_name": ""
+						},
+						"facts": {
+							"fact_data_by_name": {
+
+							},
+							"meta.visible": false
+						},
+						"header": [],
+						"line_type": 2,
+						"meta.conditionals_visible": false,
+						"meta.facts_visible": false,
+						"meta.indent_level": 0,
+						"meta.is_head_editable": false,
+						"meta.line_index": 22,
+						"meta.selector": {
+							"selected": false
+						}
+					},
+					{
+						"address": "12.23",
+						"conditionals": {
+							"behavior": 0,
+							"behavior_key": "Show",
+							"facts": {
+								"fact_data_by_name": {
+
+								},
+								"meta.visible": false
+							},
+							"meta.visible": false,
+							"operand": 0,
+							"operand_args": [],
+							"operand_key": "AND"
+						},
+						"content": {
+							"delay_after": 0,
+							"delay_before": 0,
+							"line_reader.args": [
+								"one",
+								3,
+								0,
+								false
+							],
+							"line_reader.reverse_args": [
+								"INVALID ARGUMENT FOR character_name",
+								"INVALID ARGUMENT FOR index",
+								"INVALID ARGUMENT FOR time",
+								"INVALID ARGUMENT FOR wait_for_reposition"
+							],
+							"meta.has_reverse": false,
+							"meta.reverse_text": "",
+							"meta.text": "set_x_position(one, 3.0, 0.0, false)",
+							"meta.validation_status": "OK",
+							"name": "set_x_position",
+							"reverse_name": ""
+						},
+						"facts": {
+							"fact_data_by_name": {
+
+							},
+							"meta.visible": false
+						},
+						"header": [],
+						"line_type": 2,
+						"meta.conditionals_visible": false,
+						"meta.facts_visible": false,
+						"meta.indent_level": 0,
+						"meta.is_head_editable": false,
+						"meta.line_index": 23,
+						"meta.selector": {
+							"selected": false
+						}
+					},
+					{
+						"address": "12.24",
+						"conditionals": {
+							"behavior": 0,
+							"behavior_key": "Show",
+							"facts": {
+								"fact_data_by_name": {
+
+								},
+								"meta.visible": false
+							},
+							"meta.visible": false,
+							"operand": 0,
+							"operand_args": [],
+							"operand_key": "AND"
+						},
+						"content": {
 							"active_actors": [
 								"anhedonia",
 								"one",
@@ -8760,13 +9720,13 @@
 						"meta.facts_visible": false,
 						"meta.indent_level": 0,
 						"meta.is_head_editable": false,
-						"meta.line_index": 22,
+						"meta.line_index": 24,
 						"meta.selector": {
 							"selected": false
 						}
 					}
 				],
-				"meta.scroll_vertical": 4681,
+				"meta.scroll_vertical": 5051,
 				"meta.selected": false,
 				"next": 13,
 				"number": 12,
@@ -9032,6 +9992,55 @@
 						"meta.indent_level": 0,
 						"meta.is_head_editable": false,
 						"meta.line_index": 4,
+						"meta.selector": {
+							"selected": false
+						}
+					},
+					{
+						"address": "13.5",
+						"conditionals": {
+							"behavior": 0,
+							"behavior_key": "Show",
+							"facts": {
+								"fact_data_by_name": {
+
+								},
+								"meta.visible": false
+							},
+							"meta.visible": false,
+							"operand": 0,
+							"operand_args": [],
+							"operand_key": "AND"
+						},
+						"content": {
+							"delay_after": 0,
+							"delay_before": 0,
+							"line_reader.args": [
+								2
+							],
+							"line_reader.reverse_args": [
+								"INVALID ARGUMENT FOR value"
+							],
+							"meta.has_reverse": false,
+							"meta.reverse_text": "",
+							"meta.text": "set_eye_progress(2.0)",
+							"meta.validation_status": "OK",
+							"name": "set_eye_progress",
+							"reverse_name": ""
+						},
+						"facts": {
+							"fact_data_by_name": {
+
+							},
+							"meta.visible": false
+						},
+						"header": [],
+						"line_type": 2,
+						"meta.conditionals_visible": false,
+						"meta.facts_visible": false,
+						"meta.indent_level": 0,
+						"meta.is_head_editable": false,
+						"meta.line_index": 5,
 						"meta.selector": {
 							"selected": false
 						}
@@ -9781,7 +10790,7 @@
 								"jailer"
 							],
 							"active_actors_title": "character",
-							"content": "[]>narrator:Day in day out, One would toil away at the shrines, and you woud go about supporting her endeavors. Prepare meals. Make sure she actually eats them. Keep the apartment from falling apart and stay up to date on political developments. Occasionally exchange a few electronic telegrams with Spectra, since all your other contacts have went away over time- In various definitions of that term.\n[]>narrator:You often go out and buy lots of nourishing fruit, when available. <mp>Difficult and expensive to come by, but everything for your wife and her work. <ap>Pomegrenates, mandarins, various nuts and root veggies.\n[]>narrator:The sky is overcast with a thick blanket of sickly-green and grey clouds. It had been a while since you two went out for a date like this, owing to much of One's occupation with the oxylith shrines. \n[]>narrator:This foggy blanket chokes all life from the world. A perfect setting to soothe the soul and warm the body with pizza.\n[]>narrator{anhedonia-emotion|happy,one-emotion|joy}:As you walk down one of the main artiries of the city, the clouds slowly lessen their chokehold, making space for the almost caustic sun rays to pierce the sky, and illuminate your walk. It feels warm on your skin, and on One's, when you brush your arms together.\n[]>one: Hehe. Date time!\n[]>anhedonia: Yay.\n[]>anhedonia: How did it go today?\n[]>one: Pretty good. Built up two more blanks today, ready for skulpting and stuff.\n[]>anhedonia: I'm glad. Proud of you.\n[]>one: Ehehe.\n[]>one: Will work more tomorrow obviously.\n[]>anhedonia: Of course you will.\n[]>one: Also found a really neat music release!\n[]>narrator: You continue chatting on your way to the pizzaria, talking about One's current creative processes, and you keeping the world together all around.\n[]>narrator: The sky never really clears of its stone-thick clouds, still overcast when you finally take your seats.\n[]>narrator: You get yourselves two massive pizzas, each freely taken from by either of you, occasionally even fed to the other. <mp>One and you might as well consider yourselves one shared metabolism. <lc>When you hold a piece to her mouth, you make sure to get lost in her face every time, and occasionally brush against her lips and cheeks. <mp>She does the same, eliciting small squeaks from you, while she tends to hum in comfy bliss. <lc>You generously keep repeating this spiel, showering each other in delicate affections whenever you can, legs pressed together, hands caressing one another between bites.\n[]>narrator: You take forever to actually finish your food.\n[]>narrator: That's ok."
+							"content": "[]>narrator:Day in day out, One would toil away at the shrines, and you woud go about supporting her endeavors. Prepare meals. Make sure she actually eats them. Keep the apartment from falling apart and stay up to date on political developments. <mp>Occasionally exchange a few electronic or physical telegrams with Spectra, since all your other contacts have went away over time- In various definitions of that term.\n[]>narrator:You often go out and buy lots of nourishing fruit, when available. <mp>Difficult and expensive to come by, but everything for your wife and her work. <ap>Pomegrenates, mandarins, various nuts and root veggies.\n[]>narrator:The sky is overcast with a thick blanket of sickly-green and grey clouds. It had been a while since you two went out for a date like this, owing to much of One's occupation with the oxylith shrines. \n[]>narrator:This foggy blanket chokes all life from the world. A perfect setting to soothe the soul and warm the body with pizza.\n[]>narrator{anhedonia-emotion|happy,one-emotion|joy}:As you walk down one of the main artiries of the city, the clouds slowly lessen their chokehold, making space for the almost caustic sun rays to pierce the sky, and illuminate your walk. <mp>It feels warm on your skin, and on One's, when you brush your arms together.\n[]>one: Hehe. Date time!\n[]>anhedonia: Yay.\n[]>anhedonia: How did it go today?\n[]>one: Pretty good. Built up two more blanks today, ready for skulpting and stuff.\n[]>anhedonia: I'm glad. Proud of you.\n[]>one: Ehehe.\n[]>one: Will work more tomorrow obviously.\n[]>anhedonia: Of course you will.\n[]>one: Also found a really neat music release!\n[]>narrator: You continue chatting on your way to the pizzaria, talking about One's current creative processes, and you keeping the world together all around.\n[]>narrator: The sky never really clears of its stone-thick clouds, still overcast when you finally take your seats.\n[]>narrator: You get yourselves two massive pizzas, each freely taken from by either of you, occasionally even fed to the other. <mp>One and you might as well consider yourselves one shared metabolism. <lc>When you hold a piece to her mouth, you make sure to get lost in her face every time, and occasionally brush against her lips and cheeks. <mp>She does the same, eliciting small squeaks from you, while she tends to hum in comfy bliss. <lc>You generously keep repeating this spiel, showering each other in delicate affections whenever you can, legs pressed together, hands caressing one another between bites.\n[]>narrator: You take forever to actually finish your food.\n[]>narrator: That's ok."
 						},
 						"facts": {
 							"fact_data_by_name": {
@@ -10066,7 +11075,7 @@
 						}
 					}
 				],
-				"meta.scroll_vertical": 928,
+				"meta.scroll_vertical": 0,
 				"meta.selected": false,
 				"next": 16,
 				"number": 15,
@@ -11448,6 +12457,57 @@
 							"operand_key": "AND"
 						},
 						"content": {
+							"delay_after": 0,
+							"delay_before": 0,
+							"line_reader.args": [
+								"one",
+								"1138"
+							],
+							"line_reader.reverse_args": [
+								"INVALID ARGUMENT FOR character",
+								"INVALID ARGUMENT FOR name"
+							],
+							"meta.has_reverse": false,
+							"meta.reverse_text": "",
+							"meta.text": "set_character_name(one, 1138)",
+							"meta.validation_status": "OK",
+							"name": "set_character_name",
+							"reverse_name": ""
+						},
+						"facts": {
+							"fact_data_by_name": {
+
+							},
+							"meta.visible": false
+						},
+						"header": [],
+						"line_type": 2,
+						"meta.conditionals_visible": false,
+						"meta.facts_visible": false,
+						"meta.indent_level": 0,
+						"meta.is_head_editable": false,
+						"meta.line_index": 2,
+						"meta.selector": {
+							"selected": false
+						}
+					},
+					{
+						"address": "17.3",
+						"conditionals": {
+							"behavior": 0,
+							"behavior_key": "Show",
+							"facts": {
+								"fact_data_by_name": {
+
+								},
+								"meta.visible": false
+							},
+							"meta.visible": false,
+							"operand": 0,
+							"operand_args": [],
+							"operand_key": "AND"
+						},
+						"content": {
 							"active_actors": [
 								"anhedonia",
 								"one",
@@ -11475,13 +12535,13 @@
 						"meta.facts_visible": false,
 						"meta.indent_level": 0,
 						"meta.is_head_editable": false,
-						"meta.line_index": 2,
+						"meta.line_index": 3,
 						"meta.selector": {
 							"selected": false
 						}
 					},
 					{
-						"address": "17.3",
+						"address": "17.4",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -11524,13 +12584,13 @@
 						"meta.facts_visible": false,
 						"meta.indent_level": 0,
 						"meta.is_head_editable": false,
-						"meta.line_index": 3,
+						"meta.line_index": 4,
 						"meta.selector": {
 							"selected": false
 						}
 					},
 					{
-						"address": "17.4",
+						"address": "17.5",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -11573,13 +12633,64 @@
 						"meta.facts_visible": false,
 						"meta.indent_level": 0,
 						"meta.is_head_editable": false,
-						"meta.line_index": 4,
+						"meta.line_index": 5,
+						"meta.selector": {
+							"selected": false
+						}
+					},
+					{
+						"address": "17.6",
+						"conditionals": {
+							"behavior": 0,
+							"behavior_key": "Show",
+							"facts": {
+								"fact_data_by_name": {
+
+								},
+								"meta.visible": false
+							},
+							"meta.visible": false,
+							"operand": 0,
+							"operand_args": [],
+							"operand_key": "AND"
+						},
+						"content": {
+							"delay_after": 0,
+							"delay_before": 0,
+							"line_reader.args": [
+								"one",
+								"One"
+							],
+							"line_reader.reverse_args": [
+								"INVALID ARGUMENT FOR character",
+								"INVALID ARGUMENT FOR name"
+							],
+							"meta.has_reverse": false,
+							"meta.reverse_text": "",
+							"meta.text": "set_character_name(one, One)",
+							"meta.validation_status": "OK",
+							"name": "set_character_name",
+							"reverse_name": ""
+						},
+						"facts": {
+							"fact_data_by_name": {
+
+							},
+							"meta.visible": false
+						},
+						"header": [],
+						"line_type": 2,
+						"meta.conditionals_visible": false,
+						"meta.facts_visible": false,
+						"meta.indent_level": 0,
+						"meta.is_head_editable": false,
+						"meta.line_index": 6,
 						"meta.selector": {
 							"selected": false
 						}
 					}
 				],
-				"meta.scroll_vertical": 0,
+				"meta.scroll_vertical": 866,
 				"meta.selected": false,
 				"next": 18,
 				"number": 17,
@@ -11909,7 +13020,7 @@
 						}
 					}
 				],
-				"meta.scroll_vertical": 1337,
+				"meta.scroll_vertical": 0,
 				"meta.selected": false,
 				"next": 19,
 				"number": 18,
@@ -12960,7 +14071,7 @@
 				},
 				"lines": [
 					{
-						"address": "20.0",
+						"address": "21.0",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -12979,14 +14090,14 @@
 							"delay_after": 0,
 							"delay_before": 0,
 							"line_reader.args": [
-								2
+								3
 							],
 							"line_reader.reverse_args": [
 								1
 							],
 							"meta.has_reverse": false,
 							"meta.reverse_text": "set_eye_progress(1.0)",
-							"meta.text": "set_eye_progress(2.0)",
+							"meta.text": "set_eye_progress(3.0)",
 							"meta.validation_status": "OK",
 							"name": "set_eye_progress",
 							"reverse_name": "set_eye_progress"
@@ -13009,7 +14120,7 @@
 						}
 					},
 					{
-						"address": "20.1",
+						"address": "21.1",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -13064,7 +14175,7 @@
 						}
 					},
 					{
-						"address": "20.2",
+						"address": "21.2",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -13119,7 +14230,7 @@
 						}
 					},
 					{
-						"address": "20.3",
+						"address": "21.3",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -13168,7 +14279,7 @@
 						}
 					},
 					{
-						"address": "20.4",
+						"address": "21.4",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -13217,7 +14328,7 @@
 						}
 					},
 					{
-						"address": "20.5",
+						"address": "21.5",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -13266,7 +14377,7 @@
 						}
 					},
 					{
-						"address": "20.6",
+						"address": "21.6",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -13325,7 +14436,7 @@
 						}
 					},
 					{
-						"address": "20.7",
+						"address": "21.7",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -13374,7 +14485,7 @@
 						}
 					},
 					{
-						"address": "20.8",
+						"address": "21.8",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -13423,7 +14534,7 @@
 						}
 					},
 					{
-						"address": "20.9",
+						"address": "21.9",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -13472,7 +14583,7 @@
 						}
 					},
 					{
-						"address": "20.10",
+						"address": "21.10",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -13521,7 +14632,7 @@
 						}
 					}
 				],
-				"meta.scroll_vertical": 2620,
+				"meta.scroll_vertical": 0,
 				"meta.selected": false,
 				"next": 22,
 				"number": 21,
@@ -14840,7 +15951,7 @@
 				},
 				"lines": [
 					{
-						"address": "22.0",
+						"address": "23.0",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -14889,7 +16000,56 @@
 						}
 					},
 					{
-						"address": "22.1",
+						"address": "23.1",
+						"conditionals": {
+							"behavior": 0,
+							"behavior_key": "Show",
+							"facts": {
+								"fact_data_by_name": {
+
+								},
+								"meta.visible": false
+							},
+							"meta.visible": false,
+							"operand": 0,
+							"operand_args": [],
+							"operand_key": "AND"
+						},
+						"content": {
+							"active_actors": [
+								"anhedonia",
+								"one",
+								"spectra",
+								"narrator",
+								"interrogator",
+								"torturer",
+								"one+anhedonia",
+								"gods",
+								"clericant",
+								"jailer"
+							],
+							"active_actors_title": "character",
+							"content": "[]>narrator: You pin One against the wall and make out with her"
+						},
+						"facts": {
+							"fact_data_by_name": {
+
+							},
+							"meta.visible": false
+						},
+						"header": [],
+						"line_type": 0,
+						"meta.conditionals_visible": false,
+						"meta.facts_visible": false,
+						"meta.indent_level": 0,
+						"meta.is_head_editable": false,
+						"meta.line_index": 1,
+						"meta.selector": {
+							"selected": false
+						}
+					},
+					{
+						"address": "23.2",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -14942,13 +16102,13 @@
 						"meta.facts_visible": false,
 						"meta.indent_level": 0,
 						"meta.is_head_editable": false,
-						"meta.line_index": 1,
+						"meta.line_index": 2,
 						"meta.selector": {
 							"selected": false
 						}
 					},
 					{
-						"address": "22.2",
+						"address": "23.3",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -14993,13 +16153,13 @@
 						"meta.facts_visible": false,
 						"meta.indent_level": 0,
 						"meta.is_head_editable": false,
-						"meta.line_index": 2,
+						"meta.line_index": 3,
 						"meta.selector": {
 							"selected": false
 						}
 					},
 					{
-						"address": "22.3",
+						"address": "23.4",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -15042,13 +16202,13 @@
 						"meta.facts_visible": false,
 						"meta.indent_level": 0,
 						"meta.is_head_editable": false,
-						"meta.line_index": 3,
+						"meta.line_index": 4,
 						"meta.selector": {
 							"selected": false
 						}
 					},
 					{
-						"address": "22.4",
+						"address": "23.5",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -15095,13 +16255,13 @@
 						"meta.facts_visible": false,
 						"meta.indent_level": 0,
 						"meta.is_head_editable": false,
-						"meta.line_index": 4,
+						"meta.line_index": 5,
 						"meta.selector": {
 							"selected": false
 						}
 					},
 					{
-						"address": "22.5",
+						"address": "23.6",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -15144,13 +16304,13 @@
 						"meta.facts_visible": false,
 						"meta.indent_level": 0,
 						"meta.is_head_editable": false,
-						"meta.line_index": 5,
+						"meta.line_index": 6,
 						"meta.selector": {
 							"selected": false
 						}
 					},
 					{
-						"address": "22.6",
+						"address": "23.7",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -15199,13 +16359,13 @@
 						"meta.facts_visible": false,
 						"meta.indent_level": 0,
 						"meta.is_head_editable": false,
-						"meta.line_index": 6,
+						"meta.line_index": 7,
 						"meta.selector": {
 							"selected": false
 						}
 					},
 					{
-						"address": "22.7",
+						"address": "23.8",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -15254,13 +16414,13 @@
 						"meta.facts_visible": false,
 						"meta.indent_level": 0,
 						"meta.is_head_editable": false,
-						"meta.line_index": 7,
+						"meta.line_index": 8,
 						"meta.selector": {
 							"selected": false
 						}
 					},
 					{
-						"address": "22.8",
+						"address": "23.9",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -15303,13 +16463,13 @@
 						"meta.facts_visible": false,
 						"meta.indent_level": 0,
 						"meta.is_head_editable": false,
-						"meta.line_index": 8,
+						"meta.line_index": 9,
 						"meta.selector": {
 							"selected": false
 						}
 					},
 					{
-						"address": "22.9",
+						"address": "23.10",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -15356,13 +16516,13 @@
 						"meta.facts_visible": false,
 						"meta.indent_level": 0,
 						"meta.is_head_editable": false,
-						"meta.line_index": 9,
+						"meta.line_index": 10,
 						"meta.selector": {
 							"selected": false
 						}
 					},
 					{
-						"address": "22.10",
+						"address": "23.11",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -15405,13 +16565,13 @@
 						"meta.facts_visible": false,
 						"meta.indent_level": 0,
 						"meta.is_head_editable": false,
-						"meta.line_index": 10,
+						"meta.line_index": 11,
 						"meta.selector": {
 							"selected": false
 						}
 					},
 					{
-						"address": "22.11",
+						"address": "23.12",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -15454,13 +16614,13 @@
 						"meta.facts_visible": false,
 						"meta.indent_level": 0,
 						"meta.is_head_editable": false,
-						"meta.line_index": 11,
+						"meta.line_index": 12,
 						"meta.selector": {
 							"selected": false
 						}
 					},
 					{
-						"address": "22.12",
+						"address": "23.13",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -15507,13 +16667,13 @@
 						"meta.facts_visible": false,
 						"meta.indent_level": 0,
 						"meta.is_head_editable": false,
-						"meta.line_index": 12,
+						"meta.line_index": 13,
 						"meta.selector": {
 							"selected": false
 						}
 					},
 					{
-						"address": "22.13",
+						"address": "23.14",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -15556,13 +16716,13 @@
 						"meta.facts_visible": false,
 						"meta.indent_level": 0,
 						"meta.is_head_editable": false,
-						"meta.line_index": 13,
+						"meta.line_index": 14,
 						"meta.selector": {
 							"selected": false
 						}
 					},
 					{
-						"address": "22.14",
+						"address": "23.15",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -15615,13 +16775,13 @@
 						"meta.facts_visible": false,
 						"meta.indent_level": 0,
 						"meta.is_head_editable": false,
-						"meta.line_index": 14,
+						"meta.line_index": 15,
 						"meta.selector": {
 							"selected": false
 						}
 					}
 				],
-				"meta.scroll_vertical": 2137,
+				"meta.scroll_vertical": 31,
 				"meta.selected": false,
 				"next": 24,
 				"number": 23,
@@ -19710,6 +20870,57 @@
 							"operand_key": "AND"
 						},
 						"content": {
+							"delay_after": 0,
+							"delay_before": 0,
+							"line_reader.args": [
+								"one",
+								"1138"
+							],
+							"line_reader.reverse_args": [
+								"INVALID ARGUMENT FOR character",
+								"INVALID ARGUMENT FOR name"
+							],
+							"meta.has_reverse": false,
+							"meta.reverse_text": "",
+							"meta.text": "set_character_name(one, 1138)",
+							"meta.validation_status": "OK",
+							"name": "set_character_name",
+							"reverse_name": ""
+						},
+						"facts": {
+							"fact_data_by_name": {
+
+							},
+							"meta.visible": false
+						},
+						"header": [],
+						"line_type": 2,
+						"meta.conditionals_visible": false,
+						"meta.facts_visible": false,
+						"meta.indent_level": 0,
+						"meta.is_head_editable": false,
+						"meta.line_index": 1,
+						"meta.selector": {
+							"selected": false
+						}
+					},
+					{
+						"address": "30.2",
+						"conditionals": {
+							"behavior": 0,
+							"behavior_key": "Show",
+							"facts": {
+								"fact_data_by_name": {
+
+								},
+								"meta.visible": false
+							},
+							"meta.visible": false,
+							"operand": 0,
+							"operand_args": [],
+							"operand_key": "AND"
+						},
+						"content": {
 							"active_actors": [
 								"anhedonia",
 								"one",
@@ -19737,13 +20948,13 @@
 						"meta.facts_visible": false,
 						"meta.indent_level": 0,
 						"meta.is_head_editable": false,
-						"meta.line_index": 1,
+						"meta.line_index": 2,
 						"meta.selector": {
 							"selected": false
 						}
 					},
 					{
-						"address": "30.2",
+						"address": "30.3",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -19796,13 +21007,13 @@
 						"meta.facts_visible": false,
 						"meta.indent_level": 0,
 						"meta.is_head_editable": false,
-						"meta.line_index": 2,
+						"meta.line_index": 3,
 						"meta.selector": {
 							"selected": false
 						}
 					},
 					{
-						"address": "30.3",
+						"address": "30.4",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -19845,13 +21056,13 @@
 						"meta.facts_visible": false,
 						"meta.indent_level": 0,
 						"meta.is_head_editable": false,
-						"meta.line_index": 3,
+						"meta.line_index": 4,
 						"meta.selector": {
 							"selected": false
 						}
 					},
 					{
-						"address": "30.4",
+						"address": "30.5",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -19900,13 +21111,13 @@
 						"meta.facts_visible": false,
 						"meta.indent_level": 0,
 						"meta.is_head_editable": false,
-						"meta.line_index": 4,
+						"meta.line_index": 5,
 						"meta.selector": {
 							"selected": false
 						}
 					},
 					{
-						"address": "30.5",
+						"address": "30.6",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -19955,13 +21166,13 @@
 						"meta.facts_visible": false,
 						"meta.indent_level": 0,
 						"meta.is_head_editable": false,
-						"meta.line_index": 5,
+						"meta.line_index": 6,
 						"meta.selector": {
 							"selected": false
 						}
 					},
 					{
-						"address": "30.6",
+						"address": "30.7",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -20004,13 +21215,13 @@
 						"meta.facts_visible": false,
 						"meta.indent_level": 0,
 						"meta.is_head_editable": false,
-						"meta.line_index": 6,
+						"meta.line_index": 7,
 						"meta.selector": {
 							"selected": false
 						}
 					},
 					{
-						"address": "30.7",
+						"address": "30.8",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -20059,13 +21270,13 @@
 						"meta.facts_visible": false,
 						"meta.indent_level": 0,
 						"meta.is_head_editable": false,
-						"meta.line_index": 7,
+						"meta.line_index": 8,
 						"meta.selector": {
 							"selected": false
 						}
 					},
 					{
-						"address": "30.8",
+						"address": "30.9",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -20108,13 +21319,13 @@
 						"meta.facts_visible": false,
 						"meta.indent_level": 0,
 						"meta.is_head_editable": false,
-						"meta.line_index": 8,
+						"meta.line_index": 9,
 						"meta.selector": {
 							"selected": false
 						}
 					},
 					{
-						"address": "30.9",
+						"address": "30.10",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -20157,13 +21368,13 @@
 						"meta.facts_visible": false,
 						"meta.indent_level": 0,
 						"meta.is_head_editable": false,
-						"meta.line_index": 9,
+						"meta.line_index": 10,
 						"meta.selector": {
 							"selected": false
 						}
 					},
 					{
-						"address": "30.10",
+						"address": "30.11",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -20206,13 +21417,13 @@
 						"meta.facts_visible": false,
 						"meta.indent_level": 0,
 						"meta.is_head_editable": false,
-						"meta.line_index": 10,
+						"meta.line_index": 11,
 						"meta.selector": {
 							"selected": false
 						}
 					},
 					{
-						"address": "30.11",
+						"address": "30.12",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -20255,13 +21466,13 @@
 						"meta.facts_visible": false,
 						"meta.indent_level": 0,
 						"meta.is_head_editable": false,
-						"meta.line_index": 11,
+						"meta.line_index": 12,
 						"meta.selector": {
 							"selected": false
 						}
 					},
 					{
-						"address": "30.12",
+						"address": "30.13",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -20304,13 +21515,64 @@
 						"meta.facts_visible": false,
 						"meta.indent_level": 0,
 						"meta.is_head_editable": false,
-						"meta.line_index": 12,
+						"meta.line_index": 13,
+						"meta.selector": {
+							"selected": false
+						}
+					},
+					{
+						"address": "30.14",
+						"conditionals": {
+							"behavior": 0,
+							"behavior_key": "Show",
+							"facts": {
+								"fact_data_by_name": {
+
+								},
+								"meta.visible": false
+							},
+							"meta.visible": false,
+							"operand": 0,
+							"operand_args": [],
+							"operand_key": "AND"
+						},
+						"content": {
+							"delay_after": 0,
+							"delay_before": 0,
+							"line_reader.args": [
+								"one",
+								"One"
+							],
+							"line_reader.reverse_args": [
+								"INVALID ARGUMENT FOR character",
+								"INVALID ARGUMENT FOR name"
+							],
+							"meta.has_reverse": false,
+							"meta.reverse_text": "",
+							"meta.text": "set_character_name(one, One)",
+							"meta.validation_status": "OK",
+							"name": "set_character_name",
+							"reverse_name": ""
+						},
+						"facts": {
+							"fact_data_by_name": {
+
+							},
+							"meta.visible": false
+						},
+						"header": [],
+						"line_type": 2,
+						"meta.conditionals_visible": false,
+						"meta.facts_visible": false,
+						"meta.indent_level": 0,
+						"meta.is_head_editable": false,
+						"meta.line_index": 14,
 						"meta.selector": {
 							"selected": false
 						}
 					}
 				],
-				"meta.scroll_vertical": 1004,
+				"meta.scroll_vertical": 2214,
 				"meta.selected": false,
 				"next": 31,
 				"number": 30,
@@ -22246,6 +23508,57 @@
 							"operand_key": "AND"
 						},
 						"content": {
+							"delay_after": 0,
+							"delay_before": 0,
+							"line_reader.args": [
+								"one",
+								"1138"
+							],
+							"line_reader.reverse_args": [
+								"INVALID ARGUMENT FOR character",
+								"INVALID ARGUMENT FOR name"
+							],
+							"meta.has_reverse": false,
+							"meta.reverse_text": "",
+							"meta.text": "set_character_name(one, 1138)",
+							"meta.validation_status": "OK",
+							"name": "set_character_name",
+							"reverse_name": ""
+						},
+						"facts": {
+							"fact_data_by_name": {
+
+							},
+							"meta.visible": false
+						},
+						"header": [],
+						"line_type": 2,
+						"meta.conditionals_visible": false,
+						"meta.facts_visible": false,
+						"meta.indent_level": 0,
+						"meta.is_head_editable": false,
+						"meta.line_index": 5,
+						"meta.selector": {
+							"selected": false
+						}
+					},
+					{
+						"address": "33.6",
+						"conditionals": {
+							"behavior": 0,
+							"behavior_key": "Show",
+							"facts": {
+								"fact_data_by_name": {
+
+								},
+								"meta.visible": false
+							},
+							"meta.visible": false,
+							"operand": 0,
+							"operand_args": [],
+							"operand_key": "AND"
+						},
+						"content": {
 							"active_actors": [
 								"anhedonia",
 								"one",
@@ -22273,13 +23586,13 @@
 						"meta.facts_visible": false,
 						"meta.indent_level": 0,
 						"meta.is_head_editable": false,
-						"meta.line_index": 5,
+						"meta.line_index": 6,
 						"meta.selector": {
 							"selected": false
 						}
 					},
 					{
-						"address": "33.6",
+						"address": "33.7",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -22322,13 +23635,13 @@
 						"meta.facts_visible": false,
 						"meta.indent_level": 0,
 						"meta.is_head_editable": false,
-						"meta.line_index": 6,
+						"meta.line_index": 7,
 						"meta.selector": {
 							"selected": false
 						}
 					},
 					{
-						"address": "33.7",
+						"address": "33.8",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -22381,13 +23694,13 @@
 						"meta.facts_visible": false,
 						"meta.indent_level": 0,
 						"meta.is_head_editable": false,
-						"meta.line_index": 7,
+						"meta.line_index": 8,
 						"meta.selector": {
 							"selected": false
 						}
 					},
 					{
-						"address": "33.8",
+						"address": "33.9",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -22430,13 +23743,13 @@
 						"meta.facts_visible": false,
 						"meta.indent_level": 0,
 						"meta.is_head_editable": false,
-						"meta.line_index": 8,
+						"meta.line_index": 9,
 						"meta.selector": {
 							"selected": false
 						}
 					},
 					{
-						"address": "33.9",
+						"address": "33.10",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -22479,13 +23792,13 @@
 						"meta.facts_visible": false,
 						"meta.indent_level": 0,
 						"meta.is_head_editable": false,
-						"meta.line_index": 9,
+						"meta.line_index": 10,
 						"meta.selector": {
 							"selected": false
 						}
 					},
 					{
-						"address": "33.10",
+						"address": "33.11",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -22528,13 +23841,13 @@
 						"meta.facts_visible": false,
 						"meta.indent_level": 0,
 						"meta.is_head_editable": false,
-						"meta.line_index": 10,
+						"meta.line_index": 11,
 						"meta.selector": {
 							"selected": false
 						}
 					},
 					{
-						"address": "33.11",
+						"address": "33.12",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -22577,13 +23890,13 @@
 						"meta.facts_visible": false,
 						"meta.indent_level": 0,
 						"meta.is_head_editable": false,
-						"meta.line_index": 11,
+						"meta.line_index": 12,
 						"meta.selector": {
 							"selected": false
 						}
 					},
 					{
-						"address": "33.12",
+						"address": "33.13",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -22626,13 +23939,13 @@
 						"meta.facts_visible": false,
 						"meta.indent_level": 0,
 						"meta.is_head_editable": false,
-						"meta.line_index": 12,
+						"meta.line_index": 13,
 						"meta.selector": {
 							"selected": false
 						}
 					},
 					{
-						"address": "33.13",
+						"address": "33.14",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -22675,13 +23988,13 @@
 						"meta.facts_visible": false,
 						"meta.indent_level": 0,
 						"meta.is_head_editable": false,
-						"meta.line_index": 13,
+						"meta.line_index": 14,
 						"meta.selector": {
 							"selected": false
 						}
 					},
 					{
-						"address": "33.14",
+						"address": "33.15",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -22726,13 +24039,13 @@
 						"meta.facts_visible": false,
 						"meta.indent_level": 0,
 						"meta.is_head_editable": false,
-						"meta.line_index": 14,
+						"meta.line_index": 15,
 						"meta.selector": {
 							"selected": false
 						}
 					},
 					{
-						"address": "33.15",
+						"address": "33.16",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -22775,13 +24088,13 @@
 						"meta.facts_visible": false,
 						"meta.indent_level": 0,
 						"meta.is_head_editable": false,
-						"meta.line_index": 15,
+						"meta.line_index": 16,
 						"meta.selector": {
 							"selected": false
 						}
 					},
 					{
-						"address": "33.16",
+						"address": "33.17",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -22826,13 +24139,13 @@
 						"meta.facts_visible": false,
 						"meta.indent_level": 0,
 						"meta.is_head_editable": false,
-						"meta.line_index": 16,
+						"meta.line_index": 17,
 						"meta.selector": {
 							"selected": false
 						}
 					},
 					{
-						"address": "33.17",
+						"address": "33.18",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -22875,13 +24188,13 @@
 						"meta.facts_visible": false,
 						"meta.indent_level": 0,
 						"meta.is_head_editable": false,
-						"meta.line_index": 17,
+						"meta.line_index": 18,
 						"meta.selector": {
 							"selected": false
 						}
 					},
 					{
-						"address": "33.18",
+						"address": "33.19",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -22926,13 +24239,13 @@
 						"meta.facts_visible": false,
 						"meta.indent_level": 0,
 						"meta.is_head_editable": false,
-						"meta.line_index": 18,
+						"meta.line_index": 19,
 						"meta.selector": {
 							"selected": false
 						}
 					},
 					{
-						"address": "33.19",
+						"address": "33.20",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -22975,13 +24288,13 @@
 						"meta.facts_visible": false,
 						"meta.indent_level": 0,
 						"meta.is_head_editable": false,
-						"meta.line_index": 19,
+						"meta.line_index": 20,
 						"meta.selector": {
 							"selected": false
 						}
 					},
 					{
-						"address": "33.20",
+						"address": "33.21",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -23026,13 +24339,13 @@
 						"meta.facts_visible": false,
 						"meta.indent_level": 0,
 						"meta.is_head_editable": false,
-						"meta.line_index": 20,
+						"meta.line_index": 21,
 						"meta.selector": {
 							"selected": false
 						}
 					},
 					{
-						"address": "33.21",
+						"address": "33.22",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -23075,13 +24388,13 @@
 						"meta.facts_visible": false,
 						"meta.indent_level": 0,
 						"meta.is_head_editable": false,
-						"meta.line_index": 21,
+						"meta.line_index": 22,
 						"meta.selector": {
 							"selected": false
 						}
 					},
 					{
-						"address": "33.22",
+						"address": "33.23",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -23126,13 +24439,64 @@
 						"meta.facts_visible": false,
 						"meta.indent_level": 0,
 						"meta.is_head_editable": false,
-						"meta.line_index": 22,
+						"meta.line_index": 23,
+						"meta.selector": {
+							"selected": false
+						}
+					},
+					{
+						"address": "33.24",
+						"conditionals": {
+							"behavior": 0,
+							"behavior_key": "Show",
+							"facts": {
+								"fact_data_by_name": {
+
+								},
+								"meta.visible": false
+							},
+							"meta.visible": false,
+							"operand": 0,
+							"operand_args": [],
+							"operand_key": "AND"
+						},
+						"content": {
+							"delay_after": 0,
+							"delay_before": 0,
+							"line_reader.args": [
+								"one",
+								"One"
+							],
+							"line_reader.reverse_args": [
+								"INVALID ARGUMENT FOR character",
+								"INVALID ARGUMENT FOR name"
+							],
+							"meta.has_reverse": false,
+							"meta.reverse_text": "",
+							"meta.text": "set_character_name(one, One)",
+							"meta.validation_status": "OK",
+							"name": "set_character_name",
+							"reverse_name": ""
+						},
+						"facts": {
+							"fact_data_by_name": {
+
+							},
+							"meta.visible": false
+						},
+						"header": [],
+						"line_type": 2,
+						"meta.conditionals_visible": false,
+						"meta.facts_visible": false,
+						"meta.indent_level": 0,
+						"meta.is_head_editable": false,
+						"meta.line_index": 24,
 						"meta.selector": {
 							"selected": false
 						}
 					}
 				],
-				"meta.scroll_vertical": 3989,
+				"meta.scroll_vertical": 5186,
 				"meta.selected": false,
 				"next": 34,
 				"number": 33,
@@ -23435,7 +24799,7 @@
 				},
 				"lines": [
 					{
-						"address": "35.0",
+						"address": "36.0",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -23492,7 +24856,7 @@
 						}
 					},
 					{
-						"address": "35.1",
+						"address": "36.1",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -23511,14 +24875,14 @@
 							"delay_after": 0,
 							"delay_before": 0,
 							"line_reader.args": [
-								3
+								4
 							],
 							"line_reader.reverse_args": [
 								2
 							],
 							"meta.has_reverse": false,
 							"meta.reverse_text": "set_eye_progress(2.0)",
-							"meta.text": "set_eye_progress(3.0)",
+							"meta.text": "set_eye_progress(4.0)",
 							"meta.validation_status": "OK",
 							"name": "set_eye_progress",
 							"reverse_name": "set_eye_progress"
@@ -23541,7 +24905,7 @@
 						}
 					},
 					{
-						"address": "35.2",
+						"address": "36.2",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -23596,7 +24960,7 @@
 						}
 					},
 					{
-						"address": "35.3",
+						"address": "36.3",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -23651,7 +25015,7 @@
 						}
 					},
 					{
-						"address": "35.4",
+						"address": "36.4",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -23700,7 +25064,7 @@
 						}
 					},
 					{
-						"address": "35.5",
+						"address": "36.5",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -23749,7 +25113,7 @@
 						}
 					},
 					{
-						"address": "35.6",
+						"address": "36.6",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -23798,7 +25162,7 @@
 						}
 					},
 					{
-						"address": "35.7",
+						"address": "36.7",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -23855,7 +25219,7 @@
 						}
 					},
 					{
-						"address": "35.8",
+						"address": "36.8",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -23904,7 +25268,7 @@
 						}
 					},
 					{
-						"address": "35.9",
+						"address": "36.9",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -23959,7 +25323,7 @@
 						}
 					},
 					{
-						"address": "35.10",
+						"address": "36.10",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -24008,7 +25372,7 @@
 						}
 					},
 					{
-						"address": "35.11",
+						"address": "36.11",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -24059,7 +25423,7 @@
 						}
 					},
 					{
-						"address": "35.12",
+						"address": "36.12",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -24108,7 +25472,7 @@
 						}
 					},
 					{
-						"address": "35.13",
+						"address": "36.13",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -24163,7 +25527,7 @@
 						}
 					},
 					{
-						"address": "35.14",
+						"address": "36.14",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -24212,7 +25576,7 @@
 						}
 					},
 					{
-						"address": "35.15",
+						"address": "36.15",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -24267,7 +25631,7 @@
 						}
 					},
 					{
-						"address": "35.16",
+						"address": "36.16",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -24316,7 +25680,7 @@
 						}
 					},
 					{
-						"address": "35.17",
+						"address": "36.17",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -24371,7 +25735,7 @@
 						}
 					},
 					{
-						"address": "35.18",
+						"address": "36.18",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -24420,7 +25784,7 @@
 						}
 					},
 					{
-						"address": "35.19",
+						"address": "36.19",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -24475,7 +25839,7 @@
 						}
 					},
 					{
-						"address": "35.20",
+						"address": "36.20",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -24524,7 +25888,7 @@
 						}
 					},
 					{
-						"address": "35.21",
+						"address": "36.21",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -24573,7 +25937,7 @@
 						}
 					},
 					{
-						"address": "35.22",
+						"address": "36.22",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -24622,7 +25986,7 @@
 						}
 					},
 					{
-						"address": "35.23",
+						"address": "36.23",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -24673,7 +26037,7 @@
 						}
 					},
 					{
-						"address": "35.24",
+						"address": "36.24",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -24722,7 +26086,7 @@
 						}
 					}
 				],
-				"meta.scroll_vertical": 5273,
+				"meta.scroll_vertical": 0,
 				"meta.selected": false,
 				"next": 37,
 				"number": 36,
@@ -24738,7 +26102,7 @@
 				},
 				"lines": [
 					{
-						"address": "36.0",
+						"address": "37.0",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -24762,7 +26126,7 @@
 								0,
 								true,
 								"home_regular_night",
-								"hypnagogic"
+								"ominous"
 							],
 							"line_reader.reverse_args": [
 								"INVALID ARGUMENT FOR fade_in",
@@ -24774,7 +26138,7 @@
 							],
 							"meta.has_reverse": false,
 							"meta.reverse_text": "",
-							"meta.text": "black_fade(10.0, 5.0, 0.0, true, home_regular_night, hypnagogic)",
+							"meta.text": "black_fade(10.0, 5.0, 0.0, true, home_regular_night, ominous)",
 							"meta.validation_status": "OK",
 							"name": "black_fade",
 							"reverse_name": ""
@@ -24797,7 +26161,7 @@
 						}
 					},
 					{
-						"address": "36.1",
+						"address": "37.1",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -24852,7 +26216,7 @@
 						}
 					},
 					{
-						"address": "36.2",
+						"address": "37.2",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -24881,7 +26245,7 @@
 								"jailer"
 							],
 							"active_actors_title": "character",
-							"content": "[]>narrator:Mood: Nostalghia - Hypnagogic\n[]>narrator{anhedonia-emotion|sad}:You return to your home, your decrepit and pitiful apartment complex. <lc>Covered in dirt from the impromptu burial you conducted after One passed away, you are utterly depleted- <ap>Physically and mentally.\n[]>narrator:The evening air is heavy now. <lc>Something to choke on.<lc>The world feels so hollow. <mp>You feel hollow, too. A gaping void opening up more and more as hours go by, your heart gradually consumed by a cosmic abyss.\n[]>narrator:A grief to swallow all light inside you.\n[]>narrator:Tonight, you never enter your bedroom. <mp>With one gone, this Grove of love and togetherness has grown a glass coating. You are sure, that any fragment of your soul entering that place would shatter it in its entirety.\n[]>narrator:You find comfort on the living room couch instead, where friends and strangers usually are the ones to spend their time there. <mp>These next few days will be difficult."
+							"content": "[]>narrator:Mood: Nostalghia - Hypnagogic\n[]>narrator{anhedonia-emotion|sad}:You return to your home, your decrepit and pitiful apartment complex. <lc>Covered in dirt from the impromptu burial you conducted after One passed away, you are utterly depleted- <ap>Physically and mentally.\n[]>narrator:The evening air is heavy now. <ap>Leaden. <ap>Toxic. <mp>Something to choke on.<lc>Hollowness carves into the world around you, into the toxic atmosphere that you are forced to breathe. Your lungs would not allow another perogative. <mp>You feel hollow, too. A gaping void opening up more and more as hours go by, your heart gradually consumed by a cosmic abyss.\n[]>narrator:A grief to swallow all light inside you.\n[]>narrator:Tonight, you never enter your bedroom. <mp>With one gone, this Grove of love and togetherness has grown a glass coating. You are sure, that any fragment of your soul entering that place would shatter it in its entirety.\n[]>narrator:You find comfort on the living room couch instead, where friends and strangers usually are the ones to spend their time there. <mp>These next few days will be difficult."
 						},
 						"facts": {
 							"fact_data_by_name": {
@@ -24917,7 +26281,7 @@
 				},
 				"lines": [
 					{
-						"address": "37.0",
+						"address": "38.0",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -24976,7 +26340,7 @@
 						}
 					},
 					{
-						"address": "37.1",
+						"address": "38.1",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -25025,7 +26389,7 @@
 						}
 					},
 					{
-						"address": "37.2",
+						"address": "38.2",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -25084,7 +26448,7 @@
 						}
 					},
 					{
-						"address": "37.3",
+						"address": "38.3",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -25133,7 +26497,7 @@
 						}
 					},
 					{
-						"address": "37.4",
+						"address": "38.4",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -25192,7 +26556,7 @@
 						}
 					},
 					{
-						"address": "37.5",
+						"address": "38.5",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -25241,7 +26605,7 @@
 						}
 					},
 					{
-						"address": "37.6",
+						"address": "38.6",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -25300,7 +26664,7 @@
 						}
 					},
 					{
-						"address": "37.7",
+						"address": "38.7",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -25349,7 +26713,7 @@
 						}
 					},
 					{
-						"address": "37.8",
+						"address": "38.8",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -25408,7 +26772,7 @@
 						}
 					},
 					{
-						"address": "37.9",
+						"address": "38.9",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -25457,7 +26821,7 @@
 						}
 					},
 					{
-						"address": "37.10",
+						"address": "38.10",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -25516,7 +26880,7 @@
 						}
 					},
 					{
-						"address": "37.11",
+						"address": "38.11",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -25565,7 +26929,7 @@
 						}
 					},
 					{
-						"address": "37.12",
+						"address": "38.12",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -25624,7 +26988,7 @@
 						}
 					},
 					{
-						"address": "37.13",
+						"address": "38.13",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -25673,7 +27037,7 @@
 						}
 					},
 					{
-						"address": "37.14",
+						"address": "38.14",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -25732,7 +27096,7 @@
 						}
 					},
 					{
-						"address": "37.15",
+						"address": "38.15",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -25781,7 +27145,7 @@
 						}
 					},
 					{
-						"address": "37.16",
+						"address": "38.16",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -25840,7 +27204,7 @@
 						}
 					},
 					{
-						"address": "37.17",
+						"address": "38.17",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -25889,7 +27253,7 @@
 						}
 					},
 					{
-						"address": "37.18",
+						"address": "38.18",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -25934,7 +27298,7 @@
 						}
 					}
 				],
-				"meta.scroll_vertical": 2994,
+				"meta.scroll_vertical": 0,
 				"meta.selected": false,
 				"next": 39,
 				"number": 38,
@@ -25950,7 +27314,7 @@
 				},
 				"lines": [
 					{
-						"address": "38.0",
+						"address": "39.0",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -25974,7 +27338,7 @@
 								5,
 								false,
 								"riverbank",
-								"none"
+								"work_after_loss"
 							],
 							"line_reader.reverse_args": [
 								"INVALID ARGUMENT FOR fade_in",
@@ -25986,7 +27350,7 @@
 							],
 							"meta.has_reverse": false,
 							"meta.reverse_text": "",
-							"meta.text": "black_fade(5.0, 2.0, 5.0, false, riverbank, none)",
+							"meta.text": "black_fade(5.0, 2.0, 5.0, false, riverbank, work_after_loss)",
 							"meta.validation_status": "OK",
 							"name": "black_fade",
 							"reverse_name": ""
@@ -26009,7 +27373,7 @@
 						}
 					},
 					{
-						"address": "38.1",
+						"address": "39.1",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -26058,7 +27422,7 @@
 						}
 					},
 					{
-						"address": "38.2",
+						"address": "39.2",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -26113,7 +27477,7 @@
 						}
 					},
 					{
-						"address": "38.3",
+						"address": "39.3",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -26162,7 +27526,7 @@
 						}
 					},
 					{
-						"address": "38.4",
+						"address": "39.4",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -26217,7 +27581,7 @@
 						}
 					},
 					{
-						"address": "38.5",
+						"address": "39.5",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -26266,7 +27630,7 @@
 						}
 					},
 					{
-						"address": "38.6",
+						"address": "39.6",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -26315,7 +27679,7 @@
 						}
 					},
 					{
-						"address": "38.7",
+						"address": "39.7",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -26364,7 +27728,7 @@
 						}
 					},
 					{
-						"address": "38.8",
+						"address": "39.8",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -26413,7 +27777,7 @@
 						}
 					},
 					{
-						"address": "38.9",
+						"address": "39.9",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -26462,7 +27826,7 @@
 						}
 					},
 					{
-						"address": "38.10",
+						"address": "39.10",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -26491,7 +27855,7 @@
 								"jailer"
 							],
 							"active_actors_title": "character",
-							"content": "[]>anhedonia: Why is loss so fucking... Gods.\n[]>anhedonia: This fucking heartbreak.\n[]>narrator: Sobbing and slowly stumbling across the shoreline, you make you way back up the main road. So far you are on track for your final duty. You would visit One's grave later to pick it off from nesting parasites, which left you with a few hours to kill."
+							"content": "[]>anhedonia: Why is loss so fucking... <ap>Gods.\n[]>anhedonia: This fucking heartbreak.\n[]>narrator: Sobbing and slowly stumbling across the shoreline, you make you way back up the main road. So far you are on track for your final duty. You would visit One's grave later to pick it off from nesting parasites, which left you with a few hours to kill."
 						},
 						"facts": {
 							"fact_data_by_name": {
@@ -26511,7 +27875,7 @@
 						}
 					},
 					{
-						"address": "38.11",
+						"address": "39.11",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -26535,7 +27899,7 @@
 								2,
 								false,
 								"none",
-								"none"
+								"grief"
 							],
 							"line_reader.reverse_args": [
 								"INVALID ARGUMENT FOR fade_in",
@@ -26547,7 +27911,7 @@
 							],
 							"meta.has_reverse": false,
 							"meta.reverse_text": "",
-							"meta.text": "black_fade(2.0, 0.0, 2.0, false, none, none)",
+							"meta.text": "black_fade(2.0, 0.0, 2.0, false, none, grief)",
 							"meta.validation_status": "OK",
 							"name": "black_fade",
 							"reverse_name": ""
@@ -26570,7 +27934,58 @@
 						}
 					},
 					{
-						"address": "38.12",
+						"address": "39.12",
+						"conditionals": {
+							"behavior": 0,
+							"behavior_key": "Show",
+							"facts": {
+								"fact_data_by_name": {
+
+								},
+								"meta.visible": false
+							},
+							"meta.visible": false,
+							"operand": 0,
+							"operand_args": [],
+							"operand_key": "AND"
+						},
+						"content": {
+							"delay_after": 0,
+							"delay_before": 0,
+							"line_reader.args": [
+								"OxylithReminisce",
+								true
+							],
+							"line_reader.reverse_args": [
+								"INVALID ARGUMENT FOR object_name",
+								"INVALID ARGUMENT FOR visibility"
+							],
+							"meta.has_reverse": false,
+							"meta.reverse_text": "",
+							"meta.text": "set_object_visible(OxylithReminisce, true)",
+							"meta.validation_status": "OK",
+							"name": "set_object_visible",
+							"reverse_name": ""
+						},
+						"facts": {
+							"fact_data_by_name": {
+
+							},
+							"meta.visible": false
+						},
+						"header": [],
+						"line_type": 2,
+						"meta.conditionals_visible": false,
+						"meta.facts_visible": false,
+						"meta.indent_level": 0,
+						"meta.is_head_editable": false,
+						"meta.line_index": 12,
+						"meta.selector": {
+							"selected": false
+						}
+					},
+					{
+						"address": "39.13",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -26613,13 +28028,13 @@
 						"meta.facts_visible": false,
 						"meta.indent_level": 0,
 						"meta.is_head_editable": false,
-						"meta.line_index": 12,
+						"meta.line_index": 13,
 						"meta.selector": {
 							"selected": false
 						}
 					},
 					{
-						"address": "38.13",
+						"address": "39.14",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -26672,13 +28087,13 @@
 						"meta.facts_visible": false,
 						"meta.indent_level": 0,
 						"meta.is_head_editable": false,
-						"meta.line_index": 13,
+						"meta.line_index": 14,
 						"meta.selector": {
 							"selected": false
 						}
 					},
 					{
-						"address": "38.14",
+						"address": "39.15",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -26707,7 +28122,7 @@
 								"jailer"
 							],
 							"active_actors_title": "character",
-							"content": "[]>narrator{anhedonia-emotion|neutral}:This nightfall is no less gentle than the last one.\n[]>narrator:the emptiness clawing at your chest runs deep, chores keep piling up, tchotchkes lining the apartment in nooks you never noticed, bitter reminders of your darlings passing.\n[]>narrator:Its edges try to rend your heart to bits and there is no one else to soften the assault. <mp>Under choked tears, you hold your own hand to your chest, above your beating heart."
+							"content": "[]>narrator{anhedonia-emotion|neutral}:This nightfall is no less gentle than the last one.\n[]>narrator:The emptiness clawing at your chest runs deep, chores keep piling up, tchotchkes lining the apartment in nooks you never noticed, bitter reminders of your darling's passing.\n[]>narrator:Its edges try to rend your heart to bits and there is no one else to soften the assault. <mp>Under choked tears, you hold your own hand to your chest, above your beating heart."
 						},
 						"facts": {
 							"fact_data_by_name": {
@@ -26721,13 +28136,13 @@
 						"meta.facts_visible": false,
 						"meta.indent_level": 0,
 						"meta.is_head_editable": false,
-						"meta.line_index": 14,
+						"meta.line_index": 15,
 						"meta.selector": {
 							"selected": false
 						}
 					}
 				],
-				"meta.scroll_vertical": 2222,
+				"meta.scroll_vertical": 1914,
 				"meta.selected": false,
 				"next": 40,
 				"number": 39,
@@ -27199,7 +28614,7 @@
 								7,
 								true,
 								"none",
-								"none"
+								"work_after_loss"
 							],
 							"line_reader.reverse_args": [
 								"INVALID ARGUMENT FOR fade_in",
@@ -27211,7 +28626,7 @@
 							],
 							"meta.has_reverse": false,
 							"meta.reverse_text": "",
-							"meta.text": "black_fade(0.0, 2.5, 7.0, true, none, none)",
+							"meta.text": "black_fade(0.0, 2.5, 7.0, true, none, work_after_loss)",
 							"meta.validation_status": "OK",
 							"name": "black_fade",
 							"reverse_name": ""
@@ -27263,7 +28678,7 @@
 								"jailer"
 							],
 							"active_actors_title": "character",
-							"content": "[]>narrator:And with the sun somewhere in the sky, you find yourself awake again.\n[]>narrator:The days stretch out before you and retract in their myopic scope again. <mp>Already it has become nigh impossible for you to tell how many hours you have lost to grief, how many trips you have taken up the hill to pluck away any bugs, or how many times you have had to wake up without One next to you. <mp>Your rugged inner turmoil has not even allowed you to sleep entire nights. <mp>Sometimes you sleep, sometimes you wake. <mp>What does it matter anyways?\n[]>narrator:The world probably has moved on- Outside your window. But who are you to care for it?\n[]>narrator: When you try focus you can almost achieve practice. With the typewritten poem in front of you, you study it every moment you find the waves washing over your heart bearable enough to do so.\n[]>narrator: By now, a message rests in the telegram receptacle. It has been there for some hours before you eventually mount the courage to glance a peek. The absender makes you less tense, if just a bit. <lc>Spectra.\n[]>spectra{spectra-emotion|invisible}:Isolation will kill you before the sun does. Call me. I will be there."
+							"content": "[]>narrator:And with the sun somewhere in the sky, you find yourself awake again.\n[]>narrator:The days stretch out before you and retract in their myopic scope again. <mp>Already it has become nigh impossible for you to tell how many hours you have lost to grief, how many trips you have taken up the hill to pluck away any bugs, or how many times you have had to wake up without One next to you. <mp>Your rugged inner turmoil has not even allowed you to sleep entire nights. <mp>Sometimes you sleep, sometimes you wake. <mp>What does it matter anyways?\n[]>narrator:The world probably has moved on- Outside your window. But who are you to care for it?\n[]>narrator: When you try focus you can almost achieve practice. With the typewritten poem in front of you, you study it every moment you find the waves washing over your heart bearable enough to do so.\n[]>narrator: By now, a message rests in the telegram receptacle. It has been there for some hours before you eventually mount the courage to glance a peek. The sender lessens your tension, if just a bit. <lc>Spectra.\n[]>spectra{spectra-emotion|invisible}:Isolation will kill you before the sun does. Call me. I will be there."
 						},
 						"facts": {
 							"fact_data_by_name": {
@@ -27481,7 +28896,7 @@
 								"jailer"
 							],
 							"active_actors_title": "character",
-							"content": "[]>narrator{anhedonia-emotion|crying2,spectra-emotion|neutral}:On the second day of work- it is impossible to know which actual day it is- you ask Spectra to come along because the thought of being alone again is too much. <mp>You take a train out to some suburbs to plant the shrine in a fountain. <mp>You bawl your eyes out on the way there. <mp>People stare. <mp>You don't care. \n[]>spectra:Oh Anhedonia... Bereavement is a universal aspect of love.\n[]>anhedonia:Fuck that. <mp>Why... Why does it have to hurt so much then?\n[]>spectra: You loved each other, didn't you?\n[]>anhedonia: Still do.\n[]>spectra: Precisely.\n[]>spectra: Your heart is right to weep. <ap>And hurt and do all those horrible things to your psyche.\n[]>anhedonia: I guess...\n[]>anhedonia: I get so many nightmares, Spectra.\n[]>anhedonia: I don't know what fucking day it is or how many have passed since she died. I... I just try to... work.\n[]>anhedonia: Work as quickly as possible because if I fuck this up I will actually be so lost.\n[]>narrator: And you currently already struggle enough with navigating the area to the shrine location.\n[]>anhedonia: Sec...\n[]>spectra: Take the time you need.\n[]>narrator: You check your notes, then match them with your surroundings. Still on track.\n[]>anhedonia: Good...\n[]>spectra: Well...\n[]>spectra: Sun me through this operation, what are we doing here, exactly?\n[]>anhedonia: you don't know?\n[]>spectra: One never told me details. neither did you.\n[]>spectra: I but know about the end of all things approaching with you two.\n[]>spectra: well... all things... here.\n[]>anhedonia: ugh... so...\n[]>anhedonia: we're... gonna...\n[]>narrator: you struggle to articulate anything pertaining to One. with the help of gestures, you expain to Spectra\n[]>anhedonia: sun... down\n[]>anhedonia: fuck the clericants...\n[]>anhedonia: ...\n[]>anhedonia: yea...\n[]>anhedonia: Struggling to talk about... this...\n[]>spectra: That's fine. I know enough anyways.\n[]>narrator: You continue the rest of the journey in silence, another gold passing until you reach the site, at which point you march forward without regard for Spectra. Focus solely on sculpting the resting site for the oxylith."
+							"content": "[]>narrator{anhedonia-emotion|crying2,spectra-emotion|neutral}:On the second day of work- It is impossible to know which actual day it is- You ask Spectra to come along because the thought of being alone again is too much. <mp>You take a train out to some suburbs to plant the shrine in a fountain. <mp>You bawl your eyes out on the way there. <mp>People stare. <mp>You don't care. \n[]>spectra:Oh Anhedonia... Bereavement is a universal aspect of love.\n[]>anhedonia:Fuck that. <mp>Why... Why does it have to hurt so much then?\n[]>spectra: You loved each other, didn't you?\n[]>anhedonia: Still do.\n[]>spectra: Precisely.\n[]>spectra: Your heart is right to weep. <ap>And hurt and do all those horrible things to your psyche.\n[]>anhedonia: I guess...\n[]>anhedonia{anhedonia-emotion|concerned}: I get so many nightmares, Spectra.\n[]>anhedonia: I don't know what fucking day it is or how many have passed since she died. I... I just try to... Work.\n[]>anhedonia: Work as quickly as possible because if I fuck this up I will actually be so lost.\n[]>narrator: And you currently already struggle enough with navigating the area to the shrine location.\n[]>anhedonia{anhedonia-emotion|dismissive}: Sec...\n[]>spectra: Take the time you need.\n[]>narrator: You check your notes, then match them with your surroundings. Still on track.\n[]>anhedonia: Good...\n[]>spectra: Well...\n[]>spectra: Run me through this operation, what are we doing here, exactly?\n[]>anhedonia{anhedonia-emotion|sad}: You don't know?\n[]>spectra: One never told me details. Neither did you.\n[]>spectra: I but know about the end of all things approaching with you two.\n[]>spectra: Well... All things... Here.\n[]>anhedonia: Ugh... So...\n[]>anhedonia{anhedonia-emotion|crying}: We're... <ap>Gonna...\n[]>narrator: You struggle to articulate anything pertaining to One. With the help of gestures, you expain to Spectra.\n[]>anhedonia: Sun... <ap>Down.\n[]>anhedonia: Fuck the clericants...\n[]>anhedonia: ...\n[]>anhedonia: Yea...\n[]>anhedonia{anhedonia-emotion|sad}: Struggling to talk about... <ap>This...\n[]>spectra: That's fine. I know enough anyways.\n[]>narrator: You continue the rest of the journey in silence, another gold passing until you reach the site, at which point you march forward without regard for Spectra. Focus solely on sculpting the resting site for the oxylith."
 						},
 						"facts": {
 							"fact_data_by_name": {
@@ -27648,7 +29063,7 @@
 						}
 					}
 				],
-				"meta.scroll_vertical": 4484,
+				"meta.scroll_vertical": 4182,
 				"meta.selected": false,
 				"next": 41,
 				"number": 40,
@@ -28517,7 +29932,7 @@
 						}
 					}
 				],
-				"meta.scroll_vertical": 2061,
+				"meta.scroll_vertical": 2047,
 				"meta.selected": false,
 				"next": 1,
 				"number": 42,

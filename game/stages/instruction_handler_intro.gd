@@ -18,6 +18,7 @@ signal start_hide_cg()
 signal start_rolling_credits()
 signal splatter(amount:int)
 signal start_chapter_cover(pov_name:String)
+signal request_object_visible(object_name:String, visibility:bool)
 
 signal sun(property:String, value:float)
 
@@ -191,4 +192,9 @@ func set_character_name(character: String, nname: String) -> bool:
 	if Parser.line_reader:
 		Parser.line_reader.set_actor_name(character, nname)
 	
+	return false
+
+
+func set_object_visible(object_name: String, visibility: bool) -> bool:
+	emit_signal("request_object_visible", object_name, visibility)
 	return false

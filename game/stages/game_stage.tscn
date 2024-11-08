@@ -1,4 +1,4 @@
-[gd_scene load_steps=46 format=3 uid="uid://r1ntcqdujfol"]
+[gd_scene load_steps=49 format=3 uid="uid://r1ntcqdujfol"]
 
 [ext_resource type="Script" path="res://game/stages/game_stage.gd" id="1_a36me"]
 [ext_resource type="Script" path="res://addons/diisis/parser/src/line_reader.gd" id="1_h4afo"]
@@ -6,6 +6,9 @@
 [ext_resource type="FontFile" uid="uid://dy8rsqmwhxjp6" path="res://addons/diisis/editor/visuals/fonts/TT Chocolates Trial Bold.otf" id="2_6jeks"]
 [ext_resource type="PackedScene" uid="uid://c7bnsg1etl8i7" path="res://game/characters/one.tscn" id="2_15g65"]
 [ext_resource type="PackedScene" uid="uid://chfbyvpvah4eu" path="res://game/characters/character.tscn" id="3_5aep6"]
+[ext_resource type="Texture2D" uid="uid://7bg2w0l8vo7r" path="res://game/visuals/oxylith_reminisce.png" id="3_058vl"]
+[ext_resource type="Script" path="res://game/stages/objects.gd" id="3_x2eff"]
+[ext_resource type="Texture2D" uid="uid://cfgw7n2535d1m" path="res://game/visuals/sigil_actuall.png" id="4_gq55s"]
 [ext_resource type="Script" path="res://game/stages/instruction_handler_intro.gd" id="4_u8vmc"]
 [ext_resource type="Texture2D" uid="uid://delwppkladi0u" path="res://addons/diisis/editor/visuals/more.svg" id="5_7sulw"]
 [ext_resource type="Script" path="res://game/diisis_integration/inline_eval.gd" id="6_8ao3j"]
@@ -103,6 +106,19 @@ focus_mode = 2
 theme = ExtResource("1_qsxmu")
 script = ExtResource("1_a36me")
 dev_mode = true
+
+[node name="Objects" type="Node2D" parent="."]
+script = ExtResource("3_x2eff")
+
+[node name="Sigil" type="Sprite2D" parent="Objects"]
+visible = false
+position = Vector2(417, 197)
+texture = ExtResource("4_gq55s")
+
+[node name="OxylithReminisce" type="Sprite2D" parent="Objects"]
+position = Vector2(693, 293)
+texture = ExtResource("3_058vl")
+flip_h = true
 
 [node name="Characters" type="Node2D" parent="."]
 
@@ -319,8 +335,9 @@ grow_vertical = 0
 
 [node name="HistoryButton" type="Button" parent="Camera2D/CanvasLayer/Control/VNUI/ControlsContainer"]
 layout_mode = 2
-theme_override_colors/font_outline_color = Color(0.537255, 0.254902, 0.14902, 0.517647)
-theme_override_constants/outline_size = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0.909804, 0.741176, 0.772549, 0.286275)
+theme_override_constants/outline_size = 10
 theme_override_styles/focus = SubResource("StyleBoxEmpty_scr08")
 theme_override_styles/disabled_mirrored = SubResource("StyleBoxEmpty_hkxqd")
 theme_override_styles/disabled = SubResource("StyleBoxEmpty_ngewe")
@@ -337,8 +354,9 @@ text = "History"
 [node name="MenuButton" type="Button" parent="Camera2D/CanvasLayer/Control/VNUI/ControlsContainer"]
 layout_mode = 2
 focus_mode = 0
-theme_override_colors/font_outline_color = Color(0.535305, 0.256687, 0.150592, 0.517647)
-theme_override_constants/outline_size = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0.909437, 0.742585, 0.7728, 0.286275)
+theme_override_constants/outline_size = 10
 theme_override_styles/focus = SubResource("StyleBoxEmpty_orud1")
 theme_override_styles/disabled_mirrored = SubResource("StyleBoxEmpty_akdev")
 theme_override_styles/disabled = SubResource("StyleBoxEmpty_wvc3f")
@@ -487,6 +505,7 @@ script = ExtResource("6_8ao3j")
 [connection signal="pressed" from="Camera2D/CanvasLayer/Control/VNUI/ControlsContainer/HistoryButton" to="." method="_on_history_button_pressed"]
 [connection signal="pressed" from="Camera2D/CanvasLayer/Control/VNUI/ControlsContainer/MenuButton" to="." method="_on_menu_button_pressed"]
 [connection signal="chapter_intro_finished" from="Camera2D/CanvasLayer/Control/ChapterCover" to="." method="_on_chapter_cover_chapter_intro_finished"]
+[connection signal="request_object_visible" from="InstructionHandler" to="Objects" method="set_object_visible"]
 [connection signal="splatter" from="InstructionHandler" to="." method="_on_instruction_handler_splatter"]
 [connection signal="start_black_fade" from="InstructionHandler" to="Camera2D/CanvasLayer/Control/BlackFade" method="_on_handler_start_black_fade"]
 [connection signal="start_chapter_cover" from="InstructionHandler" to="Camera2D/CanvasLayer/Control/ChapterCover" method="set_chapter_cover"]

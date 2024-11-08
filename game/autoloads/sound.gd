@@ -83,4 +83,9 @@ func play_bgm(bgm:String, fade_in:=0.0, from:=0.0):
 	add_child(music_player)
 	music_player.play(from)
 	
-	
+
+func fade_out_bgm(fade_out_time:float):
+	if not main_audio_player:
+		return
+	var t = create_tween()
+	t.tween_property(main_audio_player, "volume_db", linear_to_db(0.0), fade_out_time)

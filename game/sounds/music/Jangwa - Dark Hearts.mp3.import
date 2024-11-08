@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://drh0cckhmhven"
+path="res://.godot/imported/Jangwa - Dark Hearts.mp3-e24f784c0e88f87206500a685d790ed9.mp3str"
+
+[deps]
+
+source_file="res://game/sounds/music/Jangwa - Dark Hearts.mp3"
+dest_files=["res://.godot/imported/Jangwa - Dark Hearts.mp3-e24f784c0e88f87206500a685d790ed9.mp3str"]
+
+[params]
+
+loop=true
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

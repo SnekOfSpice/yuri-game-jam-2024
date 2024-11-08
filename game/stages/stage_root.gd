@@ -75,6 +75,10 @@ func set_background(background:String, fade_time:=0.0, lmao := true):
 		fade_tween.finished.connect(old_node.queue_free)
 	
 	GameWorld.background = background
+	
+	if is_instance_valid(GameWorld.game_stage):
+		GameWorld.game_stage.get_node("Objects").hide_all()
+		
 
 func new_gamestate():
 	game_start_callable = Parser.reset_and_start

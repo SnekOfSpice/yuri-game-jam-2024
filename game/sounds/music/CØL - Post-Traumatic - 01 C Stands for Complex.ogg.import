@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://oscu2o8guw6e"
+path="res://.godot/imported/CØL - Post-Traumatic - 01 C Stands for Complex.ogg-0a925be3e78f1799aceb0f38ccf4e19d.oggvorbisstr"
+
+[deps]
+
+source_file="res://game/sounds/music/CØL - Post-Traumatic - 01 C Stands for Complex.ogg"
+dest_files=["res://.godot/imported/CØL - Post-Traumatic - 01 C Stands for Complex.ogg-0a925be3e78f1799aceb0f38ccf4e19d.oggvorbisstr"]
+
+[params]
+
+loop=true
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

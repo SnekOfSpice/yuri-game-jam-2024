@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://bj4ombbyi2w4k"
+path="res://.godot/imported/Marco Trovatello - Violin Spider.mp3-c3a45484f8ccd87530b4c62f065d3e9f.mp3str"
+
+[deps]
+
+source_file="res://game/sounds/music/Marco Trovatello - Violin Spider.mp3"
+dest_files=["res://.godot/imported/Marco Trovatello - Violin Spider.mp3-c3a45484f8ccd87530b4c62f065d3e9f.mp3str"]
+
+[params]
+
+loop=true
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4
