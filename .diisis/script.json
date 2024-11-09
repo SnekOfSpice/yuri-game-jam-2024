@@ -1,6 +1,6 @@
 {
 	"editor": {
-		"current_page_number": 42,
+		"current_page_number": 23,
 		"page_view": 0,
 		"text_size_id": 3
 	},
@@ -17790,7 +17790,7 @@
 								2,
 								2,
 								true,
-								"city",
+								"clerifugium",
 								"place_clericant_shrine"
 							],
 							"line_reader.reverse_args": [
@@ -17803,7 +17803,7 @@
 							],
 							"meta.has_reverse": false,
 							"meta.reverse_text": "",
-							"meta.text": "black_fade(2.0, 2.0, 2.0, true, city, place_clericant_shrine)",
+							"meta.text": "black_fade(2.0, 2.0, 2.0, true, clerifugium, place_clericant_shrine)",
 							"meta.validation_status": "OK",
 							"name": "black_fade",
 							"reverse_name": ""
@@ -18499,7 +18499,7 @@
 						}
 					}
 				],
-				"meta.scroll_vertical": 2334,
+				"meta.scroll_vertical": 0,
 				"meta.selected": false,
 				"next": 24,
 				"number": 23,
@@ -32798,7 +32798,7 @@
 						}
 					}
 				],
-				"meta.scroll_vertical": 2268,
+				"meta.scroll_vertical": 2138,
 				"meta.selected": false,
 				"next": 1,
 				"number": 42,
