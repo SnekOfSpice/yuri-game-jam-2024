@@ -1,4 +1,4 @@
-[gd_scene load_steps=49 format=3 uid="uid://r1ntcqdujfol"]
+[gd_scene load_steps=51 format=3 uid="uid://r1ntcqdujfol"]
 
 [ext_resource type="Script" path="res://game/stages/game_stage.gd" id="1_a36me"]
 [ext_resource type="Script" path="res://addons/diisis/parser/src/line_reader.gd" id="1_h4afo"]
@@ -8,9 +8,11 @@
 [ext_resource type="PackedScene" uid="uid://chfbyvpvah4eu" path="res://game/characters/character.tscn" id="3_5aep6"]
 [ext_resource type="Texture2D" uid="uid://7bg2w0l8vo7r" path="res://game/visuals/oxylith_reminisce.png" id="3_058vl"]
 [ext_resource type="Script" path="res://game/stages/objects.gd" id="3_x2eff"]
+[ext_resource type="Texture2D" uid="uid://bmpdlnatrls6r" path="res://game/visuals/OxylithWarzone.png" id="4_dvyf5"]
 [ext_resource type="Texture2D" uid="uid://cfgw7n2535d1m" path="res://game/visuals/sigil_actuall.png" id="4_gq55s"]
 [ext_resource type="Script" path="res://game/stages/instruction_handler_intro.gd" id="4_u8vmc"]
 [ext_resource type="Texture2D" uid="uid://delwppkladi0u" path="res://addons/diisis/editor/visuals/more.svg" id="5_7sulw"]
+[ext_resource type="Texture2D" uid="uid://lgol6l82scjf" path="res://game/visuals/OxylithWarzoneBlood.png" id="5_c80if"]
 [ext_resource type="Script" path="res://game/diisis_integration/inline_eval.gd" id="6_8ao3j"]
 [ext_resource type="Texture2D" uid="uid://bh7mo1v26xtqq" path="res://addons/diisis/editor/visuals/helpZeichenfläche 3.png" id="6_mh4vb"]
 [ext_resource type="Shader" path="res://game/stages/sun_shader/fade_out.gdshader" id="6_o425v"]
@@ -109,6 +111,16 @@ dev_mode = true
 
 [node name="Objects" type="Node2D" parent="."]
 script = ExtResource("3_x2eff")
+
+[node name="OxylithWarzone" type="Sprite2D" parent="Objects"]
+visible = false
+texture = ExtResource("4_dvyf5")
+centered = false
+
+[node name="OxylithWarzoneBlood" type="Sprite2D" parent="Objects"]
+visible = false
+texture = ExtResource("5_c80if")
+centered = false
 
 [node name="Sigil" type="Sprite2D" parent="Objects"]
 visible = false
@@ -463,7 +475,7 @@ blank_names = Array[String](["narrator"])
 name_map = {
 "anhedonia": "Anhedonia",
 "clericant": "Clericant",
-"gods": "àÁÀáà",
+"gods": "ÁÀáÀà",
 "interrogator": "Interrogator",
 "jailer": "Jailer",
 "one": "One",

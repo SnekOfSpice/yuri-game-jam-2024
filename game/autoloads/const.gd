@@ -31,8 +31,9 @@ const BACKGROUND_HUNTING_GROUNDS := "hunting_grounds.png"
 const BACKGROUND_RIVERBANK := "riverbank.png"
 const BACKGROUND_SPECTRA_APARTMENT := "spectra_apartment.png"
 const BACKGROUND_SUBURB := "placeholder.png"
-const BACKGROUND_TRAIN := "train/Train.tscn"
-const BACKGROUND_TRAIN_YARD := "train_yard.png" # PH
+const BACKGROUND_TRAIN := "train/Train.tscn" # ph
+const BACKGROUND_TRAIN_YARD := "train_yard.png"
+const BACKGROUND_WARZONE := "placeholder.png"
 
 # attribution license:
 # https://rozkol.bandcamp.com/track/iii
@@ -48,7 +49,7 @@ const MUSIC_GRIEF := "Lonesummer - There Are Few Tomorrows for Feeding Our Worri
 const MUSIC_HOPE := "Hope.ogg"
 const MUSIC_INTERROGATION := "Paradise_Found.mp3" #ph
 const MUSIC_INTRO := "759304__kevp888__240819_2825_fr_church_organ_rehearsal.ogg" # kevp888 - 240819_2825_FR_Church_organ_rehearsal - https://freesound.org/people/kevp888/sounds/759304/
-const MUSIC_LEARNINIG := "CØL - Wellness Checks - 02 Reckless.ogg"
+const MUSIC_LEARNING := "CØL - Wellness Checks - 02 Reckless.ogg"
 const MUSIC_OMINOUS := "Princess Commodore 64 - The Death Of A Lifestyle - 06 special containment.ogg" # https://lostangles.bandcamp.com/track/special-containment
 const MUSIC_PANIC := "CØL - Reach Out If You Need Anything - 03 Trauma.ogg"
 const MUSIC_PLACE_CLERICANT_SHRINE := "ROZKOL - Machine Masochist - 01 Machine Masochist.ogg"
@@ -64,8 +65,10 @@ const MUSIC_WORK_AFTER_LOSS := "CØL - Post-Traumatic - 01 C Stands for Complex.
 const MUSIC_WORKING := "CØL - Reset - Respond - 02 They'd Love Me More If I Were Dead.ogg"
 
 const SFX_ROOT := "res://game/sounds/sfx/"
+const SFX_CLERICANT_PHONE := "592005__ueffects__climbing-express-gear.ogg" # ph
 const SFX_CLINK := "592005__ueffects__climbing-express-gear.ogg"
-const SFX_GUNSHOT := "417345__inspectorj__gunshot-distant-a.ogg" # PH
+const SFX_EXPLOSION := "592005__ueffects__climbing-express-gear.ogg" # ph
+const SFX_GUNSHOT := "417345__inspectorj__gunshot-distant-a.ogg"
 const SFX_KICK := "500912__bertsz__squish-impact.ogg" # PH
-const SFX_SQUELCH := "500912__bertsz__squish-impact.ogg" # PH
+const SFX_SQUELCH := "500912__bertsz__squish-impact.ogg"
 const SFX_VOMIT := "vomit.ogg"
