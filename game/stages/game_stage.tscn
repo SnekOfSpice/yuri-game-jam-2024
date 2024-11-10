@@ -1,4 +1,4 @@
-[gd_scene load_steps=57 format=3 uid="uid://r1ntcqdujfol"]
+[gd_scene load_steps=59 format=3 uid="uid://r1ntcqdujfol"]
 
 [ext_resource type="Script" path="res://game/stages/game_stage.gd" id="1_a36me"]
 [ext_resource type="Script" path="res://addons/diisis/parser/src/line_reader.gd" id="1_h4afo"]
@@ -12,9 +12,11 @@
 [ext_resource type="Texture2D" uid="uid://cfgw7n2535d1m" path="res://game/visuals/sigil_actuall.png" id="4_gq55s"]
 [ext_resource type="Script" path="res://game/stages/instruction_handler_intro.gd" id="4_u8vmc"]
 [ext_resource type="Texture2D" uid="uid://c3plaq0rboo4j" path="res://game/visuals/Bloodletting1.png" id="4_wqvrw"]
+[ext_resource type="Texture2D" uid="uid://c4lgbsy2h1l4" path="res://game/visuals/OxylithRiverbank.png" id="4_xxihc"]
 [ext_resource type="Texture2D" uid="uid://delwppkladi0u" path="res://addons/diisis/editor/visuals/more.svg" id="5_7sulw"]
 [ext_resource type="Texture2D" uid="uid://lgol6l82scjf" path="res://game/visuals/OxylithWarzoneBlood.png" id="5_c80if"]
 [ext_resource type="Texture2D" uid="uid://chnw0a8udoox7" path="res://game/visuals/Bloodletting2.png" id="5_cokni"]
+[ext_resource type="Texture2D" uid="uid://brmgrmo0lhkgp" path="res://game/visuals/OxylithRiverbankBlood.png" id="5_j2lv3"]
 [ext_resource type="Script" path="res://game/diisis_integration/inline_eval.gd" id="6_8ao3j"]
 [ext_resource type="Texture2D" uid="uid://d220rnmq5cmw3" path="res://game/visuals/Bloodletting3.png" id="6_lkqmw"]
 [ext_resource type="Texture2D" uid="uid://bh7mo1v26xtqq" path="res://addons/diisis/editor/visuals/helpZeichenfläche 3.png" id="6_mh4vb"]
@@ -121,6 +123,14 @@ dev_mode = true
 
 [node name="Objects" type="Node2D" parent="."]
 script = ExtResource("3_x2eff")
+
+[node name="OxylithRiverbank" type="Sprite2D" parent="Objects"]
+texture = ExtResource("4_xxihc")
+centered = false
+
+[node name="OxylithRiverbankBlood" type="Sprite2D" parent="Objects"]
+texture = ExtResource("5_j2lv3")
+centered = false
 
 [node name="Bloodletting1" type="Sprite2D" parent="Objects"]
 position = Vector2(0, 13)

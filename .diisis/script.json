@@ -1,6 +1,6 @@
 {
 	"editor": {
-		"current_page_number": 32,
+		"current_page_number": 39,
 		"page_view": 0,
 		"text_size_id": 3
 	},
@@ -26289,7 +26289,7 @@
 						}
 					}
 				],
-				"meta.scroll_vertical": 2241,
+				"meta.scroll_vertical": 2024,
 				"meta.selected": false,
 				"next": 33,
 				"number": 32,
@@ -32309,7 +32309,7 @@
 								"jailer"
 							],
 							"active_actors_title": "character",
-							"content": "[]>narrator{anhedonia-emotion|sad}:On the first day, One leads you down to the river where you both went on a date once. You left the meadow with the most excruciating sunburns of your lives.\n[]>narrator:The intended shrine location is a handful of paces away from the picnic spot you two picked back then, and judging by the overgrowth present here, barely anyone ever goes here still. <lc>A small, hidden sanctuary you two picked back then. <mp>Forever yours.<lc>Tinged with nostalgia, you glance at the spot as you pass, and the warm blanket of that loving memory envelops your soul.\n[]>narrator:Ultimately, you reach your destination. You plant the shoebox-sized Oxylith clump on the arid soil, and drive its accompanying stakes into the ground. <mp>Secured and hidden in the grass, you write upon it its intended inscription and soak the soil in droplets of One's blood. <lc>And then- <ap>It is done.\n[]>narrator:You successfully installed the shrine, all according to One's instrctions. <mp>You think she'd be proud. <mp>Maybe squeeze your hand or give you a hug."
+							"content": "[]>narrator{anhedonia-emotion|sad}:On the first day, One leads you down to the river where you both went on a date once. You left the meadow with the most excruciating sunburns of your lives.\n[]>narrator:The intended shrine location is a handful of paces away from the picnic spot you two picked back then, and judging by the overgrowth present here, barely anyone ever goes here still. <lc>A small, hidden sanctuary you two picked back then. <mp>Forever yours.<lc>Tinged with nostalgia, you glance at the spot as you pass, and the warm blanket of that loving memory envelops your soul."
 						},
 						"facts": {
 							"fact_data_by_name": {
@@ -32348,22 +32348,18 @@
 							"delay_after": 0,
 							"delay_before": 0,
 							"line_reader.args": [
-								1.3,
-								0,
-								0,
-								1
+								"OxylithRiverbank",
+								true
 							],
 							"line_reader.reverse_args": [
-								"INVALID ARGUMENT FOR zoom",
-								"INVALID ARGUMENT FOR x",
-								"INVALID ARGUMENT FOR y",
-								"INVALID ARGUMENT FOR duration"
+								"INVALID ARGUMENT FOR object_name",
+								"INVALID ARGUMENT FOR visibility"
 							],
 							"meta.has_reverse": false,
 							"meta.reverse_text": "",
-							"meta.text": "control_camera(1.3, 0.0, 0.0, 1.0)",
+							"meta.text": "set_object_visible(OxylithRiverbank, true)",
 							"meta.validation_status": "OK",
-							"name": "control_camera",
+							"name": "set_object_visible",
 							"reverse_name": ""
 						},
 						"facts": {
@@ -32413,7 +32409,7 @@
 								"jailer"
 							],
 							"active_actors_title": "character",
-							"content": "[]>narrator{anhedonia-emotion|crying}:You could really use a hug right now.\n[]>narrator:You cannot stand the sight of this work.\n[]>narrator{anhedonia-emotion|sad}:And so you head back."
+							"content": "[]>narrator:Ultimately, you reach your destination. You plant the shoebox-sized Oxylith clump on the arid soil, and drive its accompanying stakes into the ground. <mp>Secured and hidden in the grass, you write upon it its intended inscription and soak the soil in droplets of One's blood."
 						},
 						"facts": {
 							"fact_data_by_name": {
@@ -32452,22 +32448,18 @@
 							"delay_after": 0,
 							"delay_before": 0,
 							"line_reader.args": [
-								1,
-								0,
-								0,
-								3
+								"OxylithRiverbankBlood",
+								true
 							],
 							"line_reader.reverse_args": [
-								"INVALID ARGUMENT FOR zoom",
-								"INVALID ARGUMENT FOR x",
-								"INVALID ARGUMENT FOR y",
-								"INVALID ARGUMENT FOR duration"
+								"INVALID ARGUMENT FOR object_name",
+								"INVALID ARGUMENT FOR visibility"
 							],
 							"meta.has_reverse": false,
 							"meta.reverse_text": "",
-							"meta.text": "control_camera(1.0, 0.0, 0.0, 3.0)",
+							"meta.text": "set_object_visible(OxylithRiverbankBlood, true)",
 							"meta.validation_status": "OK",
-							"name": "control_camera",
+							"name": "set_object_visible",
 							"reverse_name": ""
 						},
 						"facts": {
@@ -32517,7 +32509,7 @@
 								"jailer"
 							],
 							"active_actors_title": "character",
-							"content": "[]>anhedonia:...\n[]>narrator:It was a nice date- Back then. You each brought snacks and used each other as pillows, exchanging kisses and bites all over each other.<mp> Eventually you even got One to submit a little and let herself get fingered out in the open. <mp>She was so fucking aroused, as were you. <ap>It was the first time you did stuff in public.<lc>Lovely memories.\n[]>anhedonia:...\n[]>narrator:After reminiscing for a few more minutes, while you walk back up the riverbank, you can feel the pain of losing One well up in your chest once more. \n[]>anhedonia{anhedonia-emotion|crying}:Like a spear, it pierces your sternum and convulses around your heart. <mp>Like a coiling snake, this emotion grips your heart and chokes it out- <ap>And you with it."
+							"content": "[]>narrator: And then- <ap>It is done.\n[]>narrator:You successfully installed the shrine, all according to One's instrctions. <mp>You think she'd be proud. <mp>Maybe squeeze your hand or give you a hug."
 						},
 						"facts": {
 							"fact_data_by_name": {
@@ -32538,6 +32530,214 @@
 					},
 					{
 						"address": "39.6",
+						"conditionals": {
+							"behavior": 0,
+							"behavior_key": "Show",
+							"facts": {
+								"fact_data_by_name": {
+
+								},
+								"meta.visible": false
+							},
+							"meta.visible": false,
+							"operand": 0,
+							"operand_args": [],
+							"operand_key": "AND"
+						},
+						"content": {
+							"delay_after": 0,
+							"delay_before": 0,
+							"line_reader.args": [
+								1.3,
+								0,
+								0,
+								1
+							],
+							"line_reader.reverse_args": [
+								"INVALID ARGUMENT FOR zoom",
+								"INVALID ARGUMENT FOR x",
+								"INVALID ARGUMENT FOR y",
+								"INVALID ARGUMENT FOR duration"
+							],
+							"meta.has_reverse": false,
+							"meta.reverse_text": "",
+							"meta.text": "control_camera(1.3, 0.0, 0.0, 1.0)",
+							"meta.validation_status": "OK",
+							"name": "control_camera",
+							"reverse_name": ""
+						},
+						"facts": {
+							"fact_data_by_name": {
+
+							},
+							"meta.visible": false
+						},
+						"header": [],
+						"line_type": 2,
+						"meta.conditionals_visible": false,
+						"meta.facts_visible": false,
+						"meta.indent_level": 0,
+						"meta.is_head_editable": false,
+						"meta.line_index": 6,
+						"meta.selector": {
+							"selected": false
+						}
+					},
+					{
+						"address": "39.7",
+						"conditionals": {
+							"behavior": 0,
+							"behavior_key": "Show",
+							"facts": {
+								"fact_data_by_name": {
+
+								},
+								"meta.visible": false
+							},
+							"meta.visible": false,
+							"operand": 0,
+							"operand_args": [],
+							"operand_key": "AND"
+						},
+						"content": {
+							"active_actors": [
+								"anhedonia",
+								"one",
+								"spectra",
+								"narrator",
+								"interrogator",
+								"torturer",
+								"one+anhedonia",
+								"gods",
+								"clericant",
+								"jailer"
+							],
+							"active_actors_title": "character",
+							"content": "[]>narrator{anhedonia-emotion|crying}:You could really use a hug right now.\n[]>narrator:You cannot stand the sight of this work.\n[]>narrator{anhedonia-emotion|sad}:And so you head back."
+						},
+						"facts": {
+							"fact_data_by_name": {
+
+							},
+							"meta.visible": false
+						},
+						"header": [],
+						"line_type": 0,
+						"meta.conditionals_visible": false,
+						"meta.facts_visible": false,
+						"meta.indent_level": 0,
+						"meta.is_head_editable": false,
+						"meta.line_index": 7,
+						"meta.selector": {
+							"selected": false
+						}
+					},
+					{
+						"address": "39.8",
+						"conditionals": {
+							"behavior": 0,
+							"behavior_key": "Show",
+							"facts": {
+								"fact_data_by_name": {
+
+								},
+								"meta.visible": false
+							},
+							"meta.visible": false,
+							"operand": 0,
+							"operand_args": [],
+							"operand_key": "AND"
+						},
+						"content": {
+							"delay_after": 0,
+							"delay_before": 0,
+							"line_reader.args": [
+								1,
+								0,
+								0,
+								3
+							],
+							"line_reader.reverse_args": [
+								"INVALID ARGUMENT FOR zoom",
+								"INVALID ARGUMENT FOR x",
+								"INVALID ARGUMENT FOR y",
+								"INVALID ARGUMENT FOR duration"
+							],
+							"meta.has_reverse": false,
+							"meta.reverse_text": "",
+							"meta.text": "control_camera(1.0, 0.0, 0.0, 3.0)",
+							"meta.validation_status": "OK",
+							"name": "control_camera",
+							"reverse_name": ""
+						},
+						"facts": {
+							"fact_data_by_name": {
+
+							},
+							"meta.visible": false
+						},
+						"header": [],
+						"line_type": 2,
+						"meta.conditionals_visible": false,
+						"meta.facts_visible": false,
+						"meta.indent_level": 0,
+						"meta.is_head_editable": false,
+						"meta.line_index": 8,
+						"meta.selector": {
+							"selected": false
+						}
+					},
+					{
+						"address": "39.9",
+						"conditionals": {
+							"behavior": 0,
+							"behavior_key": "Show",
+							"facts": {
+								"fact_data_by_name": {
+
+								},
+								"meta.visible": false
+							},
+							"meta.visible": false,
+							"operand": 0,
+							"operand_args": [],
+							"operand_key": "AND"
+						},
+						"content": {
+							"active_actors": [
+								"anhedonia",
+								"one",
+								"spectra",
+								"narrator",
+								"interrogator",
+								"torturer",
+								"one+anhedonia",
+								"gods",
+								"clericant",
+								"jailer"
+							],
+							"active_actors_title": "character",
+							"content": "[]>anhedonia:...\n[]>narrator:It was a nice date- Back then. You each brought snacks and used each other as pillows, exchanging kisses and bites all over each other.<mp> Eventually you even got One to submit a little and let herself get fingered out in the open. <mp>She was so fucking aroused, as were you. <ap>It was the first time you did stuff in public.<lc>Lovely memories.\n[]>anhedonia:...\n[]>narrator:After reminiscing for a few more minutes, while you walk back up the riverbank, you can feel the pain of losing One well up in your chest once more. \n[]>anhedonia{anhedonia-emotion|crying}:Like a spear, it pierces your sternum and convulses around your heart. <mp>Like a coiling snake, this emotion grips your heart and chokes it out- <ap>And you with it."
+						},
+						"facts": {
+							"fact_data_by_name": {
+
+							},
+							"meta.visible": false
+						},
+						"header": [],
+						"line_type": 0,
+						"meta.conditionals_visible": false,
+						"meta.facts_visible": false,
+						"meta.indent_level": 0,
+						"meta.is_head_editable": false,
+						"meta.line_index": 9,
+						"meta.selector": {
+							"selected": false
+						}
+					},
+					{
+						"address": "39.10",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -32580,13 +32780,13 @@
 						"meta.facts_visible": false,
 						"meta.indent_level": 0,
 						"meta.is_head_editable": false,
-						"meta.line_index": 6,
+						"meta.line_index": 10,
 						"meta.selector": {
 							"selected": false
 						}
 					},
 					{
-						"address": "39.7",
+						"address": "39.11",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -32629,13 +32829,13 @@
 						"meta.facts_visible": false,
 						"meta.indent_level": 0,
 						"meta.is_head_editable": false,
-						"meta.line_index": 7,
+						"meta.line_index": 11,
 						"meta.selector": {
 							"selected": false
 						}
 					},
 					{
-						"address": "39.8",
+						"address": "39.12",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -32678,13 +32878,13 @@
 						"meta.facts_visible": false,
 						"meta.indent_level": 0,
 						"meta.is_head_editable": false,
-						"meta.line_index": 8,
+						"meta.line_index": 12,
 						"meta.selector": {
 							"selected": false
 						}
 					},
 					{
-						"address": "39.9",
+						"address": "39.13",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -32727,13 +32927,13 @@
 						"meta.facts_visible": false,
 						"meta.indent_level": 0,
 						"meta.is_head_editable": false,
-						"meta.line_index": 9,
+						"meta.line_index": 13,
 						"meta.selector": {
 							"selected": false
 						}
 					},
 					{
-						"address": "39.10",
+						"address": "39.14",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -32776,13 +32976,13 @@
 						"meta.facts_visible": false,
 						"meta.indent_level": 0,
 						"meta.is_head_editable": false,
-						"meta.line_index": 10,
+						"meta.line_index": 14,
 						"meta.selector": {
 							"selected": false
 						}
 					},
 					{
-						"address": "39.11",
+						"address": "39.15",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -32835,13 +33035,13 @@
 						"meta.facts_visible": false,
 						"meta.indent_level": 0,
 						"meta.is_head_editable": false,
-						"meta.line_index": 11,
+						"meta.line_index": 15,
 						"meta.selector": {
 							"selected": false
 						}
 					},
 					{
-						"address": "39.12",
+						"address": "39.16",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -32886,13 +33086,13 @@
 						"meta.facts_visible": false,
 						"meta.indent_level": 0,
 						"meta.is_head_editable": false,
-						"meta.line_index": 12,
+						"meta.line_index": 16,
 						"meta.selector": {
 							"selected": false
 						}
 					},
 					{
-						"address": "39.13",
+						"address": "39.17",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -32935,13 +33135,13 @@
 						"meta.facts_visible": false,
 						"meta.indent_level": 0,
 						"meta.is_head_editable": false,
-						"meta.line_index": 13,
+						"meta.line_index": 17,
 						"meta.selector": {
 							"selected": false
 						}
 					},
 					{
-						"address": "39.14",
+						"address": "39.18",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -32994,13 +33194,13 @@
 						"meta.facts_visible": false,
 						"meta.indent_level": 0,
 						"meta.is_head_editable": false,
-						"meta.line_index": 14,
+						"meta.line_index": 18,
 						"meta.selector": {
 							"selected": false
 						}
 					},
 					{
-						"address": "39.15",
+						"address": "39.19",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -33043,13 +33243,13 @@
 						"meta.facts_visible": false,
 						"meta.indent_level": 0,
 						"meta.is_head_editable": false,
-						"meta.line_index": 15,
+						"meta.line_index": 19,
 						"meta.selector": {
 							"selected": false
 						}
 					}
 				],
-				"meta.scroll_vertical": 603,
+				"meta.scroll_vertical": 113,
 				"meta.selected": false,
 				"next": 40,
 				"number": 39,
@@ -33970,7 +34170,7 @@
 						}
 					}
 				],
-				"meta.scroll_vertical": 3265,
+				"meta.scroll_vertical": 2823,
 				"meta.selected": false,
 				"next": 41,
 				"number": 40,
@@ -34943,7 +35143,7 @@
 						}
 					}
 				],
-				"meta.scroll_vertical": 0,
+				"meta.scroll_vertical": 2454,
 				"meta.selected": false,
 				"next": 1,
 				"number": 42,
