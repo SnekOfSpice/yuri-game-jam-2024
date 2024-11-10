@@ -33,6 +33,7 @@ var callable_upon_blocker_clear:Callable
 @onready var camera = $Camera2D
 @onready var overlay_static = find_child("Static").get_node("ColorRect")
 @onready var overlay_sun = find_child("Sun").get_node("ColorRect")
+@onready var overlay_fade_out = find_child("FadeOut").get_node("ColorRect")
 
 func _ready():
 	
@@ -88,11 +89,15 @@ func on_instruction_completed(
 func go_to_main_menu(_unused):
 	GameWorld.stage_root.change_stage(CONST.STAGE_MAIN)
 
-
+var target_lod := 0.0
+var target_mix := 0.0
 func _process(delta: float) -> void:
 	if overlay_sun.get_material().get_shader_parameter("fill_amount") > -1:
 		overlay_sun.get_material().set_shader_parameter("background", get_viewport().get_texture())
-
+	
+	var fade_mat = overlay_fade_out.get_material()
+	fade_mat.set_shader_parameter("lod", lerp(fade_mat.get_shader_parameter("lod"), target_lod, 0.02))
+	fade_mat.set_shader_parameter("mix_percentage", lerp(fade_mat.get_shader_parameter("mix_percentage"), target_mix, 0.02))
 
 func _input(event: InputEvent) -> void:
 	if hovering_meta:
@@ -254,6 +259,8 @@ func serialize() -> Dictionary:
 	result["static"] = overlay_static.get_material().get_shader_parameter("intensity")
 	result["sun_steps"] = overlay_sun.get_material().get_shader_parameter("steps")
 	result["sun_fill_amount"] = overlay_sun.get_material().get_shader_parameter("fill_amount")
+	result["fade_out_lod"] = overlay_fade_out.get_material().get_shader_parameter("lod")
+	result["fade_out_mix_percentage"] = overlay_fade_out.get_material().get_shader_parameter("mix_percentage")
 	
 	result["camera"] = $Camera2D.serialize()
 	
@@ -301,6 +308,11 @@ func deserialize(data:Dictionary):
 	set_static(data.get("static", 0.0))
 	overlay_sun.get_material().set_shader_parameter("fill_amount", data.get("sun_fill_amount", -1.0))
 	overlay_sun.get_material().set_shader_parameter("steps", data.get("sun_steps", 10.0))
+	
+	target_lod = data.get("fade_out_lod", 0.0)
+	target_mix = data.get("fade_out_mix_percentage", 0.0)
+	overlay_fade_out.get_material().set_shader_parameter("lod", target_lod)
+	overlay_fade_out.get_material().set_shader_parameter("mix_percentage", target_mix)
 
 func remove_blocker():
 	blockers -= 1
@@ -374,6 +386,9 @@ func set_static(level:float):
 	overlay_static.get_material().set_shader_parameter("border_size", 1 - level)
 	
 
+func set_fade_out(lod:float, mix:float):
+	target_lod = lod
+	target_mix = mix
 
 func _on_instruction_handler_sun(property: String, value: float) -> void:
 	overlay_sun.get_material().set_shader_parameter(property, value)

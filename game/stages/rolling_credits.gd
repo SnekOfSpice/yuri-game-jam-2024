@@ -4,7 +4,7 @@ const LINES := [
 	"Created for Yuri Game Jam 2024",
 	"Written and programmed by Snek",
 	"Artwork by Blood Machine",
-	"Music by CØL and Kammertone\n(and others; check title credits)",
+	"Original Music by CØL and Kammertone\n(licensed music by others; check title credits)",
 	"For a celestial muse and witch of tides",
 	"Thank you for reading <3"
 ]

@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://dehxny8oa6unl"
+path="res://.godot/imported/Lonesummer - There Are Few Tomorrows for Feeding Our Worries - 08 There Are Few Tomorrows for Feeding Our Worries.ogg-e3ba459b47a92ff35a9dbb17b371c808.oggvorbisstr"
+
+[deps]
+
+source_file="res://game/sounds/music/Lonesummer - There Are Few Tomorrows for Feeding Our Worries - 08 There Are Few Tomorrows for Feeding Our Worries.ogg"
+dest_files=["res://.godot/imported/Lonesummer - There Are Few Tomorrows for Feeding Our Worries - 08 There Are Few Tomorrows for Feeding Our Worries.ogg-e3ba459b47a92ff35a9dbb17b371c808.oggvorbisstr"]
+
+[params]
+
+loop=true
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

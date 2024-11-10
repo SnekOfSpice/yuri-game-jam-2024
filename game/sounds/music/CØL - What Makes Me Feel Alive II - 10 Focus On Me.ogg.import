@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://l40v2j7i74fk"
+path="res://.godot/imported/CØL - What Makes Me Feel Alive II - 10 Focus On Me.ogg-f2cbc894654206d68e30911adc26c3d4.oggvorbisstr"
+
+[deps]
+
+source_file="res://game/sounds/music/CØL - What Makes Me Feel Alive II - 10 Focus On Me.ogg"
+dest_files=["res://.godot/imported/CØL - What Makes Me Feel Alive II - 10 Focus On Me.ogg-f2cbc894654206d68e30911adc26c3d4.oggvorbisstr"]
+
+[params]
+
+loop=true
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

@@ -164,6 +164,13 @@ func set_static(level) -> bool:
 		GameWorld.game_stage.set_static(level)
 	return false
 
+func set_fade_out(lod, mix) -> bool:
+	lod = float(lod)
+	mix = float(mix)
+	if GameWorld.game_stage:
+		GameWorld.game_stage.set_fade_out(lod, mix)
+	return false
+
 
 func wound_fx(shake_intensity: float, splatter_count: float) -> bool:
 	shake_camera(shake_intensity)

@@ -1,4 +1,4 @@
-[gd_scene load_steps=51 format=3 uid="uid://r1ntcqdujfol"]
+[gd_scene load_steps=57 format=3 uid="uid://r1ntcqdujfol"]
 
 [ext_resource type="Script" path="res://game/stages/game_stage.gd" id="1_a36me"]
 [ext_resource type="Script" path="res://addons/diisis/parser/src/line_reader.gd" id="1_h4afo"]
@@ -11,12 +11,16 @@
 [ext_resource type="Texture2D" uid="uid://bmpdlnatrls6r" path="res://game/visuals/OxylithWarzone.png" id="4_dvyf5"]
 [ext_resource type="Texture2D" uid="uid://cfgw7n2535d1m" path="res://game/visuals/sigil_actuall.png" id="4_gq55s"]
 [ext_resource type="Script" path="res://game/stages/instruction_handler_intro.gd" id="4_u8vmc"]
+[ext_resource type="Texture2D" uid="uid://c3plaq0rboo4j" path="res://game/visuals/Bloodletting1.png" id="4_wqvrw"]
 [ext_resource type="Texture2D" uid="uid://delwppkladi0u" path="res://addons/diisis/editor/visuals/more.svg" id="5_7sulw"]
 [ext_resource type="Texture2D" uid="uid://lgol6l82scjf" path="res://game/visuals/OxylithWarzoneBlood.png" id="5_c80if"]
+[ext_resource type="Texture2D" uid="uid://chnw0a8udoox7" path="res://game/visuals/Bloodletting2.png" id="5_cokni"]
 [ext_resource type="Script" path="res://game/diisis_integration/inline_eval.gd" id="6_8ao3j"]
+[ext_resource type="Texture2D" uid="uid://d220rnmq5cmw3" path="res://game/visuals/Bloodletting3.png" id="6_lkqmw"]
 [ext_resource type="Texture2D" uid="uid://bh7mo1v26xtqq" path="res://addons/diisis/editor/visuals/helpZeichenfläche 3.png" id="6_mh4vb"]
 [ext_resource type="Shader" path="res://game/stages/sun_shader/fade_out.gdshader" id="6_o425v"]
 [ext_resource type="Texture2D" uid="uid://l7qjbefwv1pj" path="res://game/backgrounds/city.png" id="7_spgfi"]
+[ext_resource type="Texture2D" uid="uid://1gekykj728au" path="res://game/visuals/Bloodletting4.png" id="7_uw4qr"]
 [ext_resource type="Texture2D" uid="uid://kl3iyk14qdik" path="res://game/stages/sun_shader/wide_noise.tres" id="8_6l6o8"]
 [ext_resource type="PackedScene" uid="uid://qkegdwc8ux5o" path="res://game/stages/black_fade.tscn" id="8_50byo"]
 [ext_resource type="Texture2D" uid="uid://c17fgm00bow0b" path="res://game/stages/sun_shader/mask_02_02.png" id="8_mxu8l"]
@@ -24,8 +28,14 @@
 [ext_resource type="PackedScene" uid="uid://cjy7vf1xrnq5y" path="res://game/screens/chapter_cover.tscn" id="12_vf2y4"]
 [ext_resource type="PackedScene" uid="uid://biu88w163ploy" path="res://game/cheats.tscn" id="13_qackq"]
 [ext_resource type="Script" path="res://game/stages/start_cover.gd" id="13_qfsh6"]
+[ext_resource type="Shader" path="res://game/stages/one_fadeout.gdshader" id="15_heqc4"]
 [ext_resource type="Shader" path="res://game/stages/static.gdshader" id="17_dc0ef"]
 [ext_resource type="PackedScene" uid="uid://ipa310726xyt" path="res://game/stages/rolling_credits.tscn" id="17_gnute"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_3ca2q"]
+shader = ExtResource("15_heqc4")
+shader_parameter/lod = 0.0
+shader_parameter/mix_percentage = 0.0
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_hnvqq"]
 shader = ExtResource("6_o425v")
@@ -112,18 +122,35 @@ dev_mode = true
 [node name="Objects" type="Node2D" parent="."]
 script = ExtResource("3_x2eff")
 
+[node name="Bloodletting1" type="Sprite2D" parent="Objects"]
+position = Vector2(0, 13)
+texture = ExtResource("4_wqvrw")
+centered = false
+
+[node name="Bloodletting2" type="Sprite2D" parent="Objects"]
+position = Vector2(0, 13)
+texture = ExtResource("5_cokni")
+centered = false
+
+[node name="Bloodletting3" type="Sprite2D" parent="Objects"]
+position = Vector2(0, 13)
+texture = ExtResource("6_lkqmw")
+centered = false
+
+[node name="Bloodletting4" type="Sprite2D" parent="Objects"]
+position = Vector2(0, 13)
+texture = ExtResource("7_uw4qr")
+centered = false
+
 [node name="OxylithWarzone" type="Sprite2D" parent="Objects"]
-visible = false
 texture = ExtResource("4_dvyf5")
 centered = false
 
 [node name="OxylithWarzoneBlood" type="Sprite2D" parent="Objects"]
-visible = false
 texture = ExtResource("5_c80if")
 centered = false
 
 [node name="Sigil" type="Sprite2D" parent="Objects"]
-visible = false
 position = Vector2(417, 197)
 texture = ExtResource("4_gq55s")
 
@@ -160,6 +187,17 @@ character_name = "one+anhedonia"
 [node name="Camera2D" type="Camera2D" parent="."]
 position = Vector2(480, 270)
 script = ExtResource("9_lbjue")
+
+[node name="FadeOut" type="CanvasLayer" parent="Camera2D"]
+
+[node name="ColorRect" type="ColorRect" parent="Camera2D/FadeOut"]
+material = SubResource("ShaderMaterial_3ca2q")
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
 
 [node name="Sun" type="CanvasLayer" parent="Camera2D"]
 

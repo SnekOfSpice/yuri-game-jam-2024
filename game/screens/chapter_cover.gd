@@ -105,6 +105,7 @@ func set_chapter_cover(pov_name: String, bottom_text: String, new_background: St
 	get_tree().create_timer(full_fade_in_after).timeout.connect(Sound.play_bgm.bind(bgm))
 	if GameWorld.game_stage:
 		get_tree().create_timer(full_fade_in_after).timeout.connect(GameWorld.game_stage.set_static.bind(0))
+		get_tree().create_timer(full_fade_in_after).timeout.connect(GameWorld.game_stage.set_fade_out.bind(0, 0))
 	
 	Sound.fade_out_bgm(full_fade_in_after)
 	#get_tree().create_timer(full_fade_in_after).timeout.connect(replace_with_assembled_texture)
