@@ -1,6 +1,6 @@
 {
 	"editor": {
-		"current_page_number": 36,
+		"current_page_number": 32,
 		"page_view": 0,
 		"text_size_id": 3
 	},
@@ -26269,7 +26269,7 @@
 								"jailer"
 							],
 							"active_actors_title": "character",
-							"content": "[]>narrator: When you can move your muscles again to prop yourself up in an upright position, the sun  has gone past the zenith again, but not too far. Exhaustion is writ on your face, but it feels infinitely better than the assault on your senses from your skin breaking and witnessing realities beyond your comprehension. <lc>While not much, you conclude the day with more theoretical work, writing more verses to inscribe upon the remaining shrines, all the while being fed shredded fruit by your girlfriend.\n[]>narrator: When the sun has set, you have a lovely little dinner date, Anhedonia preparing fried protein and soup for you.\n[]>narrator: You lean on her in between bites, and she nuzzles your scalp and strokes your arms and back in return. So soft.\n[]>anhedonia: I'm glad it worked.\n[]>one: Me too...\n[]>anhedonia: ...\n[]>anhedonia: Hey, by the way, I was curious.\n[]>one{one-emotion|listening}: Hm?\n[]>anhedonia:How did you get out, anyways?\n[]>one{one-emotion|joy}:Well..."
+							"content": "[]>narrator: When you can move your muscles again to prop yourself up in an upright position, the sun has gone past the zenith again, but not too far. Exhaustion is writ on your face, but it feels infinitely better than the assault on your senses from your skin breaking and witnessing realities beyond your comprehension. <lc>While not much, you conclude the day with more theoretical work, writing more verses to inscribe upon the remaining shrines, all the while being fed shredded fruit by your girlfriend.\n[]>narrator: When the sun has set, you have a lovely little dinner date, Anhedonia preparing fried protein and soup for you.\n[]>narrator: You lean on her in between bites, and she nuzzles your scalp and strokes your arms and back in return. So soft.\n[]>anhedonia: I'm glad it worked.\n[]>one: Me too...\n[]>anhedonia: ...\n[]>anhedonia: Hey, by the way, I was curious.\n[]>one{one-emotion|listening}: Hm?\n[]>anhedonia:How did you get out, anyways?\n[]>one{one-emotion|joy}:Well..."
 						},
 						"facts": {
 							"fact_data_by_name": {
@@ -33970,7 +33970,7 @@
 						}
 					}
 				],
-				"meta.scroll_vertical": 4786,
+				"meta.scroll_vertical": 3265,
 				"meta.selected": false,
 				"next": 41,
 				"number": 40,
@@ -34943,7 +34943,7 @@
 						}
 					}
 				],
-				"meta.scroll_vertical": 2138,
+				"meta.scroll_vertical": 0,
 				"meta.selected": false,
 				"next": 1,
 				"number": 42,
