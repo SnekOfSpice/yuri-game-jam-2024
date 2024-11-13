@@ -45,7 +45,7 @@ auto_translate_mode = 1
 custom_minimum_size = Vector2(600, 400)
 layout_mode = 2
 size_flags_horizontal = 4
-mouse_filter = 2
+mouse_filter = 1
 bbcode_enabled = true
 text = "[center]This visual novel contains topics meant for an adult audience. It contains this material in both sexual and non-sexual ways to varying degrees.
 

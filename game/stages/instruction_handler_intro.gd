@@ -178,7 +178,11 @@ func wound_fx(shake_intensity: float, splatter_count: float) -> bool:
 	play_sfx("kick")
 	return false
 
-func control_camera(zoom: float, x: float, y: float, duration: float) -> bool:
+func control_camera(zoom, x, y, duration) -> bool:
+	zoom = float(zoom)
+	x = float(x)
+	y = float(y)
+	duration = float(duration)
 	zoom_to(zoom, duration)
 	move_camera_to(x, y, duration)
 	return false

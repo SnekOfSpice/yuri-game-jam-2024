@@ -79,7 +79,7 @@ float fade_with_time(vec2 uv){
 vec4 outliner(vec2 uv1, vec2 uv2, float _noise, vec4 _color, float _width){
     vec4 color_band = _color;
     float color_dist = get_brightest_point(uv1).x*_noise*steps;
-    float mod_color_dist = color_dist - floor(fill_amount) + _width;
+    float mod_color_dist = color_dist - fill_amount + _width;
     color_band.a *= 0.5 - step(0.5, mod_color_dist);
     color_band.a *= alpha_boost;
     return color_band;

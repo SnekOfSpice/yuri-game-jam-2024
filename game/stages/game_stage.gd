@@ -24,7 +24,7 @@ var is_name_container_visible := false
 
 @onready var cg_roots := [find_child("CGBottomContainer"), find_child("CGTopContainer")]
 var blockers : int = 7 # character count + 1 (self) get_tree().get_node_count_in_group("diisis_character")
-var hovering_meta := false
+var advance_blockers := 0
 
 @onready var text_start_position = find_child("TextContainer").position
 
@@ -34,6 +34,13 @@ var callable_upon_blocker_clear:Callable
 @onready var overlay_static = find_child("Static").get_node("ColorRect")
 @onready var overlay_sun = find_child("Sun").get_node("ColorRect")
 @onready var overlay_fade_out = find_child("FadeOut").get_node("ColorRect")
+
+
+var target_lod := 0.0
+var target_mix := 0.0
+var target_sun_steps := 1.8
+var target_sun_fill_amount := -1.0
+var target_static := 0.0
 
 func _ready():
 	
@@ -89,18 +96,24 @@ func on_instruction_completed(
 func go_to_main_menu(_unused):
 	GameWorld.stage_root.change_stage(CONST.STAGE_MAIN)
 
-var target_lod := 0.0
-var target_mix := 0.0
+
 func _process(delta: float) -> void:
-	if overlay_sun.get_material().get_shader_parameter("fill_amount") > -1:
-		overlay_sun.get_material().set_shader_parameter("background", get_viewport().get_texture())
+	var sun_mat = overlay_sun.get_material()
+	sun_mat.set_shader_parameter("steps", lerp(sun_mat.get_shader_parameter("steps"), target_sun_steps, 0.02))
+	sun_mat.set_shader_parameter("fill_amount", lerp(sun_mat.get_shader_parameter("fill_amount"), target_sun_fill_amount, 0.02))
+	if sun_mat.get_shader_parameter("fill_amount") > -1:
+		sun_mat.set_shader_parameter("background", get_viewport().get_texture())
 	
 	var fade_mat = overlay_fade_out.get_material()
 	fade_mat.set_shader_parameter("lod", lerp(fade_mat.get_shader_parameter("lod"), target_lod, 0.02))
 	fade_mat.set_shader_parameter("mix_percentage", lerp(fade_mat.get_shader_parameter("mix_percentage"), target_mix, 0.02))
-
+	
+	var static_mat = overlay_static.get_material()
+	static_mat.set_shader_parameter("intensity", lerp(static_mat.get_shader_parameter("intensity"), target_static, 0.02))
+	static_mat.set_shader_parameter("border_size", lerp(static_mat.get_shader_parameter("border_size"), 1 - target_static, 0.02))
+	
 func _input(event: InputEvent) -> void:
-	if hovering_meta:
+	if advance_blockers > 0:
 		return
 	if not GameWorld.stage_root.screen.is_empty():
 		return
@@ -305,14 +318,19 @@ func deserialize(data:Dictionary):
 			push_warning("Deserialized game_stage with something wild.")
 			return
 		find_child("TextContainer").position = fixed_position
-	set_static(data.get("static", 0.0))
-	overlay_sun.get_material().set_shader_parameter("fill_amount", data.get("sun_fill_amount", -1.0))
-	overlay_sun.get_material().set_shader_parameter("steps", data.get("sun_steps", 10.0))
+	target_sun_fill_amount = data.get("sun_fill_amount", -1.0)
+	target_sun_steps = data.get("sun_steps", 10.0)
+	overlay_sun.get_material().set_shader_parameter("fill_amount", target_sun_fill_amount)
+	overlay_sun.get_material().set_shader_parameter("steps", target_sun_steps)
 	
 	target_lod = data.get("fade_out_lod", 0.0)
 	target_mix = data.get("fade_out_mix_percentage", 0.0)
 	overlay_fade_out.get_material().set_shader_parameter("lod", target_lod)
 	overlay_fade_out.get_material().set_shader_parameter("mix_percentage", target_mix)
+	
+	target_static = data.get("static", 0.0)
+	overlay_static.get_material().set_shader_parameter("intensity", target_static)
+	overlay_static.get_material().set_shader_parameter("border_size", 1 - target_static)
 
 func remove_blocker():
 	blockers -= 1
@@ -361,12 +379,6 @@ func _on_menu_button_pressed() -> void:
 
 
 
-func _on_rich_text_label_meta_hover_ended(meta: Variant) -> void:
-	hovering_meta = false
-
-
-func _on_rich_text_label_meta_hover_started(meta: Variant) -> void:
-	hovering_meta = true
 
 
 func _on_chapter_cover_chapter_intro_finished() -> void:
@@ -382,8 +394,7 @@ func _on_instruction_handler_splatter(amount: int) -> void:
 
 
 func set_static(level:float):
-	overlay_static.get_material().set_shader_parameter("intensity", level)
-	overlay_static.get_material().set_shader_parameter("border_size", 1 - level)
+	target_static = level
 	
 
 func set_fade_out(lod:float, mix:float):
@@ -391,4 +402,10 @@ func set_fade_out(lod:float, mix:float):
 	target_mix = mix
 
 func _on_instruction_handler_sun(property: String, value: float) -> void:
-	overlay_sun.get_material().set_shader_parameter(property, value)
+	set(str("target_sun_", property), value)
+	#overlay_sun.get_material().set_shader_parameter(property, value)
+
+func increment_advance_blocker():
+	advance_blockers += 1
+func decrement_advance_blocker():
+	advance_blockers -= 1

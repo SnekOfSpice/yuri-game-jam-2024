@@ -57,10 +57,12 @@ offset_top = -103.0
 offset_right = 155.0
 offset_bottom = 103.0
 grow_vertical = 2
+theme_override_constants/separation = 12
 
 [node name="StartButton" type="Button" parent="VBoxContainer"]
 layout_mode = 2
 focus_mode = 0
+theme_override_font_sizes/font_size = 30
 text = "New Game"
 alignment = 0
 
@@ -68,8 +70,13 @@ alignment = 0
 auto_translate_mode = 1
 layout_mode = 2
 focus_mode = 0
+theme_override_font_sizes/font_size = 30
 text = "Load"
 alignment = 0
+
+[node name="HSeparator" type="HSeparator" parent="VBoxContainer"]
+visible = false
+layout_mode = 2
 
 [node name="OptionsButton" type="Button" parent="VBoxContainer"]
 auto_translate_mode = 1
@@ -82,7 +89,7 @@ alignment = 0
 auto_translate_mode = 1
 layout_mode = 2
 focus_mode = 0
-text = "About"
+text = "Credits"
 alignment = 0
 
 [node name="CWButton" type="Button" parent="VBoxContainer"]
