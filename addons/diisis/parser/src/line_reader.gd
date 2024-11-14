@@ -398,6 +398,7 @@ func _ready() -> void:
 	ParserEvents.display_name_changed.connect(on_name_label_updated)
 	
 	Parser.open_connection(self)
+	tree_exiting.connect(Parser.close_connection)
 	
 	remaining_auto_pause_duration = auto_pause_duration# * (1.0 + (1-(text_speed / (MAX_TEXT_SPEED - 1))))
 	

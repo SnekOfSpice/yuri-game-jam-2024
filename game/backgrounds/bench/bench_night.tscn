@@ -1,0 +1,37 @@
+[gd_scene load_steps=6 format=3 uid="uid://usheb0bgjxhf"]
+
+[ext_resource type="Texture2D" uid="uid://bhm7hewjl2dkc" path="res://game/backgrounds/bench/bench_sky_night.png" id="1_8taoj"]
+[ext_resource type="Texture2D" uid="uid://dghh260per3jv" path="res://game/backgrounds/bench/bench_hill_night.png" id="2_vhq3x"]
+[ext_resource type="Shader" uid="uid://bdmdcnfk0qmww" path="res://game/backgrounds/field/grass_sway.tres" id="3_65lb6"]
+[ext_resource type="Texture2D" uid="uid://c1wo8e51wd36r" path="res://game/backgrounds/bench/bench_bush_night.png" id="4_h7ktq"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_40ixf"]
+shader = ExtResource("3_65lb6")
+shader_parameter/WindStrength = 19.675
+
+[node name="BenchDay" type="Node2D"]
+
+[node name="ParallaxBackground" type="ParallaxBackground" parent="."]
+
+[node name="ParallaxLayer" type="ParallaxLayer" parent="ParallaxBackground"]
+
+[node name="BenchSkyDay" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer"]
+position = Vector2(406, 267)
+texture = ExtResource("1_8taoj")
+
+[node name="ParallaxBackground2" type="ParallaxBackground" parent="."]
+
+[node name="ParallaxLayer" type="ParallaxLayer" parent="ParallaxBackground2"]
+
+[node name="BenchHillDay" type="Sprite2D" parent="ParallaxBackground2/ParallaxLayer"]
+position = Vector2(406, 231)
+texture = ExtResource("2_vhq3x")
+
+[node name="ParallaxBackground3" type="ParallaxBackground" parent="."]
+
+[node name="ParallaxLayer" type="ParallaxLayer" parent="ParallaxBackground3"]
+
+[node name="BenchBushDay" type="Sprite2D" parent="ParallaxBackground3/ParallaxLayer"]
+material = SubResource("ShaderMaterial_40ixf")
+position = Vector2(406, 267)
+texture = ExtResource("4_h7ktq")

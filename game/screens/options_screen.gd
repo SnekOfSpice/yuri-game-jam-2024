@@ -98,7 +98,7 @@ func _on_auto_continue_check_box_pressed() -> void:
 	find_child("AutoDelayLabel").visible = check_box.button_pressed
 	
 	Options.auto_continue = check_box.button_pressed
-	if Parser.line_reader:
+	if is_instance_valid(Parser.line_reader):
 		Parser.line_reader.auto_continue = check_box.button_pressed
 
 
@@ -109,7 +109,7 @@ func _on_text_speed_slider_value_changed(value: float) -> void:
 	else:
 		label.text = str(value)
 	Options.text_speed = int(value)
-	if Parser.line_reader:
+	if is_instance_valid(Parser.line_reader):
 		Parser.line_reader.text_speed = value
 
 
@@ -117,7 +117,7 @@ func _on_auto_delay_slider_value_changed(value: float) -> void:
 	var label : Label = find_child("AutoDelayLabel")
 	label.text = str(value, " s")
 	Options.auto_continue_delay = value
-	if Parser.line_reader:
+	if is_instance_valid(Parser.line_reader):
 		Parser.line_reader.auto_continue_delay = value
 
 

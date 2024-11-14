@@ -437,7 +437,11 @@ func open_connection(new_lr: LineReader):
 	line_reader = new_lr
 	line_reader.connect("line_finished", read_next_line)
 	line_reader.connect("jump_to_page", read_page)
-	
+
+func close_connection():
+	line_reader.disconnect("line_finished", read_next_line)
+	line_reader.disconnect("jump_to_page", read_page)
+	line_reader = null
 
 ## Changes [param fact_name] to [param new_value]. If [param suppress_event] is [code]true[/code]
 ## [signal ParserEvents.fact_changed] won't be emitted.[br]
