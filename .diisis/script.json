@@ -1,6 +1,6 @@
 {
 	"editor": {
-		"current_page_number": 29,
+		"current_page_number": 44,
 		"page_view": 0,
 		"text_size_id": 3
 	},
@@ -20727,7 +20727,7 @@
 						}
 					}
 				],
-				"meta.scroll_vertical": 0,
+				"meta.scroll_vertical": 4381,
 				"meta.selected": false,
 				"next": 26,
 				"number": 25,
@@ -22570,7 +22570,7 @@
 						}
 					}
 				],
-				"meta.scroll_vertical": 4152,
+				"meta.scroll_vertical": 4176,
 				"meta.selected": false,
 				"next": 28,
 				"number": 27,
@@ -24496,7 +24496,7 @@
 						}
 					}
 				],
-				"meta.scroll_vertical": 603,
+				"meta.scroll_vertical": 4547,
 				"meta.selected": false,
 				"next": 31,
 				"number": 30,
@@ -26593,7 +26593,7 @@
 						}
 					}
 				],
-				"meta.scroll_vertical": 0,
+				"meta.scroll_vertical": 10999,
 				"meta.selected": false,
 				"next": 32,
 				"number": 31,
@@ -36837,7 +36837,7 @@
 								5,
 								true,
 								"home_regular",
-								"none"
+								"dont_die_on_me"
 							],
 							"line_reader.reverse_args": [
 								"INVALID ARGUMENT FOR fade_in",
@@ -36849,7 +36849,7 @@
 							],
 							"meta.has_reverse": false,
 							"meta.reverse_text": "",
-							"meta.text": "black_fade(2.0, 4.0, 5.0, true, home_regular, none)",
+							"meta.text": "black_fade(2.0, 4.0, 5.0, true, home_regular, dont_die_on_me)",
 							"meta.validation_status": "OK",
 							"name": "black_fade",
 							"reverse_name": ""
@@ -36901,7 +36901,7 @@
 								"jailer"
 							],
 							"active_actors_title": "character",
-							"content": "[]>narrator:NTS FIND GOOD BGM FOR THIS PART\n[]>narrator:final scene - corpse cannibalism + mutilation\n[]>narrator: take a body bag"
+							"content": "[]>narrator{anhedonia-emotion|neutral}:Early morning fog suffocates the world like a thick blanket of trench warfare gas. Today would be your last day here. You go through your morning routine, departing from all that you hold dear. Quietly, you hum an elegy throughout the apartment, saying goodbye to every memory you ever had, to every bit of lovely furnishing One and you bent to your liking- made yours.\n[]>narrator:The day's work calls for strength of body and mind. <mp>You fortify both with your last meal, a selection of fruit and nuts like you made for One so so many times. <mp>It almost feels strange, taking care of yourself that way. Once more, your chest convulses tightly at the wish for One to be here, knees pressed against her chest, mind racing through the cosmos- occasionally stealing glances and smiles at you. <mp>Being your sunshine.\n[]>narrator{anhedonia-emotion|sad}: Instead, you are forced to reckon with the deathly silence of the apartment. Ambient droning music veils your ears against the static of the wires outside the apartment, and the hum of technology around you. Yet nothing seems to actually reach you. The world- wrapped in distance.\n[]>narrator{anhedonia-emotion|concerned}: You take another look at your list. There is not much for you to carry, yet you take great care to have packed everything. Shovel, bodybag, hacksaw, provisions of food and water, One's final letter. <mp>The memory of her.\n[]>narrator{anhedonia-emotion|neutral}: You are too focused on your task to properly cry. With teary rivulets running down your face, you take one good look at your apartment, then check the contents of your backpack one last time. <mp>Everything is set."
 						},
 						"facts": {
 							"fact_data_by_name": {
@@ -37009,7 +37009,7 @@
 								"jailer"
 							],
 							"active_actors_title": "character",
-							"content": "[]>narrator{anhedonia-emotion|holding-hacksaw}: You trek up the hill to retrieve One's corpse... <mp>Like she predicted, the burial had postponed the composition process enough for her to still look almost as undisturbed as the day she died- <mp>four days ago- <ap>six?- <ap>days ago. <ap>Who gives a fuck. <mp>Time lost all meaning since."
+							"content": "[]>narrator: Outside, the world is as it always has been, if a bit more washed out- a tad more grey. Less defined, closer to death. Pointless and empty and full of hate and never worth remembering because all it ever gave you was hate and suffering.\n[]>narrator: All you ever wanted was a tender yet powerful life, lead with your radiantly beautiful girlfriendwife. <mp>She had a sense of purpose, of power, and now you follow in her footsteps up the hill where you forged so many memories."
 						},
 						"facts": {
 							"fact_data_by_name": {
@@ -37109,7 +37109,7 @@
 								"jailer"
 							],
 							"active_actors_title": "character",
-							"content": "[]>narrator:You dig the earth away, careful not to even graze her body. <mp>The endeavor takes more hours away.\n[]>narrator:When the sun has traced the sky some more, you have exhumed her fully again. The sickly sweet smell of her corpse and the stench of dirt make it difficult to concentrate at the task at hand... <mp>Nonetheless, this is but a step in this titanic undertaking. and you persevere, and some minutes later, she is secured in the body bag."
+							"content": "[]>narrator:By the time you have reached the peak of the hill, the rays of the sun have evaporated the dense fog from before, laying bare the ruinous landscape you are forced to call your home. <mp>Forget it. <ap>This never was home. <mp>Home was with One. <mp>And One- <ap>Is dead.\nmove cam\n[]>narrator: You set down your backpack and tools on the sodden ground before you, fallen autumnal leaves seeped into by the remnants of fog.\n[]>anhedonia{anhedonia-emotion|crying}: I... <mp>Fuck...\n[]>anhedonia: This is...\n[]>narrator: Before you lies the shallow grave of your deceased lover. Deep enough for protection. Shallow enough- for exhuming. You put her there, and now you will take her once more. <mp>Not bothering to wipe away the tears, you grab the shovel, and get to work.\n[]>narrator:You dig the earth away, careful not to even graze her body. When the pit becomes deep enough, you discard the shovel and free the body with your own two hands. <mp>The endeavor takes more of the day away.\n[]>narrator:When the sun has traced the sky some more, you have exhumed her fully again. The sickly sweet smell of her corpse and the stench of dirt make it difficult to concentrate at the task at hand... <mp>Nonetheless, this is but a step in this titanic undertaking. and you persevere, and after some more of your tears and sweat have dripped onto the ground, she is secured in the body bag.\n[]>narrator:Like she predicted, the burial had postponed the composition process enough for her to still look almost as undisturbed as the day she died- <mp>four days ago- <ap>six?- <ap>days ago. <ap>Who gives a fuck. <mp>Time lost all meaning since.\n[]>narrator:It is time to bring her to her final resting place."
 						},
 						"facts": {
 							"fact_data_by_name": {
@@ -37217,7 +37217,7 @@
 								"jailer"
 							],
 							"active_actors_title": "character",
-							"content": "[]>narrator{anhedonia-emotion|bodybag}:You walk down.\n[]>narrator: a looking wistfully unto the sunset\n[]>narrator: story happens. you reach the nexus of oxylith shrines one has built."
+							"content": "[]>narrator{anhedonia-emotion|bodybag}:One cradled in your arms, you walk down the hill once more. By now, the mid autumn sun has started to set again, and bathes you in a vice orange glow.\n[]>narrator: In your heart- grief. <mp>Yet also relief. <mp>Finally, your life is clear. Devoid of uncertainty, every step you take sunkissed and radiant.There is nothing you would rather be but this guardian in life and death, carrying out the task of One- carrying out your joint desire.\n[]>narrator: This world will not inherit your grief, and you quake at the thought of uncertainty you will impart on those that come after. <mp>But it is worth it. For a better world you may never see."
 						},
 						"facts": {
 							"fact_data_by_name": {
@@ -37317,7 +37317,7 @@
 								"jailer"
 							],
 							"active_actors_title": "character",
-							"content": "[]>narrator{anhedonia-emotion|invisible,one+anhedonia-emotion|dismemberment1}: You lower her form to the ground. Having served it's purpose, you artfully cut open the body bag, revealing your deceased lover inside.\n[]>narrator{one+anhedonia-emotion|dismemberment2}:Making sure to soak the earth in her blood, you drive your hacksaw into her limbs at all sorts of queer angles. Blood springs forth from her arteries, and skin breaks and capillaries rupture from the metallic impacts of the saw's chain.\n[]>narrator:You exsanguinate her fully, carving into her neck and stomach and thighs and chest.\n[]>narrator{one+anhedonia-emotion|dismemberment3}:And then, when the guts have been spilled and the sternum has been broken, you set down your hacksaw.\n[]>narrator:Kneeling before the most holy sight, you slowly place your palms on the opening in One's abdominal wall. <mp>And then you press- Press your fingers knuckle by knuckle<call:set_emotion,one+anhedonia,dismemberment4>, then your hands, and then your forearms deep down into her hollowed abdomen. <lc>The unabated sound of squelching and churning organs fills the corpse-juice filled air around you and then your fingertips make contact. <mp>Contact, with her spine. <lc>You glide your fingers up and down, feeling all those tendons and muscles that once held her upright and made her voice emenate. <lc>This organic machinery that gave you so much love and begged for ever more mutilation has reached its end state. <mp>An end state for one singular purpose: <ap>Your ring finger touches it first. <mp>A glowingly warm presence- <ap>A granite boulder and obsidian dagger in one. <lc>Upon touching the godseed, your heart begins to quiet. Replaced with it is the deafening noise of the sun, screaming for the opportunity to grow into the celestial being it was cultivated to become.\n[]>narrator:You start to recite the passages one gave you."
+							"content": "[]>narrator:As you continue the journey, you pay no mind to the onlookers. Proudly, you carry your wife through desolate and populous city streets alike. Her aegis watching over you, there is no shred of fear within you. No one can harm you now.\n[]>narrator: Hidden in a grove of concrete and oppression and pestilence, you find One's final resting place. The nexus of oxylith shrines she has built.\n[]>narrator: In the center of the city plaza, you gently lower her form down to the ground, then prostrate yourself next to her."
 						},
 						"facts": {
 							"fact_data_by_name": {
@@ -37366,7 +37366,7 @@
 								"jailer"
 							],
 							"active_actors_title": "character",
-							"content": "[]>anhedonia:A yawning abyss, receiving your tears\n[]>anhedonia:Gaze into wheels-a-turning\n[]>anhedonia:Where love goes on and on and on\n[]>anhedonia:Into a lovelier place\n[]>anhedonia:March now, my child\n[]>anhedonia:Into our void\n[]>anhedonia:...\n[]>anhedonia:Souls eternal as a heartbeat.\n[]>anhedonia:Our bodies vigorous like hope.\n[]>anhedonia:In the face of desolation.\n[]>anhedonia:We shed the flesh we once called home.\n[]>anhedonia:...\n[]>anhedonia:Look upon the pale white sun.\n[]>anhedonia:Behold sky and sea, become one."
+							"content": "[]>narrator{anhedonia-emotion|invisible,one+anhedonia-emotion|dismemberment1}: Having served it's purpose, you artfully cut open the body bag, revealing your deceased lover inside.\n[]>narrator{one+anhedonia-emotion|dismemberment2}:Making sure to soak the earth in her blood, you drive your hacksaw into her limbs at all sorts of queer angles. Blood springs forth from her arteries, and skin breaks and capillaries rupture from the metallic impacts of the saw's chain.\n[]>narrator:You exsanguinate her fully, carving into her neck and stomach and thighs and chest.\n[]>narrator{one+anhedonia-emotion|dismemberment3}:And then, when the guts have been spilled and the sternum has been broken, you set down your hacksaw.\n[]>narrator:Kneeling before the most holy sight, you slowly place your palms on the opening in One's abdominal wall. <mp>And then you press- Press your fingers knuckle by knuckle<call:set_emotion,one+anhedonia,dismemberment4>, then your hands, and then your forearms deep down into her hollowed abdomen. <lc>The unabated sound of squelching and churning organs fills the corpse-juice filled air around you and then your fingertips make contact. <mp>Contact, with her spine. <lc>You glide your fingers up and down, feeling all those tendons and muscles that once held her upright and made her voice emenate. <lc>This organic machinery that gave you so much love and begged for ever more mutilation has reached its end state. <mp>An end state for one singular purpose: <ap>Your ring finger touches it first. <mp>A glowingly warm presence- <ap>A granite boulder and obsidian dagger in one. <lc>Upon touching the godseed, your heart begins to quiet. Replaced with it is the deafening noise of the sun, screaming for the opportunity to grow into the celestial being it was cultivated to become.\n[]>narrator:You start to recite the passages one gave you."
 						},
 						"facts": {
 							"fact_data_by_name": {
@@ -37415,7 +37415,7 @@
 								"jailer"
 							],
 							"active_actors_title": "character",
-							"content": "[]>narrator: Upon that last syllable, the godseed bursts into fire, yet does not burn you yet.\n[]>narrator{one+anhedonia-emotion|dismemberment5}:You rip out the glowing core, and raise it to your mouth, and sink your teeth into it. <mp>Ripping out a chunk of its flesh, its insides are laid bare."
+							"content": "[]>anhedonia:A yawning abyss, receiving your tears\n[]>anhedonia:Gaze into wheels-a-turning\n[]>anhedonia:Where love goes on and on and on\n[]>anhedonia:Into a lovelier place\n[]>anhedonia:March now, my child\n[]>anhedonia:Into our void\n[]>anhedonia:...\n[]>anhedonia:Souls eternal as a heartbeat.\n[]>anhedonia:Our bodies vigorous like hope.\n[]>anhedonia:In the face of desolation.\n[]>anhedonia:We shed the flesh we once called home.\n[]>anhedonia:...\n[]>anhedonia:Look upon the pale white sun.\n[]>anhedonia:Behold sky and sea, become one."
 						},
 						"facts": {
 							"fact_data_by_name": {
@@ -37436,6 +37436,55 @@
 					},
 					{
 						"address": "44.12",
+						"conditionals": {
+							"behavior": 0,
+							"behavior_key": "Show",
+							"facts": {
+								"fact_data_by_name": {
+
+								},
+								"meta.visible": false
+							},
+							"meta.visible": false,
+							"operand": 0,
+							"operand_args": [],
+							"operand_key": "AND"
+						},
+						"content": {
+							"active_actors": [
+								"anhedonia",
+								"one",
+								"spectra",
+								"narrator",
+								"interrogator",
+								"torturer",
+								"one+anhedonia",
+								"gods",
+								"clericant",
+								"jailer"
+							],
+							"active_actors_title": "character",
+							"content": "[]>narrator: Upon that last syllable, the godseed bursts into fire, yet does not burn you yet.\n[]>narrator{one+anhedonia-emotion|dismemberment5}:You <control_camera,2.5,0.0,-1.4,1.0>rip out the glowing core, and raise it to your mouth, and sink your teeth into it. <mp>Ripping out a chunk of its flesh, its insides are laid bare."
+						},
+						"facts": {
+							"fact_data_by_name": {
+
+							},
+							"meta.visible": false
+						},
+						"header": [],
+						"line_type": 0,
+						"meta.conditionals_visible": false,
+						"meta.facts_visible": false,
+						"meta.indent_level": 0,
+						"meta.is_head_editable": false,
+						"meta.line_index": 12,
+						"meta.selector": {
+							"selected": false
+						}
+					},
+					{
+						"address": "44.13",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -37484,13 +37533,13 @@
 						"meta.facts_visible": false,
 						"meta.indent_level": 0,
 						"meta.is_head_editable": false,
-						"meta.line_index": 12,
+						"meta.line_index": 13,
 						"meta.selector": {
 							"selected": false
 						}
 					},
 					{
-						"address": "44.13",
+						"address": "44.14",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -37533,13 +37582,13 @@
 						"meta.facts_visible": false,
 						"meta.indent_level": 0,
 						"meta.is_head_editable": false,
-						"meta.line_index": 13,
+						"meta.line_index": 14,
 						"meta.selector": {
 							"selected": false
 						}
 					},
 					{
-						"address": "44.14",
+						"address": "44.15",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -37585,13 +37634,13 @@
 						"meta.facts_visible": false,
 						"meta.indent_level": 0,
 						"meta.is_head_editable": false,
-						"meta.line_index": 14,
+						"meta.line_index": 15,
 						"meta.selector": {
 							"selected": false
 						}
 					}
 				],
-				"meta.scroll_vertical": 0,
+				"meta.scroll_vertical": 2538,
 				"meta.selected": false,
 				"next": 1,
 				"number": 44,

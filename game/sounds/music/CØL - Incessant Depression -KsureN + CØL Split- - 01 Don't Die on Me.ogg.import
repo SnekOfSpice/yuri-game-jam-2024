@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://03inhn0dne4b"
+path="res://.godot/imported/CØL - Incessant Depression -KsureN + CØL Split- - 01 Don't Die on Me.ogg-c3d1b209e3bd764319d2f7c0fb7ade45.oggvorbisstr"
+
+[deps]
+
+source_file="res://game/sounds/music/CØL - Incessant Depression -KsureN + CØL Split- - 01 Don't Die on Me.ogg"
+dest_files=["res://.godot/imported/CØL - Incessant Depression -KsureN + CØL Split- - 01 Don't Die on Me.ogg-c3d1b209e3bd764319d2f7c0fb7ade45.oggvorbisstr"]
+
+[params]
+
+loop=true
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4
