@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://fmxmf1261seg"
+path="res://.godot/imported/CØL - Post-Traumatic - 02 No Eyes, No Tongue.ogg-06d36c590d13f1f7ebd419a59bf05849.oggvorbisstr"
+
+[deps]
+
+source_file="res://game/sounds/music/CØL - Post-Traumatic - 02 No Eyes, No Tongue.ogg"
+dest_files=["res://.godot/imported/CØL - Post-Traumatic - 02 No Eyes, No Tongue.ogg-06d36c590d13f1f7ebd419a59bf05849.oggvorbisstr"]
+
+[params]
+
+loop=true
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

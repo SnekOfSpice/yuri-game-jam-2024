@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://yagkbs3qe8uo"
+path="res://.godot/imported/ROZKOL - VI (Songs from Mid-World) - 16 Go then, there are other worlds than these.ogg-86b29dfe563ad093b08bc350d5ee547f.oggvorbisstr"
+
+[deps]
+
+source_file="res://game/sounds/music/ROZKOL - VI (Songs from Mid-World) - 16 Go then, there are other worlds than these.ogg"
+dest_files=["res://.godot/imported/ROZKOL - VI (Songs from Mid-World) - 16 Go then, there are other worlds than these.ogg-86b29dfe563ad093b08bc350d5ee547f.oggvorbisstr"]
+
+[params]
+
+loop=true
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

@@ -1,6 +1,6 @@
 {
 	"editor": {
-		"current_page_number": 44,
+		"current_page_number": 32,
 		"page_view": 0,
 		"text_size_id": 3
 	},
@@ -26633,7 +26633,7 @@
 								3,
 								true,
 								"bench_night",
-								"working"
+								"bloodletting"
 							],
 							"line_reader.reverse_args": [
 								"INVALID ARGUMENT FOR fade_in",
@@ -26645,7 +26645,7 @@
 							],
 							"meta.has_reverse": false,
 							"meta.reverse_text": "",
-							"meta.text": "black_fade(6.0, 4.0, 3.0, true, bench_night, working)",
+							"meta.text": "black_fade(6.0, 4.0, 3.0, true, bench_night, bloodletting)",
 							"meta.validation_status": "OK",
 							"name": "black_fade",
 							"reverse_name": ""
@@ -26870,11 +26870,11 @@
 						}
 					}
 				],
-				"meta.scroll_vertical": 321,
+				"meta.scroll_vertical": 0,
 				"meta.selected": false,
 				"next": 33,
 				"number": 32,
-				"page_key": "A one breakdown and opology",
+				"page_key": "A one breakdown and apology",
 				"terminate": false
 			},
 			"33": {
@@ -30199,7 +30199,7 @@
 				},
 				"lines": [
 					{
-						"address": "34.0",
+						"address": "36.0",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -30250,7 +30250,7 @@
 						}
 					},
 					{
-						"address": "34.1",
+						"address": "36.1",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -30309,7 +30309,7 @@
 						}
 					},
 					{
-						"address": "34.2",
+						"address": "36.2",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -30364,7 +30364,7 @@
 						}
 					},
 					{
-						"address": "34.3",
+						"address": "36.3",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -30419,7 +30419,7 @@
 						}
 					},
 					{
-						"address": "34.4",
+						"address": "36.4",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -30468,7 +30468,7 @@
 						}
 					},
 					{
-						"address": "34.5",
+						"address": "36.5",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -30519,7 +30519,7 @@
 						}
 					},
 					{
-						"address": "34.6",
+						"address": "36.6",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -30568,7 +30568,7 @@
 						}
 					},
 					{
-						"address": "34.7",
+						"address": "36.7",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -30627,7 +30627,7 @@
 						}
 					},
 					{
-						"address": "34.8",
+						"address": "36.8",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -30656,7 +30656,7 @@
 								"jailer"
 							],
 							"active_actors_title": "character",
-							"content": "[]>narrator: The next morning comes with little surprises. The pain is largely back, yet more bearable somehow, as if Anhedonia's care lingers like an aegis over your body.\n[]>narrator: When you jointly crawl out of bed, the needles and other medical supplies of yesterday still greet you on your coffee table.\n[]>anhedonia{anhedonia-emotion|neutral,one-emotion|neutral}: True...\n[]>one: Yep. You still need my blood.\n[]>anhedonia{anhedonia-emotion|smug}: Have I not taken enough from you already?\n[]>one{one-emotion|horny}: Your mouth does't count.\n[]>anhedonia: Aw. Sad.\n[]>one{one-emotion|joy}: Hehe.\n[]>anhedonia{anhedonia-emotion|happy}: Awa.\n[]>one: Nya... <mp>Okay, fuck. <ap>Blood.\n[]>anhedonia{anhedonia-emotion|neutral}: Breakfast first? Don't want you fainting on me.\n[]>one{one-emotion|neutral}: Sure...\n[]>anhedonia: Small nibble.\n[]>one: Not on me.\n[]>anhedonia{anhedonia-emotion|happy}}: I KNOW!!!\n[]>one: Freak.\n[]>anhedonia: You.\n[]>narrator: You share a quick hug. The adoration for Anhedonia in your chest is so overbearing sometimes."
+							"content": "[]>narrator: The next morning comes with little surprises. The pain is largely back, yet more bearable somehow, as if Anhedonia's care lingers like an aegis over your body.\n[]>narrator: When you jointly crawl out of bed, the needles and other medical supplies of yesterday still greet you on your coffee table.\n[]>anhedonia{anhedonia-emotion|neutral,one-emotion|neutral}: True...\n[]>one: Yep. You still need my blood.\n[]>anhedonia{anhedonia-emotion|smug}: Have I not taken enough from you already?\n[]>one{one-emotion|horny}: Your mouth does't count.\n[]>anhedonia: Aw. Sad.\n[]>one{one-emotion|joy}: Hehe.\n[]>anhedonia{anhedonia-emotion|happy}: Awa.\n[]>one: Nya... <mp>Okay, fuck. <ap>Blood.\n[]>anhedonia{anhedonia-emotion|neutral}: Breakfast first? Don't want you fainting on me.\n[]>one{one-emotion|neutral}: Sure...\n[]>anhedonia{anhedonia-emotion|flirty}: Small nibble.\n[]>one{one-emotion|listening}}: Not on me.\n[]>anhedonia{anhedonia-emotion|happy}}: I KNOW!!!\n[]>one: Freak.\n[]>anhedonia{anhedonia-emotion|neutral,one-emotion|neutral}: You.\n[]>narrator: You share a quick hug. The adoration for Anhedonia in your chest is so overbearing sometimes."
 						},
 						"facts": {
 							"fact_data_by_name": {
@@ -30676,7 +30676,7 @@
 						}
 					},
 					{
-						"address": "34.9",
+						"address": "36.9",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -30725,7 +30725,7 @@
 						}
 					},
 					{
-						"address": "34.10",
+						"address": "36.10",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -30776,7 +30776,7 @@
 						}
 					},
 					{
-						"address": "34.11",
+						"address": "36.11",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -30805,7 +30805,7 @@
 								"jailer"
 							],
 							"active_actors_title": "character",
-							"content": "[]>narrator: The setup is quite simple. With a needle injected into one of your veins, you let it rest below your heart. From there, a line runs into a vacuum-sealed collection vessel, which automatically distributes it into smaller phials for ease of transportation. <lc>You need a lot of blood, but there's only so much throughput. At least the sensory feeling of bloodletting is... Marginal at worst, oddly freeing at best.\n[]>narrator: Waiting for the blood to drain at this rate is quite uneventful, yet still critical enough for Anhedonia to insist on watching over you, hand in hand.\n[]>anhedonia{anhedonia-emotion|smug}: On the scale of... Esoteric lesbian sex... <mp>Where is bloodletting?\n[]>one{one-emotion|joy}: Pffft. Hehehe.\n[]>one: Well...\n[]>one{one-emotion|neutral}: Highly esoteric, for sure. <mp>Especially with the handholding.\n[]>anhedonia{anhedonia-emotion|happy}: Haha, true.\n[]>one: I'm so happy I met you. <mp>It feels like if you unbound our souls from our bodies, they'd fuse into one.\n[]>anhedonia{anhedonia-emotion|neutral}: Likewise.\n[]>one: I...\n[]>one: I really am worth all this effort to you... Watching over me, drawing my blood, and stuff. <mp>You do so much for me.\n[]>anhedonia: Of course. <mp>Like you said; Bound by soul, and very much bound by blood too.\n[]>one: Bound by blood indeed."
+							"content": "[]>narrator: The setup is quite simple. With a needle injected into one of your veins, you let it rest below your heart. From there, a line runs into a vacuum-sealed collection vessel, which automatically distributes it into smaller phials for ease of transportation. <lc>You need a lot of blood, but there's only so much throughput. <mp>At least the sensory feeling of bloodletting is... <ap>Marginal at worst, oddly freeing at best.\n[]>narrator: Waiting for the blood to drain at this rate is quite uneventful, yet still critical enough for Anhedonia to insist on watching over you, hand in hand.\n[]>anhedonia{anhedonia-emotion|smug}: On the scale of... Esoteric lesbian sex... <mp>Where is bloodletting?\n[]>one{one-emotion|joy}: Pffft. Hehehe.\n[]>one: Well...\n[]>one{one-emotion|neutral}: Highly esoteric, for sure. <mp>Especially with the handholding.\n[]>anhedonia{anhedonia-emotion|happy}: Haha, true.\n[]>one: I'm so happy I met you. <mp>It feels like if you unbound our souls from our bodies, they'd fuse into one.\n[]>anhedonia{anhedonia-emotion|neutral}: Likewise.\n[]>one: I...\n[]>one: I really am worth all this effort to you... Watching over me, drawing my blood, and stuff. <mp>You do so much for me.\n[]>anhedonia: Of course. <mp>Like you said; Bound by soul, and very much bound by blood too.\n[]>one: Bound by blood indeed."
 						},
 						"facts": {
 							"fact_data_by_name": {
@@ -30825,7 +30825,7 @@
 						}
 					},
 					{
-						"address": "34.12",
+						"address": "36.12",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -30876,7 +30876,7 @@
 						}
 					},
 					{
-						"address": "34.13",
+						"address": "36.13",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -30905,7 +30905,7 @@
 								"jailer"
 							],
 							"active_actors_title": "character",
-							"content": "[]>narrator: The vessel is half-filled now.\n[]>one{one-emotion|listening}: It's also why I do art- The shrines and poetry mostly.\n[]>one: But I want you to know that there are whispers of destiny within me. <mp>I can feel our hearts, woven togther, in the fabrtic of the cosmos. <mp>And the ability to show that, or even just a glimpse or attempt at it. That feels really good to me. <lc>...<lc>It's a bit ironic, I think. That this last endeavor will be... So final. And that you- <ap>My muse and object of artistic devotion- <ap>Will vanish alongside it.\n[]>anhedonia: I'm fine with it.\n[]>one{one-emotion|neutral}: Heh. I know. <lc>Working towards the end reduces our time together, what a trade.\n[]>one: But we can't not.\n[]>anhedonia{anhedonia-emotion|sad}: Death as a great attractor.\n[]>one: Precisely.\n[]>anhedonia: ...\n[]>anhedonia{anhedonia-emotion|concerned}: If I may note... You never talked about your reasons in this much detail.\n[]>one: You never asked.\n[]>anhedonia{anhedonia-emotion|neutral}: Well, I thought you were apprehensive about it.\n[]>one: Usually I am. But currently I feel like sharing.\n[]>anhedonia: So I was right to not ask?\n[]>one{one-emotion|listening}: Heh, I guess.\n[]>anhedonia: So... How do you do art?\n[]>one: With my hands.\n[]>anhedonia: Clever. You know that's not what I meant.\n[]>one: I know that you know.\n[]>one: Sigh...\n[]>one: It just comes to me like the world has a heartbeat. And I am merely extracting its expressions. There's not much beyond that.\n[]>anhedonia: Just vibes?\n[]>one: Just vibes and self-expression.\n[]>anhedonia: Mhm.\n[]>anhedonia: Oh, let me unplug you."
+							"content": "[]>narrator: The vessel is half-filled now.\n[]>one:...\n[]>one:*sigh*...\n[]>one{one-emotion|listening}: It's also why I do art- <ap>The shrines and poetry mostly.\n[]>one: But I want you to know that there are whispers of destiny within me. <mp>I can feel our hearts, woven togther, in the fabrtic of the cosmos. <mp>And the ability to show that, or even just a glimpse or attempt at it. That feels really good to me. <lc>...<lc>It's a bit ironic, I think. That this last endeavor will be... So final. And that you- <ap>My muse and object of artistic devotion- <ap>Will vanish alongside it.\n[]>anhedonia: I'm fine with it.\n[]>one{one-emotion|neutral}: Heh. I know. <lc>Working towards the end reduces our time together, what a trade.\n[]>one: But we can't not.\n[]>anhedonia{anhedonia-emotion|sad}: Death as a great attractor.\n[]>one: Precisely.\n[]>anhedonia: ...\n[]>anhedonia{anhedonia-emotion|concerned}: If I may note... You never talked about your reasons in this much detail.\n[]>one: You never asked.\n[]>anhedonia{anhedonia-emotion|neutral}: Well, I thought you were apprehensive about it.\n[]>one: Usually I am. But currently I feel like sharing.\n[]>anhedonia: So I was right to not ask?\n[]>one{one-emotion|listening}: Heh, I guess.\n[]>anhedonia: So... How do you do art?\n[]>one: With my hands.\n[]>anhedonia: Clever. You know that's not what I meant.\n[]>one: I know that you know.\n[]>one: Sigh...\n[]>one: It just comes to me like the world has a heartbeat. And I am merely extracting its expressions. There's not much beyond that.\n[]>anhedonia: Just vibes?\n[]>one: Just vibes and self-expression.\n[]>anhedonia: Mhm.\n[]>anhedonia: Oh, let me unplug you."
 						},
 						"facts": {
 							"fact_data_by_name": {
@@ -30925,7 +30925,7 @@
 						}
 					},
 					{
-						"address": "34.14",
+						"address": "36.14",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -30976,7 +30976,7 @@
 						}
 					},
 					{
-						"address": "34.15",
+						"address": "36.15",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -31005,7 +31005,7 @@
 								"jailer"
 							],
 							"active_actors_title": "character",
-							"content": "[]>narrator: The phials are now completely filled. Over the course of your conversation, you could feel the hypotension climb, with less and less blood running through your system. Yet, this isn't too bad. Not too dizzy, and easily drowned out by the static and noise and pressure from the godeyes and their cosmic echoes.\n[]>narrator: You observe your girlfriend as she removes the needle from your arm, patches you up, and subsequently seals up the phials as well.\n[]>one: Annie.\n[]>anhedonia: Yeah?"
+							"content": "[]>narrator: The phials are now completely filled. Over the course of your conversation, you could feel the hypotension climb, with less and less blood running through your system. <mp>Yet, this isn't too bad. Not too dizzy, and easily drowned out by the static and noise and pressure from the godeyes and their cosmic echoes.\n[]>narrator: You observe your girlfriend as she removes the needle from your arm, patches you up, and subsequently seals up the phials as well.\n[]>one: Annie.\n[]>anhedonia: Yeah?"
 						},
 						"facts": {
 							"fact_data_by_name": {
@@ -31025,7 +31025,7 @@
 						}
 					},
 					{
-						"address": "34.16",
+						"address": "36.16",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -31054,7 +31054,7 @@
 								"jailer"
 							],
 							"active_actors_title": "character",
-							"content": "[]>one: Thank you. For... Doing this.\n[]>anhedonia{anhedonia-emotion|neutral}: Of course.\n[]>one{one-emotion|sad}: This work... It's still a big ask. And I'm a bit afraid you'll resent me for it.\n[]>narrator:She sets the bloodletting gear aside and sits down right next to you, and takes your hand in hers.\n[]>anhedonia{anhedonia-emotion|concerned}: Why would I resent you? I love you.\n[]>one: Oh you know, because I'll be leaving you to pick up the pieces, <ap>again. <lc>...<lc>This time for good.\n[]>anhedonia: One... This isn't you breaking something for me to clean up. You're not doing anything wrong.\n[]>one:I know... But...\n[]>one: It feels too much like ground truth to me- <mp>The fact that I don't really feel bad.\n[]>one:And that hurts too, like I don't value your feelings...\n[]>one{one-emotion|crying}:But I do. <lc>I truly do.\n[]>anhedonia{anhedonia-emotion|happy}: I know. I treasure you too.<lc>But I also know that this is what you want.\n[]>narrator: You nod your head ourwards, toward the window.\n[]>one: All of this just inspires so much hate. You're the only remaining love here and I'll kill you with this.\n[]>anhedonia:I know, darling. And I am fine with that. <lc>I love you.\n[]>one{one-emotion|sad}:You're so sweet...\n[]>one: You just live in my heart too, just as the godseed.\n[]>anhedonia{anhedonia-emotion|neutral}: Thank you for letting me be- Exist in your heart. <mp>But you are so much grander than me. You can have the world, and I want you to.\n[]>narrator: Your grip on Anhedonia's hands weakens. Hers fastens in response.\n[]>anhedonia{one-emotion|listening}:And I am part of that world I want you to have. <mp>So do with me, and with it, as you please.\n[]>anhedonia: The godseed is your opus, your calling, your creation. Please don't stop for anyone, not even me.\n[]>narrator: You feel the tears swelling as you share a long and drawn-out fixation into one another's eyes.\n[]>one: You're really not.. Upset?\n[]>anhedonia{anhedonia-emotion|concerned}: I never want to be angry at you. Least of all because of you following your heart."
+							"content": "[]>one: Thank you. For... Doing this.\n[]>anhedonia{anhedonia-emotion|neutral}: Of course.\n[]>one{one-emotion|sad}: This work... It's still a big ask. And I'm a bit afraid you'll resent me for it.\n[]>narrator:She sets the bloodletting gear aside and sits down right next to you, and takes your hand in hers.\n[]>anhedonia{anhedonia-emotion|concerned}: Why would I resent you? I love you.\n[]>one: Oh you know, because I'll be leaving you to pick up the pieces, <ap>again. <lc>...<lc>This time for good.\n[]>anhedonia: One... This isn't you breaking something for me to clean up. You're not doing anything wrong.\n[]>one:I know... But...\n[]>one: It feels too much like ground truth to me- <mp>The fact that I don't really feel bad.\n[]>one:And that hurts too, like I don't value your feelings...\n[]>one{one-emotion|crying}:But I do. <lc>I truly do.\n[]>anhedonia{anhedonia-emotion|happy}: I know. I treasure you too.<lc>But I also know that this is what you want.\n[]>narrator: You nod your head outwards, toward the window.\n[]>one: All of this just inspires so much hate. You're the only remaining love here and I'll kill you with this.\n[]>anhedonia:I know, darling. And I am fine with that. <lc>I love you.\n[]>one{one-emotion|sad}:You're so sweet...\n[]>one: You just live in my heart too, just as the godseed.\n[]>anhedonia{anhedonia-emotion|neutral}: Thank you for letting me be- Exist in your heart. <mp>But you are so much grander than me. You can have the world, and I want you to.\n[]>narrator: Your grip on Anhedonia's hands weakens. Hers fastens in response.\n[]>anhedonia{one-emotion|listening}:And I am part of that world I want you to have. <mp>So do with me, and with it, as you please.\n[]>anhedonia: The godseed is your opus, your calling, your creation. Please don't stop for anyone, not even me.\n[]>narrator: You feel the tears swelling as you share a long and drawn-out fixation into one another's eyes.\n[]>one: You're really not.. Upset?\n[]>anhedonia{anhedonia-emotion|concerned}: I never want to be angry at you. Least of all because of you following your heart."
 						},
 						"facts": {
 							"fact_data_by_name": {
@@ -31074,7 +31074,7 @@
 						}
 					},
 					{
-						"address": "34.17",
+						"address": "36.17",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -31129,7 +31129,7 @@
 						}
 					},
 					{
-						"address": "34.18",
+						"address": "36.18",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -31178,7 +31178,7 @@
 						}
 					}
 				],
-				"meta.scroll_vertical": 4716,
+				"meta.scroll_vertical": 4758,
 				"meta.selected": false,
 				"next": 37,
 				"number": 36,
@@ -37217,7 +37217,7 @@
 								"jailer"
 							],
 							"active_actors_title": "character",
-							"content": "[]>narrator{anhedonia-emotion|bodybag}:One cradled in your arms, you walk down the hill once more. By now, the mid autumn sun has started to set again, and bathes you in a vice orange glow.\n[]>narrator: In your heart- grief. <mp>Yet also relief. <mp>Finally, your life is clear. Devoid of uncertainty, every step you take sunkissed and radiant.There is nothing you would rather be but this guardian in life and death, carrying out the task of One- carrying out your joint desire.\n[]>narrator: This world will not inherit your grief, and you quake at the thought of uncertainty you will impart on those that come after. <mp>But it is worth it. For a better world you may never see."
+							"content": "[]>narrator{anhedonia-emotion|bodybag}:One cradled in your arms, you walk down the hill once more. By now, the mid autumn sun has started to set again, and bathes you in a vice orange glow.\n[]>narrator: In your heart- grief. <mp>Yet also relief. <mp>Finally, your life is clear. Devoid of uncertainty, every step you take sunkissed and radiant. There is nothing you would rather be but this guardian in life and death, carrying out the task of One- carrying out your joint desire.\n[]>narrator: This world will not inherit your grief, and you quake at the thought of uncertainty you will impart on those that come after. <mp>But it is worth it. <ap>For a better world you may never see."
 						},
 						"facts": {
 							"fact_data_by_name": {
@@ -37256,7 +37256,7 @@
 							"delay_after": 0,
 							"delay_before": 0,
 							"line_reader.args": [
-								"city",
+								"nexus",
 								4
 							],
 							"line_reader.reverse_args": [
@@ -37265,7 +37265,7 @@
 							],
 							"meta.has_reverse": false,
 							"meta.reverse_text": "",
-							"meta.text": "set_background(city, 4.0)",
+							"meta.text": "set_background(nexus, 4.0)",
 							"meta.validation_status": "OK",
 							"name": "set_background",
 							"reverse_name": ""
@@ -37317,7 +37317,7 @@
 								"jailer"
 							],
 							"active_actors_title": "character",
-							"content": "[]>narrator:As you continue the journey, you pay no mind to the onlookers. Proudly, you carry your wife through desolate and populous city streets alike. Her aegis watching over you, there is no shred of fear within you. No one can harm you now.\n[]>narrator: Hidden in a grove of concrete and oppression and pestilence, you find One's final resting place. The nexus of oxylith shrines she has built.\n[]>narrator: In the center of the city plaza, you gently lower her form down to the ground, then prostrate yourself next to her."
+							"content": "[]>narrator:As you continue the journey, you pay no mind to the onlookers. Proudly, you carry your wife through desolate and populous city streets alike. Her aegis watching over you, there is no shred of fear within you. No one can harm you now.\n[]>narrator: Fully on display in a grove of concrete and oppression and pestilence, you find One's final resting place. The nexus of oxylith shrines she has built.\n[]>narrator: In the center of the city plaza, you gently lower her form down to the ground, then prostrate yourself next to her."
 						},
 						"facts": {
 							"fact_data_by_name": {
@@ -37640,7 +37640,7 @@
 						}
 					}
 				],
-				"meta.scroll_vertical": 2538,
+				"meta.scroll_vertical": 1846,
 				"meta.selected": false,
 				"next": 1,
 				"number": 44,
