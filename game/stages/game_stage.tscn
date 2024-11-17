@@ -1,4 +1,4 @@
-[gd_scene load_steps=59 format=3 uid="uid://r1ntcqdujfol"]
+[gd_scene load_steps=61 format=3 uid="uid://r1ntcqdujfol"]
 
 [ext_resource type="Script" path="res://game/stages/game_stage.gd" id="1_a36me"]
 [ext_resource type="Script" path="res://addons/diisis/parser/src/line_reader.gd" id="1_h4afo"]
@@ -28,8 +28,10 @@
 [ext_resource type="Texture2D" uid="uid://c17fgm00bow0b" path="res://game/stages/sun_shader/mask_02_02.png" id="8_mxu8l"]
 [ext_resource type="Script" path="res://game/stages/game_camera.gd" id="9_lbjue"]
 [ext_resource type="PackedScene" uid="uid://cjy7vf1xrnq5y" path="res://game/screens/chapter_cover.tscn" id="12_vf2y4"]
+[ext_resource type="Texture2D" uid="uid://bdcr6ltrnrfdy" path="res://game/visuals/OxylithDay2.png" id="13_cwli1"]
 [ext_resource type="PackedScene" uid="uid://biu88w163ploy" path="res://game/cheats.tscn" id="13_qackq"]
 [ext_resource type="Script" path="res://game/stages/start_cover.gd" id="13_qfsh6"]
+[ext_resource type="Texture2D" uid="uid://drkq57wcqlmm4" path="res://game/visuals/OxylithDay2Blood.png" id="14_0obgu"]
 [ext_resource type="Shader" path="res://game/stages/one_fadeout.gdshader" id="15_heqc4"]
 [ext_resource type="Shader" path="res://game/stages/static.gdshader" id="17_dc0ef"]
 [ext_resource type="PackedScene" uid="uid://ipa310726xyt" path="res://game/stages/rolling_credits.tscn" id="17_gnute"]
@@ -163,6 +165,14 @@ centered = false
 [node name="Sigil" type="Sprite2D" parent="Objects"]
 position = Vector2(417, 197)
 texture = ExtResource("4_gq55s")
+
+[node name="OxylithDay2" type="Sprite2D" parent="Objects"]
+texture = ExtResource("13_cwli1")
+centered = false
+
+[node name="OxylithDay2Blood" type="Sprite2D" parent="Objects"]
+texture = ExtResource("14_0obgu")
+centered = false
 
 [node name="OxylithReminisce" type="Sprite2D" parent="Objects"]
 position = Vector2(693, 293)

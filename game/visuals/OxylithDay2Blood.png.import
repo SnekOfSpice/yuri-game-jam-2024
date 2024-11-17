@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://1d2c0edpsqdo"
-path="res://.godot/imported/anhedonia-shock.png-b5088fcdc5e985601dc0ed5a164637fb.ctex"
+uid="uid://drkq57wcqlmm4"
+path="res://.godot/imported/OxylithDay2Blood.png-8181dc1e31773cba14a803450c57d4fc.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://game/characters/sprites/anhedonia-shock.png"
-dest_files=["res://.godot/imported/anhedonia-shock.png-b5088fcdc5e985601dc0ed5a164637fb.ctex"]
+source_file="res://game/visuals/OxylithDay2Blood.png"
+dest_files=["res://.godot/imported/OxylithDay2Blood.png-8181dc1e31773cba14a803450c57d4fc.ctex"]
 
 [params]
 
