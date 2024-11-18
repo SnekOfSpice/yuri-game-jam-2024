@@ -1,6 +1,6 @@
 {
 	"editor": {
-		"current_page_number": 18,
+		"current_page_number": 28,
 		"page_view": 0,
 		"text_size_id": 3
 	},
@@ -104,7 +104,9 @@
 			],
 			"spectra-emotion": [
 				"neutral",
-				"invisible"
+				"invisible",
+				"happy",
+				"annoyed"
 			],
 			"torturer-emotion": [
 				"neutral"
@@ -1706,7 +1708,7 @@
 						}
 					}
 				],
-				"meta.scroll_vertical": 0,
+				"meta.scroll_vertical": 3991,
 				"meta.selected": false,
 				"next": 1,
 				"number": 0,
@@ -18143,7 +18145,7 @@
 								"jailer"
 							],
 							"active_actors_title": "character",
-							"content": "[]>one{one-emotion|listening}: This is when I burn the brightest. This is how I create.\n[]>anhedonia{anhedonia-emotion|sad}:...\n[]>one{one-emotion|pain}: In fact- <mp>I am more than fine, I am perfect and I want to kill myself from all this sensory input.\n[]>one{one-emotion|anxious}: At <call:control_camera,1.8,1.9,-0.7,3.0>any one time, it feels like I have five thoughts I want to speak but then I can't because I only have one mouth and time is linear and I am losing so much information I want to tell you and the world I see right now is so much bigger. <mp>It's infinite. Recursive. A fucking fractal.\n[]>anhedonia:...\n[]>one{one-emotion|pain}:Please you have to listen, the death is a great one and the clericants are not dead.[shake rate=8.0 level=3 connected=1] <mp>And not alive. <mp>They're nothing. [/shake] <mp>[shake rate=20.0 level=6 connected=1]FUCKING NOTHING.[/shake] They're soooooo beneath me I literally don't know why they still [shake rate=15.0 level=5 connected=1]EXIST![/shake]\n[]>anhedonia{anhedonia-emotion|concerned}: Those...<ap> That interrogated you?\n[]>one: Yes and all the others and their class and why are they [shake rate=30.0 level=7 connected=1]STILL ALIIIIVE???[/shake] \n[]>one{one-emotion|anxious}:[shake rate=8.0 level=3 connected=1]I've talked, seen, commuted, fucked with perforated angels. [/shake]What lives in there, it's big.\n[]>anhedonia: In.. Where?\n[]>one: Me. <call:control_camera,2.2,2.2,-1,5.0>God. Godseed.\n[]>narrator: You vigorously point at your face.\n[]>anhedonia{anhedonia-emotion|concerned}:Sorry, what's in there?\n[]>one{one-emotion|pain}:Angels. Architects and more talking and they're talking as we speak.\n[]>anhedonia: Are they saying something about us?\n[]>narrator: The world flatlines. <call:control_camera,1,0,0,5.0>Silence.\n[]>one: Doesn't matter.\n[]>narrator: Anhedonia is in front of you.\n[]>one: You're still here.\n[]>anhedonia: Where would I go?\n[]>one: Away of course.\n[]>anhedonia: I'm not gonna leave you alone when your thoughts are racing like this!\n[]>one: No I mean this reality, which might only exist in this room for all intents and purposes .... But still.[shake rate=20.0 level=6 connected=1] FUCK. SHIIIITT[/shake] [shake rate=8.0 level=3 connected=1]reality just dissolved again.[/shake]\n[]>anhedonia: I'm here. \n[]>one{one-emotion|crying}:I know you are. I mean here. In this reality.\n[]>narrator:Your eyes throb. The base of your spine feels like a scalpel embedded in your skin.\n[]>one: This will take a long long time to work through.\n[]>anhedonia: What will?"
+							"content": "[]>one{one-emotion|listening}: This is when I burn the brightest. This is how I create.\n[]>anhedonia{anhedonia-emotion|sad}:..."
 						},
 						"facts": {
 							"fact_data_by_name": {
@@ -18164,6 +18166,110 @@
 					},
 					{
 						"address": "22.7",
+						"conditionals": {
+							"behavior": 0,
+							"behavior_key": "Show",
+							"facts": {
+								"fact_data_by_name": {
+
+								},
+								"meta.visible": false
+							},
+							"meta.visible": false,
+							"operand": 0,
+							"operand_args": [],
+							"operand_key": "AND"
+						},
+						"content": {
+							"delay_after": 0,
+							"delay_before": 0,
+							"line_reader.args": [
+								"anhedonia",
+								3,
+								4,
+								false
+							],
+							"line_reader.reverse_args": [
+								"INVALID ARGUMENT FOR character_name",
+								"INVALID ARGUMENT FOR index",
+								"INVALID ARGUMENT FOR time",
+								"INVALID ARGUMENT FOR wait_for_reposition"
+							],
+							"meta.has_reverse": false,
+							"meta.reverse_text": "",
+							"meta.text": "set_x_position(anhedonia, 3, 4.0, false)",
+							"meta.validation_status": "OK",
+							"name": "set_x_position",
+							"reverse_name": ""
+						},
+						"facts": {
+							"fact_data_by_name": {
+
+							},
+							"meta.visible": false
+						},
+						"header": [],
+						"line_type": 2,
+						"meta.conditionals_visible": false,
+						"meta.facts_visible": false,
+						"meta.indent_level": 0,
+						"meta.is_head_editable": false,
+						"meta.line_index": 7,
+						"meta.selector": {
+							"selected": false
+						}
+					},
+					{
+						"address": "22.8",
+						"conditionals": {
+							"behavior": 0,
+							"behavior_key": "Show",
+							"facts": {
+								"fact_data_by_name": {
+
+								},
+								"meta.visible": false
+							},
+							"meta.visible": false,
+							"operand": 0,
+							"operand_args": [],
+							"operand_key": "AND"
+						},
+						"content": {
+							"active_actors": [
+								"anhedonia",
+								"one",
+								"spectra",
+								"narrator",
+								"interrogator",
+								"torturer",
+								"one+anhedonia",
+								"gods",
+								"clericant",
+								"jailer"
+							],
+							"active_actors_title": "character",
+							"content": "[]>one{one-emotion|pain}: In fact- <mp>I am more than fine, I am perfect and I want to kill myself from all this sensory input.\n[]>one{one-emotion|anxious}: At <call:control_camera,1.8,1.9,-0.7,3.0>any one time, it feels like I have five thoughts I want to speak but then I can't because I only have one mouth and time is linear and I am losing so much information I want to tell you and the world I see right now is so much bigger. <mp>It's infinite. Recursive. A fucking fractal.\n[]>anhedonia:...\n[]>one{one-emotion|pain}:Please you have to listen, the death is a great one and the clericants are not dead.[shake rate=8.0 level=3 connected=1] <mp>And not alive. <mp>They're nothing. [/shake] <mp>[shake rate=20.0 level=6 connected=1]FUCKING NOTHING.[/shake] They're soooooo beneath me I literally don't know why they still [shake rate=15.0 level=5 connected=1]EXIST![/shake]\n[]>anhedonia{anhedonia-emotion|concerned}: Those...<ap> That interrogated you?\n[]>one: Yes and all the others and their class and why are they [shake rate=30.0 level=7 connected=1]STILL ALIIIIVE???[/shake] \n[]>one{one-emotion|anxious}:[shake rate=8.0 level=3 connected=1]I've talked, seen, commuted, fucked with perforated angels. [/shake]What lives in there, it's big.\n[]>anhedonia: In.. Where?\n[]>one: Me. <call:control_camera,2.2,2.2,-1,5.0>God. Godseed.\n[]>narrator: You vigorously point at your face.\n[]>anhedonia{anhedonia-emotion|concerned}:Sorry, what's in there?\n[]>one{one-emotion|pain}:Angels. Architects and more talking and they're talking as we speak.\n[]>anhedonia: Are they saying something about us?\n[]>narrator: The world flatlines. <call:control_camera,1,0,0,5.0>Silence.\n[]>one: Doesn't matter.\n[]>narrator: Anhedonia is in front of you.\n[]>one: You're still here.\n[]>anhedonia: Where would I go?\n[]>one: Away of course.\n[]>anhedonia: I'm not gonna leave you alone when your thoughts are racing like this!\n[]>one: No I mean this reality, which might only exist in this room for all intents and purposes .... But still.[shake rate=20.0 level=6 connected=1] FUCK. SHIIIITT[/shake] [shake rate=8.0 level=3 connected=1]reality just dissolved again.[/shake]\n[]>anhedonia: I'm here. \n[]>one{one-emotion|crying}:I know you are. I mean here. In this reality.\n[]>narrator:Your eyes throb. The base of your spine feels like a scalpel embedded in your skin.\n[]>one: This will take a long long time to work through.\n[]>anhedonia: What will?"
+						},
+						"facts": {
+							"fact_data_by_name": {
+
+							},
+							"meta.visible": false
+						},
+						"header": [],
+						"line_type": 0,
+						"meta.conditionals_visible": false,
+						"meta.facts_visible": false,
+						"meta.indent_level": 0,
+						"meta.is_head_editable": false,
+						"meta.line_index": 8,
+						"meta.selector": {
+							"selected": false
+						}
+					},
+					{
+						"address": "22.9",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -18206,13 +18312,13 @@
 						"meta.facts_visible": false,
 						"meta.indent_level": 0,
 						"meta.is_head_editable": false,
-						"meta.line_index": 7,
+						"meta.line_index": 9,
 						"meta.selector": {
 							"selected": false
 						}
 					},
 					{
-						"address": "22.8",
+						"address": "22.10",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -18261,13 +18367,13 @@
 						"meta.facts_visible": false,
 						"meta.indent_level": 0,
 						"meta.is_head_editable": false,
-						"meta.line_index": 8,
+						"meta.line_index": 10,
 						"meta.selector": {
 							"selected": false
 						}
 					},
 					{
-						"address": "22.9",
+						"address": "22.11",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -18316,13 +18422,13 @@
 						"meta.facts_visible": false,
 						"meta.indent_level": 0,
 						"meta.is_head_editable": false,
-						"meta.line_index": 9,
+						"meta.line_index": 11,
 						"meta.selector": {
 							"selected": false
 						}
 					},
 					{
-						"address": "22.10",
+						"address": "22.12",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -18365,13 +18471,13 @@
 						"meta.facts_visible": false,
 						"meta.indent_level": 0,
 						"meta.is_head_editable": false,
-						"meta.line_index": 10,
+						"meta.line_index": 12,
 						"meta.selector": {
 							"selected": false
 						}
 					},
 					{
-						"address": "22.11",
+						"address": "22.13",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -18424,104 +18530,6 @@
 						"meta.facts_visible": false,
 						"meta.indent_level": 0,
 						"meta.is_head_editable": false,
-						"meta.line_index": 11,
-						"meta.selector": {
-							"selected": false
-						}
-					},
-					{
-						"address": "22.12",
-						"conditionals": {
-							"behavior": 0,
-							"behavior_key": "Show",
-							"facts": {
-								"fact_data_by_name": {
-
-								},
-								"meta.visible": false
-							},
-							"meta.visible": false,
-							"operand": 0,
-							"operand_args": [],
-							"operand_key": "AND"
-						},
-						"content": {
-							"active_actors": [
-								"anhedonia",
-								"one",
-								"spectra",
-								"narrator",
-								"interrogator",
-								"torturer",
-								"one+anhedonia",
-								"gods",
-								"clericant",
-								"jailer"
-							],
-							"active_actors_title": "character",
-							"content": "[]>narrator:The dawn has broken long ago and so did your sanity. Yesterday has been slept off, but not entirely."
-						},
-						"facts": {
-							"fact_data_by_name": {
-
-							},
-							"meta.visible": false
-						},
-						"header": [],
-						"line_type": 0,
-						"meta.conditionals_visible": false,
-						"meta.facts_visible": false,
-						"meta.indent_level": 0,
-						"meta.is_head_editable": false,
-						"meta.line_index": 12,
-						"meta.selector": {
-							"selected": false
-						}
-					},
-					{
-						"address": "22.13",
-						"conditionals": {
-							"behavior": 0,
-							"behavior_key": "Show",
-							"facts": {
-								"fact_data_by_name": {
-
-								},
-								"meta.visible": false
-							},
-							"meta.visible": false,
-							"operand": 0,
-							"operand_args": [],
-							"operand_key": "AND"
-						},
-						"content": {
-							"active_actors": [
-								"anhedonia",
-								"one",
-								"spectra",
-								"narrator",
-								"interrogator",
-								"torturer",
-								"one+anhedonia",
-								"gods",
-								"clericant",
-								"jailer"
-							],
-							"active_actors_title": "character",
-							"content": "[]>one:It is so fucking PAINFUL to THINK!\n[]>one:Annnheedooniiiaaaaaa!!!\n[]>anhedonia{anhedonia-emotion|sleepy}:Ugh... Hi.\n[]>one:I went back into the thought mines today and how my head is full of holes and they're being filled with cement and love as we speak."
-						},
-						"facts": {
-							"fact_data_by_name": {
-
-							},
-							"meta.visible": false
-						},
-						"header": [],
-						"line_type": 0,
-						"meta.conditionals_visible": false,
-						"meta.facts_visible": false,
-						"meta.indent_level": 0,
-						"meta.is_head_editable": false,
 						"meta.line_index": 13,
 						"meta.selector": {
 							"selected": false
@@ -18557,7 +18565,7 @@
 								"jailer"
 							],
 							"active_actors_title": "character",
-							"content": "[]>one:I'm just so close to breaking, Annie. I'm afraid of what if... what if I don't finish any of this in time.\n[]>one:Those fuckers raided me and took so much and now rebuilding all this before I kick the bucket is... FUCK."
+							"content": "[]>narrator:The dawn has broken long ago and so did your sanity. Yesterday has been slept off, but not entirely."
 						},
 						"facts": {
 							"fact_data_by_name": {
@@ -18606,7 +18614,7 @@
 								"jailer"
 							],
 							"active_actors_title": "character",
-							"content": "[]>narrator: Anhedonia is struggling to keep up with your deliberations. Currently, she is but resorting to merely clinging to you, holding you close.\n[]>anhedonia: I know hun... It's all so much.\n[]>one: ...\n[]>anhedonia: ... We'll be fine.\n[]>one: Will we?\n[]>anhedonia: ...\n[]>anhedonia{anhedonia-emotion|crying}: Is there nothing I can do to alleviate this burden?\n[]>one: No.\n[]>anhedonia: ...\n[]>one: ...\n[]>one: Oh fuck. Anhedonia I am so sorry.\n[]>anhedonia: ...\n[]>one: I didn't want to make you sad. Please don't...\n[]>anhedonia: I know it wasn't your intention.\n[]>one: But still... I...\n[]>one: Well... For now I know that I'm succeeding.\n[]>anhedonia: ...Why?\n[]>one: Otherwise I'd be dead.\n[]>narrator: Your last remark makes Anhedonia squeeze you even harder, practically locking you in place next to her, blanket draped over both of you.\n[]>one: I'm sorry my thoughts are like this.\n[]>anhedonia: *sniffle* It's fine..."
+							"content": "[]>one:It is so fucking PAINFUL to THINK!\n[]>one:Annnheedooniiiaaaaaa!!!\n[]>anhedonia{anhedonia-emotion|sleepy}:Ugh... Hi.\n[]>one:I went back into the thought mines today and how my head is full of holes and they're being filled with cement and love as we speak."
 						},
 						"facts": {
 							"fact_data_by_name": {
@@ -18624,9 +18632,107 @@
 						"meta.selector": {
 							"selected": false
 						}
+					},
+					{
+						"address": "22.16",
+						"conditionals": {
+							"behavior": 0,
+							"behavior_key": "Show",
+							"facts": {
+								"fact_data_by_name": {
+
+								},
+								"meta.visible": false
+							},
+							"meta.visible": false,
+							"operand": 0,
+							"operand_args": [],
+							"operand_key": "AND"
+						},
+						"content": {
+							"active_actors": [
+								"anhedonia",
+								"one",
+								"spectra",
+								"narrator",
+								"interrogator",
+								"torturer",
+								"one+anhedonia",
+								"gods",
+								"clericant",
+								"jailer"
+							],
+							"active_actors_title": "character",
+							"content": "[]>one:I'm just so close to breaking, Annie. I'm afraid of what if... what if I don't finish any of this in time.\n[]>one:Those fuckers raided me and took so much and now rebuilding all this before I kick the bucket is... FUCK."
+						},
+						"facts": {
+							"fact_data_by_name": {
+
+							},
+							"meta.visible": false
+						},
+						"header": [],
+						"line_type": 0,
+						"meta.conditionals_visible": false,
+						"meta.facts_visible": false,
+						"meta.indent_level": 0,
+						"meta.is_head_editable": false,
+						"meta.line_index": 16,
+						"meta.selector": {
+							"selected": false
+						}
+					},
+					{
+						"address": "22.17",
+						"conditionals": {
+							"behavior": 0,
+							"behavior_key": "Show",
+							"facts": {
+								"fact_data_by_name": {
+
+								},
+								"meta.visible": false
+							},
+							"meta.visible": false,
+							"operand": 0,
+							"operand_args": [],
+							"operand_key": "AND"
+						},
+						"content": {
+							"active_actors": [
+								"anhedonia",
+								"one",
+								"spectra",
+								"narrator",
+								"interrogator",
+								"torturer",
+								"one+anhedonia",
+								"gods",
+								"clericant",
+								"jailer"
+							],
+							"active_actors_title": "character",
+							"content": "[]>narrator: Anhedonia is struggling to keep up with your deliberations. Currently, she is but resorting to merely clinging to you, holding you close.\n[]>anhedonia: I know hun... It's all so much.\n[]>one: ...\n[]>anhedonia: ... We'll be fine.\n[]>one: Will we?\n[]>anhedonia: ...\n[]>anhedonia{anhedonia-emotion|crying}: Is there nothing I can do to alleviate this burden?\n[]>one: No.\n[]>anhedonia: ...\n[]>one: ...\n[]>one: Oh fuck. Anhedonia I am so sorry.\n[]>anhedonia: ...\n[]>one: I didn't want to make you sad. Please don't...\n[]>anhedonia: I know it wasn't your intention.\n[]>one: But still... I...\n[]>one: Well... For now I know that I'm succeeding.\n[]>anhedonia: ...Why?\n[]>one: Otherwise I'd be dead.\n[]>narrator: Your last remark makes Anhedonia squeeze you even harder, practically locking you in place next to her, blanket draped over both of you.\n[]>one: I'm sorry my thoughts are like this.\n[]>anhedonia: *sniffle* It's fine..."
+						},
+						"facts": {
+							"fact_data_by_name": {
+
+							},
+							"meta.visible": false
+						},
+						"header": [],
+						"line_type": 0,
+						"meta.conditionals_visible": false,
+						"meta.facts_visible": false,
+						"meta.indent_level": 0,
+						"meta.is_head_editable": false,
+						"meta.line_index": 17,
+						"meta.selector": {
+							"selected": false
+						}
 					}
 				],
-				"meta.scroll_vertical": 3609,
+				"meta.scroll_vertical": 1953,
 				"meta.selected": false,
 				"next": 23,
 				"number": 22,
@@ -23423,7 +23529,7 @@
 								"jailer"
 							],
 							"active_actors_title": "character",
-							"content": "[]>spectra: So, would you mind running me through what you two got up to now?\n[]>one: Just... Shrine setup.\n[]>spectra: Leading to Anhedonia getting snatched?\n[]>one{one-emotion|sad}: It went sideways big time.\n[]>spectra: I can tell.\n[]>one{one-emotion|neutral}: I don't need your snark right now.\n[]>spectra: Okay okay, I'll save it for the obituary.\n[]>one: What fucking obituary. \n[]>spectra: Just pulling your leg. <mp>There won't be an obituary.\n[]>one: ...\n[]>one: Old One would've been strangling you by now.\n[]>spectra: And old Spectra would've been dead by now.\n[]>spectra: *sigh*\n[]>spectra: Okay, we don't have to fucking murder each other. I'll tone it down.\n[]>one{one-emotion|crying}: Spectra... I'm sorry, I'm just so pissed at myself. And scared; Scared of what Anhedonia is going through right now.\n[]>one: The clerifugium- I... The things I heard about it are fucking awful.\n[]>spectra: Heard as much. So I do feel you.\n[]>one: ...\n[]>spectra: However, about this situation... Can we do anything about it?\n[]>one{one-emotion|sad}: No, I don't think so... I just... I needed somewhere to go.\n[]>one: Someone to talk to.\n[]>spectra: Well, now you're here. \n[]>one: Yea."
+							"content": "[]>spectra: So, would you mind running me through what you two got up to now?\n[]>one: Just... Shrine setup.\n[]>spectra: Leading to Anhedonia getting snatched?\n[]>one{one-emotion|sad}: It went sideways big time.\n[]>spectra{spectra-emotion|annoyed}: I can tell.\n[]>one{one-emotion|neutral}: I don't need your snark right now.\n[]>spectra: Okay okay, I'll save it for the obituary.\n[]>one: What fucking obituary. \n[]>spectra: Just pulling your leg. <mp>There won't be an obituary.\n[]>one: ...\n[]>one: Old One would've been strangling you by now.\n[]>spectra{spectra-emotion|neutral}: And old Spectra would've been dead by now.\n[]>spectra: *sigh*\n[]>spectra: Okay, we don't have to fucking murder each other. I'll tone it down.\n[]>one{one-emotion|crying}: Spectra... I'm sorry, I'm just so pissed at myself. And scared; Scared of what Anhedonia is going through right now.\n[]>one: The clerifugium- I... The things I heard about it are fucking awful.\n[]>spectra: Heard as much. So I do feel you.\n[]>one: ...\n[]>one:This sucks so much. <mp>She's so much more vulnerable... More hated...\n[]>spectra:Anhedonia being ground up in the mills of oppression is... not what I envisioned with this.\n[]>one:Sure...\n[]>spectra: However, about this situation... Can we do anything about it?\n[]>one{one-emotion|sad}: No, I don't think so... I just... I needed somewhere to go.\n[]>one: Someone to talk to.\n[]>spectra: Well, now you're here. \n[]>one: Yea."
 						},
 						"facts": {
 							"fact_data_by_name": {
@@ -23472,7 +23578,7 @@
 								"jailer"
 							],
 							"active_actors_title": "character",
-							"content": "[]>one{one-emotion|crying}:Am I just bound to risk the lives of everyone around me?\n[]>spectra:Lives that will be lost anyways?\n[]>one:Fuck them. I meant... Anhedonia. <lc>...<lc>...You?\n[]>spectra:I'll make it out.\n[]>one:...<lc>Of course you will.\n[]>one: But yes. That makes Annie the last person I care about not dying.\n[]>spectra: And you are afraid that... She will.\n[]>one: Before me, yea.\n[]>spectra: Mhm... <ap>Thinking me immortal?\n[]>one: More like survivalist.\n[]>spectra: I'm flattered.\n[]>spectra: And you want me to do what now?\n[]>one: I don't know. <mp>: Nothing, I guess. Being able to vent is here... <ap>is good enough.\n[]>spectra: Be my guest.\n[]>one{one-emotion|anxious}: I just. Ugh. How could I even let this be so fucked up.\n[]>one: What if she fucking dies?\n[]>one: I...\n[]>one{one-emotion|sad}: This is all my fault.\n[]>spectra: Are you suggesting Anhedonia possesses no inner agency on her own?\n[]>one{one-emotion|neutral}: Huh?\n[]>spectra: She's more than capable enough to know what she wants- And take responsibility ."
+							"content": "[]>one{one-emotion|crying}:Am I just bound to risk the lives of everyone around me?\n[]>spectra:Lives that will be lost anyways?\n[]>one:Fuck them. I meant... Anhedonia. <lc>...<lc>...You?\n[]>spectra:I'll make it out.\n[]>one:...<lc>Of course you will.\n[]>one: But yes. That makes Annie the last person I care about not dying.\n[]>spectra: And you are afraid that... She will.\n[]>one: Before me, yea.\n[]>spectra{spectra-emotion|happy}: Mhm... <ap>Thinking me immortal?\n[]>one: More like survivalist.\n[]>spectra: I'm flattered.\n[]>spectra{spectra-emotion|neutral}: And you want me to do what now?\n[]>one: I don't know. <mp>: Nothing, I guess. Being able to vent is here... <ap>is good enough.\n[]>spectra: Be my guest.\n[]>one{one-emotion|anxious}: I just. Ugh. How could I even let this be so fucked up.\n[]>one: What if she fucking dies?\n[]>one: I...\n[]>one{one-emotion|sad}: This is all my fault.\n[]>spectra: Are you suggesting Anhedonia possesses no inner agency on her own?\n[]>one{one-emotion|neutral}: Huh?\n[]>spectra: She's more than capable enough to know what she wants- And take responsibility ."
 						},
 						"facts": {
 							"fact_data_by_name": {
@@ -23521,7 +23627,7 @@
 								"jailer"
 							],
 							"active_actors_title": "character",
-							"content": "[]>spectra: Do you think she didn't anticipate this?\n[]>one: She... <ap>Was more apprehensive than me, even.\n[]>spectra: See? And yet she still chose to go through with it- With you.\n[]>one: ...\n[]>spectra: Some things might happen- Some things are bound to. That's just life. <mp>But something will always happen, and you gotta be ready for that- Because that's how linear time works.\n[]>spectra: And I believe Anhedonia has had enough time to think about if she wants to stick around till the bitter end.\n[]>one:...\n[]>spectra: She's still your girlfriend, isn't she?\n[]>one: Yes.\n[]>one:...\n[]>spectra:...\n[]>one: I love her.\n[]>spectra: A love to devour the world?\n[]>one: She is the most important person in my life. <mp>The only, in a sense.\n[]>spectra:Good.\n[]>spectra: Then are you gonna make out sloppy style over this?\n[]>one: Pfphnhmh... Maybe. If she returns.\n[]>spectra: She will.\n[]>one: Are you sure?\n[]>spectra:... does anhedonia share at least half of your fight?\n[]>one: more than that. <mp>Lots.\n[]>one: She would... kill for me.\n[]>spectra: I know. <mp>But yes, then in what world will she not make it back?"
+							"content": "[]>spectra: Do you think she didn't anticipate this?\n[]>one: She... <ap>Was more apprehensive than me, even.\n[]>spectra: See? And yet she still chose to go through with it- With you.\n[]>one: ...\n[]>spectra{spectra-emotion|annoyed}: Some things might happen- Some things are bound to. That's just life. <mp>But something will always happen, and you gotta be ready for that- Because that's how linear time works.\n[]>spectra{spectra-emotion|neutral}: And I believe Anhedonia has had enough time to think about if she wants to stick around till the bitter end.\n[]>one:...\n[]>spectra: She's still your girlfriend, isn't she?\n[]>one{one-emotion|sad}: Yes.\n[]>one:...\n[]>spectra:...\n[]>one: I love her.\n[]>spectra: A love to devour the world?\n[]>one{one-emotion|listening}: She is the most important person in my life. <mp>The only, in a sense.\n[]>spectra:Good.\n[]>spectra{spectra-emotion|annoyed}: Then are you gonna make out sloppy style over this?\n[]>one: Pfphnhmh... Maybe. If she returns.\n[]>spectra{spectra-emotion|happy}}: She will.\n[]>one: Are you sure?\n[]>spectra:... does Anhedonia share at least half of your fight?\n[]>one: More than that. <mp>Lots.\n[]>one{one-emotion|neutral}: She would... kill for me.\n[]>spectra: I know. <mp>But yes, then in what world will she not make it back?"
 						},
 						"facts": {
 							"fact_data_by_name": {
@@ -23896,7 +24002,7 @@
 						}
 					}
 				],
-				"meta.scroll_vertical": 3547,
+				"meta.scroll_vertical": 2939,
 				"meta.selected": false,
 				"next": 29,
 				"number": 28,
