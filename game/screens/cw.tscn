@@ -1,6 +1,7 @@
-[gd_scene load_steps=2 format=3 uid="uid://btwo5sdc17l8h"]
+[gd_scene load_steps=3 format=3 uid="uid://btwo5sdc17l8h"]
 
 [ext_resource type="Script" path="res://game/screens/cw.gd" id="1_8ylhl"]
+[ext_resource type="Theme" uid="uid://d35oanoquofv5" path="res://game/visuals/theme.tres" id="1_gtq1c"]
 
 [node name="CW" type="Control"]
 layout_mode = 3
@@ -9,6 +10,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+theme = ExtResource("1_gtq1c")
 script = ExtResource("1_8ylhl")
 
 [node name="PanelContainer" type="PanelContainer" parent="."]
@@ -52,13 +54,11 @@ text = "[center]This visual novel contains topics meant for an adult audience. I
 This visual novel describes and references the following themes / subjects in written and visual form:
 Vomit
 Blood
-Wounding
-Lacerations
+Wounding / Lacerations
 Corpse Mutilation
 Assisted Suicide
 Torture
 Needles
-Drug Use
 Armpit Licking
 Breeding Kink
 Cannibalism
@@ -66,7 +66,8 @@ Cannibalism
 This visual novel describes and references the following themes / subjects in written and non-visual form:
 Sexual Assault
 Transphobia
-Misgendering"
+Misgendering
+Drug Use"
 
 [node name="Button" type="Button" parent="."]
 auto_translate_mode = 1

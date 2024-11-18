@@ -42,7 +42,7 @@ size_flags_horizontal = 4
 theme = ExtResource("2_7p2cq")
 bbcode_enabled = true
 text = "[center][b]She Was Swallowed By The Sun[/b]
-- Made for [url=https://itch.io/jam/yuri-game-jam-2024](Yuri Game Jam 2024) -
+- Made for [url=https://itch.io/jam/yuri-game-jam-2024]Yuri Game Jam 2024[/url] -
 
 [b]MUSIC[/b]
 busabx - a minute of slow funky guitar and drums ([url=https://freesound.org/people/busabx/sounds/738239/]Freesound.org[/url])
@@ -52,7 +52,9 @@ SFX
 InspectorJ - \"Gunshot, Distant, A.wav\" ([url=https://freesound.org/people/InspectorJ/sounds/417345/]Freesound[/url])
 
 [b]FONTS[/b]
-sugargliderz - Fragment Core ([url=https://www.dafont.com/fragment-core.font]dafont.com[/url])
+pixel georgia
+ones handwriting
+from sunflower fields
 
 
 ending scene shader programming - Ænthroppe"

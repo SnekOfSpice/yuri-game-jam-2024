@@ -1,10 +1,11 @@
-[gd_resource type="Theme" load_steps=18 format=3 uid="uid://d35oanoquofv5"]
+[gd_resource type="Theme" load_steps=20 format=3 uid="uid://d35oanoquofv5"]
 
 [ext_resource type="FontFile" uid="uid://jc0pccgisvh0" path="res://game/visuals/fonts/FromSunflowerFie.ttf" id="1_3rf7y"]
 [ext_resource type="Texture2D" uid="uid://cvb4xqj45sxgk" path="res://game/visuals/grabber1.png" id="2_f6fht"]
-[ext_resource type="FontFile" uid="uid://rvnhwlkt81ow" path="res://addons/diisis/parser/style/TimesNewPixelexp.ttf" id="2_j0p7t"]
 [ext_resource type="Texture2D" uid="uid://bsg3ogc2fm2ei" path="res://game/visuals/grabber2.png" id="3_55r0n"]
 [ext_resource type="Texture2D" uid="uid://dtt6lexsfo70d" path="res://game/visuals/grabber3.png" id="4_7earq"]
+[ext_resource type="FontFile" uid="uid://dokobl1mpxdlu" path="res://game/visuals/fonts/Pixel Georgia Bold.ttf" id="5_85f18"]
+[ext_resource type="FontFile" uid="uid://ccqagtvgqnth1" path="res://game/visuals/fonts/Pixel Georgia.ttf" id="5_ia6r6"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ebhtr"]
 content_margin_left = 7.0
@@ -81,6 +82,12 @@ expand_margin_top = 1.0
 expand_margin_right = 1.0
 expand_margin_bottom = 1.0
 
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_hp0fc"]
+content_margin_left = 2.0
+content_margin_top = 1.0
+content_margin_right = 2.0
+content_margin_bottom = 1.0
+
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_1p7bw"]
 bg_color = Color(0.32, 0.0832, 0.0832, 0.87451)
 border_width_left = 1
@@ -140,9 +147,15 @@ HSlider/styles/slider = SubResource("StyleBoxFlat_fntcf")
 Label/font_sizes/font_size = 24
 Label/fonts/font = ExtResource("1_3rf7y")
 PanelContainer/styles/panel = SubResource("StyleBoxFlat_ex4ik")
-RichTextLabel/font_sizes/normal_font_size = 20
-RichTextLabel/fonts/bold_font = ExtResource("1_3rf7y")
-RichTextLabel/fonts/normal_font = ExtResource("2_j0p7t")
+RichTextLabel/colors/font_shadow_color = Color(0.11003, 0.0178265, 0.0816269, 0.831373)
+RichTextLabel/constants/line_separation = 2
+RichTextLabel/constants/shadow_offset_x = 1
+RichTextLabel/constants/shadow_offset_y = 1
+RichTextLabel/constants/shadow_outline_size = 1
+RichTextLabel/font_sizes/normal_font_size = 14
+RichTextLabel/fonts/bold_font = ExtResource("5_85f18")
+RichTextLabel/fonts/normal_font = ExtResource("5_ia6r6")
+RichTextLabel/styles/normal = SubResource("StyleBoxEmpty_hp0fc")
 VScrollBar/styles/grabber = SubResource("StyleBoxFlat_1p7bw")
 VScrollBar/styles/grabber_highlight = SubResource("StyleBoxFlat_5bma6")
 VScrollBar/styles/grabber_pressed = SubResource("StyleBoxFlat_0plg6")
