@@ -200,12 +200,20 @@ func on_choice_pressed(
 
 
 
-func build_history_string(separator_string:="\n") -> String:
+func build_history_string(separator_string:="\n", from:=0, to:=-1) -> String:
 	var result  := ""
 	
+	var i := 0
 	for s in history:
+		if i < from:
+			i += 1
+			continue
+		if to != -1 and i > to:
+			i += 1
+			continue
 		result += s
 		result += separator_string
+		i += 1
 	
 	result = result.trim_suffix(separator_string)
 	

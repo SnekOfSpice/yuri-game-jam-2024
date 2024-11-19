@@ -42,6 +42,12 @@ func set_chapter_cover(pov_name: String, bottom_text: String, new_background: St
 			char_tex.texture = load("res://game/characters/sprites/anhedonia-neutral.png")
 		"one":
 			char_tex.texture = load("res://game/characters/sprites/one-neutral.png")
+			var eye_progres : int = GameWorld.game_stage.get_character("one").eye_progress
+			if eye_progres > 0:
+				var eyes = Sprite2D.new()
+				char_tex.add_child(eyes)
+				eyes.centered = false
+				eyes.texture = load(str("res://game/characters/sprites/neutral-stage", eye_progres, ".png"))
 	
 	logo_tween.set_parallel()
 	char_tween.set_parallel()

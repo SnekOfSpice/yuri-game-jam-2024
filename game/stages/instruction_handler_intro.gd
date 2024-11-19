@@ -127,7 +127,11 @@ func shake_camera(strength: float) -> bool:
 	return false
 
 
-func set_x_position(character_name: String, index: float, time: float, wait_for_reposition: bool) -> bool:
+func set_x_position(character_name: String, index, time, wait_for_reposition) -> bool:
+	index = int(index)
+	time = float(time)
+	if wait_for_reposition is String:
+		wait_for_reposition = true if wait_for_reposition == "true" else false
 	if GameWorld.game_stage:
 		var character : Character = GameWorld.game_stage.get_character(character_name)
 		character.set_x_position(int(index), time, wait_for_reposition)
