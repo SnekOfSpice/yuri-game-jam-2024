@@ -44,6 +44,7 @@ func serialize() -> Dictionary:
 func deserialize(data: Dictionary):
 	set_emotion(data.get("emotion", "neutral"))
 	position.x = data.get("target_x", position.x)
+	target_x = data.get("target_x", position.x)
 	visible = data.get("visible", false)
 	emotions_by_page = data.get("emotions_by_page", {})
 	active_mat.set_shader_parameter("progress", data.get("progress", 0.0))

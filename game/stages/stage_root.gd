@@ -52,8 +52,9 @@ func set_background(background:String, fade_time:=0.0, lmao := true):
 	else:
 		push_error(str("Background ", background, " does not end in .png or .tscn."))
 		return
-	new_background.modulate.a = 0.0
+	#new_background.modulate.a = 0.0
 	$Background.add_child(new_background)
+	$Background.move_child(new_background, 0)
 	
 	var viewport_height = ProjectSettings.get_setting("display/window/size/viewport_height")
 	var viewport_width = ProjectSettings.get_setting("display/window/size/viewport_width")
@@ -69,9 +70,10 @@ func set_background(background:String, fade_time:=0.0, lmao := true):
 	if overshoot.y > 0:
 		new_background.position.y = - overshoot.y * 0.5
 	
-	var fade_tween := get_tree().create_tween()
-	fade_tween.tween_property(new_background, "modulate:a", 1.0, fade_time)
+	
 	for old_node : Node in old_backgrounds:
+		var fade_tween := get_tree().create_tween()
+		fade_tween.tween_property(old_node, "modulate:a", 0.0, fade_time)
 		fade_tween.finished.connect(old_node.queue_free)
 	
 	GameWorld.background = background

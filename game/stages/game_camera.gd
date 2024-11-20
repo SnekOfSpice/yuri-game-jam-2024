@@ -16,12 +16,10 @@ var sway_intensity_lerp_strength := 0.02
 
 var screen_shake_hard := false
 
-var start_position := Vector2.ZERO
 var flat_offset := Vector2.ZERO
 
 func _ready() -> void:
 	GameWorld.camera = self
-	start_position = position
 
 func serialize() -> Dictionary:
 	var result := {}

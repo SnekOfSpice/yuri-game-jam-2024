@@ -31,7 +31,7 @@ As I sit here, dying, I will have left you with some minor work. Atop my workben
 
 I only urge you to make haste, as to not waste this body in its final hours.
 
-My trust trust in your ability to do this is absolute and unfaltering. For your convenience, this letter is accompanied by a type-written page containing of the full-length poem.
+My trust in your ability to do this is absolute and unfaltering. For your convenience, this letter is accompanied by a type-written page containing of the full-length poem.
 
 I am grateful for all you have done for me, and all that you have allowed me to experience alongside you. Please keep me in your heart - for it is there where I found my home.
 
@@ -47,9 +47,12 @@ offset_top = 72.0
 offset_right = 596.0
 offset_bottom = 548.0
 theme = ExtResource("3_ame4t")
-theme_override_colors/default_color = Color(0, 0, 0, 1)
-theme_override_constants/line_separation = -1
-theme_override_font_sizes/normal_font_size = 14
+theme_override_colors/default_color = Color(0.0418059, 0.0212942, 0.166608, 1)
+theme_override_constants/shadow_offset_y = 0
+theme_override_constants/shadow_offset_x = 0
+theme_override_constants/shadow_outline_size = 0
+theme_override_constants/line_separation = 0
+theme_override_font_sizes/normal_font_size = 11
 text = "My dearest Anhedonia, 
 
 I love you.

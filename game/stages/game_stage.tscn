@@ -1,4 +1,4 @@
-[gd_scene load_steps=61 format=3 uid="uid://r1ntcqdujfol"]
+[gd_scene load_steps=62 format=3 uid="uid://r1ntcqdujfol"]
 
 [ext_resource type="Script" path="res://game/stages/game_stage.gd" id="1_a36me"]
 [ext_resource type="Script" path="res://addons/diisis/parser/src/line_reader.gd" id="1_h4afo"]
@@ -33,6 +33,7 @@
 [ext_resource type="Script" path="res://game/stages/start_cover.gd" id="13_qfsh6"]
 [ext_resource type="Texture2D" uid="uid://drkq57wcqlmm4" path="res://game/visuals/OxylithDay2Blood.png" id="14_0obgu"]
 [ext_resource type="Shader" path="res://game/stages/one_fadeout.gdshader" id="15_heqc4"]
+[ext_resource type="Texture2D" uid="uid://cfeccyle1gu2c" path="res://game/visuals/OldShrines.png" id="16_6n4c5"]
 [ext_resource type="Shader" path="res://game/stages/static.gdshader" id="17_dc0ef"]
 [ext_resource type="PackedScene" uid="uid://ipa310726xyt" path="res://game/stages/rolling_credits.tscn" id="17_gnute"]
 
@@ -175,9 +176,13 @@ texture = ExtResource("14_0obgu")
 centered = false
 
 [node name="OxylithReminisce" type="Sprite2D" parent="Objects"]
-position = Vector2(693, 293)
+position = Vector2(300, 293)
+scale = Vector2(0.8, 0.8)
 texture = ExtResource("3_058vl")
-flip_h = true
+
+[node name="OldShrines" type="Sprite2D" parent="Objects"]
+texture = ExtResource("16_6n4c5")
+centered = false
 
 [node name="Characters" type="Node2D" parent="."]
 
