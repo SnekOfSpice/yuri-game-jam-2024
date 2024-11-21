@@ -49,25 +49,26 @@ layout_mode = 2
 size_flags_horizontal = 4
 mouse_filter = 1
 bbcode_enabled = true
-text = "[center]This visual novel contains topics meant for an adult audience. It contains this material in both sexual and non-sexual ways to varying degrees.
+text = "[center]This visual novel contains topics meant for an 18+ audience. It contains this material in sexual and/or non-sexual ways to varying degrees.
 
 This visual novel describes and references the following themes / subjects in [b]written and visual form[/b]:
-Vomit
-Blood
-Wounding / Lacerations
-Corpse Mutilation
-Assisted Suicide
-Torture
-Needles
 Armpit Licking
+Assisted Suicide
+Blood
 Breeding Kink
 Cannibalism
+Corpse Mutilation
+Death
+Needles
+Torture
+Wounding
+Vomit
 
 This visual novel describes and references the following themes / subjects in [b]written and non-visual form[/b]:
-Sexual Assault
-Transphobia
+Drug Use
 Misgendering
-Drug Use"
+Sexual Assault
+Transphobia"
 
 [node name="Button" type="Button" parent="."]
 auto_translate_mode = 1
