@@ -1,6 +1,6 @@
 {
 	"editor": {
-		"current_page_number": 44,
+		"current_page_number": 5,
 		"page_view": 0,
 		"text_size_id": 3
 	},
@@ -4511,7 +4511,7 @@
 								"jailer"
 							],
 							"active_actors_title": "character",
-							"content": "[]>one{one-emotion|joy}: Thank you for keeping me safe all this time. Stable.\n[]>anhedonia{anhedonia-emotion|happy}: Gladly.\n[]>narrator{one-emotion|listening}: You let out an introspective sigh.\n[]>narrator:That Godseed within you- it needs to grow for you to get your revenge.\n[]>one: It feels so fast to go off inoculants already... <mp>Kinda?\n[]>anhedonia{anhedonia-emotion|neutral}: Well, it's your call... <ap>Mostly.\n[]>one:Mostly?\n[]>anhedonia:My plug got hit and honestly I wouldn't know where else to get more.\n[]>one{one-emotion|sad}:Oh...\n[]>anhedonia:I can try and hit up randos but with regulations becoming more and more shit... That'll get us locked up and executed more than anything else.\n[]>one: ...\n[]>anhedonia:I'd do it for you but-\n[]>one:It's fine.\n[]>anhedonia: ...\n[]>one{one-emotion|neutral}:...<lc>That sounds like such a hassle.\n[]>one:Had you been doing that? <ap>Until now?\n[]>anhedonia:Sometimes.\n[]>one:Damn.\n[]>one:I mean...\n[]>one: I also just can't really wait any longer, and they do make my head a bit floaty... Make the mind feel sticky. <mp>And so much other awfulness. <ap>Fuck.\n[]>anhedonia: Well...\n[]>anhedonia{anhedonia-emotion|concerned}: Does it feel rushed?\n[]>one: No.\n[]>anhedonia: Then...\n[]>one:Yea...\n[]>one:... You know my souls burns for something more. <lc>This body is made to be consumed.\n[]>anhedonia{anhedonia-emotion|sad}:...Yes.\n[]>one: No more inoculants."
+							"content": "[]>one{one-emotion|joy}: Thank you for keeping me safe all this time. Stable.\n[]>anhedonia{anhedonia-emotion|happy}: Gladly.\n[]>narrator{one-emotion|listening}: You let out an introspective sigh.\n[]>narrator:That Godseed within you- it needs to grow for you to get your revenge.\n[]>one: It feels so fast to go off inoculants already... <mp>Kinda?\n[]>anhedonia{anhedonia-emotion|neutral}: Well, it's your call... <ap>Mostly.\n[]>one:Mostly?\n[]>anhedonia:My plug got hit and honestly I wouldn't know where else to get more.\n[]>one{one-emotion|sad}:Oh...\n[]>anhedonia:I can try and hit up randos but with regulations becoming more and more shit... That'll get us locked up and executed more than anything else.\n[]>one: ...\n[]>anhedonia:I'd do it for you but-\n[]>one:It's fine.\n[]>anhedonia: ...\n[]>one{one-emotion|neutral}:...<lc>That sounds like such a hassle.\n[]>one:Had you been doing that? <ap>Until now?\n[]>anhedonia:Sometimes.\n[]>one:Damn.\n[]>one:I mean...\n[]>one: I also just can't really wait any longer, and they do make my head a bit floaty... Make the mind feel sticky. <mp>And so much other awfulness. <ap>Fuck.\n[]>anhedonia: Well...\n[]>anhedonia{anhedonia-emotion|concerned}: Does it feel rushed?\n[]>one:...\n[]>one: No.\n[]>anhedonia: Then...\n[]>one:Yea...\n[]>one:... You know my souls burns for something more. <lc>This body is made to be consumed.\n[]>anhedonia{anhedonia-emotion|sad}:...Yes.\n[]>one: No more inoculants."
 						},
 						"facts": {
 							"fact_data_by_name": {
@@ -4711,7 +4711,7 @@
 								"jailer"
 							],
 							"active_actors_title": "character",
-							"content": "[]>anhedonia{anhedonia-emotion|neutral}:So, how do we start?\n[]>one{one-emotion|neutral}:I don't know yet. <lc>I think I wanna take the day off for now. Enjoy the world with you a bit.\n[]>anhedonia{anhedonia-emotion|happy}:I'd like that."
+							"content": "[]>one{one-emotion|neutral}:But first! <mp>I think I wanna take the day off for now. Enjoy the world with you a bit.\n[]>anhedonia{anhedonia-emotion|happy}:I'd like that."
 						},
 						"facts": {
 							"fact_data_by_name": {
@@ -4731,7 +4731,7 @@
 						}
 					}
 				],
-				"meta.scroll_vertical": 1057,
+				"meta.scroll_vertical": 1078,
 				"meta.selected": false,
 				"next": 5,
 				"number": 4,
@@ -4835,7 +4835,7 @@
 								"jailer"
 							],
 							"active_actors_title": "character",
-							"content": "[]>narrator: And true to your word, you did not lift a single finger yesterday. But as soon as you opened your eyes this morning, the world resumed its regular pulse. <lc>A pulse that led you here, to the edge of isolation. <mp>Watching the caustic skyline trace the barrier between earth and sky after you woke up reminded of you of where you are- <ap>where you were. <lc>You can never go back there.\n[]>narrator:It was years ago when the clericants dragged you away from those sunflower fields. Maybe caught wind of your operation. <mp>Who the fuck is to say now?\n[]>narrator:You fled with and to Anhedonia. <mp>There never was enough time to retalliate properly."
+							"content": "[]>narrator: And true to your word, you did not lift a single finger yesterday. But as soon as you opened your eyes this morning, the world resumed its regular pulse. <lc>A pulse that led you here, to the edge of isolation. <mp>Watching the caustic skyline trace the barrier between earth and sky after you woke up reminded of you of where you are- <ap>where you were. <lc>You can never go back there.\n[]>narrator:It was years ago when the clericants dragged you away from those sunflower fields. <mp>Contained within each seed was a hopeful vision of a better future, reflected like sunlight upon the lunar surface- <ap>Or that is how it was told. <mp>Now, the moon is gone, and all the hopes you cultivated in those tiny seeds found themselves snuffed out, thrown onto the pyre of fascism, and set alight by the clericants. <mp>Maybe caught wind of your operation. <mp>Who the fuck is to say now?\n[]>narrator:You fled with and to Anhedonia. <mp>There never was enough time to retalliate properly."
 						},
 						"facts": {
 							"fact_data_by_name": {
@@ -4943,7 +4943,7 @@
 								"jailer"
 							],
 							"active_actors_title": "character",
-							"content": "[]>narrator:Aggressive, grating, synthetic beats fill the air around your work. Your mouth tastes of sweet acid, traces from the treat you had mere minutes ago. Small and empty capsules of isotonic liquid dot the floor around your workspace. You'll get to cleaning those... Eventually.\n[]>narrator: Anhedonia walks up behind you, water jug in hand.\n[]>anhedonia{anhedonia-emotion|concerned}: Stay hydrated sunshine.\n[]>narrator: She refills your water glass. In return, you briefly shoot her a gentle smile before you turn your gaze back towards the work at hand.\n[]>one{anhedonia-emotion|happy,one-emotion|neutral}: Thank you.\n[]>anhedonia: Woof woof.\n[]>anhedonia: ...\n[]>anhedonia{anhedonia-emotion|neutral}:Barely back from prison and already back to work?\n[]>one:Can't stay idle forever.\n[]>anhedonia: Sigh... <ap>So... What are you doing right now?\n[]>one: ...<lc>Sketching out a sigil.\n[]>narrator: Trying to find the ideal sign to beckon and guide the suncalling has been a grueling and extensive task- all morning. It is a shape that ought to serve as beacon for the sun to visit, for just a moment. <mp>Inscribed- <ap>In blood."
+							"content": "[]>narrator:Aggressive, grating, synthetic beats fill the air around your work. Your mouth tastes of sweet acid, traces from the energy drink-shaped treat you had mere minutes ago. Small and empty capsules of isotonic liquid dot the floor around your workspace. You'll get to cleaning those... Eventually.\n[]>narrator: Anhedonia walks up behind you, water jug in hand.\n[]>anhedonia{anhedonia-emotion|concerned}: Stay hydrated sunshine.\n[]>narrator: She refills your water glass, you chug down half of it, she refills again. Then you shoot her a gentle smile before you turn your gaze back towards the work at hand.\n[]>one{anhedonia-emotion|happy,one-emotion|neutral}: Thank you.\n[]>anhedonia: Woof woof.\n[]>anhedonia: ...\n[]>anhedonia{anhedonia-emotion|neutral}:Barely back from prison and already back to work?\n[]>one:Can't stay idle forever.\n[]>anhedonia: Sigh... <ap>So... What are you doing right now?\n[]>one: ...<lc>Sketching out a sigil.\n[]>narrator: Trying to find the ideal sign to beckon and guide the suncalling has been a grueling and extensive task- all morning. It is a shape that ought to serve as beacon for the sun to visit, for just a moment. <mp>Inscribed- <ap>In blood."
 						},
 						"facts": {
 							"fact_data_by_name": {
@@ -4992,7 +4992,7 @@
 								"jailer"
 							],
 							"active_actors_title": "character",
-							"content": "[]>one:We'll inscribe the shrines with them. <mp>We will... <ap>It'll be good. <mp>Gotta find a shape first.\n[]>one{one-emotion|anxious}:You can't work on this shit in prison.\n[]>one:There's a few things that have been floating around in my head but most of them aren't concrete enough to be usable.\n[]>anhedonia: So... I'll leave you to it? Let me know if I can give any creative input.\n[]>one: Will do.\n[]>narrator: Anhedonia lingers.\n[]>anhedonia{anhedonia-emotion|concerned}: Don't overwork yourself already, hun, please.\n[]>narrator: You have no real choice in the matter.\n[]>one{one-emotion|anxious}:You know I'm willing to tear myself apart over this.\n[]>anhedonia{anhedonia-emotion|sad}:I know. I saw in the fields.\n[]>one:We both did.\n[]>anhedonia:We did.\n[]>one:Thank you for it.<lc>We all need to shape our souls. <mp>This is such a grand work.\n[]>narrator{anhedonia-emotion|happy}:Anhedonia pats you on the head.\n[]>anhedonia:You'll do well."
+							"content": "[]>one:We'll inscribe the shrines with them. <mp>We will... <ap>It'll be good. <mp>Gotta find a shape first.\n[]>one{one-emotion|anxious}:You can't work on this shit in prison.\n[]>one:There's a few things that have been floating around in my head but most of them aren't concrete enough to be usable.\n[]>anhedonia: So... I'll leave you to it? Let me know if I can give any creative input.\n[]>one: Mayhaps.\n[]>narrator: You probably won't. <ap>Not for this delicate kind of work. <mp>Anhedonia lingers.\n[]>anhedonia{anhedonia-emotion|concerned}: Don't overwork yourself already, hun, please.\n[]>narrator: You have no real choice in the matter.\n[]>one{one-emotion|anxious}:You know I'm willing to tear myself apart over this.\n[]>anhedonia{anhedonia-emotion|sad}:I know. I saw in the fields.\n[]>one:We both did.\n[]>anhedonia:We did.\n[]>one:Thank you for it.<lc>We all need to shape our souls. <mp>This is such a grand work.\n[]>narrator{anhedonia-emotion|happy}:Anhedonia pats you on the head.\n[]>anhedonia:You'll do well."
 						},
 						"facts": {
 							"fact_data_by_name": {
@@ -5012,7 +5012,7 @@
 						}
 					}
 				],
-				"meta.scroll_vertical": 545,
+				"meta.scroll_vertical": 201,
 				"meta.selected": false,
 				"next": 6,
 				"number": 5,
@@ -7860,7 +7860,7 @@
 						}
 					}
 				],
-				"meta.scroll_vertical": 2424,
+				"meta.scroll_vertical": 2222,
 				"meta.selected": false,
 				"next": 10,
 				"number": 9,
@@ -10927,7 +10927,7 @@
 								"jailer"
 							],
 							"active_actors_title": "character",
-							"content": "[]>anhedonia{anhedonia-emotion|happy,one-emotion|joy}:.... Fuck yea.... This was so good.\n[]>one: Yes.\n[]>anhedonia: Are you safe? \n[]>one: I am. Thank you.\n[]>anhedonia: I thank you.\n[]>narrator:The skin already starting to scar and reform under the pressure of being a vessel divine incarnate, you lose yourself in the reassurance of a yearning desirer laying right there, beneath you.\n[]>narrator:You can barely get the binding gear off the bed before dozing off to the realm of slumber together, a warm blanket of your very own blood coating you both."
+							"content": "[]>anhedonia{anhedonia-emotion|happy,one-emotion|joy}:.... Fuck yea.... This was so good.\n[]>one: Yes.\n[]>anhedonia: Are you safe? \n[]>one: I am. Thank you.\n[]>anhedonia: I thank you.\n[]>narrator:The skin already starting to scar and reform under the pressure of being a vessel divine incarnate, you lose yourself in the reassurance of a yearning desirer laying right there, beneath you.\n[]>narrator:Bloodloss-induced shock - <advance>sleep's breathless sister -<ap> rushes in to claim you. <mp>Anhedonia can barely get the binding gear off the bed before cradling your weakened form. <mp>In a heartbeat, you two doze off to the realm of slumber together, a warm blanket of your very own blood coating you both."
 						},
 						"facts": {
 							"fact_data_by_name": {
@@ -10947,7 +10947,7 @@
 						}
 					}
 				],
-				"meta.scroll_vertical": 5895,
+				"meta.scroll_vertical": 6118,
 				"meta.selected": false,
 				"next": 14,
 				"number": 12,
@@ -20842,7 +20842,7 @@
 						}
 					}
 				],
-				"meta.scroll_vertical": 1911,
+				"meta.scroll_vertical": 0,
 				"meta.selected": false,
 				"next": 26,
 				"number": 24,
@@ -24269,7 +24269,7 @@
 						}
 					}
 				],
-				"meta.scroll_vertical": 0,
+				"meta.scroll_vertical": 4198,
 				"meta.selected": false,
 				"next": 29,
 				"number": 28,
@@ -25930,7 +25930,7 @@
 						}
 					}
 				],
-				"meta.scroll_vertical": 5135,
+				"meta.scroll_vertical": 3877,
 				"meta.selected": false,
 				"next": 31,
 				"number": 30,
@@ -35844,7 +35844,7 @@
 								"jailer"
 							],
 							"active_actors_title": "character",
-							"content": "[]>narrator: The liquid is thick, taking a few seconds to be injected all the way, yet the warmth it exudes from the point of entry is almost immediately apparent. <mp>When Anhedonia has emptied the syringe, you share an abyssally deep gaze. She extracts the needle, sets it down, and leans in for a parting kiss. You eagerly crane forward, body already heavier than a few moments ago.\n[]>narrator{one+anhedonia-emotion|injection4}: As <call:set_fade_out,0.78, 0.24>you threaten to slump, Anhedonia catches you, holds you close in her arms, a boulder to rely on.\n[]>one: Hold my hand... Please..."
+							"content": "[]>narrator: The liquid is thick, taking a few seconds to be injected all the way, yet the warmth it exudes from the point of entry is almost immediately apparent. <mp>When Anhedonia has emptied the syringe, you share an abyssally deep gaze. She extracts the needle, sets it down, and leans in for a parting kiss. You eagerly crane forward, body already heavier than a few moments ago.\n[]>narrator:From the injection site, the fire spreads, through your veins and up into your heart. <mp>A biting and caustic sensation that digs its claws into your lungs and abdominal wall- And does <ap>not <ap>let <ap>go.\n[]>narrator{one+anhedonia-emotion|injection4}: As <call:set_fade_out,0.78, 0.24>you threaten to slump, Anhedonia catches you, holds you close in her arms, a boulder to rely on.\n[]>one: Hold my hand... Please..."
 						},
 						"facts": {
 							"fact_data_by_name": {
@@ -36015,7 +36015,7 @@
 						}
 					}
 				],
-				"meta.scroll_vertical": 7216,
+				"meta.scroll_vertical": 6712,
 				"meta.selected": false,
 				"next": 39,
 				"number": 38,
@@ -41592,7 +41592,7 @@
 						}
 					}
 				],
-				"meta.scroll_vertical": 2532,
+				"meta.scroll_vertical": 2888,
 				"meta.selected": false,
 				"next": 1,
 				"number": 44,

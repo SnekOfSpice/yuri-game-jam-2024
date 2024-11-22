@@ -338,13 +338,17 @@ auto_translate_mode = 1
 layout_mode = 2
 text = "Name Label Here"
 
-[node name="Panel" type="PanelContainer" parent="Camera2D/CanvasLayer/Control/VNUI/TextContainer/MarginContainer/VBoxContainer"]
+[node name="MarginContainer2" type="MarginContainer" parent="Camera2D/CanvasLayer/Control/VNUI/TextContainer/MarginContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_constants/margin_left = -9
+
+[node name="Panel" type="PanelContainer" parent="Camera2D/CanvasLayer/Control/VNUI/TextContainer/MarginContainer/VBoxContainer/MarginContainer2"]
 auto_translate_mode = 1
 layout_mode = 2
 size_flags_vertical = 8
 mouse_filter = 2
 
-[node name="MarginContainer" type="MarginContainer" parent="Camera2D/CanvasLayer/Control/VNUI/TextContainer/MarginContainer/VBoxContainer/Panel"]
+[node name="MarginContainer" type="MarginContainer" parent="Camera2D/CanvasLayer/Control/VNUI/TextContainer/MarginContainer/VBoxContainer/MarginContainer2/Panel"]
 layout_mode = 2
 mouse_filter = 2
 theme_override_constants/margin_left = 3
@@ -352,7 +356,7 @@ theme_override_constants/margin_top = 1
 theme_override_constants/margin_right = 3
 theme_override_constants/margin_bottom = 1
 
-[node name="RichTextLabel" type="RichTextLabel" parent="Camera2D/CanvasLayer/Control/VNUI/TextContainer/MarginContainer/VBoxContainer/Panel/MarginContainer"]
+[node name="RichTextLabel" type="RichTextLabel" parent="Camera2D/CanvasLayer/Control/VNUI/TextContainer/MarginContainer/VBoxContainer/MarginContainer2/Panel/MarginContainer"]
 auto_translate_mode = 1
 custom_minimum_size = Vector2(670, 121.41)
 layout_mode = 2
@@ -554,7 +558,7 @@ name_colors = {
 }
 choice_container = NodePath("../Camera2D/CanvasLayer/Control/VNUI/ChoiceContainer")
 choice_option_container = NodePath("../Camera2D/CanvasLayer/Control/VNUI/ChoiceContainer/VBoxContainer")
-text_content = NodePath("../Camera2D/CanvasLayer/Control/VNUI/TextContainer/MarginContainer/VBoxContainer/Panel/MarginContainer/RichTextLabel")
+text_content = NodePath("../Camera2D/CanvasLayer/Control/VNUI/TextContainer/MarginContainer/VBoxContainer/MarginContainer2/Panel/MarginContainer/RichTextLabel")
 text_container = NodePath("../Camera2D/CanvasLayer/Control/VNUI/TextContainer")
 name_label = NodePath("../Camera2D/CanvasLayer/Control/VNUI/TextContainer/MarginContainer/VBoxContainer/PanelContainer/MarginContainer/Label")
 name_container = NodePath("../Camera2D/CanvasLayer/Control/VNUI/TextContainer/MarginContainer/VBoxContainer/PanelContainer")
@@ -575,7 +579,7 @@ script = ExtResource("6_8ao3j")
 [connection signal="ready" from="Characters/Torturer" to="." method="remove_blocker"]
 [connection signal="ready" from="Characters/Interrogator" to="." method="remove_blocker"]
 [connection signal="ready" from="Characters/One+Anhedonia" to="." method="remove_blocker"]
-[connection signal="meta_clicked" from="Camera2D/CanvasLayer/Control/VNUI/TextContainer/MarginContainer/VBoxContainer/Panel/MarginContainer/RichTextLabel" to="." method="_on_rich_text_label_meta_clicked"]
+[connection signal="meta_clicked" from="Camera2D/CanvasLayer/Control/VNUI/TextContainer/MarginContainer/VBoxContainer/MarginContainer2/Panel/MarginContainer/RichTextLabel" to="." method="_on_rich_text_label_meta_clicked"]
 [connection signal="mouse_entered" from="Camera2D/CanvasLayer/Control/VNUI/ControlsContainer/HistoryButton" to="." method="increment_advance_blocker"]
 [connection signal="mouse_exited" from="Camera2D/CanvasLayer/Control/VNUI/ControlsContainer/HistoryButton" to="." method="decrement_advance_blocker"]
 [connection signal="pressed" from="Camera2D/CanvasLayer/Control/VNUI/ControlsContainer/HistoryButton" to="." method="_on_history_button_pressed"]
