@@ -75,7 +75,7 @@ func show_cg(_name:String, fade_in_time:float, continue_dialog_through_cg:bool):
 	return true
 
 func hide_cg():
-	emit_signal("hide_cg")
+	emit_signal("start_hide_cg")
 	return false
 
 func set_background(_name:String, fade_time:float):

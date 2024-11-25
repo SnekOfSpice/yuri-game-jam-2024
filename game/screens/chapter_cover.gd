@@ -37,17 +37,20 @@ func set_chapter_cover(pov_name: String, bottom_text: String, new_background: St
 	var char_tween = create_tween()
 	var name_tween = create_tween()
 	
-	match  pov_name:
+	match pov_name:
 		"anhedonia":
 			char_tex.texture = load("res://game/characters/sprites/anhedonia-neutral.png")
 		"one":
 			char_tex.texture = load("res://game/characters/sprites/one-neutral.png")
-			var eye_progres : int = GameWorld.game_stage.get_character("one").eye_progress
-			if eye_progres > 0:
+			var eye_progress : int = GameWorld.game_stage.get_character("one").eye_progress
+			if eye_progress > 0:
 				var eyes = Sprite2D.new()
 				char_tex.add_child(eyes)
-				eyes.centered = false
-				eyes.texture = load(str("res://game/characters/sprites/neutral-stage", eye_progres, ".png"))
+				#eyes.centered = false
+				eyes.texture = load(str("res://game/characters/sprites/neutral-stage", eye_progress, ".png"))
+			var outfit = Sprite2D.new()
+			outfit.texture = load("res://game/characters/sprites/oneOutfit.png")
+			char_tex.add_child(outfit)
 	
 	logo_tween.set_parallel()
 	char_tween.set_parallel()
@@ -112,6 +115,7 @@ func set_chapter_cover(pov_name: String, bottom_text: String, new_background: St
 	if GameWorld.game_stage:
 		get_tree().create_timer(full_fade_in_after).timeout.connect(GameWorld.game_stage.set_static.bind(0))
 		get_tree().create_timer(full_fade_in_after).timeout.connect(GameWorld.game_stage.set_fade_out.bind(0, 0))
+		get_tree().create_timer(full_fade_in_after).timeout.connect(GameWorld.game_stage.hide_cg)
 	
 	if bgm != Sound.bgm_key:
 		Sound.fade_out_bgm(full_fade_in_after)

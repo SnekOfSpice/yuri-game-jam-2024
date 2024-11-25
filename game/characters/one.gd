@@ -43,8 +43,8 @@ func serialize() -> Dictionary:
 	return character_data
 
 func deserialize(data:Dictionary):
+	set_eye_progress(data.get("eye_progress", 0)) 
 	super.deserialize(data)
-	set_eye_progress(data.get("eye_progress", 0))
 
 func set_eye_progress(progress:int):
 	eye_progress = progress
@@ -80,3 +80,10 @@ func set_emotion(emotion_name:String):
 	if blacklisted:
 		for stage in overlay.get_children():
 			stage.visible = false
+	
+	if emotion.begins_with("torture") or emotion.begins_with("suspended"):
+		$OneOutfit.visible = false
+		$Eyes.visible = false
+	else:
+		$OneOutfit.visible = true
+		$Eyes.visible = true
