@@ -1,9 +1,15 @@
 extends Control
 
+var ff_goal_page := 0
+var ff_goal_line := 0
+var ff_active := false
+var ff_prev_text_speed := 60.0
 
-func init():
+func _ready() -> void:
+	await get_tree().process_frame
 	ParserEvents.fact_changed.connect(build_fact_list)
 	ParserEvents.read_new_page.connect(on_read_new_page)
+	ParserEvents.read_new_line.connect(on_read_new_line)
 	find_child("PageSpinBox").max_value = Parser.page_data.size() - 1
 	find_child("PageKeyLabel").text = Parser.get_page_key(0)
 	find_child("AutoContinueCheckButton").button_pressed = Parser.line_reader.auto_continue
@@ -11,6 +17,16 @@ func init():
 
 func on_read_new_page(number:int):
 	find_child("CurrentPageLabel").text = str("Current Page: ", number, " - ", Parser.get_page_key(number))
+
+func on_read_new_line(index:int):
+	printt(Parser.page_index, ff_goal_page, index, ff_goal_line)
+	if not ff_active:
+		return
+	if Parser.page_index == ff_goal_page and index == ff_goal_line:
+		Parser.line_reader.auto_continue = false
+		ff_active = false
+		Parser.line_reader.text_speed = ff_prev_text_speed
+		GameWorld.skip = false
 
 func build_fact_list():
 	find_child("FactsList").clear()
@@ -53,3 +69,13 @@ func _on_page_spin_box_value_changed(value: float) -> void:
 
 func _on_read_line_button_pressed() -> void:
 	Parser.line_reader.emit_signal("line_finished", Parser.line_reader.line_index)
+
+func _on_ff_button_pressed() -> void:
+	Parser.read_page(0, 0)
+	ff_goal_page = find_child("PageSpinBox").value
+	ff_goal_line = find_child("LineSpinBox").value
+	ff_active = true
+	ff_prev_text_speed = Parser.line_reader.text_speed
+	Parser.line_reader.auto_continue = true
+	Parser.line_reader.text_speed = LineReader.MAX_TEXT_SPEED
+	GameWorld.skip = true

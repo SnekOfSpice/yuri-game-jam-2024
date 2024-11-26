@@ -50,7 +50,7 @@ func _ready():
 	ParserEvents.page_terminated.connect(go_to_main_menu)
 	ParserEvents.instruction_started.connect(on_instruction_started)
 	ParserEvents.instruction_completed.connect(on_instruction_completed)
-	ParserEvents.new_line_read.connect(on_new_line_read)
+	ParserEvents.read_new_line.connect(on_read_new_line)
 	
 	GameWorld.instruction_handler = find_child("InstructionHandler")
 	GameWorld.game_stage = self
@@ -71,7 +71,7 @@ func _ready():
 	
 	overlay_sun.get_material().set_shader_parameter("fill_amount", -1.0)
 
-func on_new_line_read(_line_index:int):
+func on_read_new_line(_line_index:int):
 	Options.save_gamestate()
 
 func on_tree_exit():
@@ -171,24 +171,35 @@ func show_ui():
 func hide_ui():
 	find_child("VNUI").visible = false
 
-func set_cg(cg_name:String, fade_in_duration:float, cg_node:TextureRect):
-	var cg_root : Control = cg_node.get_parent()
-	cg_root.modulate.a = 0.0
+func set_cg(cg_name:String, fade_in_duration:float, cg_root:Control):
+	cg_root.modulate.a = 0.0 if cg_root.get_child_count() == 0 else 1.0
+	#for c in cg_root.get_children():
+		#if c == cg_root.get_node("ColorRect"):
+			#continue
+		#c.modulate.a = 0.0
 	cg_root.visible = true
 	
+	var cg_node = TextureRect.new()
+	cg_root.add_child(cg_node)
+	cg_node.set_anchors_preset(Control.PRESET_FULL_RECT)
 	cg_node.texture = load(str("res://game/cg/", cg_name, ".png"))
 	var t = create_tween()
-	t.tween_property(cg_root, "modulate:a", 1.0, fade_in_duration)
+	
+	if cg_root.modulate.a == 1.0:
+		cg_node.modulate.a = 0.0
+		t.tween_property(cg_node, "modulate:a", 1.0, fade_in_duration)
+	else:
+		t.tween_property(cg_root, "modulate:a", 1.0, fade_in_duration)
 	
 	cg = cg_name
 
 func set_cg_top(cg_name:String, fade_in_duration:float):
 	cg_position = "top"
-	set_cg(cg_name, fade_in_duration, find_child("CGTopContainer").get_node("CGTex"))
+	set_cg(cg_name, fade_in_duration, find_child("CGTopContainer"))
 
 func set_cg_bottom(cg_name:String, fade_in_duration:float):
 	cg_position = "bottom"
-	set_cg(cg_name, fade_in_duration, find_child("CGBottomContainer").get_node("CGTex"))
+	set_cg(cg_name, fade_in_duration, find_child("CGBottomContainer"))
 
 func set_text_style(style:TextStyle):
 	text_style = style
@@ -205,7 +216,9 @@ func hide_cg():
 	cg_position = ""
 	for cg_root : Control in cg_roots:
 		cg_root.visible = false
-		cg_root.modulate.a = 0.0
+		for c in cg_root.get_children():
+			c.queue_free()
+		#cg_root.modulate.a = 0.0
 		if emit_insutrction_complete_on_cg_hide:
 			GameWorld.instruction_handler.instruction_completed.emit()
 

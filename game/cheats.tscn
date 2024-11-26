@@ -140,6 +140,11 @@ layout_mode = 2
 focus_mode = 0
 text = "Read Line"
 
+[node name="FFButton" type="Button" parent="PanelContainer/VBoxContainer/HBoxContainer/VBoxContainer/HBoxContainer/VBoxContainer/Pages"]
+layout_mode = 2
+focus_mode = 0
+text = "FF"
+
 [node name="HSeparator2" type="HSeparator" parent="PanelContainer/VBoxContainer/HBoxContainer/VBoxContainer/HBoxContainer/VBoxContainer"]
 layout_mode = 2
 
@@ -161,4 +166,5 @@ text = "Auto Continue"
 [connection signal="value_changed" from="PanelContainer/VBoxContainer/HBoxContainer/VBoxContainer/HBoxContainer/VBoxContainer/Pages/HBoxContainer/PageSpinBox" to="." method="_on_page_spin_box_value_changed"]
 [connection signal="pressed" from="PanelContainer/VBoxContainer/HBoxContainer/VBoxContainer/HBoxContainer/VBoxContainer/Pages/LoadPageButton" to="." method="_on_load_page_button_pressed"]
 [connection signal="pressed" from="PanelContainer/VBoxContainer/HBoxContainer/VBoxContainer/HBoxContainer/VBoxContainer/Pages/ReadLineButton" to="." method="_on_read_line_button_pressed"]
+[connection signal="pressed" from="PanelContainer/VBoxContainer/HBoxContainer/VBoxContainer/HBoxContainer/VBoxContainer/Pages/FFButton" to="." method="_on_ff_button_pressed"]
 [connection signal="pressed" from="PanelContainer/VBoxContainer/HBoxContainer/VBoxContainer/HBoxContainer/VBoxContainer/VBoxContainer/AutoContinueCheckButton" to="." method="_on_auto_continue_check_button_pressed"]

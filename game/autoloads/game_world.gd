@@ -10,6 +10,8 @@ var camera : GameCamera
 var background := ""
 var just_finished_game := false
 
+var skip := false
+
 func serialize():
 	var result := {}
 	result["background"] = background

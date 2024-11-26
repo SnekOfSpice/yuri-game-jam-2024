@@ -194,4 +194,4 @@ signal go_back_declined()
 ## Emitted when [method Parser.go_back] successfully goes back to the last visited index.
 signal go_back_accepted(page:int, line:int)
 
-signal new_line_read(line_index:int)
+signal read_new_line(line_index:int)

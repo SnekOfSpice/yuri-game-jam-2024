@@ -540,6 +540,7 @@ func read_new_line(new_line: Dictionary):
 	line_index = new_line.get("meta.line_index")
 	line_type = int(line_data.get("line_type"))
 	terminated = false
+	ParserEvents.read_new_line.emit(line_index)
 	
 	var eval = evaluate_conditionals(line_data.get("conditionals"))
 	var conditional_is_true = eval[0]
@@ -673,7 +674,6 @@ func read_new_line(new_line: Dictionary):
 	
 	remaining_prompt_delay = input_prompt_delay
 	
-	ParserEvents.new_line_read.emit(line_index)
 	reverse_next_instruction = false
 
 func fit_to_max_line_count(lines: Array):

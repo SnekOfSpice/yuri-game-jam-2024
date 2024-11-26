@@ -1,6 +1,6 @@
 {
 	"editor": {
-		"current_page_number": 1,
+		"current_page_number": 44,
 		"page_view": 0,
 		"text_size_id": 3
 	},
@@ -1712,7 +1712,7 @@
 						}
 					}
 				],
-				"meta.scroll_vertical": 2212,
+				"meta.scroll_vertical": 3991,
 				"meta.selected": false,
 				"next": 1,
 				"number": 0,
@@ -3879,7 +3879,7 @@
 							"delay_before": 0,
 							"line_reader.args": [
 								"hugHappy0",
-								0,
+								2,
 								true
 							],
 							"line_reader.reverse_args": [
@@ -3889,7 +3889,7 @@
 							],
 							"meta.has_reverse": false,
 							"meta.reverse_text": "",
-							"meta.text": "show_cg(hugHappy0, 0.0, true)",
+							"meta.text": "show_cg(hugHappy0, 2.0, true)",
 							"meta.validation_status": "OK",
 							"name": "show_cg",
 							"reverse_name": ""
@@ -4124,7 +4124,7 @@
 						}
 					}
 				],
-				"meta.scroll_vertical": 0,
+				"meta.scroll_vertical": 4788,
 				"meta.selected": false,
 				"next": 3,
 				"number": 2,
@@ -42034,7 +42034,7 @@
 								"jailer"
 							],
 							"active_actors_title": "character",
-							"content": "[]>narrator:As you continue the journey, you pay no mind to the onlookers. Proudly, you carry your wife through desolate and populous city streets alike. Her aegis watching over you, there is no shred of fear within you. No one can harm you now.\n[]>narrator: Fully on display in a grove of concrete and oppression and pestilence, you find One's final resting place. The nexus of oxylith shrines she has built.\n[]>narrator: In<call:control_camera,0.95,0.0,-0.1,2.0> the center of the city plaza, you gently lower her form down to the ground, then prostrate yourself next to her."
+							"content": "[]>narrator:As you continue the journey, you pay no mind to the onlookers. Proudly, you carry your wife through desolate and populous city streets alike. Her aegis watching over you, there is no shred of fear within you. No one can harm you now.\n[]>narrator: Fully on display in a grove of concrete and oppression and pestilence, you find One's final resting place. The nexus of oxylith shrines she has built.\n[]>narrator: In<call:control_camera,0.95,0.0,-0.1,2.0> the center of the city plaza, you gently lower her form down to the ground, then prostrate yourself next to her.\n[]>narrator: Having<call:control_camera,1.3,0,0.7,3.0> served it's purpose, you artfully cut open the body bag, revealing your deceased lover inside."
 						},
 						"facts": {
 							"fact_data_by_name": {
@@ -42070,6 +42070,59 @@
 							"operand_key": "AND"
 						},
 						"content": {
+							"delay_after": 0,
+							"delay_before": 0,
+							"line_reader.args": [
+								"dismemberment1",
+								2,
+								true
+							],
+							"line_reader.reverse_args": [
+								"INVALID ARGUMENT FOR name",
+								"INVALID ARGUMENT FOR fade_in_time",
+								"INVALID ARGUMENT FOR continue_dialog_through_cg"
+							],
+							"meta.has_reverse": false,
+							"meta.reverse_text": "",
+							"meta.text": "show_cg(dismemberment1, 2.0, true)",
+							"meta.validation_status": "OK",
+							"name": "show_cg",
+							"reverse_name": ""
+						},
+						"facts": {
+							"fact_data_by_name": {
+
+							},
+							"meta.visible": false
+						},
+						"header": [],
+						"line_type": 2,
+						"meta.conditionals_visible": false,
+						"meta.facts_visible": false,
+						"meta.indent_level": 0,
+						"meta.is_head_editable": false,
+						"meta.line_index": 14,
+						"meta.selector": {
+							"selected": false
+						}
+					},
+					{
+						"address": "44.15",
+						"conditionals": {
+							"behavior": 0,
+							"behavior_key": "Show",
+							"facts": {
+								"fact_data_by_name": {
+
+								},
+								"meta.visible": false
+							},
+							"meta.visible": false,
+							"operand": 0,
+							"operand_args": [],
+							"operand_key": "AND"
+						},
+						"content": {
 							"active_actors": [
 								"anhedonia",
 								"one",
@@ -42083,7 +42136,7 @@
 								"jailer"
 							],
 							"active_actors_title": "character",
-							"content": "[]>narrator{anhedonia-emotion|invisible,one+anhedonia-emotion|dismemberment1}: Having<call:control_camera,1.3,0,0.7,3.0> served it's purpose, you artfully cut open the body bag, revealing your deceased lover inside.\n[]>narrator:One's skin is adorned in a vortex of hues. Reds and violets- <ap>The scarring of eyes and the tender porcelain of broken skin, lined with lavender beneath the surface. <mp>Her face is sunken in at places, a grim reminder of the time you took to get here, and the price she paid in advance. <mp>Bombyx cradles your nostrils.\n[]>narrator{one+anhedonia-emotion|dismemberment2}:You drive your hacksaw into her limbs at all sorts of queer angles. You take great effort to nourish the ground in One's blood, as she had done to you. Blood springs forth from her arteries, and skin breaks and capillaries rupture from the metallic impacts of the saw's chain.\n[]>narrator:You exsanguinate her fully, carving into her neck and stomach and thighs and chest.\n[]>narrator{one+anhedonia-emotion|dismemberment3}:And then, when the guts have been spilled and the sternum has been broken, you set down your hacksaw.\n[]>narrator:Kneeling before the most holy sight, you slowly place your palms on the opening in One's abdominal wall. <mp>And then you press- Press your fingers knuckle by knuckle<call:set_emotion,one+anhedonia,dismemberment4>, then your hands, and then your forearms deep down into her hollowed abdomen. <lc>The unabated sound of squelching and churning organs fills the corpse-juice filled air around you and then your fingertips make contact. <mp>Contact, with her spine. <lc>You glide your fingers up and down, feeling all those tendons and muscles that once held her upright and made her voice emenate. <lc>This organic machinery that gave you so much love and begged for ever more mutilation has reached its end state. <mp>An end state for one singular purpose: <ap>Your ring finger touches it first. <mp>A glowingly warm presence- <ap>A granite boulder and obsidian dagger in one. <lc>Upon touching the godseed, your heart begins to quiet. Replaced with it is the deafening noise of the sun, screaming for the opportunity to grow into the celestial being it was cultivated to become.\n[]>narrator:You start to recite the passages one gave you."
+							"content": "[]>narrator:One's skin is adorned in a vortex of hues. Reds and violets- <ap>The scarring of eyes and the tender porcelain of broken skin, lined with lavender beneath the surface. <mp>Her face is sunken in at places, a grim reminder of the time you took to get here, and the price she paid in advance. <mp>Bombyx climbs up into your nostrils."
 						},
 						"facts": {
 							"fact_data_by_name": {
@@ -42097,13 +42150,168 @@
 						"meta.facts_visible": false,
 						"meta.indent_level": 0,
 						"meta.is_head_editable": false,
-						"meta.line_index": 14,
+						"meta.line_index": 15,
 						"meta.selector": {
 							"selected": false
 						}
 					},
 					{
-						"address": "44.15",
+						"address": "44.16",
+						"conditionals": {
+							"behavior": 0,
+							"behavior_key": "Show",
+							"facts": {
+								"fact_data_by_name": {
+
+								},
+								"meta.visible": false
+							},
+							"meta.visible": false,
+							"operand": 0,
+							"operand_args": [],
+							"operand_key": "AND"
+						},
+						"content": {
+							"delay_after": 0,
+							"delay_before": 0,
+							"line_reader.args": [
+								"dismemberment2",
+								2,
+								true
+							],
+							"line_reader.reverse_args": [
+								"INVALID ARGUMENT FOR name",
+								"INVALID ARGUMENT FOR fade_in_time",
+								"INVALID ARGUMENT FOR continue_dialog_through_cg"
+							],
+							"meta.has_reverse": false,
+							"meta.reverse_text": "",
+							"meta.text": "show_cg(dismemberment2, 2.0, true)",
+							"meta.validation_status": "OK",
+							"name": "show_cg",
+							"reverse_name": ""
+						},
+						"facts": {
+							"fact_data_by_name": {
+
+							},
+							"meta.visible": false
+						},
+						"header": [],
+						"line_type": 2,
+						"meta.conditionals_visible": false,
+						"meta.facts_visible": false,
+						"meta.indent_level": 0,
+						"meta.is_head_editable": false,
+						"meta.line_index": 16,
+						"meta.selector": {
+							"selected": false
+						}
+					},
+					{
+						"address": "44.17",
+						"conditionals": {
+							"behavior": 0,
+							"behavior_key": "Show",
+							"facts": {
+								"fact_data_by_name": {
+
+								},
+								"meta.visible": false
+							},
+							"meta.visible": false,
+							"operand": 0,
+							"operand_args": [],
+							"operand_key": "AND"
+						},
+						"content": {
+							"active_actors": [
+								"anhedonia",
+								"one",
+								"spectra",
+								"narrator",
+								"interrogator",
+								"torturer",
+								"one+anhedonia",
+								"gods",
+								"clericant",
+								"jailer"
+							],
+							"active_actors_title": "character",
+							"content": "[]>narrator:You drive your hacksaw into her limbs at all sorts of queer angles. You take great effort to nourish the ground in One's blood, as she had done to you. Blood springs forth from her arteries, and skin breaks and capillaries rupture from the metallic impacts of the saw's chain.\n[]>narrator:You exsanguinate her fully, carving into her neck and stomach and thighs and chest.\n[]>narrator:And then, when the guts have been spilled and the sternum has been broken, you set down your hacksaw.\n[]>narrator:Kneeling before the most holy sight, you slowly place your palms on the opening in One's abdominal wall. <mp>And then you press- Press your fingers knuckle by knuckle, then your hands, and then your forearms deep down into her hollowed abdomen. <lc>The unabated sound of squelching and churning organs fills the corpse-juice filled air around you and then your fingertips make contact. <mp>Contact, with her spine. <lc>You glide your fingers up and down, feeling all those tendons and muscles that once held her upright and made her voice emenate. <lc>This organic machinery that gave you so much love and begged for ever more mutilation has reached its end state. <mp>An end state for one singular purpose: <ap>Your ring finger touches it first. <mp>A glowingly warm presence- <ap>A granite boulder and obsidian dagger in one. <lc>Upon touching the godseed, your heart begins to quiet. Replaced with it is the deafening noise of the sun, screaming for the opportunity to grow into the celestial being it was cultivated to become.\n[]>narrator:You start to recite the passages one gave you."
+						},
+						"facts": {
+							"fact_data_by_name": {
+
+							},
+							"meta.visible": false
+						},
+						"header": [],
+						"line_type": 0,
+						"meta.conditionals_visible": false,
+						"meta.facts_visible": false,
+						"meta.indent_level": 0,
+						"meta.is_head_editable": false,
+						"meta.line_index": 17,
+						"meta.selector": {
+							"selected": false
+						}
+					},
+					{
+						"address": "44.18",
+						"conditionals": {
+							"behavior": 0,
+							"behavior_key": "Show",
+							"facts": {
+								"fact_data_by_name": {
+
+								},
+								"meta.visible": false
+							},
+							"meta.visible": false,
+							"operand": 0,
+							"operand_args": [],
+							"operand_key": "AND"
+						},
+						"content": {
+							"delay_after": 0,
+							"delay_before": 0,
+							"line_reader.args": [
+								"dismemberment1",
+								2,
+								true
+							],
+							"line_reader.reverse_args": [
+								"INVALID ARGUMENT FOR name",
+								"INVALID ARGUMENT FOR fade_in_time",
+								"INVALID ARGUMENT FOR continue_dialog_through_cg"
+							],
+							"meta.has_reverse": false,
+							"meta.reverse_text": "",
+							"meta.text": "show_cg(dismemberment1, 2.0, true)",
+							"meta.validation_status": "OK",
+							"name": "show_cg",
+							"reverse_name": ""
+						},
+						"facts": {
+							"fact_data_by_name": {
+
+							},
+							"meta.visible": false
+						},
+						"header": [],
+						"line_type": 2,
+						"meta.conditionals_visible": false,
+						"meta.facts_visible": false,
+						"meta.indent_level": 0,
+						"meta.is_head_editable": false,
+						"meta.line_index": 18,
+						"meta.selector": {
+							"selected": false
+						}
+					},
+					{
+						"address": "44.19",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -42146,13 +42354,13 @@
 						"meta.facts_visible": false,
 						"meta.indent_level": 0,
 						"meta.is_head_editable": false,
-						"meta.line_index": 15,
+						"meta.line_index": 19,
 						"meta.selector": {
 							"selected": false
 						}
 					},
 					{
-						"address": "44.16",
+						"address": "44.20",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -42181,7 +42389,7 @@
 								"jailer"
 							],
 							"active_actors_title": "character",
-							"content": "[]>narrator: Upon that last syllable, the godseed bursts into fire, yet does not burn you yet.\n[]>narrator{one+anhedonia-emotion|dismemberment5}:You <call:control_camera,1.5,0.0,-1.4,1.0>rip out the glowing core, and raise it to your mouth, and sink your teeth into it. <mp>Ripping out a chunk of its flesh, its insides are laid bare."
+							"content": "[]>narrator: Upon that last syllable, the godseed bursts into fire, yet does not burn you yet."
 						},
 						"facts": {
 							"fact_data_by_name": {
@@ -42195,13 +42403,115 @@
 						"meta.facts_visible": false,
 						"meta.indent_level": 0,
 						"meta.is_head_editable": false,
-						"meta.line_index": 16,
+						"meta.line_index": 20,
 						"meta.selector": {
 							"selected": false
 						}
 					},
 					{
-						"address": "44.17",
+						"address": "44.21",
+						"conditionals": {
+							"behavior": 0,
+							"behavior_key": "Show",
+							"facts": {
+								"fact_data_by_name": {
+
+								},
+								"meta.visible": false
+							},
+							"meta.visible": false,
+							"operand": 0,
+							"operand_args": [],
+							"operand_key": "AND"
+						},
+						"content": {
+							"delay_after": 0,
+							"delay_before": 0,
+							"line_reader.args": [
+								"dismemberment3",
+								4,
+								true
+							],
+							"line_reader.reverse_args": [
+								"INVALID ARGUMENT FOR name",
+								"INVALID ARGUMENT FOR fade_in_time",
+								"INVALID ARGUMENT FOR continue_dialog_through_cg"
+							],
+							"meta.has_reverse": false,
+							"meta.reverse_text": "",
+							"meta.text": "show_cg(dismemberment3, 4.0, true)",
+							"meta.validation_status": "OK",
+							"name": "show_cg",
+							"reverse_name": ""
+						},
+						"facts": {
+							"fact_data_by_name": {
+
+							},
+							"meta.visible": false
+						},
+						"header": [],
+						"line_type": 2,
+						"meta.conditionals_visible": false,
+						"meta.facts_visible": false,
+						"meta.indent_level": 0,
+						"meta.is_head_editable": false,
+						"meta.line_index": 21,
+						"meta.selector": {
+							"selected": false
+						}
+					},
+					{
+						"address": "44.22",
+						"conditionals": {
+							"behavior": 0,
+							"behavior_key": "Show",
+							"facts": {
+								"fact_data_by_name": {
+
+								},
+								"meta.visible": false
+							},
+							"meta.visible": false,
+							"operand": 0,
+							"operand_args": [],
+							"operand_key": "AND"
+						},
+						"content": {
+							"active_actors": [
+								"anhedonia",
+								"one",
+								"spectra",
+								"narrator",
+								"interrogator",
+								"torturer",
+								"one+anhedonia",
+								"gods",
+								"clericant",
+								"jailer"
+							],
+							"active_actors_title": "character",
+							"content": "[]>narrator{one+anhedonia-emotion|dismemberment5}:You <call:control_camera,1.5,0.0,-1.4,1.0>rip out the glowing core, and raise it to your mouth, and sink your teeth into it. <mp>Ripping out a chunk of its flesh, its insides are laid bare."
+						},
+						"facts": {
+							"fact_data_by_name": {
+
+							},
+							"meta.visible": false
+						},
+						"header": [],
+						"line_type": 0,
+						"meta.conditionals_visible": false,
+						"meta.facts_visible": false,
+						"meta.indent_level": 0,
+						"meta.is_head_editable": false,
+						"meta.line_index": 22,
+						"meta.selector": {
+							"selected": false
+						}
+					},
+					{
+						"address": "44.23",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -42250,13 +42560,13 @@
 						"meta.facts_visible": false,
 						"meta.indent_level": 0,
 						"meta.is_head_editable": false,
-						"meta.line_index": 17,
+						"meta.line_index": 23,
 						"meta.selector": {
 							"selected": false
 						}
 					},
 					{
-						"address": "44.18",
+						"address": "44.24",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -42299,13 +42609,13 @@
 						"meta.facts_visible": false,
 						"meta.indent_level": 0,
 						"meta.is_head_editable": false,
-						"meta.line_index": 18,
+						"meta.line_index": 24,
 						"meta.selector": {
 							"selected": false
 						}
 					},
 					{
-						"address": "44.19",
+						"address": "44.25",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -42351,13 +42661,13 @@
 						"meta.facts_visible": false,
 						"meta.indent_level": 0,
 						"meta.is_head_editable": false,
-						"meta.line_index": 19,
+						"meta.line_index": 25,
 						"meta.selector": {
 							"selected": false
 						}
 					}
 				],
-				"meta.scroll_vertical": 3702,
+				"meta.scroll_vertical": 3215,
 				"meta.selected": false,
 				"next": 1,
 				"number": 44,

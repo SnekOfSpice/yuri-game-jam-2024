@@ -5,9 +5,9 @@ var states_by_page := {}
 
 func _ready() -> void:
 	ParserEvents.go_back_accepted.connect(on_go_back_accepted)
-	ParserEvents.new_line_read.connect(on_new_line_read)
+	ParserEvents.read_new_line.connect(on_read_new_line)
 
-func on_new_line_read(line:int):
+func on_read_new_line(line:int):
 	line -= 1
 	# save the state
 	var state := {}

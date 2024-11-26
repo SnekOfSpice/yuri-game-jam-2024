@@ -59,6 +59,10 @@ func on_clear_reached():
 
 
 func _on_handler_start_black_fade(fade_in_duration, hold_time, fade_out_duration, hide_characters, new_background, new_bgm):
+	if GameWorld.skip:
+		fade_out_duration = 0.1
+		hold_time = 0.1
+		fade_in_duration = 0.1
 	hide_characters_on_full_black_reached = hide_characters
 	new_background_on_full_black_reached = new_background
 	release_on_full_black_reached = fade_out_duration

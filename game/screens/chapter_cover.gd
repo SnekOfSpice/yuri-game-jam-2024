@@ -1,6 +1,6 @@
 extends Control
 
-@export var skip := false
+#@export var skip := false
 
 
 @onready var logo_tex : Sprite2D = $Parts/Logo
@@ -21,12 +21,24 @@ func _ready() -> void:
 	
 
 func set_chapter_cover(pov_name: String, bottom_text: String, new_background: String, zoom: float, bgm: String):
-	if skip:
+	if GameWorld.skip:
 		if GameWorld.camera:
 			GameWorld.camera.zoom_to(zoom, 0)
 		Sound.play_bgm(bgm)
 		GameWorld.stage_root.set_background(new_background)
 		emit_signal("chapter_intro_finished")
+		
+		GameWorld.stage_root.set_background(new_background)
+		GameWorld.camera.zoom_to(zoom, 0.0)
+		GameWorld.hide_all_characters()
+		Sound.play_bgm(bgm)
+		if GameWorld.game_stage:
+			GameWorld.game_stage.set_static(0)
+			GameWorld.game_stage.set_fade_out(0, 0)
+			GameWorld.game_stage.hide_cg
+		
+		if bgm != Sound.bgm_key:
+			Sound.fade_out_bgm(0)
 		return
 	
 	for part in $Parts.get_children():
