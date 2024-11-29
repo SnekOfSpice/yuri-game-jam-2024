@@ -8,6 +8,24 @@
 [node name="Letter" type="Node2D"]
 script = ExtResource("1_e4jsb")
 
+[node name="FontButton" type="Button" parent="."]
+offset_left = 226.0
+offset_top = 58.0
+offset_right = 314.0
+offset_bottom = 89.0
+focus_mode = 0
+theme = ExtResource("3_ame4t")
+text = "Font"
+
+[node name="ReadButton" type="Button" parent="."]
+offset_left = 618.0
+offset_top = 470.0
+offset_right = 674.0
+offset_bottom = 501.0
+focus_mode = 0
+theme = ExtResource("3_ame4t")
+text = ">>"
+
 [node name="Paper" type="Sprite2D" parent="."]
 position = Vector2(455, 275)
 texture = ExtResource("1_sx7rl")
@@ -70,24 +88,6 @@ I am grateful for all you have done for me, and all that you have allowed me to 
 Yours, always,
 One"
 fit_content = true
-
-[node name="FontButton" type="Button" parent="."]
-offset_left = 226.0
-offset_top = 58.0
-offset_right = 293.0
-offset_bottom = 89.0
-focus_mode = 0
-theme = ExtResource("3_ame4t")
-text = "Font"
-
-[node name="ReadButton" type="Button" parent="."]
-offset_left = 618.0
-offset_top = 470.0
-offset_right = 653.0
-offset_bottom = 501.0
-focus_mode = 0
-theme = ExtResource("3_ame4t")
-text = ">>"
 
 [connection signal="pressed" from="FontButton" to="." method="_on_font_button_pressed"]
 [connection signal="pressed" from="ReadButton" to="." method="_on_read_button_pressed"]

@@ -151,6 +151,7 @@ func _on_window_factor_scale_value_changed(value):
 
 
 func _on_window_mouse_entered():
+	return
 	if not has_focus():
 		return
 	if $QuitDialog.visible:
@@ -161,6 +162,7 @@ func _on_window_mouse_entered():
 
 
 func _on_window_mouse_exited():
+	return
 	grab_focus()
 
 func _on_window_factor_window_mouse_entered():

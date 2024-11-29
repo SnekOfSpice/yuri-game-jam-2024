@@ -36,7 +36,7 @@ func set_chapter_cover(pov_name: String, bottom_text: String, new_background: St
 		if GameWorld.game_stage:
 			GameWorld.game_stage.set_static(0)
 			GameWorld.game_stage.set_fade_out(0, 0)
-			GameWorld.game_stage.hide_cg
+			GameWorld.game_stage.hide_cg()
 		
 		if bgm != Sound.bgm_key:
 			Sound.fade_out_bgm(0)

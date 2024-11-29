@@ -179,7 +179,7 @@ func set_fade_out(lod, mix) -> bool:
 func wound_fx(shake_intensity: float, splatter_count: float) -> bool:
 	shake_camera(shake_intensity)
 	splatter_blood(splatter_count)
-	play_sfx("kick")
+	play_sfx("squelch")
 	return false
 
 func control_camera(zoom, x, y, duration) -> bool:
@@ -212,4 +212,8 @@ func set_character_name(character: String, nname: String) -> bool:
 
 func set_object_visible(object_name: String, visibility: bool) -> bool:
 	emit_signal("request_object_visible", object_name, visibility)
+	return false
+
+func use_ui(id: float) -> bool:
+	GameWorld.game_stage.use_ui(int(id))
 	return false

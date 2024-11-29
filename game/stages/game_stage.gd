@@ -19,14 +19,14 @@ var cg := ""
 var cg_position := ""
 var is_name_container_visible := false
 
-@onready var text_container_custom_minimum_size : Vector2 = find_child("TextContainer").custom_minimum_size
+@onready var text_container_custom_minimum_size : Vector2 = find_child("TextContainer1").custom_minimum_size
 @onready var rtl_custom_minimum_size : Vector2 = find_child("RichTextLabel").custom_minimum_size
 
 @onready var cg_roots := [find_child("CGBottomContainer"), find_child("CGTopContainer")]
 var blockers : int = 7 # character count + 1 (self) get_tree().get_node_count_in_group("diisis_character")
 var advance_blockers := 0
 
-@onready var text_start_position = find_child("TextContainer").position
+@onready var text_start_position = find_child("TextContainer1").position
 
 var callable_upon_blocker_clear:Callable
 
@@ -44,7 +44,7 @@ var target_static := 0.0
 
 func _ready():
 	
-	#find_child("TextContainer").position = Vector2(size.x * 0.5, size.y - find_child("TextContainer").size.y * 0.5)
+	#find_child("TextContainer1").position = Vector2(size.x * 0.5, size.y - find_child("TextContainer1").size.y * 0.5)
 	ParserEvents.actor_name_changed.connect(on_actor_name_changed)
 	ParserEvents.text_content_text_changed.connect(on_text_content_text_changed)
 	ParserEvents.page_terminated.connect(go_to_main_menu)
@@ -112,6 +112,8 @@ func _process(delta: float) -> void:
 	static_mat.set_shader_parameter("intensity", lerp(static_mat.get_shader_parameter("intensity"), target_static, 0.02))
 	static_mat.set_shader_parameter("border_size", lerp(static_mat.get_shader_parameter("border_size"), 1 - target_static, 0.02))
 	
+	find_child("VFXLayer").position = -camera.offset * camera.zoom.x
+
 func _input(event: InputEvent) -> void:
 	if advance_blockers > 0:
 		return
@@ -204,11 +206,11 @@ func set_cg_bottom(cg_name:String, fade_in_duration:float):
 func set_text_style(style:TextStyle):
 	text_style = style
 	if text_style == TextStyle.ToBottom:
-		find_child("TextContainer").custom_minimum_size = text_container_custom_minimum_size
-		find_child("TextContainer").position = text_start_position
+		find_child("TextContainer1").custom_minimum_size = text_container_custom_minimum_size
+		find_child("TextContainer1").position = text_start_position
 		find_child("RichTextLabel").custom_minimum_size = rtl_custom_minimum_size
 	elif text_style == TextStyle.ToCharacter:
-		find_child("TextContainer").custom_minimum_size.x = 230
+		find_child("TextContainer1").custom_minimum_size.x = 230
 		find_child("RichTextLabel").custom_minimum_size.x = 230
 
 func hide_cg():
@@ -259,7 +261,7 @@ func on_text_content_text_changed(
 		dialog_box_tween.kill()
 	dialog_box_tween = create_tween()
 	
-	var text_container : CenterContainer = find_child("TextContainer")
+	var text_container : CenterContainer = find_child("TextContainer1")
 	text_container.position = actor_position
 	text_container.position.y += 10
 	dialog_box_tween.tween_property(text_container, "position", actor_position, lead_time).set_ease(Tween.EASE_OUT).set_trans(Tween.TRANS_BACK)
@@ -277,7 +279,7 @@ func serialize() -> Dictionary:
 	result["character_data"] = character_data
 	result["cg"] = cg
 	result["cg_position"] = cg_position
-	result["text_container_position"] = find_child("TextContainer").position
+	result["text_container_position"] = find_child("TextContainer1").position
 	result["text_style"] = text_style
 	result["objects"] = $Objects.serialize()
 	
@@ -289,6 +291,7 @@ func serialize() -> Dictionary:
 	result["fade_out_mix_percentage"] = overlay_fade_out.get_material().get_shader_parameter("mix_percentage")
 	
 	result["camera"] = $Camera2D.serialize()
+	result["ui_id"] = ui_id
 	
 	return result
 
@@ -319,7 +322,7 @@ func deserialize(data:Dictionary):
 	if text_style == TextStyle.ToCharacter:
 		# gets deserialized as string for some reason??
 		var fixed_position : Vector2
-		var deserialized_position = data.get("text_container_position", find_child("TextContainer").position)
+		var deserialized_position = data.get("text_container_position", find_child("TextContainer1").position)
 		if deserialized_position is String:
 			deserialized_position = deserialized_position.trim_prefix("(")
 			deserialized_position = deserialized_position.trim_suffix(")")
@@ -330,7 +333,7 @@ func deserialize(data:Dictionary):
 		else:
 			push_warning("Deserialized game_stage with something wild.")
 			return
-		find_child("TextContainer").position = fixed_position
+		find_child("TextContainer1").position = fixed_position
 	target_sun_fill_amount = data.get("sun_fill_amount", -1.0)
 	target_sun_steps = data.get("sun_steps", 10.0)
 	overlay_sun.get_material().set_shader_parameter("fill_amount", target_sun_fill_amount)
@@ -344,6 +347,8 @@ func deserialize(data:Dictionary):
 	target_static = data.get("static", 0.0)
 	overlay_static.get_material().set_shader_parameter("intensity", target_static)
 	overlay_static.get_material().set_shader_parameter("border_size", 1 - target_static)
+	
+	use_ui(data.get("ui_id", 1))
 
 func remove_blocker():
 	blockers -= 1
@@ -404,7 +409,37 @@ func _on_instruction_handler_splatter(amount: int) -> void:
 		var sprite := preload("res://game/visuals/vfx/splatter/blood_splatter.tscn").instantiate()
 		find_child("VFXLayer").add_child(sprite)
 
-
+var ui_id := 1
+@onready var ui_root : Control = find_child(str("TextContainer", ui_id))
+func use_ui(id:int):
+	var lr : LineReader = find_child("LineReader")
+	var was_visible : bool
+	var root_existed : bool
+	var text_content_text = lr.text_content.text
+	var current_raw_name = lr.current_raw_name
+	
+	if ui_root:
+		was_visible = ui_root.visible
+		root_existed = true
+	else:
+		was_visible = true
+		root_existed = false
+	ui_id = id
+	ui_root = find_child(str("TextContainer", ui_id))
+	for c in find_child("VNUI").get_children():
+		if c.name.begins_with("TextContainer"):
+			c.visible = c == ui_root
+	
+	lr.text_content = ui_root.find_child("RichTextLabel")
+	lr.text_container = ui_root
+	lr.name_label = ui_root.find_child("Label")
+	lr.name_container = ui_root.find_child("PanelContainer")
+	lr.prompt_finished = ui_root.find_child("PageFinished")
+	lr.prompt_unfinished = ui_root.find_child("PageUnfinished")
+	
+	if root_existed:
+		lr.update_name_label(current_raw_name)
+		lr.text_content.text = text_content_text
 
 func set_static(level:float):
 	target_static = level

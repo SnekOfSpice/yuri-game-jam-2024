@@ -19,7 +19,6 @@ func on_read_new_page(number:int):
 	find_child("CurrentPageLabel").text = str("Current Page: ", number, " - ", Parser.get_page_key(number))
 
 func on_read_new_line(index:int):
-	printt(Parser.page_index, ff_goal_page, index, ff_goal_line)
 	if not ff_active:
 		return
 	if Parser.page_index == ff_goal_page and index == ff_goal_line:
