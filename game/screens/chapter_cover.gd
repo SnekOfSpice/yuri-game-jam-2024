@@ -30,6 +30,7 @@ func set_chapter_cover(pov_name: String, bottom_text: String, new_background: St
 		
 		GameWorld.stage_root.set_background(new_background)
 		GameWorld.camera.zoom_to(zoom, 0.0)
+		GameWorld.camera.move_to(0,0,0)
 		GameWorld.hide_all_characters()
 		Sound.play_bgm(bgm)
 		if GameWorld.game_stage:
@@ -49,6 +50,8 @@ func set_chapter_cover(pov_name: String, bottom_text: String, new_background: St
 	var char_tween = create_tween()
 	var name_tween = create_tween()
 	
+	for extra in char_tex.get_children():
+		extra.queue_free()
 	match pov_name:
 		"anhedonia":
 			char_tex.texture = load("res://game/characters/sprites/anhedonia-neutral.png")
@@ -122,6 +125,7 @@ func set_chapter_cover(pov_name: String, bottom_text: String, new_background: St
 	
 	get_tree().create_timer(full_fade_in_after).timeout.connect(GameWorld.stage_root.set_background.bind(new_background))
 	get_tree().create_timer(full_fade_in_after).timeout.connect(GameWorld.camera.zoom_to.bind(zoom, 0.0))
+	get_tree().create_timer(full_fade_in_after).timeout.connect(GameWorld.camera.move_to.bind(0,0,0))
 	get_tree().create_timer(full_fade_in_after).timeout.connect(GameWorld.hide_all_characters)
 	get_tree().create_timer(full_fade_in_after).timeout.connect(Sound.play_bgm.bind(bgm))
 	if GameWorld.game_stage:

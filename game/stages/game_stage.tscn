@@ -163,10 +163,6 @@ centered = false
 texture = ExtResource("5_c80if")
 centered = false
 
-[node name="Sigil" type="Sprite2D" parent="Objects"]
-position = Vector2(417, 197)
-texture = ExtResource("4_gq55s")
-
 [node name="OxylithDay2" type="Sprite2D" parent="Objects"]
 texture = ExtResource("13_cwli1")
 centered = false
@@ -181,10 +177,19 @@ scale = Vector2(0.8, 0.8)
 texture = ExtResource("3_058vl")
 
 [node name="OldShrines" type="Sprite2D" parent="Objects"]
+position = Vector2(43.275, 59.62)
 texture = ExtResource("16_6n4c5")
 centered = false
 
+[node name="Sigil" type="Sprite2D" parent="Objects"]
+position = Vector2(417, 197)
+texture = ExtResource("4_gq55s")
+
 [node name="Characters" type="Node2D" parent="."]
+
+[node name="Interrogator" parent="Characters" instance=ExtResource("3_5aep6")]
+position = Vector2(307, 334)
+character_name = "interrogator"
 
 [node name="One" parent="Characters" instance=ExtResource("2_15g65")]
 position = Vector2(653, 304)
@@ -201,10 +206,6 @@ character_name = "spectra"
 [node name="Torturer" parent="Characters" instance=ExtResource("3_5aep6")]
 position = Vector2(307, 334)
 character_name = "torturer"
-
-[node name="Interrogator" parent="Characters" instance=ExtResource("3_5aep6")]
-position = Vector2(307, 334)
-character_name = "interrogator"
 
 [node name="One+Anhedonia" parent="Characters" instance=ExtResource("3_5aep6")]
 position = Vector2(512, 334)
@@ -496,7 +497,9 @@ grow_vertical = 2
 mouse_filter = 2
 theme = ExtResource("1_qsxmu")
 
-[node name="VFXLayer" type="Node2D" parent="."]
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="VFXLayer" type="Node2D" parent="CanvasLayer"]
 
 [node name="InstructionHandler" type="Node" parent="."]
 script = ExtResource("4_u8vmc")
@@ -543,11 +546,11 @@ prompt_finished = NodePath("../Camera2D/CanvasLayer/Control/VNUI/TextContainer/M
 [node name="InlineEval" type="Node" parent="."]
 script = ExtResource("6_8ao3j")
 
+[connection signal="ready" from="Characters/Interrogator" to="." method="remove_blocker"]
 [connection signal="ready" from="Characters/One" to="." method="remove_blocker"]
 [connection signal="ready" from="Characters/Anhedonia" to="." method="remove_blocker"]
 [connection signal="ready" from="Characters/Spectra" to="." method="remove_blocker"]
 [connection signal="ready" from="Characters/Torturer" to="." method="remove_blocker"]
-[connection signal="ready" from="Characters/Interrogator" to="." method="remove_blocker"]
 [connection signal="ready" from="Characters/One+Anhedonia" to="." method="remove_blocker"]
 [connection signal="meta_clicked" from="Camera2D/CanvasLayer/Control/VNUI/TextContainer/MarginContainer/VBoxContainer/MarginContainer2/Panel/MarginContainer/RichTextLabel" to="." method="_on_rich_text_label_meta_clicked"]
 [connection signal="mouse_entered" from="Camera2D/CanvasLayer/Control/VNUI/ControlsContainer/HistoryButton" to="." method="increment_advance_blocker"]
