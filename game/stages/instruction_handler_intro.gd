@@ -217,3 +217,7 @@ func set_object_visible(object_name: String, visibility: bool) -> bool:
 func use_ui(id: float) -> bool:
 	GameWorld.game_stage.use_ui(int(id))
 	return false
+
+func cum(voice: String) -> bool:
+	GameWorld.game_stage.cum(voice)
+	return false

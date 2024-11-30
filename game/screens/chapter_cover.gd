@@ -121,7 +121,7 @@ func set_chapter_cover(pov_name: String, bottom_text: String, new_background: St
 	
 	var full_fade_in_after : float = max(max((logo_delay + logo_duration), (char_delay + char_duration)), (name_delay + name_duration))
 	
-	mod_tween.tween_property(self, "modulate:a", 0, 2.4).set_delay(full_fade_in_after + 2)
+	mod_tween.tween_property(self, "modulate:a", 0, 2.4).set_delay(full_fade_in_after + 4)
 	
 	get_tree().create_timer(full_fade_in_after).timeout.connect(GameWorld.stage_root.set_background.bind(new_background))
 	get_tree().create_timer(full_fade_in_after).timeout.connect(GameWorld.camera.zoom_to.bind(zoom, 0.0))

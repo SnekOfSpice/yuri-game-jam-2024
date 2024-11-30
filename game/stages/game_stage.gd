@@ -34,7 +34,13 @@ var callable_upon_blocker_clear:Callable
 @onready var overlay_static = find_child("Static").get_node("ColorRect")
 @onready var overlay_sun = find_child("Sun").get_node("ColorRect")
 @onready var overlay_fade_out = find_child("FadeOut").get_node("ColorRect")
+@onready var overlay_orgasm = find_child("Orgasm").get_node("ColorRect")
 
+
+@onready var sun_mat = overlay_sun.get_material()
+@onready var orgasm_mat = overlay_orgasm.get_material()
+@onready var fade_mat = overlay_fade_out.get_material()
+@onready var static_mat = overlay_static.get_material()
 
 var target_lod := 0.0
 var target_mix := 0.0
@@ -98,21 +104,27 @@ func go_to_main_menu(_unused):
 
 
 func _process(delta: float) -> void:
-	var sun_mat = overlay_sun.get_material()
 	sun_mat.set_shader_parameter("steps", lerp(sun_mat.get_shader_parameter("steps"), target_sun_steps, 0.02))
 	sun_mat.set_shader_parameter("fill_amount", lerp(sun_mat.get_shader_parameter("fill_amount"), target_sun_fill_amount, 0.02))
 	if sun_mat.get_shader_parameter("fill_amount") > -1:
 		sun_mat.set_shader_parameter("background", get_viewport().get_texture())
 	
-	var fade_mat = overlay_fade_out.get_material()
 	fade_mat.set_shader_parameter("lod", lerp(fade_mat.get_shader_parameter("lod"), target_lod, 0.02))
 	fade_mat.set_shader_parameter("mix_percentage", lerp(fade_mat.get_shader_parameter("mix_percentage"), target_mix, 0.02))
 	
-	var static_mat = overlay_static.get_material()
 	static_mat.set_shader_parameter("intensity", lerp(static_mat.get_shader_parameter("intensity"), target_static, 0.02))
 	static_mat.set_shader_parameter("border_size", lerp(static_mat.get_shader_parameter("border_size"), 1 - target_static, 0.02))
 	
+	orgasm_mat.set_shader_parameter("lod", lerp(orgasm_mat.get_shader_parameter("lod"), 0.0, 0.000175))
+
+	
 	find_child("VFXLayer").position = -camera.offset * camera.zoom.x
+
+func cum(voice:String):
+	orgasm_mat.set_shader_parameter("lod", 1.8)
+	
+	get_tree().create_timer(1.5).timeout.connect(orgasm_mat.set_shader_parameter.bind("lod", 1.4))
+
 
 func _input(event: InputEvent) -> void:
 	if advance_blockers > 0:
@@ -131,7 +143,7 @@ func _input(event: InputEvent) -> void:
 				var notification = preload("res://game/notification.tscn").instantiate()
 				var global_path := ProjectSettings.globalize_path(path)
 				var global_dir := global_path.substr(0, global_path.rfind("/"))
-				add_child(notification)
+				find_child("VNUIRoot").add_child(notification)
 				notification.init(str("Saved to [url=", global_dir, "]", global_path, "[/url]"))
 			if InputMap.action_has_event("toggle_auto_continue", event):
 				find_child("LineReader").auto_continue = not find_child("LineReader").auto_continue

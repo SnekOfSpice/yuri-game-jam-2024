@@ -87,3 +87,8 @@ func set_emotion(emotion_name:String):
 	else:
 		$OneOutfit.visible = true
 		$Eyes.visible = true
+	
+	if emotion.begins_with("suspended"):
+		$Sprite.offset.y = -110
+	else:
+		$Sprite.offset.y = 0
