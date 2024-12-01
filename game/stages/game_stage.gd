@@ -153,7 +153,7 @@ func _input(event: InputEvent) -> void:
 					hide_ui()
 				else:
 					show_ui()
-			if InputMap.action_has_event("cheats", event) and dev_mode:
+			if InputMap.action_has_event("cheats", event) and dev_mode and not OS.has_feature("release"):
 				find_child("Cheats").visible = not find_child("Cheats").visible
 				
 	if event is InputEventMouse:
@@ -186,6 +186,9 @@ func hide_ui():
 	find_child("VNUI").visible = false
 
 func set_cg(cg_name:String, fade_in_duration:float, cg_root:Control):
+	var ui1panel : PanelContainer = find_child("TextContainer1").find_child("Panel")
+	ui1panel.add_theme_stylebox_override("panel", load("res://game/visuals/panel_transparent.tres"))
+	
 	cg_root.modulate.a = 0.0 if cg_root.get_child_count() == 0 else 1.0
 	#for c in cg_root.get_children():
 		#if c == cg_root.get_node("ColorRect"):
@@ -196,7 +199,9 @@ func set_cg(cg_name:String, fade_in_duration:float, cg_root:Control):
 	var cg_node = TextureRect.new()
 	cg_root.add_child(cg_node)
 	cg_node.set_anchors_preset(Control.PRESET_FULL_RECT)
-	cg_node.texture = load(str("res://game/cg/", cg_name, ".png"))
+	var cg_path := str("res://game/cg/", cg_name, ".png")
+	#ProjectSettings.load_resource_pack(cg_path)
+	cg_node.texture = load(cg_path)
 	var t = create_tween()
 	
 	if cg_root.modulate.a == 1.0:
@@ -235,6 +240,11 @@ func hide_cg():
 		#cg_root.modulate.a = 0.0
 		if emit_insutrction_complete_on_cg_hide:
 			GameWorld.instruction_handler.instruction_completed.emit()
+	
+	
+	var ui1panel : PanelContainer = find_child("TextContainer1").find_child("Panel")
+	ui1panel.add_theme_stylebox_override("panel", load("res://game/visuals/panel_opaque.tres"))
+	
 
 func on_actor_name_changed(
 	actor_name: String,

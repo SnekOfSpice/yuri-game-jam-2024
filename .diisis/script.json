@@ -1,6 +1,6 @@
 {
 	"editor": {
-		"current_page_number": 31,
+		"current_page_number": 25,
 		"page_view": 0,
 		"text_size_id": 3
 	},
@@ -1879,7 +1879,7 @@
 						}
 					}
 				],
-				"meta.scroll_vertical": 2918,
+				"meta.scroll_vertical": 0,
 				"meta.selected": false,
 				"next": 1,
 				"number": 0,
@@ -15863,6 +15863,55 @@
 							"operand_key": "AND"
 						},
 						"content": {
+							"delay_after": 0,
+							"delay_before": 0,
+							"line_reader.args": [
+								3
+							],
+							"line_reader.reverse_args": [
+								"INVALID ARGUMENT FOR id"
+							],
+							"meta.has_reverse": false,
+							"meta.reverse_text": "",
+							"meta.text": "use_ui(3)",
+							"meta.validation_status": "OK",
+							"name": "use_ui",
+							"reverse_name": ""
+						},
+						"facts": {
+							"fact_data_by_name": {
+
+							},
+							"meta.visible": false
+						},
+						"header": [],
+						"line_type": 2,
+						"meta.conditionals_visible": false,
+						"meta.facts_visible": false,
+						"meta.indent_level": 0,
+						"meta.is_head_editable": false,
+						"meta.line_index": 25,
+						"meta.selector": {
+							"selected": false
+						}
+					},
+					{
+						"address": "16.26",
+						"conditionals": {
+							"behavior": 0,
+							"behavior_key": "Show",
+							"facts": {
+								"fact_data_by_name": {
+
+								},
+								"meta.visible": false
+							},
+							"meta.visible": false,
+							"operand": 0,
+							"operand_args": [],
+							"operand_key": "AND"
+						},
+						"content": {
 							"active_actors": [
 								"anhedonia",
 								"one",
@@ -15890,13 +15939,13 @@
 						"meta.facts_visible": false,
 						"meta.indent_level": 0,
 						"meta.is_head_editable": false,
-						"meta.line_index": 25,
+						"meta.line_index": 26,
 						"meta.selector": {
 							"selected": false
 						}
 					},
 					{
-						"address": "16.26",
+						"address": "16.27",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -15939,13 +15988,13 @@
 						"meta.facts_visible": false,
 						"meta.indent_level": 0,
 						"meta.is_head_editable": false,
-						"meta.line_index": 26,
+						"meta.line_index": 27,
 						"meta.selector": {
 							"selected": false
 						}
 					},
 					{
-						"address": "16.27",
+						"address": "16.28",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -15988,13 +16037,13 @@
 						"meta.facts_visible": false,
 						"meta.indent_level": 0,
 						"meta.is_head_editable": false,
-						"meta.line_index": 27,
+						"meta.line_index": 28,
 						"meta.selector": {
 							"selected": false
 						}
 					},
 					{
-						"address": "16.28",
+						"address": "16.29",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -16037,13 +16086,13 @@
 						"meta.facts_visible": false,
 						"meta.indent_level": 0,
 						"meta.is_head_editable": false,
-						"meta.line_index": 28,
+						"meta.line_index": 29,
 						"meta.selector": {
 							"selected": false
 						}
 					},
 					{
-						"address": "16.29",
+						"address": "16.30",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -16090,13 +16139,13 @@
 						"meta.facts_visible": false,
 						"meta.indent_level": 0,
 						"meta.is_head_editable": false,
-						"meta.line_index": 29,
+						"meta.line_index": 30,
 						"meta.selector": {
 							"selected": false
 						}
 					},
 					{
-						"address": "16.30",
+						"address": "16.31",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -16139,55 +16188,6 @@
 						"meta.facts_visible": false,
 						"meta.indent_level": 0,
 						"meta.is_head_editable": false,
-						"meta.line_index": 30,
-						"meta.selector": {
-							"selected": false
-						}
-					},
-					{
-						"address": "16.31",
-						"conditionals": {
-							"behavior": 0,
-							"behavior_key": "Show",
-							"facts": {
-								"fact_data_by_name": {
-
-								},
-								"meta.visible": false
-							},
-							"meta.visible": false,
-							"operand": 0,
-							"operand_args": [],
-							"operand_key": "AND"
-						},
-						"content": {
-							"active_actors": [
-								"anhedonia",
-								"one",
-								"spectra",
-								"narrator",
-								"interrogator",
-								"torturer",
-								"one+anhedonia",
-								"gods",
-								"clericant",
-								"jailer"
-							],
-							"active_actors_title": "character",
-							"content": "[]>narrator: ... and rip it out.\n[]>one:...\n[]>anhedonia:..."
-						},
-						"facts": {
-							"fact_data_by_name": {
-
-							},
-							"meta.visible": false
-						},
-						"header": [],
-						"line_type": 0,
-						"meta.conditionals_visible": false,
-						"meta.facts_visible": false,
-						"meta.indent_level": 0,
-						"meta.is_head_editable": false,
 						"meta.line_index": 31,
 						"meta.selector": {
 							"selected": false
@@ -16213,16 +16213,16 @@
 							"delay_after": 0,
 							"delay_before": 0,
 							"line_reader.args": [
-								0
+								2
 							],
 							"line_reader.reverse_args": [
-								"INVALID ARGUMENT FOR intensity"
+								"INVALID ARGUMENT FOR id"
 							],
 							"meta.has_reverse": false,
 							"meta.reverse_text": "",
-							"meta.text": "sway_camera(0.0)",
+							"meta.text": "use_ui(2)",
 							"meta.validation_status": "OK",
-							"name": "sway_camera",
+							"name": "use_ui",
 							"reverse_name": ""
 						},
 						"facts": {
@@ -16272,7 +16272,7 @@
 								"jailer"
 							],
 							"active_actors_title": "character",
-							"content": "[]>one:...\n[]>narrator: Heavy breaths fill the air, One's orange irises signaling conciousness.\n[]>narrator: Eye still in your mouth, blood clinging to your chin, you lean over to get the medical supplies from your bedside drawer. <mp>It tastes of bile and rot and sweet and iron and the future as dead as the past. <mp>You swallow.\n[]>narrator: One observes you throughout. <ap>You motion toward her, suggesting \"Gonna wrap the wound now.\"\n[]>narrator: She responds by nodding once more.\n[]>narrator: Taking great care to disinfect and gauze the torn wound, you wrap One in bandages and love. <mp>For the rest of the day, she belongs to you and only you, cradling her in your arms, and nourishing her maimed body as best as you can.\n[]>narrator: With tired eyes glazed over yet softened with love, she finds comfort in your warmth.\n[]>one: Thank you."
+							"content": "[]>narrator: ... and rip it out.\n[]>one:...\n[]>anhedonia:..."
 						},
 						"facts": {
 							"fact_data_by_name": {
@@ -16290,9 +16290,107 @@
 						"meta.selector": {
 							"selected": false
 						}
+					},
+					{
+						"address": "16.34",
+						"conditionals": {
+							"behavior": 0,
+							"behavior_key": "Show",
+							"facts": {
+								"fact_data_by_name": {
+
+								},
+								"meta.visible": false
+							},
+							"meta.visible": false,
+							"operand": 0,
+							"operand_args": [],
+							"operand_key": "AND"
+						},
+						"content": {
+							"delay_after": 0,
+							"delay_before": 0,
+							"line_reader.args": [
+								0
+							],
+							"line_reader.reverse_args": [
+								"INVALID ARGUMENT FOR intensity"
+							],
+							"meta.has_reverse": false,
+							"meta.reverse_text": "",
+							"meta.text": "sway_camera(0.0)",
+							"meta.validation_status": "OK",
+							"name": "sway_camera",
+							"reverse_name": ""
+						},
+						"facts": {
+							"fact_data_by_name": {
+
+							},
+							"meta.visible": false
+						},
+						"header": [],
+						"line_type": 2,
+						"meta.conditionals_visible": false,
+						"meta.facts_visible": false,
+						"meta.indent_level": 0,
+						"meta.is_head_editable": false,
+						"meta.line_index": 34,
+						"meta.selector": {
+							"selected": false
+						}
+					},
+					{
+						"address": "16.35",
+						"conditionals": {
+							"behavior": 0,
+							"behavior_key": "Show",
+							"facts": {
+								"fact_data_by_name": {
+
+								},
+								"meta.visible": false
+							},
+							"meta.visible": false,
+							"operand": 0,
+							"operand_args": [],
+							"operand_key": "AND"
+						},
+						"content": {
+							"active_actors": [
+								"anhedonia",
+								"one",
+								"spectra",
+								"narrator",
+								"interrogator",
+								"torturer",
+								"one+anhedonia",
+								"gods",
+								"clericant",
+								"jailer"
+							],
+							"active_actors_title": "character",
+							"content": "[]>one:...\n[]>narrator: Heavy breaths fill the air, One's orange irises signaling conciousness.\n[]>narrator: Eye still in your mouth, blood clinging to your chin, you lean over to get the medical supplies from your bedside drawer. <mp>It tastes of bile and rot and sweet and iron and the future as dead as the past. <mp>You swallow.\n[]>narrator: One observes you throughout. <ap>You motion toward her, suggesting \"Gonna wrap the wound now.\"\n[]>narrator: She responds by nodding once more.\n[]>narrator: Taking great care to disinfect and gauze the torn wound, you wrap One in bandages and love. <mp>For the rest of the day, she belongs to you and only you, cradling her in your arms, and nourishing her maimed body as best as you can.\n[]>narrator: With tired eyes glazed over yet softened with love, she finds comfort in your warmth.\n[]>one: Thank you."
+						},
+						"facts": {
+							"fact_data_by_name": {
+
+							},
+							"meta.visible": false
+						},
+						"header": [],
+						"line_type": 0,
+						"meta.conditionals_visible": false,
+						"meta.facts_visible": false,
+						"meta.indent_level": 0,
+						"meta.is_head_editable": false,
+						"meta.line_index": 35,
+						"meta.selector": {
+							"selected": false
+						}
 					}
 				],
-				"meta.scroll_vertical": 8044,
+				"meta.scroll_vertical": 8436,
 				"meta.selected": false,
 				"next": 25,
 				"number": 16,
@@ -24167,7 +24265,7 @@
 						}
 					}
 				],
-				"meta.scroll_vertical": 2764,
+				"meta.scroll_vertical": 852,
 				"meta.selected": false,
 				"next": 18,
 				"number": 25,

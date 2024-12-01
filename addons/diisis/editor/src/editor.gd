@@ -532,7 +532,7 @@ func _on_utility_index_pressed(index: int) -> void:
 # opens opoup if active_dir isn't set, otherwise saves to file
 func attempt_save_to_dir():
 	if active_dir.is_empty():
-		active_dir = "res://.diisis/"
+		active_dir = "res://addons/diisis/files/"
 		active_file_name = str("script", Time.get_datetime_string_from_system().replace(":", "-"), ".json")
 		#open_save_popup()
 		#return

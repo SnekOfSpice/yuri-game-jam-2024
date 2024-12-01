@@ -5,6 +5,9 @@ var bgm_key := ""
 var audio_players := []
 var main_audio_player : AudioStreamPlayer
 
+#func _ready() -> void:
+	#push_warning(str("loading sounds", ProjectSettings.load_resource_pack("res://sounds.pck")))
+
 func serialize() -> Dictionary:
 	var data := {}
 	
@@ -31,7 +34,7 @@ func play_sfx(sfx:String):
 	player.stream = load(str(CONST.SFX_ROOT, CONST.get(str("SFX_", sfx.to_upper()))))
 	player.set_bus("SFX")
 	add_child(player)
-	player.pitch_scale = randf_range(0.95, 1.0 / 0.95)
+	player.pitch_scale = randf_range(0.85, 1.0 / 0.85)
 	player.play()
 	player.finished.connect(player.queue_free)
 

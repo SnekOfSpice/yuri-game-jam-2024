@@ -1,4 +1,4 @@
-[gd_scene load_steps=63 format=3 uid="uid://r1ntcqdujfol"]
+[gd_scene load_steps=64 format=3 uid="uid://r1ntcqdujfol"]
 
 [ext_resource type="Script" path="res://game/stages/game_stage.gd" id="1_a36me"]
 [ext_resource type="Script" path="res://addons/diisis/parser/src/line_reader.gd" id="1_h4afo"]
@@ -36,6 +36,7 @@
 [ext_resource type="Texture2D" uid="uid://cfeccyle1gu2c" path="res://game/visuals/OldShrines.png" id="16_6n4c5"]
 [ext_resource type="Shader" path="res://game/stages/static.gdshader" id="17_dc0ef"]
 [ext_resource type="PackedScene" uid="uid://ipa310726xyt" path="res://game/stages/rolling_credits.tscn" id="17_gnute"]
+[ext_resource type="StyleBox" uid="uid://v2vw23r324i2" path="res://game/visuals/panel_transparent.tres" id="28_wvgc1"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_3ca2q"]
 resource_local_to_scene = true
@@ -315,7 +316,6 @@ mouse_filter = 2
 
 [node name="TextContainer1" type="CenterContainer" parent="Camera2D/CanvasLayer/VNUIRoot/VNUI"]
 auto_translate_mode = 1
-visible = false
 custom_minimum_size = Vector2(454, 0)
 layout_mode = 1
 anchors_preset = 7
@@ -412,6 +412,7 @@ stretch_mode = 2
 
 [node name="TextContainer2" type="CenterContainer" parent="Camera2D/CanvasLayer/VNUIRoot/VNUI"]
 auto_translate_mode = 1
+visible = false
 custom_minimum_size = Vector2(340, 0)
 layout_mode = 1
 anchors_preset = 4
@@ -499,6 +500,104 @@ texture = ExtResource("5_7sulw")
 stretch_mode = 2
 
 [node name="PageFinished" type="TextureRect" parent="Camera2D/CanvasLayer/VNUIRoot/VNUI/TextContainer2/MarginContainer/VBoxContainer/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 0
+mouse_filter = 2
+texture = ExtResource("6_mh4vb")
+stretch_mode = 2
+
+[node name="TextContainer3" type="CenterContainer" parent="Camera2D/CanvasLayer/VNUIRoot/VNUI"]
+auto_translate_mode = 1
+custom_minimum_size = Vector2(340, 0)
+layout_mode = 1
+anchors_preset = 6
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_left = -340.0
+offset_top = -159.0
+offset_bottom = 159.0
+grow_horizontal = 0
+grow_vertical = 2
+mouse_filter = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="Camera2D/CanvasLayer/VNUIRoot/VNUI/TextContainer3"]
+auto_translate_mode = 1
+layout_mode = 2
+mouse_filter = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Camera2D/CanvasLayer/VNUIRoot/VNUI/TextContainer3/MarginContainer"]
+auto_translate_mode = 1
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 8
+mouse_filter = 2
+
+[node name="PanelContainer" type="PanelContainer" parent="Camera2D/CanvasLayer/VNUIRoot/VNUI/TextContainer3/MarginContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 0
+mouse_filter = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="Camera2D/CanvasLayer/VNUIRoot/VNUI/TextContainer3/MarginContainer/VBoxContainer/PanelContainer"]
+auto_translate_mode = 1
+layout_mode = 2
+size_flags_horizontal = 0
+mouse_filter = 2
+theme_override_constants/margin_left = 4
+theme_override_constants/margin_top = 1
+theme_override_constants/margin_right = 7
+theme_override_constants/margin_bottom = 1
+
+[node name="Label" type="Label" parent="Camera2D/CanvasLayer/VNUIRoot/VNUI/TextContainer3/MarginContainer/VBoxContainer/PanelContainer/MarginContainer"]
+auto_translate_mode = 1
+layout_mode = 2
+text = "Name Label Here"
+
+[node name="MarginContainer2" type="MarginContainer" parent="Camera2D/CanvasLayer/VNUIRoot/VNUI/TextContainer3/MarginContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_constants/margin_left = -9
+
+[node name="Panel" type="PanelContainer" parent="Camera2D/CanvasLayer/VNUIRoot/VNUI/TextContainer3/MarginContainer/VBoxContainer/MarginContainer2"]
+auto_translate_mode = 1
+layout_mode = 2
+size_flags_vertical = 8
+mouse_filter = 2
+theme_override_styles/panel = ExtResource("28_wvgc1")
+
+[node name="MarginContainer" type="MarginContainer" parent="Camera2D/CanvasLayer/VNUIRoot/VNUI/TextContainer3/MarginContainer/VBoxContainer/MarginContainer2/Panel"]
+layout_mode = 2
+mouse_filter = 2
+theme_override_constants/margin_left = 3
+theme_override_constants/margin_top = 1
+theme_override_constants/margin_right = 3
+theme_override_constants/margin_bottom = 1
+
+[node name="RichTextLabel" type="RichTextLabel" parent="Camera2D/CanvasLayer/VNUIRoot/VNUI/TextContainer3/MarginContainer/VBoxContainer/MarginContainer2/Panel/MarginContainer"]
+auto_translate_mode = 1
+custom_minimum_size = Vector2(300, 250)
+layout_mode = 2
+mouse_filter = 2
+theme_override_fonts/bold_font = ExtResource("2_6jeks")
+bbcode_enabled = true
+text = "Text Body Here
+dghfgh"
+fit_content = true
+scroll_active = false
+
+[node name="HBoxContainer" type="HBoxContainer" parent="Camera2D/CanvasLayer/VNUIRoot/VNUI/TextContainer3/MarginContainer/VBoxContainer"]
+custom_minimum_size = Vector2(0, 16)
+layout_mode = 2
+mouse_filter = 2
+
+[node name="PageUnfinished" type="TextureRect" parent="Camera2D/CanvasLayer/VNUIRoot/VNUI/TextContainer3/MarginContainer/VBoxContainer/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 0
+mouse_filter = 2
+texture = ExtResource("5_7sulw")
+stretch_mode = 2
+
+[node name="PageFinished" type="TextureRect" parent="Camera2D/CanvasLayer/VNUIRoot/VNUI/TextContainer3/MarginContainer/VBoxContainer/HBoxContainer"]
 layout_mode = 2
 size_flags_horizontal = 0
 mouse_filter = 2
@@ -679,6 +778,7 @@ script = ExtResource("6_8ao3j")
 [connection signal="ready" from="Characters/One+Anhedonia" to="." method="remove_blocker"]
 [connection signal="meta_clicked" from="Camera2D/CanvasLayer/VNUIRoot/VNUI/TextContainer1/MarginContainer/VBoxContainer/MarginContainer2/Panel/MarginContainer/RichTextLabel" to="." method="_on_rich_text_label_meta_clicked"]
 [connection signal="meta_clicked" from="Camera2D/CanvasLayer/VNUIRoot/VNUI/TextContainer2/MarginContainer/VBoxContainer/MarginContainer2/Panel/MarginContainer/RichTextLabel" to="." method="_on_rich_text_label_meta_clicked"]
+[connection signal="meta_clicked" from="Camera2D/CanvasLayer/VNUIRoot/VNUI/TextContainer3/MarginContainer/VBoxContainer/MarginContainer2/Panel/MarginContainer/RichTextLabel" to="." method="_on_rich_text_label_meta_clicked"]
 [connection signal="mouse_entered" from="Camera2D/CanvasLayer/VNUIRoot/VNUI/ControlsContainer/HistoryButton" to="." method="increment_advance_blocker"]
 [connection signal="mouse_exited" from="Camera2D/CanvasLayer/VNUIRoot/VNUI/ControlsContainer/HistoryButton" to="." method="decrement_advance_blocker"]
 [connection signal="pressed" from="Camera2D/CanvasLayer/VNUIRoot/VNUI/ControlsContainer/HistoryButton" to="." method="_on_history_button_pressed"]

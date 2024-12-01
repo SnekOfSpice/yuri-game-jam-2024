@@ -17,9 +17,11 @@ func _ready() -> void:
 	
 	var logo_timer = get_tree().create_timer(1.5)
 	logo_timer.timeout.connect($Logo.set.bind("visible", true))
+	logo_timer.timeout.connect(chime)
 	
 	var planet_timer = get_tree().create_timer(2.5)
 	planet_timer.timeout.connect($Planet.set.bind("visible", true))
+	planet_timer.timeout.connect(chime.bind(0.8))
 	
 	if Parser.get_fact("just_finished"):
 		GameWorld.just_finished_game = false
@@ -27,7 +29,16 @@ func _ready() -> void:
 		blast_timer.timeout.connect($PlanetBlast.set.bind("visible", true))
 		blast_timer.timeout.connect($Blast.set.bind("visible", true))
 		Parser.reset_facts()
-		
+		blast_timer.timeout.connect(chime.bind(1.65))
+
+func chime(pitch_scale:=1.0):
+	var player = AudioStreamPlayer.new()
+	add_child(player)
+	player.stream = load("res://game/sounds/sfx/267331__gkillhour__ding-2.ogg")
+	player.pitch_scale = pitch_scale
+	player.set_bus("SFX")
+	player.finished.connect(player.queue_free)
+	player.play()
 
 func _gui_input(event: InputEvent) -> void:
 	if event.is_action_pressed("ui_cancel"):

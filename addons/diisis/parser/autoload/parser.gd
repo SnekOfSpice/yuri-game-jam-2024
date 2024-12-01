@@ -68,7 +68,8 @@ func _get_live_source_path(suppress_error:=false) -> String:
 	return source_path
 
 func _get_data() -> Dictionary:
-	var file := FileAccess.open(_get_live_source_path(), FileAccess.READ)
+	#var file := FileAccess.open(_get_live_source_path(), FileAccess.READ)
+	var file := FileAccess.open("res://addons/diisis/files/script.json", FileAccess.READ)
 	if not file:
 		return {}
 	var data : Dictionary = JSON.parse_string(file.get_as_text())
@@ -104,6 +105,8 @@ func init(data:Dictionary):
 	dropdowns = data.get("dropdowns", {})
 
 func _process(delta: float) -> void:
+	if not OS.has_feature("editor"):
+		return
 	var modified_time = FileAccess.get_modified_time(_get_live_source_path(true))
 	if modified_time != last_modified_time:
 		while not FileAccess.file_exists(_get_live_source_path(true)):

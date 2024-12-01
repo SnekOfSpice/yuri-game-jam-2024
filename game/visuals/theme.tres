@@ -8,6 +8,7 @@
 [ext_resource type="Texture2D" uid="uid://dtt6lexsfo70d" path="res://game/visuals/grabber3.png" id="4_7earq"]
 [ext_resource type="FontFile" uid="uid://dokobl1mpxdlu" path="res://game/visuals/fonts/Pixel Georgia Bold.ttf" id="5_85f18"]
 [ext_resource type="FontFile" uid="uid://ccqagtvgqnth1" path="res://game/visuals/fonts/Pixel Georgia.ttf" id="5_ia6r6"]
+[ext_resource type="StyleBox" uid="uid://cmup13by2d3f" path="res://game/visuals/panel_opaque.tres" id="7_ps107"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_n20hv"]
 content_margin_left = 20.0
@@ -106,23 +107,6 @@ content_margin_right = 4.0
 content_margin_bottom = 2.0
 bg_color = Color(0.43, 0.374817, 0.3354, 0.623529)
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ex4ik"]
-content_margin_left = 5.0
-content_margin_top = 3.0
-content_margin_bottom = 3.0
-bg_color = Color(0.08, 0.0544, 0.07872, 0.929412)
-border_width_left = 2
-border_width_top = 1
-border_width_right = 2
-border_width_bottom = 1
-border_color = Color(0.26, 0.12662, 0.1196, 1)
-corner_radius_top_left = 14
-corner_radius_bottom_right = 14
-expand_margin_left = 1.0
-expand_margin_top = 1.0
-expand_margin_right = 1.0
-expand_margin_bottom = 1.0
-
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_hp0fc"]
 content_margin_left = 2.0
 content_margin_top = 1.0
@@ -201,7 +185,7 @@ HSlider/styles/grabber_area_highlight = SubResource("StyleBoxFlat_tw4rd")
 HSlider/styles/slider = SubResource("StyleBoxFlat_fntcf")
 Label/font_sizes/font_size = 24
 Label/fonts/font = ExtResource("1_3rf7y")
-PanelContainer/styles/panel = SubResource("StyleBoxFlat_ex4ik")
+PanelContainer/styles/panel = ExtResource("7_ps107")
 RichTextLabel/colors/font_shadow_color = Color(0.11003, 0.0178265, 0.0816269, 0.831373)
 RichTextLabel/constants/line_separation = 2
 RichTextLabel/constants/shadow_offset_x = 1
