@@ -182,10 +182,12 @@ texture = ExtResource("5_c80if")
 centered = false
 
 [node name="OxylithDay2" type="Sprite2D" parent="Objects"]
+position = Vector2(-23, 42)
 texture = ExtResource("13_cwli1")
 centered = false
 
 [node name="OxylithDay2Blood" type="Sprite2D" parent="Objects"]
+position = Vector2(-23, 42)
 texture = ExtResource("14_0obgu")
 centered = false
 

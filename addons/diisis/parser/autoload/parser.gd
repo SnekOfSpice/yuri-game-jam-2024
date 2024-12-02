@@ -65,7 +65,8 @@ func _get_live_source_path(suppress_error:=false) -> String:
 			if not suppress_error:
 				push_error("Parser could not find project source file. Either set Parser.source_file_override manually, or make sure that the DIISIS file has been saved at least once.")
 			return ""
-	return source_path
+	# where did that \n come from???
+	return source_path.trim_suffix("\n")
 
 func _get_data() -> Dictionary:
 	#var file := FileAccess.open(_get_live_source_path(), FileAccess.READ)
@@ -107,13 +108,14 @@ func init(data:Dictionary):
 func _process(delta: float) -> void:
 	if not OS.has_feature("editor"):
 		return
-	var modified_time = FileAccess.get_modified_time(_get_live_source_path(true))
+	var source_path := _get_live_source_path(true)
+	var modified_time = FileAccess.get_modified_time(source_path)
 	if modified_time != last_modified_time:
-		while not FileAccess.file_exists(_get_live_source_path(true)):
+		while not FileAccess.file_exists(source_path):
 			await get_tree().process_frame
 		init(_get_data())
 		read_page(page_index, line_index)
-	last_modified_time = FileAccess.get_modified_time(_get_live_source_path(true))
+	last_modified_time = FileAccess.get_modified_time(source_path)
 
 ## Call this one for a blank, new game.
 func reset_and_start(start_page_index:=0):

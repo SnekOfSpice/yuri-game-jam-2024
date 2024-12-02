@@ -116,7 +116,7 @@ func get_project_source_file_path(suppress_warning:=false) -> String:
 			return ""
 		return file.get_as_text()
 	if not suppress_warning:
-		push_warning(str("No source file at paodotth", file_path, "."))
+		push_warning(str("No source file at path ", file_path, "."))
 	return ""
 
 func set_project_file_path(active_dir:String, active_file_name:String):

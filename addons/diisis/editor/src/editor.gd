@@ -170,7 +170,11 @@ func get_selected_page_view() -> PageView:
 
 func set_save_path(value:String):
 	var parts = value.split("/")
-	active_file_name = parts[parts.size() - 1]
+	var new_file_name : String = parts[parts.size() - 1]
+	var new_dir : String = value.trim_suffix(new_file_name)
+	if new_dir == active_dir and new_file_name == active_file_name:
+		return
+	active_file_name = new_file_name
 	active_dir = value.trim_suffix(active_file_name)
 	emit_signal("save_path_set", active_dir, active_file_name)
 	DiisisEditorUtil.set_project_file_path(active_dir, active_file_name)
