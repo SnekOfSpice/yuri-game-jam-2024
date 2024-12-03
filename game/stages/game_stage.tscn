@@ -140,7 +140,6 @@ grow_vertical = 2
 focus_mode = 2
 theme = ExtResource("1_qsxmu")
 script = ExtResource("1_a36me")
-dev_mode = true
 
 [node name="Objects" type="Node2D" parent="."]
 script = ExtResource("3_x2eff")
@@ -638,6 +637,7 @@ layout_mode = 2
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_colors/font_outline_color = Color(0.909804, 0.741176, 0.772549, 0.286275)
 theme_override_constants/outline_size = 10
+theme_override_font_sizes/font_size = 18
 theme_override_styles/focus = SubResource("StyleBoxEmpty_scr08")
 theme_override_styles/disabled_mirrored = SubResource("StyleBoxEmpty_hkxqd")
 theme_override_styles/disabled = SubResource("StyleBoxEmpty_ngewe")

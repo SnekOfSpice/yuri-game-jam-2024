@@ -32,9 +32,9 @@ func build_fact_list():
 	for fact in Parser.facts:
 		var icon:Texture2D
 		if Parser.get_fact(fact):
-			icon = load("res://systems/true.png")
+			icon = load("res://addons/diisis/editor/visuals/true.png")
 		else:
-			icon = load("res://systems/false.png")
+			icon = load("res://addons/diisis/editor/visuals/false.png")
 		find_child("FactsList").add_item(fact, icon)
 
 func _on_reset_facts_pressed() -> void:

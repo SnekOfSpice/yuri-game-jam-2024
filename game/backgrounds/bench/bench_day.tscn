@@ -14,24 +14,21 @@ shader_parameter/WindStrength = 19.675
 [node name="ParallaxBackground" type="ParallaxBackground" parent="."]
 
 [node name="ParallaxLayer" type="ParallaxLayer" parent="ParallaxBackground"]
+motion_scale = Vector2(0.8, 0.8)
 
 [node name="BenchSkyDay" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer"]
 position = Vector2(406, 267)
 texture = ExtResource("1_4r5l3")
 
-[node name="ParallaxBackground2" type="ParallaxBackground" parent="."]
+[node name="ParallaxLayer2" type="ParallaxLayer" parent="ParallaxBackground"]
 
-[node name="ParallaxLayer" type="ParallaxLayer" parent="ParallaxBackground2"]
-
-[node name="BenchHillDay" type="Sprite2D" parent="ParallaxBackground2/ParallaxLayer"]
+[node name="BenchHillDay" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer2"]
 position = Vector2(406, 231)
 texture = ExtResource("2_h5btp")
 
-[node name="ParallaxBackground3" type="ParallaxBackground" parent="."]
+[node name="ParallaxLayer3" type="ParallaxLayer" parent="ParallaxBackground"]
 
-[node name="ParallaxLayer" type="ParallaxLayer" parent="ParallaxBackground3"]
-
-[node name="BenchBushDay" type="Sprite2D" parent="ParallaxBackground3/ParallaxLayer"]
+[node name="BenchBushDay" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer3"]
 material = SubResource("ShaderMaterial_40ixf")
 position = Vector2(406, 267)
 texture = ExtResource("4_egm58")

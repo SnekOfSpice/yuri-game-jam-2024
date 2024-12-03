@@ -8,8 +8,6 @@ enum TextStyle {
 	ToCharacter,
 }
 
-@export var dev_mode := false
-
 @export var text_style := TextStyle.ToBottom
 
 var dialog_box_tween : Tween
@@ -153,20 +151,17 @@ func _input(event: InputEvent) -> void:
 					hide_ui()
 				else:
 					show_ui()
-			if InputMap.action_has_event("cheats", event) and dev_mode and not OS.has_feature("release"):
+			if InputMap.action_has_event("cheats", event) and OS.has_feature("editor"):
 				find_child("Cheats").visible = not find_child("Cheats").visible
 				
 	if event is InputEventMouse:
 		if event.is_pressed() and InputMap.action_has_event("ui_cancel", event):
 			GameWorld.stage_root.set_screen(CONST.SCREEN_OPTIONS)
 		if event.is_pressed() and InputMap.action_has_event("rclick", event):
-			print("root ", GameWorld.stage_root.screen)
 			if GameWorld.stage_root.screen.is_empty():
 				GameWorld.stage_root.set_screen(CONST.SCREEN_OPTIONS)
-				print("hi")
 			else:
 				GameWorld.stage_root.set_screen("")
-				print("aa")
 
 	if event.is_action_pressed("advance"):
 		for root in cg_roots:
