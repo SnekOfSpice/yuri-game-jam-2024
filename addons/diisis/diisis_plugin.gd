@@ -37,6 +37,12 @@ func remove_parser_singletons():
 	remove_autoload_singleton(AUTOLOAD_PARSER_EVENTS)
 
 func _enter_tree():
+	if ProjectSettings.has_setting("diisis/project/file/path"):
+		prints("has setting ", ProjectSettings.get_setting("diisis/project/file/path"))
+	else:
+		ProjectSettings.set_setting("diisis/project/file/path", "hi")
+		ProjectSettings.save()
+		print("init settings")
 	add_autoload_singleton(AUTOLOAD_SHARED_DIISIS, "res://addons/diisis/shared/autoload/Diisis.tscn")
 	add_editor_singletons()
 	add_parser_singletons()
@@ -66,9 +72,6 @@ func _enter_tree():
 	var welcome_message := "[font=res://addons/diisis/editor/visuals/fonts/Comfortaa-Regular.ttf]"
 	welcome_message += "Thank you for using [hint=Dialog Interface Sister System]DIISIS[/hint]! Feel free to reach out on GitHub with any bugs you encounter and features you yearn for :3"
 	print_rich(welcome_message)
-
-
-const PROJECT_FILE_PATH := "res://addons/diisis/files/active_file.txt"
 	
 func open_editor():
 	if is_instance_valid(dia_editor_window):
@@ -79,10 +82,9 @@ func open_editor():
 		dia_editor_window = preload("res://addons/diisis/editor/dialog_editor_window.tscn").instantiate()
 		get_editor_interface().get_base_control().add_child.call_deferred(dia_editor_window)
 		
-		if FileAccess.file_exists(PROJECT_FILE_PATH):
-			var file = FileAccess.open(PROJECT_FILE_PATH, FileAccess.READ)
-			dia_editor_window.file_path = file.get_as_text()
-			file.close()
+		var project_file_path : String = ProjectSettings.get_setting("diisis/project/file/path")
+		if FileAccess.file_exists(project_file_path) and not project_file_path.is_empty():
+			dia_editor_window.file_path = project_file_path
 		
 		await get_tree().process_frame
 		dia_editor_window.popup()

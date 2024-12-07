@@ -99,6 +99,8 @@ func change_stage(stage_path:String):
 	await get_tree().process_frame
 	
 	set_screen("")
+	for c in $Background.get_children():
+		c.queue_free()
 	var new_stage = load(str(CONST.STAGE_ROOT, stage_path)).instantiate()
 	
 	if stage_path == CONST.STAGE_GAME:

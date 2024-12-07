@@ -107,21 +107,8 @@ func humanize_address(address:String) -> String:
 
 func get_project_source_file_path(suppress_warning:=false) -> String:
 	#var file_path : String = DIISISPlugin.PROJECT_FILE_PATH
-	var file_path : String = "res://addons/diisis/files/active_file.txt"
-	if FileAccess.file_exists(file_path):
-		var file = FileAccess.open(file_path, FileAccess.READ)
-		if not file:
-			if not suppress_warning:
-				push_warning(str("idk", file_path, "."))
-			return ""
-		return file.get_as_text()
-	if not suppress_warning:
-		push_warning(str("No source file at path ", file_path, "."))
-	return ""
+	return String(ProjectSettings.get_setting("diisis/project/file/path"))
 
 func set_project_file_path(active_dir:String, active_file_name:String):
-	#var file = FileAccess.open(DIISISPlugin.PROJECT_FILE_PATH, FileAccess.WRITE)
-	var file = FileAccess.open("res://addons/diisis/files/active_file.txt", FileAccess.WRITE)
-	file.store_string(str(active_dir, active_file_name))
-	
-	file.close()
+	ProjectSettings.set_setting("diisis/project/file/path", str(active_dir, active_file_name))
+	ProjectSettings.save()

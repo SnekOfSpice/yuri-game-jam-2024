@@ -45,6 +45,14 @@ func play_bgm(bgm:String, fade_in:=0.0, from:=0.0):
 	if bgm == "none" or bgm == "null":
 		return
 	
+	var preserve_sex : bool
+	var sex_position : float
+	if bgm.begins_with("sex_one") and bgm_key.begins_with("sex_one"):
+		preserve_sex = true
+		sex_position = main_audio_player.get_playback_position()
+	if bgm.begins_with("sex_anhedonia") and bgm_key.begins_with("sex_anhedonia"):
+		preserve_sex = true
+		sex_position = main_audio_player.get_playback_position()
 	bgm_key = bgm 
 	
 	var music_player = AudioStreamPlayer.new()
@@ -81,6 +89,9 @@ func play_bgm(bgm:String, fade_in:=0.0, from:=0.0):
 			var player : AudioStreamPlayer = audio_players.pop_front()
 			player.queue_free()
 		music_player.volume_db = linear_to_db(Options.music_volume)
+	
+	if preserve_sex:
+		from = sex_position
 	
 	audio_players.append(music_player)
 	add_child(music_player)

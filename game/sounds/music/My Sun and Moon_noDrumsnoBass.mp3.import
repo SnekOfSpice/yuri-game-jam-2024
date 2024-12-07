@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://callb1k5vhwk4"
+path="res://.godot/imported/My Sun and Moon_noDrumsnoBass.mp3-a2fba88bc18e5a956ada031260101115.mp3str"
+
+[deps]
+
+source_file="res://game/sounds/music/My Sun and Moon_noDrumsnoBass.mp3"
+dest_files=["res://.godot/imported/My Sun and Moon_noDrumsnoBass.mp3-a2fba88bc18e5a956ada031260101115.mp3str"]
+
+[params]
+
+loop=true
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4
