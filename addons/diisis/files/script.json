@@ -1,6 +1,6 @@
 {
 	"editor": {
-		"current_page_number": 31,
+		"current_page_number": 44,
 		"page_view": 0,
 		"text_size_id": 3
 	},
@@ -28492,7 +28492,7 @@
 								"jailer"
 							],
 							"active_actors_title": "character",
-							"content": "[]>narrator{anhedonia-emotion|shock}: Anhedonia expells forth a minor clump of vomit.\n[]>anhedonia{anhedonia-emotion|sad}: Please don't... Judge... Hate me...\n[]>one: ...\n[]>anhedonia: Or do.\n[]>one{one-emotion|listening}: Why would I?\n[]>anhedonia: Relapsing.\n[]>anhedonia: I had been clean for so long.\n[]>one: It happens. I still love you. And you went through traumatic shit, so...\n[]>anhedonia: Sorry...\n[]>narrator: You gently move your hand up to caress the back of her head.\n[]>one{one-emotion|neutral}: There there...\n[]>anhedonia: Fuck me...\n[]>anhedonia: Hhhh...\n[]>narrator: With time and at the touch of your cradling palm, she drifts off into a psychotic daze again."
+							"content": "[]>narrator{anhedonia-emotion|shock}: Anhedonia expels forth a minor clump of vomit.\n[]>anhedonia{anhedonia-emotion|sad}: Please don't... Judge... Hate me...\n[]>one: ...\n[]>anhedonia: Or do.\n[]>one{one-emotion|listening}: Why would I?\n[]>anhedonia: Relapsing.\n[]>anhedonia: I had been clean for so long.\n[]>one: It happens. I still love you. And you went through traumatic shit, so...\n[]>anhedonia: Sorry...\n[]>narrator: You gently move your hand up to caress the back of her head.\n[]>one{one-emotion|neutral}: There there...\n[]>anhedonia: Fuck me...\n[]>anhedonia: Hhhh...\n[]>narrator: With time and at the touch of your cradling palm, she drifts off into a psychotic daze again."
 						},
 						"facts": {
 							"fact_data_by_name": {
@@ -29252,7 +29252,7 @@
 						}
 					}
 				],
-				"meta.scroll_vertical": 5793,
+				"meta.scroll_vertical": 1350,
 				"meta.selected": false,
 				"next": 31,
 				"number": 30,
@@ -31700,7 +31700,7 @@
 								"jailer"
 							],
 							"active_actors_title": "character",
-							"content": "[]>narrator: More days pass through time, leaving their marks on your body in the form of new eyes- and on the world with new shrines. Anhedonia takes good care of you, and you- aspire to just do the bare maximum of your life's work. <mp>You reek of fresh wounds, always now. <mp>The blanket of the black night sky is a great comfortort, as it calms your godeyes."
+							"content": "[]>narrator: More days pass through time, leaving their marks on your body in the form of new eyes- and on the world with new shrines. Anhedonia takes good care of you, and you- aspire to just do the bare maximum of your life's work. <mp>You reek of fresh wounds, always now. <mp>The blanket of the black night sky is a great comfort, as it calms your godeyes."
 						},
 						"facts": {
 							"fact_data_by_name": {
@@ -31945,7 +31945,7 @@
 								"jailer"
 							],
 							"active_actors_title": "character",
-							"content": "[]>narrator: <call:control_camera,2.2,-0.1,-1.7,3.3>With a fire in your eyes that you have barely ever felt, you turn to Anhedonia.\n[]>one{one-emotion|joy}: I love you.\n[]>narrator{anhedonia-emotion|happy}: She gives you a kiss.\n[]>anhedonia: I love you too.\n[]>narrator{one-emotion|neutral,anhedonia-emotion|neutral}: You <call:control_camera,1,0,0,5.0>settle back down, nestling against Anhedonia once more. Her rugged frame makes you feel like clinging to a bastion of calm. <mp>Nuzzling, <call:control_camera,0.8,0.0,-4.5,4.0>you tacidly crane your hear to gaze up at the moonless sky."
+							"content": "[]>narrator: <call:control_camera,2.2,-0.1,-1.7,3.3>With a fire in your eyes that you have barely ever felt, you turn to Anhedonia.\n[]>one{one-emotion|joy}: I love you.\n[]>narrator{anhedonia-emotion|happy}: She gives you a kiss.\n[]>anhedonia: I love you too.\n[]>narrator{one-emotion|neutral,anhedonia-emotion|neutral}: You <call:control_camera,1,0,0,5.0>settle back down, nestling against Anhedonia once more. Her rugged frame makes you feel like clinging to a bastion of calm. <mp>Nuzzling, <call:control_camera,0.8,0.0,-4.5,4.0>you tacitly crane your head to gaze up at the moonless sky."
 						},
 						"facts": {
 							"fact_data_by_name": {
@@ -32161,7 +32161,7 @@
 						}
 					}
 				],
-				"meta.scroll_vertical": 2279,
+				"meta.scroll_vertical": 1610,
 				"meta.selected": false,
 				"next": 33,
 				"number": 32,
@@ -32899,7 +32899,7 @@
 								"jailer"
 							],
 							"active_actors_title": "character",
-							"content": "[]>one{one-emotion|listening}: You will need to... preserve the flesh around the seed until you've completed all the preparations. It'll wither without my body.\n[]>anhedonia: Couldn't that mean I can also keep you alive until then?\n[]>one{one-emotion|neutral}: It's not a symbiote.\n[]>one: It feeds on my flesh, on all the things my body produces and grows. <mp>Maybe I told you before but that's why I don't get my period anymore.\n[]>anhedonia{anhedonia-emotion|sad}: This is fucked up.\n[]>one: Well, yea. It takes so many... <ap>Everythings from my body...\n[]>anhedonia{anhedonia-emotion|crying}: ...\n[]>one{one-emotion|anxious}:Annie, I'll still be here for a bit.\n[]>anhedonia:Yeah, but for how... <mp>Forget it.\n[]>one:...\n[]>anhedonia:Just continue, please.\n[]>one:...\n[]>one{one-emotion|neutral}: How much do you know about decomposition?\n[]>anhedonia{anhedonia-emotion|sad}: Not much...\n[]>one{one-emotion|listening}: Then a quick rundown. <lc>Sunlight will accelerate decomposition. We don't want that. <mp>We also don't want insects gnawing on everything; Pick them off and apply insecticide every few hours.\n[]>one{anhedonia-emotion|neutral}: Humidity is difficult. Aridity slows everything down but we can't have my organs dry up. Ambient humidity will have to do.\n[]>one{one-emotion|anxious}: *Sigh*... All of my eyes are effectively wounds... Oviposition targets...\n[]>anhedonia: So...?\n[]>one: ...You'll have to bury me until the time comes.\n[]>anhedonia{anhedonia-emotion|sad}: Bury you...\n[]>one{one-emotion|neutral}: It prevents insects like bloatflies from accessing my body, and reduces oxygen availability. It'll prolong the process a few days.\n[]>anhedonia: ...\n[]>one{one-emotion|listening}: This also means you'll have to exhume me again.\n[]>anhedonia{anhedonia-emotion|angry}:This is bizarre shit. <mp>Fuck. <mp>One, this is fucked up to talk about with my still-alive wife.\n[]>one{one-emotion|anxious}:I know... but that's how plans sometimes go.\n[]>anhedonia{anhedonia-emotion|dismissive}:Sure...\n[]>one{one-emotion|anxious}: Hey, at least... <ap>I don't want it to be too impractical... <mp>but I wanna be a bit sappy about it.\n[]>anhedonia{anhedonia-emotion|sad}: Hm...\n[]>one{one-emotion|joy}: Can I die next to you... <ap>Up, on the hill?\n[]>anhedonia{anhedonia-emotion|crying}:...Of course.\n[]>one{one-emotion|sad}: Honey... I know.\n[]>anhedonia: I DONT WANT TO LOSE YOU!"
+							"content": "[]>one{one-emotion|listening}: You will need to... preserve the flesh around the seed until you've completed all the preparations. It'll wither without my body.\n[]>anhedonia: Couldn't that mean I can also keep you alive until then?\n[]>one{one-emotion|neutral}: It's not a symbiote.\n[]>one: It feeds on my flesh, on all the things my body produces and grows. <mp>Maybe I told you before but that's why I don't get my period anymore.\n[]>anhedonia{anhedonia-emotion|sad}: This is fucked up.\n[]>one: Well, yea. It takes so many... <ap>Everythings from my body...\n[]>anhedonia{anhedonia-emotion|crying}: ...\n[]>one{one-emotion|anxious}:Annie, I'll still be here for a bit.\n[]>anhedonia:Yeah, but for how... <mp>Forget it.\n[]>one:...\n[]>anhedonia:Just continue, please.\n[]>one:...\n[]>one{one-emotion|neutral}: How much do you know about decomposition?\n[]>anhedonia{anhedonia-emotion|sad}: Not much...\n[]>one{one-emotion|listening}: Then a quick rundown. <lc>Sunlight will accelerate decomposition. We don't want that. <mp>We also don't want insects gnawing on everything; Pick them off and apply insecticide every few hours.\n[]>one{anhedonia-emotion|neutral}: Humidity is difficult. Aridity slows everything down but we can't have my organs dry up. Ambient humidity will have to do.\n[]>one{one-emotion|anxious}: *Sigh*... All of my eyes are effectively wounds... Oviposition targets...\n[]>anhedonia: So...?\n[]>one: ...You'll have to bury me until the time comes.\n[]>anhedonia{anhedonia-emotion|sad}: Bury you...\n[]>one{one-emotion|neutral}: It prevents insects like bloatflies from accessing my body, and reduces oxygen availability. It'll prolong the process a few days.\n[]>anhedonia: ...\n[]>one{one-emotion|listening}: This also means you'll have to exhume me again.\n[]>anhedonia{anhedonia-emotion|angry}:This is bizarre shit. <mp>Fuck. <mp>One, this is fucked up to talk about with my still-alive wife.\n[]>one{one-emotion|anxious}:I know... but that's how plans sometimes go.\n[]>anhedonia{anhedonia-emotion|dismissive}:Sure...\n[]>one{one-emotion|anxious}: Hey, at least... <ap>I don't want it to be too impractical... <mp>but I wanna be a bit sappy about it.\n[]>anhedonia{anhedonia-emotion|sad}: Hm...\n[]>one{one-emotion|joy}: Can I die next to you... <ap>Up, on the hill?\n[]>anhedonia{anhedonia-emotion|crying}:...Of course.\n[]>one{one-emotion|sad}: Honey... I know.\n[]>anhedonia: I DON'T WANT TO LOSE YOU!"
 						},
 						"facts": {
 							"fact_data_by_name": {
@@ -33586,7 +33586,7 @@
 						}
 					}
 				],
-				"meta.scroll_vertical": 4196,
+				"meta.scroll_vertical": 2988,
 				"meta.selected": false,
 				"next": 34,
 				"number": 33,
@@ -35015,7 +35015,7 @@
 								"jailer"
 							],
 							"active_actors_title": "character",
-							"content": "[]>interrogator: So tell me again, where is the godseed?\n[]>one: ...\n[]>interrogator: Can you really stand hours of silence?\n[]>one: ...\n[]>interrogator: If you fall asleep, it is back to the torture chambers.\n[]>interrogator{one-emotion|neutral}: We will expell this self-idolizing from you one way or another.\n[]>one: ...\n[]>interrogator: And you will mourn the person you lost. All preventable had you had surrenderred earlier.\n[]>one: ...\n[]>interrogator: You will accept this sacred house as your superior, and offer the seed to it.\n[]>one: ...\n[]>narrator: They'd only destroy it.\n[]>interrogator: You will bow your head and prostrate yourself.\n[]>interrogator: Where is the godseed?\n[]>one: ...\n[]>interrogator: We possess unending endurance."
+							"content": "[]>interrogator: So tell me again, where is the godseed?\n[]>one: ...\n[]>interrogator: Can you really stand hours of silence?\n[]>one: ...\n[]>interrogator: If you fall asleep, it is back to the torture chambers.\n[]>interrogator{one-emotion|neutral}: We will expel this self-idolizing from you one way or another.\n[]>one: ...\n[]>interrogator: And you will mourn the person you lost. All preventable if you had surrendered earlier.\n[]>one: ...\n[]>interrogator: You will accept this sacred house as your superior, and offer the seed to it.\n[]>one: ...\n[]>narrator: They'd only destroy it.\n[]>interrogator: You will bow your head and prostrate yourself.\n[]>interrogator: Where is the godseed?\n[]>one: ...\n[]>interrogator: We possess unending endurance."
 						},
 						"facts": {
 							"fact_data_by_name": {
@@ -35119,7 +35119,7 @@
 								"jailer"
 							],
 							"active_actors_title": "character",
-							"content": "[]>one{one-emotion|listening}: [shake rate=30.0 level=7 connected=1]COME AND GET ME WITH ALL YOUR FALSE IDOLS THEN YOU FUCKS!\n[]>interrogator: [shake rate=50.0 level=21 connected=1]SILENCE YOU DEGENERATE HEATHEN!"
+							"content": "[]>one{one-emotion|listening}: [shake rate=30.0 level=7 connected=1]COME AND GET ME WITH ALL YOUR FALSE IDOLS THEN YOU FUCKS![/shake]\n[]>interrogator: [shake rate=50.0 level=21 connected=1]SILENCE YOU DEGENERATE HEATHEN![/shake]"
 						},
 						"facts": {
 							"fact_data_by_name": {
@@ -35272,7 +35272,7 @@
 								"jailer"
 							],
 							"active_actors_title": "character",
-							"content": "[]>narrator: Although you find yourself physically unharmed, the impact reverberates throughout the desk and echoes in this concrete room enough to feel it in your bones regardless.\n[]>interrogator: You are naught but a brazen child, and a danger to all civilized life.\n[]>interrogator: If we had the chance to eradicate you completely we would without hesitation, make no mistake.\n[]>interrogator: Your only saving grace is the fact of the matter that you might be still of use to the clergy.\n[]>one: ...Use?\n[]>interrogator: Your... Research. It is of interest to some.\n[]>one: ...\n[]>narrator: When your abode kept being raided, you started committing the lynchpins to memory. They don't know half of it.\n[]>one: So... You'll leave me alive.\n[]>interrogator: For now.\n[]>interrogator: I will also reiterate that your transgressions will continue to have ruinuous consequences for you. You may know freedom if the lunar will allows it."
+							"content": "[]>narrator: Although you find yourself physically unharmed, the impact reverberates throughout the desk and echoes in this concrete room enough to feel it in your bones regardless.\n[]>interrogator: You are naught but a brazen child, and a danger to all civilized life.\n[]>interrogator: If we had the chance to eradicate you completely we would without hesitation, make no mistake.\n[]>interrogator: Your only saving grace is the fact of the matter that you might still be of use to the clergy.\n[]>one: ...Use?\n[]>interrogator: Your... Research. It is of interest to some.\n[]>one: ...\n[]>narrator: When your abode kept being raided, you started committing the lynchpins to memory. They don't know half of it.\n[]>one: So... You'll leave me alive.\n[]>interrogator: For now.\n[]>interrogator: I will also reiterate that your transgressions will continue to have ruinuous consequences for you. You may know freedom if the lunar will allows it."
 						},
 						"facts": {
 							"fact_data_by_name": {
@@ -35890,7 +35890,7 @@
 						}
 					}
 				],
-				"meta.scroll_vertical": 2800,
+				"meta.scroll_vertical": 3606,
 				"meta.selected": false,
 				"next": 36,
 				"number": 35,
@@ -37128,7 +37128,7 @@
 								"jailer"
 							],
 							"active_actors_title": "character",
-							"content": "[]>narrator: The vessel is half-filled now.\n[]>one:...\n[]>one{one-emotion|sad}:*sigh*...\n[]>one{one-emotion|listening}: It's also why I do art- <ap>The shrines and poetry mostly.\n[]>one: But I want you to know that there are whispers of destiny within me. <mp>I can feel our hearts, woven togther, in the fabric of the cosmos. <mp>And the ability to show that, or even just a glimpse or attempt at it. That feels really good to me. <lc>...<lc>It's a bit ironic, I think. That this last endeavor will be... So final. And that you- <ap>My muse and object of artistic devotion- <ap>Will vanish alongside it.\n[]>anhedonia: I'm fine with it.\n[]>one{one-emotion|neutral}: Heh. I know. <lc>Working towards the end reduces our time together, what a trade.\n[]>one: But we can't not.\n[]>anhedonia{anhedonia-emotion|sad}: Death as a great attractor.\n[]>one: Precisely.\n[]>anhedonia: ...\n[]>anhedonia{anhedonia-emotion|concerned}: If I may note... You never talked about your reasons in this much detail.\n[]>one: You never asked.\n[]>anhedonia{anhedonia-emotion|neutral}: Well, I thought you were apprehensive about it."
+							"content": "[]>narrator: The vessel is half-filled now.\n[]>one:...\n[]>one{one-emotion|sad}:*sigh*...\n[]>one{one-emotion|listening}: It's also why I do art- <ap>The shrines and poetry mostly.\n[]>one: But I want you to know that there are whispers of destiny within me. <mp>I can feel our hearts, woven together, in the fabric of the cosmos. <mp>And the ability to show that, or even just a glimpse or attempt at it. That feels really good to me. <lc>...<lc>It's a bit ironic, I think. That this last endeavor will be... So final. And that you- <ap>My muse and object of artistic devotion- <ap>Will vanish alongside it.\n[]>anhedonia: I'm fine with it.\n[]>one{one-emotion|neutral}: Heh. I know. <lc>Working towards the end reduces our time together, what a trade.\n[]>one: But we can't not.\n[]>anhedonia{anhedonia-emotion|sad}: Death as a great attractor.\n[]>one: Precisely.\n[]>anhedonia: ...\n[]>anhedonia{anhedonia-emotion|concerned}: If I may note... You never talked about your reasons in this much detail.\n[]>one: You never asked.\n[]>anhedonia{anhedonia-emotion|neutral}: Well, I thought you were apprehensive about it."
 						},
 						"facts": {
 							"fact_data_by_name": {
@@ -37701,7 +37701,7 @@
 						}
 					}
 				],
-				"meta.scroll_vertical": 7653,
+				"meta.scroll_vertical": 5338,
 				"meta.selected": false,
 				"next": 37,
 				"number": 36,
@@ -38107,7 +38107,7 @@
 								"jailer"
 							],
 							"active_actors_title": "character",
-							"content": "[]>narrator:It has be come incredibly late. Anhedonia had been waiting for you in the bedroom while you wait, yet with midnight being long past you, you surmise she might already be asleep. <mp>Not that it matters. You will eagerly just as well cuddle up to her form, quickly nestle into her."
+							"content": "[]>narrator:It has become incredibly late. Anhedonia had been waiting for you in the bedroom while you wait, yet with midnight being long past you, you surmise she might already be asleep. <mp>Not that it matters. You will eagerly just as well cuddle up to her form, quickly nestle into her."
 						},
 						"facts": {
 							"fact_data_by_name": {
@@ -38127,7 +38127,7 @@
 						}
 					}
 				],
-				"meta.scroll_vertical": 763,
+				"meta.scroll_vertical": 752,
 				"meta.selected": false,
 				"next": 38,
 				"number": 37,
@@ -38696,7 +38696,7 @@
 								"jailer"
 							],
 							"active_actors_title": "character",
-							"content": "[]>narrator{anhedonia-emotion|concerned,one-emotion|pain}: <call:control_camera,1.2,1,-0.4,5>Walking up the hill, you desperately cling to Anhedonia. <mp>Your hand never leaves hers, and your arms touch all the way, all in an effort to indulge in as much skinship as possible. <lc>The pain burning up beneath your skin makes it almost impossibly difficult to walk upright. <mp>Your arms yearn to twist and bend in any way that makes the agony go away, and intermittently, you spit out pools of blood.\n[]>narrator:It is a slow walk up to the bench. <mp>Anhedonia never lets go if your hand either.\n[]>anhedonia{anhedonia-emotion|happy,one-emotion|joy}: I love you so much.\n[]>one: I love you too, Annie.\n[]>anhedonia: My little Sunshine."
+							"content": "[]>narrator{anhedonia-emotion|concerned,one-emotion|pain}: <call:control_camera,1.2,1,-0.4,5>Walking up the hill, you desperately cling to Anhedonia. <mp>Your hand never leaves hers, and your arms touch all the way, all in an effort to indulge in as much skinship as possible. <lc>The pain burning up beneath your skin makes it almost impossibly difficult to walk upright. <mp>Your arms yearn to twist and bend in any way that makes the agony go away, and intermittently, you spit out pools of blood.\n[]>narrator:It is a slow walk up to the bench. <mp>Anhedonia never lets go of your hand either.\n[]>anhedonia{anhedonia-emotion|happy,one-emotion|joy}: I love you so much.\n[]>one: I love you too, Annie.\n[]>anhedonia: My little Sunshine."
 						},
 						"facts": {
 							"fact_data_by_name": {
@@ -39349,7 +39349,7 @@
 								"jailer"
 							],
 							"active_actors_title": "character",
-							"content": "[]>anhedonia: <call:control_camera,1.2,0.4,0,2>There we go.\n[]>anhedonia: Good girl.\n[]>narrator: You answer her with an assuring blink. Her display of gentleness draws a warm smile across your face. It feels warm and fuzzy inside.\n[]>narrator: You are treated to a small headpat.\n[]>anhedonia: Gonna draw some now.\n[]>narrator: With precise and graceful movements, Anhedonia sets down the alcohol pad and picks up the vial and syringe. <mp>The vial is a lot. <ap>The syringe more than enough.\n[]>one: Getting a bit dizzy... Blood loss...\n[]>anhedonia: On it, Sunshine.\n[]>narrator: Anhedonia stabs the vial, extracts a little more than what she needs- Then presses out any excess liquid and air with it- Down to exactly the 60 you agreed to.\n[]>narrator: Syringe barrel filled with a faily yellow yet almost translucent liquid, Anhedonia rests the needle tip against your leg."
+							"content": "[]>anhedonia: <call:control_camera,1.2,0.4,0,2>There we go.\n[]>anhedonia: Good girl.\n[]>narrator: You answer her with an assuring blink. Her display of gentleness draws a warm smile across your face. It feels warm and fuzzy inside.\n[]>narrator: You are treated to a small headpat.\n[]>anhedonia: Gonna draw some now.\n[]>narrator: With precise and graceful movements, Anhedonia sets down the alcohol pad and picks up the vial and syringe. <mp>The vial is a lot. <ap>The syringe more than enough.\n[]>one: Getting a bit dizzy... Blood loss...\n[]>anhedonia: On it, Sunshine.\n[]>narrator: Anhedonia stabs the vial, extracts a little more than what she needs- Then presses out any excess liquid and air with it- Down to exactly the 60 you agreed to.\n[]>narrator: Syringe barrel filled with a faintly yellow yet almost translucent liquid, Anhedonia rests the needle tip against your leg."
 						},
 						"facts": {
 							"fact_data_by_name": {
@@ -39500,7 +39500,7 @@
 								"jailer"
 							],
 							"active_actors_title": "character",
-							"content": "[]>narrator: Not hesitating a moment longer, Anhedonia presses the needle into your skin, into your muscle. Then presses down.\n[]>anhedonia: Who I am is... who I became with you... is an extension of you.\n[]>one: I'm so glad I got I experience my life with you.\n[]>narrator: The liquid is thick, taking a few seconds to be injected all the way, yet the warmth it exudes from the point of entry is almost immediately apparent. <mp>When Anhedonia has emptied the syringe, you share an abyssally deep gaze. She extracts the needle, sets it down, and leans in for a parting kiss. You eagerly crane forward, body already heavier than a few moments ago."
+							"content": "[]>narrator: Not hesitating a moment longer, Anhedonia presses the needle into your skin, into your muscle. Then presses down.\n[]>anhedonia: Who I am is... who I became with you... is an extension of you.\n[]>one: I'm so glad I got to experience my life with you.\n[]>narrator: The liquid is thick, taking a few seconds to be injected all the way, yet the warmth it exudes from the point of entry is almost immediately apparent. <mp>When Anhedonia has emptied the syringe, you share an abyssally deep gaze. She extracts the needle, sets it down, and leans in for a parting kiss. You eagerly crane forward, body already heavier than a few moments ago."
 						},
 						"facts": {
 							"fact_data_by_name": {
@@ -39792,7 +39792,7 @@
 								"jailer"
 							],
 							"active_actors_title": "character",
-							"content": "[]>narrator: <call:control_camera,1,0.7,0,3>Before you can finish a word, Anhedonia clutches your hand. Without a shred of hesitation, yet with divine gentleness. <mp>Anhedonia moves a bit. <mp>Gives you more space to sink into her, and fingers to weave together.\n[]>one: I<ap>... <ap>love<ap>...\n[]>one:...<call:set_fade_out,2,0.58>\n[]>anhedonia: Me too. I love you so fucking much.\n[]>one: Thankchu...\n[]>narrator: Blackness is starting to cloud your field of vision, <call:set_fade_out,2.5,0.6>a descent into the void.\n[]>narrator: You try to hold her in return as much as you can. <mp>But all the world has to offer is its unadulterated weight, draped across your mind. With a cosmic blanket, your conciousness slowly fades away. <mp>You <call:set_fade_out,3.15,0.6>bottomlessly recede from the world as you know it, reduced to the faintest sensations around you: <mp>Anhedonia's touch, <ap>your blood dripping down your chin and your girlfriend's body, <ap>her smell, <ap>her love.\n[]>narrator: <call:set_fade_out,3.8,0.73>You trust her, in eternity."
+							"content": "[]>narrator: <call:control_camera,1,0.7,0,3>Before you can finish a word, Anhedonia clutches your hand. Without a shred of hesitation, yet with divine gentleness. <mp>Anhedonia moves a bit. <mp>Gives you more space to sink into her, and fingers to weave together.\n[]>one: I<ap>... <ap>love<ap>...\n[]>one:...<call:set_fade_out,2,0.58>\n[]>anhedonia: Me too. I love you so fucking much.\n[]>one: Thankchu...\n[]>narrator: Blackness is starting to cloud your field of vision, <call:set_fade_out,2.5,0.6>a descent into the void.\n[]>narrator: You try to hold her in return as much as you can. <mp>But all the world has to offer is its unadulterated weight, draped across your mind. With a cosmic blanket, your consciousness slowly fades away. <mp>You <call:set_fade_out,3.15,0.6>bottomlessly recede from the world as you know it, reduced to the faintest sensations around you: <mp>Anhedonia's touch, <ap>your blood dripping down your chin and your girlfriend's body, <ap>her smell, <ap>her love.\n[]>narrator: <call:set_fade_out,3.8,0.73>You trust her, in eternity."
 						},
 						"facts": {
 							"fact_data_by_name": {
@@ -39812,7 +39812,7 @@
 						}
 					}
 				],
-				"meta.scroll_vertical": 645,
+				"meta.scroll_vertical": 6615,
 				"meta.selected": false,
 				"next": 39,
 				"number": 38,
@@ -42199,7 +42199,7 @@
 								"jailer"
 							],
 							"active_actors_title": "character",
-							"content": "[]>narrator: Sobbing and slowly stumbling across the shoreline, you make you way back up the main road. So far you are on track for your final duty. You would visit One's grave later to pick it off from nesting parasites, which left you with a few hours to kill."
+							"content": "[]>narrator: Sobbing and slowly stumbling across the shoreline, you make your way back up the main road. So far you are on track for your final duty. You would visit One's grave later to pick it off from nesting parasites, which left you with a few hours to kill."
 						},
 						"facts": {
 							"fact_data_by_name": {
@@ -42486,7 +42486,7 @@
 						}
 					}
 				],
-				"meta.scroll_vertical": 3660,
+				"meta.scroll_vertical": 2823,
 				"meta.selected": false,
 				"next": 42,
 				"number": 41,
@@ -42914,7 +42914,7 @@
 								"jailer"
 							],
 							"active_actors_title": "character",
-							"content": "[]>narrator:The sun is coming up again.<lc>Your attempt to sleep this wave of grief away again."
+							"content": "[]>narrator:The sun is coming up again.<lc>Your attempts to sleep this wave of grief away falter evermore."
 						},
 						"facts": {
 							"fact_data_by_name": {
@@ -43022,7 +43022,7 @@
 								"jailer"
 							],
 							"active_actors_title": "character",
-							"content": "[]>narrator:And with the sun somewhere in the sky, you find yourself awake again.\n[]>narrator:Time is convulsing around you, stretching out and contracting with no regard for your own temporal whereabouts. <mp>Already it has become nigh impossible for you to tell how many hours you have lost to grief, how many trips you have taken up the hill to pluck away any bugs, or how many times you have had to wake up without One next to you. <mp>Your rugged inner turmoil has not even allowed you to sleep entire nights. <mp>Sometimes you sleep, sometimes you wake. <mp>What does it matter anyways?\n[]>narrator:The world probably has moved on- Outside your window. But who are you to care for it?\n[]>narrator: When you try focus you can almost achieve practice. With the typewritten poem in front of you, you study it every moment you find the waves washing over your heart bearable enough to do so.\n[]>narrator: By now, a message rests in the telegram receptacle. It has been there for some hours before you eventually mount the courage to glance a peek. The sender lessens your tension, if just a bit. <lc>Spectra.\n[]>spectra{spectra-emotion|invisible}:Isolation will kill you before the sun does. Call me. I will be there."
+							"content": "[]>narrator:And with the sun somewhere in the sky, you find yourself awake again.\n[]>narrator:Time is convulsing around you, stretching out and contracting with no regard for your own temporal whereabouts. <mp>Already it has become nigh impossible for you to tell how many hours you have lost to grief, how many trips you have taken up the hill to pluck away any bugs, or how many times you have had to wake up without One next to you. <mp>Your rugged inner turmoil has not even allowed you to sleep entire nights. <mp>Sometimes you sleep, sometimes you wake. <mp>What does it matter anyways?\n[]>narrator:The world probably has moved on- Outside your window. But who are you to care for it?\n[]>narrator: With the typewritten poem in front of you, you study it every moment you find the waves washing over your heart bearable enough to do so.\n[]>narrator: By now, a message rests in the telegram receptacle. It has been there for some hours before you eventually mount the courage to glance a peek. The sender lessens your tension, if just a bit. <lc>Spectra.\n[]>spectra{spectra-emotion|invisible}:Isolation will kill you before the sun does. Call me. I will be there."
 						},
 						"facts": {
 							"fact_data_by_name": {
@@ -43289,7 +43289,7 @@
 								"jailer"
 							],
 							"active_actors_title": "character",
-							"content": "[]>spectra: Run me through this operation, what are we doing here, exactly?\n[]>anhedonia{anhedonia-emotion|concerned}: You don't know?\n[]>spectra{spectra-emotion|annoyed}: One never told me details. <mp>Neither did you.\n[]>spectra{spectra-emotion|neutral}: I but know about the end of all things approaching with you two.\n[]>spectra: Well... <ap>All things... <ap>Here.\n[]>anhedonia{anhedonia-emotion|dismissive}: Ugh... So...\n[]>anhedonia{anhedonia-emotion|crying}: We're... <ap>Gonna...\n[]>narrator: You struggle to articulate anything pertaining to One. With the help of gestures, you expain to Spectra.\n[]>anhedonia: Sun... <ap>Down.\n[]>anhedonia: Fuck the clericants...\n[]>anhedonia: ...\n[]>anhedonia{anhedonia-emotion|crying2}:Love...\n[]>anhedonia:...\n[]>anhedonia{anhedonia-emotion|crying}: Yeah...\n[]>anhedonia{anhedonia-emotion|sad}: Struggling to talk about... <ap>This...\n[]>spectra: That's fine.\n[]>narrator: You continue the rest of the journey in silence, another gold passing until you reach the site, at which point you march forward without regard for Spectra. <mp>Your focus lies solely on sculpting the resting site for the oxylith.\n[]>spectra: You knew how to live for one. Now what do you live for?\n[]>spectra: Her afterimage?\n[]>spectra: An idol of her shape?\n[]>anhedonia: I don't know... <ap>I just...\n[]>anhedonia: We said we'd do this. <ap>So we're doing this.\n[]>narrator: You set down the shrine.\n[]>anhedonia: One sec."
+							"content": "[]>spectra: Run me through this operation, what are we doing here, exactly?\n[]>anhedonia{anhedonia-emotion|concerned}: You don't know?\n[]>spectra{spectra-emotion|annoyed}: One never told me details. <mp>Neither did you.\n[]>spectra{spectra-emotion|neutral}: I but know about the end of all things approaching with you two.\n[]>spectra: Well... <ap>All things... <ap>Here.\n[]>anhedonia{anhedonia-emotion|dismissive}: Ugh... So...\n[]>anhedonia{anhedonia-emotion|crying}: We're... <ap>Gonna...\n[]>narrator: You struggle to articulate anything pertaining to One. With the help of gestures, you expain to Spectra.\n[]>anhedonia: Sun... <ap>Down.\n[]>anhedonia: Fuck the clericants...\n[]>anhedonia: ...\n[]>anhedonia{anhedonia-emotion|crying2}:Love...\n[]>anhedonia:...\n[]>anhedonia{anhedonia-emotion|crying}: Yeah...\n[]>anhedonia{anhedonia-emotion|sad}: Struggling to talk about... <ap>This...\n[]>spectra: That's fine.\n[]>narrator: You continue the rest of the journey in silence, another gold passing until you reach the site, at which point you march forward without regard for Spectra. <mp>Your focus lies solely on sculpting the resting site for the oxylith.\n[]>spectra: You knew how to live for One. Now what do you live for?\n[]>spectra: Her afterimage?\n[]>spectra: An idol of her shape?\n[]>anhedonia: I don't know... <ap>I just...\n[]>anhedonia: We said we'd do this. <ap>So we're doing this.\n[]>narrator: You set down the shrine.\n[]>anhedonia: One sec."
 						},
 						"facts": {
 							"fact_data_by_name": {
@@ -43915,7 +43915,7 @@
 								"jailer"
 							],
 							"active_actors_title": "character",
-							"content": "[]>anhedonia{anhedonia-emotion|sad}: Ambition, drive, and...\n[]>spectra: ...\n[]>anhedonia{anhedonia-emotion|happy}: Something to live for.\n[]>spectra: ... <lc>And now you have a task to live for still, don't you?\n[]>anhedonia{anhedonia-emotion|neutral}: I'm not made for tasks like her. I'm made for people. <mp>Her, specifically.\n[]>spectra:Then you ought to remember that it was a person- <ap>Your girlfriend- <ap>That gave you this task. What grander task could there be?<mp> <call:set_emotion,spectra,happy>Especially for a dyke like you.\n[]>anhedonia{anhedonia-emotion|sad,spectra-emotion|neutral}:I don't know... Maybe something I did myself.\n[]>spectra{spectra-emotion|annoyed}:Oh shut up. <mp>Pardon me. <ap>You...\n[]>anhedonia:I...?\n[]>spectra{spectra-emotion|neutral}:I cannot bring you to do anything. <mp>But One wanted you to do this. You wanna live for others? <ap>Or her at least? <mp>It is okay, especially in times of emotional turmoil to cling to definitions others have ascribed to you. <mp>Ideally, you'd grow past those at some point, but I have a suspicion that won't be necessary in your case.\n[]>anhedonia:...\n[]>anhedonia: She...\n[]>anhedonia: We understood one another so much.\n[]>spectra{spectra-emotion|happy}: And that is why you will will follow through.\n[]>anhedonia: ...\n[]>anhedonia:Vessel...\n[]>spectra{spectra-emotion|neutral}:?\n[]>anhedonia:She was a vessel for... Our love. <mp>Is.\n[]>spectra:Indeed.\n[]>anhedonia:Then...\n[]>spectra:...\n[]>anhedonia{anhedonia-emotion|crying}:Fuck I love her so much.\n[]>spectra:...\n[]>anhedonia:I wanna treasure her so much.\n[]>spectra:..."
+							"content": "[]>anhedonia{anhedonia-emotion|sad}: Ambition, drive, and...\n[]>spectra: ...\n[]>anhedonia{anhedonia-emotion|happy}: Something to live for.\n[]>spectra: ... <lc>And now you have a task to live for still, don't you?\n[]>anhedonia{anhedonia-emotion|neutral}: I'm not made for tasks like her. I'm made for people. <mp>Her, specifically.\n[]>spectra:Then you ought to remember that it was a person- <ap>Your girlfriend- <ap>That gave you this task. What grander task could there be?<mp> <call:set_emotion,spectra,happy>Especially for a dyke like you.\n[]>anhedonia{anhedonia-emotion|sad,spectra-emotion|neutral}:I don't know... Maybe something I did myself.\n[]>spectra{spectra-emotion|annoyed}:Oh shut up. <mp>Pardon me. <ap>You...\n[]>anhedonia:I...?\n[]>spectra{spectra-emotion|neutral}:I cannot bring you to do anything. <mp>But One wanted you to do this. You wanna live for others? <ap>Or her at least? <mp>It is okay, especially in times of emotional turmoil to cling to definitions others have ascribed to you. <mp>Ideally, you'd grow past those at some point, but I have a suspicion that won't be necessary in your case.\n[]>anhedonia:...\n[]>anhedonia: She...\n[]>anhedonia: We understood one another so much.\n[]>spectra{spectra-emotion|happy}: And that is why you will follow through.\n[]>anhedonia: ...\n[]>anhedonia:Vessel...\n[]>spectra{spectra-emotion|neutral}:?\n[]>anhedonia:She was a vessel for... Our love. <mp>Is.\n[]>spectra:Indeed.\n[]>anhedonia:Then...\n[]>spectra:...\n[]>anhedonia{anhedonia-emotion|crying}:Fuck I love her so much.\n[]>spectra:...\n[]>anhedonia:I wanna treasure her so much.\n[]>spectra:..."
 						},
 						"facts": {
 							"fact_data_by_name": {
@@ -44147,7 +44147,7 @@
 						}
 					}
 				],
-				"meta.scroll_vertical": 0,
+				"meta.scroll_vertical": 6507,
 				"meta.selected": false,
 				"next": 43,
 				"number": 42,
@@ -44361,7 +44361,7 @@
 								"jailer"
 							],
 							"active_actors_title": "character",
-							"content": "[]>narrator:The abbarant twitches in the spinal nerve of time have subsided. Replacing them is undefined sludge, segments of days indiscriminately blending into one another.\n[]>narrator:Day three-ish comes and you only stop ruminating about a premature suicide because you know One would be hurt if you did. <mp>You scale an apartment building up the fireladder and enjoy the scenic fucking view of a world already dead and deceased. From your backpack, you take the last shrine.<mp> Once again, the inscription with One's blood flows from your fingertips and renders into a farewell message to yourself and a curse upon the world.\n[]>anhedonia{anhedonia-emotion|invisible}:Love left<mp>\nLife wept<mp>\nCarried by winds<mp>\n[]>anhedonia:So I drop dead<mp>\nWhen it went<mp>\n[]>anhedonia:Where dead futures rest<mp>\n[]>narrator:Imbued with the sigil once more."
+							"content": "[]>narrator:The aberrant twitches in the spinal nerve of time have subsided. Replacing them is undefined sludge, segments of days indiscriminately blending into one another.\n[]>narrator:Day three-ish comes and you only stop ruminating about a premature suicide because you know One would be hurt if you did. <mp>You scale an apartment building up the fireladder and enjoy the scenic fucking view of a world already dead and deceased. From your backpack, you take the last shrine.<mp> Once again, the inscription with One's blood flows from your fingertips and renders into a farewell message to yourself and a curse upon the world.\n[]>anhedonia{anhedonia-emotion|invisible}:Love left<mp>\nLife wept<mp>\nCarried by winds<mp>\n[]>anhedonia:So I drop dead<mp>\nWhen it went<mp>\n[]>anhedonia:Where dead futures rest<mp>\n[]>narrator:Imbued with the sigil once more."
 						},
 						"facts": {
 							"fact_data_by_name": {
@@ -44381,7 +44381,7 @@
 						}
 					}
 				],
-				"meta.scroll_vertical": 88,
+				"meta.scroll_vertical": 77,
 				"meta.selected": false,
 				"next": 44,
 				"number": 43,
@@ -44540,7 +44540,7 @@
 								"jailer"
 							],
 							"active_actors_title": "character",
-							"content": "[]>narrator{anhedonia-emotion|neutral}:Early morning fog suffocates the world like a thick blanket of white phosphorous. <mp>Time has stagnated. There is no future, and no past. Nothing but an infinite now- <ap>one that is best used for herald in the end of this temporal torment. <lc>You go through your morning routine, departing from all that you hold dear. Quietly, you hum an elegy throughout the apartment, saying goodbye to every memory you ever had, to every bit of lovely furnishing One and you bent to your liking- <ap>made yours.\n[]>narrator:The day's work calls for strength of body and mind. <mp>You fortify both with your last meal, a selection of fruit and nuts like you made for One so so many times. <mp>It almost feels strange, taking care of yourself that way. <call:set_emotion,anhedonia,crying>Once more, your chest convulses tightly at the wish for One to be here, knees pressed against her chest, mind racing through the cosmos- <ap>occasionally stealing glances and smiles at you. <mp>Being your sunshine.\n[]>narrator{anhedonia-emotion|sad}: Instead, you are forced to reckon with the deathly silence of the apartment. <mp>Ambient droning music veils your ears against the static of the wires outside the apartment, and the hum of technology around you. Yet nothing seems to actually reach you. The world- wrapped in distance.\n[]>narrator{anhedonia-emotion|concerned}: You take another look at your list. There is not much for you to carry, yet you take great care to have packed everything. Shovel, bodybag, hacksaw, provisions of food and water, One's final letter. <mp>The memory of her.\n[]>narrator{anhedonia-emotion|crying}: You are too focused on your task to properly cry. With teary rivulets running down your face, you take one good look at your apartment, then check the contents of your backpack one last time. <mp>Everything is set."
+							"content": "[]>narrator{anhedonia-emotion|neutral}:Early morning fog suffocates the world like a thick blanket of white phosphorous. <mp>Time has stagnated. There is no future, and no past. Nothing but an infinite now- <ap>one that is best used to herald in the end of this temporal torment. <lc>You go through your morning routine, departing from all that you hold dear. Quietly, you hum an elegy throughout the apartment, saying goodbye to every memory you ever had, to every bit of lovely furnishing One and you bent to your liking- <ap>made yours.\n[]>narrator:The day's work calls for strength of body and mind. <mp>You fortify both with your last meal, a selection of fruit and nuts like you made for One so so many times. <mp>It almost feels strange, taking care of yourself that way. <call:set_emotion,anhedonia,crying>Once more, your chest convulses tightly at the wish for One to be here, knees pressed against her chest, mind racing through the cosmos- <ap>occasionally stealing glances and smiles at you. <mp>Being your sunshine.\n[]>narrator{anhedonia-emotion|sad}: Instead, you are forced to reckon with the deathly silence of the apartment. <mp>Ambient droning music veils your ears against the static of the wires outside the apartment, and the hum of technology around you. Yet nothing seems to actually reach you. The world- wrapped in distance.\n[]>narrator{anhedonia-emotion|concerned}: You take another look at your list. There is not much for you to carry, yet you take great care to have packed everything. Shovel, bodybag, hacksaw, provisions of food and water, One's final letter. <mp>The memory of her.\n[]>narrator{anhedonia-emotion|crying}: You are too focused on your task to properly cry. With teary rivulets running down your face, you take one good look at your apartment, then check the contents of your backpack one last time. <mp>Everything is set."
 						},
 						"facts": {
 							"fact_data_by_name": {
@@ -44852,7 +44852,7 @@
 								"jailer"
 							],
 							"active_actors_title": "character",
-							"content": "[]>narrator: You set down your backpack and tools on the sodden ground before you, fallen autumnal leaves seeped into by the remnants of fog.\n[]>anhedonia{anhedonia-emotion|crying}: I... <mp>Fuck...\n[]>anhedonia: This is...\n[]>narrator: Before you lies the shallow grave of your deceased lover. Deep enough for protection. Shallow enough- <ap>for exhuming. <mp>You laid her to rest here, and now you will carry her once more. <mp>Not bothering to wipe away the tears, you grab the shovel, and get to work.\n[]>narrator:You dig the earth away, careful not to never graze her body. When the pit becomes deep enough, you discard the shovel and free the body with your own two hands. <mp>The endeavor takes more of the day away.\n[]>narrator:When the sun has traced the sky some more, you have exhumed her fully again. The sickly sweet smell of her corpse and the stench of dirt make it difficult to concentrate at the task at hand... <mp>Nonetheless, this is but a step in this titanic undertaking. And you persevere, and after some more of your tears and sweat have dripped onto the ground, she is secured in the body bag.\n[]>narrator:Like she predicted, the burial had postponed the composition process enough for her to still look almost as undisturbed as the day she died- <mp>four days ago- <ap>six?- <ap>days ago. <ap>Who gives a fuck. <mp>Time lost all meaning since.\n[]>narrator:You secure her pale and violet-blooming body in the body bag you brought, and leave the tools behind. With her head tilted against your chest, it is time to bring her to her final resting place."
+							"content": "[]>narrator: You set down your backpack and tools on the sodden ground before you, fallen autumnal leaves seeped into by the remnants of fog.\n[]>anhedonia{anhedonia-emotion|crying}: I... <mp>Fuck...\n[]>anhedonia: This is...\n[]>narrator: Before you lies the shallow grave of your deceased lover. Deep enough for protection. Shallow enough- <ap>for exhuming. <mp>You laid her to rest here, and now you will carry her once more. <mp>Not bothering to wipe away the tears, you grab the shovel, and get to work.\n[]>narrator:You dig the earth away, careful to never graze her body with the crude implement. When the pit becomes deep enough, you discard the shovel and free the body with your own two hands. <mp>The endeavor takes more of the day away.\n[]>narrator:When the sun has traced the sky some more, you have exhumed her fully again. The sickly sweet smell of her corpse and the stench of dirt make it difficult to concentrate at the task at hand... <mp>Nonetheless, this is but a step in this titanic undertaking. And you persevere, and after some more of your tears and sweat have dripped onto the ground, she is secured in the body bag.\n[]>narrator:Like she predicted, the burial had postponed the composition process enough for her to still look almost as undisturbed as the day she died- <mp>four days ago- <ap>six?- <ap>days ago. <ap>Who gives a fuck. <mp>Time lost all meaning since.\n[]>narrator:You secure her pale and violet-blooming body in the body bag you brought, and leave the tools behind. With her head tilted against your chest, it is time to bring her to her final resting place."
 						},
 						"facts": {
 							"fact_data_by_name": {
@@ -45015,7 +45015,7 @@
 								"jailer"
 							],
 							"active_actors_title": "character",
-							"content": "[]>narrator{anhedonia-emotion|bodybag}:One cradled in your arms, you walk down the hill once more. By now, the mid autumn sun has started to set again, and bathes you in a an luminous orange glow.\n[]>narrator: In your heart- grief. <mp>Yet also relief. <mp>Finally, your life is clear. Devoid of uncertainty, every step you take sunkissed and radiant. There is nothing you would rather be but this guardian in life and death, carrying out the task of One- carrying out your joint desire.\n[]>narrator: This world will not inherit your grief, and you <call:control_camera,1.3,0.0,-0.4,3.0>quake at the thought of uncertainty you will impart on those that come after. <mp>But it is worth it. <ap>For a better world you may never see."
+							"content": "[]>narrator{anhedonia-emotion|bodybag}:One cradled in your arms, you walk down the hill once more. By now, the mid autumn sun has started to set again, and bathes you in a luminous orange glow.\n[]>narrator: In your heart- grief. <mp>Yet also relief. <mp>Finally, your life is clear. Devoid of uncertainty, every step you take sunkissed and radiant. There is nothing you would rather be but this guardian in life and death, carrying out the task of One- carrying out your joint desire.\n[]>narrator: This world will not inherit your grief, and you <call:control_camera,1.3,0.0,-0.4,3.0>quake at the thought of uncertainty you will impart on those that come after. <mp>But it is worth it. <ap>For a better world you may never see."
 						},
 						"facts": {
 							"fact_data_by_name": {
@@ -45115,7 +45115,7 @@
 								"jailer"
 							],
 							"active_actors_title": "character",
-							"content": "[]>narrator:As you continue the journey, you pay no mind to the onlookers. Proudly, you carry your wife through desolate and populous city streets alike. Her aegis watching over you, there is no shred of fear within you. No one can harm you now.\n[]>narrator: Fully on display in a grove of concrete and oppression and pestilence, you find One's final resting place. The nexus of oxylith shrines she has built.\n[]>narrator: In<call:control_camera,0.95,0.0,-0.1,2.0> the center of the city plaza, you gently lower her form down to the ground, then prostrate yourself next to her.\n[]>narrator: Having<call:control_camera,1.3,0,0.7,3.0> served it's purpose, you artfully cut open the body bag, revealing your deceased lover inside."
+							"content": "[]>narrator:As you continue the journey, you pay no mind to the onlookers. Proudly, you carry your wife through desolate and populous city streets alike. Her aegis watching over you, there is no shred of fear within you. No one can harm you now.\n[]>narrator: Fully on display in a grove of concrete and oppression and pestilence, you find One's final resting place. The nexus of oxylith shrines she has built.\n[]>narrator: In<call:control_camera,0.95,0.0,-0.1,2.0> the center of the city plaza, you gently lower her form down to the ground, then prostrate yourself next to her.\n[]>narrator: Having<call:control_camera,1.3,0,0.7,3.0> served its purpose, you artfully cut open the body bag, revealing your deceased lover inside."
 						},
 						"facts": {
 							"fact_data_by_name": {
@@ -45568,7 +45568,7 @@
 								"jailer"
 							],
 							"active_actors_title": "character",
-							"content": "[]>narrator:You tear out the core and with One's blood running down your arm, you lean down to taste it just once more. With the taste of her sanguine trust bedewing your tongue, you speak- one last time.\n[]>anhedonia:Astral spawn, sacred bloom<mp>\nWe beg - that you smile<mp>\nAnd gaze upon you with a pestulent eye<mp>\nOh love - Nevermore cry into that crest<mp>\nWhere dead futures rest<mp>\n[]>anhedonia:Upon you lie the dreams of lovers<mp>\nBelow, the lovers of one another<mp>\nGrief and devotion brought us here<mp>\nSo we give ourselves to you<mp>\nAs you give purpose to our pain<mp>\n[]>anhedonia:Souls echo in a heartbeat<mp>\nBodies deathbound like hope<mp>\nIn the face of desolation<mp>\nWe shed the flesh we once called home<mp>\nLook upon the lonely sun<mp>\nBehold sky and sea, become one<mp>"
+							"content": "[]>narrator:You tear out the core and with One's blood running down your arm, you lean down to taste it just once more. With the taste of her sanguine trust bedewing your tongue, you speak- one last time.\n[]>anhedonia:Astral spawn, sacred bloom<mp>\nWe beg - that you smile<mp>\nAnd gaze upon you with a pustulent eye<mp>\nOh love - Nevermore cry into that crest<mp>\nWhere dead futures rest<mp>\n[]>anhedonia:Upon you lie the dreams of lovers<mp>\nBelow, the lovers of one another<mp>\nGrief and devotion brought us here<mp>\nSo we give ourselves to you<mp>\nAs you give purpose to our pain<mp>\n[]>anhedonia:Souls echo in a heartbeat<mp>\nBodies deathbound like hope<mp>\nIn the face of desolation<mp>\nWe shed the flesh we once called home<mp>\nLook upon the lonely sun<mp>\nBehold sky and sea, become one<mp>"
 						},
 						"facts": {
 							"fact_data_by_name": {
@@ -45770,7 +45770,7 @@
 								"jailer"
 							],
 							"active_actors_title": "character",
-							"content": "[]>narrator:Like in a pomegranate, small eye-like globules look back at you, and reflected in their fractal detail piercing your conciousness, <ap>you behold an infinity of universes staring back at you, <ap>fragments of your love, <ap>cherished memories and bundles of grief. <mp>As these globules gaze into sunlight for the first time, they cry themselves to ash, falling away in wilted tears and pained screams. From within those eyes of past, present, and future, in all their emotionality, they cry out into the sky, and call upon the sun itself<call:set_sun_str,steps,10.0>. <lc>All of One's blood bursts skywards like a volcanic eruption, envelops you whole. The godseed blooms<call:set_sun_str,fill_amount,1.8> and within seconds the sun has been called upon you.\n[]>narrator:In its infinite  <call:set_sun_str,fill_amount,2.9>violence and grace, the the sun reaches out towards you - <mp>Towards <call:set_sun_str,fill_amount,4.7>Anhedonia and One and the violence, love, and grief birthed between you two. <lc>The sheer solar mass <call:set_sun_str,steps,5.4>crushes the world you once knew, and the hate you had come to bear along with it.\n[]>narrator: Your conciousness evaporates into this love-born star, the very bonds of your existence ruptured, enveloped by the power of stellar creation. <mp>And as your last heartbeat fades out on you, <ap>you have been<call:set_sun_str,fill_amount,5.8> swallowed by the sun."
+							"content": "[]>narrator:Like in a pomegranate, small eye-like globules look back at you, and reflected in their fractal detail piercing your consciousness, <ap>you behold an infinity of universes staring back at you, <ap>fragments of your love, <ap>cherished memories and bundles of grief. <mp>As these globules gaze into sunlight for the first time, they cry themselves to ash, falling away in wilted tears and pained screams. From within those eyes of past, present, and future, in all their emotionality, they cry out into the sky, and call upon the sun itself<call:set_sun_str,steps,10.0>. <lc>All of One's blood bursts skywards like a volcanic eruption, envelops you whole. The godseed blooms<call:set_sun_str,fill_amount,1.8> and within seconds the sun has been called upon you.\n[]>narrator:In its infinite <call:set_sun_str,fill_amount,2.9>violence and grace, the sun reaches out towards you - <mp>Towards <call:set_sun_str,fill_amount,4.7>Anhedonia and One and the violence, love, and grief birthed between you two. <lc>The sheer solar mass <call:set_sun_str,steps,5.4>crushes the world you once knew, and the hate you had come to bear along with it.\n[]>narrator: Your consciousness evaporates into this love-born star, the very bonds of your existence ruptured, enveloped by the power of stellar creation. <mp>And as your last heartbeat fades out on you, <ap>you have been<call:set_sun_str,fill_amount,5.8> swallowed by the sun."
 						},
 						"facts": {
 							"fact_data_by_name": {
